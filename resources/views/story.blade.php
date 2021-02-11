@@ -1,6 +1,10 @@
 @extends('layouts.template')
 
-@section('title')
+@section('tab_title')
     histoire
+@stop
+
+@section('main_title')
+    l'histoire
 @stop
 

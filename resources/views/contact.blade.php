@@ -1,6 +1,9 @@
 @extends('layouts.template')
 
-@section('title')
+@section('tab_title')
     nous contacter
 @stop
 
+@section('main_title')
+    contactez-nous
+@stop

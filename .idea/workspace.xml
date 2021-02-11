@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51a5ede6-42eb-4c45-bc09-88195096fe44" name="Default Changelist" comment="Layouts" />
+    <list default="true" id="51a5ede6-42eb-4c45-bc09-88195096fe44" name="Default Changelist" comment="Redirections">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/template_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/rank.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/rank.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/story.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/story.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -174,7 +184,7 @@
       <updated>1609676298547</updated>
       <workItem from="1609676312026" duration="438000" />
       <workItem from="1609679956130" duration="246000" />
-      <workItem from="1613035861674" duration="3996000" />
+      <workItem from="1613035861674" duration="6547000" />
     </task>
     <task id="LOCAL-00001" summary="Base">
       <created>1609676667100</created>
@@ -211,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613045225473</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Redirections">
+      <created>1613045312113</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1613045312113</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +250,7 @@
     <MESSAGE value="Base" />
     <MESSAGE value="La base" />
     <MESSAGE value="Layouts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Layouts" />
+    <MESSAGE value="Redirections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redirections" />
   </component>
 </project>
