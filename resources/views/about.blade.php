@@ -1,6 +1,6 @@
 @extends('layouts.template')
 
 @section('title')
-    l'évasion virtuelle
+    à propos de...
 @stop
 

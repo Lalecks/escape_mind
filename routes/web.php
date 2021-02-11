@@ -16,3 +16,26 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view("home");
 });
+
+Route::get('/histoire', function () {
+    return view("story");
+});
+
+Route::get('/classement', function () {
+    return view("rank");
+});
+
+Route::get('/contact', function () {
+    return view("contact");
+});
+
+Route::get('/a-propos', function () {
+    return view("about");
+});
+
+
+
+Route::any('{query}',
+    function() { return redirect('/'); })
+    ->where('query', '.*');
+//If the URL does not exist, redirection to homepage
