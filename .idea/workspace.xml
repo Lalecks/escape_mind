@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51a5ede6-42eb-4c45-bc09-88195096fe44" name="Default Changelist" comment="La base">
-      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    <list default="true" id="51a5ede6-42eb-4c45-bc09-88195096fe44" name="Default Changelist" comment="Layouts">
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/resources/views/layouts/template.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -176,7 +176,7 @@
       <updated>1609676298547</updated>
       <workItem from="1609676312026" duration="438000" />
       <workItem from="1609679956130" duration="246000" />
-      <workItem from="1613035861674" duration="2540000" />
+      <workItem from="1613035861674" duration="2678000" />
     </task>
     <task id="LOCAL-00001" summary="Base">
       <created>1609676667100</created>
@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613038060594</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Layouts">
+      <created>1613043869288</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613043869288</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +220,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Base" />
     <MESSAGE value="La base" />
-    <option name="LAST_COMMIT_MESSAGE" value="La base" />
+    <MESSAGE value="Layouts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Layouts" />
   </component>
 </project>
