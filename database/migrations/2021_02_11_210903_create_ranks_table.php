@@ -15,6 +15,8 @@ class CreateRanksTable extends Migration
     {
         Schema::create('ranks', function (Blueprint $table) {
             $table->id();
+            $table->integer('taskbar_adv')->default(0);
+            $table->time('playingtime')->default(0);
             $table->timestamps();
         });
     }

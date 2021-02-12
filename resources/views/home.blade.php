@@ -1,3 +1,14 @@
+@extends('layouts.template')
+
+@section('tab_title')
+    l'évasion virtuelle
+@stop
+
+@section('main_title')
+    homepage
+@stop
+
+
 @extends('layouts.app')
 
 @section('content')
@@ -21,3 +32,4 @@
     </div>
 </div>
 @endsection
+

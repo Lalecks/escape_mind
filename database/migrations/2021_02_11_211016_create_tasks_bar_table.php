@@ -15,6 +15,7 @@ class CreateTasksBarTable extends Migration
     {
         Schema::create('tasks_bar', function (Blueprint $table) {
             $table->id();
+            $table->integer('value')->default(0);
             $table->timestamps();
         });
     }
