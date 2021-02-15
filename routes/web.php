@@ -24,3 +24,7 @@ Route::any('{query}',
     function() { return redirect('/'); })
     ->where('query', '.*');
 //If the URL does not exist, redirection to homepage
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
