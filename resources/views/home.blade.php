@@ -1,23 +1,45 @@
-@extends('layouts.app')
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/docSlider.css')}}">
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+    <style>
+        section:nth-child(odd){
+            background-color: #eee;
+        }
+        .inner{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 2em;
+        }
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+    </style>
+    <title>Sample :: docSlider.js</title>
+</head>
+<body>
 
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="docSlider">
+    <section>
+        <div class="inner">Page1</div>
+    </section>
+    <section>
+        <div class="inner">Page2</div>
+    </section>
+    <section>
+        <div class="inner">Page3</div>
+    </section>
+    <section>
+        <div class="inner">Page4</div>
+    </section>
 </div>
-@endsection
+
+<script src="{{ URL::asset('css/docSlider.js')}}"></script>
+<script>docSlider.init();</script>
+</body>
+</html>
