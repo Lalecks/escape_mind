@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51a5ede6-42eb-4c45-bc09-88195096fe44" name="Default Changelist" comment="DB">
+    <list default="true" id="51a5ede6-42eb-4c45-bc09-88195096fe44" name="Default Changelist" comment="Supression des routes et pages">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/escape_mind.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/escape_mind.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_11_210903_create_ranks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_11_210903_create_ranks_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_11_210942_create_objects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_11_210942_create_objects_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_11_211016_create_tasks_bar_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_11_211016_create_tasks_bar_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/rank.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/story.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,9 +33,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/resources/views/layouts/template.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -190,7 +187,9 @@
       <workItem from="1609676312026" duration="438000" />
       <workItem from="1609679956130" duration="246000" />
       <workItem from="1613035861674" duration="13285000" />
-      <workItem from="1613125726593" duration="3806000" />
+      <workItem from="1613125726593" duration="3917000" />
+      <workItem from="1613289165587" duration="70000" />
+      <workItem from="1613410641291" duration="1934000" />
     </task>
     <task id="LOCAL-00001" summary="Base">
       <created>1609676667100</created>
@@ -255,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613064570960</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="DB">
+      <created>1613142586030</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1613142586031</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +287,8 @@
     <MESSAGE value="CSS" />
     <MESSAGE value="Je ne touche plus au CSS" />
     <MESSAGE value="DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB" />
+    <MESSAGE value="Supression des routes et pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Supression des routes et pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
