@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="shortcut icon" type="image/ico" href="" />
@@ -16,6 +16,6 @@
             <li><a href="#">A propos</a></li>
         </ul>
     </nav>
-    <script src="{{ asset('css/slide.js') }}"></script>
+    <script src="{{ asset('js/slide.js') }}"></script>
 </body>
 </html>
