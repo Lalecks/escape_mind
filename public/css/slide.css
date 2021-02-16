@@ -10,10 +10,15 @@ ul {
 
 body{
     height: 100vh;
+    overflow: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .navmenu{
-    position: absolute;
+    position: fixed;
     top:50%;
     transform: translateY(-50%);
 }
@@ -51,7 +56,7 @@ body{
 .navmenu ul li a:before{
     content:"";
     position:absolute;
-    background: white;
+    background: -moz-default-background-color;
     width: 18px;
     height: 18px;
     left: -42px;
@@ -68,4 +73,26 @@ body{
 
 .navmenu ul li a.active::before {
     background: #1b4b72;
+}
+
+div{
+    height: 100%;
+    width: 100%;
+    display:inline-block;
+}
+
+#home{
+    background:grey;
+}
+#story{
+    background:goldenrod;
+}
+#rank{
+    background: cornflowerblue;
+}
+#contact{
+    background: darkseagreen;
+}
+#about{
+    background: indianred;
 }

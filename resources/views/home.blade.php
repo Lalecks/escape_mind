@@ -9,13 +9,30 @@
 <body>
     <nav class="navmenu">
         <ul>
-            <li><a href="#" class="active">Accueil</a></li>
-            <li><a href="#">Histoire</a></li>
-            <li><a href="#">Classement</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">A propos</a></li>
+            <li><a href="#home" class="active">Accueil</a></li>
+            <li><a href="#story">Histoire</a></li>
+            <li><a href="#rank">Classement</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">A propos</a></li>
         </ul>
     </nav>
+    <div id="home">
+
+    </div>
+    <div id="story">
+
+    </div>
+    <div id="rank">
+
+    </div>
+    <div id="contact">
+
+    </div>
+    <div id="about">
+
+    </div>
+
+
     <script src="{{ asset('js/slide.js') }}"></script>
 </body>
 </html>
