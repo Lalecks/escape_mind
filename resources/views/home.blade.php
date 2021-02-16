@@ -7,6 +7,7 @@
     <title> Escape Mind - website </title>
 </head>
 <body>
+
     <nav class="navmenu">
         <ul>
             <li><a href="#home" class="active">Accueil</a></li>
@@ -14,6 +15,7 @@
             <li><a href="#rank">Classement</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">A propos</a></li>
+
         </ul>
     </nav>
     <div id="home">
@@ -34,5 +36,6 @@
 
 
     <script src="{{ asset('js/slide.js') }}"></script>
+
 </body>
 </html>
