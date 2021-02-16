@@ -7,10 +7,10 @@
     <title> Escape Mind - website </title>
 </head>
 <body>
-
-    <nav class="navmenu">
+    <nav class="navbar">
+        <div id="bar"></div>
         <ul>
-            <li><a href="#home" class="active">Accueil</a></li>
+            <li><a id="test" href="#home" class="active">Accueil</a></li>
             <li><a href="#story">Histoire</a></li>
             <li><a href="#rank">Classement</a></li>
             <li><a href="#contact">Contact</a></li>

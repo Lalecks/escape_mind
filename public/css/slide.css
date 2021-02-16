@@ -21,23 +21,22 @@ body,html{
 }
 
 
-
-.navmenu{
+.navbar{
     position: fixed;
     top:50%;
     transform: translateY(-50%);
 }
 
-.navmenu ul {
+.navbar ul {
     padding-left: 50px;
     position:relative;
 }
 
-.navmenu ul::after{
-    content:"";
+#bar{
+    content:"test";
     position:absolute;
     width:3px;
-    height: calc(100% - 58px);
+    /*height:calc(100% - 58px);*/
     left: 40px;
     top: 0;
     background: #1b4b72;
@@ -45,20 +44,23 @@ body,html{
     margin-top: 29px;
 }
 
-.navmenu ul li {
+
+.navbar ul li {
     padding: 30px 0 30px 20px;
 }
 
-.navmenu ul li a {
+.navbar ul li a {
     text-decoration: none;
     position: relative;
     color: #1b4b72;
     font-size: 1.5rem;
     line-height: 1rem;
     font-weight: 500;
+    transition: color 500ms;
+
 }
 
-.navmenu ul li a:before{
+.navbar ul li a:before{
     content:"";
     position:absolute;
     background: white;
@@ -69,15 +71,23 @@ body,html{
     transform: translateY(-50%);
     border-radius: 50px;
     border: 4px solid #1b4b72;
-    transition: background 250ms;
+    transition: background 500ms;
 }
 
-.navmenu ul li a.active{
+.navbar ul li a.active{
     font-weight: 700;
 }
 
-.navmenu ul li a.active::before {
+.navbar ul li a.active::before {
     background: #1b4b72;
+}
+
+.navbar ul li a:hover {
+    color: #4c110f;
+}
+
+.navbar ul li a:hover:before {
+    background: #4c110f;
 }
 
 div{
