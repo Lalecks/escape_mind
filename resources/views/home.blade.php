@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="shortcut icon" type="image/ico" href="" />
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-    <title> Escape Mind - website </title>
-</head>
+@extends('layouts.template')
 
-<body>
+@section('style')
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+@endsection
+
+@section('content')
     <nav class="navbar">
         <div id="bar_fix"></div>
         <div id="bar_anim"></div>
@@ -20,8 +17,9 @@
 
         </ul>
     </nav>
+
     <section id="home">
-        <div id ="home_box"></div>
+        <div id ="home_box">desfrgthyu</div>
     </section>
     <section id="story">
 
@@ -35,9 +33,5 @@
     <section id="about">
 
     </section>
-
-
-    <script src="{{ asset('js/scrollBar.js') }}"></script>
-
-</body>
-</html>
+    
+@endsection

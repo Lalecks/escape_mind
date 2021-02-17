@@ -1,4 +1,4 @@
-@extends('errors::layout')
+@extends('errors::errorLayout')
 
 @section('title', __('Service Unavailable'))
 @section('code', '503')
