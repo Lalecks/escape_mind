@@ -21,8 +21,9 @@ Route::get('/redirect', 'LoaderController@redirect');
 Route::get('/', function () {
     return view("home");
 });
-Route::get('/home', 'HomeController@index')->name('home');
 // Pages de l'interface jeu
+Route::get('/jeu', 'GameController@game');
+
 
 Auth::routes();
 

@@ -78,16 +78,16 @@
         </nav>
 --}}
 
-        <div id="pjax-container" >
+        <div id="pjax-container" class="py-4">
             @yield('content')
         </div>
 
 
 
     <!--====== Javascripts & Jquery ======-->
-    {{--<script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
     <script src="{{ asset('js/jquery.pjax.js') }}"></script>
-    <script src="{{ asset('js/divers.js') }}"></script>--}}
+    <script src="{{ asset('js/divers.js') }}"></script>
 
     <script src="{{ asset('js/scrollBar.js') }}"></script>
 </body>
