@@ -6,6 +6,7 @@
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <title> Escape Mind - website </title>
 </head>
+
 <body>
     <nav class="navbar">
         <div id="bar_fix"></div>
