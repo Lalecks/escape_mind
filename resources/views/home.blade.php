@@ -1,6 +1,5 @@
 @extends('layouts.template')
 
-
 @section('content')
     <div class="index">
         <nav class="navbar">
@@ -16,20 +15,20 @@
             </ul>
         </nav>
 
-        <section id="home">
-            <div id ="home_box">home</div>
-        </section>
-        <section id="story">
-            <div id ="story_box">home</div>
-        </section>
-        <section id="rank">
-            <div id ="rank_box">home</div>
-        </section>
-        <section id="contact">
-            <div id ="contact_box">home</div>
-        </section>
-        <section id="about">
-            <div id ="about_box">home</div>
-        </section>
+        <div id="home">
+            <div id ="home_box"></div>
+        </div>
+        <div id="story">
+            <div id ="story_box"></div>
+        </div>
+        <div id="rank">
+            <div id ="rank_box"></div>
+        </div>
+        <div id="contact">
+            <div id ="contact_box"></div>
+        </div>
+        <div id="about">
+            <div id ="about_box"></div>
+        </div>
     </div>
 @endsection

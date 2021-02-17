@@ -77,10 +77,10 @@
             </div>
         </nav>
 --}}
-        @yield('content')
-        <main id="pjax-container" >
 
-        </main>
+        <div id="pjax-container" >
+            @yield('content')
+        </div>
 
 
 
