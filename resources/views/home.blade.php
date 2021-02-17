@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="shortcut icon" type="image/ico" href="" />
-    <link href="{{ asset('css/slide.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <title> Escape Mind - website </title>
 </head>
 <body>
@@ -20,7 +20,7 @@
         </ul>
     </nav>
     <div id="home">
-
+        <div id ="home_box"></div>
     </div>
     <div id="story">
 
