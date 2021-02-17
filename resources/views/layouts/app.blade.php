@@ -77,16 +77,17 @@
             </div>
         </nav>
 --}}
-        <h1>blabla</h1>
-        <main id="pjax-container">
-            @yield('content')
+        @yield('content')
+        <main id="pjax-container" >
+
         </main>
 
 
+
     <!--====== Javascripts & Jquery ======-->
-    {{-- <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
+    {{--<script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
     <script src="{{ asset('js/jquery.pjax.js') }}"></script>
-    <script src="{{ asset('js/divers.js') }}"></script> --}}
+    <script src="{{ asset('js/divers.js') }}"></script>--}}
 
     <script src="{{ asset('js/scrollBar.js') }}"></script>
 </body>
