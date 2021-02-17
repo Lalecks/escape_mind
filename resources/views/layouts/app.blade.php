@@ -16,7 +16,7 @@
     {{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
     <!-- Stylesheets -->
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
-    @yield('style')
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <!-- Scripts -->
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
 </head>
@@ -47,7 +47,7 @@
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
-                            
+
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
@@ -77,9 +77,11 @@
             </div>
         </nav>
 --}}
+        <h1>blabla</h1>
         <main id="pjax-container">
             @yield('content')
         </main>
+
 
     <!--====== Javascripts & Jquery ======-->
     {{-- <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
