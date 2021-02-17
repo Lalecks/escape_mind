@@ -32,14 +32,27 @@ body,html{
     position:relative;
 }
 
-#bar{
-    content:"test";
+#bar_fix{
+    content:"";
     position:absolute;
     width:3px;
-    /*height:calc(100% - 58px);*/
+    height:calc(100% - 58px);
     left: 40px;
     top: 0;
     background: #1b4b72;
+    z-index: -1;
+    margin-top: 29px;
+}
+
+
+#bar_anim{
+    content:"";
+    position:absolute;
+    width:6px;
+    height:calc(0% - 58px);
+    left: 38px;
+    top: 0;
+    background: #0e2539;
     z-index: -1;
     margin-top: 29px;
 }
@@ -76,18 +89,22 @@ body,html{
 
 .navbar ul li a.active{
     font-weight: 700;
+
+    color: #0e2539;
 }
 
 .navbar ul li a.active::before {
-    background: #1b4b72;
+    background: #0e2539;
+    left:-43px;
+    border: 5px solid #0e2539;
 }
 
 .navbar ul li a:hover {
-    color: #4c110f;
+    text-decoration: underline overline;
 }
 
 .navbar ul li a:hover:before {
-    background: #4c110f;
+
 }
 
 div{

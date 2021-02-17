@@ -8,7 +8,8 @@
 </head>
 <body>
     <nav class="navbar">
-        <div id="bar"></div>
+        <div id="bar_fix"></div>
+        <div id="bar_anim"></div>
         <ul>
             <li><a id="test" href="#home" class="active">Accueil</a></li>
             <li><a href="#story">Histoire</a></li>

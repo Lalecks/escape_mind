@@ -1,33 +1,19 @@
 const allItems = document.querySelectorAll(".navbar ul li a");
-const barre = document.getElementById("bar");
-
+const barre = document.getElementById("bar_anim");
 
 window.addEventListener('scroll',() => {
     const max_scroll = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = (window.scrollY / max_scroll).toPrecision(3);
-    const numitem = Math.floor(scrolled * (allItems.length-1));
+    const numitem = Math.floor(scrolled * (allItems.length-1)+(0.3*scrolled));
 
-    for (let i = 0; i <allItems.length; i++){
+    for (let i = numitem; i <allItems.length; i++){
         allItems[i].classList.remove("active");
     }
-    allItems[numitem].classList.add("active");
-    barre.style.height="calc(" + (scrolled*100).toString() + "% - 58px)";
+    for (let i = 0; i <=numitem; i++){
+        allItems[i].classList.add("active");
+    }
 
+    barre.style.height="calc(" + (scrolled*100).toString() + "% - " + (scrolled*59) + "px)";
 })
-
-
-
-
-//.navbar ul::after{
-//     content:"";
-//     position:absolute;
-//     width:3px;
-//     height: calc(55% - 58px);
-//     left: 39.5px;
-//     top: 0;
-//     background: #1b4b72;
-//     z-index: -1;
-//     margin-top: 29px;
-// }
 
 
