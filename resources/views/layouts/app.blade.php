@@ -1,23 +1,23 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" xmlns:og='http://ogp.me/ns#' dir="ltr">
 <head>
+    <!-- Encodage -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='apple-mobile-web-app-capable' content='yes' />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
+    <!-- Référencement -->
+    <title>{{ config('app.name', 'escape_mind') }}</title>
+     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
+    <!-- Stylesheets -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body>
     <div id="app">
@@ -75,9 +75,14 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main id="pjax-container">
             @yield('content')
         </main>
     </div>
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.pjax.js') }}"></script>
+    <script src="{{ asset('js/divers.js') }}"></script>
 </body>
 </html>

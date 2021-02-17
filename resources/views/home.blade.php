@@ -36,7 +36,7 @@
     </div>
 
 
-    <script src="{{ asset('js/slide.js') }}"></script>
+    <script src="{{ asset('js/scrollBar.js') }}"></script>
 
 </body>
 </html>
