@@ -19,21 +19,21 @@
 
         </ul>
     </nav>
-    <div id="home">
+    <section id="home">
         <div id ="home_box"></div>
-    </div>
-    <div id="story">
+    </section>
+    <section id="story">
 
-    </div>
-    <div id="rank">
+    </section>
+    <section id="rank">
 
-    </div>
-    <div id="contact">
+    </section>
+    <section id="contact">
 
-    </div>
-    <div id="about">
+    </section>
+    <section id="about">
 
-    </div>
+    </section>
 
 
     <script src="{{ asset('js/scrollBar.js') }}"></script>
