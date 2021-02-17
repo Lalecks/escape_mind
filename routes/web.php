@@ -14,17 +14,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Page d'attente
+Route::get('/redirect', 'LoaderController@redirect');
+// Page de l'interface web
 Route::get('/', function () {
     return view("home");
 });
+Route::get('/home', 'HomeController@index')->name('home');
+// Pages de l'interface jeu
 
 Auth::routes();
 
+//If the URL does not exist, redirection to homepage
 Route::any('{query}',
     function() { return redirect('/'); })
     ->where('query', '.*');
-//If the URL does not exist, redirection to homepage
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
