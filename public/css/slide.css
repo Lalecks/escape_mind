@@ -1,3 +1,5 @@
+/* Code CSS de la barre de navigation et de son tremblement */
+
 * {
     margin:0;
     padding:0;
@@ -25,6 +27,17 @@ body,html{
     position: fixed;
     top:50%;
     transform: translateY(-50%);
+    animation: shake 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateY(-50%) translateX(0%) rotate(0deg); }
+    20% { transform: translateY(-49%) translateX(7%) rotate(0.5deg); }
+    40% { transform: translateY(-48%) translateX(2%) rotate(0.5deg); }
+    60% { transform: translateY(-49%) translateX(-7%) rotate(0deg); }
+    80% { transform: translateY(-50%) translateX(-3%) rotate(0.5deg); }
+    100% { transform: translateY(-50%) translateX(0%) rotate(0deg); }
 }
 
 .navbar ul {
@@ -89,7 +102,6 @@ body,html{
 
 .navbar ul li a.active{
     font-weight: 700;
-
     color: #0e2539;
 }
 

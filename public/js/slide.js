@@ -1,3 +1,5 @@
+/* Code js de l'animation de la barre de navigation */
+
 const allItems = document.querySelectorAll(".navbar ul li a");
 const barre = document.getElementById("bar_anim");
 
