@@ -11,15 +11,15 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Référencement -->
     <title>{{ config('app.name', 'escape_mind') }}</title>
-     <!-- Fonts -->
-    {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com"> --}}
-    {{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
+     <!-- Icônes -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- Stylesheets -->
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/main.css') }}" rel="stylesheet"> --}}
     <link href="{{ asset('css/sass/app.css') }}" rel="stylesheet">
     <!-- Scripts -->
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+
 </head>
 <body>
 {{--

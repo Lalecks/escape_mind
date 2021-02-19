@@ -1,7 +1,6 @@
 @extends('layouts.template')
 
 @section('content')
-
     <nav class="navbar">
         <div id="bar_fix"></div>
         <div id="bar_anim"></div>
@@ -9,19 +8,26 @@
             <li><a href="#home" class="active">Accueil</a></li>
             <li><a href="#story">Histoire</a></li>
             <li><a href="#rank">Classement</a></li>
+            <li><a href="#about">À propos</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">A propos</a></li>
 
         </ul>
     </nav>
     <div class="index">
+
         <div id="home">
-            <div id ="home_box">
+            <video class="bg-video" playsinline="" autoplay="" muted="" loop="">
+                <source src="{{ asset('ressources/technology.mp4') }}" type="video/mp4">
+            </video>
 
-                <a class="btn" id="play" href="/jeu" data-pjax>Jouer</a>
-
-            </div>
+            <div class="video-overlay">
+                <div id ="home_box">
+                    <a class="btn btn_bordure" id="play" href="/jeu" data-pjax>Trailer</a>
+                    <a class="btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
+                </div>
+            </div> 
         </div>
+        
         <div id="story">
             <div id ="story_box"></div>
         </div>

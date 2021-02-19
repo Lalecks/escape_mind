@@ -1,14 +1,23 @@
+// Bouton générale
 .btn { 
-    display: inline-block;
-    background: $blue;
+    font-family: $font-logo;
+    text-transform: lowercase;
+    border: solid 1rem;
+    border-radius: 30rem;
+    padding: 1rem 3.5rem;
     color: white;
-    padding: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-bottom: 2px solid darken($blue, 50%);
+    display: inline-block;    
+    border: .2rem solid darken($black, 50%);
     transition: background-color 0.3s ease;
+}
 
+// Style de bouton
+.btn_bordure {
     &:hover {
         background: darken($blue, 50%);
     }
+}
+
+.btn_fond {
+    background-color: $black;
 }
