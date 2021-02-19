@@ -15,6 +15,6 @@ window.addEventListener('scroll',() => {
         allItems[i].classList.add("active");
     }
 
-    barre.style.height="calc(" + (scrolled*100).toString() + "% - " + (scrolled*170) + "px + 130px)";
+    barre.style.height="calc(" + (scrolled*100).toString() + "% - " + (scrolled*19) + "% + 19%)";
 })
 
