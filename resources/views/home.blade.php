@@ -18,7 +18,7 @@
         <div id="home">
             <div id ="home_box">
 
-                <a id="play" href="/jeu" data-pjax>Jouer</a>
+                <a class="btn" id="play" href="/jeu" data-pjax>Jouer</a>
 
             </div>
         </div>

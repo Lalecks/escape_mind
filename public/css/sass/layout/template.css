@@ -12,7 +12,7 @@ Error: Undefined variable: "$body-bg".
 10:     margin: 0;
 11:     padding: 0 !important;
 12:     height: 100%;
-13:     font-display: swap;
+13:     font-family: $font-body;
 
 Backtrace:
 resources/sass/layout/template.scss:8
@@ -73,4 +73,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$body-bg\".\A         on line 8 of resources/sass/layout/template.scss\A \A 3:     width: 100%;\A 4:     font-size: 1rem;\A 5: }\A 6: \A 7: body {\A 8:     background-color: $body-bg !important;\A 9:     color: $white !important;\A 10:     margin: 0;\A 11:     padding: 0 !important;\A 12:     height: 100%;\A 13:     font-display: swap;"; }
+  content: "Error: Undefined variable: \"$body-bg\".\A         on line 8 of resources/sass/layout/template.scss\A \A 3:     width: 100%;\A 4:     font-size: 1rem;\A 5: }\A 6: \A 7: body {\A 8:     background-color: $body-bg !important;\A 9:     color: $white !important;\A 10:     margin: 0;\A 11:     padding: 0 !important;\A 12:     height: 100%;\A 13:     font-family: $font-body;"; }
