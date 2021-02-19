@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 // Page d'attente
-Route::get('/redirect', 'LoaderController@redirect');
+//Route::get('/redirect', 'LoaderController@redirect');
 // Page de l'interface web
 Route::get('/', function () {
     return view("home");

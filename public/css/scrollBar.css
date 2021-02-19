@@ -12,23 +12,23 @@ body,html{
 
 .navbar{
     position: fixed;
-    top:50%;
-    transform: translateY(-50%);
     animation: shake 20s;
     animation-iteration-count: infinite;
     z-index: 1;
+    transform: translateY(0px); /*deplacement total*/
 }
 
-@keyframes shake {
-    0% { transform: translateY(-50%) translateX(0%) rotate(0deg); }
-    20% { transform: translateY(-49%) translateX(7%) rotate(0.5deg); }
-    40% { transform: translateY(-48%) translateX(2%) rotate(0.5deg); }
-    60% { transform: translateY(-49%) translateX(-7%) rotate(0deg); }
-    80% { transform: translateY(-50%) translateX(-3%) rotate(0.5deg); }
-    100% { transform: translateY(-50%) translateX(0%) rotate(0deg); }
-}
+/*@keyframes shake {
+    0% { transform: translateX(0%) rotate(0deg); }
+    20% { transform: translateY(-1%) translateX(7%) rotate(0.5deg); }
+    40% { transform: translateY(-2%) translateX(2%) rotate(0.5deg); }
+    60% { transform: translateY(-1%) translateX(-7%) rotate(0deg); }
+    80% { transform:  translateX(-3%) rotate(0.5deg); }
+    100% { transform: translateX(0%) rotate(0deg); }
+}*/
 
 .navbar ul {
+
     padding-left: 50px;
     position:relative;
 }
@@ -36,30 +36,29 @@ body,html{
 #bar_fix{
     content:"";
     position:absolute;
-    width:3px;
-    height:calc(100% - 58px);
-    left: 40px;
-    top: 0;
-    background: #1b4b72;
+    width:1px;
+    height:150%;
+    left: 40.5px;
+    background: white;
     z-index: -1;
-    margin-top: 29px;
+
 }
 
 
 #bar_anim {
     content: "";
     position: absolute;
-    width: 6px;
-    height: calc(0% - 58px);
-    left: 38px;
-    top: 0;
-    background: #0e2539;
+    width: 2px;
+    left: 40px;
+    height: 130px;
+    background: white;
     z-index: -1;
-    margin-top: 29px;
+
 }
 
 .navbar ul li {
-    padding: 30px 0 30px 20px;
+    margin: 120px 0 30px 20px;/*espacement liens*/
+    top:10px
 }
 
 .navbar ul li a {
@@ -90,6 +89,7 @@ body,html{
 .navbar ul li a.active{
     font-weight: 700;
     color: #0e2539;
+
 }
 
 .navbar ul li a.active::before {
