@@ -1,3 +1,14 @@
+// ScrollBar
+body, html{
+    scroll-behavior: smooth;
+    scrollbar-width:none; // firefox 
+}
+
+::-webkit-scrollbar { // Autres naviguateurs
+    display: none;
+}
+
+// Titres
 h1 {
     text-align: center;
     font-weight: bold !important;

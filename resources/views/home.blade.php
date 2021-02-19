@@ -10,7 +10,6 @@
             <li><a href="#rank">Classement</a></li>
             <li><a href="#about">À propos</a></li>
             <li><a href="#contact">Contact</a></li>
-
         </ul>
     </nav>
     <div class="index">
@@ -29,6 +28,9 @@
         </div>
         
         <div id="story">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
             <div id ="story_box"></div>
         </div>
         <div id="rank">
