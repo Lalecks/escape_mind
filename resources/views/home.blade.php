@@ -1,6 +1,7 @@
 @extends('layouts.template')
 
 @section('content')
+<div class="accueil">
     <nav class="navbar">
         <div id="bar_fix"></div>
         <div id="bar_anim"></div>
@@ -43,4 +44,5 @@
             <div id ="about_box"></div>
         </div>
     </div>
+</div>
 @endsection
