@@ -1,8 +1,28 @@
+//sass --watch resources/sass:public/css/sass --style compressed
+
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders+Display:wght@100&family=Gayathri:wght@100&display=swap');
 
 // Variables
-@import 'variables';
+@import 'base/variables';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import '~/bootstrap/scss/bootstrap';
+
+// Generic
+@import 'generic/reset.scss';
+@import 'generic/normalize.scss';
+
+// Layouts
+@import 'layout/template';
+@import 'layout/all';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/responsive';
+
+// Components
+@import 'components/button.scss';
+
+// Sections
+// @import 'sections/accueil';
+// @import 'sections/login';
