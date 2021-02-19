@@ -1,0 +1,11 @@
+div{
+    height: 100%;
+    width: 100%;
+}
+
+#blob{
+    fill: white;
+    opacity: 25%;
+    display:block;
+    margin:auto;
+}
