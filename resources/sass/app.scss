@@ -3,26 +3,38 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders+Display:wght@100&family=Gayathri:wght@100&display=swap');
 
-// Variables
+/*-------- Variables --------*/
 @import 'base/variables';
+@import 'base/mixins';
 
-// Bootstrap
+/*-------- Bootstrap --------*/
 // @import '~/bootstrap/scss/bootstrap';
 
-// Generic
+/*-------- Generic --------*/
 @import 'generic/reset.scss';
 @import 'generic/normalize.scss';
 
-// Layouts
+/*-------- Layouts --------*/
 @import 'layout/template';
 @import 'layout/all';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/responsive';
+// Web part
+@import 'layout/web/header';
+@import 'layout/web/footer';
+@import 'layout/web/sidebar';
+@import 'layout/web/responsive';
+// Game part
+@import 'layout/gameBar';
 
-// Components
+/*--------  Components --------*/
 @import 'components/button.scss';
 
-// Sections
-// @import 'sections/accueil';
+/*--------  Sections -------*/
 // @import 'sections/login';
+// Web part
+@import 'sections/web/home';
+@import 'sections/web/about';
+@import 'sections/web/rank';
+// Game part
+@import 'sections/game/room1';
+@import 'sections/game/room2';
+@import 'sections/game/room3';
