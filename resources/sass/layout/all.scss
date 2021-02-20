@@ -1,7 +1,10 @@
 // ScrollBar
 body, html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; // Scrollbar
     scrollbar-width:none; // firefox 
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar { // Autres naviguateurs

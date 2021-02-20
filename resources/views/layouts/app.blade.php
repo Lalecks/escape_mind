@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- Stylesheets -->
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
-    {{-- <link href="{{ asset('css/main.css') }}" rel="stylesheet"> --}}
     <link rel="prefetch" href="../game/room1.blade.php">
     <link href="{{ asset('css/sass/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
@@ -24,6 +23,20 @@
 
 </head>
 <body>
+
+    <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+            <svg height="30" width="30">
+            <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+        <div class="cursor__ball cursor__ball--small">
+            <svg height="10" width="10">
+            <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
+
 {{--
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -85,13 +98,12 @@
             @yield('content')
         </div>
 
-
-
     <!--====== Javascripts & Jquery ======-->
     <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
     <script src="{{ asset('js/jquery.pjax.js') }}"></script>
     <script src="{{ asset('js/divers.js') }}"></script>
-
     <script src="{{ asset('js/scrollBar.js') }}"></script>
+    <script src="{{ asset('js/mouse.js') }}"></script>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
 </body>
 </html>

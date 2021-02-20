@@ -6,11 +6,11 @@
         <div id="bar_fix"></div>
         <div id="bar_anim"></div>
         <ul>
-            <li><a href="#home" class="active">Accueil</a></li>
-            <li><a href="#story">Histoire</a></li>
-            <li><a href="#rank">Classement</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" class="hoverable active">Accueil</a></li>
+            <li><a href="#story"  class="hoverable">Histoire</a></li>
+            <li><a href="#rank" class="hoverable">Classement</a></li>
+            <li><a href="#about" class="hoverable">À propos</a></li>
+            <li><a href="#contact" class="hoverable">Contact</a></li>
         </ul>
     </nav>
     <div class="index">
@@ -22,8 +22,8 @@
 
             <div class="video-overlay">
                 <div id ="home_box">
-                    <a class="btn btn_bordure" id="play" href="/jeu" data-pjax>Trailer</a>
-                    <a class="btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
+                    <a class="hoverable btn btn_bordure " id="play" href="/jeu" data-pjax>Trailer</a>
+                    <a class="hoverable btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
                 </div>
             </div> 
         </div>

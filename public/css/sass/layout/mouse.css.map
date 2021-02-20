@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK,CACD,MAAM,CAAE,IAAI,CAEhB,OAAQ,CACJ,cAAc,CAAE,IAAI,CACpB,qBAAc,CACd,QAAQ,CAAE,KAAK,CACf,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACP,cAAc,CAAE,UAAU,CAC1B,OAAO,CAAE,IAAI,CACb,4BAAO,CACC,IAAI,CAAE,OAAO",
+"sources": ["../../../../resources/sass/layout/mouse.scss"],
+"names": [],
+"file": "mouse.css"
+}
