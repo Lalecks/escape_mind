@@ -1,23 +1,55 @@
 // Bouton générale
-.btn { 
+// *:before,
+// :after {
+//   content: '';
+// }
+
+.btn {
     font-family: $font-logo;
     text-transform: lowercase;
-    border: solid 1rem;
     border-radius: 30rem;
     padding: 1rem 3.5rem;
-    color: white;
+    color: $white;
     display: inline-block;    
-    border: .2rem solid darken($black, 50%);
-    transition: background-color 0.3s ease;
+    border: .2rem solid $black;
+    transition: background-color 0.3s ease; 
+ 
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    line-height: 100%;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: calc(-100% - 30px);
+        width: calc(100% + 20px);
+        height: 100%;
+        z-index: -1;
+        background-color: $white;
+        transform: skew(-22deg);
+        transition: all 800ms ease;
+    }
 }
 
-// Style de bouton
 .btn_bordure {
+    color: $black;
     &:hover {
-        background: darken($blue, 50%);
+        color: $white;
+        border: .2rem solid $white;
     }
 }
 
 .btn_fond {
-    background-color: $black;
+    color: $white;
+    background: darken($body-bg, 50%);
+    // border: inset white 0;
+    &:hover {
+        color: $body-bg;
+        &:before {
+            content: '';
+            left: -10px;
+        }
+    }
 }

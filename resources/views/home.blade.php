@@ -22,8 +22,8 @@
 
             <div class="video-overlay">
                 <div id ="home_box">
-                    <a class="hoverable btn btn_bordure " id="play" href="/jeu" data-pjax>Trailer</a>
-                    <a class="hoverable btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
+                    <a class="btn btn_bordure " id="play" href="/jeu" data-pjax>Trailer</a>
+                    <a class="btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
                 </div>
             </div> 
         </div>

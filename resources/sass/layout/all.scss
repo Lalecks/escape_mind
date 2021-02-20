@@ -5,6 +5,7 @@ body, html{
     display: flex;
     flex-wrap: wrap;
     overflow-x: hidden;
+    width: 100%;
 }
 
 ::-webkit-scrollbar { // Autres naviguateurs
