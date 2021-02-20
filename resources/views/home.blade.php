@@ -35,13 +35,13 @@
             <div id ="story_box"></div>
         </div>
         <div id="rank">
-            <div id ="rank_box"></div>
+            <div id ="rank_box">xxxx</div>
         </div>
         <div id="contact">
-            <div id ="contact_box"></div>
+            <div id ="contact_box">xxxxx</div>
         </div>
         <div id="about">
-            <div id ="about_box"></div>
+            <div id ="about_box">xxxxx</div>
         </div>
     </div>
 </div>

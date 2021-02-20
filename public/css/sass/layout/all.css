@@ -1,2 +1,2 @@
-body,html{scroll-behavior:smooth;scrollbar-width:none;display:flex;flex-wrap:wrap;overflow-x:hidden}::-webkit-scrollbar{display:none}h1{text-align:center;font-weight:bold !important;margin-bottom:2rem !important}
+body,html{scroll-behavior:smooth;scrollbar-width:none;display:flex;flex-wrap:wrap;overflow-x:hidden}::-webkit-scrollbar{display:none}h1{text-align:center;font-weight:bold !important;margin-bottom:2rem !important}a{color:white;text-decoration:none;-webkit-text-decoration-line:none;text-decoration-line:none}a:hover{-webkit-transition:0.4s;-o-transition:0.4s;transition:0.4s}
 /*# sourceMappingURL=all.css.map */
