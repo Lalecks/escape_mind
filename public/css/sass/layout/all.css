@@ -1,2 +1,2 @@
-body,html{display:flex;flex-wrap:wrap;overflow-x:hidden;width:100%}h1{text-align:center;font-weight:bold;margin-bottom:2rem}a{color:white;text-decoration:none;-webkit-text-decoration-line:none;text-decoration-line:none}a:hover{-webkit-transition:0.4s;-o-transition:0.4s;transition:0.4s}
+body,html{width:100%;display:flex;flex-wrap:wrap;overflow-x:hidden}h1{text-align:center;font-weight:bold;margin-bottom:2rem}a{color:white;text-decoration:none;-webkit-text-decoration-line:none;text-decoration-line:none}a:link{cursor:none}a:hover{-webkit-transition:0.4s;-o-transition:0.4s;transition:0.4s}img{max-width:100%;height:auto;-o-object-fit:contain;object-fit:contain}
 /*# sourceMappingURL=all.css.map */

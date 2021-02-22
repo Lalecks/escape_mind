@@ -1,4 +1,10 @@
-* {
+/**
+ *
+ * Programmation générique de base
+ *
+ * */
+ 
+ * {
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -7,28 +13,19 @@
 body {
     background-color: $body-bg !important;
     color: $white !important;
-    margin: 0;
-    padding: 0 !important;
-    height: 100%;
     font-family: $font-body;
     font-display: swap;
-    cursor: none;
-}
-
-html {
-    height: 100%;
-    width: 100%;
-    font-size: 1rem;
-}
-
-ul,
-li {
-    list-style-type: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    -o-object-fit: contain;
-    object-fit: contain;
+    margin: 0;
+    padding: 0 !important;
+    min-height: 100%;
+    cursor: none; // Retire le curseur
+    html {
+        max-width: 100%;
+        max-height: 100%;
+        font-size: 1rem;
+        ul, 
+        li {
+            list-style-type: none;
+        }
+    }
 }

@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$body-bg".
-        on line 8 of resources/sass/layout/template.scss
+        on line 14 of resources/sass/layout/template.scss
 
-3:     padding:0;
-4:     box-sizing: border-box;
-5: }
-6: 
-7: body {
-8:     background-color: $body-bg !important;
-9:     color: $white !important;
-10:     margin: 0;
-11:     padding: 0 !important;
-12:     height: 100%;
-13:     font-family: $font-body;
+9:     padding:0;
+10:     box-sizing: border-box;
+11: }
+12: 
+13: body {
+14:     background-color: $body-bg !important;
+15:     color: $white !important;
+16:     font-family: $font-body;
+17:     font-display: swap;
+18:     margin: 0;
+19:     padding: 0 !important;
 
 Backtrace:
-resources/sass/layout/template.scss:8
+resources/sass/layout/template.scss:14
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
@@ -73,4 +73,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$body-bg\".\A         on line 8 of resources/sass/layout/template.scss\A \A 3:     padding:0;\A 4:     box-sizing: border-box;\A 5: }\A 6: \A 7: body {\A 8:     background-color: $body-bg !important;\A 9:     color: $white !important;\A 10:     margin: 0;\A 11:     padding: 0 !important;\A 12:     height: 100%;\A 13:     font-family: $font-body;"; }
+  content: "Error: Undefined variable: \"$body-bg\".\A         on line 14 of resources/sass/layout/template.scss\A \A 9:     padding:0;\A 10:     box-sizing: border-box;\A 11: }\A 12: \A 13: body {\A 14:     background-color: $body-bg !important;\A 15:     color: $white !important;\A 16:     font-family: $font-body;\A 17:     font-display: swap;\A 18:     margin: 0;\A 19:     padding: 0 !important;"; }

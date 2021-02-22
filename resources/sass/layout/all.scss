@@ -1,9 +1,15 @@
-// ScrollBar
+/**
+ *
+ *  Programmation générique adaptée au projet
+ *
+ * */
+
+// Corps
 body, html{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     overflow-x: hidden;
-    width: 100%;
 }
 
 // Titres
@@ -19,9 +25,20 @@ a {
     text-decoration: none;
     -webkit-text-decoration-line: none;
     text-decoration-line: none;
-        &:hover {
+    &:link {
+        cursor: none; // Retire le curseur
+    }
+    &:hover {
         -webkit-transition: 0.4s;
         -o-transition: 0.4s;
         transition: 0.4s;
     }
+}
+
+// Ratio image
+img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
 }

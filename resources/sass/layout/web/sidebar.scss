@@ -1,15 +1,21 @@
-/* Code CSS de la barre de navigation et de son tremblement */
+/**
+ *
+ * Barre de navigation et de son tremblement
+ *
+ * */
 
 // ScrollBar
-body,html{
+body, 
+html{
     scroll-behavior: smooth;
     scrollbar-width:none; // firefox
-    overflow-x: hidden;
 }
-::-webkit-scrollbar{ // autres navigateur
+::-webkit-scrollbar { // autres navigateur
     display: none;
 }
-.navbar{
+
+// Navbar
+.navbar {
     position: fixed;
     animation: shake 20s;
     animation-iteration-count: infinite;
@@ -17,76 +23,72 @@ body,html{
     ul {
         padding-left: 50px;
         position:relative;
+        li {
+            margin: 10vh 0 0 20px; //espacement liens
+            transform: translateY(50%);
+            a {
+                text-decoration: none;
+                position: relative;
+                color: white;
+                font-size: 2rem;
+                font-weight: 500;
+                transition: color 500ms;
+            }
+            a:before{
+                content:"";
+                position:absolute;
+                background: transparent;
+                width: 1rem;
+                height: 1rem;
+                left: -42px;
+                top: 50%;
+                transform: translateY(-75%);
+                border-radius: 50px;
+                border: 4px solid white;
+                transition: background 500ms;
+            }
+            .active{
+                font-weight: 700;
+                color: white;
+            }
+            .active::before {
+                background: white;
+                left:-43px;
+                border: 5px solid white;
+            }
+        }
+    }
+    #bar_fix{
+        content:"";
+        position:absolute;
+        width:1px;
+        height:100vh;
+        left: 39.5px;
+        background: white;
+        z-index: -1;
+        opacity: 50%;
+    }
+    #bar_anim {
+        content: "";
+        position: absolute;
+        width: 2px;
+        left: 39px;
+        height: 19%;
+        background: white;
+        z-index: -1;
     }
 }
 
-/*@keyframes shake {
-    0% { transform: translateY(0%) }
-    20% { transform: translateY(-1%) }
-    40% { transform: translateY(-2%)  }
-    60% { transform: translateY(-3%) }
-    80% { transform: translateY(-1%) }
-    100% { transform: translateY(0%) }
-}*/
+// .navbar ul li a:hover {
+//     text-decoration: underline overline;
+// }
 
- .navbar ul {
-    padding-left: 50px;
-    position:relative;
-}
-#bar_fix{
-    content:"";
-    position:absolute;
-    width:1px;
-    height:100vh;
-    left: 39.5px;
-    background: white;
-    z-index: -1;
-    opacity: 50%;
-}
-
-#bar_anim {
-    content: "";
-    position: absolute;
-    width: 2px;
-    left: 39px;
-    height: 19%;
-    background: white;
-    z-index: -1;
-}
-.navbar ul li {
-    margin: 10vh 0 0 20px; //espacement liens
-    transform: translateY(50%);
-}
-.navbar ul li a {
-    text-decoration: none;
-    position: relative;
-    color: white;
-    font-size: 2rem;
-    font-weight: 500;
-    transition: color 500ms;
-}
-.navbar ul li a:before{
-    content:"";
-    position:absolute;
-    background: transparent;
-    width: 1rem;
-    height: 1rem;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-75%);
-    border-radius: 50px;
-    border: 4px solid white;
-    transition: background 500ms;
-}
-.navbar ul li a.active{
-    font-weight: 700;
-    color: white;
-}
-.navbar ul li a.active::before {
-    background: white;
-    left:-43px;
-    border: 5px solid white;
-}
-.navbar ul li a:hover {
-    text-decoration: underline overline;
-}
+// Effet de flottement 
+// @keyframes shake {
+//     0% { transform: translateY(0%) }
+//     20% { transform: translateY(-1%) }
+//     40% { transform: translateY(-2%)  }
+//     60% { transform: translateY(-3%) }
+//     80% { transform: translateY(-1%) }
+//     100% { transform: translateY(0%) }
+// }
