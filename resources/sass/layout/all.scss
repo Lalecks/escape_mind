@@ -1,31 +1,25 @@
 // ScrollBar
 body, html{
-    scroll-behavior: smooth; // Scrollbar
-    scrollbar-width:none; // firefox 
     display: flex;
     flex-wrap: wrap;
     overflow-x: hidden;
     width: 100%;
 }
 
-::-webkit-scrollbar { // Autres naviguateurs
-    display: none;
-}
-
 // Titres
 h1 {
     text-align: center;
-    font-weight: bold !important;
-    margin-bottom: 2rem !important;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
 
+// Liens
 a {
     color: white;
     text-decoration: none;
     -webkit-text-decoration-line: none;
     text-decoration-line: none;
         &:hover {
-    //     color: $orange;
         -webkit-transition: 0.4s;
         -o-transition: 0.4s;
         transition: 0.4s;

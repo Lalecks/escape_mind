@@ -35,7 +35,7 @@
             <div id ="story_box"></div>
         </div>
         <div id="rank">
-            <div id ="rank_box">xxxx</div>
+            <div id ="rank_box">rank</div>
         </div>
         <div id="contact">
             <div id ="contact_box">xxxxx</div>

@@ -28,15 +28,15 @@
 
 /*--------  Components --------*/
 @import 'components/button.scss';
-// @import 'components/glassmorphism.scss';
+@import 'components/glassmorphism.scss';
 
 // /*--------  Sections --------*/
 // // @import 'sections/login';
 // @import 'sections/loader';
 // // Web part
-// @import 'sections/web/home';
-// @import 'sections/web/about';
-// @import 'sections/web/rank';
+@import 'sections/web/home';
+@import 'sections/web/about';
+@import 'sections/web/rank';
 // // Game part
 // @import 'sections/game/room1';
 // @import 'sections/game/room2';

@@ -1,19 +1,23 @@
 /* Code CSS de la barre de navigation et de son tremblement */
+
+// ScrollBar
 body,html{
     scroll-behavior: smooth;
     scrollbar-width:none; // firefox
 }
-
 ::-webkit-scrollbar{ // autres navigateur
     display: none;
 }
-
 
 .navbar{
     position: fixed;
     animation: shake 20s;
     animation-iteration-count: infinite;
     z-index: 1;
+    ul {
+        padding-left: 50px;
+        position:relative;
+    }
 } 
 
 /*@keyframes shake {
@@ -24,12 +28,6 @@ body,html{
     80% { transform: translateY(-1%) }
     100% { transform: translateY(0%) }
 }*/
-
-.navbar ul {
-
-    padding-left: 50px;
-    position:relative;
-}
 
 #bar_fix{
     content:"";
@@ -42,7 +40,6 @@ body,html{
     opacity: 50%;
 
 }
-
 
 #bar_anim {
     content: "";
@@ -99,6 +96,3 @@ body,html{
 .navbar ul li a:hover {
     text-decoration: underline overline;
 }
-
-
-

@@ -46,25 +46,29 @@
     // }
 }
 
+// .accueil div {
+//     padding:10%;
+// }
 
-    .index div {
-        padding:10%;
-        #story{
-        background:goldenrod;
-    }
-    #rank{
-        background: cornflowerblue;
-    }
-    #contact{
-        background: darkseagreen;
-    }
-    #about{
-        background: indianred;
-    }
+#home{
+    background:grey;
+    color: red;
+}
+#story{
+    background:goldenrod;
+}
+.accueil #rank{
+    background: cornflowerblue;
+}
+#contact{
+    background: darkseagreen;
+}
+#about{
+    background: indianred;
+}
 
-    .index div div {
-        position:relative;
-        background: white;
-        opacity: 0.5;
-    }
-    }
+// .index div div {
+//     position:relative;
+//     background: white;
+//     opacity: 0.5;
+// }
