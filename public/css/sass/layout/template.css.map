@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 "version": 3,
 "mappings": "",
@@ -5,3 +6,6 @@
 "names": [],
 "file": "template.css"
 }
+=======
+{"version":3,"sourceRoot":"","sources":["../../../../resources/sass/layout/template.scss"],"names":[],"mappings":"AAAA,EACI,SACA,UACA,sBAcJ,KACI,YACA,WACA,eAGJ,MAEI,qBAGJ,IACI,eACA,YACA,sBACA","file":"template.css"}
+>>>>>>> 2086a183a2e9286524cccddb5907eb1315a15f58

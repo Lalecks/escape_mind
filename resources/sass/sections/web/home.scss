@@ -2,7 +2,8 @@
     div{
         height: 100vh;
         width: 100vw;
-    }    
+    }
+
     /*----------------- Accueil -----------------*/
     #home {
         text-align: center;
@@ -50,25 +51,24 @@
 //     padding:10%;
 // }
 
-#home{
-    background:grey;
-    color: red;
-}
-#story{
+.index div {
+    padding:10%;
+    #story{
     background:goldenrod;
-}
-.accueil #rank{
-    background: cornflowerblue;
-}
-#contact{
-    background: darkseagreen;
-}
-#about{
-    background: indianred;
-}
+    }
+    #rank{
+        background: cornflowerblue;
+    }
+    #contact{
+        background: darkseagreen;
+    }
+    #about{
+        background: indianred;
+    }
 
-// .index div div {
-//     position:relative;
-//     background: white;
-//     opacity: 0.5;
-// }
+    .index div div {
+        position:relative;
+        background: white;
+        opacity: 0.5;
+    }
+}

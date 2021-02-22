@@ -4,11 +4,11 @@
 body,html{
     scroll-behavior: smooth;
     scrollbar-width:none; // firefox
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar{ // autres navigateur
     display: none;
 }
-
 .navbar{
     position: fixed;
     animation: shake 20s;
@@ -18,7 +18,7 @@ body,html{
         padding-left: 50px;
         position:relative;
     }
-} 
+}
 
 /*@keyframes shake {
     0% { transform: translateY(0%) }
@@ -29,6 +29,10 @@ body,html{
     100% { transform: translateY(0%) }
 }*/
 
+ .navbar ul {
+    padding-left: 50px;
+    position:relative;
+}
 #bar_fix{
     content:"";
     position:absolute;
@@ -38,7 +42,6 @@ body,html{
     background: white;
     z-index: -1;
     opacity: 50%;
-
 }
 
 #bar_anim {
@@ -49,14 +52,11 @@ body,html{
     height: 19%;
     background: white;
     z-index: -1;
-
 }
-
 .navbar ul li {
     margin: 10vh 0 0 20px; //espacement liens
     transform: translateY(50%);
 }
-
 .navbar ul li a {
     text-decoration: none;
     position: relative;
@@ -64,9 +64,7 @@ body,html{
     font-size: 2rem;
     font-weight: 500;
     transition: color 500ms;
-
 }
-
 .navbar ul li a:before{
     content:"";
     position:absolute;
@@ -80,19 +78,15 @@ body,html{
     border: 4px solid white;
     transition: background 500ms;
 }
-
 .navbar ul li a.active{
     font-weight: 700;
     color: white;
-
 }
-
 .navbar ul li a.active::before {
     background: white;
     left:-43px;
     border: 5px solid white;
 }
-
 .navbar ul li a:hover {
     text-decoration: underline overline;
 }
