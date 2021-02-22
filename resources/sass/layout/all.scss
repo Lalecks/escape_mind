@@ -1,16 +1,3 @@
-// ScrollBar
-body, html{
-    scroll-behavior: smooth; // Scrollbar
-    scrollbar-width:none; // firefox 
-    display: flex;
-    flex-wrap: wrap;
-    overflow-x: hidden;
-    width: 100%;
-}
-
-::-webkit-scrollbar { // Autres naviguateurs
-    display: none;
-}
 
 // Titres
 h1 {
@@ -25,7 +12,7 @@ a {
     -webkit-text-decoration-line: none;
     text-decoration-line: none;
         &:hover {
-    //     color: $orange;
+         //color: $orange;
         -webkit-transition: 0.4s;
         -o-transition: 0.4s;
         transition: 0.4s;
