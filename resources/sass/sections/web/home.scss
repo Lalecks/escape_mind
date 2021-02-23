@@ -1,8 +1,8 @@
-.accueil {
-    div{
-        height: 100vh;
-        width: 100vw;
-    }
+.index {
+    // .box{
+    //     height: 100vh;
+    //     width: 100vw;
+    // }
 
     /*----------------- Accueil -----------------*/
     #home {
@@ -51,8 +51,8 @@
 //     padding:10%;
 // }
 
-.index div {
-    padding:10%;
+.headings div {
+    // padding: 10% 0;
     #story{
     background:goldenrod;
     }
@@ -65,8 +65,7 @@
     #about{
         background: indianred;
     }
-
-    .index div div {
+    .headings div div {
         position:relative;
         background: white;
         opacity: 0.5;

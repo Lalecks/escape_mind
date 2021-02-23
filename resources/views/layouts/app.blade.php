@@ -12,14 +12,13 @@
     <!-- Référencement -->
     <title>{{ config('app.name', 'escape_mind') }}</title>
      <!-- Icônes -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- Stylesheets -->
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
     <link rel="prefetch" href="../game/room1.blade.php">
     <link href="{{ asset('css/sass/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <!-- Scripts -->
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+    <script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
 
 </head>
 <body>
