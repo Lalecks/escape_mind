@@ -5,7 +5,7 @@
 * [Built With](#built-with)
 * [Functionalities](#functionalities)
 * [Getting Started](#getting-started)
-* [Author](#author)
+* [Authors](#authors)
 * [Sources](#sources)
 * [Project status](#project-status)
 
@@ -47,7 +47,7 @@ $ php artisan migrate --seed
 
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
-## Author
+## Authors
 
 * **Sarah Mauriaucourt** - *Developer & webdesigner* - [sarah-mrcrt](https://github.com/sarah-mrcrt)
 * **Alexandre Lavaud** - *Developer* - [Lalecks](https://github.com/Lalecks)

@@ -1,51 +1,69 @@
-.index {
-    // .box{
-    //     height: 100vh;
-    //     width: 100vw;
-    // }
 
-    /*----------------- Accueil -----------------*/
-    #home {
-        text-align: center;
-        position: relative;
-        color: white;
-        .bg-video {
-            width: 100%;
-            height: 100%;
-            // padding: 8%;
-        }
-        // Overlay
-        .video-overlay {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.5);
+/*----------------- Accueil -----------------*/
+#home {
+    text-align: center;
+    position: relative;
+    color: white;
+    .bg-video {
+        max-width: 100%;
+        max-height: 100%;
+        // padding: 5%;
+    }
+    // Overlay (supperposition au dessus)
+    .video-overlay {
+        // width: 100%;
+        // height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        #home_box{
             display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
             flex-wrap: wrap;
-            a {
-                margin-top: 340px;
-                // line-height: 120%;
-            }
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4rem 3rem;
+            border-radius: 5rem;
+            background: $cyan_blue-degraded;
+            max-width: 580px;
+            max-height: 277px;
+            backdrop-filter: blur(59px);
+        }
+        .circle {
+            position: absolute;
+            width: 292px;
+            height: 292px;
+            border: 1rem solid $cyan_blue-degraded;
+            background: $cyan_blue-degraded;
+            border-radius: 50%;
+            perspective: 1200px;
+            perspective-origin: 50% 50%; 
+        }
+        a {
+            margin-top: 2rem;
+            // line-height: 120%;
         }
     }
-    // #play{
-    //     font-size: xx-large;
-    //     margin: 0;
-    //     position: absolute;
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translate(-50%,-50%);
-    //     -ms-transform: translate(-50%, -50%);
 
-    // }
+// #play{
+//     font-size: xx-large;
+//     margin: 0;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%,-50%);
+//     -ms-transform: translate(-50%, -50%);
+
 }
+
 
 // .accueil div {
 //     padding:10%;

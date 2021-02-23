@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="index">
-
+    <a class="logo">escape_mind</a>
     <nav class="navbar">
         <div id="bar_fix"></div>
         <div id="bar_anim"></div>
@@ -15,7 +15,7 @@
         </ul>
     </nav>
     
-    <div class="headings">
+    <div class="headings container">
 
         <div id="home">
             <video class="bg-video" playsinline="" autoplay="" muted="" loop="">
@@ -27,10 +27,12 @@
                 <div class="circle circle-full"></div>
                 <div class="circle"></div>
                 <div class="circle"></div>
-                <div id ="home_box">
+                <div id ="home_box" class="glass-effect ">
                     <p>Il y a plusieurs années un scientifique a crée une IA, et aujourd’hui, il doit la débrancher. Pour cela, il se connecte à celle-ci, et se retrouve enfermé dans l’IA qui retrace ses souvenirs.</p>
-                    <a class="btn btn_bordure " id="play" href="/jeu" data-pjax>Trailer</a>
-                    <a class="btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
+                    <div>
+                        <a class="btn btn_bordure " id="play" href="/jeu" data-pjax>Trailer</a>
+                        <a class="btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
+                    </div>
                 </div>
             </div> 
         </div>
