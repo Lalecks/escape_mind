@@ -23,7 +23,12 @@
             </video>
 
             <div class="video-overlay">
+                <div class="line"></div>
+                <div class="circle circle-full"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
                 <div id ="home_box">
+                    <p>Il y a plusieurs années un scientifique a crée une IA, et aujourd’hui, il doit la débrancher. Pour cela, il se connecte à celle-ci, et se retrouve enfermé dans l’IA qui retrace ses souvenirs.</p>
                     <a class="btn btn_bordure " id="play" href="/jeu" data-pjax>Trailer</a>
                     <a class="btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
                 </div>
@@ -64,14 +69,17 @@
                 <div>
                     <span>2</span>
                     <img src="{{ asset('ressources/web/model2.png') }}" alt="model2"/>
+                    <p>pseudo2</p>
                 </div>
                 <div>
                     <span>1</span>
                     <img src="{{ asset('ressources/web/model1.png') }}" alt="model1"/>
+                    <p>pseudo1</p>
                 </div>
                 <div>
                     <span>3</span>
                     <img src="{{ asset('ressources/web/model3.png') }}" alt="model3"/>
+                    <p>pseudo3</p>
                 </div>
             </div>
 
@@ -97,11 +105,11 @@
         <div id="about"> 
             <h1>À propos</h1>  
             <div class="project">
-                <h2>d’ou vient le projet ?</h2>
+                <h2>Quelle est l'origine de ce projet ?</h2>
                 <p>Nous sommes cinq étudiants de l’université de Valenciennes. Pour notre projet de fin de licence, nous devions réaliseer un projet. C’est pour ça qu’on a fait un escape game.</p>
             </div> 
             <div class="team">
-                <h2>qui sommes-nous ?</h2>
+                <h2>Qui sommes-nous ?</h2>
                 <div class="team-img-role">
                     <div>
                         <img src=""/>

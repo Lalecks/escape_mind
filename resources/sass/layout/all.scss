@@ -14,7 +14,7 @@ body, html{
 
 // Titres
 h1 {
-    color: rgba(255, 255, 255, 0.04);
+    color: $color-title;
     font-family: $font-title;
     font-size: 20rem;
     font-style: normal;
@@ -22,8 +22,16 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    // -webkit-text-stroke: 12px;
-    // -webkit-text-stroke-color: rgba(255, 255, 255, 0.04);
+    -webkit-text-stroke: 1.1rem;
+    -webkit-text-stroke-color: $color-title;
+    letter-spacing: 1.1875rem;
+}
+
+h2 {
+    font-family: $font-logo;
+    text-transform: lowercase;
+    font-style: normal;
+    font-weight: normal;    
 }
 
 // Liens

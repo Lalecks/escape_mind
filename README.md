@@ -53,6 +53,15 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 * **Alexandre Lavaud** - *Developer* - [Lalecks](https://github.com/Lalecks)
 
 ## Sources
+* Illustrations : 
+    - Camille Kozak
+* Sound design : 
+    - Mondine Odin
+    - Antony Deschodt
+* Photographies : 
+    - [Pixabay](https://pixabay.com/)
+    - [Pexels](https://www.pexels.com/)
+    - [Unsplash](https://unsplash.com/)
 * Web resources :
     - Copyright (c) [Clement Girault](https://codepen.io/clementGir/pen/RQqvQx)
 
