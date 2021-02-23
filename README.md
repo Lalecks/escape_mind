@@ -51,13 +51,11 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
 * **Sarah Mauriaucourt** - *Developer & webdesigner* - [sarah-mrcrt](https://github.com/sarah-mrcrt)
 * **Alexandre Lavaud** - *Developer* - [Lalecks](https://github.com/Lalecks)
+* **Camille Kozak** - *Graphic designer*
+* **Mondine Odin** - *Sound designer* 
+* **Antony Deschodt** - *Sound designer*
 
 ## Sources
-* Illustrations : 
-    - Camille Kozak
-* Sound design : 
-    - Mondine Odin
-    - Antony Deschodt
 * Photographies : 
     - [Pixabay](https://pixabay.com/)
     - [Pexels](https://www.pexels.com/)
