@@ -5,7 +5,6 @@ const $hoverables = document.querySelectorAll('.hoverable');
 // Listeners
 document.body.addEventListener('mousemove', onMouseMove);
 document.body.addEventListener('mouseleave', onMouseLeave);
-document.body.addEventListener('load',onPageLoad);
 for (let i = 0; i < $hoverables.length; i++) {
   $hoverables[i].addEventListener('mouseenter', onMouseHover);
   $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
@@ -29,8 +28,6 @@ function onMouseLeave(e){
     TweenMax.to($smallBall, .1, {
         opacity:0 });
 }
-
-
 
 
 // Hover an element
