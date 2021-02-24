@@ -5,16 +5,50 @@ const barre = document.getElementById("bar_anim");
 
 window.addEventListener('scroll',() => {
     const max_scroll = document.documentElement.scrollHeight - window.innerHeight; // Bas de page
-    const scrolled = (window.scrollY / max_scroll).toPrecision(3);
-    const numitem = Math.floor(scrolled * (allItems.length-1)+(0.1*scrolled)); // Nombres d'éléments
+    let scr = window.scrollY;
+    let scrolled = (scr / max_scroll).toPrecision(3);
+    let nb_elem = allItems.length;
+    const home = document.getElementById("home").clientHeight;
+    const story = document.getElementById("story").clientHeight;
+    const rank = document.getElementById("rank").clientHeight;
+    const about = document.getElementById("about").clientHeight;
+    const contact = document.getElementById("contact").clientHeight;
 
-    for (let i = numitem; i <allItems.length; i++){
+    const numitem = Math.floor(scrolled * (nb_elem-1)+(0.1*scrolled)); // Nombres d'éléments
+
+    /*
+    for (let i = numitem; i <nb_elem; i++){
         allItems[i].classList.remove("active");
     }
     for (let i = 0; i <=numitem; i++){
         allItems[i].classList.add("active");
-    }
+    }*/
 
-    barre.style.height="calc(" + (scrolled*100).toString() + "% - " + (scrolled*19) + "% + 19%)";
+    //Modulabilité
+
+   // if (scr < home) {
+   //      barre.style.height = "calc("
+   //          + (scr / (home / (1 / (nb_elem - 1)))) * 100 + "% - "
+   //          + (scr / (home / (1 / (nb_elem - 1)))) * 19
+   //          + "% + 19%)";
+   //  }else if (scr < story) {
+   //      barre.style.height = "calc("
+   //          + (scr / (story / (1 / (nb_elem - 1)))) * 100 + "% - "
+   //          + (scr / (story / (1 / (nb_elem - 1)))) * 19
+   //          + "% + 19%)";
+   //  }else if (scr < rank) {
+   //      barre.style.height = "calc("
+   //          + (scr / (rank / (3 / (nb_elem - 1)))) * 100 + "% - "
+   //          + (scr / (rank / (3 / (nb_elem - 1)))) * 19
+   //          + "% + 19%)";
+   //  }else {
+   //      barre.style.height = "calc("
+   //          + (scr / (about / (4 / (nb_elem - 1)))) * 100 + "% - "
+   //          + (scr / (about / (4 / (nb_elem - 1)))) * 19
+   //          + "% + 19%)";
+   //  }
+
+
 
 })
+

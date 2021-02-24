@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 36 \2502              background: $cyan_blue-degraded;\d\a    \2502                          ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   resources\\sass\\sections\\web\\home.scss 36:25  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 36 \2502              background: $cyan_blue-degraded;\a    \2502                          ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   resources\\sass\\sections\\web\\home.scss 36:25  root stylesheet";
 }
