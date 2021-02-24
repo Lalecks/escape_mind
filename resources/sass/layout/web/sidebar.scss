@@ -5,14 +5,14 @@
  * */
 
 // ScrollBar
-body,
-html{
-    scroll-behavior: smooth;
-    scrollbar-width:none; // firefox
-}
-::-webkit-scrollbar { // autres navigateur
-    display: none;
-}
+// body,
+// html{
+//     scroll-behavior: smooth;
+//     scrollbar-width:none; // firefox
+// }
+// ::-webkit-scrollbar { // autres navigateur
+//     display: none;
+// }
 
 // Navbar
 .navbar {
@@ -30,7 +30,7 @@ html{
                 text-decoration: none;
                 position: relative;
                 color: white;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 font-weight: 500;
                 transition: color 500ms;
             }

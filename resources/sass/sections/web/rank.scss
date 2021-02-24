@@ -1,4 +1,9 @@
 #rank{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     .top3{
         display: flex;
         flex-flow: row wrap;
@@ -7,8 +12,6 @@
         align-items: center;
         &>div{
             padding: 0 6rem;
-            border: solid 1rem black;
-            position: relative;
             position: relative;
             max-width: 100%;
             max-height: 100%;
@@ -16,34 +19,63 @@
         svg {
             // fill: $black-degraded;
             stroke: $white;
-            stroke-width: .3rem;
+            // stroke-width: .1rem;
             // filter: blur(59px);
             position: relative;
+            z-index: 1;
         }
         img{
             width: 250px;
             height: 201px;
             position: absolute;
-            bottom: 8%;
+            top: 98px;
+            // bottom: 13%;
+            z-index: 0;
         }
         .second img {
             right: 0;
         }
         .first img {
             right: 0;
+            top: 10%;
         }
         .third img {
             left: 0;
         }
+        p {
+            padding-top: 2rem;
+        }
     }
-    p {
-        font-family: $font-logo;
+    .board{
+        margin-top: 15rem;
+        // width: 995px;
+        // height: 670px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .main-board {
+            border: thin solid $white;
+            // width: 100%;
+            padding: 3rem;
+            .logo-title td {
+                padding: 3rem;
+            }
+            .board-scroll {
+                overflow-y: auto;
+                overflow-x: hidden;
+                width: 320px; 
+                height: 180px;
+            }
+            td {
+                // border: thin solid #6495ed;
+                width: 33.3%;
+                padding: 1rem;
+                text-align: center;
+                background-color: $body-bg;
+            }
+        }
+        img {
+            display: none;
+        }
     }
 }
-
-
-// div {height: 100px; width: 100px;}
-// div#test1 {position: absolute; z-index: 4;}
-// div#test2 {position: absolute; z-index: 2;}
-// div#test3 {z-index: 10;}
-// div#test4 {position: relative; z-index: 8;}
