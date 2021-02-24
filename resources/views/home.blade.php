@@ -145,8 +145,8 @@
         </div>
 
         <div id="contact">
-            <div>
-            <h1>Conctact</h1>
+            {{-- <h1>Conctact</h1> --}}
+            <div class="a">
                 <p>Hey ! Tu es à la recherche d’informations ? Ou tu souhaites peut-être donner ton avis sur l’escape game en partageant ton ressenti, d'éventuelles remarques ou suggestions dû à ton expérience ? Tu es sur la bonne page ! Alors, envoie nous un mail, qu’est-ce que tu attends ?</p>
                 <div class="socialMedial">
                     <i class="fab fa-facebook-f"></i>
@@ -154,7 +154,7 @@
                     <i class="fab fa-youtube"></i>
                 </div>
             </div>
-            <div>
+            <div class="mail">
                 <a href="mailto:contact@escapemind.fr">contact@escapemind.fr</a>
             </div>
         </div>

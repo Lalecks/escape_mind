@@ -19,7 +19,7 @@ html{
     position: fixed;
     animation: shake 20s;
     animation-iteration-count: infinite;
-    z-index: 1;
+    z-index: 100;
     ul {
         padding-left: 50px;
         position:relative;
@@ -30,7 +30,7 @@ html{
                 text-decoration: none;
                 position: relative;
                 color: white;
-                // font-size: 2rem;
+                font-size: 2rem;
                 font-weight: 500;
                 transition: color 500ms;
             }

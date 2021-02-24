@@ -8,6 +8,7 @@
         max-width: 100%;
         max-height: 100%;
         // padding: 5%;
+        z-index: -1;
     }
     // Overlay (supperposition au dessus)
     .video-overlay {
@@ -24,12 +25,12 @@
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
+        
         #home_box{
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+            flex-flow: column wrap;
+            align-items: space-between;
+            justify-content: center;
             padding: 4rem 3rem;
             border-radius: 5rem;
             background: $cyan_blue-degraded;
