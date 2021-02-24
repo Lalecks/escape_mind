@@ -47,20 +47,24 @@
         }
     }
     .board{
-        overflow: auto;
         margin-top: 15rem;
-        width: 995px;
-        height: 670px;
+        // width: 995px;
+        // height: 670px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        table {
+        .main-board {
             border: thin solid $white;
-            // border-collapse: collapse;
             // width: 100%;
             padding: 3rem;
             .logo-title td {
                 padding: 3rem;
+            }
+            .board-scroll {
+                overflow-y: auto;
+                overflow-x: hidden;
+                width: 320px; 
+                height: 180px;
             }
             td {
                 // border: thin solid #6495ed;
@@ -75,10 +79,3 @@
         }
     }
 }
-
-
-// div {height: 100px; width: 100px;}
-// div#test1 {position: absolute; z-index: 4;}
-// div#test2 {position: absolute; z-index: 2;}
-// div#test3 {z-index: 10;}
-// div#test4 {position: relative; z-index: 8;}
