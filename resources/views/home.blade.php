@@ -91,9 +91,10 @@
                         </defs>
                     </svg>
                     <img src="{{ asset('ressources/web/model2.png') }}" alt="model2"/>
+                    <p>pseudo2</p>
                 </div>
                 <div class="first">
-                 <svg width="84" height="320"xmlns="http://www.w3.org/2000/svg">
+                 <svg width="84" height="320" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_bd)">
                         <path d="M18.012 294V38.898H2.274L1.176 24.258L26.064 1.2H57.54V294H18.012Z" fill="url(#paint0_linear)" fill-opacity="0.74"/>
                         </g>
@@ -116,9 +117,10 @@
                         </defs>
                     </svg>
                     <img src="{{ asset('ressources/web/model1.png') }}" alt="model1"/>
+                    <p>pseudo1</p>
                 </div>
-                <div class="troisieme">
-                    <svg width="157" height="323" xmlns="http://www.w3.org/2000/svg">
+                <div class="third">
+                    <svg width="157" height="323"  viewBox="0 0 157 323" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_bd)">
                         <path d="M67.324 296.928C44.632 296.928 28.284 292.292 18.28 283.02C8.276 273.504 2.908 257.888 2.176 236.172C1.932 229.096 1.81 222.752 1.81 217.14C1.81 211.284 1.932 203.842 2.176 194.814H41.704V241.296C41.704 256.668 49.878 264.354 66.226 264.354C82.33 264.354 90.504 256.668 90.748 241.296C90.992 232.268 91.114 222.874 91.114 213.114C91.114 203.11 90.992 193.838 90.748 185.298C90.26 177.002 88.186 170.414 84.526 165.534C80.866 160.41 73.79 157.97 63.298 158.214L35.848 158.58L34.384 124.908L84.16 36.336H4.372V1.2H129.544L129.178 34.872L77.572 123.81C95.384 125.274 108.316 130.886 116.368 140.646C124.664 150.162 129.3 165.046 130.276 185.298C130.764 205.306 130.764 222.264 130.276 236.172C129.3 257.888 123.932 273.504 114.172 283.02C104.412 292.292 88.796 296.928 67.324 296.928Z" fill="url(#paint0_linear)" fill-opacity="0.74"/>
                         </g>
@@ -141,6 +143,7 @@
                         </defs>
                     </svg>
                     <img src="{{ asset('ressources/web/model3.png') }}" alt="model3"/>
+                    <p>pseudo3</p>
                 </div>
             </div>
 
