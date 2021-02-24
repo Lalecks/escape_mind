@@ -16,4 +16,5 @@ window.addEventListener('scroll',() => {
     }
 
     barre.style.height="calc(" + (scrolled*100).toString() + "% - " + (scrolled*19) + "% + 19%)";
+
 })

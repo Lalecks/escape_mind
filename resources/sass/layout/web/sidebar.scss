@@ -5,7 +5,7 @@
  * */
 
 // ScrollBar
-body, 
+body,
 html{
     scroll-behavior: smooth;
     scrollbar-width:none; // firefox
@@ -79,11 +79,11 @@ html{
     }
 }
 
-// .navbar ul li a:hover {
-//     text-decoration: underline overline;
-// }
+ .navbar ul li a:hover {
+     font-weight: 700;
+ }
 
-// Effet de flottement 
+// Effet de flottement
 // @keyframes shake {
 //     0% { transform: translateY(0%) }
 //     20% { transform: translateY(-1%) }

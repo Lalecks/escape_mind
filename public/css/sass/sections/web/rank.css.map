@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 "version": 3,
 "mappings": "AAgBA,IAAI,CAAC,gBAAgB,CAAE,cAAc",
@@ -5,3 +6,6 @@
 "names": [],
 "file": "rank.css"
 }
+=======
+{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"rank.css"}
+>>>>>>> 4b6e5f72df58a05c9044e6692d1c457eaa0136b4

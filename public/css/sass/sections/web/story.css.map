@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,MAAO,CACH,OAAO,CAAE,IAAI,CACb,SAAS,CAAE,IAAI",
-"sources": ["../../../../../resources/sass/sections/web/story.scss"],
-"names": [],
-"file": "story.css"
-}
+{"version":3,"sourceRoot":"","sources":["../../../../../resources/sass/sections/web/story.scss"],"names":[],"mappings":"AAAA,OACI,aACA","file":"story.css"}

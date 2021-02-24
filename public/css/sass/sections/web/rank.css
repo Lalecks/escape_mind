@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 Error: Undefined variable: "$white".
         on line 13 of resources/sass/sections/web/rank.scss
@@ -92,3 +93,6 @@ body:before {
   white-space: pre;
   font-family: monospace;
   content: "Error: Undefined variable: \"$white\".\A         on line 13 of resources/sass/sections/web/rank.scss\A \A 8:         &>div{\A 9:             padding: 0 6rem;\A 10:         }\A 11:         svg {\A 12:             // fill: $black-degraded;\A 13:             stroke: $white;\A 14:             stroke-width: .3rem;\A 15:             // filter: blur(59px);\A 16:         }\A 17:     }\A 18: }"; }
+=======
+/*# sourceMappingURL=rank.css.map */
+>>>>>>> 4b6e5f72df58a05c9044e6692d1c457eaa0136b4
