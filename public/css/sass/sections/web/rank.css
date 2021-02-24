@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 18 of resources/sass/sections/web/rank.scss
+        on line 21 of resources/sass/sections/web/rank.scss
 
-13:             max-width: 100%;
-14:             max-height: 100%;
-15:         }
-16:         svg {
-17:             // fill: $black-degraded;
-18:             stroke: $white;
-19:             stroke-width: .3rem;
-20:             // filter: blur(59px);
-21:             position: relative;
-22:         }
-23:         img{
+16:             max-width: 100%;
+17:             max-height: 100%;
+18:         }
+19:         svg {
+20:             // fill: $black-degraded;
+21:             stroke: $white;
+22:             // stroke-width: .1rem;
+23:             // filter: blur(59px);
+24:             position: relative;
+25:             z-index: 1;
+26:         }
 
 Backtrace:
-resources/sass/sections/web/rank.scss:18
+resources/sass/sections/web/rank.scss:21
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -91,4 +91,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 18 of resources/sass/sections/web/rank.scss\A \A 13:             max-width: 100%;\A 14:             max-height: 100%;\A 15:         }\A 16:         svg {\A 17:             // fill: $black-degraded;\A 18:             stroke: $white;\A 19:             stroke-width: .3rem;\A 20:             // filter: blur(59px);\A 21:             position: relative;\A 22:         }\A 23:         img{"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 21 of resources/sass/sections/web/rank.scss\A \A 16:             max-width: 100%;\A 17:             max-height: 100%;\A 18:         }\A 19:         svg {\A 20:             // fill: $black-degraded;\A 21:             stroke: $white;\A 22:             // stroke-width: .1rem;\A 23:             // filter: blur(59px);\A 24:             position: relative;\A 25:             z-index: 1;\A 26:         }"; }
