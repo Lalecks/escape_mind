@@ -71,8 +71,10 @@ img {
 .container {
     max-width: 84%;
     min-height: 100%;
-    margin: 0 auto 0 11rem;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto 0 20rem;
+    background-color: red;
+    float: right;
 }
 .headings > div {
     padding: 4rem 0;

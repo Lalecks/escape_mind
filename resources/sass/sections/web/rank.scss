@@ -1,5 +1,25 @@
 #rank{
     .top3{
-
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        &>div{
+            padding: 0 6rem;
+        }
+        svg {
+            // fill: $black-degraded;
+            stroke: $white;
+            stroke-width: .3rem;
+            // filter: blur(59px);
+        }
     }
 }
+
+
+// div {height: 100px; width: 100px;}
+// div#test1 {position: absolute; z-index: 4;}
+// div#test2 {position: absolute; z-index: 2;}
+// div#test3 {z-index: 10;}
+// div#test4 {position: relative; z-index: 8;}
