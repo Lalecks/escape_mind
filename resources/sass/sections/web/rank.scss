@@ -1,19 +1,5 @@
 #rank{
     .top3{
-        display: flex;
-        flex-wrap: wrap;
-        img{
-            width: 250px;
-            height: 201px;
-        }
-        span{
-            font-family: $font-title;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 366px;
-            // color: $black-degraded;
-            // -webkit-text-stroke: .01rem;
-            // -webkit-text-stroke-color: $white;
-        }
+
     }
 }
