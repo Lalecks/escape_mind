@@ -170,10 +170,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="board-scroll" >
+                                <div class="board-scroll">
                                     <table >
                                         <tr>
-                                            <td>new item</td>
+                                            <td>01</td>
                                             <td>new item</td>
                                             <td>new item</td>
                                         </tr>

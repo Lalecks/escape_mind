@@ -4,6 +4,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+    
     .top3{
         display: flex;
         flex-flow: row wrap;
@@ -55,23 +56,38 @@
         justify-content: center;
         .main-board {
             border: thin solid $white;
-            // width: 100%;
             padding: 3rem;
-            .logo-title td {
-                padding: 3rem;
+            thead{
+                border-bottom: thin solid $white;
+                .logo-title 
+                {
+                    display: flex;
+                    td {
+                        padding: 3rem;
+                    }
+                }
+            }
+            tr {
+                width: 100%;
+            }
+            td {
+                width: 33.3%;
+                text-align: center;
+                background-color: $body-bg;
             }
             .board-scroll {
                 overflow-y: auto;
                 overflow-x: hidden;
-                width: 320px; 
                 height: 180px;
-            }
-            td {
-                // border: thin solid #6495ed;
-                width: 33.3%;
-                padding: 1rem;
-                text-align: center;
-                background-color: $body-bg;
+                // margin-top: 3rem;
+                 display: flex; 
+                 justify-content: center;
+                table {
+                    margin-top: 1rem;
+                }
+                td {
+                    padding: 1rem 0;
+                }
             }
         }
         img {
