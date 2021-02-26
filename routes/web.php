@@ -28,8 +28,9 @@ Route::get('/jeu', 'GameController@game');
 Auth::routes();
 
 //If the URL does not exist, redirection to homepage
+/*
 Route::any('{query}',
     function() { return redirect('/'); })
-    ->where('query', '.*');
+    ->where('query', '.*');*/
 
 Auth::routes();
