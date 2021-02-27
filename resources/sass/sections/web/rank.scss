@@ -1,9 +1,11 @@
 #rank{
     display: flex;
+    // background-color: blueviolet;
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
+    position: relative;
     ::-webkit-scrollbar {
         /* Scrollbars */
         width: 12px;
@@ -121,9 +123,10 @@
             padding-top: 2rem;
         }
     }
-    .board{
-        table{
-            max-width: 89.5rem;
+    .board {
+        position: relative;
+        table {
+            max-width: 1004px;
             margin-top: 10rem;
             background-color: $body-bg;
             border: thin solid $white;
@@ -137,18 +140,25 @@
             {
                 padding-top: 2rem;
                 display: block;
-                max-height: 21.8rem;
+                max-height: 593px;
                 overflow-y: auto;
             }     
             td, th
             {
-                width: 62rem; // Taille d'une colonne
+                width: 60rem; // Taille d'une colonne
                 text-align: center;
                 padding: 1rem 0;
             }
         }
-        // img {
-        //     display: none;
-        // }
+    }
+    .hand {
+        position: absolute;
+        bottom: -12%;
+        transform: translateY(12%);
+        right: -11%;
+        transform: translateX(11%);
+        img {
+            width: 80%;
+        }
     }
 }

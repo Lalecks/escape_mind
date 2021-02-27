@@ -2,21 +2,21 @@
 
 @section('content')
 <div class="index">
-    <a class="logo logo-title">escape_mind</a>
-    <nav class="navbar">
-        <div id="bar_fix"></div>
-        <div id="bar_anim"></div>
-        <ul>
-            <li><a href="#home" class="hoverable active">Accueil</a></li>
-            <li><a href="#story"  class="hoverable">Histoire</a></li>
-            <li><a href="#rank" class="hoverable">Classement</a></li>
-            <li><a href="#about" class="hoverable">À propos</a></li>
-            <li><a href="#contact" class="hoverable">Contact</a></li>
-        </ul>
-    </nav>
-
+    <header>
+        <a class="logo logo-title">escape_mind</a>
+        <nav class="navbar">
+            <div id="bar_fix"></div>
+            <div id="bar_anim"></div>
+            <ul>
+                <li><a href="#home" class="hoverable active">Accueil</a></li>
+                <li><a href="#story"  class="hoverable">Histoire</a></li>
+                <li><a href="#rank" class="hoverable">Classement</a></li>
+                <li><a href="#about" class="hoverable">À propos</a></li>
+                <li><a href="#contact" class="hoverable">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="headings container">
-
         <div id="home">
             <video class="bg-video" playsinline="" autoplay="" muted="" loop="">
                 <source src="{{ asset('ressources/technology.mp4') }}" type="video/mp4">
@@ -68,6 +68,7 @@
 
         <div id="rank">
             <div class="top3">
+                <h1>Records</h1>
                 <div class="second">
                     <div>
                         <svg width="154" height="323" xmlns="http://www.w3.org/2000/svg">
@@ -152,178 +153,86 @@
                         <p class="logo-title">pseudo3</p>
                     </div>
                 </div>
-                
                 <div class="board">
                     <table>
                         <thead>
                             <tr class="logo-title">
-                            <td>rang_</td>
-                            <td>pseudo_</td>
-                            <td>temps_</td>
-                        </tr>
+                                <td>rang_</td>
+                                <td>pseudo_</td>
+                                <td>temps_</td>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>11fffff f fff frfr frf </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>01 </td> 
+                                <td>Bloopy_ez </td> 
+                                <td>40:05s </td>
                             </tr>
                             <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>01 </td> 
+                                <td>Bloopy_ez </td> 
+                                <td>40 min 05 sec </td>
                             </tr>
                             <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>01 </td> 
+                                <td>Bloopy_ez </td> 
+                                <td>40 minutes 24 secondes</td>
                             </tr>
                             <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>01 </td> 
+                                <td>Bloopy_ez </td> 
+                                <td>40 minutes et 42 secondes </td>
                             </tr>
                             <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>01 </td> 
+                                <td>Bloopy_ez </td> 
+                                <td>40 minutes </td>
                             </tr>
                             <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>01 </td> 
+                                <td>Bloopy_ez </td> 
+                                <td>40 minutes </td>
                             </tr>
                             <tr>
-                                <td>11fffff f fff frfr frf </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>01 </td> 
+                                <td>Bloopy_ez </td> 
+                                <td>40 minutes </td>
                             </tr>
                             <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>01 </td> 
+                                <td>Bloopy_ez </td> 
+                                <td>40 minutes </td>
                             </tr>
                             <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>01 </td> 
+                                <td>Bloopy_ez </td> 
+                                <td>40 minutes </td>
                             </tr>
                             <tr>
                                 <td>11fffff f fff frfr frf </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>Bloopy_ez </td> 
+                                <td>40 minutes </td>
                             </tr>
                             <tr>
                                 <td>11fffff f fff frfr frf </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>Bloopy_ez </td> 
+                                <td>40 minutes </td>
                             </tr>
                             <tr>
                                 <td>11fffff f fff frfr frf </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>Bloopy_ez </td> 
+                                <td>40 minutes </td>
                             </tr>
                             <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
+                                <td>11fffff f fff frfr frf </td> 
+                                <td>Bloopy_ez </td> 
+                                <td>40 minutes </td>
                             </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            <tr>
-                                <td>11fffffffff </td> 
-                                <td>21 </td> 
-                                <td>31 </td>
-                            </tr>
-                            
                         </tbody>
                     </table>
-                 
-                    <img src="{{ asset('ressources/web/cyborg_hand.png') }}" alt="cyborg_hand"/>
+                    <div class="hand"><img src="{{ asset('ressources/web/cyborg_hand.png') }}" alt="cyborg_hand"/></div>
                 </div>
             </div>
-
-
-
- 
 
             <div id="about">
                 <h1>À propos</h1>
@@ -348,11 +257,11 @@
                         </div>
                         <div>
                             <img src=""/>
-                            <span>Webdesigner & développeuse front-end</span>
+                            <span>Webdesigner &amp; développeuse front-end</span>
                         </div>
                         <div>
                             <img src=""/>
-                            <span>Développeur frontend & backend</span>
+                            <span>Développeur frontend &amp; backend</span>
                         </div>
                     </div>
                     <div class="team-names">
@@ -367,10 +276,10 @@
 
 
             <div id="contact">
-                {{-- <h1>Conctact</h1> --}}
+                <h1>Conctact</h1>
                 <div class="a">
-                    <p>Hey ! Tu es à la recherche d’informations ? Ou tu souhaites peut-être donner ton avis sur l’escape game en partageant ton ressenti, d'éventuelles remarques ou suggestions dû à ton expérience ? Tu es sur la bonne page ! Alors, envoie nous un mail, qu’est-ce que tu attends ?</p>
-                    <div class="socialMedial">
+                    <p>Hey ! Tu es à la recherche d’informations ? Ou tu souhaites peut-être donner ton avis sur l’escape game en partageant ton ressenti, d'éventuelles remarques ou suggestions dû à ton expérience ? Tu es sur la bonne page ! Alors, envoie nous un mail, qu’est-ce que tu attends&nbsp;?</p>
+                    <div class="media">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-youtube"></i>
@@ -380,7 +289,6 @@
                     <a href="mailto:contact@escapemind.fr">contact@escapemind.fr</a>
                 </div>
             </div>
-
         </div>
     </div>
     @endsection
