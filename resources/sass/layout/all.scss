@@ -36,6 +36,7 @@ h2 {
 .logo-title{
     font-family: $font-logo;
     font-size: 1.5rem;  
+    z-index: 2;
 }
 .logo {
     margin: 2rem 0;
@@ -74,7 +75,7 @@ img {
     min-height: 100%;
     margin: 0 auto;
     // padding: 0 auto 0 20rem;
-    background-color: red;
+    background-color: grey;
     float: right;
 }
 .headings > div {

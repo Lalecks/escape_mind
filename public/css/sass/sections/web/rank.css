@@ -1,35 +1,24 @@
 /*
-Error: Undefined variable: "$white".
-        on line 22 of resources/sass/sections/web/rank.scss
+Error: Undefined variable: "$black-degraded".
+        on line 10 of resources/sass/sections/web/rank.scss
 
-17:             max-width: 100%;
-18:             max-height: 100%;
-19:         }
-20:         svg {
-21:             // fill: $black-degraded;
-22:             stroke: $white;
-23:             // stroke-width: .1rem;
-24:             // filter: blur(59px);
-25:             position: relative;
-26:             z-index: 1;
-27:         }
+5:     align-content: center;
+6:     align-items: center;
+7:     ::-webkit-scrollbar {
+8:         /* Scrollbars *\/
+9:         width: 12px;
+10:         background: $black-degraded;
+11:     }
+12:     ::-webkit-scrollbar-track {
+13:         background-color: $white-degraded;
+14:         // -webkit-box-shadow: inset 0 0 6px grey; 
+15:         // -webkit-border-radius: 10px;
 
 Backtrace:
-resources/sass/sections/web/rank.scss:22
+resources/sass/sections/web/rank.scss:10
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
@@ -91,4 +80,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 22 of resources/sass/sections/web/rank.scss\A \A 17:             max-width: 100%;\A 18:             max-height: 100%;\A 19:         }\A 20:         svg {\A 21:             // fill: $black-degraded;\A 22:             stroke: $white;\A 23:             // stroke-width: .1rem;\A 24:             // filter: blur(59px);\A 25:             position: relative;\A 26:             z-index: 1;\A 27:         }"; }
+  content: "Error: Undefined variable: \"$black-degraded\".\A         on line 10 of resources/sass/sections/web/rank.scss\A \A 5:     align-content: center;\A 6:     align-items: center;\A 7:     ::-webkit-scrollbar {\A 8:         /* Scrollbars */\A 9:         width: 12px;\A 10:         background: $black-degraded;\A 11:     }\A 12:     ::-webkit-scrollbar-track {\A 13:         background-color: $white-degraded;\A 14:         // -webkit-box-shadow: inset 0 0 6px grey; \A 15:         // -webkit-border-radius: 10px;"; }

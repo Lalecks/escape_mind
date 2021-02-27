@@ -4,7 +4,81 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    
+    ::-webkit-scrollbar {
+        /* Scrollbars */
+        width: 12px;
+        background: $black-degraded;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: $white-degraded;
+        // -webkit-box-shadow: inset 0 0 6px grey; 
+        // -webkit-border-radius: 10px;
+        // border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        // border-radius: 10px;
+        background-color: grey;
+        -webkit-box-shadow: inset 0 0 6px grey;  
+    }
+    ::-webkit-scrollbar-thumb:hover {						
+        /* Barre */
+        background: darken(rgb(90,90,90),50%);
+        // -webkit-box-shadow: inset 0 0 0 1px rgb(90,90,90), inset 0 0 0 6px rgb(110,110,110);
+    }
+    // ::-webkit-scrollbar-track-piece {						
+        /* Fond */
+    // 	background: transparent none;
+    // 	border: solid 4px transparent;
+    // 	border-right-width: 8px;
+    // 	margin: 4px;
+    // 	-webkit-box-shadow: inset 1px 1px 0 0 rgb(137,131,117), inset -1px -1px 0 0 rgb(224,220,210);
+    // }
+    // ::-webkit-scrollbar-track-piece:horizontal {			
+        /* Fond pour la barre du bas */
+    // 	border-right-width: 4px;
+    // 	border-bottom-width: 8px;
+    // }
+    // ::-webkit-scrollbar-thumb {								
+        /* Barre */
+    // 	border: solid 0 transparent;
+    // 	border-right-width: 4px;
+    // 	-webkit-border-radius: 5px;
+    // 	-webkit-border-top-right-radius: 9px 5px;
+    // 	-webkit-border-bottom-right-radius: 9px 5px;
+    // 	-webkit-box-shadow: inset 0 0 0 1px rgb(79,79,79), inset 0 0 0 6px rgb(102,102,102);
+    // }
+
+    // ::-webkit-scrollbar-thumb:horizontal {					
+        /* Barre du bas */
+    // 	border-right-width: 0;
+    // 	border-bottom-width: 4px;
+    // 	-webkit-border-top-right-radius: 5px;
+    // 	-webkit-border-bottom-right-radius: 5px 9px;
+    // 	-webkit-border-bottom-left-radius: 5px 9px;
+    // }
+    // ::-webkit-scrollbar-corner {							
+        /* Coin de la fenêtre */
+    // 	background: #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+    // }
+    // ::-webkit-scrollbar-button {							
+        /* Boutons */
+    // 	height: 26px;
+    // 	background: url(images/webkit-arrows-vert.png) 1px 50% no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+    // }
+    // ::-webkit-scrollbar-button:increment {					
+        /* Bouton pour descendre */
+    // 	background-position: -19px 50%;
+    // }
+    // ::-webkit-scrollbar-button:horizontal {					
+        /* Boutons horizontaux */
+    // 	width: 26px;
+    // 	background: url(images/webkit-arrows-horiz.png) 50% 1px no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+    // }
+    // ::-webkit-scrollbar-button:horizontal:increment {		
+        /* Bouton pour aller à droite */
+    // 	background-position: 50% -19px;
+    // }
     .top3{
         display: flex;
         flex-flow: row wrap;
@@ -48,51 +122,33 @@
         }
     }
     .board{
-        margin-top: 15rem;
-        // width: 995px;
-        // height: 670px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        .main-board {
+        table{
+            max-width: 89.5rem;
+            margin-top: 10rem;
+            background-color: $body-bg;
             border: thin solid $white;
-            padding: 3rem;
-            thead{
+            thead
+            {
+                display: block;  
                 border-bottom: thin solid $white;
-                .logo-title 
-                {
-                    display: flex;
-                    td {
-                        padding: 3rem;
-                    }
-                }
+                padding: 1.4rem 0;
             }
-            tr {
-                width: 100%;
-            }
-            td {
-                width: 33.3%;
-                text-align: center;
-                background-color: $body-bg;
-            }
-            .board-scroll {
+            tbody
+            {
+                padding-top: 2rem;
+                display: block;
+                max-height: 21.8rem;
                 overflow-y: auto;
-                overflow-x: hidden;
-                height: 180px;
-                // margin-top: 3rem;
-                 display: flex; 
-                 justify-content: center;
-                table {
-                    margin-top: 1rem;
-                }
-                td {
-                    padding: 1rem 0;
-                }
+            }     
+            td, th
+            {
+                width: 62rem; // Taille d'une colonne
+                text-align: center;
+                padding: 1rem 0;
             }
         }
-        img {
-            display: none;
-        }
+        // img {
+        //     display: none;
+        // }
     }
 }
-

@@ -152,95 +152,178 @@
                         <p class="logo-title">pseudo3</p>
                     </div>
                 </div>
-
+                
                 <div class="board">
-                    <table class="main-board">
-                        <tr>
-                            <td>
-                                <table cellspacing="0" cellpadding="1" width="300" >
-                                    <thead>
-                                        <tr class="logo-title">
-                                            <td>rang_</td>
-                                            <td>pseudo_</td>
-                                            <td>temps_</td>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="board-scroll">
-                                    <table >
-                                        <tr>
-                                            <td>01</td>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                    </table>  
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
                     <table>
+                        <thead>
+                            <tr class="logo-title">
+                            <td>rang_</td>
+                            <td>pseudo_</td>
+                            <td>temps_</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>11fffff f fff frfr frf </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffff f fff frfr frf </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffff f fff frfr frf </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffff f fff frfr frf </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffff f fff frfr frf </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            <tr>
+                                <td>11fffffffff </td> 
+                                <td>21 </td> 
+                                <td>31 </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                 
                     <img src="{{ asset('ressources/web/cyborg_hand.png') }}" alt="cyborg_hand"/>
                 </div>
             </div>
+
+
+
+ 
 
             <div id="about">
                 <h1>À propos</h1>
