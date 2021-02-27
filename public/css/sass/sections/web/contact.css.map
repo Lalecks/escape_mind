@@ -1,1 +1,7 @@
-{"version":3,"sourceRoot":"","sources":["../../../../../resources/sass/sections/web/contact.scss"],"names":[],"mappings":"AAAA,SACI,aACA,uBACA,mBACA","file":"contact.css"}
+{
+"version": 3,
+"mappings": "AAAA,QAAS,CACL,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CACnB,aAAa,CAAE,MAAM,CACrB,YAAG,CACC,KAAK,CAAE,GAAG",
+"sources": ["../../../../../resources/sass/sections/web/contact.scss"],
+"names": [],
+"file": "contact.css"
+}

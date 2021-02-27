@@ -8,7 +8,7 @@
     position: relative;
     ::-webkit-scrollbar {
         /* Scrollbars */
-        width: 12px;
+        width: 0.75rem;
         background: $black-degraded;
     }
     ::-webkit-scrollbar-track {
@@ -81,13 +81,13 @@
         /* Bouton pour aller à droite */
     // 	background-position: 50% -19px;
     // }
-    .top3{
+    .top3 {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-content: center;
         align-items: center;
-        &>div{
+        &>div {
             padding: 0 6rem;
             position: relative;
             max-width: 100%;
@@ -101,12 +101,11 @@
             position: relative;
             z-index: 1;
         }
-        img{
-            width: 250px;
-            height: 201px;
+        img {
+            width: 15.625rem;
+            height: 12.5625rem;
             position: absolute;
             top: 98px;
-            // bottom: 13%;
             z-index: 0;
         }
         .second img {
@@ -126,7 +125,7 @@
     .board {
         position: relative;
         table {
-            max-width: 1004px;
+            max-width: 62.75rem;
             margin-top: 10rem;
             background-color: $body-bg;
             border: thin solid $white;
@@ -140,7 +139,7 @@
             {
                 padding-top: 2rem;
                 display: block;
-                max-height: 593px;
+                max-height: 37.0625rem;
                 overflow-y: auto;
             }     
             td, th

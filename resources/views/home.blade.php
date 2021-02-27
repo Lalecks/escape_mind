@@ -62,7 +62,7 @@
             </div>
             <div>
                 <img src="{{ asset('ressources/web/artificial_intelligence.png') }}" alt="artificial_intelligence"/>
-                <div class="circle-yellow"></div>
+                <div class="circle circle-yellow"></div>
             </div>
         </div>
 
@@ -289,6 +289,11 @@
                     <a href="mailto:contact@escapemind.fr">contact@escapemind.fr</a>
                 </div>
             </div>
+
+            <footer>
+                <span>escape_mind</span>
+                <span>escape_mind</span>
+            </footer>
         </div>
     </div>
     @endsection
