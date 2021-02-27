@@ -13,21 +13,26 @@ for (let i = 0; i < $zoomable.length; i++) {
 }
 
 
+//Mettre un objet en avant
 function onMouseClick(e){
-    $all = document.querySelectorAll(".room :not(this)");
+    $all = document.querySelectorAll("img");
 
-    if (this.style.width !== "100vh"){
-        //this.style.position ="";
-        this.style.width="100vh";
-
-            $all.forEach(element => element.style.filter = "brightness(70%) blur(4px)");
-
-        // document.querySelectorAll("body :not(this)")
-        //     .forEach(element => element.style.filter = "brightness(70%) blur(4px)")
+    if (this.style.width !== "100vw"){
+        this.style.width="100vw";
+        $all.forEach(element => element.style.filter = "brightness(40%) blur(4px)");
+        this.style.filter="";
+        this.style.zIndex=1000;
+        this.style.margin="auto auto auto";
+        this.style.display="block";
     } else {
         this.style.position ="";
         this.style.width=""
         $all.forEach(element => element.style.filter = "");
+        this.style.zIndex="";
+        this.style.display="";
+        this.parentNode.style.display="";
+        this.parentNode.style.justifyContent="";
+        this.parentNode.style.alignItems="";
     }
 
 }
