@@ -1,9 +1,30 @@
 #contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    div{
-        width: 50%;
-    }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	.contact-center {
+		display: flex;
+
+		div {
+			flex-basis: 50%;
+		}
+	}
+	.contact-txt {
+		padding: 0 5.6rem;
+		display: flex;
+		justify-content: center;
+		align-self: flex-end;
+	}
+	.take-contact {
+		align-self: flex-end;
+		.mail {
+			font-size: xx-large;
+			font-weight: bolder;
+			text-shadow: .1rem .1rem 0 $color-shadow, 2px 2px 0 $color-shadow, 3px 3px 0 $color-shadow; // Effet 3D
+		}
+		.media {
+			padding: .5rem;
+		}
+	}
 }

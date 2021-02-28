@@ -2,17 +2,17 @@
 Error: Undefined variable: "$black-degraded".
         on line 12 of resources/sass/sections/web/rank.scss
 
-7:     align-items: center;
-8:     position: relative;
-9:     ::-webkit-scrollbar {
-10:         /* Scrollbars *\/
-11:         width: 0.75rem;
-12:         background: $black-degraded;
-13:     }
-14:     ::-webkit-scrollbar-track {
-15:         background-color: $white-degraded;
-16:         // -webkit-box-shadow: inset 0 0 6px grey; 
-17:         // -webkit-border-radius: 10px;
+7: 	align-items: center;
+8: 	position: relative;
+9: 	::-webkit-scrollbar {
+10: 		/* Scrollbars *\/
+11: 		width: 0.75rem;
+12: 		background: $black-degraded;
+13: 	}
+14: 	::-webkit-scrollbar-track {
+15: 		background-color: $white-degraded;
+16: 		// -webkit-box-shadow: inset 0 0 6px grey; 
+17: 		// -webkit-border-radius: 10px;
 
 Backtrace:
 resources/sass/sections/web/rank.scss:12
@@ -66,17 +66,18 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:46
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-C:/Ruby26-x64/bin/sass:23:in `load'
-C:/Ruby26-x64/bin/sass:23:in `<main>'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black-degraded\".\A         on line 12 of resources/sass/sections/web/rank.scss\A \A 7:     align-items: center;\A 8:     position: relative;\A 9:     ::-webkit-scrollbar {\A 10:         /* Scrollbars */\A 11:         width: 0.75rem;\A 12:         background: $black-degraded;\A 13:     }\A 14:     ::-webkit-scrollbar-track {\A 15:         background-color: $white-degraded;\A 16:         // -webkit-box-shadow: inset 0 0 6px grey; \A 17:         // -webkit-border-radius: 10px;"; }
+  content: "Error: Undefined variable: \"$black-degraded\".\A         on line 12 of resources/sass/sections/web/rank.scss\A \A 7: 	align-items: center;\A 8: 	position: relative;\A 9: 	::-webkit-scrollbar {\A 10: 		/* Scrollbars */\A 11: 		width: 0.75rem;\A 12: 		background: $black-degraded;\A 13: 	}\A 14: 	::-webkit-scrollbar-track {\A 15: 		background-color: $white-degraded;\A 16: 		// -webkit-box-shadow: inset 0 0 6px grey; \A 17: 		// -webkit-border-radius: 10px;"; }

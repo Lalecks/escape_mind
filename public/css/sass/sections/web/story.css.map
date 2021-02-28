@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,MAAO,CACH,OAAO,CAAE,IAAI,CACb,SAAS,CAAE,IAAI,CACf,UAAG,CACC,KAAK,CAAE,GAAG",
+"mappings": "AAAA,MAAO,CACN,OAAO,CAAE,IAAI,CACb,SAAS,CAAE,IAAI,CACf,UAAG,CACF,KAAK,CAAE,GAAG",
 "sources": ["../../../../../resources/sass/sections/web/story.scss"],
 "names": [],
 "file": "story.css"

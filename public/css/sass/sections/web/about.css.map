@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,MAAO,CACH,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,aAAa,CAC9B,UAAG,CACC,KAAK,CAAE,GAAG",
+"mappings": "AAAA,MAAO,CACN,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,aAAa,CAC9B,UAAG,CACF,KAAK,CAAE,GAAG",
 "sources": ["../../../../../resources/sass/sections/web/about.scss"],
 "names": [],
 "file": "about.css"

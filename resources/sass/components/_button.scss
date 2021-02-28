@@ -1,50 +1,76 @@
+/**
+*
+* Création des formes graphiques des boutons
+*
+* */
+
 // Bouton générale
 .btn {
-    font-family: $font-logo;
-    text-transform: lowercase;
-    border-radius: 30rem;
-    padding: 1rem 3.5rem;
-    color: $white;
-    display: inline-block;    
-    border: .2rem solid $black;
+	font-family: $font-logo;
+	text-transform: lowercase;
+	border-radius: 30rem;
+	padding: 1rem 3.5rem;
+	color: $white;
+	display: inline-block;    
+	border: .2rem solid $black;
 
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    line-height: 100%;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	line-height: 100%;
 }
 
 .btn_bordure {
-    color: $black;
-    transition: all 400ms ease-out;
-    &:hover {
-        color: $white;
-        border: .2rem solid $white;
-    }
+	color: $black;
+	transition: all 400ms ease-out;
+	&:hover {
+		color: $white;
+		border: .2rem solid $white;
+	}
 }
 
 .btn_fond {
-    color: $white;
-    background: darken($body-bg, 50%);
-    border: .2rem solid transparent;
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: calc(-100% - 30px);
-        width: calc(100% + 20px);
-        height: 100%;
-        z-index: -1;
-        background-color: $white;
-        transform: skew(-22deg);
-        transition: all 800ms ease-out;
-    }
-    &:hover {
-        color: $body-bg;
-        border: .2rem solid transparent;
-        &:before {
-            content: '';
-            left: -10px;
-        }
-    }
+	color: $white;
+	background: darken($body-bg, 50%);
+	border: .2rem solid transparent;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: calc(-100% - 30px);
+		width: calc(100% + 20px);
+		height: 100%;
+		z-index: -1;
+		background-color: $white;
+		transform: skew(-22deg);
+		transition: all 800ms ease-out;
+	}
+	&:hover {
+		color: $body-bg;
+		border: .2rem solid transparent;
+		&:before {
+			content: '';
+			left: -10px;
+		}
+	}
+}
+
+.button {
+	display: flex;
+	flex-direction: row;
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--color-lightblue);
+	border: solid 1px var(--color-lightblue);
+	border-radius: 50em;
+	padding: .7em 2em;
+	width: fit-content;
+	box-shadow: 0 0 .5em .05em var(--color-lightblue-50-opacity), 0 0 .5em .05em var(--color-lightblue-50-opacity) inset;
+	margin: 0 auto 20vh auto;
+	transition: .3s ease-in-out;
+}
+.button:hover {
+	transform: translateY(-.2em);
+	color: var(--color-lightblue);
+	box-shadow: 0 0 1em .15em var(--color-lightblue-50-opacity), 0 0 1em .15em var(--color-lightblue-50-opacity) inset;
 }

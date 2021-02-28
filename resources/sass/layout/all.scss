@@ -1,98 +1,77 @@
 /**
- *
- *  Programmation générique adaptée au projet
- *
- * */
+*
+*  Programmation générique : Adaptée au projet
+*
+* */
 
 // Corps
 body, html{
-    display: flex;
-    flex-wrap: wrap;
-    scroll-behavior: smooth;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 // Titres
 h1 {
-    margin: 0;
-    color: $color-title;
-    font-family: $font-title;
-    font-size: 20rem;
-    font-style: normal;
-    font-weight: bolder;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1rem;
-    -webkit-text-stroke: .8rem;
-    -webkit-text-stroke-color: $color-title;
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    // Texte non selectionnable
-    -moz-user-select: none; // Firefox
-    -webkit-user-select: none; /// Chrome, Safari, Opéra depuis la version 15
-    -ms-user-select: none; // Internet explorer depuis la version 10 et Edge */
-    user-select: none; // Propriété standard
+	margin: 0;
+	color: $color-title;
+	font-family: $font-title;
+	font-size: 19.75rem;
+	font-style: normal;
+	font-weight: bolder;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	-webkit-text-stroke: .8rem;
+	-webkit-text-stroke-color: $color-title;
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	// Texte non selectionnable
+	-moz-user-select: none; // Firefox
+	-webkit-user-select: none; /// Chrome, Safari, Opéra depuis la version 15
+	-ms-user-select: none; // Internet explorer depuis la version 10 et Edge */
+	user-select: none; // Propriété standard
 }
 
 h2 {
-    font-family: $font-logo;
-    text-transform: lowercase;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
+	font-family: $font-logo;
+	text-transform: lowercase;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
 }
 
 .logo-title{
-    font-family: $font-logo;
-    font-size: 1.5rem;  
-    z-index: 2;
+	font-family: $font-logo;
+	font-size: 1.5rem;  
+	z-index: 2;
 }
 .logo {
-    margin: 2rem 0;
-    position : fixed;
-    width : 31.25rem;
-    left : 50%;
+	margin: 2rem 0;
+	position : fixed;
+	width : 31.25rem;
+	left : 50%;
 }
-
-// Liens
-a {
-    color: white;
-    text-decoration: none;
-    -webkit-text-decoration-line: none;
-    text-decoration-line: none;
-    &:link {
-        cursor: none; // Retire le curseur
-    }
-    &:hover {
-        -webkit-transition: 0.4s;
-        -o-transition: 0.4s;
-        transition: 0.4s;
-    }
-}
-
-// Ratio image
-img {
-    max-width: 100%;
-    height: auto;
-    -o-object-fit: contain;
-    object-fit: contain;
-}
-
 
 // Container
 .container {
-    max-width: 84%;
-    min-height: 100%;
-    margin: 0 auto;
-    padding-right: 4rem;
-    // background-color: rgb(18, 61, 110);
-    float: right;
+	max-width: 84%;
+	min-height: 100%;
+	margin: 0 auto;
+	padding-right: 4rem;
+	// background-color: rgb(18, 61, 110);
+	float: right;
 }
-.headings > div {
-    margin-bottom: 10rem;
-    min-height: 100vh;
-    max-width: 100vw;
-    z-index: 1;
-    position: relative;
+
+.headings > section {
+	margin-bottom: 10rem;
+	min-height: 100vh;
+	max-width: 100vw;
+	z-index: 1;
+	position: relative;
+}
+
+div .headings.container > section {
+	border:solid;
 }

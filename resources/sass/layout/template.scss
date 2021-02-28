@@ -1,36 +1,57 @@
 /**
- *
- * Programmation générique de base
- *
- * */
+*
+* Programmation générique :  Base de toutes les pages => gloables aux projets
+*
+* */
 
- * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
 }
 
-body {
-    background-color: $body-bg !important;
-    color: $white !important;
-    font-family: $font-body;
-    font-display: swap;
-    margin: 0;
-    padding: 0 !important;
-    height: 100vh;
-    overflow-x: hidden;
-    cursor: none; // Retire le curseur
-    html {
-        width: 100%;
-        height: 100%;
-        font-size: 1rem;
-        ul,
-        li {
-            list-style-type: none;
-        }
-    }
-}
-
-div .headings.container > div {
-    border:solid;
+html {
+	width: 100%;
+	height: 100%;
+	font-size: 1.1rem; // 1rem généralement
+	line-height: 1.5rem;
+    scroll-behavior: smooth;
+	body {
+		background-color: $body-bg !important;
+		color: $white !important;
+		font-family: $font-body;
+		font-display: swap;
+		margin: 0;
+		padding: 0 !important;
+		height: 100vh;
+		overflow-x: hidden;
+		cursor: none; // Retire le curseur par défaut
+        // Puces
+		ul,
+		li {
+			list-style-type: none;
+		}
+        // Liens
+		a {
+			color: white;
+			text-decoration: none;
+			-webkit-text-decoration-line: none;
+			text-decoration-line: none;
+			&:link {
+				cursor: none; // Retire le curseur
+			}
+			&:hover {
+				-webkit-transition: 0.4s;
+				-o-transition: 0.4s;
+				transition: 0.4s;
+			}
+		}
+		// Redimensionnement d'une image en conservant le ratio lors du responsive
+		img {
+			max-width: 100%;
+			height: auto;
+			-o-object-fit: contain;
+			object-fit: contain;
+		}
+	}
 }

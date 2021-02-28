@@ -1,13 +1,19 @@
+/**
+*
+* Propriété CSS cursor
+*
+* */
+
 .cursor {
-    pointer-events: none;
-    .cursor__ball {
-    position: fixed;
-    top: 0;
-    left: 0;
-    mix-blend-mode: difference;
-    z-index: 1000000;
-    circle {
-            fill: #f7f8fa;
-        }
-    }
+	pointer-events: none;
+	.cursor__ball {
+		position: fixed;
+		top: 0;
+		left: 0;
+		mix-blend-mode: difference;
+		z-index: 1000000;
+		circle {
+			fill: #f7f8fa;
+		}
+	}
 }
