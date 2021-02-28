@@ -13,4 +13,9 @@ npm-debug.log
 yarn-error.log
 /composer.phar
 .idea
+# Supp fichiers sass
 /.sass-cache
+/public/css/sass/*.map
+/public/css/sass/*
+# Pas supp ce fichier
+!app.css
