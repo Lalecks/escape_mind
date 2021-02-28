@@ -6,7 +6,7 @@ Error: Undefined variable: "$cyan_blue-degraded".
 31:             align-items: space-between;
 32:             justify-content: center;
 33:             padding: 4rem 3rem;
-34:             border-radius: 5rem;
+34:             border-radius: 1.625rem;
 35:             background: $cyan_blue-degraded;
 36:             max-width: 36.25rem;
 37:             max-height: 36.25rem;
@@ -91,4 +91,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$cyan_blue-degraded\".\A         on line 35 of resources/sass/sections/web/home.scss\A \A 30:             flex-flow: column wrap;\A 31:             align-items: space-between;\A 32:             justify-content: center;\A 33:             padding: 4rem 3rem;\A 34:             border-radius: 5rem;\A 35:             background: $cyan_blue-degraded;\A 36:             max-width: 36.25rem;\A 37:             max-height: 36.25rem;\A 38:             backdrop-filter: blur(4rem);\A 39:         }\A 40:         .circle {"; }
+  content: "Error: Undefined variable: \"$cyan_blue-degraded\".\A         on line 35 of resources/sass/sections/web/home.scss\A \A 30:             flex-flow: column wrap;\A 31:             align-items: space-between;\A 32:             justify-content: center;\A 33:             padding: 4rem 3rem;\A 34:             border-radius: 1.625rem;\A 35:             background: $cyan_blue-degraded;\A 36:             max-width: 36.25rem;\A 37:             max-height: 36.25rem;\A 38:             backdrop-filter: blur(4rem);\A 39:         }\A 40:         .circle {"; }

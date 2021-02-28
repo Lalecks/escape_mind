@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$body-bg".
-        on line 20 of resources/sass/layout/template.scss
+        on line 21 of resources/sass/layout/template.scss
 
-15: 	height: 100%;
-16: 	font-size: 1.1rem; // 1rem généralement
-17: 	line-height: 1.5rem;
-18:     scroll-behavior: smooth;
-19: 	body {
-20: 		background-color: $body-bg !important;
-21: 		color: $white !important;
-22: 		font-family: $font-body;
-23: 		font-display: swap;
-24: 		margin: 0;
-25: 		padding: 0 !important;
+16: 	height: 100%;
+17: 	font-size: 1.1rem; // 1rem generalement
+18: 	line-height: 1.5rem;
+19:     scroll-behavior: smooth;
+20: 	body {
+21: 		background-color: $body-bg !important;
+22: 		color: $white !important;
+23: 		font-family: $font-body;
+24: 		font-display: swap;
+25: 		margin: 0;
+26: 		padding: 0 !important;
 
 Backtrace:
-resources/sass/layout/template.scss:20
+resources/sass/layout/template.scss:21
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
@@ -84,4 +84,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$body-bg\".\A         on line 20 of resources/sass/layout/template.scss\A \A 15: 	height: 100%;\A 16: 	font-size: 1.1rem; // 1rem généralement\A 17: 	line-height: 1.5rem;\A 18:     scroll-behavior: smooth;\A 19: 	body {\A 20: 		background-color: $body-bg !important;\A 21: 		color: $white !important;\A 22: 		font-family: $font-body;\A 23: 		font-display: swap;\A 24: 		margin: 0;\A 25: 		padding: 0 !important;"; }
+  content: "Error: Undefined variable: \"$body-bg\".\A         on line 21 of resources/sass/layout/template.scss\A \A 16: 	height: 100%;\A 17: 	font-size: 1.1rem; // 1rem generalement\A 18: 	line-height: 1.5rem;\A 19:     scroll-behavior: smooth;\A 20: 	body {\A 21: 		background-color: $body-bg !important;\A 22: 		color: $white !important;\A 23: 		font-family: $font-body;\A 24: 		font-display: swap;\A 25: 		margin: 0;\A 26: 		padding: 0 !important;"; }

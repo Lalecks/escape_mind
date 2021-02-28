@@ -7,13 +7,14 @@
 * {
 	margin:0;
 	padding:0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 html {
 	width: 100%;
 	height: 100%;
-	font-size: 1.1rem; // 1rem généralement
+	font-size: 1.1rem; // 1rem generalement
 	line-height: 1.5rem;
     scroll-behavior: smooth;
 	body {
@@ -25,8 +26,9 @@ html {
 		padding: 0 !important;
 		height: 100vh;
 		overflow-x: hidden;
-		cursor: none; // Retire le curseur par défaut
+		cursor: none; // Retire le curseur par defaut
         // Puces
+        position: relative; // Si footer en absolute
 		ul,
 		li {
 			list-style-type: none;
@@ -46,7 +48,7 @@ html {
 				transition: 0.4s;
 			}
 		}
-		// Redimensionnement d'une image en conservant le ratio lors du responsive
+		// Redimensionnement d une image en conservant le ratio lors du responsive
 		img {
 			max-width: 100%;
 			height: auto;

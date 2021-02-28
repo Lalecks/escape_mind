@@ -8,6 +8,8 @@
 body, html{
 	display: flex;
 	flex-wrap: wrap;
+    height: 100%;
+	margin: 0; padding: 0;
 }
 
 // Titres
@@ -59,19 +61,18 @@ h2 {
 	max-width: 84%;
 	min-height: 100%;
 	margin: 0 auto;
+    padding-left: 1rem;
 	padding-right: 4rem;
-	// background-color: rgb(18, 61, 110);
+	background-color: rgb(37, 37, 37);
 	float: right;
+    clear: none; // Toujours avec un float
 }
 
 .headings > section {
-	margin-bottom: 10rem;
+	margin-bottom: 5rem;
 	min-height: 100vh;
 	max-width: 100vw;
 	z-index: 1;
 	position: relative;
-}
-
-div .headings.container > section {
-	border:solid;
+    border: solid;
 }

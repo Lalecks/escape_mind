@@ -238,7 +238,7 @@
 		<section id="about">
 			<h1>À propos</h1>
 			<div class="project">
-				<h2>Quelle est l'origine de ce projet ?</h2>
+				<h2>l'origine du projet</h2>
 				<p>Nous sommes cinq étudiants de l’université de Valenciennes. Pour notre projet de fin de licence, nous devions réaliseer un projet. C’est pour ça qu’on a fait un escape game.</p>
 			</div>
 			<div class="team">
@@ -293,9 +293,9 @@
 			</div>
 		</section>
 	</div>
-	<footer>
+	{{-- <footer>
 		<span>escape_mind</span>
 		<span>escape_mind</span>
-	</footer>
+	</footer> --}}
 </div>
 @endsection

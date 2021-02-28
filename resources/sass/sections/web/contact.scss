@@ -3,21 +3,40 @@
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+    flex-wrap: wrap;
 	.contact-center {
 		display: flex;
-
+        flex-wrap: wrap;
 		div {
 			flex-basis: 50%;
 		}
 	}
 	.contact-txt {
-		padding: 0 5.6rem;
-		display: flex;
-		justify-content: center;
-		align-self: flex-end;
+		padding: 0 5rem;
+        .media {
+            padding-top: 1.5rem;
+            text-align: right;
+            // position: relative;
+            // display: flex; // Permet de centrer le .media::before
+            // justify-content: flex-end;
+            a {
+                margin-left: .5rem;
+            }
+        }
+        .media:before {
+            content: "";
+            display: table-cell;
+            width: .1rem;
+            background-color: $white;
+            position: absolute;
+            margin-left:-100%;
+            // font-weight: bold;
+            // display: inline-block;
+            // vertical-align: middle;
+        }
 	}
 	.take-contact {
-		align-self: flex-end;
+		align-self: center;
 		.mail {
 			font-size: xx-large;
 			font-weight: bolder;
