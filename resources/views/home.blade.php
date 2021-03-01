@@ -24,9 +24,9 @@
 
 			<div class="video-overlay">
 				<div class="line"></div>
-				<div class="circle circle-full"></div>
-				<div class="circle"></div>
-				<div class="circle"></div>
+				<div class="glass-effect circle circle-full-cyan_blue"></div>
+				<div class="glass-effect circle circle-border-cyan_blue"></div>
+				<div class="glass-effect circle circle-border-cyan_blue"></div>
 				<div id ="home_box" class="glass-effect ">
 					<p>Il y a plusieurs années un scientifique a crée une IA, et aujourd’hui, il doit la débrancher. Pour cela, il se connecte à celle-ci, et se retrouve enfermé dans l’IA qui retrace ses souvenirs.</p>
 					<div>
@@ -39,9 +39,9 @@
 
 		<section id="story">
 			<h1>Histoire</h1>
-			<div>
+			<div class="story-informations">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis, leo eget vestibulum lacinia, odio neque efficitur urna, at tempor augue ligula ut elit. Nulla facilisi. Etiam at justo ut ipsum sagittis consectetur. Nunc aliquam ultrices pulvinar. Praesent in accumsan neque. Praesent vitae arcu fringilla, scelerisque felis ac, eleifend nulla. Quisque sodales, massa vitae bibendum viverra, leo justo malesuada metus, vel aliquet arcu est sed augue. Proin malesuada hendrerit ex.</p>
-				<div class="informations">
+				<div class="story-items">
 					<div>
 						<p>Thème</p>
 						<p>Intelligence artificielle</p>
@@ -60,9 +60,9 @@
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="story-illustration">
+				<div class="glass-effect circle circle-yellow"></div>
 				<img src="{{ asset('ressources/web/artificial_intelligence.png') }}" alt="artificial_intelligence"/>
-				<div class="circle circle-yellow"></div>
 			</div>
 		</section>
 
@@ -241,7 +241,7 @@
 				<h2>l'origine du projet</h2>
 				<p>Nous sommes cinq étudiants de l’université de Valenciennes. Pour notre projet de fin de licence, nous devions réaliseer un projet. C’est pour ça qu’on a fait un escape game.</p>
 			</div>
-			<div class="team">
+			<div class="team glass-effect">
 				<h2>Qui sommes-nous ?</h2>
 				<div class="team-img-role">
 					<div>

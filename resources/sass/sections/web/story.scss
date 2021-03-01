@@ -1,7 +1,71 @@
 #story {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
 	div{
-		width: 50%;
+		flex-basis: 50%;
+	}
+	.story-informations {
+		margin: 0 auto;
+		.story-items {
+			font-weight: bold;
+			margin-top: 4rem;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 0.625rem;
+			grid-auto-rows: minmax(3.75rem, auto);
+			div, div::before, div::after {
+				display:inline-block;
+				vertical-align: middle;
+				position: relative;
+			}
+			div {
+				padding-left: 1rem;
+				p {
+					margin: .2rem 0;
+					&:nth-child(1) {
+						color: $yellow;
+					}
+					&:nth-child(2) {
+						color: $white;
+					}
+				}
+				&::before, &::after {
+					width: 0.3125rem;
+					height: 2.1rem;
+					background: $white-degraded;
+					content:"";
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+				}
+			}
+		}
+	}
+	.story-illustration {
+		position: absolute;
+		right: -11%;
+		transform: translateX(11%);
+		z-index: 0;
+		img {
+			position: relative;
+			max-width: 28.313;
+			max-height: 42.688;
+		}
+		.circle-yellow {
+			width: 20rem;
+			height: 20rem;
+			border: 1rem solid $yellow-degraded;
+			background: $yellow-degraded;
+			position: absolute;
+			bottom: 5%;
+			transform: translateY(5%);
+			right: -15%;
+			transform: translateX(-15%);
+			z-index: 1;
+		}
 	}
 }
+

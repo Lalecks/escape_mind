@@ -37,18 +37,6 @@
             max-height: 36.25rem;
             backdrop-filter: blur(4rem);
         }
-        .circle {
-            position: absolute;
-            width: 16.2rem;
-            height: 16.2rem;
-            border: 1rem solid $cyan_blue-degraded;
-            background: $cyan_blue-degraded;
-            border-radius: 50%;
-            perspective: 75rem;
-            perspective-origin: 50% 50%;
-            right: -6%;
-            top: -18%;
-        }
         a {
             margin-top: 2rem;
             // line-height: 120%;
