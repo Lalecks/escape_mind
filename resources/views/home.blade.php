@@ -244,28 +244,28 @@
 			<div class="team glass-effect">
 				<h2>Qui sommes-nous ?</h2>
 				<div class="team-img-role">
-					<div>
-						<img src=""/>
+					<div class="hoverable">
+						<img src="{{ asset('ressources/web/team/ant.png') }}"/>
 						<span>Sound designer</span>
 					</div>
 					<div>
-						<img src=""/>
+						<img src="{{ asset('ressources/web/team/mon.png') }}"/>
 						<span>Sound designer</span>
 					</div>
 					<div>
-						<img src=""/>
+						<img src="{{ asset('ressources/web/team/ca.png') }}"/>
 						<span>Infographiste</span>
 					</div>
 					<div>
-						<img src=""/>
+						<img src="{{ asset('ressources/web/team/sa.png') }}"/>
 						<span>Webdesigner &amp; développeuse front-end</span>
 					</div>
 					<div>
-						<img src=""/>
+						<img src="{{ asset('ressources/web/team/ant.png') }}"/>
 						<span>Développeur frontend &amp; backend</span>
 					</div>
 				</div>
-				<div class="team-names">
+				<div class="team-names logo-title">
 					<a><span>Antony</span></a>
 					<a><span>Mondine</span></a>
 					<a><span>Camille</span></a>
@@ -274,7 +274,6 @@
 				</div>
 			</div>
 		</section>
-
 
 		<section id="contact">
 			<h1>Conctact</h1>

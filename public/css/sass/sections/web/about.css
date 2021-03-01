@@ -11,8 +11,8 @@ Error: Undefined variable: "$cyan_purple-degraded".
 20: 		max-width: 36.25rem;
 21: 		max-height: 36.25rem;
 22: 		backdrop-filter: blur(4rem);
-23: 	}
-24: }
+23: 		.team-img-role {
+24: 			display: flex;
 
 Backtrace:
 resources/sass/sections/web/about.scss:19
@@ -80,4 +80,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$cyan_purple-degraded\".\A         on line 19 of resources/sass/sections/web/about.scss\A \A 14: 		padding: 0 5rem;\A 15: 	}\A 16: 	.team {\A 17: 		padding: 1rem 4rem 0 4rem;\A 18: 		border-radius: 1.625rem;\A 19: 		background: $cyan_purple-degraded;\A 20: 		max-width: 36.25rem;\A 21: 		max-height: 36.25rem;\A 22: 		backdrop-filter: blur(4rem);\A 23: 	}\A 24: }"; }
+  content: "Error: Undefined variable: \"$cyan_purple-degraded\".\A         on line 19 of resources/sass/sections/web/about.scss\A \A 14: 		padding: 0 5rem;\A 15: 	}\A 16: 	.team {\A 17: 		padding: 1rem 4rem 0 4rem;\A 18: 		border-radius: 1.625rem;\A 19: 		background: $cyan_purple-degraded;\A 20: 		max-width: 36.25rem;\A 21: 		max-height: 36.25rem;\A 22: 		backdrop-filter: blur(4rem);\A 23: 		.team-img-role {\A 24: 			display: flex;"; }
