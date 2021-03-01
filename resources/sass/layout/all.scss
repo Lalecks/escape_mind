@@ -6,8 +6,11 @@
 
 // Corps
 body, html{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
     height: 100%;
 	margin: 0; padding: 0;
 }
@@ -50,10 +53,13 @@ h2 {
 	z-index: 2;
 }
 .logo {
-	margin: 2rem 0;
 	position : fixed;
-	width : 31.25rem;
-	left : 50%;
+	margin: 0 auto;
+	padding: 2rem 0;
+	width : 0;
+	left : 0;
+	right: 0;
+	background-color: brown;
 }
 
 // Container

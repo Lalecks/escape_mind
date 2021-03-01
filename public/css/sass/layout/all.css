@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color-title".
-        on line 18 of resources/sass/layout/all.scss
+        on line 21 of resources/sass/layout/all.scss
 
-13: }
-14: 
-15: // Titres
-16: h1 {
-17: 	margin: 0;
-18: 	color: $color-title;
-19: 	font-family: $font-title;
-20: 	font-size: 19.75rem;
-21: 	font-style: normal;
-22: 	font-weight: bolder;
-23: 	text-align: center;
+16: }
+17: 
+18: // Titres
+19: h1 {
+20: 	margin: 0;
+21: 	color: $color-title;
+22: 	font-family: $font-title;
+23: 	font-size: 19.75rem;
+24: 	font-style: normal;
+25: 	font-weight: bolder;
+26: 	text-align: center;
 
 Backtrace:
-resources/sass/layout/all.scss:18
+resources/sass/layout/all.scss:21
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -69,4 +69,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-title\".\A         on line 18 of resources/sass/layout/all.scss\A \A 13: }\A 14: \A 15: // Titres\A 16: h1 {\A 17: 	margin: 0;\A 18: 	color: $color-title;\A 19: 	font-family: $font-title;\A 20: 	font-size: 19.75rem;\A 21: 	font-style: normal;\A 22: 	font-weight: bolder;\A 23: 	text-align: center;"; }
+  content: "Error: Undefined variable: \"$color-title\".\A         on line 21 of resources/sass/layout/all.scss\A \A 16: }\A 17: \A 18: // Titres\A 19: h1 {\A 20: 	margin: 0;\A 21: 	color: $color-title;\A 22: 	font-family: $font-title;\A 23: 	font-size: 19.75rem;\A 24: 	font-style: normal;\A 25: 	font-weight: bolder;\A 26: 	text-align: center;"; }

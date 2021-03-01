@@ -2,52 +2,65 @@
 	display: flex;
 	align-items: center;
 	align-content: center;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	div.project, div.team {
-		flex-basis: 50%;
-		h2{
-			padding-bottom: 1.5rem;
-		}
+	h2{
+		padding-bottom: 1.5rem;
 	}
 	.project {
+		flex-basis: 40%;
 		padding: 0 5rem;
 	}
 	.team {
-		padding: 1rem 4rem 0 4rem;
-		border-radius: 1.625rem;
-		background: $cyan_purple-degraded;
-		max-width: 36.25rem;
-		max-height: 36.25rem;
-		backdrop-filter: blur(4rem);
+		flex-basis: 60%;
 		.team-img-role {
 			display: flex;
 			justify-content: flex-end;
 			position: relative;
+			padding: 1rem 4rem 0 4rem;
+			border-radius: 1.625rem;
+			background: $cyan_purple-degraded;
+			max-width: 36.25rem;
+			max-height: 36.25rem;
+			backdrop-filter: blur(4rem);
 			div {
 				align-self: flex-end;
 				margin-left: -3rem;
-				transition: all 3ms ease-in-out;
 				cursor: pointer;
+				// La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde.
+				-webkit-transition: all 1,5s ease-in-out; // Safari et Chrome
+				-moz-transition: all 1,5s ease-in-out; // Firefox
+				-ms-transition: all 1,5s ease-in-out; // Internet Explorer 9
+				-o-transition: all 1,5s ease-in-out; // Opera
+				transition: all 1,5s ease-in-out;
 				img {	
-					width: 20rem;
-					// position: absolute;
+					max-width:100%;
+					height:auto;
 				}
 				span {
 					display: none;
 				}
+				// Zoom des images
 				&:hover{
 					img{
-						transform: scale(1,5);
+						// L'image est grossie de 25%
+						-webkit-transform:scale(1.25); // Safari et Chrome
+						-moz-transform:scale(1.25); // Firefox
+						-ms-transform:scale(1.25); // Internet Explorer 9
+						-o-transform:scale(1.25); // Opera
+						transform:scale(1.25);
 					}
-					span {
-						display: block;
-					}
+					// span {
+					// 	display: block;
+					// }
 				}
 			}
 		}
 		.team-names {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
+			-ms-flex-pack: distribute;
 			justify-content: space-around;
 			span {
 				font-size: 1rem;  
@@ -59,27 +72,3 @@
 		}
 	}
 }
-// .zoom {
-// width: 320px;
-// height: 240px;
-// }
-// .image {
-// width: 100%;
-// height: 100%;
-// }
-// .image img {
-// /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
-// -webkit-transition: all 1s ease; /* Safari et Chrome */
-// -moz-transition: all 1s ease; /* Firefox */
-// -ms-transition: all 1s ease; /* Internet Explorer 9 */
-// -o-transition: all 1s ease; /* Opera */
-// transition: all 1s ease;
-// }
-// .image:hover img {
-// /* L'image est grossie de 25% */
-// -webkit-transform:scale(1.25); /* Safari et Chrome */
-// -moz-transform:scale(1.25); /* Firefox */
-// -ms-transform:scale(1.25); /* Internet Explorer 9 */
-// -o-transform:scale(1.25); /* Opera */
-// transform:scale(1.25);
-// }

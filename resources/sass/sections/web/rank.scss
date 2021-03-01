@@ -153,9 +153,13 @@
 	.hand {
 		position: absolute;
 		bottom: -12%;
-		transform: translateY(12%);
+		-webkit-transform: translateY(12%);
+		    -ms-transform: translateY(12%);
+		        transform: translateY(12%);
 		right: -11%;
-		transform: translateX(11%);
+		-webkit-transform: translateX(11%);
+		    -ms-transform: translateX(11%);
+		        transform: translateX(11%);
 		img {
 			width: 80%;
 		}

@@ -241,9 +241,9 @@
 				<h2>l'origine du projet</h2>
 				<p>Nous sommes cinq étudiants de l’université de Valenciennes. Pour notre projet de fin de licence, nous devions réaliseer un projet. C’est pour ça qu’on a fait un escape game.</p>
 			</div>
-			<div class="team glass-effect">
-				<h2>Qui sommes-nous ?</h2>
-				<div class="team-img-role">
+			<div class="team">
+				<div class="team-img-role  glass-effect">
+					<h2>Qui sommes-nous ?</h2>
 					<div class="hoverable">
 						<img src="{{ asset('ressources/web/team/ant.png') }}"/>
 						<span>Sound designer</span>
@@ -280,7 +280,7 @@
 			<div class="contact-center">
 				<div class="contact-txt">
 					<p>Hey ! Tu es à la recherche d’informations ? Ou tu souhaites peut-être donner ton avis sur l’escape game en partageant ton ressenti, d'éventuelles remarques ou suggestions dû à ton expérience ? Tu es sur la bonne page ! Alors, envoie nous un mail, qu’est-ce que tu attends&nbsp;?</p>
-                    <div class="media">
+					<div class="media">
 						<a href="#"><i class="fab fa-facebook-f"></i></a>
 						<a href="#"><i class="fab fa-instagram"></i></a>
 						<a href="#"><i class="fab fa-youtube"></i></a>
@@ -293,8 +293,8 @@
 		</section>
 	</div>
 	{{-- <footer>
-		<span>escape_mind</span>
-		<span>escape_mind</span>
+	<span>escape_mind</span>
+	<span>escape_mind</span>
 	</footer> --}}
 </div>
 @endsection
