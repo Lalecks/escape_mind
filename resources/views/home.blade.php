@@ -42,7 +42,13 @@
 				<div>
 					<p>Il y a plusieurs années un scientifique a crée une IA, et aujourd’hui, il doit la débrancher. Pour cela, il se connecte à celle-ci, et se retrouve enfermé dans l’IA qui retrace ses souvenirs.</p>
 					<div>
-						<a class="btn btn_bordure " id="play" href="/jeu" data-pjax>Trailer</a>
+						<a class="btn btn_bordure trigger">Trailer</a>
+						<div class="modal">
+							<div class="modal-content glass-effect">
+								<span class="close-button">&times;</span>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/gA03iyI3yEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
 						<a class="btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
 					</div>
 				</div>

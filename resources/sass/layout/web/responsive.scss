@@ -66,9 +66,12 @@
 	}
     #home .video-overlay #home_box div div {
         display: -ms-inline-grid;
-				display: inline-grid;
+        display: inline-grid;
     }
-    
+    iframe{
+        width: auto;
+        height: 200px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

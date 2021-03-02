@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$grey".
-        on line 117 of resources/sass/layout/web/responsive.scss
+        on line 120 of resources/sass/layout/web/responsive.scss
 
-112: 						display:block;
-113: 						font-size:2em;
-114: 						text-decoration:none;
-115: 						padding:10px 0;
-116: 						text-align:center;
-117: 						color:$grey;
-118: 						font-weight:bold;
-119: 						transition:all 0.2s ease-in-out;
-120: 						text-shadow:1px 1px 2px rgba(0,0,0,.5);
-121: 
-122: 						&:hover {
+115: 						display:block;
+116: 						font-size:2em;
+117: 						text-decoration:none;
+118: 						padding:10px 0;
+119: 						text-align:center;
+120: 						color:$grey;
+121: 						font-weight:bold;
+122: 						transition:all 0.2s ease-in-out;
+123: 						text-shadow:1px 1px 2px rgba(0,0,0,.5);
+124: 
+125: 						&:hover {
 
 Backtrace:
-resources/sass/layout/web/responsive.scss:117
+resources/sass/layout/web/responsive.scss:120
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -127,4 +127,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grey\".\A         on line 117 of resources/sass/layout/web/responsive.scss\A \A 112: 						display:block;\A 113: 						font-size:2em;\A 114: 						text-decoration:none;\A 115: 						padding:10px 0;\A 116: 						text-align:center;\A 117: 						color:$grey;\A 118: 						font-weight:bold;\A 119: 						transition:all 0.2s ease-in-out;\A 120: 						text-shadow:1px 1px 2px rgba(0,0,0,.5);\A 121: \A 122: 						&:hover {"; }
+  content: "Error: Undefined variable: \"$grey\".\A         on line 120 of resources/sass/layout/web/responsive.scss\A \A 115: 						display:block;\A 116: 						font-size:2em;\A 117: 						text-decoration:none;\A 118: 						padding:10px 0;\A 119: 						text-align:center;\A 120: 						color:$grey;\A 121: 						font-weight:bold;\A 122: 						transition:all 0.2s ease-in-out;\A 123: 						text-shadow:1px 1px 2px rgba(0,0,0,.5);\A 124: \A 125: 						&:hover {"; }
