@@ -242,36 +242,41 @@
 				<p>Nous sommes cinq étudiants de l’université de Valenciennes. Pour notre projet de fin de licence, nous devions réaliseer un projet. C’est pour ça qu’on a fait un escape game.</p>
 			</div>
 			<div class="team">
-				<div class="team-img-role  glass-effect">
+				<div class="team-img-role glass-effect">
 					<h2>Qui sommes-nous ?</h2>
 					<div class="hoverable">
 						<img src="{{ asset('ressources/web/team/ant.png') }}"/>
-						<span>Sound designer</span>
+						<span class="team-role">Sound designer</span>
+						<span class="team-name logo-title">Antony</span>
 					</div>
-					<div>
+					<div class="hoverable">
 						<img src="{{ asset('ressources/web/team/mon.png') }}"/>
-						<span>Sound designer</span>
+						<span class="team-role">Sound designer</span>
+						<span class="team-name logo-title">Mondine</span>
 					</div>
-					<div>
+					<div class="hoverable">
 						<img src="{{ asset('ressources/web/team/ca.png') }}"/>
-						<span>Infographiste</span>
+						<span class="team-role">Infographiste</span>
+						<span class="team-name logo-title">Camille</span>
 					</div>
-					<div>
+					<div class="hoverable">
 						<img src="{{ asset('ressources/web/team/sa.png') }}"/>
-						<span>Webdesigner &amp; développeuse front-end</span>
+						<span class="team-role">Webdesigner &amp; développeuse front-end</span>
+						<span class="team-name logo-title">Sarah</span>
 					</div>
-					<div>
+					<div class="hoverable">
 						<img src="{{ asset('ressources/web/team/ant.png') }}"/>
-						<span>Développeur frontend &amp; backend</span>
+						<span class="team-role">Développeur frontend &amp; backend</span>
+						<span class="team-name logo-title">Alexandre</span>
 					</div>
 				</div>
-				<div class="team-names logo-title">
-					<a><span>Antony</span></a>
-					<a><span>Mondine</span></a>
-					<a><span>Camille</span></a>
-					<a><span>Sarah</span></a>
-					<a><span>Alexandre</span></a>
-				</div>
+				{{-- <div class="team-names logo-title">
+				<a><span>Antony</span></a>
+				<a><span>Mondine</span></a>
+				<a><span>Camille</span></a>
+				<a><span>Sarah</span></a>
+				<a><span>Alexandre</span></a>
+				</div> --}}
 			</div>
 		</section>
 
