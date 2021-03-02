@@ -23,16 +23,21 @@
 
 .circle-border-cyan_blue::after{
     content: '';
-    display: inline-block;
+    // display: inline-block;
+    position: absolute;
     width: 16.2rem;
     height: 16.2rem;
     -moz-border-radius: 7.5px;
     -webkit-border-radius: 7.5px;
     border-radius: 50%;
     border: 1rem solid;
-    border-image: $cyan_blue-degraded 50 round;
+    border-image: $cyan_blue-degraded 50;
     background-image: $cyan_blue-degraded;
     // background: linear-gradient(to bottom, #333 0%, transparent 100%);
     // background-image: none;
-    position: absolute;
+    
 }
+
+
+
+

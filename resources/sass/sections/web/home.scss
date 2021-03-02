@@ -5,11 +5,13 @@
 	position: relative;
 	color: white;
 	margin-top: 6rem;
+	// overflow: hidden; // Cacher les parties de la vidéo qui sortent du container
+	// Redimensionnement de la vidéo : Crop video
 	.bg-video {
-		max-width: 100%;
-		max-height: 100%;
-		// padding: 5%;
-		z-index: -1;
+		width: 100vw; // Largeur de la vidéo
+		height: 100vh; // Hauteur de la vidéo
+		object-fit: cover; // Dimensionné pour maintenir ses proportions tout en étant ajusté à la boîte de contenu
+		object-position: 50% 50%; // Point d'angrace
 	}
 	// Overlay (supperposition au dessus)
 	.video-overlay {

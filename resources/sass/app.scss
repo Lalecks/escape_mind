@@ -2,6 +2,26 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders+Display:wght@100&family=Gayathri:wght@100&display=swap');
+@font-face {
+font-family: 'quadranta';
+src: url('../../font/SCRIPTIN.eot') format('eot'),
+     url('quadranta.otf') format('truetype'),
+     url('quadranta.woff') format('woff'),
+     url('quadranta.svg#QuadrantaBold') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+    font-family:"GayatriRegular";
+    src:
+        url("Gayatri.eot?") format("eot"),
+        url("Gayatri.woff") format("woff"),
+        url("Gayatri.ttf") format("truetype"),
+        url("Gayatri.svg#GayatriRegular") format("svg");font-weight:normal;
+        font-style:normal;
+}
+
 
 /*-------- Variables --------*/
 @import 'base/variables';
