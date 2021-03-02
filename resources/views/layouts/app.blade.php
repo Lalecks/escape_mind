@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" xmlns:og='http://ogp.me/ns#' dir="ltr">
 <head>
+ <meta charset='utf-8'>  
     <!-- Encodage -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +11,23 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Référencement -->
-    <title>{{ config('app.name', 'escape_mind') }}</title>
+    <title>{{ config('app.name') }}&nbsp;-&nbsp;l'escape game en ligne</title>
+    <meta name="title" content="{{ config('app.name') }}&nbsp;-&nbsp;l'escape game en ligne"/>
+        {{-- <link rel="icon" type="image/png" href=""/> --}}
+    <meta name="description" content="">
+    <meta name="keywords" content="escape game, play, artificial intelligence, numeric"/>
+    <meta name="copyright" content="© escape_mind"/>
+    <meta name="robots" content="index, follow, archive"/>
+        {{-- <meta name="google-site-verification" content=""/> --}}
+    <link rel='canonical' href='/'/>
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="escape_mind"/>
+    <meta property="og:url" content="https://escapemind.sarahmauriaucourt.fr/"/>
+    <meta property="og:title" content="{{ config('app.name') }}&nbsp;-&nbsp;l'escape game en ligne"/>
+        {{-- <meta property="og:description" content=""/> --}}
+    <meta property="og:locale" content="fr_FR"/>
+    
      <!-- Icônes -->
     <!-- Stylesheets -->
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
@@ -22,7 +39,6 @@
 
 </head>
 <body>
-
     <div class="cursor">
         <div class="cursor__ball cursor__ball--big ">
             <svg height="30" width="30">
@@ -96,6 +112,10 @@
         <div id="pjax-container" class="py-4">
             @yield('content')
         </div>
+
+    <footer> 
+        <p>&copy; {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</p> 
+    </footer>
 
     <!--====== Javascripts & Jquery ======-->
     <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
