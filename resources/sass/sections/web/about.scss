@@ -38,11 +38,11 @@
 				margin-left: -4.5rem;
 				// cursor: pointer;
 				// La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde.
-				-webkit-transition: all 1,5s ease-in-out; // Safari et Chrome
-				-moz-transition: all 1,5s ease-in-out; // Firefox
-				-ms-transition: all 1,5s ease-in-out; // Internet Explorer 9
-				-o-transition: all 1,5s ease-in-out; // Opera
-				transition: all 1,5s ease-in-out;
+				-webkit-transition: all 1.5s ease-in-out; // Safari et Chrome
+				-moz-transition: all 1.5s ease-in-out; // Firefox
+				-ms-transition: all 1.5s ease-in-out; // Internet Explorer 9
+				-o-transition: all 1.5s ease-in-out; // Opera
+				transition: all 1.5s ease-in-out;
 				img {	
 					max-width: 100%;
 					height: auto;
@@ -52,6 +52,11 @@
 				}
 				.team-role {
 					display: none;
+					-webkit-transition: all 300ms ease-in-out; // Safari et Chrome
+					-moz-transition: all 300ms ease-in-out; // Firefox
+					-ms-transition: all 300ms ease-in-out; // Internet Explorer 9
+					-o-transition: all 300ms ease-in-out; // Opera
+					transition: all 300ms ease-in-out;
 				}
 				.team-name {
 					font-size: 1rem !important;  
@@ -62,9 +67,9 @@
 					bottom: -20%;	
 				}
 				// Zoom des images
-				&:hover{
+				&:hover {
 					position: relative;
-					img{
+					img {
 						// L'image est grossie de 25%
 						-webkit-transform:scale(1.25); // Safari et Chrome
 						-moz-transform:scale(1.25); // Firefox
@@ -87,7 +92,7 @@
 						-webkit-transform: rotate(-90deg);
 						-ms-transform: rotate(-90deg);
 						transform: rotate(-90deg);
-						bottom: 30%;
+						bottom: 30%;	
 					}
 					.team-name {
 						color: $white !important;

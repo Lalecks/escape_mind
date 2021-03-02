@@ -69,16 +69,16 @@ h2 {
 	margin: 0 auto;
     padding-left: 1rem;
 	padding-right: 4rem;
-	background-color: rgb(37, 37, 37);
+	// background-color: rgb(37, 37, 37);
 	float: right;
     clear: none; // Toujours avec un float
 }
 
 .headings > section {
-	margin-bottom: 5rem;
+	margin-bottom: 4rem;
 	min-height: 100vh;
 	max-width: 100vw;
 	z-index: 1;
 	position: relative;
-    border: solid;
+    // border: solid;
 }

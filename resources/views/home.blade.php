@@ -16,6 +16,7 @@
 			</ul>
 		</nav>
 	</header>
+
 	<div class="headings container">
 		<section id="home">
 			<video class="bg-video" playsinline="" autoplay="" muted="" loop="">
@@ -23,17 +24,22 @@
 			</video>
 
 			<div class="video-overlay">
-				<div class="line"></div>
+				{{-- <div class="line"></div>
 				<div class="glass-effect circle circle-full-cyan_blue"></div>
-				<div class="glass-effect circle circle-border-cyan_blue"></div>
-				<div class="glass-effect circle circle-border-cyan_blue"></div>
-				<div id ="home_box" class="glass-effect ">
-					<p>Il y a plusieurs années un scientifique a crée une IA, et aujourd’hui, il doit la débrancher. Pour cela, il se connecte à celle-ci, et se retrouve enfermé dans l’IA qui retrace ses souvenirs.</p>
+				<div class="glass-effect circle circle-border-cyan_blue"></div> --}}
+				{{-- <div class=" circle circle-border-cyan_blue"></div> --}}
+				<div id ="home_box" class="glass-effect">
+					<img class="glass-effect" src="{{ asset('ressources/web/sacha.png') }}" alt="sacha_scientist">
+					<div class="circle circle-border-cyan_blue"></div>
 					<div>
-						<a class="btn btn_bordure " id="play" href="/jeu" data-pjax>Trailer</a>
-						<a class="btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
+						<p>Il y a plusieurs années un scientifique a crée une IA, et aujourd’hui, il doit la débrancher. Pour cela, il se connecte à celle-ci, et se retrouve enfermé dans l’IA qui retrace ses souvenirs.</p>
+						<div>
+							<a class="btn btn_bordure " id="play" href="/jeu" data-pjax>Trailer</a>
+							<a class="btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
+						</div>
 					</div>
-				</div>
+			
+				</div> 
 			</div>
 		</section>
 
