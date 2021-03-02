@@ -29,6 +29,8 @@ html {
 		cursor: none; // Retire le curseur par defaut
         // Puces
         position: relative; // Si footer en absolute
+		display : table;
+		width: 100%;
 		ul,
 		li {
 			list-style-type: none;

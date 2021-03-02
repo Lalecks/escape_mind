@@ -113,10 +113,6 @@
             @yield('content')
         </div>
 
-    <footer> 
-        <p>&copy; {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</p> 
-    </footer>
-
     <!--====== Javascripts & Jquery ======-->
     <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
     <script src="{{ asset('js/jquery.pjax.js') }}"></script>

@@ -58,6 +58,18 @@
 		}
 		.media {
 			padding: .5rem;
+			a.facebook:hover { 
+				color: #3b5998;
+			}
+			.twitter:hover { 
+				color: #55acee;
+			}
+			.instagram:hover { 
+				color: #833ab4;
+			}
+			.youtube:hover { 
+				color: #bd081c;
+			}
 		}
 	}
 }

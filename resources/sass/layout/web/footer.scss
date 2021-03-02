@@ -1,15 +1,12 @@
-// footer {
-//     color: $body-bg;
-//     z-index: 11;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-//     background-color: $white;
-//     padding: 2rem 0;
-//     position: absolute;
-//     bottom: 0;
-//     right: 0;
-//     left: 0;
-//     flex-wrap: wrap;
-// }
+footer {
+    display : flex;
+    color: $body-bg;
+    font-weight: bolder;
+    background-color: $white;
+	text-align: center;
+    height: 5rem;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+}
