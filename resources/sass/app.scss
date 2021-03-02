@@ -42,7 +42,7 @@ font-style: normal;
 @import 'layout/web/header';
 @import 'layout/web/footer';
 @import 'layout/web/sidebar';
-@import 'layout/web/responsive';
+
 // Game part
 @import 'layout/game/gameBar';
 @import 'layout/game/object';
@@ -65,3 +65,5 @@ font-style: normal;
 @import 'sections/game/room1';
 @import 'sections/game/room2';
 @import 'sections/game/room3';
+
+@import 'layout/web/responsive';

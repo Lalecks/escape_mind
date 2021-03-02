@@ -62,6 +62,7 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
     - [Unsplash](https://unsplash.com/)
 * Web resources :
     - Copyright (c) [Clement Girault](https://codepen.io/clementGir/pen/RQqvQx)
+    - Copyright (c) [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
 
 ## Project status
 The development of the application is in progress.
