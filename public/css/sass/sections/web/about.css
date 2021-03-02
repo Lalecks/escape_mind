@@ -10,9 +10,9 @@ Error: Undefined variable: "$cyan_purple-degraded".
 22: 			background: $cyan_purple-degraded;
 23: 			max-width: 36.25rem;
 24: 			max-height: 36.25rem;
-25: 			backdrop-filter: blur(4rem);
-26: 			div {
-27: 				align-self: flex-end;
+25: 			div {
+26: 				align-self: flex-end;
+27: 				margin-left: -4.5rem;
 
 Backtrace:
 resources/sass/sections/web/about.scss:22
@@ -91,4 +91,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$cyan_purple-degraded\".\A         on line 22 of resources/sass/sections/web/about.scss\A \A 17: 			display: flex;\A 18: 			justify-content: flex-end;\A 19: 			position: relative;\A 20: 			padding: 1rem 4rem 0 4rem;\A 21: 			border-radius: 1.625rem;\A 22: 			background: $cyan_purple-degraded;\A 23: 			max-width: 36.25rem;\A 24: 			max-height: 36.25rem;\A 25: 			backdrop-filter: blur(4rem);\A 26: 			div {\A 27: 				align-self: flex-end;"; }
+  content: "Error: Undefined variable: \"$cyan_purple-degraded\".\A         on line 22 of resources/sass/sections/web/about.scss\A \A 17: 			display: flex;\A 18: 			justify-content: flex-end;\A 19: 			position: relative;\A 20: 			padding: 1rem 4rem 0 4rem;\A 21: 			border-radius: 1.625rem;\A 22: 			background: $cyan_purple-degraded;\A 23: 			max-width: 36.25rem;\A 24: 			max-height: 36.25rem;\A 25: 			div {\A 26: 				align-self: flex-end;\A 27: 				margin-left: -4.5rem;"; }

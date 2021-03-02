@@ -7,7 +7,7 @@
 	align-items: center;
 	position: relative;
 	::-webkit-scrollbar {
-		/* Scrollbars */
+		// Scrollbarss
 		width: 0.75rem;
 		background: $black-degraded;
 	}
@@ -24,12 +24,12 @@
 		-webkit-box-shadow: inset 0 0 0.375rem grey;  
 	}
 	::-webkit-scrollbar-thumb:hover {						
-		/* Barre */
+		// Barres
 		background: darken(rgb(90,90,90),50%);
 		// -webkit-box-shadow: inset 0 0 0 1px rgb(90,90,90), inset 0 0 0 0.375rem rgb(110,110,110);
 	}
 	// ::-webkit-scrollbar-track-piece {						
-	/* Fond */
+	// Fonds
 	// 	background: transparent none;
 	// 	border: solid 4px transparent;
 	// 	border-right-width: 8px;
@@ -37,12 +37,12 @@
 	// 	-webkit-box-shadow: inset 1px 1px 0 0 rgb(137,131,117), inset -1px -1px 0 0 rgb(224,220,210);
 	// }
 	// ::-webkit-scrollbar-track-piece:horizontal {			
-	/* Fond pour la barre du bas */
+	// Fond pour la barre du bass
 	// 	border-right-width: 4px;
 	// 	border-bottom-width: 8px;
 	// }
 	// ::-webkit-scrollbar-thumb {								
-	/* Barre */
+	// Barres
 	// 	border: solid 0 transparent;
 	// 	border-right-width: 4px;
 	// 	-webkit-border-radius: 5px;
@@ -52,7 +52,7 @@
 	// }
 
 	// ::-webkit-scrollbar-thumb:horizontal {					
-	/* Barre du bas */
+	// Barre du bass
 	// 	border-right-width: 0;
 	// 	border-bottom-width: 4px;
 	// 	-webkit-border-top-right-radius: 5px;
@@ -60,25 +60,25 @@
 	// 	-webkit-border-bottom-left-radius: 5px 9px;
 	// }
 	// ::-webkit-scrollbar-corner {							
-	/* Coin de la fenêtre */
+	// Coin de la fenêtres
 	// 	background: #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
 	// }
 	// ::-webkit-scrollbar-button {							
-	/* Boutons */
+	// Boutonss
 	// 	height: 20.375rem;
 	// 	background: url(images/webkit-arrows-vert.png) 1px 50% no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
 	// }
 	// ::-webkit-scrollbar-button:increment {					
-	/* Bouton pour descendre */
+	// Bouton pour descendres
 	// 	background-position: -19px 50%;
 	// }
 	// ::-webkit-scrollbar-button:horizontal {					
-	/* Boutons horizontaux */
+	// Boutons horizontauxs
 	// 	width: 20.375rem;
 	// 	background: url(images/webkit-arrows-horiz.png) 50% 1px no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
 	// }
 	// ::-webkit-scrollbar-button:horizontal:increment {		
-	/* Bouton pour aller à droite */
+	// Bouton pour aller à droites
 	// 	background-position: 50% -19px;
 	// }
 	.top3 {
@@ -97,6 +97,7 @@
 			// fill: $black-degraded;
 			stroke: $white;
 			// stroke-width: .1rem;
+			// stroke-miterlimit: 10;
 			// filter: blur(59px);
 			position: relative;
 			z-index: 1;
@@ -154,12 +155,12 @@
 		position: absolute;
 		bottom: -12%;
 		-webkit-transform: translateY(12%);
-		    -ms-transform: translateY(12%);
-		        transform: translateY(12%);
+		-ms-transform: translateY(12%);
+		transform: translateY(12%);
 		right: -11%;
 		-webkit-transform: translateX(11%);
-		    -ms-transform: translateX(11%);
-		        transform: translateX(11%);
+		-ms-transform: translateX(11%);
+		transform: translateX(11%);
 		img {
 			width: 80%;
 		}
