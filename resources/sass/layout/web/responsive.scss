@@ -1,15 +1,59 @@
 /* Extra small devices (phones, 600px and down) 576px*/ 
 @media only screen and (max-width: 600px) {
-	.hand, h1, #home_box img { 
+	table {
+		text-align: center;
+		thead {
+			display: none;
+		}
+		tbody {
+			padding-top: 0;
+			tr {
+				border-bottom: thin solid grey;
+				border-bottom-style: dashed;
+
+			}
+		}
+		th {
+			width: 6rem;
+		}
+		tr {
+			display: flex; 
+			flex-wrap: wrap;
+
+			td:nth-child(2) {
+				flex-grow: 1
+			}
+		}
+	}
+
+	.container {
+		padding: 0;
+	}
+	.hand, h1, #home_box img, .team-name { 
 		display: none;
 	}
 
 	#home .video-overlay {
 		flex-direction: initial;
 	}
-	#contact .contact-txt, #contact .contact-txt {
-		padding: 0;
-	}   
+	#contact {
+		.contact-txt {
+			padding: 0;
+		}   
+		.take-contact .mail {
+			font-size: large ;
+			text-shadow: none;
+		}
+	}
+	#story {
+		div {
+			flex-basis: 78%;
+		}
+		.story-informations .story-items {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
 	// #story {
 	//     flex-direction: column;
 	//     .story-informations .story-items {
@@ -30,6 +74,17 @@
 @media only screen and (max-width: 768px) {
 	#story .story-illustration, #rank .top3, .story-items {
 		display: none;
+	}
+	.video-overlay #home { 
+		#home_box {
+			img {
+				margin-top: 0;
+			}
+			div div {
+				display: -ms-inline-grid;
+				display: inline-grid;
+			}
+		}
 	}
 }
 
@@ -141,7 +196,6 @@
 			}
 		}
 	}
-
 	.container {
 		max-width: 100%;
 		margin: 0;
@@ -151,7 +205,6 @@
 	.logo, #story .story-illustration, .top3, .story-items {
 		display: none;
 	}
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) (1280x1024)*/
@@ -196,7 +249,7 @@
 	}
 	#about .project {
 		text-align: center;
-		margin: 0 3rem 1rem 3rem;
+		margin: 2rem;
 		padding: 0;
 	}
 	#contact {
@@ -205,13 +258,9 @@
 			text-align: center;
 			margin-bottom: 1rem;
 		}
-
 		.contact-center {
 			padding: 27px;
 			text-align: center;
 		}
 	}
 }
-
-
-

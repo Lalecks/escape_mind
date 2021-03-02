@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$yellow".
-        on line 28 of resources/sass/sections/web/story.scss
+        on line 36 of resources/sass/sections/web/story.scss
 
-23: 			div {
-24: 				padding-left: 1rem;
-25: 				p {
-26: 					margin: .2rem 0;
-27: 					&:nth-child(1) {
-28: 						color: $yellow;
-29: 					}
-30: 					&:nth-child(2) {
-31: 						color: $white;
-32: 					}
-33: 				}
+31: 			div {
+32: 				padding-left: 1rem;
+33: 				p {
+34: 					margin: .2rem 0;
+35: 					&:nth-child(1) {
+36: 						color: $yellow;
+37: 					}
+38: 					&:nth-child(2) {
+39: 						color: $white;
+40: 					}
+41: 				}
 
 Backtrace:
-resources/sass/sections/web/story.scss:28
+resources/sass/sections/web/story.scss:36
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -124,4 +124,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 28 of resources/sass/sections/web/story.scss\A \A 23: 			div {\A 24: 				padding-left: 1rem;\A 25: 				p {\A 26: 					margin: .2rem 0;\A 27: 					&:nth-child(1) {\A 28: 						color: $yellow;\A 29: 					}\A 30: 					&:nth-child(2) {\A 31: 						color: $white;\A 32: 					}\A 33: 				}"; }
+  content: "Error: Undefined variable: \"$yellow\".\A         on line 36 of resources/sass/sections/web/story.scss\A \A 31: 			div {\A 32: 				padding-left: 1rem;\A 33: 				p {\A 34: 					margin: .2rem 0;\A 35: 					&:nth-child(1) {\A 36: 						color: $yellow;\A 37: 					}\A 38: 					&:nth-child(2) {\A 39: 						color: $white;\A 40: 					}\A 41: 				}"; }

@@ -10,9 +10,10 @@ body, html{
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
     height: 100%;
-	margin: 0; padding: 0;
+	margin: 0; 
+	padding: 0;
 }
 
 // Titres
@@ -20,7 +21,7 @@ h1 {
 	margin: 0;
 	color: $color-title;
 	font-family: $font-title;
-	font-size: 19.75rem;
+	font-size: 54vh;
 	font-style: normal;
 	font-weight: bolder;
 	text-align: center;
@@ -49,7 +50,7 @@ h2 {
 
 .logo-title{
 	font-family: $font-logo;
-	font-size: 1.5rem;  
+	font-size: 4.1vh;  
 	z-index: 2;
 }
 .logo {

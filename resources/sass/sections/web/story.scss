@@ -1,9 +1,15 @@
 #story {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	position: relative;
 	div{
+		-ms-flex-preferred-size: 50%;
 		flex-basis: 50%;
 	}
 	.story-informations {
@@ -11,7 +17,9 @@
 		.story-items {
 			font-weight: bold;
 			margin-top: 4rem;
+			display: -ms-grid;
 			display: grid;
+			-ms-grid-columns: 1fr 0.625rem 1fr;
 			grid-template-columns: repeat(2, 1fr);
 			grid-gap: 0.625rem;
 			grid-auto-rows: minmax(3.75rem, auto);
@@ -47,6 +55,8 @@
 	.story-illustration {
 		position: absolute;
 		right: -11%;
+		-webkit-transform: translateX(11%);
+		-ms-transform: translateX(11%);
 		transform: translateX(11%);
 		z-index: 0;
 		img {
@@ -61,11 +71,14 @@
 			background: $yellow-degraded;
 			position: absolute;
 			bottom: 5%;
+			-webkit-transform: translateY(5%);
+			-ms-transform: translateY(5%);
 			transform: translateY(5%);
 			right: -15%;
+			-webkit-transform: translateX(-15%);
+			-ms-transform: translateX(-15%);
 			transform: translateX(-15%);
 			z-index: 1;
 		}
 	}
 }
-

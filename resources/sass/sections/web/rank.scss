@@ -82,10 +82,20 @@
 	// 	background-position: 50% -19px;
 	// }
 	.top3 {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: row wrap;
 		flex-flow: row wrap;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-ms-flex-line-pack: center;
 		align-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		&>div {
 			padding: 0 6rem;
@@ -130,21 +140,18 @@
 			margin-top: 10rem;
 			background-color: $body-bg;
 			border: thin solid $white;
-			thead
-			{
+			thead {
 				display: block;  
 				border-bottom: thin solid $white;
 				padding: 1.4rem 0;
 			}
-			tbody
-			{
+			tbody {
 				padding-top: 2rem;
 				display: block;
 				max-height: 37.0625rem;
 				overflow-y: auto;
 			}     
-			td, th
-			{
+			td, th {
 				width: 60rem; // Taille d'une colonne
 				text-align: center;
 				padding: 1rem 0;
