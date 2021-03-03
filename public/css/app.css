@@ -557,7 +557,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -913,8 +913,6 @@ html body img {
 
 body,
 html {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
@@ -970,8 +968,6 @@ h2 {
 }
 
 .index {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -997,8 +993,6 @@ h2 {
 body {
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1030,8 +1024,6 @@ body {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #121212;
   font-weight: bolder;
@@ -1053,9 +1045,9 @@ footer {
 .navbar {
   position: fixed;
   -webkit-animation: shake 20s;
-  animation: shake 20s;
+          animation: shake 20s;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   z-index: 10;
 }
 
@@ -1329,8 +1321,6 @@ footer {
   }
 
   #story .story-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 
@@ -1466,10 +1456,9 @@ footer a span:nth-child(1) {
   left: 0;
   width: 100%;
   height: 2px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#03e9f4));
   background: linear-gradient(90deg, transparent, #03e9f4);
   -webkit-animation: animate1 1s linear infinite;
-  animation: animate1 1s linear infinite;
+          animation: animate1 1s linear infinite;
 }
 
 @-webkit-keyframes animate1 {
@@ -1497,12 +1486,11 @@ footer a span:nth-child(2) {
   right: 0;
   width: 2px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#03e9f4));
   background: linear-gradient(180deg, transparent, #03e9f4);
   -webkit-animation: animate2 1s linear infinite;
-  animation: animate2 1s linear infinite;
+          animation: animate2 1s linear infinite;
   -webkit-animation-delay: 0.25s;
-  animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 
 @-webkit-keyframes animate2 {
@@ -1530,12 +1518,11 @@ footer a span:nth-child(3) {
   right: 0;
   width: 100%;
   height: 2px;
-  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#03e9f4));
   background: linear-gradient(270deg, transparent, #03e9f4);
   -webkit-animation: animate3 1s linear infinite;
-  animation: animate3 1s linear infinite;
+          animation: animate3 1s linear infinite;
   -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 @-webkit-keyframes animate3 {
@@ -1563,12 +1550,11 @@ footer a span:nth-child(4) {
   left: 0;
   width: 2px;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#03e9f4));
   background: linear-gradient(360deg, transparent, #03e9f4);
   -webkit-animation: animate4 1s linear infinite;
-  animation: animate4 1s linear infinite;
+          animation: animate4 1s linear infinite;
   -webkit-animation-delay: 0.75s;
-  animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 
 @-webkit-keyframes animate4 {
@@ -1611,7 +1597,7 @@ footer a span:nth-child(4) {
   width: 16.2rem;
   height: 16.2rem;
   -o-border-image: linear-gradient(298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57%) 30;
-  border-image: linear-gradient(298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57%) 30;
+     border-image: linear-gradient(298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57%) 30;
   right: -6%;
 }
 
@@ -1625,8 +1611,6 @@ footer a span:nth-child(4) {
 
 .modal {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   left: 0;
   top: 0;
@@ -1670,8 +1654,6 @@ footer a span:nth-child(4) {
 .loader {
   height: 100vh;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1741,9 +1723,9 @@ footer a span:nth-child(4) {
   width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: 50% 50%;
-  object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 #home .video-overlay {
@@ -1755,8 +1737,6 @@ footer a span:nth-child(4) {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.651);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1786,8 +1766,6 @@ footer a span:nth-child(4) {
 }
 
 #home .video-overlay #home_box div div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: space-around;
 }
@@ -1797,8 +1775,6 @@ footer a span:nth-child(4) {
 }
 
 #story {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1885,8 +1861,6 @@ footer a span:nth-child(4) {
 }
 
 #rank {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -1914,8 +1888,6 @@ footer a span:nth-child(4) {
 }
 
 #rank .top3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -2005,8 +1977,6 @@ footer a span:nth-child(4) {
 }
 
 #about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   align-content: center;
@@ -2032,8 +2002,6 @@ footer a span:nth-child(4) {
 }
 
 #about .team .team-img-role {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -2048,8 +2016,6 @@ footer a span:nth-child(4) {
 }
 
 #about .team .team-img-role div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2106,8 +2072,6 @@ footer a span:nth-child(4) {
 }
 
 #contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2120,8 +2084,6 @@ footer a span:nth-child(4) {
 }
 
 #contact .contact-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
 }
