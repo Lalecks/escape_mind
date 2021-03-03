@@ -19,9 +19,8 @@
 ## Functionalities
 
 ## Getting Started
-
+### Back-end
 Install dependencies.
-
 ```
 $ npm install
 $ composer install
@@ -34,18 +33,23 @@ $ php artisan db:seed
 ```
 
 Start the server.
-
 ```
 php artisan serve
 ```
 
 Running migrations & seedings.
-
 ```shell
 $ php artisan migrate
 $ php artisan migrate --seed
 ```
 
+### Front-end
+Automatically Sass et JS compilation.
+```shell
+$ npm run watch
+```
+
+### Preview
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
 ## Authors

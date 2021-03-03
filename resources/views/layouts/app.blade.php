@@ -117,12 +117,7 @@
         </div>
 
     <!--====== Javascripts & Jquery ======-->
-    <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.pjax.js') }}"></script>
-    <script src="{{ asset('js/divers.js') }}"></script>
-    <script src="{{ asset('js/scrollBar.js') }}"></script>
-    <script src="{{ asset('js/mouse.js') }}"></script>
-    <script src="{{ asset('js/zoom.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script><script  src="./script.js"></script>

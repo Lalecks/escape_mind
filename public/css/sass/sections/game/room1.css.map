@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,SAAS,CACR,UAAU,CAAE,KAAK,CACjB,SAAS,CAAE,KAAK,CAEhB,KAAK,CAAE,KAAK,CACZ,MAAM,CAAC,KAAK,CAEZ,QAAQ,CAAC,KAAK,CACd,GAAG,CAAC,CAAC,CACL,IAAI,CAAC,CAAC,CAEN,OAAO,CAAC,IAAI,CAGb,OAAQ,CACP,KAAK,CAAE,KAAK",
-"sources": ["../../../../../resources/sass/sections/game/room1.scss"],
-"names": [],
-"file": "room1.css"
-}

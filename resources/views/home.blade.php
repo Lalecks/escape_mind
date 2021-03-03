@@ -59,7 +59,7 @@
 		</section>
 
 		<section id="story">
-			<h1>Histoire</h1>
+			<h1 class="rellax">Histoire</h1>
 			<div class="story-informations">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis, leo eget vestibulum lacinia, odio neque efficitur urna, at tempor augue ligula ut elit. Nulla facilisi. Etiam at justo ut ipsum sagittis consectetur. Nunc aliquam ultrices pulvinar. Praesent in accumsan neque. Praesent vitae arcu fringilla, scelerisque felis ac, eleifend nulla. Quisque sodales, massa vitae bibendum viverra, leo justo malesuada metus, vel aliquet arcu est sed augue. Proin malesuada hendrerit ex.</p>
 				<div class="story-items">
@@ -89,7 +89,7 @@
 
 		<section id="rank">
 			<div class="top3">
-				<h1>Records</h1>
+				<h1 class="rellax">Records</h1>
 				<div class="second">
 					<div>
 						<svg width="154" height="323" xmlns="http://www.w3.org/2000/svg">
@@ -257,7 +257,7 @@
 		</section>
 
 		<section id="about">
-			<h1>À propos</h1>
+			<h1 class="rellax">À propos</h1>
 			<div class="project">
 				<h2>l'origine du projet</h2>
 				<p>Nous sommes cinq étudiants de l’université de Valenciennes. Pour notre projet de fin de licence, nous devions réaliseer un projet. C’est pour ça qu’on a fait un escape game.</p>
@@ -295,7 +295,7 @@
 		</section>
 
 		<section id="contact">
-			<h1>Conctact</h1>
+			<h1 class="rellax">Conctact</h1>
 			<div class="contact-center">
 				<div class="contact-txt">
 					<p>Hey ! Tu es à la recherche d’informations ? Ou tu souhaites peut-être donner ton avis sur l’escape game en partageant ton ressenti, d'éventuelles remarques ou suggestions dû à ton expérience ? Tu es sur la bonne page ! Alors, envoie nous un mail, qu’est-ce que tu attends&nbsp;?</p>

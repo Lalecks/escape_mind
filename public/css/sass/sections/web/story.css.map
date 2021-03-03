@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,MAAO,CACN,OAAO,CAAE,IAAI,CACb,SAAS,CAAE,IAAI,CACf,YAAY,CAAE,MAAM,CACpB,UAAG,CACF,UAAU,CAAE,GAAG,CAEhB,0BAAoB,CACnB,QAAQ,CAAE,QAAQ",
-"sources": ["../../../../../resources/sass/sections/web/story.scss"],
-"names": [],
-"file": "story.css"
-}
