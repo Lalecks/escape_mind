@@ -3,7 +3,7 @@ Error: Undefined variable: "$cyan_blue-degraded".
         on line 46 of resources/sass/sections/web/home.scss
 
 41: 		-ms-flex-wrap: wrap;
-42: 		    flex-wrap: wrap;
+42: 		flex-wrap: wrap;
 43: 		#home_box{
 44: 			padding: 3.5rem 3rem;
 45: 			border-radius: 1.625rem;
@@ -11,7 +11,7 @@ Error: Undefined variable: "$cyan_blue-degraded".
 47: 			max-width: 36.25rem;
 48: 			max-height: 36.25rem;
 49: 			-webkit-backdrop-filter: blur(4rem);
-50: 			        backdrop-filter: blur(4rem);
+50: 			backdrop-filter: blur(4rem);
 51: 			img {  
 
 Backtrace:
@@ -91,4 +91,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$cyan_blue-degraded\".\A         on line 46 of resources/sass/sections/web/home.scss\A \A 41: 		-ms-flex-wrap: wrap;\A 42: 		    flex-wrap: wrap;\A 43: 		#home_box{\A 44: 			padding: 3.5rem 3rem;\A 45: 			border-radius: 1.625rem;\A 46: 			background: $cyan_blue-degraded;\A 47: 			max-width: 36.25rem;\A 48: 			max-height: 36.25rem;\A 49: 			-webkit-backdrop-filter: blur(4rem);\A 50: 			        backdrop-filter: blur(4rem);\A 51: 			img {  "; }
+  content: "Error: Undefined variable: \"$cyan_blue-degraded\".\A         on line 46 of resources/sass/sections/web/home.scss\A \A 41: 		-ms-flex-wrap: wrap;\A 42: 		flex-wrap: wrap;\A 43: 		#home_box{\A 44: 			padding: 3.5rem 3rem;\A 45: 			border-radius: 1.625rem;\A 46: 			background: $cyan_blue-degraded;\A 47: 			max-width: 36.25rem;\A 48: 			max-height: 36.25rem;\A 49: 			-webkit-backdrop-filter: blur(4rem);\A 50: 			backdrop-filter: blur(4rem);\A 51: 			img {  "; }

@@ -11,10 +11,11 @@ body, html{
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-    height: 100%;
+	height: 100%;
 	margin: 0; 
 	padding: 0;
 	position: relative;
+	overflow-x: hidden;
 }
 
 // Titres
@@ -65,18 +66,26 @@ h2 {
 }
 
 // Container
+.index {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	overflow-x: hidden;
+	// flex-direction: column;
+}
 .container {
+	justify-content: flex-end;
 	position: relative;
 	right: 0;
 	max-width: 84%;
 	min-height: 100%;
-	margin: 0 auto;
-    padding-left: 1rem;
-	padding-right: 4rem;
-	align-content: flex-end;
-	// background-color: rgb(37, 37, 37);
+	// Si on retire le .index
+	// margin: 0 auto;
+	// padding-left: 1rem;
+	// padding-right: 4rem;
 	// float: right;
-    // clear: none; // Toujours avec un float
+	// clear: none; // Toujours avec un float
+	background-color: rgb(37, 37, 37);
 }
 .headings > section {
 	margin-bottom: 4rem;
@@ -84,11 +93,6 @@ h2 {
 	max-width: 100vw;
 	z-index: 1;
 	position: relative;
-    // border: solid;
-		display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-content: flex-end;
-	align-items: flex-end;
+	border: solid;
 }
 

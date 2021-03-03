@@ -8,7 +8,7 @@
 	margin:0;
 	padding:0;
 	-webkit-box-sizing: border-box;
-    box-sizing: border-box; 
+	box-sizing: border-box; 
 }
 
 html {
@@ -16,7 +16,7 @@ html {
 	height: 100%;
 	font-size: 1.1rem; // 1rem generalement
 	line-height: 1.5rem;
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 	body {
 		background-color: $body-bg !important;
 		color: $white !important;
@@ -27,15 +27,15 @@ html {
 		height: 100vh;
 		overflow-x: hidden;
 		cursor: none; // Retire le curseur par defaut
-        // Puces
-        position: relative; // Si footer en absolute
+		// Puces
+		position: relative; // Si footer en absolute
 		display : table;
 		width: 100%;
 		ul,
 		li {
 			list-style-type: none;
 		}
-        // Liens
+		// Liens
 		a {
 			color: white;
 			text-decoration: none;

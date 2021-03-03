@@ -18,36 +18,26 @@ var closeButton = document.querySelector(".close-button");
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
+    
 }
 function windowOnClick(event) {
     if (event.target === modal) {
         toggleModal();
-        // $('.videoplayer').children('iframe').attr('src', '');
-        // document.getElementById('nofocusvideo').player.api('pause');
-        // window.parent.CloseModal(window.frameElement);
     }
+    //  $("header").remove();
+    //  document.getElementsByClassName('navbar').style.display = none;
+    // $('.videoplayer').children('iframe').attr('src', '');
+    //     document.getElementById('nofocusvideo').player.api('pause');
+    //     window.parent.CloseModal(window.frameElement);
+    //     $("header").style.display = none;
+    //     $(".navbar").style.display = none;
+    // document.getElementsByClassName(navbar).style.display = none; // Pour cacher
+    // document.getElementById(identifiant_de_ma_div).style.display = none;
 }
 
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
-
-jQuery(document).ready(function($) {
-$(function(){
-  //Snag the URL of the iframe so we can use it later
-  var url = $('.modal-body-music iframe').attr('src');
-
-  $('.close').click(function() {
-      $('.modal-body-music').hide();
-    $('.modal-body-music iframe').attr('src', '');
-  });
-
-  $('.close').click(function() {
-    $('.modal-body-music').show();
-    $('.modal-body-music iframe').attr('src', url);
-  });
-});
-});
 
 
 // Retirer la classe en dessous de 600px

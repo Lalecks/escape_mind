@@ -1,30 +1,31 @@
 @extends('layouts.template')
 
 @section('content')
-<div class="index">
-	<header>
-		<a class="logo logo-title">escape_mind</a>
-		<!-- Début : menu burger -->
-		<input type='checkbox' id='toggle' style='display:none;' />
-		<label class='toggle-btn toggle-btn__cross' for='toggle'>
-			<div class="bar"></div>
-			<div class="bar"></div>
-			<div class="bar"></div>
-		</label>
-		<!-- Fin : menu burger -->
-		<nav class="navbar">
-			<div id="bar_fix"></div>
-			<div id="bar_anim"></div>
-			<ul>
-				<li><a href="#home" class="hoverable active">Accueil</a></li>
-				<li><a href="#story"  class="hoverable">Histoire</a></li>
-				<li><a href="#rank" class="hoverable">Classement</a></li>
-				<li><a href="#about" class="hoverable">À propos</a></li>
-				<li><a href="#contact" class="hoverable">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+@guest
+<header>
+	<a class="logo logo-title">escape_mind</a>
+	<!-- Début : menu burger -->
+	<input type='checkbox' id='toggle' style='display:none;' />
+	<label class='toggle-btn toggle-btn__cross' for='toggle'>
+		<div class="bar"></div>
+		<div class="bar"></div>
+		<div class="bar"></div>
+	</label>
+	<!-- Fin : menu burger -->
+	<nav class="navbar">
+		<div id="bar_fix"></div>
+		<div id="bar_anim"></div>
+		<ul>
+			<li><a href="#home" class="hoverable active">Accueil</a></li>
+			<li><a href="#story"  class="hoverable">Histoire</a></li>
+			<li><a href="#rank" class="hoverable">Classement</a></li>
+			<li><a href="#about" class="hoverable">À propos</a></li>
+			<li><a href="#contact" class="hoverable">Contact</a></li>
+		</ul>
+	</nav>
+</header>
 
+<div class="index">
 	<div class="headings container">
 		<div class="modal glass-effect">
 			<!-- Ne pas mettre la modal dans le vidéo overlay, car il est en absolute et par conséquent la modal ne peut pas se fixer -->
@@ -310,13 +311,13 @@
 			</div>
 		</section>
 	</div>
-
-	<footer> 
-		<div>
-			<span>escape_mind</span>
-			<span>escape_mind</span>
-		</div>
-		<p>&copy; {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</p> 
-	</footer>
 </div>
+<footer> 
+	<div>
+		<span>escape_mind</span>
+		<span>escape_mind</span>
+	</div>
+	<p>&copy; {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</p> 
+</footer>
+@endguest
 @endsection
