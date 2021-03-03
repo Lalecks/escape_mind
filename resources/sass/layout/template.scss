@@ -45,9 +45,9 @@ html {
 				cursor: none; // Retire le curseur
 			}
 			&:hover {
-				-webkit-transition: 0.4s;
-				-o-transition: 0.4s;
-				transition: 0.4s;
+				-webkit-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
 			}
 		}
 		// Redimensionnement d une image en conservant le ratio lors du responsive

@@ -300,9 +300,15 @@
 				<div class="contact-txt">
 					<p>Hey ! Tu es à la recherche d’informations ? Ou tu souhaites peut-être donner ton avis sur l’escape game en partageant ton ressenti, d'éventuelles remarques ou suggestions dû à ton expérience ? Tu es sur la bonne page ! Alors, envoie nous un mail, qu’est-ce que tu attends&nbsp;?</p>
 					<div class="media">
-						<a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-						<a href="#"><i class="fab fa-instagram instagram"></i></a>
-						<a href="#"><i class="fab fa-youtube youtube"></i></a>
+						<a href="#" class="facebook">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="#" class="instagram">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="#" class="youtube">
+							<i class="fab fa-youtube"></i>
+						</a>
 					</div>
 				</div>
 				<div class="take-contact">
@@ -317,7 +323,16 @@
 		<span>escape_mind</span>
 		<span>escape_mind</span>
 	</div>
+	
+	{{-- <a href="#" class='btn'>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		Neon button
+	</a> --}}
 	<p>&copy; {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</p> 
 </footer>
+
 @endguest
 @endsection

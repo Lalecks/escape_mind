@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 42 of resources/sass/sections/web/contact.scss
+        on line 66 of resources/sass/sections/web/contact.scss
 
-37: 		}
-38: 		.media:before {
-39: 			content: "";
-40: 			display: table-cell;
-41: 			width: .1rem;
-42: 			background-color: $white;
-43: 			position: absolute;
-44: 			margin-left:-100%;
-45: 			// font-weight: bold;
-46: 			// display: inline-block;
-47: 			// vertical-align: middle;
+61: 		}
+62: 		.media:before {
+63: 			content: "";
+64: 			display: table-cell;
+65: 			width: .1rem;
+66: 			background-color: $white;
+67: 			position: absolute;
+68: 			margin-left:-100%;
+69: 			// font-weight: bold;
+70: 			// display: inline-block;
+71: 			// vertical-align: middle;
 
 Backtrace:
-resources/sass/sections/web/contact.scss:42
+resources/sass/sections/web/contact.scss:66
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -91,4 +91,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 42 of resources/sass/sections/web/contact.scss\A \A 37: 		}\A 38: 		.media:before {\A 39: 			content: \"\";\A 40: 			display: table-cell;\A 41: 			width: .1rem;\A 42: 			background-color: $white;\A 43: 			position: absolute;\A 44: 			margin-left:-100%;\A 45: 			// font-weight: bold;\A 46: 			// display: inline-block;\A 47: 			// vertical-align: middle;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 66 of resources/sass/sections/web/contact.scss\A \A 61: 		}\A 62: 		.media:before {\A 63: 			content: \"\";\A 64: 			display: table-cell;\A 65: 			width: .1rem;\A 66: 			background-color: $white;\A 67: 			position: absolute;\A 68: 			margin-left:-100%;\A 69: 			// font-weight: bold;\A 70: 			// display: inline-block;\A 71: 			// vertical-align: middle;"; }
