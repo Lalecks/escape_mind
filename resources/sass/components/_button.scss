@@ -4,7 +4,7 @@
 // *
 // * */
 
-// Bouton générale
+/* Bouton générale */
 .btn {
 	font-family: $font-logo;
 	text-transform: lowercase;
@@ -13,31 +13,42 @@
 	color: $white;
 	display: inline-block;    
 	border: .2rem solid $black;
-
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
 	line-height: 100%;
+	// Permet l'animation du btn
+	background-size: 200% auto;
+	transition: 0.5s;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	// background-color: $black;
 }
 
-.btn_bordure {
+.btn.focus, .btn:focus, .btn:hover {
+	background: $black-degraded;
+	background-position: right center;
+	// Impression qu'on appuie sur le btn
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0,.2), 0 4px 20px 0 rgba(0,0,0,.1);
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,.2), 0 4px 20px 0 rgba(0,0,0,.1);
+	color: $white;
+	border: .2rem solid $white;
+
+}
+
+/* Propriétés de btn */
+// Primaire - Primary
+.btn-outline-primary {
+    // Contour/Bordure
 	color: $black;
 	transition: all 400ms ease-out;
-	&:hover {
-		color: $white;
-		border: .2rem solid $white;
-	}
+
 }
 
-.btn_fond {
+.btn-fill-primary {
+    // Plein/Remplie
 	color: $white;
 	transition: all 400ms ease-out;
 	background-color: $black;
-	&:hover {
-		color: $black;
-		border: .2rem solid $black;
-		background-color: lighten($body-bg, 90%);
-	}
 	// color: $white;
 	// background: darken($body-bg, 50%);
 	// border: .2rem solid transparent;
@@ -63,113 +74,98 @@
 	// }
 }
 
-// .button {
-// 	display: flex;
-// 	flex-direction: row;
-// 	font-weight: 400;
-// 	font-size: 14px;
-// 	color: var(--color-lightblue);
-// 	border: solid 1px var(--color-lightblue);
-// 	border-radius: 50em;
-// 	padding: .7em 2em;
-// 	width: fit-content;
-// 	box-shadow: 0 0 .5em .05em var(--color-lightblue-50-opacity), 0 0 .5em .05em var(--color-lightblue-50-opacity) inset;
-// 	margin: 0 auto 20vh auto;
-// 	transition: .3s ease-in-out;
-// }
-// .button:hover {
-// 	transform: translateY(-.2em);
-// 	color: var(--color-lightblue);
-// 	box-shadow: 0 0 1em .15em var(--color-lightblue-50-opacity), 0 0 1em .15em var(--color-lightblue-50-opacity) inset;
-// }
+// Secondaire - Secondary
+// Succès - Succes
+// Echec - Danger
+// Attention - Warning
 
 footer {
-.btn{
-    position: relative;
-    padding: 25px 30px;
-    margin: 40px 0; color: #03e9f4;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.5s; letter-spacing: 4px;
-    overflow: hidden; margin-right: 50px;
-	background: rgba(black,.6);
-}
+	.btn{
+		position: relative;
+		padding: 25px 30px;
+		margin: 40px 0; color: #03e9f4;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: 0.5s; letter-spacing: 4px;
+		overflow: hidden; margin-right: 50px;
+		background: rgba(black,.6);
+	}
 
-a:hover{
-    background: #03e9f4; color: #050801;
-}
+	a:hover{
+		background: #03e9f4; color: #050801;
+	}
 
-a span{
-    position: absolute;
-    display: block;
-}
+	a span{
+		position: absolute;
+		display: block;
+	}
 
-a span:nth-child(1){
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#03e9f4);
-    animation: animate1 1s linear infinite;
-}
+	a span:nth-child(1){
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(90deg,transparent,#03e9f4);
+		animation: animate1 1s linear infinite;
+	}
 
-@keyframes animate1{
-    0%{
-        left: -100%;
-    }
-    50%,100%{
-        left: 100%;
-    }
-}
+	@keyframes animate1{
+		0%{
+			left: -100%;
+		}
+		50%,100%{
+			left: 100%;
+		}
+	}
 
-a span:nth-child(2){
-    top: -100%; right: 0;
-    width: 2px; height: 100%;
-    background: linear-gradient(180deg,transparent,#03e9f4);
-    animation: animate2 1s linear infinite;
-    animation-delay: 0.25s;
-}
+	a span:nth-child(2){
+		top: -100%; right: 0;
+		width: 2px; height: 100%;
+		background: linear-gradient(180deg,transparent,#03e9f4);
+		animation: animate2 1s linear infinite;
+		animation-delay: 0.25s;
+	}
 
-@keyframes animate2{
-    0%{ top: -100%; }
-    50%,100%{ top: 100%; }
-}
+	@keyframes animate2{
+		0%{ top: -100%; }
+		50%,100%{ top: 100%; }
+	}
 
-a span:nth-child(3){
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent,#03e9f4);
-    animation: animate3 1s linear infinite;
-    animation-delay: 0.50s;
-}
+	a span:nth-child(3){
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(270deg,transparent,#03e9f4);
+		animation: animate3 1s linear infinite;
+		animation-delay: 0.50s;
+	}
 
-@keyframes animate3{
-    0%{
-        right: -100%;
-    }
-    50%,100%{
-        right: 100%;
-    }
-}
+	@keyframes animate3{
+		0%{
+			right: -100%;
+		}
+		50%,100%{
+			right: 100%;
+		}
+	}
 
-a span:nth-child(4){
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,#03e9f4);
-    animation: animate4 1s linear infinite;
-    animation-delay: 0.75s;
-}
+	a span:nth-child(4){
+		bottom: -100%;
+		left: 0;
+		width: 2px;
+		height: 100%;
+		background: linear-gradient(360deg,transparent,#03e9f4);
+		animation: animate4 1s linear infinite;
+		animation-delay: 0.75s;
+	}
 
-@keyframes animate4{
-    0%{
-        bottom: -100%;
-    }
-    50%,100%{
-        bottom: 100%;
-    }
-}
+	@keyframes animate4{
+		0%{
+			bottom: -100%;
+		}
+		50%,100%{
+			bottom: 100%;
+		}
+	}
 }
