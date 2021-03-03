@@ -10,7 +10,6 @@ for (let i = 0; i < $hoverables.length; i++) {
   $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
 }
 
-
 // Move the cursor
 function onMouseMove(e) {
   TweenMax.to($bigBall, .4, {
@@ -22,22 +21,21 @@ function onMouseMove(e) {
     y: e.clientY - 7,
     opacity:100 });
 }
-
-
+// Souris en dehors de l'écran
 function onMouseLeave(e){
     TweenMax.to($smallBall, .1, {
-        opacity:0 });
+      opacity:0     
+    });
 }
-
-
-// Hover an element
+// Taille au survol
 function onMouseHover() {
-  TweenMax.to($bigBall, .3, {
-    scale: 4 });
+  TweenMax.to($bigBall, .1, {
+    scale: 2 });
 }
+// Taille souris sans survol
 function onMouseHoverOut() {
-  TweenMax.to($bigBall, .3, {
+  TweenMax.to($bigBall, .1, {
     scale: 1 });
 }
 
-
+$ ('a'). addClass (' hoverable ');

@@ -49,8 +49,8 @@
 					<div>
 						<p>Il y a plusieurs années un scientifique a crée une IA, et aujourd’hui, il doit la débrancher. Pour cela, il se connecte à celle-ci, et se retrouve enfermé dans l’IA qui retrace ses souvenirs.</p>
 						<div>
-							<a class="btn btn_bordure trigger">Trailer</a>
-							<a class="btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
+							<a class="btn btn_bordure trigger hoverable">Trailer</a>
+							<a class="btn btn_fond hoverable" id="play" href="/jeu" data-pjax>Jouer</a>
 						</div>
 					</div>
 
@@ -300,13 +300,13 @@
 				<div class="contact-txt">
 					<p>Hey ! Tu es à la recherche d’informations ? Ou tu souhaites peut-être donner ton avis sur l’escape game en partageant ton ressenti, d'éventuelles remarques ou suggestions dû à ton expérience ? Tu es sur la bonne page ! Alors, envoie nous un mail, qu’est-ce que tu attends&nbsp;?</p>
 					<div class="media">
-						<a href="#" class="facebook">
+						<a href="#" class="facebook hoverable">
 							<i class="fab fa-facebook-f"></i>
 						</a>
-						<a href="#" class="instagram">
+						<a href="#" class="instagram hoverable">
 							<i class="fab fa-instagram"></i>
 						</a>
-						<a href="#" class="youtube">
+						<a href="#" class="youtube hoverable">
 							<i class="fab fa-youtube"></i>
 						</a>
 					</div>
