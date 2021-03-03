@@ -39,7 +39,7 @@
 
 </head>
 <body>
-    <div class="cursor">
+    {{-- <div class="cursor">
         <div class="cursor__ball cursor__ball--big ">
             <svg height="30" width="30">
             <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
@@ -51,6 +51,9 @@
             </svg>
         </div>
     </div>
+     --}}
+    <div class="cursor cursor--small"></div>
+    <canvas class="cursor cursor--canvas" resize></canvas>
 
 {{--
     <div id="app">
@@ -121,5 +124,7 @@
     <script src="{{ asset('js/mouse.js') }}"></script>
     <script src="{{ asset('js/zoom.js') }}"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script><script  src="./script.js"></script>
 </body>
 </html>
