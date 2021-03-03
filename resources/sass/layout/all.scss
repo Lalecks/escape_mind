@@ -73,11 +73,11 @@ h2 {
 	margin: 0 auto;
     padding-left: 1rem;
 	padding-right: 4rem;
+	align-content: flex-end;
 	// background-color: rgb(37, 37, 37);
 	// float: right;
     // clear: none; // Toujours avec un float
 }
-
 .headings > section {
 	margin-bottom: 4rem;
 	min-height: 100vh;
@@ -85,4 +85,10 @@ h2 {
 	z-index: 1;
 	position: relative;
     // border: solid;
+		display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-content: flex-end;
+	align-items: flex-end;
 }
+

@@ -26,11 +26,17 @@
 	</header>
 
 	<div class="headings container">
+		<div class="modal glass-effect">
+			<!-- Ne pas mettre la modal dans le vidéo overlay, car il est en absolute et par conséquent la modal ne peut pas se fixer -->
+			<div class="modal-content glass-effect">
+				<span class="close-button">&times;</span>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/gA03iyI3yEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
 		<section id="home">
 			<video class="bg-video" playsinline="" autoplay="" muted="" loop="">
 				<source src="{{ asset('ressources/technology.mp4') }}" type="video/mp4">
 			</video>
-
 			<div class="video-overlay">
 				{{-- <div class="line"></div>
 				<div class="glass-effect circle circle-full-cyan_blue"></div>
@@ -43,13 +49,6 @@
 						<p>Il y a plusieurs années un scientifique a crée une IA, et aujourd’hui, il doit la débrancher. Pour cela, il se connecte à celle-ci, et se retrouve enfermé dans l’IA qui retrace ses souvenirs.</p>
 						<div>
 							<a class="btn btn_bordure trigger">Trailer</a>
-
-							<div class="modal">
-								<div class="modal-content glass-effect">
-									<span class="close-button">&times;</span>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/gA03iyI3yEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								</div>
-							</div>
 							<a class="btn btn_fond" id="play" href="/jeu" data-pjax>Jouer</a>
 						</div>
 					</div>
@@ -291,13 +290,6 @@
 						<span class="team-name logo-title">Alexandre</span>
 					</div>
 				</div>
-				{{-- <div class="team-names logo-title">
-				<a><span>Antony</span></a>
-				<a><span>Mondine</span></a>
-				<a><span>Camille</span></a>
-				<a><span>Sarah</span></a>
-				<a><span>Alexandre</span></a>
-				</div> --}}
 			</div>
 		</section>
 

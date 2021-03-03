@@ -22,10 +22,54 @@ function toggleModal() {
 function windowOnClick(event) {
     if (event.target === modal) {
         toggleModal();
-        document.getElementById('nofocusvideo').player.api('pause');
+        // $('.videoplayer').children('iframe').attr('src', '');
+        // document.getElementById('nofocusvideo').player.api('pause');
+        // window.parent.CloseModal(window.frameElement);
     }
 }
 
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+jQuery(document).ready(function($) {
+$(function(){
+  //Snag the URL of the iframe so we can use it later
+  var url = $('.modal-body-music iframe').attr('src');
+
+  $('.close').click(function() {
+      $('.modal-body-music').hide();
+    $('.modal-body-music iframe').attr('src', '');
+  });
+
+  $('.close').click(function() {
+    $('.modal-body-music').show();
+    $('.modal-body-music iframe').attr('src', url);
+  });
+});
+});
+
+
+// Retirer la classe en dessous de 600px
+$(window).resize(
+    function(){
+        var width = $(window).width();
+        if(width < 600){
+            $('body').removeClass('navbar');
+        }
+    }
+)
+.resize();//trigger the resize event on page load.
+
+// Mettre en mode paysage
+document.addEventListener("orientationchange", function(event){
+    switch(window.orientation) 
+    {  
+        case -90: case 90:
+            /* Device is in landscape mode */
+            break; 
+        default:
+            /* Device is in portrait mode */
+    }
+});
+screen.orientation.lock('landscape');

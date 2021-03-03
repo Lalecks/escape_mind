@@ -1,9 +1,25 @@
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) 576px*/ 
 @media only screen and (max-width: 600px) {
+	body {
+		cursor: initial !important; // Souris par défaut
+		pointer-events: auto;
+	}
     .container {
 		padding: 0;
 	}
-	.hand, h1, #home_box img,  #about .team .team-img-role { 
+	.hand, h1, #home_box img,  #about .team .team-img-role, .cursor { 
 		display: none;
 	}
 	#home .video-overlay {
