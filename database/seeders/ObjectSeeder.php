@@ -15,12 +15,12 @@ class ObjectSeeder extends Seeder
     public function run()
     {
         /*
-        $kid = new \App\Kid();
-        $kid->name = "Stéphane";
-        $kid->date_of_birth = "2000-05-28";
-        $kid->categories = "1";
-        $kid->user_id = 1;
-        $kid->save();
+        $objects = new \App\Objects();
+        $objects->name = "Stéphane";
+        $objects->date_of_birth = "2000-05-28";
+        $objects->categories = "1";
+        $objects->user_id = 1;
+        $objects->save();
         */
     }
 }

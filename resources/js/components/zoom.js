@@ -1,3 +1,9 @@
+/**
+*
+*  ZOOM
+*
+* */
+
 const $notdrag = document.getElementsByTagName("img");
 const test = document.getElementById("test");
 const $zoomable = document.querySelectorAll('.zoomable');
@@ -11,7 +17,6 @@ for (let i = 0; i < $notdrag.length; i++) {
 for (let i = 0; i < $zoomable.length; i++) {
     $zoomable[i].addEventListener("click", onMouseClick);
 }
-
 
 //Mettre un objet en avant
 function onMouseClick(e){
@@ -34,5 +39,4 @@ function onMouseClick(e){
         this.parentNode.style.justifyContent="";
         this.parentNode.style.alignItems="";
     }
-
 }

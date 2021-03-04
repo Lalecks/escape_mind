@@ -10,5 +10,7 @@ require('./layouts/scrollBar');
 require('./package/rellax');
 
 /*--------  Components --------*/
-require('./components/divers');
+require('./components/modal'); // Avant custom_packages.js pour fonctionner
+require('./components/custom_package');
+require('./components/loader');
 require('./components/zoom');
