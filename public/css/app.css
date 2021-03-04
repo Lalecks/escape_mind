@@ -1049,6 +1049,7 @@ footer {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   z-index: 10;
+  text-transform: lowercase;
 }
 
 .navbar ul {
@@ -1611,7 +1612,6 @@ footer a span:nth-child(4) {
 
 .modal {
   position: fixed;
-  display: flex;
   left: 0;
   top: 0;
   width: 100%;
@@ -1626,6 +1626,9 @@ footer a span:nth-child(4) {
 }
 
 .modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   position: fixed;
   top: 50%;
   left: 50%;

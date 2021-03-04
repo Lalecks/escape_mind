@@ -17,15 +17,23 @@ use Illuminate\Support\Facades\Route;
 
 // Page d'attente
 Route::get('/redirect', 'LoaderController@redirect');
+
 // Page de l'interface web
 Route::get('/', function () {
     return view("home");
 });
+
 // Pages de l'interface jeu
-Route::get('/jeu', 'GameController@game');
-
-
-Auth::routes();
+Route::group(['middleware'=>'auth'], function () {
+    // Pages des pièces
+    Route::get('/room1', 'GameController@displayRoom1');
+    Route::get('/room2', 'GameController@displayRoom2');
+    Route::get('/room3', 'GameController@displayRoom3');
+    // Pages des cinématiques
+    Route::get('/opening', 'CinematicController@opening');
+    Route::get('/ending-out', 'CinematicController@ending');
+    Route::get('/ending-in', 'CinematicController@ending');
+});
 
 //If the URL does not exist, redirection to homepage
 /*
