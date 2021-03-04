@@ -3,7 +3,7 @@
 @section('content')
 @guest
 <header>
-	<a class="logo logo-title">escape_mind</a>
+	<a class="logo logo-title" href="#">escape_mind</a>
 	<!-- Début : menu burger -->
 	<input type='checkbox' id='toggle' style='display:none;' />
 	<label class='toggle-btn toggle-btn__cross' for='toggle'>
@@ -312,7 +312,7 @@
 					</div>
 				</div>
 				<div class="take-contact">
-					<a href="mailto:contact@escapemind.fr" class="mail">contact@escapemind.fr</a>
+					<a href="mailto:contact@escapemind.fr" class="mail hoverable">contact@escapemind.fr</a>
 				</div>
 			</div>
 		</section>

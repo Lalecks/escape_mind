@@ -37,7 +37,7 @@
 				align-self: center;
 				flex-direction: column;
 				align-self: flex-end;
-				margin-left: -4.5rem;
+				margin-left: -4rem;
 				// La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde.
 				-webkit-transition: all 1.5s ease-in-out; // Safari et Chrome
 				-moz-transition: all 1.5s ease-in-out; // Firefox
@@ -46,7 +46,7 @@
 				transition: all 1.5s ease-in-out;
 				img {	
 					margin-top: 2rem;
-					max-width: 100%;
+					max-width: 9rem;
 					height: auto;
 					-webkit-transform-origin: 50% 100%;
 					-ms-transform-origin: 50% 100%;

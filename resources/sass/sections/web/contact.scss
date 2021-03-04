@@ -50,10 +50,10 @@
 			}
 			.instagram:hover { 
 				color: #FEDA77;
-				background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-				-webkit-background-clip: text;
-				background-clip: text; // Compatibilité
-				-webkit-text-fill-color: transparent;
+				// background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+				// -webkit-background-clip: text;
+				// background-clip: text; // Compatibilité
+				// -webkit-text-fill-color: transparent;
 			}
 			.youtube:hover { 
 				color: #bd081c;
@@ -77,16 +77,21 @@
 		align-self: center;
 		text-align: center;
 		.mail {
-			font-size: xx-large;
+			font-size: x-large;
 			font-weight: bolder;
-			text-shadow: .1rem .1rem 0 $color-shadow, 2px 2px 0 $color-shadow, 3px 3px 
-			$color-shadow; // Effet 3D
+			text-shadow: .1rem .1rem 0 $color-shadow, 2px 2px 0 $color-shadow, 3px 3px $color-shadow; // Effet 3D
+			-webkit-transition: all 0.5s;
+				-moz-transition: all 0.5s;
+				transition: all 0.5s;
 			&:hover {
 				text-decoration: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-				text-shadow: .1rem .1rem 0 $orange, 2px 2px 0 $orange, 3px 3px $orange; // Effet 3D
+				-webkit-transition: all 0.5s;
+				-moz-transition: all 0.5s;
+				transition: all 0.5s;
+				text-shadow: .1rem .1rem 0 $transparent, 2px 2px $transparent, 3px 3px $transparent; // Effet 3D
+				// color: $color-shadow;
+				font-size: xx-large;
+				// text-shadow: 2px 2px 5px $white;
 			}
 		}
 	}

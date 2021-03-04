@@ -2027,13 +2027,13 @@ footer a span:nth-child(4) {
   align-self: center;
   flex-direction: column;
   align-self: flex-end;
-  margin-left: -4.5rem;
+  margin-left: -4rem;
   transition: all 1.5s ease-in-out;
 }
 
 #about .team .team-img-role div img {
   margin-top: 2rem;
-  max-width: 100%;
+  max-width: 9rem;
   height: auto;
   transform-origin: 50% 100%;
 }
@@ -2125,10 +2125,6 @@ footer a span:nth-child(4) {
 
 #contact .contact-txt .media .instagram:hover {
   color: #FEDA77;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #contact .contact-txt .media .youtube:hover {
@@ -2151,15 +2147,17 @@ footer a span:nth-child(4) {
 }
 
 #contact .take-contact .mail {
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: bolder;
   text-shadow: 0.1rem 0.1rem 0 #7C7C7C, 2px 2px 0 #7C7C7C, 3px 3px #7C7C7C;
+  transition: all 0.5s;
 }
 
 #contact .take-contact .mail:hover {
   text-decoration: none;
   transition: all 0.5s;
-  text-shadow: 0.1rem 0.1rem 0 #f6993f, 2px 2px 0 #f6993f, 3px 3px #f6993f;
+  text-shadow: 0.1rem 0.1rem 0 rgba(255, 255, 255, 0.17), 2px 2px rgba(255, 255, 255, 0.17), 3px 3px rgba(255, 255, 255, 0.17);
+  font-size: xx-large;
 }
 
 #bg-room1 {
