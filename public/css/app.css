@@ -2016,6 +2016,8 @@ footer a span:nth-child(4) {
 
 #about .team .team-img-role h2 {
   display: block;
+  position: relative;
+  z-index: 0;
 }
 
 #about .team .team-img-role div {
@@ -2030,6 +2032,7 @@ footer a span:nth-child(4) {
 }
 
 #about .team .team-img-role div img {
+  margin-top: 2rem;
   max-width: 100%;
   height: auto;
   transform-origin: 50% 100%;
@@ -2038,17 +2041,19 @@ footer a span:nth-child(4) {
 #about .team .team-img-role div .team-role {
   display: none;
   transition: all 300ms ease-in-out;
+  transition-duration: 4s;
+  transition-delay: 2s;
 }
 
 #about .team .team-img-role div .team-name {
   font-size: 1rem !important;
-  color: rgba(255, 255, 255, 0.17) !important;
+  color: rgba(255, 255, 255, 0.17);
   text-decoration: line-through;
   text-decoration-thickness: 0.14rem;
   position: fixed;
+  margin: 0 1rem;
+  z-index: -1;
   bottom: -20%;
-  transition-duration: 4s;
-  transition-delay: 2s;
 }
 
 #about .team .team-img-role div:hover {
@@ -2103,7 +2108,7 @@ footer a span:nth-child(4) {
 }
 
 #contact .contact-txt .media a {
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
 }
 
 #contact .contact-txt .media a:hover {
@@ -2120,6 +2125,10 @@ footer a span:nth-child(4) {
 
 #contact .contact-txt .media .instagram:hover {
   color: #FEDA77;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #contact .contact-txt .media .youtube:hover {

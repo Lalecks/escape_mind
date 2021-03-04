@@ -27,6 +27,8 @@
 
 			h2 {
 				display: block;
+				position: relative;
+				z-index: 0;
 			}
 			div {
 				display: flex;
@@ -36,7 +38,6 @@
 				flex-direction: column;
 				align-self: flex-end;
 				margin-left: -4.5rem;
-				// cursor: pointer;
 				// La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde.
 				-webkit-transition: all 1.5s ease-in-out; // Safari et Chrome
 				-moz-transition: all 1.5s ease-in-out; // Firefox
@@ -44,6 +45,7 @@
 				-o-transition: all 1.5s ease-in-out; // Opera
 				transition: all 1.5s ease-in-out;
 				img {	
+					margin-top: 2rem;
 					max-width: 100%;
 					height: auto;
 					-webkit-transform-origin: 50% 100%;
@@ -57,16 +59,18 @@
 					-ms-transition: all 300ms ease-in-out; // Internet Explorer 9
 					-o-transition: all 300ms ease-in-out; // Opera
 					transition: all 300ms ease-in-out;
+					transition-duration: 4s;
+ 					transition-delay: 2s;
 				}
 				.team-name {
 					font-size: 1rem !important;  
-					color: $transparent !important;  
+					color: $transparent;  
 					text-decoration: line-through;	
 					text-decoration-thickness: 0.14rem;
 					position: fixed;
+					margin: 0 1rem;
+					z-index: -1;
 					bottom: -20%;	
-					transition-duration: 4s;
- 					transition-delay: 2s;
 				}
 				// Zoom des images
 				&:hover {

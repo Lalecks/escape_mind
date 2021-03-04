@@ -37,7 +37,7 @@
 			// display: flex; // Permet de centrer le .media::before
 			// justify-content: flex-end;
 			a {
-				margin-left: .5rem;
+				margin-left: 1.5rem;
 				&:hover {
 					transition: all .5s ease-in-out;
 				}
@@ -50,10 +50,10 @@
 			}
 			.instagram:hover { 
 				color: #FEDA77;
-				// background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-				// -webkit-background-clip: text;
-				// background-clip: text; // Compatibilité
-				// -webkit-text-fill-color: transparent;
+				background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+				-webkit-background-clip: text;
+				background-clip: text; // Compatibilité
+				-webkit-text-fill-color: transparent;
 			}
 			.youtube:hover { 
 				color: #bd081c;
