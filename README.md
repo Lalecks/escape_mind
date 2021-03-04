@@ -43,6 +43,12 @@ $ php artisan migrate
 $ php artisan migrate --seed
 ```
 
+Create all flags
+```shell
+$ php artisan vendor:publish [0]
+$ php artisan view:clear
+```
+
 ### Front-end
 Automatically Sass et JS compilation.
 ```shell
