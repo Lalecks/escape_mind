@@ -11,6 +11,7 @@ require('./package/rellax');
 
 /*--------  Components --------*/
 require('./components/modal'); // Avant custom_packages.js pour fonctionner
-require('./components/custom_package');
 require('./components/loader');
 require('./components/zoom');
+require('./components/custom_package');
+

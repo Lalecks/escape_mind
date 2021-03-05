@@ -1,7 +1,9 @@
 @extends('layouts.template')
+@extends("loader")
 
 @section('content')
 @guest
+
 <header>
 	<a class="logo logo-title" href="#">escape_mind</a>
 	<!-- Début : menu burger -->
@@ -24,6 +26,8 @@
 		</ul>
 	</nav>
 </header>
+
+
 
 <div class="index">
 	<div class="headings container">
@@ -54,7 +58,7 @@
 						</div>
 					</div>
 
-				</div> 
+				</div>
 			</div>
 		</section>
 
@@ -186,68 +190,68 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>01 </td> 
-							<td>Bloopy_ez </td> 
+							<td>01 </td>
+							<td>Bloopy_ez </td>
 							<td>40:05s </td>
 						</tr>
 						<tr>
-							<td>01 </td> 
-							<td>Bloopy_ez </td> 
+							<td>01 </td>
+							<td>Bloopy_ez </td>
 							<td>40 min 05 sec </td>
 						</tr>
 						<tr>
-							<td>01 </td> 
-							<td>Bloopy_ez </td> 
+							<td>01 </td>
+							<td>Bloopy_ez </td>
 							<td>40 minutes 24 secondes</td>
 						</tr>
 						<tr>
-							<td>01 </td> 
-							<td>Bloopy_ez </td> 
+							<td>01 </td>
+							<td>Bloopy_ez </td>
 							<td>40 minutes et 42 secondes </td>
 						</tr>
 						<tr>
-							<td>01 </td> 
-							<td>Bloopy_ez </td> 
+							<td>01 </td>
+							<td>Bloopy_ez </td>
 							<td>40 minutes </td>
 						</tr>
 						<tr>
-							<td>01 </td> 
-							<td>Bloopy_ez </td> 
+							<td>01 </td>
+							<td>Bloopy_ez </td>
 							<td>40 minutes </td>
 						</tr>
 						<tr>
-							<td>01 </td> 
-							<td>Bloopy_ez </td> 
+							<td>01 </td>
+							<td>Bloopy_ez </td>
 							<td>40 minutes </td>
 						</tr>
 						<tr>
-							<td>01 </td> 
-							<td>Bloopy_ez </td> 
+							<td>01 </td>
+							<td>Bloopy_ez </td>
 							<td>40 minutes </td>
 						</tr>
 						<tr>
-							<td>01 </td> 
-							<td>Bloopy_ez </td> 
+							<td>01 </td>
+							<td>Bloopy_ez </td>
 							<td>40 minutes </td>
 						</tr>
 						<tr>
-							<td>11fffff f fff frfr frf </td> 
-							<td>Bloopy_ez </td> 
+							<td>11fffff f fff frfr frf </td>
+							<td>Bloopy_ez </td>
 							<td>40 minutes </td>
 						</tr>
 						<tr>
-							<td>11fffff f fff frfr frf </td> 
-							<td>Bloopy_ez </td> 
+							<td>11fffff f fff frfr frf </td>
+							<td>Bloopy_ez </td>
 							<td>40 minutes </td>
 						</tr>
 						<tr>
-							<td>11fffff f fff frfr frf </td> 
-							<td>Bloopy_ez </td> 
+							<td>11fffff f fff frfr frf </td>
+							<td>Bloopy_ez </td>
 							<td>40 minutes </td>
 						</tr>
 						<tr>
-							<td>11fffff f fff frfr frf </td> 
-							<td>Bloopy_ez </td> 
+							<td>11fffff f fff frfr frf </td>
+							<td>Bloopy_ez </td>
 							<td>40 minutes </td>
 						</tr>
 					</tbody>
@@ -318,12 +322,12 @@
 		</section>
 	</div>
 </div>
-<footer> 
+<footer>
 	<div>
 		<span>escape_mind</span>
 		<span>escape_mind</span>
 	</div>
-	
+
 	{{-- <a href="#" class='btn'>
 		<span></span>
 		<span></span>
@@ -331,7 +335,7 @@
 		<span></span>
 		Neon button
 	</a> --}}
-	<p>&copy; {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</p> 
+	<p>&copy; {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</p>
 </footer>
 
 @endguest

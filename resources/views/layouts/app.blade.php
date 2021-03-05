@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" xmlns:og='http://ogp.me/ns#' dir="ltr">
 	<!--====== Entête ======-->
 	<head>
-		<meta charset='utf-8'>  
+		<meta charset='utf-8'>
 		<!-- Encodage -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,8 +54,10 @@
 	<!--====== Corps ======-->
 	<body>
 		<!-- Souris -->
+        <div id="souris" style="opacity:0">
 		<div class="cursor cursor--small"></div>
 		<canvas class="cursor cursor--canvas" resize></canvas>
+        </div>
 
 		{{--
 		<div id="app">
@@ -116,7 +118,10 @@
 		--}}
 
 		<main id="pjax-container">
-			@yield('content')
+            @yield("loader")
+            <div id="toload" style="opacity: 0">
+			    @yield('content')
+            </div>
 		</main>
 
 		<!--====== Javascripts & Jquery ======-->

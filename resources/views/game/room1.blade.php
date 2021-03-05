@@ -1,5 +1,6 @@
 @extends('layouts.template')
 
+
 @section('content')
 <div class="bg">
 	<a><img id="bg-room1" src={{ asset('ressources/game/objects/image/test_mur.jpg') }}></a>

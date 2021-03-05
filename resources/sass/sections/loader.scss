@@ -1,4 +1,4 @@
-.loader {
+#loader {
   height: 100vh;
 	width: 100vw;
 	display: -webkit-box;
@@ -12,10 +12,10 @@
 	justify-content: center;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	position: relative;
+	position: absolute;
 	.bg-txt {
 		display: none;
-		z-index: 1;
+		z-index: 200000000;
 		position: absolute;
 		.bg_txt_bordure {
 			font-size: 10rem;
@@ -35,7 +35,7 @@
 			// height: 15rem;
 			background: #E5E5E5;
 			perspective: 1200px;
-			perspective-origin: 50% 50%; 
+			perspective-origin: 50% 50%;
 			-webkit-animation: bounce 1.8s infinite ease-in-out;
 			animation: bounce 1.8s infinite ease-in-out;
 		}
