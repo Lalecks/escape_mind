@@ -23,6 +23,8 @@ Route::get('/', function () {
     return view("home");
 });
 
+Route::get('/play', 'GameController@game');
+
 // Pages de l'interface jeu
 Route::group(['middleware'=>'auth'], function () {
     // Pages des pièces
