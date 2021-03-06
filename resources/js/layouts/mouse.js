@@ -25,7 +25,7 @@
 // // Souris en dehors de l'écran
 // function onMouseLeave(e){
 //     TweenMax.to($smallBall, .1, {
-//       opacity:0     
+//       opacity:0
 //     });
 // }
 // // Taille au survol
@@ -167,7 +167,7 @@ const cursorModule = () => {
 			stuckX = Math.round(navItemBox.left + navItemBox.width / 2);
 			stuckY = Math.round(navItemBox.top + navItemBox.height / 2);
 			isStuck = true;
-			TweenMax.to(innerCursor, 1, {background:'rgba(60, 74, 83, 0.5)', scale:0.25, ease: Expo.easeOut});
+			TweenMax.to(innerCursor, 1, {background:'rgba(255, 255, 255, 1)', scale:0.25, ease: Expo.easeOut});
 		};
 		const handleCanvasCursorMouseLeave = () => {
 			isStuck = false;
