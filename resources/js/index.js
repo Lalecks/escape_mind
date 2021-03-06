@@ -2,12 +2,12 @@
 require('./generic/jquery-2.1.4.min');
 require('./generic/jquery.pjax');
 
+/*--------  Packages --------*/
+require('./package/rellax.min');
+
 /*-------- Layouts --------*/
 require('./layouts/mouse');
 require('./layouts/scrollBar');
-
-/*--------  Packages --------*/
-require('./package/rellax');
 
 /*--------  Components --------*/
 require('./components/modal'); // Avant custom_packages.js pour fonctionner
