@@ -10,7 +10,7 @@ function wait(){
     },2000);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     document.getElementById("loader").style.transition="opacity 2s linear";
     document.getElementById("loader").style.opacity="0";
     document.getElementById("toload").style.transition="opacity 2s linear";
