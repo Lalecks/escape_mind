@@ -41,13 +41,13 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('ressources/icon/favicon-32x32.png')}}">
 		<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('ressources/icon/favicon-96x96.png')}}">
 		<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('ressources/icon/favicon-16x16.png')}}">
-		<link rel="manifest" href="{{ asset('//manifest.json')}}">
+		<link rel="manifest" href="{{ asset('ressources/icon/manifest.json')}}">
 		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="msapplication-TileImage" content="{{ asset('ressources/icon/ms-icon-144x144.png')}}">
 		<meta name="theme-color" content="#ffffff">
 		<!-- Stylesheets -->
 		<link href="{{ asset('css/app.css') }}" rel="stylesheet">
-		<link rel="prefetch" href="../game/room1.blade.php">
+		{{-- <link rel="prefetch" href="../game/room1.blade.php"> --}}
 		<!-- Scripts -->
 		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
 	</head>

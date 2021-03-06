@@ -72,6 +72,8 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
     - [Pexels](https://www.pexels.com/)
     - [Unsplash](https://unsplash.com/)
 * Web resources :
+    - Copyright (c) 2012 [Chris Wanstrath](https://github.com/defunkt/jquery-pjax)
+    - Copyright (c) 2016 [Moe Amaya](https://github.com/dixonandmoe/rellax)
     - Copyright (c) [Clement Girault](https://codepen.io/clementGir/pen/RQqvQx)
     - Copyright (c) [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
 
