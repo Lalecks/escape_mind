@@ -5,14 +5,14 @@
 * */
 
 // ScrollBar
-// body,
-// html{
-//     scroll-behavior: smooth;
-//     scrollbar-width:none; // firefox
-// }
-// ::-webkit-scrollbar { // autres navigateur
-//     display: none;
-// }
+ body,
+ html{
+     scroll-behavior: smooth;
+     scrollbar-width:none; // firefox
+ }
+ ::-webkit-scrollbar { // autres navigateur
+     display: none;
+ }
 
 // Navbar
 .navbar {
