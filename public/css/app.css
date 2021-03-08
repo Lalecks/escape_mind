@@ -2096,21 +2096,26 @@ div .bg {
     display: none;
   }
 
-  table {
+  #rank table {
     text-align: center;
   }
 
-  table tbody {
+  #rank table tbody {
     padding-top: 0;
   }
 
-  table tbody tr {
+  #rank table tbody tr {
     border-bottom: thin solid grey;
     border-bottom-style: dashed;
   }
 
-  table th {
+  #rank table th {
     width: 6rem;
+  }
+
+  #contact p {
+    max-width: 85%;
+    margin: auto;
   }
 }
 
@@ -2147,7 +2152,11 @@ div .bg {
     font-size: 2.1vh;
   }
 
-  .team {
+  #about .project {
+    padding: 0 2.5rem;
+  }
+
+  #about .team {
     display: none;
   }
 }

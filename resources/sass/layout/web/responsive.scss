@@ -34,20 +34,25 @@
 			display: none;
 		}
 	}
+	#rank {
+		table {
+			text-align: center;
+			tbody {
+				padding-top: 0;
+				tr {
+					border-bottom: thin solid grey;
+					border-bottom-style: dashed;
 
-	table {
-		text-align: center;
-		tbody {
-			padding-top: 0;
-			tr {
-				border-bottom: thin solid grey;
-				border-bottom-style: dashed;
-
+				}
+			}
+			th {
+				width: 6rem;
 			}
 		}
-		th {
-			width: 6rem;
-		}
+	}
+	#contact p {
+		max-width: 85%;
+    	margin: auto;
 	}
 }
 
@@ -81,8 +86,13 @@
 	#rank .logo-title {
 		font-size: 2.1vh;
 	}
-	.team {
-		display: none;
+	#about  {
+		.project {
+    		padding: 0 2.5rem;
+		} 
+		.team {
+			display: none;
+		}
 	}
 }
 
