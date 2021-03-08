@@ -1,21 +1,20 @@
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-	// // 	// 760 à 580
-	// //   html {
-	// //     transform: rotate(-90deg);
-	// //     transform-origin: left top;
-	// //     width: 100vh;
-	// //     overflow-x: auto;
-	// // 	overflow-y: hidden;
-	// //     position: absolute;
-	// //     top: 100%;
-	// //     left: 0;
-	// //   }
-	// //   #rank .top3>div, #rank h1, #rank .top3 {
-	// // 		display: none;
-	// //   }
-	// //   #rank .board table {
-	// // 		margin-top: 0;
-	// // 	}
+	  html {
+	    transform: rotate(-90deg);
+	    transform-origin: left top;
+	    width: 100vh;
+	    overflow-x: auto;
+		overflow-y: hidden;
+	    position: absolute;
+	    top: 100%;
+	    left: 0;
+	  }
+	  #rank .top3>div, #rank h1, #rank .top3 {
+			display: none;
+	  }
+	  #rank .board table {
+			margin-top: 0;
+		}
 }
 
 /* Extra small devices (phones, 600px and down) 576px*/ 
@@ -69,32 +68,27 @@
 			display: none;
 		}
 	}
+	#home {
+		.video-overlay #home_box div div {
+			display: -ms-inline-grid;
+			display: inline-grid;
+		}
+		iframe{
+			width: auto;
+			height: 200px;
+		}
+	}
 	#rank .logo-title {
 		font-size: 2.1vh;
 	}
-	.video-overlay #home { 
-		#home_box {
-			img {
-				margin-top: 0;
-			}
-		}
-	}
-	#home .video-overlay #home_box div div {
-		display: -ms-inline-grid;
-		display: inline-grid;
-	}
-	iframe{
-		width: auto;
-		height: 200px;
+	.team {
+		display: none;
 	}
 }
 
 // /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
 	body {
-		h1 {
-			font-size: 29vh;
-		}
 		.container {	
 			max-width: 100%;
 		}
@@ -227,10 +221,9 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) (1280x1024)*/
 @media only screen and (max-width: 1200px) {
-	// h1 {
-	// 	font-size: 17rem;
-	// 	display: none;
-	// }
+	h1 {
+		font-size: 17rem;
+	}
 	#rank {
 		.top3 > div {
 			padding: 0 1rem;
@@ -282,7 +275,7 @@
 			margin-top: 2rem;
 		}
 	}
-		#contact {
+	#contact {
 		.contact-txt {
 			padding: 0;
 		}   

@@ -927,7 +927,7 @@ h1 {
   margin: 0;
   color: #1A1A1A;
   font-family: "Big Shoulders Display", cursive;
-  font-size: 54vh;
+  font-size: 45vh;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
@@ -2058,6 +2058,29 @@ div .bg {
   width: 100vw;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  #rank .top3 > div,
+  #rank h1,
+  #rank .top3 {
+    display: none;
+  }
+
+  #rank .board table {
+    margin-top: 0;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) 576px*/
 
 @media only screen and (max-width: 600px) {
@@ -2110,30 +2133,26 @@ div .bg {
     display: none;
   }
 
-  #rank .logo-title {
-    font-size: 2.1vh;
-  }
-
-  .video-overlay #home #home_box img {
-    margin-top: 0;
-  }
-
   #home .video-overlay #home_box div div {
     display: -ms-inline-grid;
     display: inline-grid;
   }
 
-  iframe {
+  #home iframe {
     width: auto;
     height: 200px;
+  }
+
+  #rank .logo-title {
+    font-size: 2.1vh;
+  }
+
+  .team {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  body h1 {
-    font-size: 29vh;
-  }
-
   body .container {
     max-width: 100%;
   }
@@ -2280,6 +2299,10 @@ div .bg {
 /* Extra large devices (large laptops and desktops, 1200px and up) (1280x1024)*/
 
 @media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 17rem;
+  }
+
   #rank .top3 > div {
     padding: 0 1rem;
   }
