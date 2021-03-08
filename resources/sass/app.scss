@@ -42,7 +42,6 @@
 @import 'layout/web/header';
 @import 'layout/web/footer';
 @import 'layout/web/sidebar';
-@import 'layout/web/responsive';
 // Game part
 @import 'layout/game/gameBar';
 @import 'layout/game/object';
@@ -52,6 +51,7 @@
 @import 'components/button.scss';
 @import 'components/circle.scss';
 @import 'components/modal.scss';
+@import 'components/defilement.scss';
 
 // /*--------  Sections --------*/
 // // @import 'sections/login';
@@ -66,3 +66,7 @@
 @import 'sections/game/room1';
 @import 'sections/game/room2';
 @import 'sections/game/room3';
+
+
+// à la fin
+@import 'layout/web/responsive';
