@@ -10,11 +10,9 @@ let closeButton = document.querySelector(".close-button");
 
 //Verifie s'il existe une classe modal dans la page
 if (modal){
-
     function toggleModal() {
         // Afficher la modale
         modal.classList.toggle("show-modal");
-
     }
     function windowOnClick(event) {
         if (event.target === modal) {
@@ -30,9 +28,7 @@ if (modal){
         // document.getElementsByClassName(navbar).style.display = none; // Pour cacher
         // document.getElementById(identifiant_de_ma_div).style.display = none;
     }
-
     trigger.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
-
 }
