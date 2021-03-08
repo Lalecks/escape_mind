@@ -961,11 +961,14 @@ h2 {
 .logo {
   position: fixed;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   width: 0;
   left: 0;
   right: 0;
-  background-color: brown;
+  background: rgba(0, 0, 0, 0.027);
+  width: 100%;
+  z-index: 10;
+  text-align: center;
 }
 
 .index {
@@ -1875,7 +1878,7 @@ footer a span:nth-child(4) {
 }
 
 #contact .take-contact .mail {
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: bolder;
   text-shadow: 0.1rem 0.1rem 0 #7C7C7C, 2px 2px 0 #7C7C7C, 3px 3px #7C7C7C;
   transition: all 0.5s;
@@ -1903,32 +1906,13 @@ div .bg {
   width: 100vw;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: auto;
-    overflow-y: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-
-  #rank .top3 > div,
-  #rank h1,
-  #rank .top3 {
-    display: none;
-  }
-
-  #rank .board table {
-    margin-top: 0;
-  }
-}
-
 /* Extra small devices (phones, 600px and down) 576px*/
 
 @media only screen and (max-width: 600px) {
+  .logo .logo-title {
+    display: none;
+  }
+
   #home .video-overlay #home_box {
     max-width: 28rem;
   }
@@ -2005,6 +1989,8 @@ div .bg {
     display: none;
   }
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (max-width: 992px) {
   body .container {
@@ -2219,6 +2205,19 @@ div .bg {
   #contact .take-contact .mail {
     font-size: x-large;
     text-shadow: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
 

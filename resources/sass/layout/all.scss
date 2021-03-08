@@ -17,7 +17,6 @@ body, html{
 	position: relative;
 	overflow-x: hidden;
 }
-
 // Titres
 h1 {
 	margin: 0;
@@ -42,7 +41,6 @@ h1 {
 	user-select: none; // Propriété standard
 	
 }
-
 h2 {
 	font-family: $font-logo;
 	text-transform: lowercase;
@@ -50,7 +48,6 @@ h2 {
 	font-weight: normal;
 	// text-align: center;
 }
-
 .logo-title{
 	font-family: $font-logo;
 	font-size: 4.1vh;  
@@ -59,13 +56,15 @@ h2 {
 .logo {
 	position : fixed;
 	margin: 0 auto;
-	padding: 2rem 0;
+	padding: 1.5rem 0;
 	width : 0;
 	left : 0;
 	right: 0;
-	background-color: brown;
+	background: rgba(0, 0, 0, 0.027);
+	width: 100%;
+    z-index: 10;
+    text-align: center;
 }
-
 // Container
 .index {
 	display: flex;

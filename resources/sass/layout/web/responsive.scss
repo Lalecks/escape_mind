@@ -1,28 +1,12 @@
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-	  html {
-	    transform: rotate(-90deg);
-	    transform-origin: left top;
-	    width: 100vh;
-	    overflow-x: auto;
-		overflow-y: hidden;
-	    position: absolute;
-	    top: 100%;
-	    left: 0;
-	  }
-	  #rank .top3>div, #rank h1, #rank .top3 {
-			display: none;
-	  }
-	  #rank .board table {
-			margin-top: 0;
-		}
-}
-
 /* Extra small devices (phones, 600px and down) 576px*/ 
 @media only screen and (max-width: 600px) {
 	// body {
 	// 	cursor: initial !important; // Souris par défaut
 	// 	pointer-events: auto;
 	// }
+	.logo .logo-title {
+		display: none;
+	}
 	#home .video-overlay #home_box {
 		max-width: 28rem;
 	}
@@ -52,7 +36,7 @@
 	}
 	#contact p {
 		max-width: 85%;
-    	margin: auto;
+		margin: auto;
 	}
 }
 
@@ -88,7 +72,7 @@
 	}
 	#about  {
 		.project {
-    		padding: 0 2.5rem;
+			padding: 0 2.5rem;
 		} 
 		.team {
 			display: none;
@@ -96,7 +80,7 @@
 	}
 }
 
-// /* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
 	body {
 		.container {	
