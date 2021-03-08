@@ -15,6 +15,8 @@ window.addEventListener('scroll',() => {
 
     const numitem = Math.floor(scrolled * (nb_elem-1)+(0.1*scrolled)); // Nombres d'éléments
 
+
+
     /*
     for (let i = numitem; i <nb_elem; i++){
         allItems[i].classList.remove("active");

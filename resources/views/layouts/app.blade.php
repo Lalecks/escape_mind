@@ -54,7 +54,7 @@
 	<!--====== Corps ======-->
 	<body>
 		<!-- Souris -->
-        <div id="souris" style="opacity:0">
+        <div id="souris">
 		<div class="cursor cursor--small"></div>
 		<canvas class="cursor cursor--canvas" resize></canvas>
         </div>
@@ -119,7 +119,7 @@
 
 		<main> <!--id="pjax-container"-->
             @yield("loader")
-            <div id="toload" style="opacity: 0">
+            <div id="content" style="opacity: 0">
 			    @yield('content')
             </div>
 		</main>
