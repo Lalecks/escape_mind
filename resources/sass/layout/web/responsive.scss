@@ -20,10 +20,10 @@
 
 /* Extra small devices (phones, 600px and down) 576px*/ 
 @media only screen and (max-width: 600px) {
-	body {
-		cursor: initial !important; // Souris par défaut
-		pointer-events: auto;
-	}
+	// body {
+	// 	cursor: initial !important; // Souris par défaut
+	// 	pointer-events: auto;
+	// }
 	#home .video-overlay #home_box {
 		max-width: 28rem;
 	}
@@ -50,21 +50,11 @@
 			width: 6rem;
 		}
 	}
-	#contact {
-		.contact-txt {
-			padding: 0;
-		}   
-		.take-contact .mail {
-			font-size: large ;
-			text-shadow: none;
-		}
-	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 // @media only screen and (min-width: 600px) {
 // }
-// Imposer l'horizontale à 600px 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -75,9 +65,9 @@
 		p {
 			text-align: center;
 		}
-	}
-	#story .story-illustration, #rank .top3{
-		display: none;
+		h1, #story .story-illustration, #rank .top3{
+			display: none;
+		}
 	}
 	#rank .logo-title {
 		font-size: 2.1vh;
@@ -101,17 +91,18 @@
 
 // /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-	.container {	
-		max-width: 100%;
+	body {
+		h1 {
+			font-size: 29vh;
+		}
+		.container {	
+			max-width: 100%;
+		}
 	}
-	.navbar {
-		display: none;
-	}
-	#home .video-overlay #home_box div div {
-		flex-direction: column;
-	}
-	#contact .contact-center {
-		flex-direction: column;
+	#home {
+		.video-overlay #home_box div div {
+			flex-direction: column;
+		}
 	}
 	#contact {
 		text-align: center;
@@ -120,6 +111,9 @@
 			padding-top: 1.5rem;
 			text-align: center;
 			margin-bottom: 3rem;
+		}
+		.contact-center {
+			flex-direction: column;
 		}
 	}
 
@@ -264,14 +258,37 @@
 			height: 13rem;
 		}
 	}
-	#rank .board table {
-		margin: 10rem 5rem 0 5rem;
+	#rank {
+		.board table {
+			margin: 10rem 5rem 0 5rem;
+		}
+		.hand {
+			position: absolute;
+			bottom: -10%;
+			transform: translateY(12%);
+			right: -3%;
+			transform: translateX(7%);
+		}
 	}
-	#rank .hand {
-		position: absolute;
-		bottom: -10%;
-		transform: translateY(12%);
-		right: -3%;
-		transform: translateX(7%);
+	#about {
+		// flex-wrap: wrap;
+		justify-content: inherit;
+		flex-direction: column;
+		text-align: center;
+		.project {
+			flex-basis: inherit;
+		}
+		.team-img-role {
+			margin-top: 2rem;
+		}
+	}
+		#contact {
+		.contact-txt {
+			padding: 0;
+		}   
+		.take-contact .mail {
+			font-size: x-large ;
+			text-shadow: none;
+		}
 	}
 }
