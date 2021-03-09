@@ -27,8 +27,6 @@
 	</nav>
 </header>
 
-
-
 <div class="index">
 	<div class="headings container">
 		<div class="modal glass-effect">

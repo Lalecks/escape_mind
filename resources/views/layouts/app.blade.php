@@ -47,12 +47,13 @@
 		<meta name="theme-color" content="#ffffff">
 		<!-- Stylesheets -->
 		<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+		{{-- <link href="{{ asset('css/app.min.css') }}" rel="stylesheet"> --}}
 		{{-- <link rel="prefetch" href="../game/room1.blade.php"> --}}
 		<!-- Scripts -->
 		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
 	</head>
 	<!--====== Corps ======-->
-	<body>
+	<body class="modal-open">
 		<!-- Souris -->
         <div id="souris">
 		<div class="cursor cursor--small"></div>

@@ -1,14 +1,11 @@
 /* Extra small devices (phones, 600px and down) 576px*/ 
 @media only screen and (max-width: 600px) {
-	// body {
-	// 	cursor: initial !important; // Souris par défaut
-	// 	pointer-events: auto;
-	// }
 	.logo .logo-title {
 		display: none;
 	}
 	#home .video-overlay #home_box {
 		max-width: 28rem;
+		margin: 2rem;
 	}
 	#home .video-overlay #home_box img {
 		display: none;
@@ -34,6 +31,9 @@
 			}
 		}
 	}
+	// #about {
+	// 	display: inherit;
+	// }
 	#contact p {
 		max-width: 85%;
 		margin: auto;
@@ -49,6 +49,9 @@
 	body {
 		.cursor {
 			display: none;
+		}
+		.logo .logo-title {
+			font-size: 3.1vh;
 		}
 		p {
 			text-align: center;

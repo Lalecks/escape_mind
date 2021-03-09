@@ -21,8 +21,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index($id)
     {
-        return view('home');
+        $u = User::findOrFail($id);
+        // return view("home.utilisateur", ['utilisateur'=>$u]);
+        return view('home', ['utilisateur'=>$u]);
     }
 }

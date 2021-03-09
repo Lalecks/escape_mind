@@ -2,6 +2,47 @@
 
 /*-------- Variables --------*/
 
+/**
+*
+*  Importation des fonts
+*
+* */
+
+/* Gayathri : Body typo */
+
+@font-face {
+  font-family: "Gayathri";
+  src: url(/fonts/Gayathri-Regular.eot?cdd738728acbe380e57f2552abac86e6);
+  src: url(/fonts/Gayathri-Regular.eot?cdd738728acbe380e57f2552abac86e6) format("embedded-opentype"), url(/fonts/Gayathri-Regular.woff2?2f07192a9beeeb07f2730364764c8689) format("woff2"), url(/fonts/Gayathri-Regular.woff?5d812ffce8316b6391a1e1fcd2be0938) format("woff"), url(/fonts/Gayathri-Regular.ttf?36063eee1dd38fca5b950b49ecde5bb5) format("truetype"), url(/fonts/Gayathri-Regular.svg?d705757e39a00b21c17628936dde4c2f) format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Audiowide : Logo typo */
+
+@font-face {
+  font-family: "Audiowide";
+  src: url(/fonts/Audiowide-Regular.eot?48f8a84416de59f5f56a0a5377a6bde9);
+  /* IE9 Compat Modes */
+  src: url(/fonts/Audiowide-Regular.eot?48f8a84416de59f5f56a0a5377a6bde9) format("embedded-opentype"), url(/fonts/Audiowide-Regular.woff2?f6807ae0795edb7bcac9d136a405c29f) format("woff2"), url(/fonts/Audiowide-Regular.woff?b51130d3d0c3786e260542f2771237b7) format("woff"), url(/fonts/Audiowide-Regular.ttf?981ccbbd3f322cb55c1e4a02d247dae4) format("truetype"), url(/fonts/Audiowide-Regular.svg?79a0bb772f25d5aa04d73e7e0e896a12) format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* BigShouldersDisplay : Titres typo */
+
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url(/fonts/BigShouldersDisplay-Regular.eot?71d976d8b0920ad518f451ea73f14552);
+  src: url(/fonts/BigShouldersDisplay-Regular.eot?71d976d8b0920ad518f451ea73f14552) format("embedded-opentype"), url(/fonts/BigShouldersDisplay-Regular.woff2?d6fa042ef7d926d3fca53254acf5c7fc) format("woff2"), url(/fonts/BigShouldersDisplay-Regular.woff?a1456b3eef38a3cd3b7de3d010cf2d2a) format("woff"), url(/fonts/BigShouldersDisplay-Regular.ttf?527beb4a015ac1d4774207feab1c265e) format("truetype"), url(/fonts/BigShouldersDisplay-Regular.svg?069991f1e6626111050ea6ff012420db) format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*-------- Bootstrap --------*/
 
 /*-------- Generic --------*/
@@ -939,6 +980,7 @@ h1 {
   z-index: -6;
   left: 0;
   right: 0;
+  /* Texte non selectionnable */
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -965,7 +1007,7 @@ h2 {
   width: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.027);
+  background: rgba(0, 0, 0, 0.096);
   width: 100%;
   z-index: 10;
   text-align: center;
@@ -1915,6 +1957,7 @@ div .bg {
 
   #home .video-overlay #home_box {
     max-width: 28rem;
+    margin: 2rem;
   }
 
   #home .video-overlay #home_box img {
@@ -1955,6 +1998,10 @@ div .bg {
 @media only screen and (max-width: 768px) {
   body .cursor {
     display: none;
+  }
+
+  body .logo .logo-title {
+    font-size: 3.1vh;
   }
 
   body p {
@@ -2205,19 +2252,6 @@ div .bg {
   #contact .take-contact .mail {
     font-size: x-large;
     text-shadow: none;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: auto;
-    overflow-y: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
   }
 }
 
