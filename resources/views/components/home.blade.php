@@ -33,7 +33,7 @@
 			<!-- Ne pas mettre la modal dans le vidéo overlay, car il est en absolute et par conséquent la modal ne peut pas se fixer -->
 			<div class="modal-content glass-effect">
 				<span class="close-button hoverable">&times;</span>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/gA03iyI3yEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe style="border:0;" width="560" height="315" src="https://www.youtube.com/embed/gA03iyI3yEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
 			</div>
 		</div>
 		<section id="home">

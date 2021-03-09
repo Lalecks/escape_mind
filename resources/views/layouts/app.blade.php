@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" xmlns:og='og:http://ogp.me/ns#' dir="ltr">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr">
 	<!--====== Entête ======-->
 	<head>
 		<!-- Encodage -->
@@ -52,7 +52,7 @@
 		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
 	</head>
 	<!--====== Corps ======-->
-	<body class="modal-open">
+	<body xmlns:og='og:http://ogp.me/ns#' class="modal-open">
 		<!-- Souris -->
         <div id="souris">
 		<div class="cursor cursor--small"></div>
