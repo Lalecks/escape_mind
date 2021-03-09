@@ -18,7 +18,7 @@ class ObjectSeeder extends Seeder
 
         // for ($item=0; $item < count($objects); $item++){ 
         //     foreach ($objects as $object) {
-        //         $object = new \App\Object();
+        //         $object = new \App\Models\Object();
         //         $object->name = $objects[$item];
         //         if($item<9){
         //             $object->image = "image_".$objects[$item]."_0".($item + 1).".svg";
