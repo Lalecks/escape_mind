@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" xmlns:og='http://ogp.me/ns#' dir="ltr">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" xmlns:og='og:http://ogp.me/ns#' dir="ltr">
 	<!--====== Entête ======-->
 	<head>
 		<meta charset='utf-8'>
@@ -57,7 +57,7 @@
 		<!-- Souris -->
         <div id="souris">
 		<div class="cursor cursor--small"></div>
-		<canvas class="cursor cursor--canvas" resize></canvas>
+		<canvas class="cursor cursor--canvas"></canvas>
         </div>
 
 		{{--
