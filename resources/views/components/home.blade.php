@@ -9,9 +9,9 @@
 	<!-- Début : menu burger -->
 	<input type='checkbox' id='toggle' style='display:none;' />
 	<label class='toggle-btn toggle-btn__cross' for='toggle'>
-		<div class="bar"></div>
-		<div class="bar"></div>
-		<div class="bar"></div>
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
 	</label>
 	<!-- Fin : menu burger -->
 	<nav class="navbar">
@@ -167,8 +167,8 @@
 									<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
 								</filter>
 								<linearGradient id="third_linear" x1="143.348" y1="346.33" x2="-67.5013" y2="305.283" gradientUnits="userSpaceOnUse">
-									<stop stop-color="#121212" stop-opacity="0.44"/>
-									<stop offset="100%" offset="1" stop-opacity="0.25"/>
+									<stop offset="100%" stop-color="#121212" stop-opacity="0.44"/>
+									<stop offset="1" stop-opacity="0.25"/>
 								</linearGradient>
 							</defs>
 						</svg>
