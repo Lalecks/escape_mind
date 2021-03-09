@@ -2,7 +2,6 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" xmlns:og='og:http://ogp.me/ns#' dir="ltr">
 	<!--====== Entête ======-->
 	<head>
-		<meta charset='utf-8'>
 		<!-- Encodage -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">

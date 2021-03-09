@@ -43,6 +43,15 @@ $ php artisan migrate
 $ php artisan migrate --seed
 ```
 
+If inserting the data doesn't work.
+
+```shell
+$ composer dump-autoload 
+$ php artisan migrate:fresh
+$ php artisan migrate --seed
+$ php artisan passport:install
+```
+
 Create all flags
 ```shell
 $ php artisan vendor:publish [0]

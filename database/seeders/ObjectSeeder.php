@@ -14,13 +14,22 @@ class ObjectSeeder extends Seeder
     
     public function run()
     {
-        /*
-        $objects = new \App\Objects();
-        $objects->name = "Stéphane";
-        $objects->date_of_birth = "2000-05-28";
-        $objects->categories = "1";
-        $objects->user_id = 1;
-        $objects->save();
-        */
+        // $objects = ['radio', 'casette', "casette2", "test"];
+
+        // for ($item=0; $item < count($objects); $item++){ 
+        //     foreach ($objects as $object) {
+        //         $object = new \App\Object();
+        //         $object->name = $objects[$item];
+        //         if($item<9){
+        //             $object->image = "image_".$objects[$item]."_0".($item + 1).".svg";
+        //             $object->audio = "audio_".$objects[$item]."_0".($item + 1).".mp3";
+        //         }else{
+        //             $object->img = "image_".$objects[$item]."_".($item + 1).".svg";
+        //             $object->audio = "image_".$objects[$item]."_".($item + 1).".mp3";
+        //         }
+        //         $object->save();
+        //         $item+=1;
+        //     }
+        // }
     }
 }
