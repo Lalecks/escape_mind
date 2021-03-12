@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 
+
 // Page de l'interface web
 Route::get('/', function () {
     return view("components.home");
