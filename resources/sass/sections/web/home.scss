@@ -14,6 +14,9 @@
 		object-fit: cover; // Dimensionné pour maintenir ses proportions tout en étant ajusté à la boîte de contenu
 		object-position: 50% 50%; // Point d'angrace
 	}
+	iframe {
+		border:0;
+	}
 	// Overlay (supperposition au dessus)
 	.video-overlay {
 		width: 100%;
