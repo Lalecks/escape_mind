@@ -1,6 +1,6 @@
 /**
 *
-*  Importation des fonts
+*  Importation des polices de caractères
 *
 * */
 
@@ -39,12 +39,12 @@
 /* BigShouldersDisplay : Titres typo */
 @font-face {
     font-family: 'Big Shoulders Display';
-    src: url('fonts/BigShouldersDisplay/BigShouldersDisplay-Regular.eot');
-    src: url('fonts/BigShouldersDisplay/BigShouldersDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/BigShouldersDisplay/BigShouldersDisplay-Regular.woff2') format('woff2'),
-        url('fonts/BigShouldersDisplay/BigShouldersDisplay-Regular.woff') format('woff'),
-        url('fonts/BigShouldersDisplay/BigShouldersDisplay-Regular.ttf') format('truetype'),
-        url('fonts/BigShouldersDisplay/BigShouldersDisplay-Regular.svg#BigShouldersDisplay-Regular') format('svg');
+    src: url('./fonts/BigShouldersDisplay/BigShouldersDisplay-Regular.eot');
+    src: url('./fonts/BigShouldersDisplay/BigShouldersDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BigShouldersDisplay/BigShouldersDisplay-Regular.woff2') format('woff2'),
+        url('./fonts/BigShouldersDisplay/BigShouldersDisplay-Regular.woff') format('woff'),
+        url('./fonts/BigShouldersDisplay/BigShouldersDisplay-Regular.ttf') format('truetype'),
+        url('./fonts/BigShouldersDisplay/BigShouldersDisplay-Regular.svg#BigShouldersDisplay-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

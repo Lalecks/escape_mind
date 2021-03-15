@@ -4,7 +4,7 @@
 
 /**
 *
-*  Importation des fonts
+*  Importation des polices de caractères
 *
 * */
 
@@ -1937,19 +1937,13 @@ footer a span:nth-child(4) {
   font-size: xx-large;
 }
 
-#bg-room1 {
-  min-height: 100vh;
-  min-width: 100vw;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -100;
+body {
+  margin: 0;
 }
 
-div .bg {
-  width: 100vw;
+canvas {
+  width: 100%;
+  height: 100%;
 }
 
 /* Extra small devices (phones, 600px and down) 576px*/
