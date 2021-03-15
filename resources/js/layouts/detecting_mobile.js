@@ -17,28 +17,28 @@ window.mobileAndTabletCheck = function() {
 };
 
 
-// Mettre en mode paysage
-document.addEventListener("orientationchange", function(event){
-    switch(window.orientation) 
-    {  
-        case -90: case 90:
-            /* Device is in landscape mode */
-            break; 
-        default:
-            /* Device is in portrait mode */
-    }
-});
-screen.orientation.lock('landscape');
+// // Mettre en mode paysage
+// document.addEventListener("orientationchange", function(event){
+//     switch(window.orientation) 
+//     {  
+//         case -90: case 90:
+//             /* Device is in landscape mode */
+//             break; 
+//         default:
+//             /* Device is in portrait mode */
+//     }
+// });
+// screen.orientation.lock('landscape');
 
-var isAndroid = /(android)/i.test(navigator.userAgent);
+// var isAndroid = /(android)/i.test(navigator.userAgent);
 
-if(isAndroid)
-{
-    if(screen.width < screen.height){
-        //portrait mode on Android
-    }
-} else {
-    if(window.orientation == 0){
-        //portrait mode iOS and other devices
-    }
-}
+// if(isAndroid)
+// {
+//     if(screen.width < screen.height){
+//         //portrait mode on Android
+//     }
+// } else {
+//     if(window.orientation == 0){
+//         //portrait mode iOS and other devices
+//     }
+// }
