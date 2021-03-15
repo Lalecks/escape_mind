@@ -1,11 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Basic 3D World</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/base.css') }}">
-</head>
-<body>
+@extends('layouts.template')
+
+@section('content')
+
+<header class="Header">
+    <div class="HeaderLogo"></div>
+    <div class="Mute"></div>
+</header>
+<main id="Main" role="main">
+    <div id="Game" class="Game" >
+        <div id="Scene" class="Scene">
+            <!---->
+        </div>
+    </div>
+    <div id="Interface" class="Interface"></div>
+</main>
+
+
 <script type="module" src="{{ asset('js/main.js') }}" ></script>
-</body>
-</html>
+
+@endsection

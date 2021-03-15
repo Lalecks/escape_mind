@@ -1,5 +1,4 @@
 @extends('layouts.template')
-@extends("loader")
 
 @section('content')
 @guest
@@ -88,7 +87,7 @@
 				<img src="{{ asset('ressources/web/artificial_intelligence.png') }}" alt="artificial_intelligence"/>
 			</div>
 		</section>
-		
+
 		<section id="rank">
 			<div class="top3">
 				<h1 class="rellax">Records</h1>

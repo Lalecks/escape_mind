@@ -54,9 +54,9 @@
 	<!--====== Corps ======-->
 	<body class="modal-open">
 		<!-- Souris -->
-        <div id="souris">
-		<div class="cursor cursor--small"></div>
-		<canvas class="cursor cursor--canvas"></canvas>
+        <div id="souris" style="opacity: 0">
+            <div class="cursor cursor--small"></div>
+            <canvas class="cursor cursor--canvas" resize="true"></canvas>
         </div>
 
 		{{--
@@ -118,7 +118,10 @@
 		--}}
 
 		<main> <!--id="pjax-container"-->
-            @yield("loader")
+            <div id="overlay"> <!--loader-->
+                <div id="progstat"></div>
+                <div id="progress"></div>
+            </div>
             <div id="content" style="opacity: 0">
 			    @yield('content')
             </div>

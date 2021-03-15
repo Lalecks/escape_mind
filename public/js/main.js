@@ -17,7 +17,7 @@ class BasicWorldDemo {
     this._threejs.setPixelRatio(window.devicePixelRatio);
     this._threejs.setSize(window.innerWidth, window.innerHeight);
 
-    document.body.appendChild(this._threejs.domElement);
+    document.getElementById("Scene").appendChild(this._threejs.domElement)
 
     window.addEventListener('resize', () => {
       this._OnWindowResize();
