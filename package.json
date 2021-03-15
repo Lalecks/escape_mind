@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "rellax": "^1.12.1"
+        "rellax": "^1.12.1",
+        "three": "^0.126.1"
     }
 }

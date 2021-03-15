@@ -17,3 +17,29 @@ window.mobileAndTabletCheck = function() {
 };
 
 
+// // Mettre en mode paysage
+// document.addEventListener("orientationchange", function(event){
+//     switch(window.orientation) 
+//     {  
+//         case -90: case 90:
+//             /* Device is in landscape mode */
+//             break; 
+//         default:
+//             /* Device is in portrait mode */
+//     }
+// });
+// screen.orientation.lock('landscape');
+
+var isAndroid = /(android)/i.test(navigator.userAgent);
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+        widthRatio = 0.95;
+        heightRatio = 0.65;
+        var deg = 0;
+        document.body.style.webkitTransform = 'rotate('+deg+'deg)'; 
+        document.body.style.mozTransform    = 'rotate('+deg+'deg)'; 
+        document.body.style.msTransform     = 'rotate('+deg+'deg)'; 
+        document.body.style.oTransform      = 'rotate('+deg+'deg)'; 
+        document.body.style.transform       = 'rotate('+deg+'deg)'; 
+}
