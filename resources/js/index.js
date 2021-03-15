@@ -8,11 +8,11 @@ require('./package/rellax.min');
 require('./layouts/detecting_mobile');
 require('./layouts/mouse');
 require('./layouts/scrollBar');
-require('./layouts/3D');
+//require('./layouts/3D');
 
 /*--------  Components --------*/
-require('./components/modal'); // Avant custom_packages.js pour fonctionner
 require('./components/loader');
+require('./components/modal'); // Avant custom_packages.js pour fonctionner
 require('./components/video_player');
 require('./components/zoom');
 require('./components/custom_package');
