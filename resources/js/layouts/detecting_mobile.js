@@ -17,27 +17,28 @@ window.mobileAndTabletCheck = function() {
 };
 
 
+// Mettre en mode paysage
+document.addEventListener("orientationchange", function(event){
+    switch(window.orientation) 
+    {  
+        case -90: case 90:
+            /* Device is in landscape mode */
+            break; 
+        default:
+            /* Device is in portrait mode */
+    }
+});
+screen.orientation.lock('landscape');
 
-function detectMob() {
-  const toMatch = [
-      /Android/i,
-      /webOS/i,
-      /iPhone/i,
-      /iPad/i,
-      /iPod/i,
-      /BlackBerry/i,
-      /Windows Phone/i
-  ];
+var isAndroid = /(android)/i.test(navigator.userAgent);
 
-  return toMatch.some((toMatchItem) => {
-      return navigator.userAgent.match(toMatchItem);
-  });
-}
-
-function detectMob() {
-  return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
-}
-
-function mobileAndTabletCheck() {
-  return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+if(isAndroid)
+{
+    if(screen.width < screen.height){
+        //portrait mode on Android
+    }
+} else {
+    if(window.orientation == 0){
+        //portrait mode iOS and other devices
+    }
 }

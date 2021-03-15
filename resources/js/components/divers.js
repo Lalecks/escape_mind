@@ -14,18 +14,3 @@ $(window).resize(
     }
 )
 .resize();//trigger the resize event on page load.
-
-// Mettre en mode paysage
-document.addEventListener("orientationchange", function(event){
-    switch(window.orientation) 
-    {  
-        case -90: case 90:
-            /* Device is in landscape mode */
-            break; 
-        default:
-            /* Device is in portrait mode */
-    }
-});
-screen.orientation.lock('landscape');
-
-
