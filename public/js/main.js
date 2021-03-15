@@ -60,12 +60,12 @@ class BasicWorldDemo {
 
     const loader = new THREE.CubeTextureLoader();
     const texture = loader.load([
-        './resources/game/posx.jpg',
-        './resources/game/negx.jpg',
-        './resources/game/posy.jpg',
-        './resources/game/negy.jpg',
-        './resources/game/posz.jpg',
-        './resources/game/negz.jpg',
+        './ressources/game/posx.jpg',
+        './ressources/game/negx.jpg',
+        './ressources/game/posy.jpg',
+        './ressources/game/negy.jpg',
+        './ressources/game/posz.jpg',
+        './ressources/game/negz.jpg',
     ]);
     this._scene.background = texture;
 
