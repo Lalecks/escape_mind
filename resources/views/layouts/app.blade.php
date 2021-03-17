@@ -11,7 +11,7 @@
 		<!-- CSRF Token -->
 		<meta name="csrf-token" content="{{ csrf_token() }}">
 		<!-- Référencement -->
-		<title>{{ config('app.name') }}&nbsp;-&nbsp;l'escape game en ligne</title>
+		<title>{{ config('app.name') }}&nbsp;-&nbsp; @yield('title')</title>
 		<meta name="title" content="{{ config('app.name') }}&nbsp;-&nbsp;l'escape game en ligne"/>
 		{{-- <link rel="icon" type="image/png" href=""/> --}}
 		<meta name="description" content="Des chercheurs sont sur le point de débrancher l’IA qu’ils ont créée quelques années auparavant, car celle-ci est devenue obsolète.">
@@ -54,10 +54,10 @@
 	<!--====== Corps ======-->
 	<body class="modal-open">
 		<!-- Souris -->
-        <div id="souris" style="opacity: 0">
-            <div class="cursor cursor--small"></div>
-            <canvas class="cursor cursor--canvas" resize="true"></canvas>
-        </div>
+		<div id="souris" style="opacity: 0">
+			<div class="cursor cursor--small"></div>
+			<canvas class="cursor cursor--canvas" resize="true"></canvas>
+		</div>
 
 		{{--
 		<div id="app">
@@ -118,19 +118,19 @@
 		--}}
 
 		<main> <!--id="pjax-container"-->
-            <div id="overlay"> <!--loader-->
-                <div id="progstat"></div>
-                <div id="progress"></div>
-            </div>
-            <div id="content" style="opacity: 0">
-			    @yield('content')
-            </div>
+			<div id="overlay"> <!--loader-->
+				<div id="progstat"></div>
+				<div id="progress"></div>
+			</div>
+			<div id="content" style="opacity: 0">
+				@yield('content')
+			</div>
 		</main>
 
 		<!--====== Javascripts & Jquery ======-->
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
-        <script src="{{ asset('js/app.js') }}" defer></script>
+		<script src="{{ asset('js/app.js') }}" defer></script>
 	</body>
 </html>

@@ -13,9 +13,11 @@
 @import 'generic/normalize.scss';
 
 /*-------- Layouts --------*/
-@import 'layout/template';
-@import 'layout/all';
-@import 'layout/mouse';
+// General
+@import 'layout/general/template';
+@import 'layout/general/all';
+@import 'layout/general/mouse';
+@import 'layout/general/errors';
 // Web part
 @import 'layout/web/header';
 @import 'layout/web/footer';

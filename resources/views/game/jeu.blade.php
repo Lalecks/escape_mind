@@ -1,4 +1,5 @@
 @extends('layouts.template')
+@section('title', __("l'escape game en ligne"))
 
 @section('content')
 
