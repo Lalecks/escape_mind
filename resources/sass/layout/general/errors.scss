@@ -13,6 +13,12 @@
 		position: relative;
 		line-height: 1;
 		width: 12.5rem;
+        font-weight: bolder;
+        /* Texte non selectionnable */
+        -moz-user-select: none; // Firefox
+        -webkit-user-select: none; /// Chrome, Safari, Opéra depuis la version 15
+        -ms-user-select: none; // Internet explorer depuis la version 10 et Edge */
+        user-select: none; // Propriété standard
 	}
 	.code:before {
 		content: attr(data-text);

@@ -85,6 +85,7 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
     - Copyright (c) 2016 [Moe Amaya](https://github.com/dixonandmoe/rellax)
     - Copyright (c) [Clement Girault](https://codepen.io/clementGir/pen/RQqvQx)
     - Copyright (c) [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
+    - Copyright (c) [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
 
 ## Project status
 The development of the application is in progress.
