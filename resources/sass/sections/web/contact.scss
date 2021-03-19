@@ -80,8 +80,8 @@
 			font-weight: bolder;
 			text-shadow: .1rem .1rem 0 $color-shadow, 2px 2px 0 $color-shadow, 3px 3px $color-shadow; // Effet 3D
 			-webkit-transition: all 0.5s;
-				-moz-transition: all 0.5s;
-				transition: all 0.5s;
+			-moz-transition: all 0.5s;
+			transition: all 0.5s;
 			&:hover {
 				text-decoration: none;
 				-webkit-transition: all 0.5s;
