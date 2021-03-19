@@ -60,3 +60,50 @@ html {
 		}
 	}
 }
+
+$underlineColor: #00B388;
+$underlineHeight: 5%;
+.link_hover {
+	font-style: italic;
+	font-weight: bold;
+	position: relative;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 1px;
+	transition: color ease 0.3s;
+	
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		background-color: $white;
+		z-index: -1;
+		height: $underlineHeight;
+	}
+	
+	&::before {
+		width: 0%;
+		left: 0;
+		bottom: 0;
+		transition: width ease 0.4s;
+	}
+	
+	&::after {
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		transition: all ease 0.6s;
+	}
+	
+	&:hover {
+
+		&::before {
+		width: 100%;
+		}
+		
+		&::after {
+		left: 100%;
+		width: 0%;
+		transition: all ease 0.2s;
+		}
+	}
+}

@@ -947,6 +947,49 @@ html body img {
   object-fit: contain;
 }
 
+.link_hover {
+  font-style: italic;
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 1px;
+  transition: color ease 0.3s;
+}
+
+.link_hover::before,
+.link_hover::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  z-index: -1;
+  height: 5%;
+}
+
+.link_hover::before {
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  transition: width ease 0.4s;
+}
+
+.link_hover::after {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transition: all ease 0.6s;
+}
+
+.link_hover:hover::before {
+  width: 100%;
+}
+
+.link_hover:hover::after {
+  left: 100%;
+  width: 0%;
+  transition: all ease 0.2s;
+}
+
 /**
 *
 *  Programmation générique : Adaptée au projet
@@ -1309,6 +1352,10 @@ canvas[resize] {
   100% {
     clip: rect(92px, 9999px, 8px, 0);
   }
+}
+
+.error p {
+  margin-top: 2rem;
 }
 
 footer {

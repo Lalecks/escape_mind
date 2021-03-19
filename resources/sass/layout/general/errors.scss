@@ -77,7 +77,6 @@
 		95%{clip:rect(23px,9999px,77px,0)}
 		100%{clip:rect(92px,9999px,8px,0)}
 	}
-
 	@keyframes noise-anim{
 		0%{clip:rect(89px,9999px,100px,0)}
 		5%{clip:rect(4px,9999px,62px,0)}
@@ -101,4 +100,8 @@
 		95%{clip:rect(23px,9999px,77px,0)}
 		100%{clip:rect(92px,9999px,8px,0)}
 	}
+	p {
+		margin-top: 2rem;
+	}
 }
+
