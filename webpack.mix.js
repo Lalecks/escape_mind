@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+require('laravel-mix-purgecss'); // Retirer du code inutile
 
 /*
  |--------------------------------------------------------------------------
@@ -12,5 +13,9 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .sourceMaps();
+   .sass('resources/sass/app.scss', 'public/css')
+   .purgeCss({
+        whitelistPatterns: [/Cookie--nx-theme$/],
+        whitelistPatternsChildren: [/Cookie--nx-theme$/]
+    }) // Retirer du code inutile
+   .sourceMaps();
