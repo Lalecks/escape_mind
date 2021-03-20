@@ -45,7 +45,7 @@
 		<meta name="msapplication-TileImage" content="{{ asset('ressources/icon/ms-icon-144x144.png')}}">
 		<meta name="theme-color" content="#ffffff">
 		<!-- Stylesheets -->
-		<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+		<link href="{{ mix('css/app.css') }}" rel="stylesheet">
 		{{-- <link href="{{ asset('css/app.min.css') }}" rel="stylesheet"> --}}
 		{{-- <link rel="prefetch" href="../game/room1.blade.php"> --}}
 		<!-- Scripts -->
@@ -131,6 +131,6 @@
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
-		<script src="{{ asset('js/app.js') }}" defer></script>
+		<script src="{{ mix('js/app.js') }}" defer></script>
 	</body>
 </html>
