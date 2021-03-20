@@ -12,17 +12,22 @@
 // 	  }
 // }
 
-
-@media all and (orientation: portrait) {
-    #body-landscape {
-        -webkit-transform: rotate(90deg); 
-        -moz-transform: rotate(90deg); 
-        -ms-transform: rotate(90deg); 
-        -o-transform: rotate(90deg); 
-        transform: rotate(90deg); 
-        width: 100vh;
-        .logo {
-            display: none;
-        }
-    }
-}
+// @media all and (orientation: portrait) {
+//     .body-landscape {
+//         -webkit-transform: rotate(90deg); 
+//         -moz-transform: rotate(90deg); 
+//         -ms-transform: rotate(90deg); 
+//         -o-transform: rotate(90deg); 
+//         transform: rotate(90deg); 
+//         width: 100vh;
+//         height: 100vw;
+// 	    // overflow-x: hidden;
+// 		// overflow-y: auto;
+// 	    // position: absolute;
+// 	    // top: 100%;
+// 	    // left: 0;
+//         .logo {
+//             display: none;
+//         }
+//     }
+// }

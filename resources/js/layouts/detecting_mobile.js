@@ -12,17 +12,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 console.log( "Are you on a mobile device? ", isMobile ); 
 
 // Si le support est un mobile, mettre en mode paysage
-if (isMobile = true) {
-	//   if(screen.availHeight > screen.availWidth){
-	//     alert("Please use Landscape!");
-	// }
-	  var portraitOrientation = window.matchMedia("(orientation:portrait)");
-	 if ( portraitOrientation.matches ) {
-	   document.getElementById("body-landscape").style.display = "block";
-	 } else {
-	   document.getElementById("body-landscape").style.display = "block";
-	 }
-   screen.orientation.lock('landscape');
+if (isMobile == true) {
+	  if(screen.availHeight > screen.availWidth){
+	    alert("Please use Landscape!");
+	}
    	switch(window.orientation) 
 	{  
 		case -90: case 90:
@@ -31,7 +24,18 @@ if (isMobile = true) {
 		default:
 			/* Device is in portrait mode */
 	}
+  screen.orientation.lock('landscape');
+  $("body").addClass("body-landscape");
+	//   var portraitOrientation = window.matchMedia("(orientation:portrait)");
+	//  if ( portraitOrientation.matches ) {
+	//    document.getElementsByClassName("body-landscape").style.display = "block";
+	//  } else {
+	//    document.getElementsByClassName("body-landscape").style.display = "block";
+	//  }
+}else {
+  $("body").removeClass("body-landscape");
 }
+console.log( "Are you on a mobile device? ", isMobile ); 
 
 /*  Include tablets */
 // window.mobileAndTabletCheck = function() {
