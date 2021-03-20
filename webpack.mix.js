@@ -1,6 +1,6 @@
 // Quand on modifie ce fichier, il faut faire : npm run prod 
 const mix = require('laravel-mix');
-require('laravel-mix-purgecss'); // Retirer du code inutile
+// require('laravel-mix-purgecss'); // Retirer du code inutile
 
 /*
  |--------------------------------------------------------------------------
@@ -15,8 +15,8 @@ require('laravel-mix-purgecss'); // Retirer du code inutile
 
 mix.sass('resources/sass/app.scss', 'public/css').version() // Version, permet d'activer la minifaction des fichiers CSS et JS
     .js('resources/js/app.js', 'public/js').version() 
-   .purgeCss({
-        whitelistPatterns: [/Cookie--nx-theme$/],
-        whitelistPatternsChildren: [/Cookie--nx-theme$/]
-    }) // Retirer du code inutile
+//    .purgeCss({
+//         whitelistPatterns: [/Cookie--nx-theme$/],
+//         whitelistPatternsChildren: [/Cookie--nx-theme$/]
+//     }) // Retirer du code inutile
    .sourceMaps();

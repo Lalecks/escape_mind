@@ -59,9 +59,13 @@ $ php artisan view:clear
 ```
 
 ### Front-end
-Automatically Sass et JS compilation.
+Automatic compilation of Sass and JS at each registration.
 ```shell
 $ npm run watch
+```
+Minify CSS & JS files.
+```shell
+$ npm run prod
 ```
 
 ### Preview
