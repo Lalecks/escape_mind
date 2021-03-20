@@ -23,7 +23,7 @@
 		<meta property="og:type" content="website"/>
 		<meta property="og:site_name" content="escape_mind"/>
 		<meta property="og:url" content="https://escapemind.sarahmauriaucourt.fr/"/>
-		<meta property="og:title" content="{{ config('app.name') }}&nbsp;-&nbsp;l'escape game en ligne"/>
+		<meta property="og:title" content="{{ config('app.name') }}&nbsp;|&nbsp;l'escape game en ligne"/>
 		<meta property="og:description" content="Des chercheurs sont sur le point de débrancher l’IA qu’ils ont créée quelques années auparavant, car celle-ci est devenue obsolète."/>
 		<meta property="og:locale" content="fr_FR"/>
 		<!-- Icônes -->
@@ -52,7 +52,7 @@
 		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
 	</head>
 	<!--====== Corps ======-->
-	<body class="modal-open">
+	<body class="modal-open" id ="body-landscape">
 		<!-- Souris -->
 		<div id="souris" style="opacity: 0">
 			<div class="cursor cursor--small"></div>
