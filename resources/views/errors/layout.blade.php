@@ -8,10 +8,10 @@
 	{{-- <img src="{{ asset('ressources/404.gif') }}" alt="@yield('code')_error"> --}}
 </div>
 <!--====== Javascripts & Jquery ======-->
-{{-- <script>
+<script>
 	window.setTimeout(function(){
 		// Après 2 minutes, rediriger vers l'accueil
 		window.location.href = "/";
 	}, 20000);
-</script> --}}
+</script>
 @endsection
