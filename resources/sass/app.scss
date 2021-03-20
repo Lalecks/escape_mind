@@ -23,6 +23,7 @@
 @import 'layout/web/footer';
 @import 'layout/web/sidebar';
 // Game part
+@import 'layout/game/game';
 @import 'layout/game/gameBar';
 @import 'layout/game/object';
 
@@ -33,18 +34,20 @@
 @import 'components/modal.scss';
 @import 'components/defilement.scss';
 
-// /*--------  Sections --------*/
-// // @import 'sections/login';
+/*--------  Sections --------*/
+// @import 'sections/login';
 @import 'sections/loader';
-// // Web part
+// Web part
 @import 'sections/web/home';
 @import 'sections/web/story';
 @import 'sections/web/rank';
 @import 'sections/web/about';
 @import 'sections/web/contact';
-// // Game part
-@import '../../public/css/game/style_jeu';
-
+// Game part
+// Game part
+@import 'sections/game/room1';
+@import 'sections/game/room2';
+@import 'sections/game/room3';
 
 // Responsive
 @import 'layout/web/responsive';
