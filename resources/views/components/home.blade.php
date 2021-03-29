@@ -28,6 +28,13 @@
 </header>
 
 <div class="index">
+{{-- <div class="glitch glitch--style-1">
+	<div class="glitch__img"></div>
+	<div class="glitch__img"></div>
+	<div class="glitch__img"></div>
+	<div class="glitch__img"></div>
+	<div class="glitch__img"></div>
+</div> --}}
 	<div class="headings container">
 		<div class="modal glass-effect">
 			<!-- Ne pas mettre la modal dans le vidéo overlay, car il est en absolute et par conséquent la modal ne peut pas se fixer -->
@@ -52,7 +59,7 @@
 						<p>Il y a plusieurs années un scientifique a crée une IA, et aujourd’hui, il doit la débrancher. Pour cela, il se connecte à celle-ci, et se retrouve enfermé dans l’IA qui retrace ses souvenirs.</p>
 						<div>
 							<a class="btn btn-outline-primary  trigger hoverable glass-effect">Trailer</a>
-							<a class="btn btn-fill-primary hoverable glass-effect" id="play" href="/play" data-pjax>Jouer</a>
+							<a class="btn btn-fill-primary hoverable glass-effect btn-animation_glitch" id="play" href="/play" data-pjax>Jouer</a>
 						</div>
 					</div>
 

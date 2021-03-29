@@ -1530,39 +1530,42 @@ canvas {
   background-color: #000000;
 }
 
+.btn-fill-primary:hover {
+  background: #000000;
+}
+
+/* Bouton générale */
+
+.btn-animation_glitch {
+  display: block;
+  position: relative;
+}
+
 .btn-animation_glitch:before,
 .btn-animation_glitch:after {
-  text-transform: lowercase;
-  border-radius: 30rem;
-  padding: 1rem 3.5rem;
   content: "";
   position: absolute;
   top: 0;
   left: 0;
+  padding: 8px 0;
   width: 100%;
   -webkit-clip: rect(0px, 0px, 0px, 0px);
   clip: rect(0px, 0px, 0px, 0px);
-  background: #fff;
-  color: #000;
+  background: #000000;
 }
 
 .btn-animation_glitch:before {
   left: -3px;
   top: -2px;
-  text-shadow: 2px 0 #fff;
-  box-shadow: 2px 0 #fff;
+  text-shadow: 2px 0 #000000;
+  box-shadow: 2px 0 #000000;
 }
 
 .btn-animation_glitch:after {
   left: 2px;
   bottom: -2px;
-  text-shadow: -1px 0 #fff;
-  box-shadow: -1px 0 #fff;
-}
-
-.btn-animation_glitch:hover {
-  background: white;
-  color: black;
+  text-shadow: -0.1rem 0 #000000;
+  box-shadow: -0.1rem 0 #000000;
 }
 
 .btn-animation_glitch:hover:before {

@@ -21,11 +21,12 @@
         "resolve-url-loader": "^3.1.2",
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0",
+        "three": "^0.126.1",
         "vue": "^2.5.17",
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
         "rellax": "^1.12.1",
-        "three": "^0.126.1"
+        "three-orbitcontrols": "^2.110.3"
     }
 }

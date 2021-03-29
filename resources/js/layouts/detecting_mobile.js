@@ -13,19 +13,19 @@ console.log( "Are you on a mobile device? ", isMobile );
 
 // Si le support est un mobile, mettre en mode paysage
 if (isMobile == true) {
-	  if(screen.availHeight > screen.availWidth){
-	    alert("Please use Landscape!");
-	}
-   	switch(window.orientation) 
-	{  
-		case -90: case 90:
-			/* Device is in landscape mode */
-			break; 
-		default:
-			/* Device is in portrait mode */
-	}
-  screen.orientation.lock('landscape');
-  $("body").addClass("body-landscape");
+	//   if(screen.availHeight > screen.availWidth){
+	//     alert("Please use Landscape!");
+	// }
+  //  	switch(window.orientation) 
+	// {  
+	// 	case -90: case 90:
+	// 		/* Device is in landscape mode */
+	// 		break; 
+	// 	default:
+	// 		/* Device is in portrait mode */
+	// }
+  // screen.orientation.lock('landscape');
+  // $("body").addClass("body-landscape");
 	//   var portraitOrientation = window.matchMedia("(orientation:portrait)");
 	//  if ( portraitOrientation.matches ) {
 	//    document.getElementsByClassName("body-landscape").style.display = "block";

@@ -18,7 +18,7 @@
 		<meta name="keywords" content="escape game, play, artificial intelligence, numeric"/>
 		<meta name="copyright" content="© escape_mind"/>
 		<meta name="robots" content="index, follow, archive"/>
-		<link rel='canonical' href='/'/>
+		<link rel='canonical' href='https://escapemind.sarahmauriaucourt.fr/'/>
 		<!-- OpenGraph -->
 		<meta property="og:type" content="website"/>
 		<meta property="og:site_name" content="escape_mind"/>
@@ -26,6 +26,20 @@
 		<meta property="og:title" content="{{ config('app.name') }}&nbsp;|&nbsp;l'escape game en ligne"/>
 		<meta property="og:description" content="Des chercheurs sont sur le point de débrancher l’IA qu’ils ont créée quelques années auparavant, car celle-ci est devenue obsolète."/>
 		<meta property="og:locale" content="fr_FR"/>
+		<meta property="og:image" content="https://site.com/post.jpg" />
+
+		<meta property="og:image" content="{{ asset('ressources/icon/apple-icon-57x57.png')}}"/>
+        <meta property="og:image:secure_url" content="{{ asset('ressources/icon/apple-icon-57x57.png')}}"/>
+        <meta property="og:image:alt" content="escape_mind"/>
+        <meta property="og:image:width" content="57"/>
+        <meta property="og:image:height" content="57"/>
+        {{-- <meta property="og:video" content=""/> --}}
+		<!-- Twitter card -->
+		{{-- <meta name="twitter:card" content="summary">  --}}
+		{{-- <meta name="twitter:description" content="content description"> --}}
+		{{-- <meta name="twitter:title" content="Post headline"> --}}
+		<meta name="twitter:image" content="{{ asset('ressources/icon/apple-icon-57x57.png')}}">
+		<meta name="twitter:site" content="@escapemind">
 		<!-- Icônes -->
 		<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('ressources/icon/apple-icon-57x57.png')}}">
 		<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('ressources/icon/apple-icon-60x60.png')}}">
