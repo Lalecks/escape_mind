@@ -8,12 +8,14 @@
     <div class="Mute"></div>
 </header>
 <main id="Main" role="main">
+    <!-- Loader et Cinematiques -->
     <div id="Game" class="Game" >
-        <div id="Scene" class="Scene">
-            <!---->
-        </div>
+        <div id="Background"></div>
     </div>
-    <div id="Interface" class="Interface"></div>
+    <div id="Interface" class="Interface">
+
+    </div>
+
 </main>
 
 
