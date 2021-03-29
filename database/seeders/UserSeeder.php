@@ -7,6 +7,7 @@ use DB;
 use App\Models\User;
 use Illuminate\Support\Str; // composer require laravel/helpers
 use Illuminate\Support\Facades\Hash;
+use Faker\Factory as Faker;
 
 class UserSeeder extends Seeder
 {
@@ -31,9 +32,10 @@ class UserSeeder extends Seeder
         $user2->password = Hash::make('12345678');
         $user2->save();
         /* Deuxième façon d'imoportation */
-        for ($i=0; $i < 5; $i++) { 
+        $faker = Faker::create();
+        for ($i=0; $i < 25; $i++) { 
 	    	DB::table('users')->insert([
-	            'name' => str_random(8),
+	            'name' => $faker->name,
 	            'email' => str_random(12).'@mail.com',
 	            'password' => bcrypt('123456'),
                 'remember_token' => NULL,

@@ -194,78 +194,22 @@
 						</tr>
 					</thead>
 					<tbody>
-						{{-- @foreach ($users as $key => $user)
+						@foreach ($user as $key => $u)
 							<tr>
-								<td>{{$key}}</td>
-								<td>{{$user->name}}</td>
-								<td>40:05s</td>
+								@if($key<9)
+								<td>0{{$key+1}}</td>
+								@else
+								<td>{{$key+1}}</td>
+								@endif
+								<td>{{$u->name}}</td>
+								<td>40{{$u->time}}s</td> 
 							</tr>
-						@endforeach --}}
-						<tr>
+						@endforeach
+						{{-- <tr>
 							<td>01 </td>
 							<td>Bloopy_ez </td>
 							<td>40:05s </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 min 05 sec </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes 24 secondes</td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes et 42 secondes </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>11fffff f fff frfr frf </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>11fffff f fff frfr frf </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>11fffff f fff frfr frf </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>11fffff f fff frfr frf </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
+						</tr> --}}
 					</tbody>
 				</table>
 				<div class="hand"><img src="{{ asset('ressources/web/cyborg_hand.png') }}" alt="cyborg_hand"/></div>

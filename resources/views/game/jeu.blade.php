@@ -7,7 +7,7 @@
     <div class="HeaderLogo"></div>
     <div class="Mute"></div>
 </header>
-<main id="Main" role="main">
+<main id="Main" role="main" class="paysage">
     <div id="Game" class="Game" >
         <div id="Scene" class="Scene">
             <!---->
