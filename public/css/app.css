@@ -1859,6 +1859,7 @@ canvas {
 
 #home iframe {
   border: 0;
+  margin: 0 auto;
 }
 
 #home .video-overlay {
@@ -2295,6 +2296,15 @@ canvas {
     display: none;
   }
 
+  .btn {
+    padding: 0.6rem 0.5rem;
+  }
+
+  iframe {
+    width: 50vw;
+    height: 100%;
+  }
+
   #home .video-overlay #home_box {
     max-width: 28rem;
     margin: 2rem;
@@ -2586,7 +2596,7 @@ canvas {
   }
 
   #contact .take-contact .mail {
-    font-size: x-large;
+    font-size: large;
     text-shadow: none;
   }
 }
