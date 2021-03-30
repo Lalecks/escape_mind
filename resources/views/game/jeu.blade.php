@@ -3,19 +3,24 @@
 
 @section('content')
 
-<section class="landscape">
-    <p>Test paysage portable</p>
-    <header class="Header">
-        <div class="HeaderLogo"></div>
-        <div class="Mute"></div>
-    </header>
-    <main id="Main" role="main">
-        <!-- Loader et Cinematiques -->
-        <div id="Game" class="Game" >
-            <div id="Background"></div>
-        </div>
-        <div id="Interface" class="Interface">
-        </div>
-    </main>
-</section>
+<div id="game-page" class="landscape">
+<header id="Header" class="Header">
+    <div class="HeaderLogo">
+        <img class="logo hoverable" id="HeaderLogo" src="{{ asset('ressources/logo.png') }}" alt="Logo"/>
+    </div>
+    <div class="Mute"></div>
+</header>
+<main id="Main" role="main">
+    <div id="Cinematic" class="Cinematic">
+
+    </div>
+    <div id="Game" class="Game" >
+        <div id="Background"></div>
+    </div>
+    <div id="Interface" class="Interface">
+
+    </div>
+
+</main>
+</div>
 @endsection

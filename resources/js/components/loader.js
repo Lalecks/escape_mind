@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
 ;(function(){
     function id(v){ return document.getElementById(v); }
     function loadbar() {
-        var ovrl = id("overlay"),
+        let ovrl = id("overlay"),
             prog = id("progress"),
             stat = id("progstat"),
             img = document.images,
             c = 0,
             tot = img.length;
-        if(tot == 0) return doneLoading();
+        if(tot === 0) return doneLoading();
 
         function imgLoaded(){
             c += 1;

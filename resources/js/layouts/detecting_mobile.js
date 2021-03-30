@@ -19,3 +19,5 @@ if (isMobile == true) {
 } else {
     $("section").removeClass("landscape");
 }
+
+$("div").removeClass("page_speed*");

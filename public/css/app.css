@@ -1476,6 +1476,12 @@ canvas {
   height: 100%;
 }
 
+#HeaderLogo {
+  width: 5rem;
+  margin: 0 4%;
+  opacity: 75%;
+}
+
 /*--------  Components --------*/
 
 /**
@@ -2284,130 +2290,131 @@ canvas {
 
 /* Extra small devices (phones, 600px and down) 576px*/
 
+#home-page {
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) (1280x1024)*/
+}
+
 @media only screen and (max-width: 600px) {
-  .logo .logo-title {
+  #home-page .logo .logo-title {
     display: none;
   }
 
-  #home .video-overlay #home_box {
+  #home-page #home .video-overlay #home_box {
     max-width: 28rem;
     margin: 2rem;
   }
 
-  #home .video-overlay #home_box img {
+  #home-page #home .video-overlay #home_box img {
     display: none;
   }
 
-  #rank .hand {
+  #home-page #rank .hand {
     display: none;
   }
 
-  #rank table {
+  #home-page #rank table {
     text-align: center;
   }
 
-  #rank table tbody {
+  #home-page #rank table tbody {
     padding-top: 0;
   }
 
-  #rank table tbody tr {
+  #home-page #rank table tbody tr {
     border-bottom: thin solid grey;
     border-bottom-style: dashed;
   }
 
-  #rank table th {
+  #home-page #rank table th {
     width: 6rem;
   }
 
-  #contact p {
+  #home-page #contact p {
     max-width: 85%;
     margin: auto;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-/* Medium devices (landscape tablets, 768px and up) */
-
 @media only screen and (max-width: 768px) {
-  body .logo .logo-title {
+  #home-page body .logo .logo-title {
     font-size: 3.1vh;
   }
 
-  body p {
+  #home-page body p {
     text-align: center;
   }
 
-  body h1,
-  body #story .story-illustration,
-  body #rank .top3 {
+  #home-page body h1,
+  #home-page body #story .story-illustration,
+  #home-page body #rank .top3 {
     display: none;
   }
 
-  #home .video-overlay #home_box div div {
+  #home-page #home .video-overlay #home_box div div {
     display: -ms-inline-grid;
     display: inline-grid;
   }
 
-  #home iframe {
+  #home-page #home iframe {
     width: auto;
     height: 200px;
   }
 
-  #rank .logo-title {
+  #home-page #rank .logo-title {
     font-size: 2.1vh;
   }
 
-  #about .project {
+  #home-page #about .project {
     padding: 0 2.5rem;
   }
 
-  #about .team {
+  #home-page #about .team {
     display: none;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-
 @media only screen and (max-width: 992px) {
-  body .container {
+  #home-page body .container {
     max-width: 100%;
   }
 
-  #home .video-overlay #home_box div div {
+  #home-page #home .video-overlay #home_box div div {
     flex-direction: column;
   }
 
-  #contact {
+  #home-page #contact {
     text-align: center;
   }
 
-  #contact .contact-txt .media {
+  #home-page #contact .contact-txt .media {
     font-size: 5vh;
     padding-top: 1.5rem;
     text-align: center;
     margin-bottom: 3rem;
   }
 
-  #contact .contact-center {
+  #home-page #contact .contact-center {
     flex-direction: column;
   }
 
-  header {
+  #home-page header {
     position: fixed;
     z-index: 20;
   }
 
-  header #bar_fix,
-  header #bar_anim {
+  #home-page header #bar_fix,
+  #home-page header #bar_anim {
     display: none;
   }
 
-  header .navbar {
+  #home-page header .navbar {
     z-index: 0;
   }
 
-  header nav {
+  #home-page header nav {
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
@@ -2419,7 +2426,7 @@ canvas {
     transition: all 0.3s ease-in-out;
   }
 
-  header nav ul {
+  #home-page header nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -2430,12 +2437,12 @@ canvas {
     transform: translateX(-50%);
   }
 
-  header nav ul li {
+  #home-page header nav ul li {
     transform: translateY(50px);
     opacity: 0;
   }
 
-  header nav ul li a {
+  #home-page header nav ul li a {
     display: block;
     font-size: 2em;
     text-decoration: none;
@@ -2447,11 +2454,11 @@ canvas {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
 
-  header nav ul li a:hover {
+  #home-page header nav ul li a:hover {
     color: #FFFB00;
   }
 
-  .toggle-btn {
+  #home-page .toggle-btn {
     display: block;
     position: fixed;
     z-index: 10;
@@ -2460,7 +2467,7 @@ canvas {
     cursor: pointer;
   }
 
-  .toggle-btn .bar {
+  #home-page .toggle-btn .bar {
     width: 30px;
     height: 2px;
     margin: 7px auto;
@@ -2469,91 +2476,89 @@ canvas {
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.438);
   }
 
-  #toggle:checked ~ nav {
+  #home-page #toggle:checked ~ nav {
     opacity: 1;
     visibility: visible;
   }
 
-  #toggle:checked ~ nav ul li {
+  #home-page #toggle:checked ~ nav ul li {
     transform: translateY(0px);
     opacity: 1;
   }
 
-  #toggle:checked ~ nav ul li:nth-child(1) {
+  #home-page #toggle:checked ~ nav ul li:nth-child(1) {
     transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s;
   }
 
-  #toggle:checked ~ nav ul li:nth-child(2) {
+  #home-page #toggle:checked ~ nav ul li:nth-child(2) {
     transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.2s;
   }
 
-  #toggle:checked ~ nav ul li:nth-child(3) {
+  #home-page #toggle:checked ~ nav ul li:nth-child(3) {
     transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.3s;
   }
 
-  #toggle:checked ~ nav ul li:nth-child(4) {
+  #home-page #toggle:checked ~ nav ul li:nth-child(4) {
     transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.4s;
   }
 
-  #toggle:checked + label.toggle-btn .bar {
+  #home-page #toggle:checked + label.toggle-btn .bar {
     background-color: #ffffff;
   }
 
-  #toggle:checked + label.toggle-btn .bar:nth-child(2) {
+  #home-page #toggle:checked + label.toggle-btn .bar:nth-child(2) {
     transform: translateX(50px);
     opacity: 0;
   }
 
-  #toggle:checked + label.toggle-btn .bar:nth-child(1) {
+  #home-page #toggle:checked + label.toggle-btn .bar:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
   }
 
-  #toggle:checked + label.toggle-btn .bar:nth-child(3) {
+  #home-page #toggle:checked + label.toggle-btn .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) (1280x1024)*/
-
 @media only screen and (max-width: 1200px) {
-  h1 {
+  #home-page h1 {
     font-size: 17rem;
   }
 
-  #rank .top3 > div {
+  #home-page #rank .top3 > div {
     padding: 0 1rem;
   }
 
-  #story .story-informations {
+  #home-page #story .story-informations {
     margin: 0 auto;
     max-width: 70%;
   }
 
-  #story div {
+  #home-page #story div {
     flex-basis: initial;
   }
 
-  #story .story-illustration img {
+  #home-page #story .story-illustration img {
     max-width: 90%;
   }
 
-  #story .story-illustration {
+  #home-page #story .story-illustration {
     position: absolute;
     right: -16%;
     transform: translateX(-16%);
     z-index: 0;
   }
 
-  #story .circle-yellow {
+  #home-page #story .circle-yellow {
     width: 13rem;
     height: 13rem;
   }
 
-  #rank .board table {
+  #home-page #rank .board table {
     margin: 10rem 5rem 0 5rem;
   }
 
-  #rank .hand {
+  #home-page #rank .hand {
     position: absolute;
     bottom: -10%;
     transform: translateY(12%);
@@ -2561,25 +2566,25 @@ canvas {
     transform: translateX(7%);
   }
 
-  #about {
+  #home-page #about {
     justify-content: inherit;
     flex-direction: column;
     text-align: center;
   }
 
-  #about .project {
+  #home-page #about .project {
     flex-basis: inherit;
   }
 
-  #about .team-img-role {
+  #home-page #about .team-img-role {
     margin-top: 2rem;
   }
 
-  #contact .contact-txt {
+  #home-page #contact .contact-txt {
     padding: 0;
   }
 
-  #contact .take-contact .mail {
+  #home-page #contact .take-contact .mail {
     font-size: x-large;
     text-shadow: none;
   }
@@ -2596,6 +2601,7 @@ canvas {
     bottom: 0;
     overflow-x: hidden !important;
     overflow-y: scroll;
+    background-color: red;
   }
 }
 
