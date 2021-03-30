@@ -1390,9 +1390,9 @@ html {
 .navbar {
   position: fixed;
   -webkit-animation: shake 20s;
-          animation: shake 20s;
+  animation: shake 20s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   z-index: 10;
   text-transform: lowercase;
 }
