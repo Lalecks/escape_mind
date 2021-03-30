@@ -62,7 +62,6 @@
 							<a class="btn btn-fill-primary hoverable glass-effect btn-animation_glitch" id="play" href="/play" data-pjax>Jouer</a>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</section>
@@ -153,7 +152,7 @@
 						</svg>
 						<img src="{{ asset('ressources/web/model1.png') }}" alt="model1"/>
 					</div>
-					<p class="logo-title">pseudo1</p>
+					{{-- <p class="logo-title">{{$firstUser->id(1)}}</p> --}}
 				</div>
 				<div class="third">
 					<div>
@@ -194,78 +193,22 @@
 						</tr>
 					</thead>
 					<tbody>
-						{{-- @foreach ($users as $key => $user)
+						@foreach ($user as $key => $u)
 							<tr>
-								<td>{{$key}}</td>
-								<td>{{$user->name}}</td>
-								<td>40:05s</td>
+								@if($key<9)
+								<td>0{{$key+1}}</td>
+								@else
+								<td>{{$key+1}}</td>
+								@endif
+								<td>{{$u->name}}</td>
+								<td>{{$u->created_at->format('i:s')}}s</td> 
 							</tr>
-						@endforeach --}}
-						<tr>
+						@endforeach
+						{{-- <tr>
 							<td>01 </td>
 							<td>Bloopy_ez </td>
 							<td>40:05s </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 min 05 sec </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes 24 secondes</td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes et 42 secondes </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>01 </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>11fffff f fff frfr frf </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>11fffff f fff frfr frf </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>11fffff f fff frfr frf </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
-						<tr>
-							<td>11fffff f fff frfr frf </td>
-							<td>Bloopy_ez </td>
-							<td>40 minutes </td>
-						</tr>
+						</tr> --}}
 					</tbody>
 				</table>
 				<div class="hand"><img src="{{ asset('ressources/web/cyborg_hand.png') }}" alt="cyborg_hand"/></div>

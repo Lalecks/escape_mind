@@ -2336,10 +2336,6 @@ canvas {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (max-width: 768px) {
-  body .cursor {
-    display: none;
-  }
-
   body .logo .logo-title {
     font-size: 3.1vh;
   }
@@ -2592,6 +2588,20 @@ canvas {
   #contact .take-contact .mail {
     font-size: x-large;
     text-shadow: none;
+  }
+}
+
+@media all and (orientation: portrait) {
+  .landscape {
+    transform: rotate(-90deg);
+    width: 100vh;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden !important;
+    overflow-y: scroll;
   }
 }
 

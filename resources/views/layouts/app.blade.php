@@ -35,11 +35,11 @@
         <meta property="og:image:height" content="57"/>
         {{-- <meta property="og:video" content=""/> --}}
 		<!-- Twitter card -->
-		{{-- <meta name="twitter:card" content="summary">  --}}
-		{{-- <meta name="twitter:description" content="content description"> --}}
-		{{-- <meta name="twitter:title" content="Post headline"> --}}
-		<meta name="twitter:image" content="{{ asset('ressources/icon/apple-icon-57x57.png')}}">
+		<meta name="twitter:card" content="player">
 		<meta name="twitter:site" content="@escapemind">
+		<meta name="twitter:title" content="@yield('title')">
+		<meta name="twitter:description" content="Des chercheurs sont sur le point de débrancher l’IA qu’ils ont créée quelques années auparavant, car celle-ci est devenue obsolète.">
+		<meta name="twitter:image" content="{{ asset('ressources/icon/apple-icon-57x57.png')}}">
 		<!-- Icônes -->
 		<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('ressources/icon/apple-icon-57x57.png')}}">
 		<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('ressources/icon/apple-icon-60x60.png')}}">
@@ -138,7 +138,7 @@
 			</div>
 			<div id="content" style="opacity: 0">
 				@yield('content')
-			</div>
+			{{-- </div> --}}
 		</main>
 
 		<!--====== Javascripts & Jquery ======-->

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +16,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index');
-
-
 // Page de l'interface web
 Route::get('/', function () {
     return view("components.home");
 });
+Route::get('/', 'HomeController@index');
+
+
+
 
 Route::get('/play', 'GameController@game');
 
