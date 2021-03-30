@@ -348,6 +348,9 @@
         .take-contact .mail {
             font-size: large;
             text-shadow: none;
+            &:hover{
+                font-size: large;
+            }
         }
     }
 }

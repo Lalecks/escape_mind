@@ -55,9 +55,9 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('ressources/icon/favicon-96x96.png')}}">
 		<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('ressources/icon/favicon-16x16.png')}}">
 		<link rel="manifest" href="{{ asset('ressources/icon/manifest.json')}}">
-		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileColor" content="#1A1A1A">
 		<meta name="msapplication-TileImage" content="{{ asset('ressources/icon/ms-icon-144x144.png')}}">
-		<meta name="theme-color" content="#ffffff">
+		<meta name="theme-color" content="#1A1A1A">
 		<!-- Stylesheets -->
 		<link href="{{ mix('css/app.css') }}" rel="stylesheet">
 		{{-- <link href="{{ asset('css/app.min.css') }}" rel="stylesheet"> --}}
@@ -137,7 +137,7 @@
 			</div>
 			<div id="content" style="opacity: 0">
 				@yield('content')
-			{{-- </div> --}}
+			</div>
 		</main>
 
 		<!--====== Javascripts & Jquery ======-->

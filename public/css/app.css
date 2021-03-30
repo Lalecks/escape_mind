@@ -2599,6 +2599,10 @@ canvas {
     font-size: large;
     text-shadow: none;
   }
+
+  #contact .take-contact .mail:hover {
+    font-size: large;
+  }
 }
 
 @media all and (orientation: portrait) {
