@@ -152,7 +152,7 @@
 						</svg>
 						<img src="{{ asset('ressources/web/model1.png') }}" alt="model1"/>
 					</div>
-					<p class="logo-title">pseudo1</p>
+					{{-- <p class="logo-title">{{$firstUser->id(1)}}</p> --}}
 				</div>
 				<div class="third">
 					<div>

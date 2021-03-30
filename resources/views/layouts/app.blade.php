@@ -138,7 +138,7 @@
 			</div>
 			<div id="content" style="opacity: 0">
 				@yield('content')
-			</div>
+			{{-- </div> --}}
 		</main>
 
 		<!--====== Javascripts & Jquery ======-->
