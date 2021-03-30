@@ -26,6 +26,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "paper": "^0.12.15",
         "rellax": "^1.12.1",
         "three-orbitcontrols": "^2.110.3"
     }
