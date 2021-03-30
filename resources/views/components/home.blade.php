@@ -62,7 +62,6 @@
 							<a class="btn btn-fill-primary hoverable glass-effect btn-animation_glitch" id="play" href="/play" data-pjax>Jouer</a>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</section>
@@ -202,7 +201,7 @@
 								<td>{{$key+1}}</td>
 								@endif
 								<td>{{$u->name}}</td>
-								<td>40{{$u->time}}s</td> 
+								<td>{{$u->created_at->format('i:s')}}s</td> 
 							</tr>
 						@endforeach
 						{{-- <tr>

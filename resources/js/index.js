@@ -8,7 +8,7 @@ require('./package/rellax.min');
 require('./layouts/detecting_mobile');
 require('./layouts/mouse');
 require('./layouts/scrollBar');
-require('./layouts/3D');
+// require('./layouts/3D');
 
 /*--------  Components --------*/
 require('./components/loader');
