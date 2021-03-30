@@ -2290,131 +2290,130 @@ canvas {
 
 /* Extra small devices (phones, 600px and down) 576px*/
 
-#home-page {
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  /* Medium devices (landscape tablets, 768px and up) */
-  /* Large devices (laptops/desktops, 992px and up) */
-  /* Extra large devices (large laptops and desktops, 1200px and up) (1280x1024)*/
-}
-
 @media only screen and (max-width: 600px) {
-  #home-page .logo .logo-title {
+  .logo .logo-title {
     display: none;
   }
 
-  #home-page #home .video-overlay #home_box {
+  #home .video-overlay #home_box {
     max-width: 28rem;
     margin: 2rem;
   }
 
-  #home-page #home .video-overlay #home_box img {
+  #home .video-overlay #home_box img {
     display: none;
   }
 
-  #home-page #rank .hand {
+  #rank .hand {
     display: none;
   }
 
-  #home-page #rank table {
+  #rank table {
     text-align: center;
   }
 
-  #home-page #rank table tbody {
+  #rank table tbody {
     padding-top: 0;
   }
 
-  #home-page #rank table tbody tr {
+  #rank table tbody tr {
     border-bottom: thin solid grey;
     border-bottom-style: dashed;
   }
 
-  #home-page #rank table th {
+  #rank table th {
     width: 6rem;
   }
 
-  #home-page #contact p {
+  #contact p {
     max-width: 85%;
     margin: auto;
   }
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (max-width: 768px) {
-  #home-page body .logo .logo-title {
+  body .logo .logo-title {
     font-size: 3.1vh;
   }
 
-  #home-page body p {
+  body p {
     text-align: center;
   }
 
-  #home-page body h1,
-  #home-page body #story .story-illustration,
-  #home-page body #rank .top3 {
+  body h1,
+  body #story .story-illustration,
+  body #rank .top3 {
     display: none;
   }
 
-  #home-page #home .video-overlay #home_box div div {
+  #home .video-overlay #home_box div div {
     display: -ms-inline-grid;
     display: inline-grid;
   }
 
-  #home-page #home iframe {
+  #home iframe {
     width: auto;
     height: 200px;
   }
 
-  #home-page #rank .logo-title {
+  #rank .logo-title {
     font-size: 2.1vh;
   }
 
-  #home-page #about .project {
+  #about .project {
     padding: 0 2.5rem;
   }
 
-  #home-page #about .team {
+  #about .team {
     display: none;
   }
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (max-width: 992px) {
-  #home-page body .container {
+  body .container {
     max-width: 100%;
   }
 
-  #home-page #home .video-overlay #home_box div div {
+  #home .video-overlay #home_box div div {
     flex-direction: column;
   }
 
-  #home-page #contact {
+  #contact {
     text-align: center;
   }
 
-  #home-page #contact .contact-txt .media {
+  #contact .contact-txt .media {
     font-size: 5vh;
     padding-top: 1.5rem;
     text-align: center;
     margin-bottom: 3rem;
   }
 
-  #home-page #contact .contact-center {
+  #contact .contact-center {
     flex-direction: column;
   }
 
-  #home-page header {
+  header {
     position: fixed;
     z-index: 20;
   }
 
-  #home-page header #bar_fix,
-  #home-page header #bar_anim {
+  header #bar_fix,
+  header #bar_anim {
     display: none;
   }
 
-  #home-page header .navbar {
+  header .navbar {
     z-index: 0;
   }
 
-  #home-page header nav {
+  header nav {
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
@@ -2426,7 +2425,7 @@ canvas {
     transition: all 0.3s ease-in-out;
   }
 
-  #home-page header nav ul {
+  header nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -2437,12 +2436,12 @@ canvas {
     transform: translateX(-50%);
   }
 
-  #home-page header nav ul li {
+  header nav ul li {
     transform: translateY(50px);
     opacity: 0;
   }
 
-  #home-page header nav ul li a {
+  header nav ul li a {
     display: block;
     font-size: 2em;
     text-decoration: none;
@@ -2454,11 +2453,11 @@ canvas {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
 
-  #home-page header nav ul li a:hover {
+  header nav ul li a:hover {
     color: #FFFB00;
   }
 
-  #home-page .toggle-btn {
+  .toggle-btn {
     display: block;
     position: fixed;
     z-index: 10;
@@ -2467,7 +2466,7 @@ canvas {
     cursor: pointer;
   }
 
-  #home-page .toggle-btn .bar {
+  .toggle-btn .bar {
     width: 30px;
     height: 2px;
     margin: 7px auto;
@@ -2476,89 +2475,91 @@ canvas {
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.438);
   }
 
-  #home-page #toggle:checked ~ nav {
+  #toggle:checked ~ nav {
     opacity: 1;
     visibility: visible;
   }
 
-  #home-page #toggle:checked ~ nav ul li {
+  #toggle:checked ~ nav ul li {
     transform: translateY(0px);
     opacity: 1;
   }
 
-  #home-page #toggle:checked ~ nav ul li:nth-child(1) {
+  #toggle:checked ~ nav ul li:nth-child(1) {
     transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s;
   }
 
-  #home-page #toggle:checked ~ nav ul li:nth-child(2) {
+  #toggle:checked ~ nav ul li:nth-child(2) {
     transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.2s;
   }
 
-  #home-page #toggle:checked ~ nav ul li:nth-child(3) {
+  #toggle:checked ~ nav ul li:nth-child(3) {
     transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.3s;
   }
 
-  #home-page #toggle:checked ~ nav ul li:nth-child(4) {
+  #toggle:checked ~ nav ul li:nth-child(4) {
     transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.4s;
   }
 
-  #home-page #toggle:checked + label.toggle-btn .bar {
+  #toggle:checked + label.toggle-btn .bar {
     background-color: #ffffff;
   }
 
-  #home-page #toggle:checked + label.toggle-btn .bar:nth-child(2) {
+  #toggle:checked + label.toggle-btn .bar:nth-child(2) {
     transform: translateX(50px);
     opacity: 0;
   }
 
-  #home-page #toggle:checked + label.toggle-btn .bar:nth-child(1) {
+  #toggle:checked + label.toggle-btn .bar:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
   }
 
-  #home-page #toggle:checked + label.toggle-btn .bar:nth-child(3) {
+  #toggle:checked + label.toggle-btn .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
 
+/* Extra large devices (large laptops and desktops, 1200px and up) (1280x1024)*/
+
 @media only screen and (max-width: 1200px) {
-  #home-page h1 {
+  h1 {
     font-size: 17rem;
   }
 
-  #home-page #rank .top3 > div {
+  #rank .top3 > div {
     padding: 0 1rem;
   }
 
-  #home-page #story .story-informations {
+  #story .story-informations {
     margin: 0 auto;
     max-width: 70%;
   }
 
-  #home-page #story div {
+  #story div {
     flex-basis: initial;
   }
 
-  #home-page #story .story-illustration img {
+  #story .story-illustration img {
     max-width: 90%;
   }
 
-  #home-page #story .story-illustration {
+  #story .story-illustration {
     position: absolute;
     right: -16%;
     transform: translateX(-16%);
     z-index: 0;
   }
 
-  #home-page #story .circle-yellow {
+  #story .circle-yellow {
     width: 13rem;
     height: 13rem;
   }
 
-  #home-page #rank .board table {
+  #rank .board table {
     margin: 10rem 5rem 0 5rem;
   }
 
-  #home-page #rank .hand {
+  #rank .hand {
     position: absolute;
     bottom: -10%;
     transform: translateY(12%);
@@ -2566,25 +2567,25 @@ canvas {
     transform: translateX(7%);
   }
 
-  #home-page #about {
+  #about {
     justify-content: inherit;
     flex-direction: column;
     text-align: center;
   }
 
-  #home-page #about .project {
+  #about .project {
     flex-basis: inherit;
   }
 
-  #home-page #about .team-img-role {
+  #about .team-img-role {
     margin-top: 2rem;
   }
 
-  #home-page #contact .contact-txt {
+  #contact .contact-txt {
     padding: 0;
   }
 
-  #home-page #contact .take-contact .mail {
+  #contact .take-contact .mail {
     font-size: x-large;
     text-shadow: none;
   }
