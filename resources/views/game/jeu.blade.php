@@ -3,12 +3,16 @@
 
 @section('content')
 
-<header class="Header">
-    <div class="HeaderLogo"></div>
+<header id="Header" class="Header">
+    <div class="HeaderLogo">
+        <img class="logo hoverable" id="HeaderLogo" src="{{ asset('ressources/logo.png') }}" alt="Logo"/>
+    </div>
     <div class="Mute"></div>
 </header>
 <main id="Main" role="main">
-    <!-- Loader et Cinematiques -->
+    <div id="Cinematic" class="Cinematic">
+
+    </div>
     <div id="Game" class="Game" >
         <div id="Background"></div>
     </div>

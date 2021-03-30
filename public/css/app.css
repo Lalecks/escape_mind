@@ -1476,6 +1476,12 @@ canvas {
   height: 100%;
 }
 
+#HeaderLogo {
+  width: 5rem;
+  margin: 0 4%;
+  opacity: 75%;
+}
+
 /*--------  Components --------*/
 
 /**
