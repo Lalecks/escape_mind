@@ -13,8 +13,8 @@ npm-debug.log
 yarn-error.log
 /composer.phar
 .idea
-/public/css/app.css
-/public/js/app.js
+/public/css
+/public/js
 /public/mix-manifest.json
 # Supp fichiers sass
 /.sass-cache
