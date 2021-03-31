@@ -143,18 +143,18 @@
 //     _APP = new BasicWorldDemo();
 // });
 
-//Gestion des cinématiques
+// Gestion des cinématiques
 let actualCinematic = 0;
 let cin = document.getElementById('Cinematic');
 
-//Cinematique au démarrage
+//  Cinématique au démarrage
 $( document ).ready(function() {
     displayCinematic();
 });
 
 function displayCinematic(){
     let cinematics = Array('Beginning','Success','Defeat');
-
+    
     let video = document.createElement("video");
     video.id="Video";
     video.width=document.body.clientWidth;
@@ -167,17 +167,17 @@ function displayCinematic(){
     let webm = document.createElement("source");
     webm.id="webm";
     webm.type="video/webm";
-    webm.src="./ressources/" + cinematics[actualCinematic] + ".webm";
+    webm.src="./ressources/cinematic/" + cinematics[actualCinematic] + ".webm";
 
     let mp4 = document.createElement("source");
     mp4.id="mp4";
     mp4.type="video/mp4";
-    mp4.src="./ressources/" + cinematics[actualCinematic] + ".mp4";
+    mp4.src="./ressources/cinematic/" + cinematics[actualCinematic] + ".mp4";
 
     let ogg = document.createElement("source");
     ogg.id="ogg";
     ogg.type="video/ogg";
-    ogg.src="./ressources/" + cinematics[actualCinematic] + ".ogv";
+    ogg.src="./ressources/cinematic/" + cinematics[actualCinematic] + ".ogv";
 
     video.addEventListener('ended',myHandler,false);
     function myHandler(e) {
@@ -186,14 +186,11 @@ function displayCinematic(){
         ogg.remove();
         video.remove();
 
-
         if (actualCinematic === 0){
             launchGame();
         } else {
             endGame(actualCinematic);
         }
-
-
         //displayCinematic();
     }
 
@@ -210,7 +207,7 @@ function displayCinematic(){
 
 
 
-//Gestion du jeu
+// Gestion du jeu
 let game = null;
 
 function launchGame(){
@@ -271,7 +268,7 @@ function endGame(num){
 }
 
 
-//Gestions des salles
+// Gestion des salles
 let actual_room = 0;
 let rooms = Array('corridor','radio','children','water');
 /*

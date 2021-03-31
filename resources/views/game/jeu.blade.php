@@ -4,6 +4,7 @@
 @section('content')
 
 <div id="game-page" class="landscape">
+{{-- <p>zse</p> --}}
 <header id="Header" class="Header">
     <div class="HeaderLogo">
         <img class="logo hoverable" id="HeaderLogo" src="{{ asset('ressources/logo.png') }}" alt="Logo"/>
