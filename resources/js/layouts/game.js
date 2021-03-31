@@ -146,6 +146,7 @@
 // Gestion des cinématiques
 let actualCinematic = 0;
 let cin = document.getElementById('Cinematic');
+let game = null;
 
 //  Cinématique au démarrage
 $( document ).ready(function() {
@@ -187,7 +188,7 @@ function displayCinematic(){
         video.remove();
 
         if (actualCinematic === 0){
-            launchGame();
+            game = new launchGame();
         } else {
             endGame(actualCinematic);
         }
@@ -202,64 +203,42 @@ function displayCinematic(){
 }
 
 
-
-
-
-
-
 // Gestion du jeu
-let game = null;
+// let game = null;
 
 function launchGame(){
 
     var canvas = document.createElement('canvas');
 
     canvas.id="Game";
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
     canvas.style.zIndex = 0;
     canvas.style.position = "absolute";
-    canvas.style.border = "1px solid";
+    canvas.style.border = "2px red solid";
 
     document.getElementById('Game').appendChild(canvas);
 
     let ctx = canvas.getContext("2d");
 
     let bgImg = new Image();
-    bgImg.src = "./ressources/game/room/radio.png";
+    bgImg.src = "./ressources/game/room/" + getRoom().toString() + ".png";
 
-    function allStuff(a,b){
-
-        // ctx.drawImage(bgImg,0,0,a,b);
-
+    bgImg.onload = function(){
+        draw();
     }
 
-    window.addEventListener('load', resizeCanvas, false);
-    window.addEventListener('resize', resizeCanvas, false);
+    canvas.width = $(document).height();
+    canvas.height = ($(document).height() * bgImg.height) / bgImg.width;
 
 
-    function resizeCanvas() {
-        let canvas_height = document.body.clientHeight;
-        let canvas_width = document.body.clientWidth;
 
-        // ctx.clearRect(0,0,document.body.clientHeight,document.body.clientWidth);
-        //
-        // allStuff(canvas_width,canvas_height);
-        canvas.style.width = canvas_width + 'px';
-        canvas.style.height = canvas_height + 'px';
+    function draw() {
+        ctx.clearRect(0,0,$(document).width(),$(document).height());
+        ctx.drawImage(bgImg, 0, 0,$(document).width(),$(document).height());
 
     }
 
 }
 
-
-
-
-window.addEventListener('click',function() {
-    if (game==null){
-        game = new Game();
-    }
-})
 
 
 
@@ -268,8 +247,10 @@ function endGame(num){
 }
 
 
-// Gestion des salles
-let actual_room = 0;
+
+//Gestions des salles
+let actual_room = 1;
+
 let rooms = Array('corridor','radio','children','water');
 /*
  * corridor = 0
@@ -278,9 +259,6 @@ let rooms = Array('corridor','radio','children','water');
  * water = 3
  */
 
-function changeRoom(id){
-    displayRoom(rooms[id]);
-}
 
 function resetAllObjects(){
     for(let i=0;i<rooms.length;i++){
@@ -302,8 +280,9 @@ function showObject(id){
     }
 }
 
-function displayRoom(id){
+function getRoom(){
 
+    return rooms[actual_room];
 
 }
 
