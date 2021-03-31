@@ -4,8 +4,8 @@ require('./generic/jquery.pjax');
 
 /*--------  Packages --------*/
 require('./package/rellax.min');
-require('paper');
-require('./package/simplex-noise.min');
+// require('paper');
+// require('./package/simplex-noise.min');
 
 /*-------- Layouts --------*/
 require('./layouts/detecting_mobile');
