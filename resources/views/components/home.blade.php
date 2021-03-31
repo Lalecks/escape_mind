@@ -46,7 +46,7 @@
 			</div>
 			<section id="home">
 				<video class="bg-video" playsinline="" autoplay="" muted="" loop="">
-					<source src="{{ asset('ressources/technology.mp4') }}" type="video/mp4">
+					<source src="{{ asset('resources/technology.mp4') }}" type="video/mp4">
 				</video>
 				<div class="video-overlay">
 					{{-- <div class="line"></div>
@@ -54,7 +54,7 @@
 					<div class="glass-effect circle circle-border-cyan_blue"></div> --}}
 					{{-- <div class=" circle circle-border-cyan_blue"></div> --}}
 					<div id ="home_box" class="glass-effect">
-						<img class="glass-effect" src="{{ asset('ressources/web/sacha.png') }}" alt="sacha_scientist">
+						<img class="glass-effect" src="{{ asset('resources/web/sacha.png') }}" alt="sacha_scientist">
 						{{-- <div class="circle circle-border-cyan_blue"></div> --}}
 						<div>
 							<p>Il y a plusieurs années un scientifique a crée une IA, et aujourd’hui, il doit la débrancher. Pour cela, il se connecte à celle-ci, et se retrouve enfermé dans l’IA qui retrace ses souvenirs.</p>
@@ -92,7 +92,7 @@
 				</div>
 				<div class="story-illustration">
 					<div class="glass-effect circle circle-yellow"></div>
-					<img src="{{ asset('ressources/web/artificial_intelligence.png') }}" alt="artificial_intelligence"/>
+					<img src="{{ asset('resources/web/artificial_intelligence.png') }}" alt="artificial_intelligence"/>
 				</div>
 			</section>
 
@@ -123,7 +123,7 @@
 								</defs>
 								{{-- </g> --}}
 							</svg>
-							<img src="{{ asset('ressources/web/model2.png') }}" alt="model2"/>
+							<img src="{{ asset('resources/web/model2.png') }}" alt="model2"/>
 						</div>
 						<p class="logo-title">pseudo2</p>
 					</div>
@@ -151,9 +151,9 @@
 									</linearGradient>
 								</defs>
 							</svg>
-							<img src="{{ asset('ressources/web/model1.png') }}" alt="model1"/>
+							<img src="{{ asset('resources/web/model1.png') }}" alt="model1"/>
 						</div>
-						<p class="logo-title">sarah_mrct</p> 	
+						<p class="logo-title">sarah_mrct</p>
 						{{-- <p class="logo-title">{{$firstUser->id(1)}}</p> --}}
 					</div>
 					<div class="third">
@@ -180,7 +180,7 @@
 									</linearGradient>
 								</defs>
 							</svg>
-							<img src="{{ asset('ressources/web/model3.png') }}" alt="model3"/>
+							<img src="{{ asset('resources/web/model3.png') }}" alt="model3"/>
 						</div>
 						<p class="logo-title">pseudo3</p>
 					</div>
@@ -203,7 +203,7 @@
 								<td>{{$key+1}}</td>
 								@endif
 								<td>{{$u->name}}</td>
-								<td>{{$u->created_at->format('i:s')}}s</td> 
+								<td>{{$u->created_at->format('i:s')}}s</td>
 							</tr>
 								@endforeach
 							{{-- <tr>
@@ -213,7 +213,7 @@
 							</tr> --}}
 						</tbody>
 					</table>
-					<div class="hand"><img src="{{ asset('ressources/web/cyborg_hand.png') }}" alt="cyborg_hand"/></div>
+					<div class="hand"><img src="{{ asset('resources/web/cyborg_hand.png') }}" alt="cyborg_hand"/></div>
 				</div>
 			</section>
 
@@ -227,27 +227,27 @@
 					<div class="team-img-role glass-effect">
 						<h2>Qui sommes-nous ?</h2>
 						<div class="hoverable">
-							<img src="{{ asset('ressources/web/team/ant.png') }}" alt="antony_deschodt"/>
+							<img src="{{ asset('resources/web/team/ant.png') }}" alt="antony_deschodt"/>
 							<span class="team-role">Sound designer</span>
 							<span class="team-name logo-title">Antony</span>
 						</div>
 						<div class="hoverable">
-							<img src="{{ asset('ressources/web/team/mon.png') }}" alt="mondine_odin"/>
+							<img src="{{ asset('resources/web/team/mon.png') }}" alt="mondine_odin"/>
 							<span class="team-role">Sound designer</span>
 							<span class="team-name logo-title">Mondine</span>
 						</div>
 						<div class="hoverable">
-							<img src="{{ asset('ressources/web/team/ca.png') }}" alt="camille_kozack"/>
+							<img src="{{ asset('resources/web/team/ca.png') }}" alt="camille_kozack"/>
 							<span class="team-role">Infographiste</span>
 							<span class="team-name logo-title">Camille</span>
 						</div>
 						<div class="hoverable">
-							<img src="{{ asset('ressources/web/team/sa.png') }}" alt="sarah_mauriaucourt"/>
+							<img src="{{ asset('resources/web/team/sa.png') }}" alt="sarah_mauriaucourt"/>
 							<span class="team-role">Webdesigner &amp; développeuse front-end</span>
 							<span class="team-name logo-title">Sarah</span>
 						</div>
 						<div class="hoverable">
-							<img src="{{ asset('ressources/web/team/ant.png') }}" alt="alexandre_lavaud"/>
+							<img src="{{ asset('resources/web/team/ant.png') }}" alt="alexandre_lavaud"/>
 							<span class="team-role">Développeur frontend &amp; backend</span>
 							<span class="team-name logo-title">Alexandre</span>
 						</div>
