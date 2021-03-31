@@ -10,12 +10,14 @@ if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elain
     isMobile = true;
 } // Détection de dispositif
 
-console.log("Are you on a mobile device? ", isMobile);
+// console.log("Are you on a mobile device? ", isMobile);
 
 // Si le support est un mobile, forcer le mode paysage quand le téléphone est en portrait
 if (isMobile == true) {
-    document.getElementsByClassName('cursor').style.display = none;
-    $("section").addClass("landscape");
+    $("#game-page").addClass("landscape");
+    document.getElementById('souris').style.display = "none";
 } else {
-    $("section").removeClass("landscape");
+    $("#game-page").removeClass("landscape");
 }
+
+$("div").removeClass("page_speed*");

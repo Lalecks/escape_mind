@@ -3,6 +3,7 @@
 
 @section('content')
 
+<div id="game-page" class="landscape">
 <header id="Header" class="Header">
     <div class="HeaderLogo">
         <img class="logo hoverable" id="HeaderLogo" src="{{ asset('ressources/logo.png') }}" alt="Logo"/>
@@ -21,8 +22,5 @@
     </div>
 
 </main>
-
-
-<script type="module" src="{{ asset('js/main.js') }}" ></script>
-
+</div>
 @endsection

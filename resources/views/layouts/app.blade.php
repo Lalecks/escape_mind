@@ -55,13 +55,12 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('ressources/icon/favicon-96x96.png')}}">
 		<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('ressources/icon/favicon-16x16.png')}}">
 		<link rel="manifest" href="{{ asset('ressources/icon/manifest.json')}}">
-		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileColor" content="#1A1A1A">
 		<meta name="msapplication-TileImage" content="{{ asset('ressources/icon/ms-icon-144x144.png')}}">
-		<meta name="theme-color" content="#ffffff">
+		<meta name="theme-color" content="#1A1A1A">
 		<!-- Stylesheets -->
 		<link href="{{ mix('css/app.css') }}" rel="stylesheet">
 		{{-- <link href="{{ asset('css/app.min.css') }}" rel="stylesheet"> --}}
-		{{-- <link rel="prefetch" href="../game/room1.blade.php"> --}}
 		<!-- Scripts -->
 		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
 	</head>
@@ -138,13 +137,11 @@
 			</div>
 			<div id="content" style="opacity: 0">
 				@yield('content')
-			{{-- </div> --}}
+			</div>
 		</main>
 
 		<!--====== Javascripts & Jquery ======-->
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
 		<script src="{{ mix('js/app.js') }}" defer></script>
 	</body>
 </html>

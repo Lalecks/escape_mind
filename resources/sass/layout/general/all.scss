@@ -5,92 +5,108 @@
 * */
 
 // Corps
-body, html{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	height: 100%;
-	margin: 0; 
-	padding: 0;
-	position: relative;
-	overflow-x: hidden;
+body,
+html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
 }
+
 // Titres : Cf Fluides typographies
 h1 {
-	margin: 0;
-	color: $color-title;
-	font-family: $font-title;
-	font-size: 45vh;
-	font-style: normal;
-	font-weight: bolder;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 1rem;
-	-webkit-text-stroke: .8rem;
-	-webkit-text-stroke-color: $color-title;
-	position: absolute;
-	z-index: -6;
-	left: 0;
-	right: 0;
-	/* Texte non selectionnable */
-	-moz-user-select: none; // Firefox
-	-webkit-user-select: none; /// Chrome, Safari, Opéra depuis la version 15
-	-ms-user-select: none; // Internet explorer depuis la version 10 et Edge */
-	user-select: none; // Propriété standard
+    margin: 0;
+    color: $color-title;
+    font-family: $font-title;
+    font-size: 45vh;
+    font-style: normal;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    -webkit-text-stroke: .8rem;
+    -webkit-text-stroke-color: $color-title;
+    position: absolute;
+    z-index: -6;
+    left: 0;
+    right: 0;
+    /* Texte non selectionnable */
+    -moz-user-select: none; // Firefox
+    -webkit-user-select: none; /// Chrome, Safari, Opéra depuis la version 15
+    -ms-user-select: none; // Internet explorer depuis la version 10 et Edge */
+    user-select: none; // Propriété standard
 }
+
 h2 {
-	font-family: $font-logo;
-	text-transform: lowercase;
-	font-style: normal;
-	font-weight: normal;
-	// text-align: center;
+    font-family: $font-logo;
+    text-transform: lowercase;
+    font-style: normal;
+    font-weight: normal;
+    // text-align: center;
 }
-.logo-title{
-	font-family: $font-logo;
-	font-size: 4.1vh;  
-	z-index: 2;
+
+.logo-title {
+    font-family: $font-logo;
+    font-size: 4.1vh;
+    z-index: 2;
 }
+
 .logo {
-	position : fixed;
-	margin: 0 auto;
-	padding: 1.5rem 0;
-	width : 0;
-	left : 0;
-	right: 0;
-	background: rgba(0, 0, 0, 0.096);
-	width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    width: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.096);
+    width: 100%;
     z-index: 10;
     text-align: center;
 }
+
 // Container
 .index {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	overflow-x: hidden;
-	// flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow-x: hidden;
+    // flex-direction: column;
 }
+
 .container {
-	justify-content: flex-end;
-	position: relative;
-	right: 0;
-	max-width: 84%;
-	min-height: 100%;
-	// Si on retire le .index
-	// margin: 0 auto;
-	// padding-left: 1rem;
-	// padding-right: 4rem;
-	// float: right;
-	// clear: none; // Toujours avec un float
-	// background-color: rgb(37, 37, 37);
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    right: 0;
+    max-width: 84%;
+    min-height: 100%;
+    // Si on retire le .index
+    // margin: 0 auto;
+    // padding-left: 1rem;
+    // padding-right: 4rem;
+    // float: right;
+    // clear: none; // Toujours avec un float
+    // background-color: rgb(37, 37, 37);
 }
-.headings > section {
-	margin-bottom: 4rem;
-	min-height: 100vh;
-	max-width: 100vw;
-	z-index: 1;
-	position: relative;
-	// border: solid;
+
+.headings>section {
+    margin-bottom: 4rem;
+    min-height: 100vh;
+    max-width: 100vw;
+    z-index: 1;
+    position: relative;
+    // border: solid;
 }
