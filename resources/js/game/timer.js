@@ -1,13 +1,15 @@
+//
+// *
+// *  Système du Timer
+// *
+// * */
+
 let refresh = null;
 let time = 1800;
 let timeStr = "3000";
 
-window.addEventListener("load",function(){
-    createTimer();
-})
-
 //affichage du timer
-function createTimer(){
+export default function createTimer(){
     let chrono = document.createElement("div");
     chrono.id="Chrono";
 
