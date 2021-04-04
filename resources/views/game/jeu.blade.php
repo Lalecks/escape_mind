@@ -13,13 +13,13 @@
 </header>
 <main id="Main" role="main">
     <div id="Cinematic" class="Cinematic">
-
+        <!--Cinematic-->
     </div>
     <div id="Game" class="Game" >
         <div id="Background"></div>
     </div>
     <div id="Interface" class="Interface">
-
+        <!--Timer-->
     </div>
 
 </main>

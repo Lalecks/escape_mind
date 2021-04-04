@@ -1,6 +1,9 @@
 /*-------- Generic --------*/
 require('./generic/jquery-2.1.4.min');
 
+/*-------- Game --------*/
+require('./game/timer');
+
 /*--------  Packages --------*/
 require('./package/rellax.min');
 // require('paper');
