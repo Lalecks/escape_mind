@@ -135,6 +135,9 @@
 				<div id="progstat"></div>
 				<div id="progress"></div>
 			</div>
+            <div id="fullscreen" style="opacity:0;">
+
+            </div>
 			<div id="content" style="opacity: 0">
 				@yield('content')
 			</div>
@@ -145,5 +148,8 @@
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
 		<script src="{{ mix('js/app.js') }}" defer></script>
+    <script>
+
+    </script>
 	</body>
 </html>

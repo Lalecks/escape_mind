@@ -4,6 +4,7 @@ require('./generic/jquery.pjax');
 
 /*-------- Game --------*/
 require('./game/timer');
+require('./game/fullscreen');
 
 /*--------  Packages --------*/
 require('./package/rellax.min');
