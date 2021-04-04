@@ -1,6 +1,5 @@
 /*-------- Generic --------*/
 require('./generic/jquery-2.1.4.min');
-require('./generic/jquery.pjax');
 
 /*--------  Packages --------*/
 require('./package/rellax.min');
@@ -17,5 +16,5 @@ require('./layouts/game');
 require('./components/loader');
 require('./components/modal'); // Avant custom_packages.js pour fonctionner
 require('./components/video_player');
-require('./components/zoom');
+require('./components/game/zoom');
 require('./components/custom_package');
