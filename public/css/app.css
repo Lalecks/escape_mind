@@ -1473,6 +1473,10 @@ canvas {
 }
 
 #HeaderLogo {
+  z-index: 200;
+}
+
+#HeaderLogo {
   width: 5rem;
   margin: 0 4%;
   opacity: 75%;

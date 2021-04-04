@@ -1,9 +1,13 @@
 /*-------- Generic --------*/
 require('./generic/jquery-2.1.4.min');
 
+
 /*-------- Game --------*/
-require('./game/timer');
-require('./game/fullscreen');
+if (document.getElementById("game-page")) {
+    require('./game/timer');
+    require('./game/fullscreen');
+    require('./game/cinematic');
+}
 
 /*--------  Packages --------*/
 require('./package/rellax.min');
@@ -14,7 +18,9 @@ require('./package/rellax.min');
 require('./layouts/detecting_mobile');
 require('./layouts/mouse');
 require('./layouts/scrollBar');
-require('./layouts/game');
+if (document.getElementById("game-page")) {
+    require('./layouts/game');
+}
 
 /*--------  Components --------*/
 require('./components/loader');
