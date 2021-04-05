@@ -1,3 +1,9 @@
+/**
+*
+*  Mouse
+*
+* */
+
 // https://codepen.io/gnormand/pen/XpQLyb
 const cursorModule = () => {
 	const innerCursor = document.querySelector(".cursor--small");

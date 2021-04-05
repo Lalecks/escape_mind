@@ -1,3 +1,9 @@
+/**
+*
+*  Cinematic
+*
+* */
+
 import BasicWorldDemo from "../layouts/game";
 
 // Gestion des cinématiques
@@ -6,7 +12,7 @@ let cin = document.getElementById('Cinematic');
 let game = null;
 
 
-//Cinématique au démarrage
+// Cinématique au démarrage
 $( document ).ready(function() {
     displayCinematic();
 });
@@ -27,7 +33,6 @@ function displayCinematic(){
     webm.id="webm";
     webm.type="video/webm";
     webm.src="./resources/cinematic/" + cinematics[actualCinematic] + ".webm";
-
 
     let mp4 = document.createElement("source");
     mp4.id="mp4";
@@ -53,7 +58,6 @@ function displayCinematic(){
         }
     });
 
-
     video.appendChild(webm);
     video.appendChild(mp4);
     video.appendChild(ogg);
@@ -63,5 +67,4 @@ function displayCinematic(){
     video.style.width="100%";
 
     cin.appendChild(video);
-
 }

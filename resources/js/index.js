@@ -7,6 +7,7 @@ if (document.getElementById("game-page")) {
     require('./game/timer');
     require('./game/fullscreen');
     require('./game/cinematic');
+    require('./game/zoom');
 }
 
 /*--------  Packages --------*/
@@ -26,5 +27,4 @@ if (document.getElementById("game-page")) {
 require('./components/loader');
 require('./components/modal'); // Avant custom_packages.js pour fonctionner
 require('./components/video_player');
-require('./components/game/zoom');
 require('./components/custom_package');
