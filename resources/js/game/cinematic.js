@@ -4,7 +4,7 @@
 *
 * */
 
-import BasicWorldDemo from "../../layouts/game";
+import BasicWorldDemo from "../layouts/game";
 
 // Gestion des cinématiques
 let actualCinematic = 0;
