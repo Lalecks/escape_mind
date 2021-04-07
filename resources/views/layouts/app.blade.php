@@ -28,8 +28,8 @@
 		<meta property="og:locale" content="fr_FR"/>
 		<meta property="og:image" content="https://site.com/post.jpg" />
 
-		<meta property="og:image" content="{{ asset('ressources/icon/apple-icon-57x57.png')}}"/>
-        <meta property="og:image:secure_url" content="{{ asset('ressources/icon/apple-icon-57x57.png')}}"/>
+		<meta property="og:image" content="{{ asset('resources/icon/apple-icon-57x57.png')}}"/>
+        <meta property="og:image:secure_url" content="{{ asset('resources/icon/apple-icon-57x57.png')}}"/>
         <meta property="og:image:alt" content="escape_mind"/>
         <meta property="og:image:width" content="57"/>
         <meta property="og:image:height" content="57"/>
@@ -39,24 +39,24 @@
 		<meta name="twitter:site" content="@escapemind">
 		<meta name="twitter:title" content="@yield('title')">
 		<meta name="twitter:description" content="Des chercheurs sont sur le point de débrancher l’IA qu’ils ont créée quelques années auparavant, car celle-ci est devenue obsolète.">
-		<meta name="twitter:image" content="{{ asset('ressources/icon/apple-icon-57x57.png')}}">
+		<meta name="twitter:image" content="{{ asset('resources/icon/apple-icon-57x57.png')}}">
 		<!-- Icônes -->
-		<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('ressources/icon/apple-icon-57x57.png')}}">
-		<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('ressources/icon/apple-icon-60x60.png')}}">
-		<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('ressources/icon/apple-icon-72x72.png')}}">
-		<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('ressources/icon/apple-icon-76x76.png')}}">
-		<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('ressources/icon/apple-icon-114x114.png')}}">
-		<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('ressources/icon/apple-icon-120x120.png')}}">
-		<link rel="apple-touch-icon" sizes="144x144" href="{{ asset('ressources/icon/apple-icon-144x144.png')}}">
-		<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('ressources/icon/apple-icon-152x152.png')}}">
-		<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('ressources/icon/apple-icon-180x180.png')}}">
-		<link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('ressources/icon/android-icon-192x192.png')}}">
-		<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('ressources/icon/favicon-32x32.png')}}">
-		<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('ressources/icon/favicon-96x96.png')}}">
-		<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('ressources/icon/favicon-16x16.png')}}">
-		<link rel="manifest" href="{{ asset('ressources/icon/manifest.json')}}">
+		<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('resources/icon/apple-icon-57x57.png')}}">
+		<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('resources/icon/apple-icon-60x60.png')}}">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('resources/icon/apple-icon-72x72.png')}}">
+		<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('resources/icon/apple-icon-76x76.png')}}">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('resources/icon/apple-icon-114x114.png')}}">
+		<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('resources/icon/apple-icon-120x120.png')}}">
+		<link rel="apple-touch-icon" sizes="144x144" href="{{ asset('resources/icon/apple-icon-144x144.png')}}">
+		<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('resources/icon/apple-icon-152x152.png')}}">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('resources/icon/apple-icon-180x180.png')}}">
+		<link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('resources/icon/android-icon-192x192.png')}}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('resources/icon/favicon-32x32.png')}}">
+		<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('resources/icon/favicon-96x96.png')}}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('resources/icon/favicon-16x16.png')}}">
+		<link rel="manifest" href="{{ asset('resources/icon/manifest.json')}}">
 		<meta name="msapplication-TileColor" content="#1A1A1A">
-		<meta name="msapplication-TileImage" content="{{ asset('ressources/icon/ms-icon-144x144.png')}}">
+		<meta name="msapplication-TileImage" content="{{ asset('resources/icon/ms-icon-144x144.png')}}">
 		<meta name="theme-color" content="#1A1A1A">
 		<!-- Stylesheets -->
 		<link href="{{ mix('css/app.css') }}" rel="stylesheet">
@@ -65,7 +65,7 @@
 		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
 	</head>
 	<!--====== Corps ======-->
-	<body class="modal-open">
+	<body class="modal-open landscape">
 		<!-- Souris -->
 		<div id="souris" style="opacity: 0">
 			<div class="cursor cursor--small"></div>
@@ -148,8 +148,5 @@
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
 		<script src="{{ mix('js/app.js') }}" defer></script>
-    <script>
-
-    </script>
 	</body>
 </html>

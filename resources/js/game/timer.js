@@ -8,12 +8,12 @@ let refresh = null;
 let time = 1800;
 let timeStr = "3000";
 
-//affichage du timer
+// Affichage du timer
 export default function createTimer(){
     let chrono = document.createElement("div");
     chrono.id="Chrono";
 
-    //creer chaque élément du timer
+    // Creer chaque élément du timer
     for (let i=0;i<timeStr.length;i++){
 
 
@@ -77,6 +77,4 @@ function updateTimer(){
     for (let i = 0; i < digit.length ; i++){
         digit[i].innerText=timeStr[i];
     }
-
-
 }
