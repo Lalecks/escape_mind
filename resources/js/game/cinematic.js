@@ -10,7 +10,7 @@ import BasicWorldDemo from "../layouts/game";
 let actualCinematic = 0;
 let cin = document.getElementById('Cinematic');
 let game = null;
-var asset = "{{asset('resources/cinematic/')}}";
+
 
 // Cinématique au démarrage
 $( document ).ready(function() {
@@ -32,17 +32,17 @@ function displayCinematic(){
     let webm = document.createElement("source");
     webm.id="webm";
     webm.type="video/webm";
-    webm.src= asset + cinematics[actualCinematic] + ".webm";
+    webm.src="./resources/cinematic/" + cinematics[actualCinematic] + ".webm";
 
     let mp4 = document.createElement("source");
     mp4.id="mp4";
     mp4.type="video/mp4";
-    mp4.src= asset + cinematics[actualCinematic] + ".mp4";
+    mp4.src="./resources/cinematic/" + cinematics[actualCinematic] + ".mp4";
 
     let ogg = document.createElement("source");
     ogg.id="ogg";
     ogg.type="video/ogg";
-    ogg.src="resources/cinematic/" + cinematics[actualCinematic] + ".ogv";
+    ogg.src="./resources/cinematic/" + cinematics[actualCinematic] + ".ogv";
 
 
     video.addEventListener('ended',function(){

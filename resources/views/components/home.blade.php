@@ -205,7 +205,7 @@
 								<td>{{$u->name}}</td>
 								<td>{{$u->created_at->format('i:s')}}s</td>
 							</tr>
-								@endforeach
+							@endforeach
 							{{-- <tr>
 							<td>01 </td>
 							<td>Bloopy_ez </td>
