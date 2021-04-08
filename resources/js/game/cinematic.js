@@ -1,18 +1,11 @@
-/**
-*
-*  Cinematic
-*
-* */
-
-import BasicWorldDemo from "../layouts/game";
+import createRoom from "../layouts/game";
 
 // Gestion des cinématiques
 let actualCinematic = 0;
 let cin = document.getElementById('Cinematic');
 let game = null;
 
-
-// Cinématique au démarrage
+//Cinématique au démarrage
 $( document ).ready(function() {
     displayCinematic();
 });
@@ -52,11 +45,12 @@ function displayCinematic(){
         video.remove();
 
         if (actualCinematic === 0){
-            game = new BasicWorldDemo();
+            createRoom();
         } else {
             //endGame(actualCinematic);
         }
     });
+
 
     video.appendChild(webm);
     video.appendChild(mp4);
@@ -67,4 +61,5 @@ function displayCinematic(){
     video.style.width="100%";
 
     cin.appendChild(video);
+
 }

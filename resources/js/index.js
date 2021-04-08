@@ -4,8 +4,7 @@ require('./generic/jquery-2.1.4.min');
 
 /*-------- Game --------*/
 if (document.getElementById("game-page")) {
-    require('./game/timer');
-    require('./game/fullscreen');
+    // require('./game/fullscreen');
     require('./game/cinematic');
     require('./game/zoom');
 }

@@ -16,7 +16,9 @@
         <!--Cinematic-->
     </div>
     <div id="Game" class="Game" >
-        <div id="Background"></div>
+        <div id="Background">
+S
+		</div>
     </div>
     <div id="Interface" class="Interface">
         <!--Timer-->
@@ -25,3 +27,4 @@
 </main>
 </div>
 @endsection
+

@@ -17,6 +17,7 @@
         "laravel-mix": "^5.0.1",
         "laravel-mix-purgecss": "^6.0.0",
         "lodash": "^4.17.21",
+        "parse-svg-path": "^0.1.2",
         "popper.js": "^1.12",
         "resolve-url-loader": "^3.1.2",
         "sass": "^1.32.8",
@@ -26,6 +27,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "extract-svg-path": "^2.1.0",
         "paper": "^0.12.15",
         "rellax": "^1.12.1",
         "three-orbitcontrols": "^2.110.3"
