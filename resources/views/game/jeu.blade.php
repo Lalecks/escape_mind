@@ -3,7 +3,7 @@
 
 @section('content')
 
-<div id="game-page" class="landscape">
+<div id="game-page">
 {{-- <p>zse</p> --}}
 <header id="Header" class="Header">
     <div class="HeaderLogo">

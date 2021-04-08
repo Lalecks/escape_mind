@@ -19,3 +19,8 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+
+# Afficher les vidéos des cinématiques
+AddType video/ogg  .ogv
+AddType video/mp4  .mp4
+AddType video/webm .webm
