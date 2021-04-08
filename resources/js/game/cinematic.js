@@ -1,4 +1,4 @@
-import BasicWorldDemo from "../layouts/game";
+import createRoom from "../layouts/game";
 
 // Gestion des cinématiques
 let actualCinematic = 0;
@@ -47,7 +47,7 @@ function displayCinematic(){
         video.remove();
 
         if (actualCinematic === 0){
-            game = new BasicWorldDemo();
+            createRoom();
         } else {
             //endGame(actualCinematic);
         }
