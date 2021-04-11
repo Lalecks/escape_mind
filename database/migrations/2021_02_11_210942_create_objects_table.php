@@ -19,7 +19,6 @@ class CreateObjectsTable extends Migration
             $table->tinyInteger('room')->default(0);
             $table->string('image')->default("https://forums.autodesk.com/t5/image/serverpage/image-id/360677iEC67ACD627FBBDDF/image-size/large?v=1.0&px=999");
             $table->string('audio')->default(NULL);
-            $table->tinyInteger('used')->default(0);
             $table->timestamps();
         });
     }

@@ -9,16 +9,16 @@
     <div class="HeaderLogo">
         <img class="logo" id="HeaderLogo" src="{{ asset('resources/logo.png') }}" alt="Logo"/>
     </div>
-    <div class="Mute"></div>
+    <div class="Mute">
+    </div>
 </header>
 <main id="Main" role="main">
     <div id="Cinematic" class="Cinematic">
         <!--Cinematic-->
     </div>
     <div id="Game" class="Game" >
-        <div id="Background">
-S
-		</div>
+        <div id="Background"></div>
+        <div id="Objects"></div>
     </div>
     <div id="Interface" class="Interface">
         <!--Timer-->

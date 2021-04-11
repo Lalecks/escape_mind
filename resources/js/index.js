@@ -16,11 +16,13 @@ require('./package/rellax.min');
 
 /*-------- Layouts --------*/
 require('./layouts/detecting_mobile');
-require('./layouts/mouse');
-require('./layouts/scrollBar');
+
+// require('./layouts/scrollBar');
 if (document.getElementById("game-page")) {
     require('./layouts/game');
 }
+require('./layouts/mouse');
+
 
 /*--------  Components --------*/
 require('./components/loader');

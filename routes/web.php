@@ -26,6 +26,7 @@ Route::get('/', 'HomeController@index');
 
 
 Route::get('/play', 'GameController@game');
+Route::get('/play', 'GameController@index');
 
 // Pages de l'interface jeu
 Route::group(['middleware'=>'auth'], function () {
