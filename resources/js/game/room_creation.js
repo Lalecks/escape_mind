@@ -26,7 +26,7 @@ function createRoom() {
     let bg = document.createElement("img");
     bg.id = "bg";
     // bg.style="position:fixed; bottom:0px; z-index=0;";
-    bg.src = "./resources/game/Salle_Tous_Objets.png";
+    bg.src = "./resources/game/rooms/room1.png";
 
 
     //INIT OBJETS DE LA SALLE ACTUEL
@@ -62,13 +62,7 @@ function createRoom() {
     }
 
     background.appendChild(bg);
-
-
 }
-
-
-
-
 
 function endGame(num) {
 

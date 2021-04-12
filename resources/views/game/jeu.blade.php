@@ -17,13 +17,16 @@
         <!--Cinematic-->
     </div>
     <div id="Game" class="Game">
-        <div id="Background"></div>
+        <div id="Background">
+        
         <div id="Objects"></div>
+        </div>
+        
     </div>
     <div id="Interface" class="Interface">
         <!--Timer-->
     </div>
 
 </main>
-</div>
+{{--  --}}
 @endsection
