@@ -2315,6 +2315,17 @@ html {
   font-size: 1.6rem;
 }
 
+#game-page #bg {
+  min-height: 100%;
+  /* min-width: 1024px; */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 /* Extra small devices (phones, 600px and down) 576px*/
 
 @media only screen and (max-width: 600px) {

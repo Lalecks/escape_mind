@@ -7,6 +7,7 @@ if (document.getElementById("game-page")) {
     // require('./game/fullscreen');
     require('./game/cinematic');
     require('./game/zoom');
+    // require('./layouts/game');
 }
 
 /*--------  Packages --------*/
@@ -18,9 +19,6 @@ require('./package/rellax.min');
 require('./layouts/detecting_mobile');
 
 // require('./layouts/scrollBar');
-if (document.getElementById("game-page")) {
-    require('./layouts/game');
-}
 require('./layouts/mouse');
 
 

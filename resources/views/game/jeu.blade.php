@@ -12,6 +12,7 @@
     <div class="Mute">
     </div>
 </header>
+
 <main id="Main" role="main">
     <div id="Cinematic" class="Cinematic">
         <!--Cinematic-->
@@ -27,4 +28,3 @@
 </main>
 </div>
 @endsection
-

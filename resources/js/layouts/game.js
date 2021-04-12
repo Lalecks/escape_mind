@@ -31,7 +31,7 @@ function createRoom(){
     let background = document.getElementById("Background");
     let bg = document.createElement("img");
     bg.id="bg";
-    bg.style="position:fixed; bottom:0px; z-index=0;";
+    // bg.style="position:fixed; bottom:0px; z-index=0;";
     bg.src="./resources/game/Salle_Tous_Objets.png";
 
 
@@ -46,7 +46,7 @@ function createRoom(){
             let obj = document.createElement("img");
             obj.id= "" + objects[i][0];
             obj.src = "./resources/game/objects/image/room" + actualRoom + "/" + objects[i][0] + "_00.png";
-            obj.style = "position:fixed; left:" + objects[i][2] + "px; bottom: " + objects[i][3] + "px;";
+            // obj.style = "position:fixed; left:" + objects[i][2] + "px; bottom: " + objects[i][3] + "px;";
             obj.className="hoverable";
             obj.href="https://google.fr";
 
