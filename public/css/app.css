@@ -2315,7 +2315,14 @@ html {
   font-size: 1.6rem;
 }
 
-#game-page #bg {
+#game-page #Game {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+#game-page #Game #bg {
   min-height: 100%;
   width: 100%;
   height: 100%;
@@ -2323,16 +2330,43 @@ html {
   z-index: -1;
 }
 
-#game-page #Objects a {
+#game-page #Game #Objects a {
+  position: relative;
   min-height: 100%;
 }
 
-#game-page #Objects a img {
+#game-page #Game #Objects a img {
   position: fixed;
-  left: 0;
+  top: 50%;
   height: auto;
-  bottom: 133px;
-  width: 20.5%;
+  bottom: 50%;
+  width: 19%;
+  transform-origin: center;
+}
+
+#game-page #Game #Objects a #Casettes {
+  left: 50%;
+}
+
+#game-page #Game #Objects a #Coffre_Fort {
+  left: 20%;
+}
+
+#game-page #Game #Objects a #Jukebox {
+  right: 5%;
+}
+
+#game-page #Game #Objects a #Lecteur {
+  left: 20%;
+}
+
+#game-page #Game #Objects a #Radio {
+  right: 40%;
+}
+
+#game-page #Game #Objects a #Ramdam {
+  top: 0;
+  left: 30%;
 }
 
 /* Extra small devices (phones, 600px and down) 576px*/

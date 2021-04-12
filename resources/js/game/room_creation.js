@@ -35,13 +35,13 @@ function createRoom() {
             let a = document.createElement("a");
             a.id = "a_" + objects[i][0];
 
-            a.className = "hoverable";
+            // a.className = "hoverable";
 
             let obj = document.createElement("img");
             obj.id = "" + objects[i][0];
             obj.src = "./resources/game/objects/image/room" + actualRoom + "/" + objects[i][0] + "_00.png";
             // obj.style = "position:fixed; left:" + objects[i][2] + "px; bottom: " + objects[i][3] + "px;";
-            obj.className = "hoverable";
+            // obj.className = "hoverable";
             obj.href = "https://google.fr";
 
             a.addEventListener("mouseenter", () => {

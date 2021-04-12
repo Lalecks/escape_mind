@@ -1,21 +1,49 @@
 #game-page
 {
-    #bg { 
-        min-height: 100%;
+    #Game{
+        position: relative;
         width: 100%;
         height: 100%;
-        position: fixed;
-        z-index: -1;
-    }
-    #Objects a {
-        min-height: 100%;
-        img {
+        background-color: red;
+        #bg {
+            min-height: 100%;
+            width: 100%;
+            height: 100%;
             position: fixed;
-            // top: 0;
-            left: 0;
-            height: auto;
-            bottom: 133px;
-            width: 20.5%;
+            z-index: -1;
+        }
+        #Objects a {
+            position: relative;
+            min-height: 100%;
+            img {
+                position: fixed;
+                top: 50%;
+                // left: 0;
+                height: auto;
+                bottom: 50%;
+                width: 19%;
+                transform-origin: center;
+            }
+
+            #Casettes {
+                left: 50%
+            }
+            #Coffre_Fort {
+                left: 20%;
+            }
+            #Jukebox {
+                right: 5%;
+            }
+            #Lecteur {
+                left: 20%;
+            }
+            #Radio{
+                right: 40%;
+            }
+            #Ramdam {
+                top: 0;
+                left: 30%
+            }
         }
     }
 }

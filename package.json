@@ -27,6 +27,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "crypto-js": "^4.0.0",
         "extract-svg-path": "^2.1.0",
         "paper": "^0.12.15",
         "rellax": "^1.12.1",
