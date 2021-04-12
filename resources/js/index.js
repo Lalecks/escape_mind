@@ -6,6 +6,7 @@ require('./generic/jquery-2.1.4.min');
 if (document.getElementById("game-page")) {
     // require('./game/fullscreen');
     require('./game/cinematic');
+    require('./game/room_management');
     require('./game/zoom');
     // require('./layouts/game');
 }

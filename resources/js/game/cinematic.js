@@ -1,4 +1,4 @@
-import createGame from "../layouts/game";
+import createGame from "./room_creation";
 
 // Gestion des cinématiques
 let actualCinematic = 0;
