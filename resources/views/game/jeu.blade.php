@@ -7,7 +7,6 @@
 {{-- <p>zse</p> --}}
 <header id="Header" class="Header">
     <div class="HeaderLogo">
-        <img class="logo" id="HeaderLogo" src="{{ asset('resources/logo.png') }}" alt="Logo"/>
     </div>
     <div class="Mute">
     </div>
