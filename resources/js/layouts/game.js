@@ -31,7 +31,7 @@ function createRoom(){
     let background = document.getElementById("Background");
     let bg = document.createElement("img");
     bg.id="bg";
-    bg.style="position:fixed; z-index=0;";
+    bg.style="position:fixed; bottom:0px; z-index=0;";
     bg.src="./resources/game/Salle_Tous_Objets.png";
 
 
