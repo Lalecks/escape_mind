@@ -49,7 +49,6 @@ If inserting the data doesn't work.
 $ composer dump-autoload 
 $ php artisan migrate:fresh
 $ php artisan migrate --seed
-$ php artisan passport:install
 ```
 
 Create all flags
