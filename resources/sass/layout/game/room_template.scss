@@ -1,0 +1,35 @@
+// Notepad
+// Task bar
+
+#game-page {
+    // #HeaderLogo {
+    //     width: 5rem;
+    //     margin: 0 4%;
+    //     opacity: 75%;
+    // }
+
+    #Game {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        #bg {
+            min-height: 100%;
+            width: 100%;
+            height: 100%;
+            // position: fixed;
+            z-index: -4;
+            // object-fit: fill;
+        }
+
+        #Objects a {
+            img {
+                position: absolute;
+                bottom: 0;
+                width: 20%;
+                height: auto;
+                background-size: cover;
+            }
+        }
+    }
+}

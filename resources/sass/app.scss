@@ -23,11 +23,10 @@
 @import 'layout/web/footer';
 @import 'layout/web/sidebar';
 // Game part
-
-@import 'layout/game/game';
-@import 'layout/game/gameBar';
-@import 'layout/game/object';
+@import 'layout/game/room_template';
 @import 'layout/game/timer';
+// @import 'layout/game/drag';
+// @import 'layout/game/video_player';
 
 /*--------  Components --------*/
 @import 'components/glassmorphism.scss';
