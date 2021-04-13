@@ -7,7 +7,7 @@
 import createTimer from "./components/timer";
 
 // Ajout des objets
-let objects = [
+let object = [
     /* Room 1 */
     ["Casettes", 1],
     ["Coffre_Fort", 1],
@@ -28,6 +28,11 @@ let objects = [
     /* Room 3 */
 ];
 
+let decor = [
+    /* Room 2 */
+    ["Etoiles",2],
+];
+
 // Salle actuelle
 let actualRoom = 2;
 
@@ -36,56 +41,49 @@ export default function createGame() {
 }
 
 function createRoom() {
-    // Parents du bg
-    let parent = document.getElementById("Objects");
-    // Background
-    let background = document.getElementById("Background");
-    background.className = "Room" + actualRoom;
+    // parents du bg
+    let parent_obj = document.getElementById("Objects");
+    let parent_decor = document.getElementById("Decors");
+    // area
+    let area = document.getElementById("Area");
+    area.className = "Room" + actualRoom;
     let bg = document.createElement("img");
     bg.id = "bg";
     bg.src = "./resources/game/rooms/Room" + actualRoom + ".png";
 
     // Initialisation des objets de la salle actuelle
-    for (let i = 0; i < objects.length; i++) {
-        if (objects[i][1] === actualRoom) {
+    for (let i = 0; i < object.length; i++) {
+        if (object[i][1] === actualRoom) {
             let link = document.createElement("div");
-            link.id = "link_" + objects[i][0];
-            link.href = "#";
+            link.id = "link_" + object[i][0];
             // link.className = "hoverable";
             // Objet en cours
             let obj = document.createElement("img");
-            obj.id = "" + objects[i][0];
-            obj.src = "./resources/game/objects/image/room" + actualRoom + "/" + objects[i][0] + "_00.png";
+            obj.id = "" + object[i][0];
+            obj.src = "./resources/game/objects/image/room" + actualRoom + "/" + object[i][0] + "_00.png";
             obj.className = "hoverable"; // Pour centrer la souris mdr.
 
-            // Effet au survol
-            // link.addEventListener("mouseenter", () => {
-            //     if (actualRoom === 1) {
-            //         obj.style = "-webkit-filter: saturate(180%);";
-            //     } else if (actualRoom === 2) {
-            //         // obj.style = "-webkit-filter: sepia(60%) drop-shadow(5px 5px 5px #222);";
-            //     }
-            // })
-            // link.addEventListener("mouseleave", () => {
-            //     obj.style = "";
-            // })
-
-            // a.addEventListener("mouseenter", () => {
-            //     try {
-            //         obj.src = "./resources/game/objects/image/room" + actualRoom + "/" + objects[i][0] + "_01.png";
-            //     } catch (e) {
-            //         console.log(e);
-            //     }
-            // })
-            // a.addEventListener("mouseleave", () => {
-            //     obj.src = "./resources/game/objects/image/room" + actualRoom + "/" + objects[i][0] + "_00.png";
-            // })
-
             link.appendChild(obj);
-            parent.appendChild(link);
+            parent_obj.appendChild(link);
         }
     }
-    background.appendChild(bg);
+
+    for (let i = 0; i < decor.length; i++) {
+        if (decor[i][1] === actualRoom) {
+            let link = document.createElement("div");
+            link.id = "decor_" + decor[i][0];
+ 
+            let obj = document.createElement("img");
+            obj.id = "" + decor[i][0];
+            obj.src = "./resources/game/objects/image/room" + actualRoom + "/" + decor[i][0] + "_00.png";
+      
+
+            link.appendChild(obj);
+            parent_decor.appendChild(link);
+        }
+
+    }
+    area.appendChild(bg);
 }
 
 function endGame(num) {

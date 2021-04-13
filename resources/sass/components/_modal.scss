@@ -15,7 +15,12 @@
     height: 100%;
     opacity: 0;
     visibility: hidden;
-    background-color: $black-degraded;
+    // Glassmorphism
+    background: $black-degraded;
+    background-image: -webkit-linear-gradient($black-degraded);
+    background-image: -moz-linear-gradient($black-degraded);
+    background-image: -o-linear-gradient($black-degraded);
+    background-image: linear-gradient($black-degraded);
     // background-color: rgba(0,0,0,0.9);
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -46,11 +51,16 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background-image: $cyan_blue-degraded;
     padding: 1.5rem;
     width: auto;
     border-radius: 0.5rem;
     overflow: hidden;
+    // Glassmorphism
+    background: $cyan_blue-degraded;
+    background-image: -webkit-linear-gradient($cyan_blue-degraded);
+    background-image: -moz-linear-gradient($cyan_blue-degraded);
+    background-image: -o-linear-gradient($cyan_blue-degraded);
+    background-image: linear-gradient($cyan_blue-degraded);
 }
 
 .close-button {
@@ -72,3 +82,26 @@
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
 }
+
+/* Firefox */
+@-moz-document url-prefix() {
+
+    // backdrop-filter ne fonctionne pas sur ces navigateurs
+    .show-modal {
+        background-color: #0a0a0ad2;
+    }
+}
+
+/* Safari */
+// @media screen and (-webkit-min-device-pixel-ratio:0) {
+//     .show-modal {
+//         background-color: #0a0a0ad2;
+//     }
+// }
+
+/* Opera */
+// @media all and (resolution=0dpi) {
+//     .show-modal {
+//         background-color: #0a0a0ad2;
+//     }
+// }

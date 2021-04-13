@@ -1,14 +1,14 @@
 #game-page {
     #Game {
-
         .Room2 div {
+            // div = #Objects + #Decors
             img {
                 width: 15%;
+            }
 
-                &:hover {
-                    -webkit-filter: sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
-                    filter: sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
-                }
+            div[id^="link_"] img:hover {
+                -webkit-filter: sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
+                filter: sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
             }
 
             #Lit {
@@ -40,10 +40,10 @@
                 right: 6%;
                 top: 5%;
                 width: 10%;
-                // -webkit-filter: drop-shadow(5px 5px 5px $black);
-                // filter: drop-shadow(5px 5px 5px $black);
-                // -webkit-animation: brightness 3s infinite;
+                -webkit-filter: drop-shadow(2px 1px 3px $black);
+                filter: drop-shadow(5px 5px 5px $black);
             }
+
 
             #Tablette {
                 width: 11%;
@@ -55,14 +55,42 @@
                 left: 7%;
                 width: 10%;
             }
+
+            #Etoiles {
+                top: .9%;
+                width: 31%;
+                -webkit-animation: rihanna 5s infinite;
+                animation: rihanna 8s infinite;
+            }
+
+            @keyframes rihanna {
+
+                0%,
+                100% {
+                    -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
+                }
+
+                50% {
+                    -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
+                }
+            }
+
+            @-webkit-keyframes rihanna {
+
+                0%,
+                100% {
+                    -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
+                    filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
+                }
+
+                50% {
+                    -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
+                    filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
+                }
+            }
         }
     }
 }
-
-// @-webkit-keyframes brightness {
-//   0%, 100%  { -webkit-filter: brightness(0px); }
-//   50% { -webkit-filter: brightness(10px); }
-// }
 
 // PUZZLE https://codepen.io/nushysc/pen/dypOLzO
 // https://codepen.io/aneesdhansey/pen/oNzQjwL

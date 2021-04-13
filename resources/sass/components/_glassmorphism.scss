@@ -6,19 +6,15 @@
 
 // Effet de miroir
 .glass-effect {
-	-webkit-box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
-	box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
-	-webkit-backdrop-filter: blur(1.2rem);
-	backdrop-filter: blur(1.2rem);
+    -webkit-box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur(1.2rem);
+    backdrop-filter: blur(1.2rem);
 }
 
 // Dégradé de couleurs
-$white-degraded: linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
-$black-degraded: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
-$cyan_blue-degraded: linear-gradient(298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57%);
-$cyan_purple-degraded: linear-gradient(298.05deg, rgba(172, 0, 255, 0.1924) 4.34%, rgba(0, 231, 236, 0.296) 93.57%);
-$yellow-degraded: linear-gradient(298.05deg, rgba(249, 254, 26, 0.296) 4.34%, rgba(231, 236, 0, 0.185) 93.57%);
-
-
-// -moz-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
-// -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
+$white-degraded: (298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
+$black-degraded: (298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
+$cyan_blue-degraded: (298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57%);
+$cyan_purple-degraded: (298.05deg, rgba(172, 0, 255, 0.1924) 4.34%, rgba(0, 231, 236, 0.296) 93.57%);
+$yellow-degraded: (298.05deg, rgba(249, 254, 26, 0.296) 4.34%, rgba(231, 236, 0, 0.185) 93.57%);

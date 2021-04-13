@@ -1,84 +1,108 @@
 #story {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	position: relative;
-	div {
-		-ms-flex-preferred-size: 50%;
-		flex-basis: 50%;
-	}
-	.story-informations {
-		margin: 0 auto;
-		.story-items {
-			font-weight: bold;
-			margin-top: 4rem;
-			display: -ms-grid;
-			display: grid;
-			-ms-grid-columns: 1fr 0.625rem 1fr;
-			grid-template-columns: repeat(2, 1fr);
-			grid-gap: 0.625rem;
-			grid-auto-rows: minmax(3.75rem, auto);
-			div, div::before {
-				display:inline-block;
-				vertical-align: middle;
-				position: relative;
-			}
-			div {
-				padding-left: 1rem;
-				p {
-					margin: .2rem 0;
-					&:nth-child(1) {
-						color: $yellow;
-					}
-					&:nth-child(2) {
-						color: $white;
-					}
-				}
-				&::before {
-					width: 0.3125rem;
-					height: 2.15rem;
-					background: $white-degraded;
-					content:"";
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					left: 0;
-				}
-			}
-		}
-	}
-	.story-illustration {
-		position: absolute;
-		right: -5%;
-		-webkit-transform: translateX(-5%);
-		-ms-transform: translateX(-5%);
-		transform: translateX(-5%);
-		z-index: -5;
-		img {
-			position: relative;
-			max-width: 28.313;
-			max-height: 42.688;
-		}
-		.circle-yellow {
-			width: 20rem;
-			height: 20rem;
-			border: 1rem solid $yellow-degraded;
-			background: $yellow-degraded;
-			position: absolute;
-			bottom: 5%;
-			-webkit-transform: translateY(5%);
-			-ms-transform: translateY(5%);
-			transform: translateY(5%);
-			right: -15%;
-			-webkit-transform: translateX(-15%);
-			-ms-transform: translateX(-15%);
-			transform: translateX(-15%);
-			z-index: 1;
-		}
-	}
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+
+    div {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+
+    .story-informations {
+        margin: 0 auto;
+
+        .story-items {
+            font-weight: bold;
+            margin-top: 4rem;
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 0.625rem 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.625rem;
+            grid-auto-rows: minmax(3.75rem, auto);
+
+            div,
+            div::before {
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+            }
+
+            div {
+                padding-left: 1rem;
+
+                p {
+                    margin: .2rem 0;
+
+                    &:nth-child(1) {
+                        color: $yellow;
+                    }
+
+                    &:nth-child(2) {
+                        color: $white;
+                    }
+                }
+
+                &::before {
+                    width: 0.3125rem;
+                    height: 2.15rem;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    // Glassmorphism
+                    background: $white-degraded;
+                    background-image: -webkit-linear-gradient($white-degraded);
+                    background-image: -moz-linear-gradient($white-degraded);
+                    background-image: -o-linear-gradient($white-degraded);
+                    background-image: linear-gradient($white-degraded);
+                }
+            }
+        }
+    }
+
+    .story-illustration {
+        position: absolute;
+        right: -5%;
+        -webkit-transform: translateX(-5%);
+        -ms-transform: translateX(-5%);
+        transform: translateX(-5%);
+        z-index: -5;
+
+        img {
+            position: relative;
+            max-width: 28.313;
+            max-height: 42.688;
+        }
+
+        .circle-yellow {
+            width: 20rem;
+            height: 20rem;
+            border: 1rem solid $yellow-degraded; 
+			// Glassmorphism
+            background: $yellow-degraded;
+            background-image: -webkit-linear-gradient($yellow-degraded);
+            background-image: -moz-linear-gradient($yellow-degraded);
+            background-image: -o-linear-gradient($yellow-degraded);
+            background-image: linear-gradient($yellow-degraded);
+			// Fin
+            position: absolute;
+            bottom: 5%;
+            -webkit-transform: translateY(5%);
+            -ms-transform: translateY(5%);
+            transform: translateY(5%);
+            right: -15%;
+            -webkit-transform: translateX(-15%);
+            -ms-transform: translateX(-15%);
+            transform: translateX(-15%);
+            z-index: 1;
+        }
+    }
 }

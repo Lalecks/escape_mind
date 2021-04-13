@@ -13,17 +13,19 @@
 </header>
 
 <main id="Main" role="main">
-    <div id="Cinematic" class="Cinematic">
-        <!--Cinematic-->
-    </div>
-    <div id="Game" class="Game">
-        <div id="Background">
+    <section id="Cinematic" class="Cinematic">
+        <!-- Cinematic -->
+    </section>
+    <section id="Game" class="Game">
+        <!--Jeu -->
+        <div id="Area">
             <div id="Objects"></div>
+            <div id="Decors"></div>
         </div>
-    </div>
-    <div id="Interface" class="Interface">
-        <!--Timer-->
-    </div>
+    </section>
+    <section id="Interface" class="Interface">
+        <!-- Timer -->
+    </section>
 </main>
 
 

@@ -2,13 +2,6 @@
 // Task bar
 
 #game-page {
-    // #HeaderLogo {
-    //     width: 5rem;
-    //     margin: 0 4%;
-    //     opacity: 75%;
-    // }
-
-
     #Game {
         position: relative;
         width: 100%;
@@ -18,22 +11,27 @@
             min-height: 100%;
             width: 100%;
             height: 100%;
-            // position: fixed;
             z-index: -4;
-            // object-fit: fill;
         }
 
-        #Objects div {
+        #Objects div,
+        #Decors div {
             img {
                 position: absolute;
                 bottom: 0;
                 height: auto;
                 background-size: cover;
-                transition: .3s ease-in-out;
                 -webkit-transition: .3s ease-in-out;
-                -webkit-filter: drop-shadow(.01rem .01rem .01rem &black);
-                filter: drop-shadow(.01rem .01rem .01rem &black);
+                -o-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+                // pointer-events: none; // Empecher la selection d'un objet
             }
+        }
+
+        #Objects div {
+            -webkit-transition: .3s ease-in-out;
+            -webkit-filter: drop-shadow(.01rem .01rem .01rem &black);
+            filter: drop-shadow(.01rem .01rem .01rem &black);
         }
     }
 }
