@@ -1,14 +1,23 @@
+/**
+ *
+ * Appel du JavaScript
+ *
+ **/
+
 /*-------- Generic --------*/
 require('./generic/jquery-2.1.4.min');
 
-
 /*-------- Game --------*/
 if (document.getElementById("game-page")) {
-    // require('./game/fullscreen');
-    require('./game/cinematic');
+    /* Room functionnment */
     require('./game/room_management');
-    require('./game/zoom');
-    // require('./layouts/game');
+    /* Cinematics */
+    require('./game/cinematic');
+    require('./game/video_player');
+    /* Components */
+    require('./game/components/object_modal');
+    require('./game/components/zoom');
+    // require('./game/fullscreen');
 }
 
 /*--------  Packages --------*/
@@ -18,13 +27,11 @@ require('./package/rellax.min');
 
 /*-------- Layouts --------*/
 require('./layouts/detecting_mobile');
-
-// require('./layouts/scrollBar');
 require('./layouts/mouse');
 
-
-/*--------  Components --------*/
-require('./components/loader');
-require('./components/modal'); // Avant custom_packages.js pour fonctionner
-require('./components/video_player');
-require('./components/custom_package');
+/*--------  Web Components --------*/
+require('./web_components/loader');
+// require('./components/scrollBar');
+require('./web_components/modal'); // Avant custom_packages.js pour fonctionner
+require('./web_components/custom_package');
+// require('./components/divers');

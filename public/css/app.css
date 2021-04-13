@@ -1481,7 +1481,6 @@ html {
 #game-page #Game #Objects a img {
   position: absolute;
   bottom: 0;
-  width: 20%;
   height: auto;
   background-size: cover;
 }
@@ -2326,6 +2325,10 @@ html {
   font-size: 1.6rem;
 }
 
+#game-page #Game #Objects a img {
+  width: 20%;
+}
+
 #game-page #Game #Objects a #Casettes {
   left: 40%;
   bottom: 4%;
@@ -2357,6 +2360,51 @@ html {
 #game-page #Game #Objects a #Ramdam {
   top: 4%;
   left: 34%;
+}
+
+#game-page #Game #Objects a img {
+  width: 15%;
+}
+
+#game-page #Game #Objects a #Lit {
+  right: 29%;
+  top: 3%;
+  width: 40%;
+}
+
+#game-page #Game #Objects a #Peluche {
+  left: 26%;
+  bottom: 30%;
+  width: 13%;
+}
+
+#game-page #Game #Objects a #Bougie {
+  bottom: 56%;
+  left: 5%;
+  width: 3%;
+}
+
+#game-page #Game #Objects a #Pile {
+  bottom: 10%;
+  right: 5%;
+  width: 3%;
+}
+
+#game-page #Game #Objects a #Poster_Robot {
+  right: 6%;
+  top: 5%;
+  width: 10%;
+}
+
+#game-page #Game #Objects a #Tablette {
+  width: 11%;
+  left: 18%;
+  bottom: 12%;
+}
+
+#game-page #Game #Objects a #Puzzle {
+  left: 7%;
+  width: 10%;
 }
 
 /* Extra small devices (phones, 600px and down) 576px*/

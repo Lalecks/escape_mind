@@ -4,7 +4,7 @@
  *
  **/
 
-import createTimer from "./timer";
+import createTimer from "./components/timer";
 
 // let objects = [
 //     ["Casettes", 1],
@@ -14,16 +14,20 @@ import createTimer from "./timer";
 //     ["Radio", 1],
 //     ["Ramdam", 1]
 // ];
+//let actualRoom = 1;
 
 let objects = [
-    ["Casettes", 1],
-    ["Coffre_Fort", 1],
-    ["Jukebox", 1],
-    ["Lecteur", 1],
-    ["Radio", 1],
-    ["Ramdam", 1]
+    ["Lit", 2],
+    ["Peluche", 2],
+    ["Bougie", 2],
+    ["Puzzle", 2],
+    ["Poster_Robot", 2],
+    ["Tablette", 2],
+    ["Pile", 2],
+    ["Pile", 2],
+    ["Pile", 2],
 ];
-let actualRoom = 1;
+let actualRoom = 2;
 
 export default function createGame() {
     createRoom();
@@ -35,8 +39,9 @@ function createRoom() {
     let bg = document.createElement("img");
     bg.id = "bg";
     // bg.style="position:fixed; bottom:0px; z-index=0;";
-    bg.src = "./resources/game/rooms/Room1.png";
-
+    //bg.src = "./resources/game/rooms/Room1.png";
+    // bg.src = "./resources/game/Chambre_tous_objets.png";
+    bg.src = "./resources/game/rooms/Room2.png";
 
     //INIT OBJETS DE LA SALLE ACTUEL
     for (let i = 0; i < objects.length; i++) {
