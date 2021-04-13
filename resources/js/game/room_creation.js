@@ -6,6 +6,15 @@
 
 import createTimer from "./timer";
 
+// let objects = [
+//     ["Casettes", 1],
+//     ["Coffre_Fort", 1],
+//     ["Jukebox", 1],
+//     ["Lecteur", 1],
+//     ["Radio", 1],
+//     ["Ramdam", 1]
+// ];
+
 let objects = [
     ["Casettes", 1],
     ["Coffre_Fort", 1],
