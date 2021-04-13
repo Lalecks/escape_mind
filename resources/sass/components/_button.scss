@@ -6,74 +6,82 @@
 
 /* Bouton générale */
 .btn {
-	font-family: $font-logo;
-	text-transform: lowercase;
-	border-radius: 30rem;
-	padding: 1rem 3.5rem;
-	color: $white;
-	display: inline-block;    
-	border: .2rem solid $black;
-	position: relative;
-	overflow: hidden;
-	z-index: 1;
-	line-height: 100%;
-	// Permet l'animation du btn
-	background-size: 200% auto;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
-	-webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	-o-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    font-family: $font-logo;
+    text-transform: lowercase;
+    border-radius: 30rem;
+    padding: 1rem 3.5rem;
+    color: $white;
+    display: inline-block;
+    border: .2rem solid $black;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    line-height: 100%;
+    // Permet l'animation du btn
+    background-size: 200% auto;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -o-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-.btn.focus, .btn:focus, .btn:hover {
-	background: $black-degraded;
-	background-position: right center;
-	// Impression qu'on appuie sur le btn
-	-webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0,.2), 0 4px 20px 0 rgba(0,0,0,.1);
-	box-shadow: 0 4px 10px 0 rgba(0,0,0,.2), 0 4px 20px 0 rgba(0,0,0,.1);
-	color: $white;
-	border: .2rem solid $white;
+.btn.focus,
+.btn:focus,
+.btn:hover {
+    // Glassmorphism
+    background-image: -webkit-linear-gradient($black-degraded);
+    background-image: -moz-linear-gradient($black-degraded);
+    background-image: -o-linear-gradient($black-degraded);
+    background-image: linear-gradient($black-degraded);
+    background-position: right center;
+    // Impression qu'on appuie sur le btn
+    -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2), 0 4px 20px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2), 0 4px 20px 0 rgba(0, 0, 0, .1);
+    color: $white;
+    border: .2rem solid $white;
 }
 
 /* Propriétés de btn */
 // Primaire - Primary
 .btn-outline-primary {
-	// Contour/Bordure
-	color: $black;
+    // Contour/Bordure
+    color: $black;
 }
 
 .btn-fill-primary {
-	// Plein/Remplie
-	color: $white;
-	background-color: $black;
-	&:hover{
-		background: $black;
-	}
-	// color: $white;
-	// background: darken($body-bg, 50%);
-	// border: .2rem solid transparent;
-	// &:before {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: calc(-100% - 30px);
-	// 	width: calc(100% + 20px);
-	// 	height: 100%;
-	// 	z-index: -1;
-	// 	background-color: $white;
-	// 	transform: skew(-22deg);
-	// 	transition: all 800ms ease-out;
-	// }
-	// &:hover {
-	// 	color: $body-bg;
-	// 	border: .2rem solid transparent;
-	// 	&:before {
-	// 		content: '';
-	// 		left: -10px;
-	// 	}
-	// }
+    // Plein/Remplie
+    color: $white;
+    background-color: $black;
+
+    &:hover {
+        background: $black;
+    }
+
+    // color: $white;
+    // background: darken($body-bg, 50%);
+    // border: .2rem solid transparent;
+    // &:before {
+    // 	content: '';
+    // 	position: absolute;
+    // 	top: 0;
+    // 	left: calc(-100% - 30px);
+    // 	width: calc(100% + 20px);
+    // 	height: 100%;
+    // 	z-index: -1;
+    // 	background-color: $white;
+    // 	transform: skew(-22deg);
+    // 	transition: all 800ms ease-out;
+    // }
+    // &:hover {
+    // 	color: $body-bg;
+    // 	border: .2rem solid transparent;
+    // 	&:before {
+    // 		content: '';
+    // 		left: -10px;
+    // 	}
+    // }
 }
 
 // Secondaire - Secondary
@@ -84,96 +92,116 @@
 /* Bouton générale */
 // Effet de glitch
 .btn-animation_glitch {
-	display: block;
-	position: relative;
-	// background: none;
-	&:before, 
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		padding: 8px 0;
-		width: 100%;
-		-webkit-clip: rect(0px, 0px, 0px, 0px);
-		clip: rect(0px, 0px, 0px, 0px);
-		background: $black;
-	}
+    display: block;
+    position: relative;
 
-	&:before {
-		left: -3px;
-		top: -2px;
-		text-shadow: 2px 0 $black;
-		box-shadow: 2px 0 $black;
-	}
+    // background: none;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 8px 0;
+        width: 100%;
+        -webkit-clip: rect(0px, 0px, 0px, 0px);
+        clip: rect(0px, 0px, 0px, 0px);
+        background: $black;
+    }
 
-	&:after {
-		left: 2px;
-		bottom: -2px;
-		text-shadow: -.1rem 0 $black;
-		box-shadow: -.1rem 0 $black;
-	}
-	&:hover:before {
-		animation: glitch-test 1.5s infinite linear alternate-reverse;
-	}
-	&:hover:after {
-		animation: glitch-test 2s infinite linear alternate;
-	}
+    &:before {
+        left: -3px;
+        top: -2px;
+        text-shadow: 2px 0 $black;
+        box-shadow: 2px 0 $black;
+    }
+
+    &:after {
+        left: 2px;
+        bottom: -2px;
+        text-shadow: -.1rem 0 $black;
+        box-shadow: -.1rem 0 $black;
+    }
+
+    &:hover:before {
+        animation: glitch-test 1.5s infinite linear alternate-reverse;
+    }
+
+    &:hover:after {
+        animation: glitch-test 2s infinite linear alternate;
+    }
 }
 
 @keyframes glitch-test {
-	0% {
-		clip: rect(-3px, 600px, 0px, 0px);
-	}
-	5.88235% {
-		clip: rect(0px, 600px, 0px, 0px);
-	}
-	11.76471% {
-		clip: rect(-3px, 600px, 0px, 0px);
-	}
-	17.64706% {
-		clip: rect(-3px, 600px, 0px, 0px);
-	}
-	23.52941% {
-		clip: rect(100px, 600px, 100px, 0px);
-	}
-	29.41176% {
-		clip: rect(0px, 600px, 600px, 0px);
-	}
-	35.29412% {
-		clip: rect(100px, 600px, 0px, 0px);
-	}
-	41.17647% {
-		clip: rect(0px, 600px, 600px, 0px);
-	}
-	47.05882% {
-		clip: rect(100px, 600px, 0px, 0px);
-	}
-	52.94118% {
-		clip: rect(-3px, 600px, 0px, 0px);
-	}
-	58.82353% {
-		clip: rect(100px, 450px,100px, 0px);
-	}
-	64.70588% {
-		clip: rect(0px, 450px, 0px, 0px);
-	}
-	70.58824% {
-		clip: rect(100px, 450px, 100px, 0px);
-	}
-	76.47059% {
-		clip: rect(0px, 450px, 0px, 0px);
-	}
-	82.35294% {
-		clip: rect(0px, 450px, 0px, 0px);
-	}
-	88.23529% {
-		clip: rect(0px, 450px, 0px, 0px);
-	}
-	94.11765% {
-		clip: rect(0px, 450px, 0px, 0px);
-	}
-	100% {
-		clip: rect(0px, 450px, 0px, 0px);
-	}
+    0% {
+        clip: rect(-3px, 600px, 0px, 0px);
+    }
+
+    5.88235% {
+        clip: rect(0px, 600px, 0px, 0px);
+    }
+
+    11.76471% {
+        clip: rect(-3px, 600px, 0px, 0px);
+    }
+
+    17.64706% {
+        clip: rect(-3px, 600px, 0px, 0px);
+    }
+
+    23.52941% {
+        clip: rect(100px, 600px, 100px, 0px);
+    }
+
+    29.41176% {
+        clip: rect(0px, 600px, 600px, 0px);
+    }
+
+    35.29412% {
+        clip: rect(100px, 600px, 0px, 0px);
+    }
+
+    41.17647% {
+        clip: rect(0px, 600px, 600px, 0px);
+    }
+
+    47.05882% {
+        clip: rect(100px, 600px, 0px, 0px);
+    }
+
+    52.94118% {
+        clip: rect(-3px, 600px, 0px, 0px);
+    }
+
+    58.82353% {
+        clip: rect(100px, 450px, 100px, 0px);
+    }
+
+    64.70588% {
+        clip: rect(0px, 450px, 0px, 0px);
+    }
+
+    70.58824% {
+        clip: rect(100px, 450px, 100px, 0px);
+    }
+
+    76.47059% {
+        clip: rect(0px, 450px, 0px, 0px);
+    }
+
+    82.35294% {
+        clip: rect(0px, 450px, 0px, 0px);
+    }
+
+    88.23529% {
+        clip: rect(0px, 450px, 0px, 0px);
+    }
+
+    94.11765% {
+        clip: rect(0px, 450px, 0px, 0px);
+    }
+
+    100% {
+        clip: rect(0px, 450px, 0px, 0px);
+    }
 }

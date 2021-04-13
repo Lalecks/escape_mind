@@ -58,7 +58,6 @@
                     bottom: 0;
                     left: 0;
                     // Glassmorphism
-                    background: $white-degraded;
                     background-image: -webkit-linear-gradient($white-degraded);
                     background-image: -moz-linear-gradient($white-degraded);
                     background-image: -o-linear-gradient($white-degraded);
@@ -85,9 +84,8 @@
         .circle-yellow {
             width: 20rem;
             height: 20rem;
-            border: 1rem solid $yellow-degraded; 
+            border: 1rem solid linear-gradient($yellow-degraded); 
 			// Glassmorphism
-            background: $yellow-degraded;
             background-image: -webkit-linear-gradient($yellow-degraded);
             background-image: -moz-linear-gradient($yellow-degraded);
             background-image: -o-linear-gradient($yellow-degraded);

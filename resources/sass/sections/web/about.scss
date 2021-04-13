@@ -98,6 +98,7 @@
                         transform: scale(1.25);
                         // L'image s'assombrit
                         -webkit-filter: brightness(1%);
+                        filter: brightness(1%);
                         // La transition s'applique à la fois sur la largeur et la hauteur
                         -webkit-transition: all 300ms ease-in-out; // Safari et Chrome
                         -moz-transition: all 300ms ease-in-out; // Firefox

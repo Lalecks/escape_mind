@@ -41,7 +41,6 @@ export default function createGame() {
 }
 
 function createRoom() {
-    // parents du bg
     let parent_obj = document.getElementById("Objects");
     let parent_decor = document.getElementById("Decors");
     // area

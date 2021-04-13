@@ -7,7 +7,7 @@
                 width: 15%;
             }
 
-            div[id^="link_"] img:hover {
+            [id^="link_"] img:hover {
                 -webkit-filter: sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
                 filter: sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
             }

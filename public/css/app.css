@@ -1534,7 +1534,7 @@ html {
 .btn.focus,
 .btn:focus,
 .btn:hover {
-  background: 298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%;
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
   background-position: right center;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
   color: #ffffff;
@@ -1993,7 +1993,6 @@ html {
   top: 0;
   bottom: 0;
   left: 0;
-  background: 298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%;
   background-image: linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
 }
 
@@ -2013,8 +2012,7 @@ html {
 #story .story-illustration .circle-yellow {
   width: 20rem;
   height: 20rem;
-  border: 1rem solid 298.05deg, rgba(249, 254, 26, 0.296) 4.34%, rgba(231, 236, 0, 0.185) 93.57%;
-  background: 298.05deg, rgba(249, 254, 26, 0.296) 4.34%, rgba(231, 236, 0, 0.185) 93.57%;
+  border: 1rem solid linear-gradient(298.05deg, rgba(249, 254, 26, 0.296) 4.34%, rgba(231, 236, 0, 0.185) 93.57%);
   background-image: linear-gradient(298.05deg, rgba(249, 254, 26, 0.296) 4.34%, rgba(231, 236, 0, 0.185) 93.57%);
   position: absolute;
   bottom: 5%;
@@ -2044,7 +2042,7 @@ html {
 
 #rank ::-webkit-scrollbar-thumb {
   background-color: grey;
-  -webkit-box-shadow: inset 0 0 0.375rem grey;
+  box-shadow: inset 0 0 0.375rem grey;
 }
 
 #rank ::-webkit-scrollbar-thumb:hover {
@@ -2222,7 +2220,7 @@ html {
 
 #about .team .team-img-role div:hover img {
   transform: scale(1.25);
-  -webkit-filter: brightness(1%);
+  filter: brightness(1%);
   transition: all 300ms ease-in-out;
 }
 
@@ -2344,7 +2342,7 @@ html {
 
 #game-page #Game #Objects div {
   transition: 0.3s ease-in-out;
-  filter: drop-shadow(0.01rem 0.01rem 0.01rem #game-page #Game #Objects div black);
+  filter: drop-shadow(0.01rem 0.01rem 0.01rem #000000);
 }
 
 #game-page #Game .Room1 {
@@ -2396,7 +2394,7 @@ html {
   width: 15%;
 }
 
-#game-page #Game .Room2 div div[id^=link_] img:hover {
+#game-page #Game .Room2 div [id^=link_] img:hover {
   filter: sepia(60%) drop-shadow(0.03rem 0.03rem 0.03rem #000000);
 }
 

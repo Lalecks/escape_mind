@@ -32,8 +32,8 @@
             -webkit-transition: .3s ease-in-out;
             -o-transition: .3s ease-in-out;
             transition: .3s ease-in-out;
-            -webkit-filter: drop-shadow(.01rem .01rem .01rem &black);
-            filter: drop-shadow(.01rem .01rem .01rem &black);
+            -webkit-filter: drop-shadow(.01rem .01rem .01rem $black);
+            filter: drop-shadow(.01rem .01rem .01rem $black);
         }
     }
 }
