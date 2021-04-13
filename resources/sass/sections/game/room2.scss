@@ -1,40 +1,56 @@
 #game-page {
     #Game {
-        #Objects a {
+
+        .Room2 div {
             img {
                 width: 15%;
+
+                &:hover {
+                    -webkit-filter: sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
+                    filter: sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
+                }
             }
+
             #Lit {
                 right: 29%;
                 top: 3%;
                 width: 40%;
 
             }
+
             #Peluche {
                 left: 26%;
                 bottom: 30%;
                 width: 13%;
             }
+
             #Bougie {
                 bottom: 56%;
                 left: 5%;
                 width: 3%;
             }
+
             #Pile {
                 bottom: 10%;
                 right: 5%;
                 width: 3%;
             }
+
             #Poster_Robot {
                 right: 6%;
                 top: 5%;
                 width: 10%;
+                // -webkit-filter: drop-shadow(5px 5px 5px $black);
+                // filter: drop-shadow(5px 5px 5px $black);
+                // -webkit-animation: brightness 3s infinite;
             }
+
             #Tablette {
                 width: 11%;
                 left: 18%;
                 bottom: 12%;
             }
+
             #Puzzle {
                 left: 7%;
                 width: 10%;
@@ -42,6 +58,11 @@
         }
     }
 }
+
+// @-webkit-keyframes brightness {
+//   0%, 100%  { -webkit-filter: brightness(0px); }
+//   50% { -webkit-filter: brightness(10px); }
+// }
 
 // PUZZLE https://codepen.io/nushysc/pen/dypOLzO
 // https://codepen.io/aneesdhansey/pen/oNzQjwL

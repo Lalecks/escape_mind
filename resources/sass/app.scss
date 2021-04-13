@@ -1,4 +1,5 @@
 //sass --watch resources/sass:public/css/sass --style compressed
+// npm run watch 
 
 /*-------- Variables --------*/
 @import 'base/variables';
@@ -19,11 +20,9 @@
 @import 'layout/general/mouse';
 @import 'layout/general/errors';
 // Web part
-@import 'layout/web/header';
 @import 'layout/web/footer';
 @import 'layout/web/sidebar';
 // Game part
-@import 'layout/game/room_template';
 @import 'layout/game/timer';
 // @import 'layout/game/drag';
 // @import 'layout/game/video_player';
@@ -45,6 +44,7 @@
 @import 'sections/web/about';
 @import 'sections/web/contact';
 // Game part
+@import 'sections/game/room_template';
 @import 'sections/game/room1';
 @import 'sections/game/room2';
 @import 'sections/game/room3';
