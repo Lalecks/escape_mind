@@ -55,7 +55,6 @@
             -webkit-backdrop-filter: blur(4rem);
             backdrop-filter: blur(4rem);
             // Glassmorphism
-            background: $cyan_blue-degraded;
             background-image: -webkit-linear-gradient($cyan_blue-degraded);
             background-image: -moz-linear-gradient($cyan_blue-degraded);
             background-image: -o-linear-gradient($cyan_blue-degraded);
@@ -71,7 +70,6 @@
                 border-radius: 50%;
                 overflow: hidden;
                 // Glassmorphism
-                background: $cyan_blue-degraded;
                 background-image: -webkit-linear-gradient($cyan_blue-degraded);
                 background-image: -moz-linear-gradient($cyan_blue-degraded);
                 background-image: -o-linear-gradient($cyan_blue-degraded);

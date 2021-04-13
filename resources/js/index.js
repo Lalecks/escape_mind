@@ -7,6 +7,13 @@
 /*-------- Generic --------*/
 require('./generic/jquery-2.1.4.min');
 
+/*--------  Packages --------*/
+require('./package/rellax.min');
+
+/*-------- Layouts --------*/
+require('./layouts/detecting_mobile');
+require('./layouts/mouse');
+
 /*-------- Game --------*/
 if (document.getElementById("game-page")) {
     /* Room functionnment */
@@ -19,15 +26,6 @@ if (document.getElementById("game-page")) {
     require('./game/components/zoom');
     // require('./game/fullscreen');
 }
-
-/*--------  Packages --------*/
-require('./package/rellax.min');
-// require('paper');
-// require('./package/simplex-noise.min');
-
-/*-------- Layouts --------*/
-require('./layouts/detecting_mobile');
-require('./layouts/mouse');
 
 /*--------  Web Components --------*/
 require('./web_components/loader');

@@ -1,6 +1,7 @@
 #game-page {
     #Game {
         .Room2 div {
+
             // div = #Objects + #Decors
             img {
                 width: 15%;
@@ -63,19 +64,21 @@
                 animation: rihanna 8s infinite;
             }
 
-            @keyframes rihanna {
+            @-webkit-keyframes rihanna {
 
                 0%,
                 100% {
                     -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
+                    filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
                 }
 
                 50% {
                     -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
+                    filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
                 }
             }
 
-            @-webkit-keyframes rihanna {
+            @keyframes rihanna {
 
                 0%,
                 100% {

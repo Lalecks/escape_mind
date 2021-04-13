@@ -69,7 +69,7 @@
 		<!-- Souris -->
 		<div id="souris" style="opacity: 0">
 			<div class="cursor cursor--small"></div>
-			<canvas class="cursor cursor--canvas" resize="true"></canvas>
+			<canvas class="cursor cursor--canvas" resize="false"></canvas>
 		</div>
 
 		{{--

@@ -16,7 +16,6 @@
     opacity: 0;
     visibility: hidden;
     // Glassmorphism
-    background: $black-degraded;
     background-image: -webkit-linear-gradient($black-degraded);
     background-image: -moz-linear-gradient($black-degraded);
     background-image: -o-linear-gradient($black-degraded);
@@ -56,7 +55,6 @@
     border-radius: 0.5rem;
     overflow: hidden;
     // Glassmorphism
-    background: $cyan_blue-degraded;
     background-image: -webkit-linear-gradient($cyan_blue-degraded);
     background-image: -moz-linear-gradient($cyan_blue-degraded);
     background-image: -o-linear-gradient($cyan_blue-degraded);
