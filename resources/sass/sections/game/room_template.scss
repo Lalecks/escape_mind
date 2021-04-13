@@ -24,7 +24,7 @@
                 -webkit-transition: .3s ease-in-out;
                 -o-transition: .3s ease-in-out;
                 transition: .3s ease-in-out;
-                pointer-events: none; // Empecher la selection d'un objet
+                // pointer-events: none; // Empecher la selection d'un objet, sauf que le hover fonctionne plus après
             }
         }
 
@@ -32,8 +32,6 @@
             -webkit-transition: .3s ease-in-out;
             -o-transition: .3s ease-in-out;
             transition: .3s ease-in-out;
-            -webkit-filter: drop-shadow(.01rem .01rem .01rem $black);
-            filter: drop-shadow(.01rem .01rem .01rem $black);
         }
     }
 }

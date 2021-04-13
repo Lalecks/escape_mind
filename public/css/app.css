@@ -2337,12 +2337,10 @@ html {
   height: auto;
   background-size: cover;
   transition: 0.3s ease-in-out;
-  pointer-events: none;
 }
 
 #game-page #Game #Objects div {
   transition: 0.3s ease-in-out;
-  filter: drop-shadow(0.01rem 0.01rem 0.01rem #000000);
 }
 
 #game-page #Game .Room1 {
@@ -2427,6 +2425,11 @@ html {
   top: 5%;
   width: 10%;
   filter: drop-shadow(5px 5px 5px #000000);
+  transition: 0.3s ease-in-out;
+}
+
+#game-page #Game .Room2 div #Poster_Robot:hover {
+  filter: sepia(60%) drop-shadow(5px 5px 5px #000000);
 }
 
 #game-page #Game .Room2 div #Tablette {
