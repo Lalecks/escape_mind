@@ -63,25 +63,10 @@
                     top: 4%;
                     left: 17%;
                     width: 8%;
-                    -webkit-animation: 15s alexandre infinite;
-                    animation: 15s alexandre infinite;
+                    -webkit-animation: 8s pommeray infinite;
+                    animation: 8s pommeray infinite;
                 }
             }
         }
-    }
-}
-
-@keyframes alexandre {
-
-    0%,
-    100% {
-        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white), saturate(180%);
-        filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white), saturate(180%);
-    }
-
-    50% {
-        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white), saturate(200%);
-        filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white) saturate(200%);
-        ;
     }
 }

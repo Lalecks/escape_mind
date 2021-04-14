@@ -2347,6 +2347,10 @@ html {
   transition: 0.3s ease-in-out;
 }
 
+#game-page #Game #Decors img {
+  pointer-events: none;
+}
+
 #game-page #Game .Room1 {
   filter: saturate(140%);
 }
@@ -2404,28 +2408,8 @@ html {
   top: 4%;
   left: 17%;
   width: 8%;
-  -webkit-animation: 15s alexandre infinite;
-  animation: 15s alexandre infinite;
-}
-
-@-webkit-keyframes alexandre {
-  0%, 100% {
-    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff), saturate(180%);
-  }
-
-  50% {
-    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
-  }
-}
-
-@keyframes alexandre {
-  0%, 100% {
-    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff), saturate(180%);
-  }
-
-  50% {
-    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
-  }
+  -webkit-animation: 8s pommeray infinite;
+  animation: 8s pommeray infinite;
 }
 
 #game-page #Game .Room2 div img {
@@ -2492,11 +2476,11 @@ html {
 
 @-webkit-keyframes rihanna {
   0%, 100% {
-    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff);
+    -webkit-filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff);
   }
 
   50% {
-    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff);
+    -webkit-filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff);
   }
 }
 

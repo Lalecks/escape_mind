@@ -4,12 +4,10 @@
     0%,
     100% {
         -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
-        filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
     }
 
     50% {
         -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
-        filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
     }
 }
 
@@ -17,30 +15,24 @@
 
     0%,
     100% {
-        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
         filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
     }
 
     50% {
-        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
         filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
     }
 }
-
 
 // Animations de saturation 
 @-webkit-keyframes pommeray {
 
     0%,
     100% {
-        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white), saturate(180%);
-        filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white), saturate(180%);
+        filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff), saturate(180%);
     }
 
     50% {
-        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white), saturate(200%);
-        filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white) saturate(200%);
-        ;
+        filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
     }
 }
 
@@ -48,13 +40,10 @@
 
     0%,
     100% {
-        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white), saturate(180%);
-        filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white), saturate(180%);
+        filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff), saturate(180%);
     }
 
     50% {
-        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white), saturate(200%);
-        filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white) saturate(200%);
-        ;
+        filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
     }
 }
