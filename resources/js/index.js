@@ -29,7 +29,7 @@ if (document.getElementById("game-page")) {
 
 /*--------  Web Components --------*/
 require('./web_components/loader');
-// require('./components/scrollBar');
+require('./web_components/scrollBar');
 require('./web_components/modal'); // Avant custom_packages.js pour fonctionner
 require('./web_components/custom_package');
-// require('./components/divers');
+require('./web_components/divers');

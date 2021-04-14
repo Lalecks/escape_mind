@@ -2007,8 +2007,6 @@ html {
 
 #story .story-illustration img {
   position: relative;
-  max-width: 28.313%;
-  max-height: 42.688%;
 }
 
 #story .story-illustration .circle-yellow {
@@ -2247,17 +2245,13 @@ html {
   flex-wrap: wrap;
 }
 
-#contact div {
-  padding: 0 2.5rem;
-}
-
 #contact .contact-center {
   display: flex;
   flex-wrap: wrap;
 }
 
 #contact .contact-center div {
-  flex-basis: 50%;
+  flex-basis: 45%;
 }
 
 #contact .contact-txt .media {

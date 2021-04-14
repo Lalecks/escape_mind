@@ -12,9 +12,9 @@
 	align-content: center;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	div {
-		padding: 0 2.5rem;
-	}
+	// div {
+	// 	padding: 0 2.5rem;
+	// }
 	.contact-center {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -23,7 +23,7 @@
 		flex-wrap: wrap;
 		div {
 			-ms-flex-preferred-size: 50%;
-			flex-basis: 50%;
+			flex-basis: 45%;
 		}
 	}
 	.contact-txt {
