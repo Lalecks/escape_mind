@@ -29,12 +29,15 @@ let object = [
 ];
 
 let decor = [
+    /* Room 1 */
+    ["Led", 1],
+    ["Panneau_neon", 1],
     /* Room 2 */
-    ["Etoiles",2],
+    ["Etoiles", 2],
 ];
 
 // Salle actuelle
-let actualRoom = 2;
+let actualRoom = 1;
 
 export default function createGame() {
     createRoom();

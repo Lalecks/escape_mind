@@ -37,17 +37,20 @@
 /*--------  Sections --------*/
 // @import 'sections/login';
 @import 'sections/loader';
-// Web part
+/* Web part */
 @import 'sections/web/home';
 @import 'sections/web/story';
 @import 'sections/web/rank';
 @import 'sections/web/about';
 @import 'sections/web/contact';
-// Game part
-@import 'sections/game/room_template';
-@import 'sections/game/room1';
-@import 'sections/game/room2';
-@import 'sections/game/room3';
+/* Game part */
+// Room
+@import 'sections/game/room/room_template';
+@import 'sections/game/room/room1';
+@import 'sections/game/room/room2';
+@import 'sections/game/room/room3';
+@import 'sections/game/room/room_animation';
+// Enigma
 
 // Responsive
 @import 'layout/web/responsive';

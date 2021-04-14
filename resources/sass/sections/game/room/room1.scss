@@ -1,0 +1,87 @@
+#game-page {
+    #Game {
+        .Room1 {
+            -webkit-filter: saturate(140%);
+            filter: saturate(140%);
+
+            div {
+                img {
+                    width: 20%;
+
+                    &:hover {
+                        -webkit-filter: saturate(180%) drop-shadow(.05rem .05rem 5rem $white);
+                        filter: saturate(180%) drop-shadow(.05rem .05rem 1rem $white);
+                    }
+                }
+            }
+
+            #Objects {
+                #Casettes {
+                    left: 40%;
+                    bottom: 4%;
+                    width: 8%;
+                }
+
+                #Coffre_Fort {
+                    left: 10%;
+                    bottom: 14%;
+                    width: 27%;
+                }
+
+                #Jukebox {
+                    right: 5%;
+                    bottom: 14%;
+                }
+
+                #Lecteur {
+                    left: 12%;
+                    bottom: 39%;
+                    width: 10%;
+                }
+
+                #Radio {
+                    right: 34%;
+                    bottom: 14%;
+                }
+
+                #Ramdam {
+                    top: 4%;
+                    left: 34%;
+                }
+            }
+
+            #Decors {
+                #Led {
+                    width: 7.7%;
+                    top: 3.9%;
+                    left: 3.8%;
+                    -webkit-animation: 8s pommeray infinite;
+                    animation: 8s pommeray infinite;
+                }
+
+                #Panneau_neon {
+                    top: 4%;
+                    left: 17%;
+                    width: 8%;
+                    -webkit-animation: 15s alexandre infinite;
+                    animation: 15s alexandre infinite;
+                }
+            }
+        }
+    }
+}
+
+@keyframes alexandre {
+
+    0%,
+    100% {
+        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white), saturate(180%);
+        filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white), saturate(180%);
+    }
+
+    50% {
+        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white), saturate(200%);
+        filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white) saturate(200%);
+        ;
+    }
+}

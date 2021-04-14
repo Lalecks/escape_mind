@@ -1868,6 +1868,8 @@ html {
   color: #fff;
 }
 
+/* Web part */
+
 /*----------------- Accueil -----------------*/
 
 #home {
@@ -2317,6 +2319,8 @@ html {
   font-size: 1.6rem;
 }
 
+/* Game part */
+
 #game-page #Game {
   position: relative;
   width: 100%;
@@ -2355,37 +2359,73 @@ html {
   filter: saturate(180%) drop-shadow(0.05rem 0.05rem 1rem #ffffff);
 }
 
-#game-page #Game .Room1 div #Casettes {
+#game-page #Game .Room1 #Objects #Casettes {
   left: 40%;
   bottom: 4%;
   width: 8%;
 }
 
-#game-page #Game .Room1 div #Coffre_Fort {
+#game-page #Game .Room1 #Objects #Coffre_Fort {
   left: 10%;
   bottom: 14%;
   width: 27%;
 }
 
-#game-page #Game .Room1 div #Jukebox {
+#game-page #Game .Room1 #Objects #Jukebox {
   right: 5%;
   bottom: 14%;
 }
 
-#game-page #Game .Room1 div #Lecteur {
+#game-page #Game .Room1 #Objects #Lecteur {
   left: 12%;
   bottom: 39%;
   width: 10%;
 }
 
-#game-page #Game .Room1 div #Radio {
+#game-page #Game .Room1 #Objects #Radio {
   right: 34%;
   bottom: 14%;
 }
 
-#game-page #Game .Room1 div #Ramdam {
+#game-page #Game .Room1 #Objects #Ramdam {
   top: 4%;
   left: 34%;
+}
+
+#game-page #Game .Room1 #Decors #Led {
+  width: 7.7%;
+  top: 3.9%;
+  left: 3.8%;
+  -webkit-animation: 8s pommeray infinite;
+  animation: 8s pommeray infinite;
+}
+
+#game-page #Game .Room1 #Decors #Panneau_neon {
+  top: 4%;
+  left: 17%;
+  width: 8%;
+  -webkit-animation: 15s alexandre infinite;
+  animation: 15s alexandre infinite;
+}
+
+@-webkit-keyframes alexandre {
+  0%, 100% {
+    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff), saturate(180%);
+  }
+
+  50% {
+    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
+  }
+}
+
+@keyframes alexandre {
+  0%, 100% {
+    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff), saturate(180%);
+  }
+
+  50% {
+    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
+  }
 }
 
 #game-page #Game .Room2 div img {
@@ -2396,31 +2436,31 @@ html {
   filter: sepia(60%) drop-shadow(0.03rem 0.03rem 0.03rem #000000);
 }
 
-#game-page #Game .Room2 div #Lit {
+#game-page #Game #Objects #Lit {
   right: 29%;
   top: 3%;
   width: 40%;
 }
 
-#game-page #Game .Room2 div #Peluche {
+#game-page #Game #Objects #Peluche {
   left: 26%;
   bottom: 30%;
   width: 13%;
 }
 
-#game-page #Game .Room2 div #Bougie {
+#game-page #Game #Objects #Bougie {
   bottom: 56%;
   left: 5%;
   width: 3%;
 }
 
-#game-page #Game .Room2 div #Pile {
+#game-page #Game #Objects #Pile {
   bottom: 10%;
   right: 5%;
   width: 3%;
 }
 
-#game-page #Game .Room2 div #Poster_Robot {
+#game-page #Game #Objects #Poster_Robot {
   right: 6%;
   top: 5%;
   width: 10%;
@@ -2428,22 +2468,22 @@ html {
   transition: 0.3s ease-in-out;
 }
 
-#game-page #Game .Room2 div #Poster_Robot:hover {
+#game-page #Game #Objects #Poster_Robot:hover {
   filter: sepia(60%) drop-shadow(5px 5px 5px #000000);
 }
 
-#game-page #Game .Room2 div #Tablette {
+#game-page #Game #Objects #Tablette {
   width: 11%;
   left: 18%;
   bottom: 12%;
 }
 
-#game-page #Game .Room2 div #Puzzle {
+#game-page #Game #Objects #Puzzle {
   left: 7%;
   width: 10%;
 }
 
-#game-page #Game .Room2 div #Etoiles {
+#game-page #Game #Decors #Etoiles {
   top: 0.9%;
   width: 31%;
   -webkit-animation: rihanna 5s infinite;
@@ -2467,6 +2507,26 @@ html {
 
   50% {
     filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff);
+  }
+}
+
+@-webkit-keyframes pommeray {
+  0%, 100% {
+    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff), saturate(180%);
+  }
+
+  50% {
+    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
+  }
+}
+
+@keyframes pommeray {
+  0%, 100% {
+    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff), saturate(180%);
+  }
+
+  50% {
+    filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
   }
 }
 

@@ -1,0 +1,60 @@
+// Animations de scintillement 
+@-webkit-keyframes rihanna {
+
+    0%,
+    100% {
+        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
+        filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
+    }
+
+    50% {
+        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
+        filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
+    }
+}
+
+@keyframes rihanna {
+
+    0%,
+    100% {
+        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
+        filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white);
+    }
+
+    50% {
+        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
+        filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white);
+    }
+}
+
+
+// Animations de saturation 
+@-webkit-keyframes pommeray {
+
+    0%,
+    100% {
+        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white), saturate(180%);
+        filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white), saturate(180%);
+    }
+
+    50% {
+        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white), saturate(200%);
+        filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white) saturate(200%);
+        ;
+    }
+}
+
+@keyframes pommeray {
+
+    0%,
+    100% {
+        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white), saturate(180%);
+        filter: brightness(100%) drop-shadow(.05rem .05rem 0rem $white), saturate(180%);
+    }
+
+    50% {
+        -webkit-filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white), saturate(200%);
+        filter: brightness(100%) drop-shadow(.05rem .05rem .5rem $white) saturate(200%);
+        ;
+    }
+}
