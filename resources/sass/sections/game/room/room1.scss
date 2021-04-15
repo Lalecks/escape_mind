@@ -60,11 +60,12 @@
                 }
 
                 #Panneau_neon {
-                    top: 4%;
+                    top: 3%;
                     left: 17%;
                     width: 8%;
-                    -webkit-animation: 8s pommeray infinite;
-                    animation: 8s pommeray infinite;
+                    transform-origin: bottom left;
+                    -webkit-animation: 3s spin infinite, 3s  pink_neon infinite; 
+                    animation: 4s spin infinite, 4s  pink_neon infinite; 
                 }
             }
         }

@@ -16,10 +16,15 @@
     opacity: 0;
     visibility: hidden;
     // Glassmorphism
+    // background-image: -webkit-linear-gradient($white-degraded);
+    // background-image: -moz-linear-gradient($white-degraded);
+    // background-image: -o-linear-gradient($white-degraded);
+    // background-image: linear-gradient($white-degraded);
     background-image: -webkit-linear-gradient($black-degraded);
     background-image: -moz-linear-gradient($black-degraded);
     background-image: -o-linear-gradient($black-degraded);
     background-image: linear-gradient($black-degraded);
+
     // background-color: rgba(0,0,0,0.9);
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -54,11 +59,6 @@
     width: auto;
     border-radius: 0.5rem;
     overflow: hidden;
-    // Glassmorphism
-    background-image: -webkit-linear-gradient($cyan_blue-degraded);
-    background-image: -moz-linear-gradient($cyan_blue-degraded);
-    background-image: -o-linear-gradient($cyan_blue-degraded);
-    background-image: linear-gradient($cyan_blue-degraded);
 }
 
 .close-button {
@@ -103,3 +103,25 @@
 //         background-color: #0a0a0ad2;
 //     }
 // }
+
+
+/* Page modal */
+#home-page .modal-content {
+        // Glassmorphism
+    background-image: -webkit-linear-gradient($cyan_blue-degraded);
+    background-image: -moz-linear-gradient($cyan_blue-degraded);
+    background-image: -o-linear-gradient($cyan_blue-degraded);
+    background-image: linear-gradient($cyan_blue-degraded);
+}
+
+#game-page .modal-content {
+    // Glassmorphism
+    background-image: -webkit-linear-gradient($black-degraded);
+    background-image: -moz-linear-gradient($black-degraded);
+    background-image: -o-linear-gradient($black-degraded);
+    background-image: linear-gradient($black-degraded);
+//     background-image: -webkit-linear-gradient($white-degraded);
+//     background-image: -moz-linear-gradient($white-degraded);
+//     background-image: -o-linear-gradient($white-degraded);
+//     background-image: linear-gradient($white-degraded);
+}

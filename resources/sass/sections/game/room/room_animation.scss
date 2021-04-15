@@ -1,4 +1,4 @@
-// Animations de scintillement 
+// Animation de scintillement 
 @-webkit-keyframes rihanna {
 
     0%,
@@ -23,16 +23,16 @@
     }
 }
 
-// Animations de saturation 
+// Animation de saturation 
 @-webkit-keyframes pommeray {
 
     0%,
     100% {
-        filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff), saturate(180%);
+        -webkit-filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff), saturate(180%);
     }
 
     50% {
-        filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
+        -webkit-filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
     }
 }
 
@@ -44,6 +44,50 @@
     }
 
     50% {
+        filter: brightness(120%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(220%);
+    }
+}
+
+// Animations de saturation 
+@-webkit-keyframes pink_neon {
+
+    0%,
+    100% {
+        -webkit-filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff), saturate(180%);
+    }
+
+    50% {
+        -webkit-filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
+    }
+}
+
+@keyframes pink_neon {
+
+    0%,
+    100% {
+        filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem purple), saturate(180%);
+    }
+
+    50% {
+        filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.1rem purple) saturate(200%);
+    }
+}
+
+// Mouvement de rotation
+@-webkit-keyframes spin {
+
+    0%,
+    100% {
+        filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff), saturate(180%);
+    }
+
+    50% {
         filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
     }
+}
+@keyframes spin {
+
+    0%,
+    100% { transform: rotate(10deg); }
+    50% { transform: rotate(7deg); }
 }

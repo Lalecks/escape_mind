@@ -5,7 +5,7 @@
 		<!-- Encodage -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 		<meta name='apple-mobile-web-app-capable' content='yes' />
 		<!-- CSRF Token -->
@@ -69,7 +69,7 @@
 		<!-- Souris -->
 		<div id="souris" style="opacity: 0">
 			<div class="cursor cursor--small"></div>
-			<canvas class="cursor cursor--canvas" resize="false"></canvas>
+			<canvas class="cursor cursor--canvas"></canvas>
 		</div>
 
 		{{--

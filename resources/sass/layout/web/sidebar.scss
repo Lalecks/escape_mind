@@ -59,9 +59,9 @@ html {
                 transform: translateY(-75%);
                 border-radius: 50px;
                 border: 4px solid $white;
-                -webkit-transition: background 500ms;
-                -o-transition: background 500ms;
-                transition: background 500ms;
+                -webkit-transition: 500ms;
+                -o-transition: 500ms;
+                transition: 500ms;
                 background: $body-bg;
             }
 
