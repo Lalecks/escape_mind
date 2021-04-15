@@ -5,27 +5,30 @@
  **/
 
 import createTimer from "./components/timer";
-import toggleModal from "../web_components/modal";
+import toggleModalCustom from "../web_components/modal";
 
 // Ajout des objets
+// Un objet_00 correspond à l'image par défaut
+// Un objet_01 correspond à l'image dans la modale
+// Un objet_02 correspond à l'état final de l'objet
 let object = [
     /* Room 1 */
-    ["Casettes", 1],
-    ["Coffre_Fort", 1],
-    ["Jukebox", 1],
-    ["Lecteur", 1],
-    ["Radio", 1],
-    ["Ramdam", 1],
+    ["Cassette", 1, "Il s'agit d'une cassette."],
+    ["Coffre_Fort", 1, "Il s'agit d'un coffre fort."],
+    ["Jukebox", 1, "Il s'agit d'un jukebox."],
+    ["Lecteur", 1, "Il s'agit d'un lecteur."],
+    ["Radio", 1, "Il s'agit d'une radio."],
+    //["Affiche_Ramdam", 1, "Il s'agit d'une cassette."],
     /* Room 2 */
-    ["Lit", 2],
-    ["Peluche", 2],
-    ["Bougie", 2],
-    ["Puzzle", 2],
-    ["Poster_Robot", 2],
-    ["Tablette", 2],
-    ["Pile", 2],
-    ["Pile", 2],
-    ["Pile", 2],
+    ["Lit", 2, "Il s'agit d'un lit double."],
+    ["Peluche", 2, "Il s'agit d'une peluche trop chou."],
+    ["Bougie", 2, "Il s'agit d'une bougie."],
+    ["Puzzle", 2, "Il s'agit d'un puzzle."],
+    ["Poster_Robot", 2, "Il s'agit d'un poster."],
+    ["Tablette", 2, "Il s'agit d'une tablette éteinte."],
+    ["Pile", 2, "Il s'agit de la pile 1."],
+    ["Pile", 2, "Il s'agit de la pile 2."],
+    ["Pile", 2, "Il s'agit de la pile 3."],
     /* Room 3 */
 ];
 
@@ -33,6 +36,7 @@ let decor = [
     /* Room 1 */
     ["Led", 1],
     ["Panneau_neon", 1],
+    ["Ramdam", 1],
     /* Room 2 */
     ["Etoiles", 2],
 ];
@@ -62,8 +66,14 @@ function createRoom() {
             link.id = "link_" + object[i][0];
             //On appelle la classe juste par notation
             link.className = "trigger";
+
             //Pour les triggers ajoutés en JS
-            link.addEventListener("click", toggleModal);
+            link.addEventListener("click", function(){
+                toggleModalCustom(object[i][0],object[i][2],
+                    "./resources/game/objects/image/room" + actualRoom + "/" + object[i][0] + "_01.png")
+            });
+
+
 
 
             // Objet en cours
@@ -97,7 +107,7 @@ function createRoom() {
     //pour sortir de la modale en cliquant dans le vide
     window.addEventListener("click",function(event){
         if (event.target === document.querySelector(".modal")) {
-            toggleModal();
+            toggleModalCustom("","","");
         }
     })
 }

@@ -20,6 +20,9 @@
                 <div class="modal glass-effect">
                     <div class="modal-content glass-effect">
                         <span class="close-button hoverable">&times;</span>
+{{--                        <p>TITRE<p>--}}
+{{--                        <p>Description.</p>--}}
+{{--                        <img/>--}}
                     </div>
                     <div id="Inventory"></div>
                 </div>

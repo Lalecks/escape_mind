@@ -1467,12 +1467,12 @@ html {
 .chrono_digit {
   background: linear-gradient(to bottom, #fff 0%, #e1e1e1 49%, #fff 50%, #e1e1e1 100%);
   margin: 0px 3px;
-  width: 35px;
+  width: 25px;
   font-weight: normal;
-  height: 55px;
+  height: 42px;
   display: inline-block;
-  line-height: 54px;
-  font-size: 35px;
+  line-height: 43px;
+  font-size: 25px;
   color: #000;
   border-radius: 3px;
   position: relative;
@@ -1489,7 +1489,7 @@ html {
   font-size: 31px;
   margin: 0px;
   left: 50%;
-  top: 40px;
+  top: 25px;
   color: #fff;
   transform: translateX(-50%);
   display: flex;
@@ -2365,7 +2365,7 @@ html {
   filter: saturate(180%) drop-shadow(0.05rem 0.05rem 1rem #ffffff);
 }
 
-#game-page #Game .Room1 #Objects #Casettes {
+#game-page #Game .Room1 #Objects #Cassette {
   left: 40%;
   bottom: 4%;
   width: 8%;
@@ -2393,11 +2393,6 @@ html {
   bottom: 14%;
 }
 
-#game-page #Game .Room1 #Objects #Ramdam {
-  top: 4%;
-  left: 34%;
-}
-
 #game-page #Game .Room1 #Decors #Led {
   width: 7.7%;
   top: 3.9%;
@@ -2413,6 +2408,11 @@ html {
   transform-origin: bottom left;
   -webkit-animation: 3s spin infinite, 3s pink_neon infinite;
   animation: 4s spin infinite, 4s pink_neon infinite;
+}
+
+#game-page #Game .Room1 #Decors #Ramdam {
+  top: 4%;
+  left: 34%;
 }
 
 #game-page #Game .Room2 div img {

@@ -16,7 +16,7 @@
             }
 
             #Objects {
-                #Casettes {
+                #Cassette {
                     left: 40%;
                     bottom: 4%;
                     width: 8%;
@@ -44,9 +44,7 @@
                     bottom: 14%;
                 }
 
-                #Ramdam {
-                    top: 4%;
-                    left: 34%;
+                #Affiche_Ramdam {
                 }
             }
 
@@ -64,8 +62,13 @@
                     left: 17%;
                     width: 8%;
                     transform-origin: bottom left;
-                    -webkit-animation: 3s spin infinite, 3s  pink_neon infinite; 
-                    animation: 4s spin infinite, 4s  pink_neon infinite; 
+                    -webkit-animation: 3s spin infinite, 3s  pink_neon infinite;
+                    animation: 4s spin infinite, 4s  pink_neon infinite;
+                }
+
+                #Ramdam {
+                    top: 4%;
+                    left: 34%;
                 }
             }
         }
