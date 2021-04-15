@@ -41,6 +41,7 @@ let actualRoom = 1;
 
 export default function createGame() {
     createRoom();
+    createTimer();
 }
 
 function createRoom() {
@@ -58,12 +59,11 @@ function createRoom() {
         if (object[i][1] === actualRoom) {
             let link = document.createElement("div");
             link.id = "link_" + object[i][0];
-            // link.className = "hoverable";
             // Objet en cours
             let obj = document.createElement("img");
             obj.id = "" + object[i][0];
             obj.src = "./resources/game/objects/image/room" + actualRoom + "/" + object[i][0] + "_00.png";
-            obj.className = "hoverable"; // Pour centrer la souris mdr.
+            obj.className = "hoverable trigger"; // Pour centrer la souris mdr.
 
             link.appendChild(obj);
             parent_obj.appendChild(link);
@@ -74,11 +74,11 @@ function createRoom() {
         if (decor[i][1] === actualRoom) {
             let link = document.createElement("div");
             link.id = "decor_" + decor[i][0];
- 
+
             let obj = document.createElement("img");
             obj.id = "" + decor[i][0];
             obj.src = "./resources/game/objects/image/room" + actualRoom + "/" + decor[i][0] + "_00.png";
-      
+
 
             link.appendChild(obj);
             parent_decor.appendChild(link);
