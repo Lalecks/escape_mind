@@ -8,27 +8,25 @@ let modal = document.querySelector(".modal");
 let trigger = document.querySelector(".trigger");
 let closeButton = document.querySelector(".close-button");
 
+
+export default function toggleModal() {
+    // Afficher la modale
+    modal.classList.toggle("show-modal");
+}
+
 //Verifie s'il existe une classe modal dans la page
-if (modal){
-    function toggleModal() {
-        // Afficher la modale
-        modal.classList.toggle("show-modal");
-    }
-    function windowOnClick(event) {
+//Ne fonctionne pas pour les triggers ajoutés en JS
+//(cf room_creation l66 & 95)
+if (modal && trigger){
+    trigger.addEventListener("click", toggleModal);
+    //pour sortir de la modale en cliquant dans le vide
+    window.addEventListener("click", function(event) {
         if (event.target === modal) {
             toggleModal();
         }
-        //  $("header").remove();
-        //  document.getElementsByClassName('navbar').style.display = none;
-        // $('.videoplayer').children('iframe').attr('src', '');
-        //     document.getElementById('nofocusvideo').player.api('pause');
-        //     window.parent.CloseModal(window.frameElement);
-        //     $("header").style.display = none;
-        //     $(".navbar").style.display = none;
-        // document.getElementsByClassName(navbar).style.display = none; // Pour cacher
-        // document.getElementById(identifiant_de_ma_div).style.display = none;
-    }
-    trigger.addEventListener("click", toggleModal);
+    });
+}
+
+if (closeButton){
     closeButton.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
 }

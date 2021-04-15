@@ -5,6 +5,7 @@
  **/
 
 import createTimer from "./components/timer";
+import toggleModal from "../web_components/modal";
 
 // Ajout des objets
 let object = [
@@ -59,11 +60,17 @@ function createRoom() {
         if (object[i][1] === actualRoom) {
             let link = document.createElement("div");
             link.id = "link_" + object[i][0];
+            //On appelle la classe juste par notation
+            link.className = "trigger";
+            //Pour les triggers ajoutés en JS
+            link.addEventListener("click", toggleModal);
+
+
             // Objet en cours
             let obj = document.createElement("img");
             obj.id = "" + object[i][0];
             obj.src = "./resources/game/objects/image/room" + actualRoom + "/" + object[i][0] + "_00.png";
-            obj.className = "hoverable trigger"; // Pour centrer la souris mdr.
+            obj.className = "hoverable"; // Pour centrer la souris mdr.
 
             link.appendChild(obj);
             parent_obj.appendChild(link);
@@ -86,6 +93,13 @@ function createRoom() {
 
     }
     area.appendChild(bg);
+
+    //pour sortir de la modale en cliquant dans le vide
+    window.addEventListener("click",function(event){
+        if (event.target === document.querySelector(".modal")) {
+            toggleModal();
+        }
+    })
 }
 
 function endGame(num) {
