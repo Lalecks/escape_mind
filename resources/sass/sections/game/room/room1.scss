@@ -1,16 +1,16 @@
 #game-page {
     #Game {
         .Room1 {
-            -webkit-filter: saturate(140%);
-            filter: saturate(140%);
+            -webkit-filter: saturate(130%);
+            filter: saturate(130%);
 
             div {
                 img {
                     width: 20%;
 
                     &:hover {
-                        -webkit-filter: saturate(180%) drop-shadow(.05rem .05rem 5rem $white);
-                        filter: saturate(180%) drop-shadow(.05rem .05rem 1rem $white);
+                        -webkit-filter: saturate(140%) drop-shadow(.05rem .05rem 5rem $white);
+                        filter: saturate(140%) drop-shadow(.05rem .05rem 1rem $white);
                     }
                 }
             }
@@ -44,8 +44,8 @@
                     bottom: 14%;
                 }
 
-                #Affiche_Ramdam {
-                }
+                // #Affiche_Ramdam {
+                // }
             }
 
             #Decors {
@@ -62,8 +62,8 @@
                     left: 17%;
                     width: 8%;
                     transform-origin: bottom left;
-                    -webkit-animation: 3s spin infinite, 3s  pink_neon infinite;
-                    animation: 4s spin infinite, 4s  pink_neon infinite;
+                    -webkit-animation: 3s spin infinite, 3s pink_neon infinite;
+                    animation: 4s spin infinite, 4s pink_neon infinite;
                 }
 
                 #Ramdam {

@@ -98,7 +98,7 @@ function createRoom() {
 
             let obj = document.createElement("img");
             obj.id = "" + decor[i][0];
-            obj.src = url + "/decors/" + decor[i][0] + "_00.png";
+            obj.src = url + "/decors/" + decor[i][0] + ".png";
             link.appendChild(obj);
             parent_decor.appendChild(link);
         }

@@ -2468,7 +2468,7 @@ player:focus .controls {
 }
 
 #game-page #Game .Room1 {
-  filter: saturate(140%);
+  filter: saturate(130%);
 }
 
 #game-page #Game .Room1 div img {
@@ -2476,7 +2476,7 @@ player:focus .controls {
 }
 
 #game-page #Game .Room1 div img:hover {
-  filter: saturate(180%) drop-shadow(0.05rem 0.05rem 1rem #ffffff);
+  filter: saturate(140%) drop-shadow(0.05rem 0.05rem 1rem #ffffff);
 }
 
 #game-page #Game .Room1 #Objects #Cassette {
