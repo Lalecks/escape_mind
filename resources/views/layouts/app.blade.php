@@ -65,7 +65,7 @@
 		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
 	</head>
 	<!--====== Corps ======-->
-	<body class="modal-open">
+	<body>
 		<!-- Souris -->
 		<div id="souris" style="opacity: 0">
 			<div class="cursor cursor--small"></div>
