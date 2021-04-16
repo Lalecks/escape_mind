@@ -2,7 +2,7 @@
 *
 *
 * Appel des différents fichiers CSS
-* Compilation du SASS : 
+* Compilation du SASS :
 ****** Version Laravel => npm run watch
 ****** Version CSS => sass --watch resources/sass:public/css/sass --style compressed
 *
@@ -61,6 +61,10 @@
 @import 'sections/game/room/room3';
 // Enigma
 // @import 'sections/login';
+
+/*-------- Enigmes  --------*/
+@import 'sections/game/room/enigma/radio';
+
 
 /*--------  Responsive --------*/
 @import 'sections/web/responsive_web';

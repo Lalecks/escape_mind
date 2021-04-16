@@ -10,7 +10,7 @@ let trigger = document.querySelector(".trigger");
 let closeButton = document.querySelector(".close-button");
 
 
-export default function toggleModalCustom(titre, description, img) {
+export default function toggleModalCustom(titre, description, enigme) {
     let titre_html = document.createElement("p");
     titre_html.innerText = titre;
     titre_html.id = "titre_modal";
@@ -19,21 +19,17 @@ export default function toggleModalCustom(titre, description, img) {
     desc_html.innerText = description;
     desc_html.id = "desc_modal";
 
-    let img_html = document.createElement("img");
-    img_html.src = img;
-    img_html.id = "img_modal";
-
     // Afficher la modale dans le if
     if (modal.classList.toggle("show-modal")) {
         content.appendChild(titre_html);
         content.appendChild(desc_html);
-        content.appendChild(img_html);
+        content.appendChild(enigme);
         // Arreter le scrolling de la page à l'ouverture de la modal
         document.body.style.position = "fixed";
     } else {
         content.removeChild(document.getElementById("titre_modal"));
         content.removeChild(document.getElementById("desc_modal"));
-        content.removeChild(document.getElementById("img_modal"));
+        content.removeChild(document.getElementById("enigme_modal"));
         // Autorisation le scrolling de la page à la fermeture de la modal
         document.body.style.position = "relative";
     }

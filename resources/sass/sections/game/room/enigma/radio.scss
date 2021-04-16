@@ -1,0 +1,19 @@
+#enigme_modal div {
+    height: .99em;
+    position: absolute;
+    top: 49%;
+    left: 21.3%;
+    width: 11.8rem;
+    overflow:hidden;
+}
+
+
+#enigme_radio_cursor {
+    width: -40px;
+    height: 55%;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 12px solid black;
+    left: 50%;
+    position: absolute;
+}
