@@ -1004,6 +1004,11 @@ html body img {
 
 body,
 html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
