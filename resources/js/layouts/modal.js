@@ -34,6 +34,8 @@ export default function toggleModalCustom(titre, description, img) {
         content.appendChild(desc_html);
         content.appendChild(img_html);
         // Arreter le scrolling de la page
+        content.appendChild(enigme);
+        // Arreter le scrolling de la page à l'ouverture de la modal
         document.body.style.position = "fixed";
         // Mettre la vidéo trailer
         iframe.src = 'https://www.youtube.com/embed/gA03iyI3yEA';
@@ -43,6 +45,8 @@ export default function toggleModalCustom(titre, description, img) {
         content.removeChild(document.getElementById("desc_modal"));
         content.removeChild(document.getElementById("img_modal"));
         // Autorisation le scrolling de la page
+        content.removeChild(document.getElementById("enigme_modal"));
+        // Autorisation le scrolling de la page à la fermeture de la modal
         document.body.style.position = "relative";
         // Stopper la vidéo trailer
         iframe.src = "";

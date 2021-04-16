@@ -6,6 +6,7 @@
 
 import createTimer from "./components/timer";
 import toggleModalCustom from "../layouts/modal";
+import Radio from "./enigma/room1/Radio";
 
 // Ajout des objets
 // Un objet_00 correspond à l'image par défaut
@@ -76,8 +77,7 @@ function createRoom() {
 
             //Pour les triggers ajoutés en JS
             link.addEventListener("click", function () {
-                toggleModalCustom(object[i][0], object[i][2],
-                    url + "/objects/" + object[i][0] + "_01.png")
+                toggleModalCustom(object[i][0], object[i][2],Radio())
             });
 
             // Objet en cours
