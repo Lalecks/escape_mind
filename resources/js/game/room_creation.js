@@ -43,7 +43,9 @@ let decor = [
 
 // Salle actuelle
 let actualRoom = 1;
-exports.actualRoom = actualRoom;
+
+export { actualRoom as actualRoom };
+
 let url = "./resources/game/room" + actualRoom;
 
 export default function createGame() {
