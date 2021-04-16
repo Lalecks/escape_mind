@@ -1,57 +1,70 @@
-//sass --watch resources/sass:public/css/sass --style compressed
-// npm run watch 
+/**
+*
+*
+* Appel des différents fichiers CSS
+* Compilation du SASS : 
+****** Version Laravel => npm run watch
+****** Version CSS => sass --watch resources/sass:public/css/sass --style compressed
+*
+*
+* */
 
-/*-------- Variables --------*/
-@import 'base/variables';
-@import 'base/fonts.scss';
-@import 'base/mixins';
-
-/*-------- Bootstrap --------*/
-// @import '~/bootstrap/scss/bootstrap';
-
-/*-------- Generic --------*/
+/*-------- Generic : Inhibition des styles imposés par les navigateurs --------*/
 @import 'generic/reset.scss';
 @import 'generic/normalize.scss';
 
-/*-------- Layouts --------*/
-// General
-@import 'layout/general/template';
-@import 'layout/general/all';
-@import 'layout/general/mouse';
-@import 'layout/general/errors';
-// Web part
-@import 'layout/web/footer';
-@import 'layout/web/sidebar';
-// Game part
-@import 'layout/game/timer';
-// @import 'layout/game/drag';
-// @import 'layout/game/video_player';
+/*-------- Variables : Personnalisation des propriétés générales --------*/
+@import 'base/variables'; // Appels les différents composantes si dessous
+@import 'base/fonts.scss';
+@import 'base/colors.scss';
+@import 'base/mixins';
 
-/*--------  Components --------*/
+/*-------- Layouts/Mise en page : Architecture/Structure et mise en page générale des pages --------*/
+@import 'layout/loader';
+@import 'layout/template';
+@import 'layout/layout_project';
+@import 'layout/mouse';
+@import 'layout/errors';
+
+/*--------  Components : Composants appelé dans le projet --------*/
 @import 'components/glassmorphism.scss';
 @import 'components/button.scss';
 @import 'components/circle.scss';
 @import 'components/modal.scss';
-@import 'components/defilement.scss';
 
-/*--------  Sections --------*/
-// @import 'sections/login';
-@import 'sections/loader';
+/*--------  Sections: CSS spécifiques aux parties WEB/GAME --------*/
 /* Web part */
-@import 'sections/web/home';
-@import 'sections/web/story';
-@import 'sections/web/rank';
-@import 'sections/web/about';
-@import 'sections/web/contact';
+// Template/Modèle : Instructions des parties visuelle commune pour la partie WEB
+@import 'sections/web/template/sidebar';
+@import 'sections/web/template/footer';
+// Composants
+@import 'sections/web/template/modal_web';
+// Rubriques
+@import 'sections/web/headings/home';
+@import 'sections/web/headings/story';
+@import 'sections/web/headings/rank';
+@import 'sections/web/headings/about';
+@import 'sections/web/headings/contact';
+
 /* Game part */
-// Room
-@import 'sections/game/room/room_template';
+// Template/Modèle : Instructions des parties visuelle commune pour la partie GAME (ex: Dispositions des éléments, composants, ...)
+@import 'sections/game/template/room_template';
+@import 'sections/game/template/room_animation';
+@import 'sections/game/template/modal_game_template';
+// Composants
+@import 'sections/game/components/timer';
+@import 'sections/game/components/drag';
+@import 'sections/game/components/video_player';
+// Rooms : Modification des différents éléments visuels du template "room_template' pour chaque salle
 @import 'sections/game/room/room1';
 @import 'sections/game/room/room2';
 @import 'sections/game/room/room3';
-@import 'sections/game/room/room_animation';
 // Enigma
+// @import 'sections/login';
 
-// Responsive
-@import 'layout/web/responsive';
-@import 'layout/game/responsive';
+/*--------  Responsive --------*/
+@import 'sections/web/responsive_web';
+@import 'sections/game/responsive_game';
+
+// Layout/Mise en page : C'est la façon dont le contenu est formaté et présenté, sa structure et sa mise en page.
+// Template/Modèle : Il s'agit d'un ensemble de fichiers et d'instructions, contenant uniquement la partie visuelle de la présentation du contenu. C'est un modèle de document qui façonnera le concept final.

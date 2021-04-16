@@ -1,0 +1,20 @@
+#game-page {
+    .modal {
+        .modal-content {
+            // Glassmorphism
+            background-image: -webkit-linear-gradient($black-degraded);
+            background-image: -moz-linear-gradient($black-degraded);
+            background-image: -o-linear-gradient($black-degraded);
+            background-image: linear-gradient($black-degraded);
+            //     background-image: -webkit-linear-gradient($white-degraded);
+            //     background-image: -moz-linear-gradient($white-degraded);
+            //     background-image: -o-linear-gradient($white-degraded);
+            //     background-image: linear-gradient($white-degraded);
+        }
+
+        img {
+            height: 11rem;
+            max-height: 11rem;
+        }
+    }
+}

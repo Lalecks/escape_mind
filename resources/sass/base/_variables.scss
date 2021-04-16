@@ -1,4 +1,10 @@
-// Body
+/**
+*
+*  Variables du projet
+*
+* */
+
+// Couleurs
 $body-bg: #121212;
 $color-title: #1A1A1A;
 $color-shadow: #7C7C7C;
@@ -9,26 +15,6 @@ $font-body: 'Gayathri', sans-serif;
 $font-title: 'Big Shoulders Display', cursive;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
-
-// Colors
-$white: #ffffff;
-$black: #000000;
-$yellow: #FFFB00;
-$grey: rgb(85, 83, 83);
-// $blue: #3490dc;
-// $indigo: #6574cd;
-// $purple: #9561e2;
-// $pink: #f66d9b;
-// $red: #e3342f;
-$orange: #f6993f;
-// $yellow: #ffed4a;
-$green: #38c172;
-// $teal: #4dc0b5;
-$cyan: #6cb2eb;
-$purple: #AC00FF;
-
-// Transparant 
-$transparent : rgba(255, 255, 255, 0.17);
 
 // Mixins
 $xs: 544px;

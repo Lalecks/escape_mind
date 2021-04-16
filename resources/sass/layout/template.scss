@@ -57,69 +57,12 @@ html {
             }
         }
 
-        // Redimensionnement d une image en conservant le ratio lors du responsive
+        // Redimensionnement d'une image en conservant le ratio lors du responsive
         img {
             //max-width: 100%;
             height: auto;
             -o-object-fit: contain;
             object-fit: contain;
-        }
-    }
-}
-
-$underlineColor: #00B388;
-$underlineHeight: 5%;
-
-.link_hover {
-    font-style: italic;
-    font-weight: bold;
-    position: relative;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 1px;
-    -webkit-transition: color ease 0.3s;
-    -o-transition: color ease 0.3s;
-    transition: color ease 0.3s;
-
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        background-color: $white;
-        z-index: -1;
-        height: $underlineHeight;
-    }
-
-    &::before {
-        width: 0%;
-        left: 0;
-        bottom: 0;
-        -webkit-transition: width ease 0.4s;
-        -o-transition: width ease 0.4s;
-        transition: width ease 0.4s;
-    }
-
-    &::after {
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        -webkit-transition: all ease 0.6s;
-        -o-transition: all ease 0.6s;
-        transition: all ease 0.6s;
-    }
-
-    &:hover {
-
-        &::before {
-            width: 100%;
-        }
-
-        &::after {
-            left: 100%;
-            width: 0%;
-            -webkit-transition: all ease 0.2s;
-            -o-transition: all ease 0.2s;
-            transition: all ease 0.2s;
         }
     }
 }

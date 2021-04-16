@@ -28,10 +28,12 @@ export default function toggleModalCustom(titre,description,img) {
         content.appendChild(titre_html);
         content.appendChild(desc_html);
         content.appendChild(img_html);
+        document.getElementsByClassName('modal-open').style.position = "fixed";
     }else {
         content.removeChild(document.getElementById("titre_modal"));
         content.removeChild(document.getElementById("desc_modal"));
         content.removeChild(document.getElementById("img_modal"));
+        document.getElementsByClassName('modal-open').style.position = "relative";
     }
 }
 

@@ -13,6 +13,7 @@ require('./package/rellax.min');
 /*-------- Layouts --------*/
 require('./layouts/detecting_mobile');
 require('./layouts/mouse');
+require('./layouts/modal'); // Avant custom_packages.js pour fonctionner
 
 /*-------- Game --------*/
 if (document.getElementById("game-page")) {
@@ -30,6 +31,5 @@ if (document.getElementById("game-page")) {
 /*--------  Web Components --------*/
 require('./web_components/loader');
 require('./web_components/scrollBar');
-require('./web_components/modal'); // Avant custom_packages.js pour fonctionner
 require('./web_components/custom_package');
 require('./web_components/divers');

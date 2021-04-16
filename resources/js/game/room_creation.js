@@ -5,7 +5,7 @@
  **/
 
 import createTimer from "./components/timer";
-import toggleModalCustom from "../web_components/modal";
+import toggleModalCustom from "../layouts/modal";
 
 // Ajout des objets
 // Un objet_00 correspond à l'image par défaut
