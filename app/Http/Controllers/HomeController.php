@@ -27,12 +27,19 @@ class HomeController extends Controller
     public function index()
     {
         $user = User::all();
-        $firstUser = DB::table('users')->get();
+        // $user = User::all()->orderBy('created_at', 'ASC');
+        // $user = User::orderBy('created_at', 'ASC')->all();
 
+        // $user = DB::table('users')->orderBy('created_at', 'desc')->get();
+        // $firstUser = DB::table('users')
+        
+        
+        // $first3users = DB::table('foo')->orderBy('bar', 'desc')->take(3)->get();
         // $firstUser = DB::select('select * from users where id = 1');
-        $secondUser = DB::select('select * from users where id = 2');
-        $thirdUser = DB::select('select * from users where id = 3');
+        // $secondUser = DB::select('select * from users where id = 2');
+        // $thirdUser = DB::select('select * from users where id = 3');
         // ->sortByDesc('id')->take(3)
-        return view('components.home')->with('user', $user)->with('firstUser', $firstUser); 
+        return view('components.home')->with('user', $user);
+        // ->with('firstUser', $firstUser); 
     }
 }
