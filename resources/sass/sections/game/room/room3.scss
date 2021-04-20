@@ -40,11 +40,17 @@
             }
 
             #Canard {
-                width: 7%;
+                left: 4.5%;
+                bottom: 5.5%;
+                width: 2%;
+                z-index: 1;
             }
 
             #Poulpe {
-                width: 7%;
+                width: 4%;
+                bottom: 29%;
+                left: 50%;
+                z-index: 0;
             }
 
             #Bateau_Pirate {
@@ -72,18 +78,6 @@
                 -ms-transform: rotate(5deg);
                 transform: rotate(5deg);
             }
-
-            #Pagure {
-                bottom: 30%;
-                left: 48%;
-                width: 6%;
-            }
-
-            #Coquille {
-                left: 1%;
-                bottom: 3%;
-                width: 7%;
-            }
         }
 
         #Decors {
@@ -107,6 +101,20 @@
                 bottom: 18%;
                 right: 9%;
                 width: 18%;
+            }
+
+            #Coquille {
+                left: 1%;
+                bottom: 3%;
+                width: 7%;
+                z-index: 0;
+            }
+
+            #Pagure {
+                bottom: 30%;
+                left: 48%;
+                width: 6%;
+                z-index: 1;
             }
         }
     }

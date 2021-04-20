@@ -2295,6 +2295,10 @@ footer {
   transition: 0.3s ease-in-out;
 }
 
+#game-page #Game #Decors img {
+  pointer-events: none;
+}
+
 @-webkit-keyframes rihanna {
   0%, 100% {
     -webkit-filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff);
@@ -2692,11 +2696,17 @@ player:focus .controls {
 }
 
 #game-page #Game #Objects #Canard {
-  width: 7%;
+  left: 4.5%;
+  bottom: 5.5%;
+  width: 2%;
+  z-index: 1;
 }
 
 #game-page #Game #Objects #Poulpe {
-  width: 7%;
+  width: 4%;
+  bottom: 29%;
+  left: 50%;
+  z-index: 0;
 }
 
 #game-page #Game #Objects #Bateau_Pirate {
@@ -2719,18 +2729,6 @@ player:focus .controls {
   transform: rotate(5deg);
 }
 
-#game-page #Game #Objects #Pagure {
-  bottom: 30%;
-  left: 48%;
-  width: 6%;
-}
-
-#game-page #Game #Objects #Coquille {
-  left: 1%;
-  bottom: 3%;
-  width: 7%;
-}
-
 #game-page #Game #Decors #Robinet {
   top: 2%;
   right: 0;
@@ -2751,6 +2749,20 @@ player:focus .controls {
   bottom: 18%;
   right: 9%;
   width: 18%;
+}
+
+#game-page #Game #Decors #Coquille {
+  left: 1%;
+  bottom: 3%;
+  width: 7%;
+  z-index: 0;
+}
+
+#game-page #Game #Decors #Pagure {
+  bottom: 30%;
+  left: 48%;
+  width: 6%;
+  z-index: 1;
 }
 
 /*-------- Enigmes  --------*/

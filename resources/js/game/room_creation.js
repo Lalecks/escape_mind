@@ -42,8 +42,6 @@ let object = [
     ["Bateau_Pirate", 3, ""],
     ["Bouteille_Verre", 3, ""],
     ["Bouteille_Oxygene", 3, ""],
-    ["Pagure", 3, ""],
-    ["Coquille", 3, ""],
 ];
 
 let decor = [
@@ -67,10 +65,13 @@ let decor = [
     ["Bulle", 3],
     ["Crabe", 3],
     ["Seau", 3],
+    ["Coquille", 3, ""],
+    ["Pagure", 3, ""],
+
 ];
 
 // Salle actuelle
-let actualRoom = 3;
+let actualRoom = 2;
 
 export {
     actualRoom as actualRoom
