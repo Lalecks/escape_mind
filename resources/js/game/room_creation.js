@@ -19,6 +19,7 @@ let object = [
     ["Jukebox", 1, "Il s'agit d'un jukebox."],
     ["Lecteur", 1, "Il s'agit d'un lecteur."],
     ["Radio", 1, "Il s'agit d'une radio."],
+    ["Poster_Ramdam", 1, "Il s'agit d'une radio."],
     //["Affiche_Ramdam", 1, "Il s'agit d'une cassette."],
     /* Room 2 */
     ["Lit", 2, "Il s'agit d'un lit double."],
@@ -42,13 +43,13 @@ let object = [
     ["Bouteille_Verre", 3, ""],
     ["Bouteille_Oxygene", 3, ""],
     ["Pagure", 3, ""],
-    ["coquille", 3, ""],
+    ["Coquille", 3, ""],
 ];
 
 let decor = [
     /* Room 1 */
-    
     ["Led", 1],
+    ["Panneau", 1],
     ["Panneau_neon", 1],
     ["Ramdam", 1],
     ["Big_Vinyl", 1],
@@ -61,10 +62,15 @@ let decor = [
     ["Dessin", 2],
     ["Marelle", 2],
     ["Oiseaux", 2],
+    /* Room 3 */
+    ["Robinet", 3],
+    ["Bulle", 3],
+    ["Crabe", 3],
+    ["Seau", 3],
 ];
 
 // Salle actuelle
-let actualRoom = 1;
+let actualRoom = 3;
 
 export {
     actualRoom as actualRoom

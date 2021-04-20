@@ -7,20 +7,35 @@
     overflow: hidden;
 }
 
-#radio_slider{
-    height:100%;
-    width:100%;
-    position:absolute;
-    bottom:0%;
+#radio_slider {
+    height: 83%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
 }
 
-.slider{
-    background:transparent;
+.slider {
+    background: transparent;
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+.slider::-webkit-slider-thumb {
+    // Use for Chrome, Opera, Safari, Edge
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    // width: 3.5%;
+    // height: 65%;
+    border: 0;
+    background: url('/resources/game/room1/enigma/Radio/Radio_01.png');
+    cursor: pointer;
+    transform: translateY(50%);
 }
 
 .slider::-moz-range-thumb {
-    -webkit-appearance: none;
-    appearance: none;
+    // Use for Firefox
     width: 3.5%;
     height: 65%;
     border: 0;
@@ -29,6 +44,7 @@
     transform: translateY(50%);
 }
 
-#enigme_modal img{
+
+#enigme_modal img {
     pointer-events: none;
 }

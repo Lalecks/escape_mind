@@ -2463,12 +2463,16 @@ player:focus .controls {
   left: 19px;
 }
 
+#game-page #Game .Room1 {
+  filter: saturate(132%);
+}
+
 #game-page #Game .Room1 div img {
   width: 20%;
 }
 
 #game-page #Game .Room1 div img:hover {
-  filter: saturate(130%) drop-shadow(0.05rem 0.05rem 1rem #ffffff);
+  filter: saturate(180%) drop-shadow(0.05rem 0.05rem 1rem #ffffff);
 }
 
 #game-page #Game .Room1 #Objects #Cassette {
@@ -2499,12 +2503,27 @@ player:focus .controls {
   bottom: 14%;
 }
 
+#game-page #Game .Room1 #Objects #Poster_Ramdam {
+  left: -0.9%;
+  top: 11%;
+  transform: perspective(33rem) rotateY(51deg);
+  width: 10%;
+  z-index: 1;
+}
+
 #game-page #Game .Room1 #Decors #Led {
-  width: 7.7%;
+  width: 7%;
   top: 3.9%;
-  left: 3.8%;
+  left: 4.8%;
   -webkit-animation: 8s pommeray infinite;
   animation: 8s pommeray infinite;
+  z-index: 0;
+}
+
+#game-page #Game .Room1 #Decors #Panneau {
+  top: 12%;
+  left: 12%;
+  width: 17%;
 }
 
 #game-page #Game .Room1 #Decors #Panneau_neon {
@@ -2551,6 +2570,7 @@ player:focus .controls {
   right: 29%;
   top: 3%;
   width: 40%;
+  z-index: 0;
 }
 
 #game-page #Game #Objects #Peluche {
@@ -2563,6 +2583,7 @@ player:focus .controls {
   bottom: 56%;
   left: 5%;
   width: 3%;
+  z-index: 1;
 }
 
 #game-page #Game #Objects #Pile {
@@ -2577,6 +2598,7 @@ player:focus .controls {
   width: 10%;
   filter: drop-shadow(5px 5px 5px #000000);
   transition: 0.3s ease-in-out;
+  transform: perspective(33rem) rotateY(-32deg);
 }
 
 #game-page #Game #Objects #Poster_Robot:hover {
@@ -2601,6 +2623,136 @@ player:focus .controls {
   animation: rihanna 8s infinite;
 }
 
+#game-page #Game #Decors #Bureau {
+  top: 33%;
+  left: 0.5%;
+  width: 24%;
+  z-index: 0;
+}
+
+#game-page #Game #Decors #Crayons {
+  right: 14%;
+  bottom: 24%;
+  width: 14.5%;
+}
+
+#game-page #Game #Decors #Dessin {
+  right: 0;
+  bottom: 22%;
+  width: 27.5%;
+}
+
+#game-page #Game #Decors #Marelle {
+  bottom: 1.4%;
+  right: 27%;
+  width: 37%;
+}
+
+#game-page #Game #Decors #Oiseaux {
+  top: 0;
+  left: 40%;
+  width: 15%;
+  z-index: 0;
+}
+
+#game-page #Game .Room3 div img {
+  width: 15%;
+}
+
+#game-page #Game #Objects #Bouchon {
+  right: 0;
+  top: 46%;
+  width: 9%;
+}
+
+#game-page #Game #Objects #Chateau_Sable {
+  left: 23%;
+  bottom: 10%;
+  width: 23%;
+  z-index: 1;
+}
+
+#game-page #Game #Objects #Clef {
+  left: 40%;
+  bottom: 11%;
+  width: 7%;
+  z-index: 0;
+}
+
+#game-page #Game #Objects #Coffre_Tresor {
+  left: 3%;
+  bottom: 25%;
+  width: 17%;
+}
+
+#game-page #Game #Objects #Baleine {
+  right: 35%;
+  bottom: 16%;
+  width: 7%;
+}
+
+#game-page #Game #Objects #Canard {
+  width: 7%;
+}
+
+#game-page #Game #Objects #Poulpe {
+  width: 7%;
+}
+
+#game-page #Game #Objects #Bateau_Pirate {
+  right: 24%;
+  top: 34%;
+  width: 20%;
+  transform: rotate(6deg);
+}
+
+#game-page #Game #Objects #Bouteille_Verre {
+  right: 1%;
+  bottom: 3%;
+  width: 23%;
+  transform: rotate(10deg);
+}
+
+#game-page #Game #Objects #Bouteille_Oxygene {
+  right: -9%;
+  bottom: 31%;
+  transform: rotate(5deg);
+}
+
+#game-page #Game #Objects #Pagure {
+  bottom: 30%;
+  left: 48%;
+  width: 6%;
+}
+
+#game-page #Game #Objects #Coquille {
+  left: 1%;
+  bottom: 3%;
+  width: 7%;
+}
+
+#game-page #Game #Decors #Robinet {
+  top: 2%;
+  right: 0;
+  width: 13%;
+}
+
+#game-page #Game #Decors #Bulle {
+  display: none;
+}
+
+#game-page #Game #Decors #Crabe {
+  bottom: 2%;
+  left: 17.3%;
+  width: 6%;
+}
+
+#game-page #Game #Decors #Seau {
+  bottom: 18%;
+  right: 9%;
+  width: 18%;
+}
+
 /*-------- Enigmes  --------*/
 
 #enigme_modal div {
@@ -2613,7 +2765,7 @@ player:focus .controls {
 }
 
 #radio_slider {
-  height: 100%;
+  height: 83%;
   width: 100%;
   position: absolute;
   bottom: 0%;
@@ -2621,12 +2773,22 @@ player:focus .controls {
 
 .slider {
   background: transparent;
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  background: url("/resources/game/room1/enigma/Radio/Radio_01.png");
+  cursor: pointer;
+  transform: translateY(50%);
 }
 
 .slider::-moz-range-thumb {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
   width: 3.5%;
   height: 65%;
   border: 0;
