@@ -5,17 +5,28 @@
     left: 18%;
     width: 37.6rem;
     overflow: hidden;
-    background: red;
 }
 
+#radio_slider{
+    height:100%;
+    width:100%;
+    position:absolute;
+    bottom:0%;
+}
 
-#enigme_radio_cursor {
-    height: 56%;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 38px solid black;
-    left: 50%;
-    position: absolute;
+.slider{
+    background:transparent;
+}
+
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3.5%;
+    height: 65%;
+    border: 0;
+    background: url('/resources/game/room1/enigma/Radio/Radio_01.png');
+    cursor: pointer;
+    transform: translateY(50%);
 }
 
 #enigme_modal img{
