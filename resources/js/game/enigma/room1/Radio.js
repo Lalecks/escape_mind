@@ -18,6 +18,19 @@ export default function Radio(){
     cursor.id="enigme_radio_cursor";
 
 
+    window.addEventListener("mousedown",function(event){
+        console.log((event.screenX/window.innerWidth) - 0.26);
+    });
+
+    cursor.addEventListener("mousedown",function(event){
+        cursor.style.left= (event.screenX/window.innerWidth)-0.25 + "%";
+    })
+
+
+
+
+
+
     area.appendChild(cursor);
 
     radio_enigma.appendChild(radio_bg);

@@ -2384,8 +2384,8 @@ footer {
 }
 
 #game-page .modal img {
-  height: 11rem;
-  max-height: 11rem;
+  height: 35rem;
+  max-height: 35rem;
 }
 
 .chrono_digit {
@@ -2594,22 +2594,26 @@ player:focus .controls {
 /*-------- Enigmes  --------*/
 
 #enigme_modal div {
-  height: 0.99em;
+  height: 2.99em;
   position: absolute;
-  top: 49%;
-  left: 21.3%;
-  width: 11.8rem;
+  top: 36.9%;
+  left: 18%;
+  width: 37.6rem;
   overflow: hidden;
+  background: red;
 }
 
 #enigme_radio_cursor {
-  width: -40px;
-  height: 55%;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
-  border-bottom: 12px solid black;
+  height: 56%;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 38px solid black;
   left: 50%;
   position: absolute;
+}
+
+#enigme_modal img {
+  pointer-events: none;
 }
 
 /*--------  Responsive --------*/
