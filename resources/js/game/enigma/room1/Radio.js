@@ -3,6 +3,7 @@
  */
 import {actualRoom} from "../../room_creation";
 let url = "./resources/game/room" + actualRoom;
+let modal = document.querySelector(".modal-content");
 
 export default function Radio(){
     let radio_enigma = document.createElement("div");
@@ -13,23 +14,23 @@ export default function Radio(){
     radio_bg.src="./resources/game/room" + actualRoom + "/enigma/Radio/Radio_00.png";
 
     let area = document.createElement("div");
+    area.className = "slidecontainer";
 
-    let cursor = document.createElement("span");
-    cursor.id="enigme_radio_cursor";
+    let cursor = document.createElement("input");
+    cursor.id="radio_slider";
+    cursor.className="slider";
+    cursor.type="range";
+    cursor.min="1";
+    cursor.max="100";
+    cursor.value="50";
 
+    cursor.onchange=function(){
+        console.log(cursor.value);
+        if (cursor.value === "36"){
+           alert("gg");
+        }
 
-    window.addEventListener("mousedown",function(event){
-        console.log((event.screenX/window.innerWidth) - 0.26);
-    });
-
-    cursor.addEventListener("mousedown",function(event){
-        cursor.style.left= (event.screenX/window.innerWidth)-0.25 + "%";
-    })
-
-
-
-
-
+    }
 
     area.appendChild(cursor);
 
