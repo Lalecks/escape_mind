@@ -2295,10 +2295,6 @@ footer {
   transition: 0.3s ease-in-out;
 }
 
-#game-page #Game #Decors img {
-  pointer-events: none;
-}
-
 @-webkit-keyframes rihanna {
   0%, 100% {
     -webkit-filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0rem #ffffff);
@@ -2467,16 +2463,12 @@ player:focus .controls {
   left: 19px;
 }
 
-#game-page #Game .Room1 {
-  filter: saturate(130%);
-}
-
 #game-page #Game .Room1 div img {
   width: 20%;
 }
 
 #game-page #Game .Room1 div img:hover {
-  filter: saturate(140%) drop-shadow(0.05rem 0.05rem 1rem #ffffff);
+  filter: saturate(130%) drop-shadow(0.05rem 0.05rem 1rem #ffffff);
 }
 
 #game-page #Game .Room1 #Objects #Cassette {
@@ -2527,6 +2519,24 @@ player:focus .controls {
 #game-page #Game .Room1 #Decors #Ramdam {
   top: 4%;
   left: 34%;
+}
+
+#game-page #Game .Room1 #Decors #Big_Vinyl {
+  top: 17%;
+  right: 37%;
+  width: 9%;
+}
+
+#game-page #Game .Room1 #Decors #Little_Vinyl {
+  top: 27%;
+  left: 31%;
+  width: 6%;
+}
+
+#game-page #Game .Room1 #Decors #Guitare {
+  top: 2%;
+  right: 5%;
+  width: 31%;
 }
 
 #game-page #Game .Room2 div img {

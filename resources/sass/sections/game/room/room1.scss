@@ -1,16 +1,16 @@
 #game-page {
     #Game {
         .Room1 {
-            -webkit-filter: saturate(130%);
-            filter: saturate(130%);
+            // -webkit-filter: saturate(120%);
+            // filter: saturate(120%);
 
             div {
                 img {
                     width: 20%;
 
                     &:hover {
-                        -webkit-filter: saturate(140%) drop-shadow(.05rem .05rem 5rem $white);
-                        filter: saturate(140%) drop-shadow(.05rem .05rem 1rem $white);
+                        -webkit-filter: saturate(130%) drop-shadow(.05rem .05rem 5rem $white);
+                        filter: saturate(130%) drop-shadow(.05rem .05rem 1rem $white);
                     }
                 }
             }
@@ -43,9 +43,6 @@
                     right: 34%;
                     bottom: 14%;
                 }
-
-                // #Affiche_Ramdam {
-                // }
             }
 
             #Decors {
@@ -69,6 +66,24 @@
                 #Ramdam {
                     top: 4%;
                     left: 34%;
+                }
+
+                #Big_Vinyl {
+                    top: 17%;
+                    right: 37%;
+                    width: 9%;
+                }
+
+                #Little_Vinyl {
+                    top: 27%;
+                    left: 31%;
+                    width: 6%;
+                }
+
+                #Guitare {
+                    top: 2%;
+                    right: 5%;
+                    width: 31%;
                 }
             }
         }
