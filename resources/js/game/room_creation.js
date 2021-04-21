@@ -86,7 +86,7 @@ export default function createGame() {
 
 function createRoom() {
 
-    console.log(":" + this.toString());
+    
     let parent_obj = document.getElementById("Objects");
     let parent_decor = document.getElementById("Decors");
 
