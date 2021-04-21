@@ -44,9 +44,7 @@ let decor = [
 
 // Salle actuelle
 let actualRoom = 1;
-
 export { actualRoom as actualRoom };
-
 let url = "./resources/game/room" + actualRoom;
 
 export default function createGame() {
@@ -55,7 +53,6 @@ export default function createGame() {
 }
 
 function createRoom() {
-
     let parent_obj = document.getElementById("Objects");
     let parent_decor = document.getElementById("Decors");
 

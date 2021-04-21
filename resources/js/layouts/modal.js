@@ -21,7 +21,6 @@ export default function toggleModalCustom(titre, description, enigme) {
     desc_html.innerText = description;
     desc_html.id = "desc_modal";
     /*  Récupération de l'Iframe */
-    // let iframe = document.getElementById('yt_player_iframe');
 
     /* Affichage ou non de la modale */
     if (modal.classList.toggle("show-modal")) {
@@ -33,9 +32,7 @@ export default function toggleModalCustom(titre, description, enigme) {
             content.appendChild(enigme);
         }
         /*  Mettre la vidéo trailer */
-        // if ($("div").attr("home-page") == true) {
-        //     iframe.src = 'https://www.youtube.com/embed/gA03iyI3yEA';
-        // }
+
         /* Arreter le scrolling de la page */
         document.body.style.position = "fixed";
     } else {
@@ -48,10 +45,9 @@ export default function toggleModalCustom(titre, description, enigme) {
         } catch (e) {}
         /* Autorisation le scrolling de la page */
         document.body.style.position = "relative";
+
         /* Stopper la vidéo trailer */
-        // if ($("div").attr("home-page") == true) {
-        //     iframe.src = "";
-        // }
+
     }
 
 }
