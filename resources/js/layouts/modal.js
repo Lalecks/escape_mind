@@ -5,6 +5,9 @@
  * */
 
 /* Inititalisation des variables */
+import {invJoueur} from "../game/enigma/inventory";
+import {actualRoom} from "../game/room_creation";
+
 let modal = document.querySelector(".modal");
 let content = document.querySelector(".modal-content");
 let trigger = document.querySelector(".trigger");
@@ -12,44 +15,87 @@ let closeButton = document.querySelector(".close-button");
 
 
 export default function toggleModalCustom(titre, description, enigme) {
-    /*  Titre de l'objet */
-    let titre_html = document.createElement("p");
-    titre_html.innerText = titre;
-    titre_html.id = "titre_modal";
-    /* Description de l'objet */
-    let desc_html = document.createElement("p");
-    desc_html.innerText = description;
-    desc_html.id = "desc_modal";
-    /*  Récupération de l'Iframe */
+    //PAGE DE JEU
+    if (document.getElementById("game-page")) {
 
-    /* Affichage ou non de la modale */
-    if (modal.classList.toggle("show-modal")) {
-        /* Ouverture de la modal */
-        content.appendChild(titre_html);
-        content.appendChild(desc_html);
+        /*  Titre de l'objet */
+        let titre_html = document.createElement("p");
+        titre_html.innerText = titre;
+        titre_html.id = "titre_modal";
 
-        if (enigme !== "") {
-            content.appendChild(enigme);
+        /* Description de l'objet */
+        let desc_html = document.createElement("p");
+        desc_html.innerText = description;
+        desc_html.id = "desc_modal";
+
+        let inv_html = createInventory();
+
+        /* Affichage ou non de la modale */
+        if (modal.classList.toggle("show-modal")) {
+
+            /* Ouverture de la modal */
+            content.appendChild(titre_html);
+            content.appendChild(desc_html);
+
+
+            if (enigme !== "") {
+                content.appendChild(enigme);
+            }
+
+            content.appendChild(inv_html);
+
+            /* Arreter le scrolling de la page */
+            document.body.style.position = "fixed";
+        } else {
+            /* Fermeture de la modal */
+            content.removeChild(document.getElementById("titre_modal"));
+            content.removeChild(document.getElementById("desc_modal"));
+
+            try {
+                content.removeChild(document.getElementById("enigme_modal"));
+            } catch (e) {
+            }
+            /* Autorisation le scrolling de la page */
+            document.body.style.position = "relative";
+
+
         }
-        /*  Mettre la vidéo trailer */
-
-        /* Arreter le scrolling de la page */
-        document.body.style.position = "fixed";
-    } else {
-        /* Fermeture de la modal */
-        content.removeChild(document.getElementById("titre_modal"));
-        content.removeChild(document.getElementById("desc_modal"));
-
-        try {
-            content.removeChild(document.getElementById("enigme_modal"));
-        } catch (e) {}
-        /* Autorisation le scrolling de la page */
-        document.body.style.position = "relative";
-
-        /* Stopper la vidéo trailer */
-
+    } else{
+        //HOMEPAGE
+        if (modal.classList.toggle("show-modal")) {
+            document.body.style.position = "fixed";
+        }else {
+            document.body.style.position = "relative";
+        }
     }
 
+}
+
+
+function createInventory(){
+
+    let inv_html = document.createElement("div");
+    inv_html.id="Inventory";
+    let url = "./resources/game/room" + actualRoom;
+
+    for (let i= 0; i < invJoueur.length;i++){
+        let global_object = document.createElement("div");
+        global_object.id="inv_" + invJoueur[i][0];
+        global_object.className="picked";
+
+        let num = document.createElement("span");
+        num.innerText= invJoueur[i][1];
+
+        let object = document.createElement("img");
+        object.src = url + "/objects/" + invJoueur[i][0] + "_00.png";
+
+        global_object.appendChild(num);
+        global_object.appendChild(object);
+        inv_html.appendChild(global_object);
+    }
+
+
+    return inv_html;
 }
 
 if (modal && trigger) {
