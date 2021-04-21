@@ -7,7 +7,7 @@
 /* Les objets dans l'inventaire du joueur
  *  [nom,nombre]
  */
-const objets = [["Casette","1"]];
+const objets = [["Cassette","1"]];
 export { objets as invJoueur };
 
 /*

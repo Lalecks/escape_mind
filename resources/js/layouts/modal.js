@@ -18,20 +18,19 @@ export default function toggleModalCustom(titre, description, enigme) {
     //PAGE DE JEU
     if (document.getElementById("game-page")) {
 
-        /*  Titre de l'objet */
-        let titre_html = document.createElement("p");
-        titre_html.innerText = titre;
-        titre_html.id = "titre_modal";
-
-        /* Description de l'objet */
-        let desc_html = document.createElement("p");
-        desc_html.innerText = description;
-        desc_html.id = "desc_modal";
-
-        let inv_html = createInventory();
-
         /* Affichage ou non de la modale */
         if (modal.classList.toggle("show-modal")) {
+            /*  Titre de l'objet */
+            let titre_html = document.createElement("p");
+            titre_html.innerText = titre;
+            titre_html.id = "titre_modal";
+
+            /* Description de l'objet */
+            let desc_html = document.createElement("p");
+            desc_html.innerText = description;
+            desc_html.id = "desc_modal";
+
+            let inv_html = createInventory();
 
             /* Ouverture de la modal */
             content.appendChild(titre_html);
@@ -53,8 +52,10 @@ export default function toggleModalCustom(titre, description, enigme) {
 
             try {
                 content.removeChild(document.getElementById("enigme_modal"));
-            } catch (e) {
+                content.removeChild(document.getElementById("Inventory"));
             }
+            catch (e) {}
+
             /* Autorisation le scrolling de la page */
             document.body.style.position = "relative";
 

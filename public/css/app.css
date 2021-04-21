@@ -2479,7 +2479,7 @@ player:focus .controls {
   filter: saturate(180%) drop-shadow(0.05rem 0.05rem 1rem #ffffff);
 }
 
-#game-page #Game .Room1 #Objects #Cassette {
+#game-page #Game .Room1 #Objects #Cassettes {
   left: 40%;
   bottom: 4%;
   width: 8%;

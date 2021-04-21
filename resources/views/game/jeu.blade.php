@@ -21,7 +21,6 @@
                     <div class="modal-content glass-effect">
                         <span class="close-button hoverable">&times;</span>
                     </div>
-{{--                    <div id="Inventory"></div>--}}
                 </div>
             </div>
 

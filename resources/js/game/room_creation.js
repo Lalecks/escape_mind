@@ -14,7 +14,7 @@ import Radio from "./enigma/room1/Radio";
 // Un objet_02 correspond à l'état final de l'objet
 let object = [
     /* Room 1 */
-    ["Cassette", 1, "Il s'agit d'une cassette."],
+    ["Cassettes", 1, "Il s'agit de cassettes."],
     ["Coffre_Fort", 1, "Il s'agit d'un coffre fort."],
     ["Jukebox", 1, "Il s'agit d'un jukebox."],
     ["Lecteur", 1, "Il s'agit d'un lecteur."],
