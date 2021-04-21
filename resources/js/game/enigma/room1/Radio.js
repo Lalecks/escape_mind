@@ -25,7 +25,7 @@ export default function Radio(){
     cursor.value="50";
 
     cursor.onchange=function(){
-        console.log(cursor.value);
+        //Correspond à la fréquence à trouver
         if (cursor.value === "36"){
            alert("gg");
         }

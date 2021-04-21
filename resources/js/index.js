@@ -17,15 +17,13 @@ require('./layouts/modal'); // Avant custom_packages.js pour fonctionner
 
 /*-------- Game --------*/
 if (document.getElementById("game-page")) {
+    require('./game/game.js');
     /* Room functionnment */
-    require('./game/room_management');
+    // require('./game/room_management');
     /* Cinematics */
-    require('./game/cinematic');
     require('./game/video_player');
     /* Components */
     require('./game/components/object_modal');
-    require('./game/components/zoom');
-    // require('./game/fullscreen');
 }
 
 /*--------  Web Components --------*/
