@@ -16,7 +16,7 @@
                 right: 29%;
                 top: 3%;
                 width: 40%;
-
+                z-index: 0;
             }
 
             #Peluche {
@@ -29,6 +29,7 @@
                 bottom: 56%;
                 left: 5%;
                 width: 3%;
+                z-index: 1;
             }
 
             #Pile {
@@ -46,13 +47,14 @@
                 -webkit-transition: .3s ease-in-out;
                 -o-transition: .3s ease-in-out;
                 transition: .3s ease-in-out;
+                -webkit-transform: perspective(33rem) rotateY(-32deg);
+                transform: perspective(33rem) rotateY(-32deg);
 
                 &:hover {
                     -webkit-filter: sepia(60%) drop-shadow(2px 1px 3px $black);
                     filter: sepia(60%) drop-shadow(5px 5px 5px $black);
                 }
             }
-
 
             #Tablette {
                 width: 11%;
@@ -73,9 +75,38 @@
                 -webkit-animation: rihanna 5s infinite;
                 animation: rihanna 8s infinite;
             }
+
+            #Bureau {
+                top: 33%;
+                left: 0.5%;
+                width: 24%;
+                z-index: 0;
+            }
+
+            #Crayons {
+                right: 14%;
+                bottom: 24%;
+                width: 14.5%;
+            }
+
+            #Dessin {
+                right: 0;
+                bottom: 22%;
+                width: 27.5%;
+            }
+
+            #Marelle {
+                bottom: 1.4%;
+                right: 27%;
+                width: 37%;
+            }
+
+            #Oiseaux {
+                top: 0;
+                left: 40%;
+                width: 15%;
+                z-index: 0;
+            }
         }
     }
 }
-
-// PUZZLE https://codepen.io/nushysc/pen/dypOLzO
-// https://codepen.io/aneesdhansey/pen/oNzQjwL

@@ -19,6 +19,7 @@ let object = [
     ["Jukebox", 1, "Il s'agit d'un jukebox."],
     ["Lecteur", 1, "Il s'agit d'un lecteur."],
     ["Radio", 1, "Il s'agit d'une radio."],
+    ["Poster_Ramdam", 1, "Il s'agit d'une radio."],
     //["Affiche_Ramdam", 1, "Il s'agit d'une cassette."],
     /* Room 2 */
     ["Lit", 2, "Il s'agit d'un lit double."],
@@ -31,20 +32,51 @@ let object = [
     ["Pile", 2, "Il s'agit de la pile 2."],
     ["Pile", 2, "Il s'agit de la pile 3."],
     /* Room 3 */
+    ["Bouchon", 3, ""],
+    ["Chateau_Sable", 3, ""],
+    ["Clef", 3, ""],
+    ["Coffre_Tresor", 3, ""],
+    ["Baleine", 3, ""],
+    ["Canard", 3, ""],
+    ["Poulpe", 3, ""],
+    ["Bateau_Pirate", 3, ""],
+    ["Bouteille_Verre", 3, ""],
+    ["Bouteille_Oxygene", 3, ""],
 ];
 
 let decor = [
     /* Room 1 */
     ["Led", 1],
+    ["Panneau", 1],
     ["Panneau_neon", 1],
     ["Ramdam", 1],
+    ["Big_Vinyl", 1],
+    ["Little_Vinyl", 1],
+    ["Guitare", 1],
     /* Room 2 */
     ["Etoiles", 2],
+    ["Bureau", 2],
+    ["Crayons", 2],
+    ["Dessin", 2],
+    ["Marelle", 2],
+    ["Oiseaux", 2],
+    /* Room 3 */
+    ["Robinet", 3],
+    ["Bulle", 3],
+    ["Crabe", 3],
+    ["Seau", 3],
+    ["Coquille", 3, ""],
+    ["Pagure", 3, ""],
+
 ];
 
 // Salle actuelle
-let actualRoom = 1;
-export { actualRoom as actualRoom };
+let actualRoom = 2;
+
+export {
+    actualRoom as actualRoom
+};
+
 let url = "./resources/game/room" + actualRoom;
 
 export default function createGame() {
@@ -53,6 +85,7 @@ export default function createGame() {
 }
 
 function createRoom() {
+
     let parent_obj = document.getElementById("Objects");
     let parent_decor = document.getElementById("Decors");
 
@@ -74,7 +107,7 @@ function createRoom() {
 
             //Pour les triggers ajoutés en JS
             link.addEventListener("click", function () {
-                toggleModalCustom(object[i][0], object[i][2],Radio())
+                toggleModalCustom(object[i][0], object[i][2], Radio())
             });
 
             // Objet en cours

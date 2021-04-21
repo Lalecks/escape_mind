@@ -90,6 +90,7 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
     - Copyright (c) [Clement Girault](https://codepen.io/clementGir/pen/RQqvQx)
     - Copyright (c) [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
     - Copyright (c) [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
+    - Copyright (c) 2017 [Mary Lou](https://github.com/codrops/CSSGlitchEffect)
 
 ## Project status
 The development of the application is in progress.

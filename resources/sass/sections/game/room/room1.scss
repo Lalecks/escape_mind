@@ -1,16 +1,16 @@
 #game-page {
     #Game {
         .Room1 {
-            -webkit-filter: saturate(130%);
-            filter: saturate(130%);
+            -webkit-filter: saturate(132%);
+            filter: saturate(132%);
 
             div {
                 img {
                     width: 20%;
 
                     &:hover {
-                        -webkit-filter: saturate(140%) drop-shadow(.05rem .05rem 5rem $white);
-                        filter: saturate(140%) drop-shadow(.05rem .05rem 1rem $white);
+                        -webkit-filter: saturate(180%) drop-shadow(.05rem .05rem 5rem $white);
+                        filter: saturate(180%) drop-shadow(.05rem .05rem 1rem $white);
                     }
                 }
             }
@@ -44,23 +44,38 @@
                     bottom: 14%;
                 }
 
-                // #Affiche_Ramdam {
-                // }
+                #Poster_Ramdam {
+                    left: -0.9%;
+                    top: 11%;
+                    -webkit-transform: perspective(33rem) rotateY(51deg);
+                    transform: perspective(33rem) rotateY(51deg);
+                    width: 10%;
+                    z-index: 1;
+                }
             }
 
             #Decors {
                 #Led {
-                    width: 7.7%;
+                    width: 7%;
                     top: 3.9%;
-                    left: 3.8%;
+                    left: 4.8%;
                     -webkit-animation: 8s pommeray infinite;
                     animation: 8s pommeray infinite;
+                    z-index: 0;
+                }
+
+                #Panneau {
+                    top: 12%;
+                    left: 12%;
+                    width: 17%;
                 }
 
                 #Panneau_neon {
                     top: 3%;
                     left: 17%;
                     width: 8%;
+                    -webkit-transform-origin: bottom left;
+                    -ms-transform-origin: bottom left;
                     transform-origin: bottom left;
                     -webkit-animation: 3s spin infinite, 3s pink_neon infinite;
                     animation: 4s spin infinite, 4s pink_neon infinite;
@@ -69,6 +84,24 @@
                 #Ramdam {
                     top: 4%;
                     left: 34%;
+                }
+
+                #Big_Vinyl {
+                    top: 17%;
+                    right: 37%;
+                    width: 9%;
+                }
+
+                #Little_Vinyl {
+                    top: 27%;
+                    left: 31%;
+                    width: 6%;
+                }
+
+                #Guitare {
+                    top: 2%;
+                    right: 5%;
+                    width: 31%;
                 }
             }
         }

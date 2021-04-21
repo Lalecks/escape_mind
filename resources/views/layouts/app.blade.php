@@ -27,7 +27,6 @@
 		<meta property="og:description" content="Des chercheurs sont sur le point de débrancher l’IA qu’ils ont créée quelques années auparavant, car celle-ci est devenue obsolète."/>
 		<meta property="og:locale" content="fr_FR"/>
 		<meta property="og:image" content="https://site.com/post.jpg" />
-
 		<meta property="og:image" content="{{ asset('resources/icon/apple-icon-57x57.png')}}"/>
         <meta property="og:image:secure_url" content="{{ asset('resources/icon/apple-icon-57x57.png')}}"/>
         <meta property="og:image:alt" content="escape_mind"/>

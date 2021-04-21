@@ -1,0 +1,121 @@
+#game-page {
+    #Game {
+        .Room3 div {
+            img {
+                width: 15%;
+            }
+        }
+
+        #Objects {
+            #Bouchon {
+                right: 0;
+                top: 46%;
+                width: 9%;
+            }
+
+            #Chateau_Sable {
+                left: 23%;
+                bottom: 10%;
+                width: 23%;
+                z-index: 1;
+            }
+
+            #Clef {
+                left: 40%;
+                bottom: 11%;
+                width: 7%;
+                z-index: 0;
+            }
+
+            #Coffre_Tresor {
+                left: 3%;
+                bottom: 25%;
+                width: 17%;
+            }
+
+            #Baleine {
+                right: 35%;
+                bottom: 16%;
+                width: 7%;
+            }
+
+            #Canard {
+                left: 4.5%;
+                bottom: 5.5%;
+                width: 2%;
+                z-index: 1;
+            }
+
+            #Poulpe {
+                width: 4%;
+                bottom: 29%;
+                left: 50%;
+                z-index: 0;
+            }
+
+            #Bateau_Pirate {
+                right: 24%;
+                top: 34%;
+                width: 20%;
+                -webkit-transform: rotate(6deg);
+                -ms-transform: rotate(6deg);
+                transform: rotate(6deg);
+            }
+
+            #Bouteille_Verre {
+                right: 1%;
+                bottom: 3%;
+                width: 23%;
+                -webkit-transform: rotate(10deg);
+                -ms-transform: rotate(10deg);
+                transform: rotate(10deg);
+            }
+
+            #Bouteille_Oxygene {
+                right: -9%;
+                bottom: 31%;
+                -webkit-transform: rotate(5deg);
+                -ms-transform: rotate(5deg);
+                transform: rotate(5deg);
+            }
+        }
+
+        #Decors {
+            #Robinet {
+                top: 2%;
+                right: 0;
+                width: 13%;
+            }
+
+            #Bulle {
+                display: none;
+            }
+
+            #Crabe {
+                bottom: 2%;
+                left: 17.3%;
+                width: 6%;
+            }
+
+            #Seau {
+                bottom: 18%;
+                right: 9%;
+                width: 18%;
+            }
+
+            #Coquille {
+                left: 1%;
+                bottom: 3%;
+                width: 7%;
+                z-index: 0;
+            }
+
+            #Pagure {
+                bottom: 30%;
+                left: 48%;
+                width: 6%;
+                z-index: 1;
+            }
+        }
+    }
+}
