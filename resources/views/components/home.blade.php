@@ -127,7 +127,6 @@
 						</div>
 						<p class="logo-title">pseudo2</p>
 					</div>
-					</div>
 					<div class="first">
 						<div>
 							<svg width="84" height="320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
