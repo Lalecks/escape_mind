@@ -7,6 +7,8 @@
 /* Inititalisation des variables */
 import {invJoueur} from "../game/enigma/inventory";
 import {actualRoom} from "../game/room_creation";
+import Radio from "../game/enigma/room1/Radio";
+import Cassettes from "../game/enigma/room1/Cassettes";
 
 let modal = document.querySelector(".modal");
 let content = document.querySelector(".modal-content");
@@ -40,9 +42,16 @@ export default function toggleModalCustom(titre, description, enigme) {
             content.appendChild(desc_html);
 
 
-            if (enigme !== "") {
-                content.appendChild(enigme);
+            switch(titre){
+                case "Cassettes" : content.appendChild(Cassettes()); break;
+                case "Coffre_Fort" : content.appendChild(Radio()); break;
+                case "Jukebox" : content.appendChild(Radio()); break;
+                case "Lecteur" : content.appendChild(Radio()); break;
+                case "Radio" : content.appendChild(Radio()); break;
+                case "Poster_Ramdam" : content.appendChild(Radio()); break;
+                default:
             }
+
 
 
             /* Arreter le scrolling de la page */
@@ -90,7 +99,7 @@ function createInventory(){
         if ( parseInt(invJoueur[i][1]) > 1 ){
             let num = document.createElement("p");
             num.innerText= invJoueur[i][1];
-
+            num.className="item_number";
             global_object.appendChild(num);
         }
 
@@ -101,10 +110,10 @@ function createInventory(){
         let object = document.createElement("img");
         object.src = url + "/objects/" + invJoueur[i][0] + "_00.png";
 
-        
+
         global_object.appendChild(nom);
         global_object.appendChild(object);
-        
+
         inv_html.appendChild(global_object);
 
     }
