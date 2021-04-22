@@ -24,10 +24,51 @@
         }
 
         #Inventory {
-            top: 100%;
-            background: red;
+            position: relative;
+            text-align: center;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 2%;
+            top: 67%;
             left: 0%;
-            transform: translate(0%, -50%);
+            transform: translate(0%, 0%);
+            right: 0;
+            width: 100%;
+            height: 8rem;
+            // // Glassmorphism
+            // background-image: -webkit-linear-gradient($white-degraded);
+            // background-image: -moz-linear-gradient($black-degraded);
+            // background-image: -o-linear-gradient($black-degraded);
+            // background-image: linear-gradient($black-degraded);
+
+            .picked {
+                border-radius: 0.5rem;
+                padding: 1rem;
+                // Glassmorphism
+                background-image: -webkit-linear-gradient($white-degraded);
+                background-image: -moz-linear-gradient($white-degraded);
+                background-image: -o-linear-gradient($white-degraded);
+                background-image: linear-gradient($white-degraded);
+
+                .item_numbers {
+                    font-family: "Audiowide", cursive;
+                    position: absolute;
+                    font-weight: bold;
+                    left: 0
+                }
+
+                img {
+                    width: 90%;
+                    height: 90%;
+
+                    &:hover {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
         }
     }
 }
