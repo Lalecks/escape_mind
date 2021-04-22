@@ -30,7 +30,10 @@ export default function toggleModalCustom(titre, description, enigme) {
             desc_html.innerText = description;
             desc_html.id = "desc_modal";
 
-            let inv_html = createInventory();
+            if (invJoueur.length > 0){
+                let inv_html = createInventory();
+                content.appendChild(inv_html);
+            }
 
             /* Ouverture de la modal */
             content.appendChild(titre_html);
@@ -41,7 +44,6 @@ export default function toggleModalCustom(titre, description, enigme) {
                 content.appendChild(enigme);
             }
 
-            content.appendChild(inv_html);
 
             /* Arreter le scrolling de la page */
             document.body.style.position = "fixed";
@@ -77,6 +79,7 @@ function createInventory(){
 
     let inv_html = document.createElement("div");
     inv_html.id="Inventory";
+    inv_html.className="modal-content glass-effect";
     let url = "./resources/game/room" + actualRoom;
 
     for (let i= 0; i < invJoueur.length;i++){
