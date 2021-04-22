@@ -1409,6 +1409,7 @@ canvas[resize] {
 /* Bouton générale */
 
 .btn {
+  text-align: center;
   font-family: "Audiowide", cursive;
   text-transform: lowercase;
   border-radius: 30rem;
@@ -2417,6 +2418,14 @@ footer {
   width: 18rem;
 }
 
+#game-page .modal #Activity #enigme_modal .btn-animation_glitch {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#game-page .modal #Activity #enigme_modal .btn-animation_glitch:hover {
+  background-color: black;
+}
+
 #game-page .modal #Inventory {
   position: relative;
   text-align: center;
@@ -2430,7 +2439,6 @@ footer {
   transform: translate(0%, 0%);
   right: 0;
   width: 100%;
-  height: 8rem;
 }
 
 #game-page .modal #Inventory .picked {
