@@ -18,7 +18,7 @@
         <div id="Game" class="Game">
             <div id="ObjectInfo">
                 <div class="modal glass-effect">
-                    <div class="modal-content glass-effect">
+                    <div class="modal-content glass-effect" id="Activity">
                         <span class="close-button hoverable">&times;</span>
                     </div>
                 </div>

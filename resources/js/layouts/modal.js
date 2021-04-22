@@ -32,7 +32,7 @@ export default function toggleModalCustom(titre, description, enigme) {
 
             if (invJoueur.length > 0){
                 let inv_html = createInventory();
-                content.appendChild(inv_html);
+                modal.appendChild(inv_html);
             }
 
             /* Ouverture de la modal */
@@ -54,7 +54,7 @@ export default function toggleModalCustom(titre, description, enigme) {
 
             try {
                 content.removeChild(document.getElementById("enigme_modal"));
-                content.removeChild(document.getElementById("Inventory"));
+                modal.removeChild(document.getElementById("Inventory"));
             }
             catch (e) {}
 
@@ -78,8 +78,8 @@ export default function toggleModalCustom(titre, description, enigme) {
 function createInventory(){
 
     let inv_html = document.createElement("div");
-    inv_html.id="Inventory";
     inv_html.className="modal-content glass-effect";
+    inv_html.id="Inventory";
     let url = "./resources/game/room" + actualRoom;
 
     for (let i= 0; i < invJoueur.length;i++){
@@ -87,15 +87,26 @@ function createInventory(){
         global_object.id="inv_" + invJoueur[i][0];
         global_object.className="picked";
 
-        let num = document.createElement("span");
-        num.innerText= invJoueur[i][1];
+        if ( parseInt(invJoueur[i][1]) > 1 ){
+            let num = document.createElement("p");
+            num.innerText= invJoueur[i][1];
+
+            global_object.appendChild(num);
+        }
+
+
+        let nom = document.createElement("p");
+        nom.innerText= invJoueur[i][0];
 
         let object = document.createElement("img");
         object.src = url + "/objects/" + invJoueur[i][0] + "_00.png";
 
-        global_object.appendChild(num);
+        
+        global_object.appendChild(nom);
         global_object.appendChild(object);
+        
         inv_html.appendChild(global_object);
+
     }
 
 
