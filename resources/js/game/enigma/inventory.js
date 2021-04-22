@@ -7,7 +7,7 @@
 /* Les objets dans l'inventaire du joueur
  *  [nom,nombre]
  */
-const objets = [["Cassette","1"]];
+const objets = [/*["Cassette","1"]*/];
 export { objets as invJoueur };
 
 /*
@@ -15,7 +15,7 @@ export { objets as invJoueur };
  * objet correspond au nom de l'objet
  * isToAdd est un booléen qui dit si l'objet est à supprimer ou à ajouter
  */
-export default function updateObjects(object,isToAdd){
+export default function updateInventory(object,isToAdd){
     if (isToAdd){
         //Add object
         let placed = false;

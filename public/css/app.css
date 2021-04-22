@@ -1090,6 +1090,29 @@ h2 {
   position: relative;
 }
 
+/**
+*
+* Propriété CSS cursor
+*
+* */
+
+.cursor {
+  pointer-events: none;
+}
+
+.cursor .cursor__ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+}
+
+.cursor .cursor__ball circle {
+  fill: none;
+  stroke: white;
+  stroke-width: 1;
+}
+
 body {
   width: 100vw;
   height: 100vh;

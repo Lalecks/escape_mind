@@ -1,32 +1,32 @@
-// /**
-// *
-// * Propriété CSS cursor
-// *
-// * */
+ /**
+ *
+ * Propriété CSS cursor
+ *
+ * */
 
-// .cursor {
-// 	pointer-events: none;
-// 	.cursor__ball {
-// 		position: fixed;
-// 		top: 0;
-// 		left: 0;
-// 		// mix-blend-mode: difference;
-// 		z-index: 1000000;
-// 		circle {
-// 			fill: none;
-// 			stroke: white;
-// 			stroke-width: 1;
-// 		}
-// 	}
-// 		// .cursor__ball--small {
-// 		// 	fill: gainsboro;
-// 		// }
-// 		// .cursor__ball--big {
-// 		// 	fill: transparent;
-// 		// 	stroke: white;
-// 		// 	stroke-width: 3;
-// 		// }
-// }
+ .cursor {
+ 	pointer-events: none;
+ 	.cursor__ball {
+ 		position: fixed;
+ 		top: 0;
+ 		left: 0;
+ 		// mix-blend-mode: difference;
+ 		z-index: 1000000;
+ 		circle {
+ 			fill: none;
+ 			stroke: white;
+ 			stroke-width: 1;
+ 		}
+ 	}
+ 		// .cursor__ball--small {
+ 		// 	fill: gainsboro;
+ 		// }
+ 		// .cursor__ball--big {
+ 		// 	fill: transparent;
+ 		// 	stroke: white;
+ 		// 	stroke-width: 3;
+ 		// }
+ }
 
 body {
     width: 100vw;

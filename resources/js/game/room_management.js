@@ -10,24 +10,10 @@ function resetAllObjects(){
     }
 }
 
-function hideObject(id){
-    let toHide = document.getElementById(id);
-    if (toHide){
-        toHide.style.display='none';
-    }
-}
+export default function updateObject(obj){
+    let html = document.getElementById(obj);
 
-function showObject(id){
-    let toHide = document.getElementById(id);
-    if (toHide){
-        toHide.style.display='block';
-    }
-}
-
-function getRoom(){
-
-    return rooms[actual_room];
-
+    html.src = html.src.replace("_00","_01");
 }
 
 function zoomObject(id){
