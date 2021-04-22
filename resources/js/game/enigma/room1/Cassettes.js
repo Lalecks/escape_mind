@@ -27,7 +27,7 @@ export default function Cassettes(){
     console.log(used);
     if (!used){
         let button = document.createElement("a");
-        button.className="btn btn-outline-primary hoverable";
+        button.className="btn btn-fill-primary hoverable glass-effect btn-animation_glitch";
         button.id="Casettes_button";
         button.innerText="Récupérer";
         button.onclick = function(){
