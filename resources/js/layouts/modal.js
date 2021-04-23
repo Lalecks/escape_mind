@@ -9,6 +9,7 @@ import {invJoueur} from "../game/enigma/inventory";
 import {actualRoom} from "../game/room_creation";
 import Radio from "../game/enigma/room1/Radio";
 import Cassettes from "../game/enigma/room1/Cassettes";
+import Defaut from "../game/enigma/room1/Defaut";
 
 let modal = document.querySelector(".modal");
 let content = document.querySelector(".modal-content");
@@ -16,7 +17,7 @@ let trigger = document.querySelector(".trigger");
 let closeButton = document.querySelector(".close-button");
 
 
-export default function toggleModalCustom(titre, description, enigme) {
+export default function toggleModalCustom(titre, description) {
     //PAGE DE JEU
     if (document.getElementById("game-page")) {
 
@@ -44,12 +45,8 @@ export default function toggleModalCustom(titre, description, enigme) {
 
             switch(titre){
                 case "Cassettes" : content.appendChild(Cassettes()); break;
-                case "Coffre_Fort" : content.appendChild(Radio()); break;
-                case "Jukebox" : content.appendChild(Radio()); break;
-                case "Lecteur" : content.appendChild(Radio()); break;
                 case "Radio" : content.appendChild(Radio()); break;
-                case "Poster_Ramdam" : content.appendChild(Radio()); break;
-                default:
+                default: content.appendChild(Defaut(titre));
             }
 
 
@@ -128,12 +125,12 @@ if (modal && trigger) {
     // Ne fonctionne pas pour les triggers des objets ajoutés en JS
     // (cf room_creation l66 & 95)
     trigger.addEventListener("click", function () {
-        toggleModalCustom("", "", "");
+        toggleModalCustom("", "");
     });
     /* Fermeture de la modal en cliquant dans le vide */
     window.addEventListener("click", function (event) {
         if (event.target === modal) {
-            toggleModalCustom("", "", "")
+            toggleModalCustom("", "")
         }
     });
 
@@ -142,6 +139,6 @@ if (modal && trigger) {
 if (closeButton) {
     /* Fermeture de la modal avec le btn close*/
     closeButton.addEventListener("click", function () {
-        toggleModalCustom("", "", "")
+        toggleModalCustom("", "")
     });
 }

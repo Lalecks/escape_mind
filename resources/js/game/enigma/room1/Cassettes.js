@@ -31,7 +31,7 @@ export default function Cassettes() {
         button.innerText = "Récupérer";
         button.onclick = function () {
             updateInventory("Cassette", "1");
-            toggleModalCustom("", "", "");
+            toggleModalCustom("", "");
             updateObject("Cassettes");
             used = 1;
         };

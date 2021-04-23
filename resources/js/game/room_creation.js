@@ -70,7 +70,7 @@ let decor = [
 ];
 
 // Salle actuelle
-let actualRoom = 2;
+let actualRoom = 1;
 
 export {
     actualRoom as actualRoom
@@ -108,7 +108,7 @@ function createRoom() {
             //Pour les triggers ajoutés en JS
             link.addEventListener("click", function () {
 
-                toggleModalCustom(object[i][0], object[i][2],"");
+                toggleModalCustom(object[i][0], object[i][2]);
             });
 
             // Objet en cours
@@ -142,7 +142,7 @@ function createRoom() {
     // Pour sortir de la modale en cliquant dans le vide
     window.addEventListener("click", function (event) {
         if (event.target === document.querySelector(".modal")) {
-            toggleModalCustom("", "", "");
+            toggleModalCustom("", "");
         }
     })
 }
