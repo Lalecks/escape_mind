@@ -1,17 +1,17 @@
 /*
  * Enigme de la radio
  */
-import {actualRoom} from "../../room_creation";
-let url = "./resources/game/room" + actualRoom;
-let modal = document.querySelector(".modal-content");
+
 
 export default function Radio(){
     let radio_enigma = document.createElement("div");
     radio_enigma.id="enigme_modal";
 
+    let radio_html = document.getElementById("Radio");
+
     let radio_bg = document.createElement("img");
     radio_bg.id="Radio_bg";
-    radio_bg.src="./resources/game/room" + actualRoom + "/enigma/Radio/Radio_00.png";
+    radio_bg.src=radio_html.src;
 
     let area = document.createElement("div");
     area.className = "slidecontainer";
