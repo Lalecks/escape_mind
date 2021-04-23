@@ -10,6 +10,9 @@ require('./generic/jquery-2.1.4.min');
 /*--------  Packages --------*/
 if (document.getElementById("home-page")) {
     require('./package/rellax.min');
+    var rellax = new Rellax('.rellax', {
+        breakpoints: [576, 768, 1201]
+    });
 }
 /*-------- Layouts --------*/
 require('./layouts/loader');
@@ -30,4 +33,3 @@ if (document.getElementById("game-page")) {
     require('./game/video_player');
     /* Components */
 }
-
