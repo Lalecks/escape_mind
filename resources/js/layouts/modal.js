@@ -109,6 +109,7 @@ function createInventory(){
 
         let object = document.createElement("img");
         object.src = url + "/objects/" + invJoueur[i][0] + "_00.png";
+        object.alt = invJoueur[i][0];
 
 
         global_object.appendChild(nom);

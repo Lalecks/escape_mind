@@ -95,6 +95,7 @@ function createRoom() {
     let bg = document.createElement("img");
     bg.id = "bg";
     bg.src = url + "/Room" + actualRoom + ".png";
+    bg.alt = "Room" + actualRoom;
 
     // Initialisation des objets de la salle actuelle
     for (let i = 0; i < object.length; i++) {
@@ -114,7 +115,8 @@ function createRoom() {
             let obj = document.createElement("img");
             obj.id = "" + object[i][0];
             obj.src = url + "/objects/" + object[i][0] + "_00.png";
-            obj.className = "hoverable"; // Pour centrer la souris mdr.
+            obj.className = "hoverable"; // Pour centrer la souris
+            obj.alt = object[i][0];
 
             link.appendChild(obj);
             parent_obj.appendChild(link);
@@ -129,6 +131,7 @@ function createRoom() {
             let obj = document.createElement("img");
             obj.id = "" + decor[i][0];
             obj.src = url + "/decors/" + decor[i][0] + ".png";
+            obj.alt = decor[i][0];
             link.appendChild(obj);
             parent_decor.appendChild(link);
         }

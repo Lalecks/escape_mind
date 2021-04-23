@@ -10,8 +10,6 @@ if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elain
     isMobile = true;
 } // Détection de dispositif
 
- //isMobile; // Il faut le laisser pour ne pas que le Desktop passe en rotate(90°)
-
 // Si le support est un mobile, forcer le mode paysage quand le téléphone est en portrait
 if (isMobile == true) {
     $("#game-page").addClass("landscape");
