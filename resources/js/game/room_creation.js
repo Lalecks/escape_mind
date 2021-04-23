@@ -70,7 +70,7 @@ let decor = [
 ];
 
 // Salle actuelle
-let actualRoom = 2;
+let actualRoom = 3;
 
 export {
     actualRoom as actualRoom
