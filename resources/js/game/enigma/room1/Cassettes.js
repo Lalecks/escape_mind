@@ -2,15 +2,10 @@
  * Enigme de la radio
  */
 
-import {
-    actualRoom
-} from "../../room_creation";
 import updateInventory from "../inventory";
 import toggleModalCustom from "../../../layouts/modal";
 import updateObject from "../../room_management";
 
-let url = "./resources/game/room" + actualRoom;
-let modal = document.querySelector(".modal-content");
 let used = 0;
 
 export default function Cassettes() {
