@@ -4,9 +4,10 @@
  *
  * */
 
-const cursorModule = () => {
+export default function cursorModule(){
     const innerCursor = document.querySelector(".cursor--small");
     const canvas = document.querySelector(".cursor--canvas");
+
     let clientX = -100;
     let clientY = -100;
     const initCursor = () => {
@@ -32,6 +33,8 @@ const cursorModule = () => {
     let stuckX;
     let stuckY;
     let fillOuterCursor;
+
+
     const initCanvas = () => {
         const shapeBounds = {
             width: 75,
@@ -39,7 +42,7 @@ const cursorModule = () => {
         };
         paper.setup(canvas);
         const strokeColor = 'rgba(255, 255, 255, 0.5)';
-        const strokeWidth = 2.5;
+        const strokeWidth = 4;
         const segments = 8;
         const radius = 15;
         const noiseScale = 150;
@@ -122,6 +125,8 @@ const cursorModule = () => {
         }
     }
     initCanvas();
+
+
     const initCursorHovers = () => {
         const handleCanvasCursorMouseEnter = e => {
             const navItem = e.currentTarget;
@@ -173,3 +178,8 @@ const cursorModule = () => {
 window.onload = () => {
     cursorModule();
 }
+
+
+
+
+

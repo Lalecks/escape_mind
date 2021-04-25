@@ -6,6 +6,7 @@
 
 import createTimer from "./components/timer";
 import toggleModalCustom from "../layouts/modal";
+import cursorModule from "../layouts/mouse";
 
 // Ajout des objets
 // Un objet_00 correspond à l'image par défaut
@@ -70,7 +71,7 @@ let decor = [
 ];
 
 // Salle actuelle
-let actualRoom = 3;
+let actualRoom = 1;
 
 export {
     actualRoom as actualRoom
@@ -80,6 +81,7 @@ let url = "./resources/game/room" + actualRoom;
 
 export default function createGame() {
     createRoom();
+    cursorModule();
     createTimer();
 }
 
@@ -131,6 +133,7 @@ function createRoom() {
             let obj = document.createElement("img");
             obj.id = "" + decor[i][0];
             obj.src = url + "/decors/" + decor[i][0] + ".png";
+            obj.className = "another-hoverable";
             obj.alt = decor[i][0];
             link.appendChild(obj);
             parent_decor.appendChild(link);

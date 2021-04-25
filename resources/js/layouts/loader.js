@@ -4,13 +4,6 @@
 *
 * */
 
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById("content").style.transition="opacity 2s";
-    document.getElementById("content").style.opacity="100";
-    document.getElementById("souris").style.transition="opacity 2s";
-    document.getElementById("souris").style.opacity="100";
-});
-
 ;(function(){
     function id(v){ return document.getElementById(v); }
     function loadbar() {
@@ -30,9 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if(c===tot) return doneLoading();
         }
         function doneLoading(){
-            ovrl.style.opacity = 0;
             setTimeout(function(){
+                ovrl.style.opacity = 0;
                 ovrl.style.display = "none";
+                document.getElementById("content").style.transition="opacity 2s";
+                document.getElementById("content").style.opacity="100";
+                document.getElementById("souris").style.transition="opacity 2s";
+                document.getElementById("souris").style.opacity="100";
             }, 1200);
         }
         for(var i=0; i<tot; i++) {

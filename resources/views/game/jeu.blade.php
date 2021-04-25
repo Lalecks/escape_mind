@@ -6,6 +6,8 @@
     {{-- <p>zse</p> --}}
     <header id="Header" class="Header">
         <div class="HeaderLogo">
+            <!-- Nécessaire pour le bon fonctionnement du Loading -->
+            <img src="./resources/game/Logo.png" style="display: none;"/>
         </div>
         <div class="Mute">
         </div>
