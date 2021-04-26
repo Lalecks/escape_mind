@@ -5,6 +5,7 @@
 import updateInventory from "../inventory";
 import toggleModalCustom from "../../../layouts/modal";
 import updateObject from "../../room_management";
+import createModal from "../../../layouts/modal";
 
 let used = 0;
 
@@ -31,7 +32,7 @@ export default function Cassettes() {
         button.innerText = "Récupérer";
         button.onclick = function () {
             updateInventory("Cassette", "1");
-            toggleModalCustom("", "");
+            //createModal();
             updateObject("Cassettes");
             used = 1;
         };

@@ -23,6 +23,7 @@
                     <div class="modal-content glass-effect" id="Activity">
                         <span class="close-button hoverable">&times;</span>
                     </div>
+                    <div class="modal-content glass-effect" id="Inventory"></div>
                 </div>
             </div>
 
