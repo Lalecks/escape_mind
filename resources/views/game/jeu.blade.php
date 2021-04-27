@@ -3,7 +3,6 @@
 
 @section('content')
 <section id="game-page" class="landscape">
-    {{-- <p>zse</p> --}}
     <header id="Header" class="Header">
         <div class="HeaderLogo">
             <!-- Nécessaire pour le bon fonctionnement du Loading -->
@@ -14,7 +13,7 @@
     </header>
 
     <main id="Main" role="main">
-        <span id="settings"><i class="fas fa-cog"></i></span>
+        <span id="settings" class="hoverable"><i class="fas fa-cog"></i></span>
         <div id="Cinematic" class="Cinematic">
             <!-- Cinematic -->
         </div>

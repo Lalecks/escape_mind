@@ -86,7 +86,8 @@
 @-moz-document url-prefix() {
 
     // backdrop-filter ne fonctionne pas sur ces navigateurs
-    .modal-content {
+    .modal-content,
+    #Inventory {
         background-color: #0a0a0aa3;
     }
 
@@ -98,7 +99,7 @@
 /* Safari */
 // @media screen and (-webkit-min-device-pixel-ratio:0) {
 //     .show-modal {
-//         background-color: #0a0a0ad2;
+//         background-color: #0a0a0a87;
 //     }
 // }
 

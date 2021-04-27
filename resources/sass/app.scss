@@ -67,10 +67,15 @@
 /*-------- Enigmes  --------*/
 @import 'sections/game/room/enigma/radio';
 
-
 /*--------  Responsive --------*/
 @import 'sections/web/responsive_web';
 @import 'sections/game/responsive_game';
 
 // Layout/Mise en page : C'est la façon dont le contenu est formaté et présenté, sa structure et sa mise en page.
 // Template/Modèle : Il s'agit d'un ensemble de fichiers et d'instructions, contenant uniquement la partie visuelle de la présentation du contenu. C'est un modèle de document qui façonnera le concept final.
+
+
+// A faire 
+// CSS Game : VideoPlayer / Settings / Modal game responsive / Effets glitch elements + Flottement / Souris / enregistrer score / Effet bulle + Timer salle 3
+// CSS Web : bg sections / scores / ranks / scrollBar / vidéo
+// JS : PB pile, modal, inventaire, gameMaster, enigmes, progressBar

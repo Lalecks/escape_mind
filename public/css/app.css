@@ -1699,7 +1699,8 @@ body {
 /* Firefox */
 
 @-moz-document url-prefix()  {
-  .modal-content {
+  .modal-content,
+  #Inventory {
     background-color: #0a0a0aa3;
   }
 
@@ -2674,18 +2675,18 @@ player:focus .controls {
 }
 
 #Chrono {
+  font-family: "Big Shoulders Display", cursive;
   color: #121212;
+  margin: 0;
+  padding: 0.04% 1.6%;
+  border-radius: 8.5%;
   position: absolute;
   z-index: 15;
   text-align: center;
   font-weight: bold;
-  margin: 0px;
   top: 2%;
+  right: 14%;
   display: flex;
-  font-family: "Big Shoulders Display", cursive;
-  right: 10%;
-  padding: 0.04% 1.6%;
-  border-radius: 8.5%;
   background-image: linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
 }
 
@@ -2698,7 +2699,7 @@ player:focus .controls {
   position: absolute;
   z-index: 15;
   top: 2%;
-  right: 5%;
+  right: 10%;
   font-size: 3vw !important;
   background: -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
   background-clip: text;

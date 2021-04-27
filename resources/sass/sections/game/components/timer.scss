@@ -1,27 +1,23 @@
 #Chrono {
+    font-family: "Big Shoulders Display", cursive;
     color: $body-bg;
+    margin: 0;
+    padding: 0.04% 1.6%;
+    border-radius: 8.5%;
     position: absolute;
     z-index: 15;
     text-align: center;
     font-weight: bold;
-    margin: 0px;
     top: 2%;
+    right: 14%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    // align-items: center;
-    font-family: "Big Shoulders Display", cursive;
-    right: 10%;
-    padding: 0.04% 1.6%;
-    border-radius: 8.5%;
     // Glassmorphism
     background-image: -webkit-linear-gradient($white-degraded);
     background-image: -moz-linear-gradient($white-degraded);
     background-image: -o-linear-gradient($white-degraded);
     background-image: linear-gradient($white-degraded);
-    // left: 50%;
-    // top: 25px;
-    // -webkit-transform: translateX(-50%);
-    // -ms-transform: translateX(-50%);
-    // transform: translateX(-50%);
 
     .chrono_digit,
     .chrono_space {
@@ -33,20 +29,5 @@
 //     background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(49%, #e1e1e1), color-stop(50%, #fff), to(#e1e1e1));
 //     background: -o-linear-gradient(top, #fff 0%, #e1e1e1 49%, #fff 50%, #e1e1e1 100%);
 //     background: linear-gradient(to bottom, #fff 0%, #e1e1e1 49%, #fff 50%, #e1e1e1 100%);
-//     margin: 0px 3px;
 //     width: 25px;
-//     font-weight: normal;
-//     height: 42px;
-//     display: inline-block;
-//     line-height: 43px;
-//     color: #000;
-//     border-radius: 3px;
-//     position: relative;
-//     -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
-//     box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
-//     text-transform: uppercase;
-//     -webkit-transition: all 0.05s ease-out;
-//     -o-transition: all 0.05s ease-out;
-//     transition: all 0.05s ease-out;
-
 // }
