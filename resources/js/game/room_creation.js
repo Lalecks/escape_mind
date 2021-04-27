@@ -5,7 +5,9 @@
  **/
 
 import createTimer from "./components/timer";
-import toggleModalCustom from "../layouts/modal";
+// import toggleModalCustom from "../layouts/modal";
+import cursorModule from "../layouts/mouse";
+import createModal from "../layouts/modal";
 
 // Ajout des objets
 // Un objet_00 correspond à l'image par défaut
@@ -80,6 +82,8 @@ let url = "./resources/game/room" + actualRoom;
 
 export default function createGame() {
     createRoom();
+    cursorModule();
+    createModal();
     createTimer();
 }
 
@@ -105,18 +109,18 @@ function createRoom() {
             // On appelle la classe juste par notation
             link.className = "trigger";
 
-            //Pour les triggers ajoutés en JS
-            link.addEventListener("click", function () {
-
-                toggleModalCustom(object[i][0], object[i][2]);
-            });
+            // //Pour les triggers ajoutés en JS
+            // link.addEventListener("click", function () {
+            //
+            //     toggleModalCustom(object[i][0], object[i][2]);
+            // });
 
             // Objet en cours
             let obj = document.createElement("img");
             obj.id = "" + object[i][0];
             obj.src = url + "/objects/" + object[i][0] + "_00.png";
             obj.className = "hoverable"; // Pour centrer la souris
-            obj.alt = object[i][0];
+            obj.alt = "" + object[i][2];
 
             link.appendChild(obj);
             parent_obj.appendChild(link);
@@ -140,11 +144,11 @@ function createRoom() {
     area.appendChild(bg);
 
     // Pour sortir de la modale en cliquant dans le vide
-    window.addEventListener("click", function (event) {
-        if (event.target === document.querySelector(".modal")) {
-            toggleModalCustom("", "");
-        }
-    })
+    // window.addEventListener("click", function (event) {
+    //     if (event.target === document.querySelector(".modal")) {
+    //         toggleModalCustom("", "");
+    //     }
+    // })
 }
 
 function endGame(num) {
