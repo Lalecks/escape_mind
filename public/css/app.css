@@ -2407,8 +2407,8 @@ footer {
 
 #game-page .modal #Activity {
   top: 40%;
-  height: 13rem;
-  width: 18rem;
+  height: 75%;
+  width: 90%;
 }
 
 #game-page .modal #Activity #enigme_modal .btn-animation_glitch {
