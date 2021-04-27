@@ -5,13 +5,17 @@
  * */
 
 /* Inititalisation des variables */
-import {invJoueur} from "../game/enigma/inventory";
-import {actualRoom} from "../game/room_creation";
+import {
+    invJoueur
+} from "../game/enigma/inventory";
+import {
+    actualRoom
+} from "../game/room_creation";
 import Radio from "../game/enigma/room1/Radio";
 import Cassettes from "../game/enigma/room1/Cassettes";
 import Defaut from "../game/enigma/room1/Defaut";
 
-export default function createModal(){
+export default function createModal() {
 
     let modal = document.querySelector(".modal");
     let activity = document.querySelector("#Activity");
@@ -30,16 +34,16 @@ export default function createModal(){
             /* Affichage ou non de la modale */
             if (modal.classList.toggle("show-modal")) {
                 /*  Titre de l'objet */
-                let titre_html = document.createElement("p");
+                let titre_html = document.createElement("span");
                 titre_html.innerText = titre;
                 titre_html.id = "titre_modal";
 
                 /* Description de l'objet */
-                let desc_html = document.createElement("p");
+                let desc_html = document.createElement("span");
                 desc_html.innerText = description;
                 desc_html.id = "desc_modal";
 
-                if (invJoueur.length > 0){
+                if (invJoueur.length > 0) {
                     let inv_html = createInventory();
                     inventory.appendChild(inv_html);
                 }
@@ -49,13 +53,16 @@ export default function createModal(){
                 activity.appendChild(desc_html);
 
 
-                switch(titre){
-                    case "Cassettes" : activity.appendChild(Cassettes()); break;
-                    case "Radio" : activity.appendChild(Radio()); break;
-                    default: activity.appendChild(Defaut(titre));
+                switch (titre) {
+                    case "Cassettes":
+                        activity.appendChild(Cassettes());
+                        break;
+                    case "Radio":
+                        activity.appendChild(Radio());
+                        break;
+                    default:
+                        activity.appendChild(Defaut(titre));
                 }
-
-
 
                 /* Arreter le scrolling de la page */
                 document.body.style.position = "fixed";
@@ -67,19 +74,17 @@ export default function createModal(){
                 try {
                     activity.removeChild(document.getElementById("enigme_modal"));
                     inventory.querySelectorAll("*").forEach(n => n.remove());
-                }
-                catch (e) {}
+                } catch (e) {}
 
                 /* Autorisation le scrolling de la page */
                 document.body.style.position = "relative";
 
-
             }
-        } else{
+        } else {
             //HOMEPAGE
             if (modal.classList.toggle("show-modal")) {
                 document.body.style.position = "fixed";
-            }else {
+            } else {
                 document.body.style.position = "relative";
             }
         }
@@ -87,25 +92,25 @@ export default function createModal(){
     }
 
 
-    function createInventory(){
+    function createInventory() {
         let objects = document.createElement("div");
         let url = "./resources/game/room" + actualRoom;
 
-        for (let i= 0; i < invJoueur.length;i++){
+        for (let i = 0; i < invJoueur.length; i++) {
             let global_object = document.createElement("div");
-            global_object.id="inv_" + invJoueur[i][0];
-            global_object.className="picked";
+            global_object.id = "inv_" + invJoueur[i][0];
+            global_object.className = "picked";
 
-            if ( parseInt(invJoueur[i][1]) > 1 ){
-                let num = document.createElement("p");
-                num.innerText= invJoueur[i][1];
-                num.className="item_number";
+            if (parseInt(invJoueur[i][1]) > 1) {
+                let num = document.createElement("span");
+                num.innerText = invJoueur[i][1];
+                num.className = "item_number";
                 global_object.appendChild(num);
             }
 
 
             let nom = document.createElement("p");
-            nom.innerText= invJoueur[i][0];
+            nom.innerText = invJoueur[i][0];
 
             let object = document.createElement("img");
             object.src = url + "/objects/" + invJoueur[i][0] + "_00.png";
@@ -121,7 +126,7 @@ export default function createModal(){
         return objects;
     }
 
-    if (modal && trigger.length>0) {
+    if (modal && trigger.length > 0) {
         /* Verifie s'il existe une classe modal dans la page */
         // Ne fonctionne pas pour les triggers des objets ajoutés en JS
         // (cf room_creation l66 & 95)
@@ -142,7 +147,7 @@ export default function createModal(){
     if (closeButton) {
         /* Fermeture de la modal avec le btn close*/
         closeButton.addEventListener("click", function () {
-            if (isDisplayed){
+            if (isDisplayed) {
                 isDisplayed = false;
                 toggleModalCustom("", "");
             }

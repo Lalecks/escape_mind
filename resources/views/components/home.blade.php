@@ -5,7 +5,7 @@
 @guest
 
 <div id="home-page">
-	{{-- <span id="bg-noise"></span> --}}
+	<span id="bg-noise"></span>
 
 	<header>
 		<a class="logo logo-title" href="#">escape_mind</a>
