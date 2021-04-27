@@ -1688,7 +1688,6 @@ p {
 .close-button {
   margin: 0;
   width: 2.3rem;
-  height: 100%;
   color: #ffffff;
   font-size: 2.4rem;
 }
@@ -2499,6 +2498,11 @@ footer {
 }
 
 #game-page .modal .modal-content {
+  top: 39%;
+  height: 28rem;
+  width: 45rem;
+  min-width: 1rem;
+  min-height: 2rem;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
 }
 
@@ -2508,14 +2512,45 @@ footer {
 }
 
 #game-page .modal #Activity {
-  top: 40%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
-#game-page .modal #Activity img {
-  max-width: 40%;
+#game-page .modal #Activity #titre_modal {
+  transform: rotate(-90deg);
+  font-family: "Audiowide", cursive;
+  position: absolute;
+  font-weight: bold;
+  left: -2%;
+  bottom: 50%;
+  z-index: -14;
+  font-size: 3vh;
+  color: #ffffff3d;
+  text-transform: uppercase;
+}
+
+#game-page .modal #Activity #enigme_modal {
+  display: flex;
+  flex-direction: column;
+  max-width: 68%;
+  max-height: 75%;
+}
+
+#game-page .modal #Activity #enigme_modal img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 1.1rem auto;
 }
 
 #game-page .modal #Activity #enigme_modal .btn-animation_glitch {
+  margin: 0 auto;
+  display: inline;
+  width: 35%;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -2548,7 +2583,7 @@ footer {
 #game-page .modal #Inventory div .picked {
   position: relative;
   width: 62%;
-  height: 3rem;
+  height: 5rem;
   border-radius: 0.5rem;
   padding: 0.7rem;
   overflow: hidden;
@@ -2576,8 +2611,8 @@ footer {
 }
 
 #game-page .modal #Inventory div .picked img {
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 60%;
+  max-height: 60%;
   display: inline-block;
   position: relative;
   transition: all 200ms ease-in;

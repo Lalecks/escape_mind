@@ -18,7 +18,6 @@ export {
  * isToAdd est un booléen qui dit si l'objet est à supprimer ou à ajouter
  */
 export default function updateInventory(object, isToAdd) {
-    document.getElementById('Activity').style.top = "40%";
 
     if (isToAdd) {
         //Add object
