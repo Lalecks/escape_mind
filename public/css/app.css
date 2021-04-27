@@ -3401,7 +3401,7 @@ player:focus .controls {
     right: 0;
     bottom: 0;
     overflow-x: hidden !important;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
   }
 }
 
