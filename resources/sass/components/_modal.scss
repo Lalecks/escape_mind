@@ -85,8 +85,12 @@
 @-moz-document url-prefix() {
 
     // backdrop-filter ne fonctionne pas sur ces navigateurs
+    .modal-content {
+        background-color: #0a0a0aa3;
+    }
+
     .show-modal {
-        background-color: #0a0a0ad2;
+        background-color: #0a0a0a87;
     }
 }
 

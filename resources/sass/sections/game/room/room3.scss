@@ -11,46 +11,49 @@
                 right: 0;
                 top: 46%;
                 width: 9%;
+                z-index: 2;
             }
 
             #Chateau_Sable {
                 left: 23%;
                 bottom: 10%;
                 width: 23%;
-                z-index: 1;
+                z-index: 2;
             }
 
             #Clef {
                 left: 40%;
                 bottom: 11%;
                 width: 7%;
-                z-index: 0;
+                z-index: 1;
             }
 
             #Coffre_Tresor {
                 left: 3%;
                 bottom: 25%;
                 width: 17%;
+                z-index: 2;
             }
 
             #Baleine {
                 right: 35%;
                 bottom: 16%;
                 width: 7%;
+                z-index: 2;
             }
 
             #Canard {
                 left: 4.5%;
                 bottom: 5.5%;
                 width: 2%;
-                z-index: 1;
+                z-index: 2;
             }
 
             #Poulpe {
                 width: 4%;
                 bottom: 29%;
                 left: 50%;
-                z-index: 0;
+                z-index: 1;
             }
 
             #Bateau_Pirate {
@@ -60,6 +63,7 @@
                 -webkit-transform: rotate(6deg);
                 -ms-transform: rotate(6deg);
                 transform: rotate(6deg);
+                z-index: 2;
             }
 
             #Bouteille_Verre {
@@ -69,6 +73,7 @@
                 -webkit-transform: rotate(10deg);
                 -ms-transform: rotate(10deg);
                 transform: rotate(10deg);
+                z-index: 2;
             }
 
             #Bouteille_Oxygene {
@@ -78,6 +83,7 @@
                 -webkit-transform: rotate(5deg);
                 -ms-transform: rotate(5deg);
                 transform: rotate(5deg);
+                z-index: 2;
             }
         }
 
@@ -86,37 +92,48 @@
                 top: 2%;
                 right: 0;
                 width: 13%;
+                z-index: 2;
             }
 
             #Bulle {
                 display: none;
                 width: 13%;
+                z-index: 2;
             }
 
             #Crabe {
                 bottom: 2%;
                 left: 17.3%;
                 width: 6%;
+                z-index: 2;
             }
 
             #Seau {
                 bottom: 18%;
                 right: 9%;
                 width: 18%;
+                z-index: 2;
             }
 
             #Coquille {
                 left: 1%;
                 bottom: 3%;
                 width: 7%;
-                z-index: 0;
+                z-index: 1;
             }
 
             #Pagure {
                 bottom: 30%;
                 left: 48%;
                 width: 6%;
-                z-index: 1;
+                z-index: 2;
+            }
+
+            #Tas_Sable {
+                bottom: 0;
+                width: 100%;
+                height: auto;
+                z-index: 0;
             }
         }
     }

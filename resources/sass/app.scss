@@ -38,7 +38,8 @@
 @import 'sections/web/template/sidebar';
 @import 'sections/web/template/footer';
 // Composants
-@import 'sections/web/template/modal_web';
+@import 'sections/web/components/modal_web';
+@import 'sections/web/components/noise';
 // Rubriques
 @import 'sections/web/headings/home';
 @import 'sections/web/headings/story';

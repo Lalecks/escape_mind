@@ -19,7 +19,6 @@ let object = [
     ["Lecteur", 1, "Il s'agit d'un lecteur."],
     ["Radio", 1, "Il s'agit d'une radio."],
     ["Poster_Ramdam", 1, "Il s'agit d'une radio."],
-    //["Affiche_Ramdam", 1, "Il s'agit d'une cassette."],
     /* Room 2 */
     ["Lit", 2, "Il s'agit d'un lit double."],
     ["Peluche", 2, "Il s'agit d'une peluche trop chou."],
@@ -60,21 +59,22 @@ let decor = [
     ["Marelle", 2],
     ["Oiseaux", 2],
     /* Room 3 */
+    ["Tas_Sable", 3],
+    // ["Tas_Sable1", 3],
+    // ["Tas_Sable2", 3],
+    // ["Tas_Sable3", 3],
     ["Robinet", 3],
     ["Bulle", 3],
     ["Crabe", 3],
     ["Seau", 3],
-    ["Coquille", 3, ""],
-    ["Pagure", 3, ""],
-
+    ["Coquille", 3],
+    ["Pagure", 3],
 ];
 
 // Salle actuelle
-let actualRoom = 3;
+let actualRoom = 1;
 
-export {
-    actualRoom as actualRoom
-};
+export { actualRoom as actualRoom };
 
 let url = "./resources/game/room" + actualRoom;
 
