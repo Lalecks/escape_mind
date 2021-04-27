@@ -14,6 +14,7 @@
     </header>
 
     <main id="Main" role="main">
+        <span id="settings"><i class="fas fa-cog"></i></span>
         <div id="Cinematic" class="Cinematic">
             <!-- Cinematic -->
         </div>

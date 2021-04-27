@@ -1144,7 +1144,18 @@ body {
   z-index: 100;
 }
 
-.code {
+.error {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center !important;
+}
+
+.error .code {
   color: #ffffff;
   font-size: 7rem;
   position: relative;
@@ -1158,7 +1169,7 @@ body {
   user-select: none;
 }
 
-.code:before {
+.error .code:before {
   content: attr(data-text);
   position: absolute;
   left: 8px;
@@ -1168,10 +1179,10 @@ body {
   background: #f8f9fc;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
-  animation: noise-anim-2 3s infinite linear alternate-reverse;
+  animation: glitch-2 3s infinite linear alternate-reverse;
 }
 
-.code:after {
+.error .code:after {
   content: attr(data-text);
   position: absolute;
   left: 14px;
@@ -1181,24 +1192,10 @@ body {
   background: #121212;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
-  animation: noise-anim 2s infinite linear alternate-reverse;
+  animation: glitch 2s infinite linear alternate-reverse;
 }
 
-.text-gray-800 {
-  color: #ffffff !important;
-}
-
-.mb-5,
-.my-5 {
-  margin-bottom: 3rem !important;
-}
-
-.lead {
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-
-@-webkit-keyframes noise-anim {
+@-webkit-keyframes glitch {
   0% {
     clip: rect(89px, 9999px, 100px, 0);
   }
@@ -1284,7 +1281,7 @@ body {
   }
 }
 
-@keyframes noise-anim {
+@keyframes glitch {
   0% {
     clip: rect(89px, 9999px, 100px, 0);
   }
@@ -1370,7 +1367,7 @@ body {
   }
 }
 
-p {
+.error p {
   margin-top: 2rem;
 }
 
@@ -2562,7 +2559,7 @@ footer {
   width: 100%;
   height: auto;
   position: fixed;
-  z-index: 11000;
+  z-index: 10;
   text-align: center;
   padding: 1rem;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -2674,6 +2671,39 @@ player:focus .controls {
   position: absolute;
   z-index: 3;
   left: 19px;
+}
+
+#Chrono {
+  color: #121212;
+  position: absolute;
+  z-index: 15;
+  text-align: center;
+  font-weight: bold;
+  margin: 0px;
+  top: 2%;
+  display: flex;
+  font-family: "Big Shoulders Display", cursive;
+  right: 10%;
+  padding: 0.04% 1.6%;
+  border-radius: 8.5%;
+  background-image: linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
+}
+
+#Chrono .chrono_digit,
+#Chrono .chrono_space {
+  font-size: 3vw !important;
+}
+
+#settings {
+  position: absolute;
+  z-index: 15;
+  top: 2%;
+  right: 5%;
+  font-size: 3vw !important;
+  background: -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #game-page #Game .Room1 {

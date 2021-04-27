@@ -1,0 +1,11 @@
+#settings {
+    position: absolute;
+    z-index: 15;
+    top: 2%;
+    right: 5%;
+    font-size: 3vw !important;
+    background: -webkit-linear-gradient($white-degraded);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

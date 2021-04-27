@@ -10,7 +10,7 @@ let timeStr = "3000";
 
 // Affichage du timer
 export default function createTimer(){
-    let chrono = document.createElement("div");
+    let chrono = document.createElement("span");
     chrono.id="Chrono";
 
     // Creer chaque élément du timer
@@ -18,13 +18,13 @@ export default function createTimer(){
 
 
         if(i===2){
-            let digit = document.createElement("div");
+            let digit = document.createElement("span");
             digit.className="chrono_space";
             digit.innerText=":";
             chrono.appendChild(digit);
         }
 
-        let digit = document.createElement("div");
+        let digit = document.createElement("span");
         digit.className="chrono_digit";
         digit.innerText=timeStr[i];
 
