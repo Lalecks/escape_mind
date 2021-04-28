@@ -74,14 +74,16 @@ let decor = [
 ];
 
 // Salle actuelle
-let actualRoom = 1;
+let actualRoom = 0;
 let nbRoom = 3;
 
 export { actualRoom as actualRoom };
 
-let url = "./resources/game/room" + actualRoom;
+let url = "";
 
 export default function updateGame() {
+
+    actualRoom+=1;
     url = "./resources/game/room" + actualRoom;
 
     if (actualRoom===1){
@@ -92,10 +94,9 @@ export default function updateGame() {
         //endGame();
     } else {
         deleteRoom();
+        //remove inventory except le papier
         createRoom();
     }
-
-    actualRoom+=1;
 
 }
 

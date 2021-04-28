@@ -28,11 +28,11 @@ export default function createModal() {
         //PAGE DE JEU
         if (document.getElementById("game-page")) {
 
-            modal.classList.toggle("show-modal");
-            modal.classList.toggle("show-modal");
 
             /* Affichage ou non de la modale */
             if (modal.classList.toggle("show-modal")) {
+
+                removeAll();
                 /*  Titre de l'objet */
                 let titre_html = document.createElement("span");
                 titre_html.innerText = titre;
@@ -67,15 +67,8 @@ export default function createModal() {
                 /* Arreter le scrolling de la page */
                 document.body.style.position = "fixed";
             } else {
-                /* Fermeture de la modal */
-                activity.removeChild(document.getElementById("titre_modal"));
-                activity.removeChild(document.getElementById("desc_modal"));
 
-                try {
-                    activity.removeChild(document.getElementById("enigme_modal"));
-                    inventory.querySelectorAll("*").forEach(n => n.remove());
-                } catch (e) {}
-
+                removeAll();
                 /* Autorisation le scrolling de la page */
                 document.body.style.position = "relative";
 
@@ -88,6 +81,17 @@ export default function createModal() {
                 document.body.style.position = "relative";
             }
         }
+    }
+
+    function removeAll(){
+        /* Fermeture de la modal */
+
+        try {
+            activity.removeChild(document.getElementById("titre_modal"));
+            activity.removeChild(document.getElementById("desc_modal"));
+            activity.removeChild(document.getElementById("enigme_modal"));
+            inventory.querySelectorAll("*").forEach(n => n.remove());
+        } catch (e) {}
     }
 
 

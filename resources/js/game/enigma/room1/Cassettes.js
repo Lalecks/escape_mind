@@ -8,8 +8,6 @@ import updateObject from "../../object";
 let used = 0;
 
 export default function Cassettes() {
-
-
     let enigma = document.createElement("div");
     enigma.id = "enigme_modal";
 
@@ -29,9 +27,13 @@ export default function Cassettes() {
         button.id = "Casettes_button";
         button.innerText = "Récupérer";
         button.onclick = function () {
-            updateInventory("Cassette", "1");
-            //createModal();
-            updateObject("Cassettes");
+            //empeche le spam click
+            if (!used){
+                updateInventory("Cassette", "1");
+                updateObject("Cassettes");
+                let modal = document.querySelector(".modal");
+                modal.classList.toggle("show-modal");
+            }
             used = 1;
         };
         enigma.appendChild(button);
