@@ -3027,16 +3027,16 @@ player:focus .controls {
 /*-------- Enigmes  --------*/
 
 #enigme_modal div {
-  height: 2.99em;
+  height: 6.4%;
   position: absolute;
-  top: 36.9%;
-  left: 18%;
-  width: 37.6rem;
+  top: 42%;
+  left: 28.7%;
+  width: 42.8%;
   overflow: hidden;
 }
 
 #radio_slider {
-  height: 83%;
+  height: 100%;
   width: 100%;
   position: absolute;
   bottom: 0%;
@@ -3050,20 +3050,21 @@ player:focus .controls {
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none;
   width: 25px;
   height: 25px;
   border: 0;
-  background: url("/resources/game/room1/objects/Radio_01.png");
+  background: black;
   cursor: pointer;
   transform: translateY(50%);
 }
 
 .slider::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
   width: 3.5%;
   height: 65%;
   border: 0;
-  background: url("/resources/game/room1/objects/Radio_01.png");
+  background: black;
   cursor: pointer;
   transform: translateY(50%);
 }

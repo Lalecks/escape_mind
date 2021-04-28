@@ -3,6 +3,8 @@
  */
 
 
+import changeAV, { AV } from "../../game";
+
 export default function Radio(){
     let radio_enigma = document.createElement("div");
     radio_enigma.id="enigme_modal";
@@ -27,9 +29,9 @@ export default function Radio(){
     cursor.onchange=function(){
         //Correspond à la fréquence à trouver
         if (cursor.value === "36"){
-           alert("gg");
+           alert("Vous avez fini le jeu !");
+           changeAV(0);
         }
-
     }
 
     area.appendChild(cursor);

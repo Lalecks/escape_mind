@@ -75,20 +75,31 @@ let decor = [
 
 // Salle actuelle
 let actualRoom = 1;
+let nbRoom = 3;
 
 export { actualRoom as actualRoom };
 
 let url = "./resources/game/room" + actualRoom;
 
-export default function createGame() {
-    createRoom();
-    cursorModule();
-    createModal();
-    createTimer();
+export default function updateGame() {
+    url = "./resources/game/room" + actualRoom;
+
+    if (actualRoom===1){
+        createRoom();
+        createTimer();
+    } else if(actualRoom >= nbRoom){
+        deleteRoom();
+        //endGame();
+    } else {
+        deleteRoom();
+        createRoom();
+    }
+
+    actualRoom+=1;
+
 }
 
 function createRoom() {
-
     let parent_obj = document.getElementById("Objects");
     let parent_decor = document.getElementById("Decors");
 
@@ -106,14 +117,8 @@ function createRoom() {
         if (object[i][1] === actualRoom) {
             let link = document.createElement("div");
             link.id = "link_" + object[i][0];
-            // On appelle la classe juste par notation
             link.className = "trigger";
 
-            // //Pour les triggers ajoutés en JS
-            // link.addEventListener("click", function () {
-            //
-            //     toggleModalCustom(object[i][0], object[i][2]);
-            // });
 
             // Objet en cours
             let obj = document.createElement("img");
@@ -143,14 +148,70 @@ function createRoom() {
     }
     area.appendChild(bg);
 
-    // Pour sortir de la modale en cliquant dans le vide
-    // window.addEventListener("click", function (event) {
-    //     if (event.target === document.querySelector(".modal")) {
-    //         toggleModalCustom("", "");
-    //     }
-    // })
+    cursorModule();
+    createModal();
 }
 
-function endGame(num) {
+function deleteRoom(){
+    let parent_obj = document.getElementById("Objects");
+    let parent_decor = document.getElementById("Decors");
+    let bg = document.getElementById("bg");
+
+    let imgToRemove = [];
+    imgToRemove.push.apply(imgToRemove,parent_obj.childNodes);
+    imgToRemove.push.apply(imgToRemove,parent_decor.childNodes);
+    imgToRemove.push.apply(imgToRemove,[bg]);
+
+    imgToRemove.forEach(n => n.remove());
+/*
+    let parent_obj = document.getElementById("Objects");
+    let parent_decor = document.getElementById("Decors");
+
+    // area
+    let area = document.getElementById("Area");
+    area.className = "Room" + actualRoom;
+
+    let bg = document.createElement("img");
+    bg.id = "bg";
+    bg.src = url + "/Room" + actualRoom + ".png";
+    bg.alt = "Room" + actualRoom;
+
+    // Initialisation des objets de la salle actuelle
+    for (let i = 0; i < object.length; i++) {
+        if (object[i][1] === actualRoom) {
+            let link = document.createElement("div");
+            link.id = "link_" + object[i][0];
+            link.className = "trigger";
+
+
+            // Objet en cours
+            let obj = document.createElement("img");
+            obj.id = "" + object[i][0];
+            obj.src = url + "/objects/" + object[i][0] + "_00.png";
+            obj.className = "hoverable"; // Pour centrer la souris
+            obj.alt = "" + object[i][2];
+
+            link.appendChild(obj);
+            parent_obj.appendChild(link);
+        }
+    }
+
+    for (let i = 0; i < decor.length; i++) {
+        if (decor[i][1] === actualRoom) {
+            let link = document.createElement("div");
+            link.id = "decor_" + decor[i][0];
+
+            let obj = document.createElement("img");
+            obj.id = "" + decor[i][0];
+            obj.src = url + "/decors/" + decor[i][0] + ".png";
+            obj.alt = decor[i][0];
+            link.appendChild(obj);
+            parent_decor.appendChild(link);
+        }
+
+    }
+    area.appendChild(bg);
+ */
+
 
 }

@@ -3,9 +3,7 @@
  */
 
 import updateInventory from "../inventory";
-import toggleModalCustom from "../../../layouts/modal";
-import updateObject from "../../room_management";
-import createModal from "../../../layouts/modal";
+import updateObject from "../../object";
 
 let used = 0;
 
