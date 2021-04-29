@@ -17,6 +17,7 @@ import {
 import Radio from "../game/enigma/room1/Radio";
 import Cassettes from "../game/enigma/room1/Cassettes";
 import Defaut from "../game/enigma/room1/Defaut";
+import Pile from "../game/enigma/room1/Pile";
 
 let modal = document.querySelector(".modal");
 let closeButton = document.querySelector(".close-button");
@@ -66,8 +67,6 @@ export default function createModal() {
 }
 
 
-
-
 function toggleModalCustom(titre, description) {
     //PAGE DE JEU
     if (document.getElementById("game-page")) {
@@ -100,6 +99,9 @@ function toggleModalCustom(titre, description) {
                     break;
                 case "Radio":
                     activity.appendChild(Radio());
+                    break;
+                case "Pile1" : case "Pile2" : case "Pile3" :
+                    activity.appendChild(Pile(titre));
                     break;
                 default:
                     activity.appendChild(Defaut(titre));

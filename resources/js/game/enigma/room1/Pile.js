@@ -7,14 +7,14 @@ import updateObject from "../../object";
 
 let used = 0;
 
-export default function Cassettes() {
+export default function Pile(nom_obj) {
     let enigma = document.createElement("div");
     enigma.id = "enigme_modal";
-
-    let html = document.getElementById("Cassettes");
+    used = 0;
+    let html = document.getElementById(nom_obj);
 
     let bg = document.createElement("img");
-    bg.id = "Cassettes_bg";
+    bg.id = nom_obj + "_bg";
     bg.src = html.src;
     bg.alt = html.id;
 
@@ -23,16 +23,14 @@ export default function Cassettes() {
     if (!used) {
         let button = document.createElement("a");
         button.className = "btn btn-fill-primary hoverable glass-effect btn-animation_glitch";
-        button.id = "Casettes_button";
+        button.id = nom_obj + "button";
         button.innerText = "Récupérer";
         button.onclick = function () {
             //empeche le spam click
-            if (!used){
-                updateInventory("Cassette", "1");
-                updateObject("Cassettes",false);
-                let modal = document.querySelector(".modal");
-                modal.classList.toggle("show-modal");
-            }
+            updateInventory("Pile", "1");
+            updateObject(nom_obj,true);
+            let modal = document.querySelector(".modal");
+            modal.classList.toggle("show-modal");
             used = 1;
         };
         enigma.appendChild(button);

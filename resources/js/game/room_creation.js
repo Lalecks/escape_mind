@@ -28,9 +28,9 @@ let object = [
     ["Puzzle", 2, "Il s'agit d'un puzzle."],
     ["Poster_Robot", 2, "Il s'agit d'un poster."],
     ["Tablette", 2, "Il s'agit d'une tablette éteinte."],
-    ["Pile", 2, "Il s'agit de la pile 1."],
-    ["Pile", 2, "Il s'agit de la pile 2."],
-    ["Pile", 2, "Il s'agit de la pile 3."],
+    ["Pile1", 2, "Il s'agit de la pile 1."],
+    ["Pile2", 2, "Il s'agit de la pile 2."],
+    ["Pile3", 2, "Il s'agit de la pile 3."],
     /* Room 3 */
     ["Bouchon", 3, ""],
     ["Chateau_Sable", 3, ""],
@@ -96,13 +96,7 @@ export default function updateGame() {
     } else {
         deleteRoom();
         //remove inventory except le papier
-        invJoueur.forEach(objet => {
-            for (let i = 0; i < objet[1]; i++){
-                //0 pour remove
-                updateInventory(objet[0],0);
-            }
-        });
-
+        invJoueur.forEach(objet => { for (let i = 0; i < objet[1]; i++) updateInventory(objet[0],0); });
         createRoom();
     }
 
@@ -131,7 +125,7 @@ function createRoom() {
             // Objet en cours
             let obj = document.createElement("img");
             obj.id = "" + object[i][0];
-            obj.src = url + "/objects/" + object[i][0] + "_00.png";
+            obj.src = url + "/objects/" + object[i][0].replace(/[0-9]/g, '') + "_00.png";
             obj.className = "hoverable"; // Pour centrer la souris
             obj.alt = "" + object[i][2];
 
