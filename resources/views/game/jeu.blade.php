@@ -6,13 +6,13 @@
     <header id="Header" class="Header">
         <div class="HeaderLogo">
             <!-- Nécessaire pour le bon fonctionnement du Loading -->
-            <img src="./resources/game/Logo.png" style="display: none;"/>
+            <img src="./resources/game/Logo.png" alt="logo" style="display: none;"/>
         </div>
         <div class="Mute">
         </div>
     </header>
 
-    <main id="Main" role="main">
+    <div id="Main" role="main">
         <span id="settings" class="hoverable"><i class="fas fa-cog"></i></span>
         <div id="Cinematic" class="Cinematic">
             <!-- Cinematic -->
@@ -42,7 +42,7 @@
         <div id="Interface" class="Interface">
             <!-- Timer -->
         </div>
-    </main>
+    </div>
 </section>
 
 @endsection

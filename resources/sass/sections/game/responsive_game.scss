@@ -20,19 +20,38 @@
         overflow-y: scroll !important;
         // background-color: red;
         // transform-origin: left top;
+
+        .modal {
+            .modal-content {
+                top: 25% !important;
+                width: 40% !important;
+                height: 51vw !important;
+            }
+
+            #Inventory {
+                width: 10% !important;
+                height: 100% !important;
+                top: 0 !important;
+                left: -58% !important;
+
+                div {
+                    height: 34%;
+                    display: grid;
+                }
+            }
+        }
     }
 }
 
-@media only screen and (max-width: 1300px) {
-    #game-page .modal .modal-content {
-        height: 14rem;
-        width: 23rem;
-    }
-}
+// @media only screen and (max-width: 600px) {}
 
-@media only screen and (max-width: 600px) {
-    #game-page .modal .modal-content {
-        width: 14rem;
-        height: 23rem;
-    }
-}
+// @media only screen and (max-width: 768px) {}
+
+// @media only screen and (max-width: 992px) {}
+
+// @media only screen and (max-width: 1300px) {
+//     #game-page .modal .modal-content {
+//         width: 50%;
+//         height: 20vw;
+//     }
+// }

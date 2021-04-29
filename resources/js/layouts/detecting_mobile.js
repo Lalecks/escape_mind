@@ -11,7 +11,7 @@ if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elain
 } // Détection de dispositif
 
 // Si le support est un mobile, forcer le mode paysage quand le téléphone est en portrait
-if (isMobile == true) {
+if (isMobile === true) {
     $("#game-page").addClass("landscape");
     document.getElementById('souris').style.display = "none";
     // lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation ||screen.orientation.lock;

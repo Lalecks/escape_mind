@@ -2495,13 +2495,25 @@ footer {
   }
 }
 
+#game-page .modal p,
+#game-page .modal span,
+#game-page .modal a {
+  font-size: 2.2vw !important;
+}
+
 #game-page .modal .modal-content {
-  top: 39%;
-  height: 28rem;
-  width: 45rem;
-  min-width: 1rem;
-  min-height: 2rem;
+  top: 40%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 2.5%;
+  width: 53%;
+  height: 26vw;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
+}
+
+#game-page .modal .modal-content .close-button {
+  width: 3%;
+  height: 5%;
 }
 
 #game-page .modal img {
@@ -2510,13 +2522,13 @@ footer {
 }
 
 #game-page .modal #Activity {
+  height: 90%;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  width: 83%;
 }
 
 #game-page .modal #Activity #titre_modal {
@@ -2524,7 +2536,7 @@ footer {
   font-family: "Audiowide", cursive;
   position: absolute;
   font-weight: bold;
-  left: -2%;
+  left: 0%;
   bottom: 50%;
   z-index: -14;
   font-size: 3vh;
@@ -2533,23 +2545,24 @@ footer {
 }
 
 #game-page .modal #Activity #enigme_modal {
+  position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 68%;
-  max-height: 100%;
+  width: 100%;
+  height: 89%;
 }
 
 #game-page .modal #Activity #enigme_modal img {
   max-width: 100%;
   max-height: 100%;
-  margin: 1.1rem auto;
+  margin: 2% auto;
 }
 
 #game-page .modal #Activity #enigme_modal .btn-animation_glitch {
   margin: 0 auto;
   display: inline;
-  width: 35%;
   background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.8% 5%;
 }
 
 #game-page .modal #Activity #enigme_modal .btn-animation_glitch:hover {
@@ -2562,7 +2575,7 @@ footer {
   position: fixed;
   z-index: 10;
   text-align: center;
-  padding: 1rem;
+  padding: 2%;
   border-radius: 0.5rem 0.5rem 0 0;
   left: calc(-50vw + 50%);
   right: calc(-50vw + 50%);
@@ -2581,9 +2594,9 @@ footer {
 #game-page .modal #Inventory div .picked {
   position: relative;
   width: 62%;
-  height: 5rem;
+  height: 100%;
   border-radius: 0.5rem;
-  padding: 0.7rem;
+  padding: 4%;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -2626,6 +2639,10 @@ footer {
   -webkit-transition: all 200ms ease-in;
   -ms-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
+}
+
+#Casettes_bg {
+  height: 72% !important;
 }
 
 .controls {
@@ -3029,8 +3046,9 @@ player:focus .controls {
 #enigme_modal div {
   height: 6.4%;
   position: absolute;
-  top: 42%;
-  left: 28.7%;
+  margin: auto;
+  left: 29%;
+  top: 35%;
   width: 42.8%;
   overflow: hidden;
 }
@@ -3404,19 +3422,23 @@ player:focus .controls {
     overflow-x: hidden !important;
     overflow-y: scroll !important;
   }
-}
 
-@media only screen and (max-width: 1300px) {
-  #game-page .modal .modal-content {
-    height: 14rem;
-    width: 23rem;
+  .landscape .modal .modal-content {
+    top: 25% !important;
+    width: 40% !important;
+    height: 51vw !important;
   }
-}
 
-@media only screen and (max-width: 600px) {
-  #game-page .modal .modal-content {
-    width: 14rem;
-    height: 23rem;
+  .landscape .modal #Inventory {
+    width: 10% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: -58% !important;
+  }
+
+  .landscape .modal #Inventory div {
+    height: 34%;
+    display: grid;
   }
 }
 

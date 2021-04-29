@@ -104,19 +104,16 @@ function toggleModalCustom(titre, description) {
                 default:
                     activity.appendChild(Defaut(titre));
             }
-
-            /* Arreter le scrolling de la page */
-            document.body.style.position = "fixed";
         } else {
             clearAll();
-            /* Autorisation le scrolling de la page */
-            document.body.style.position = "relative";
         }
     } else {
         //HOMEPAGE
         if (modal.classList.toggle("show-modal")) {
+            /* Arreter le scrolling de la page */
             document.body.style.position = "fixed";
         } else {
+            /* Autorisation le scrolling de la page */
             document.body.style.position = "relative";
         }
     }
