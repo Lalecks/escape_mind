@@ -36,5 +36,3 @@ if (document.getElementById("game-page")) {
 require('./web_components/scrollBar');
 require('./web_components/custom_package');
 require('./web_components/divers');
-
-

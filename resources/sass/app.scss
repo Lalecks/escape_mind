@@ -5,6 +5,8 @@
 * Compilation du SASS :
 ****** Version Laravel => npm run watch
 ****** Version CSS => sass --watch resources/sass:public/css/sass --style compressed
+* Layout/Mise en page : C'est la façon dont le contenu est formaté et présenté, sa structure et sa mise en page.
+* Template/Modèle : Il s'agit d'un ensemble de fichiers et d'instructions, contenant uniquement la partie visuelle de la présentation du contenu. C'est un modèle de document qui façonnera le concept final.
 *
 *
 * */
@@ -71,11 +73,7 @@
 @import 'sections/web/responsive_web';
 @import 'sections/game/responsive_game';
 
-// Layout/Mise en page : C'est la façon dont le contenu est formaté et présenté, sa structure et sa mise en page.
-// Template/Modèle : Il s'agit d'un ensemble de fichiers et d'instructions, contenant uniquement la partie visuelle de la présentation du contenu. C'est un modèle de document qui façonnera le concept final.
-
-
 // A faire 
-// CSS Game : VideoPlayer / Modal game responsive / Settings / Effets glitch elements + Flottement / Souris / enregistrer score / Effet bulle + Timer salle 3
+// CSS Game : VideoPlayer / Modal game mobile (Cacher inventaire qd y'a rien et mettre top de .modal-content à 50%) / Settings / Effets glitch elements + Flottement / Souris / enregistrer score / Effet bulle + Timer salle 3 / Pb modal box web
 // CSS Web : bg sections / scores / ranks / scrollBar / vidéo
 // JS : PB pile, modal, inventaire, gameMaster, enigmes, progressBar

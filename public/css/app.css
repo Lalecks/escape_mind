@@ -7,6 +7,8 @@
 * Compilation du SASS :
 ****** Version Laravel => npm run watch
 ****** Version CSS => sass --watch resources/sass:public/css/sass --style compressed
+* Layout/Mise en page : C'est la façon dont le contenu est formaté et présenté, sa structure et sa mise en page.
+* Template/Modèle : Il s'agit d'un ensemble de fichiers et d'instructions, contenant uniquement la partie visuelle de la présentation du contenu. C'est un modèle de document qui façonnera le concept final.
 *
 *
 * */
@@ -2498,7 +2500,7 @@ footer {
 #game-page .modal p,
 #game-page .modal span,
 #game-page .modal a {
-  font-size: 2.2vw !important;
+  font-size: 1.5vw !important;
 }
 
 #game-page .modal .modal-content {
@@ -2513,7 +2515,7 @@ footer {
 
 #game-page .modal .modal-content .close-button {
   width: 3%;
-  height: 5%;
+  height: 10%;
 }
 
 #game-page .modal img {
@@ -2528,7 +2530,7 @@ footer {
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  width: 83%;
+  width: 85%;
 }
 
 #game-page .modal #Activity #titre_modal {
@@ -2550,6 +2552,7 @@ footer {
   flex-direction: column;
   width: 100%;
   height: 89%;
+  justify-content: center;
 }
 
 #game-page .modal #Activity #enigme_modal img {
@@ -2641,8 +2644,8 @@ footer {
   -moz-transition: all 200ms ease-in;
 }
 
-#Casettes_bg {
-  height: 72% !important;
+#Cassettes_bg {
+  height: 73% !important;
 }
 
 .controls {
@@ -3048,7 +3051,7 @@ player:focus .controls {
   position: absolute;
   margin: auto;
   left: 29%;
-  top: 35%;
+  top: 32%;
   width: 42.8%;
   overflow: hidden;
 }
@@ -3439,6 +3442,13 @@ player:focus .controls {
   .landscape .modal #Inventory div {
     height: 34%;
     display: grid;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #game-page .modal .modal-content {
+    width: 50%;
+    height: 20vw;
   }
 }
 

@@ -64,8 +64,6 @@ export default function createModal() {
             isInit = true;
         }
     }
-
-
 }
 
 
