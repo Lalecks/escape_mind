@@ -17,7 +17,10 @@ export {
  * objet correspond au nom de l'objet
  * isToAdd est un booléen qui dit si l'objet est à supprimer ou à ajouter
  */
-export default function updateInventory(object, isToAdd) {
+export default function updateInventory(objectInv, isToAdd) {
+
+    //verifier si le nom a un nombre a la fin
+    let object = objectInv.replace(/[0-9]/g, '');
 
     if (isToAdd) {
         //Add object

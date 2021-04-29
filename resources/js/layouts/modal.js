@@ -17,6 +17,9 @@ import {
 import Radio from "../game/enigma/room1/Radio";
 import Cassettes from "../game/enigma/room1/Cassettes";
 import Defaut from "../game/enigma/room1/Defaut";
+import Pile from "../game/enigma/room1/Pile";
+import cursorModule from "./mouse";
+import Lecteur from "../game/enigma/room1/Lecteur";
 
 let modal = document.querySelector(".modal");
 let closeButton = document.querySelector(".close-button");
@@ -66,8 +69,6 @@ export default function createModal() {
 }
 
 
-
-
 function toggleModalCustom(titre, description) {
     //PAGE DE JEU
     if (document.getElementById("game-page")) {
@@ -89,6 +90,8 @@ function toggleModalCustom(titre, description) {
             if (invJoueur.length > 0) {
                 let inv_html = createInventory();
                 inventory.appendChild(inv_html);
+
+                cursorModule();
             }
 
             activity.appendChild(titre_html);
@@ -100,6 +103,12 @@ function toggleModalCustom(titre, description) {
                     break;
                 case "Radio":
                     activity.appendChild(Radio());
+                    break;
+                case "Pile1" : case "Pile2" : case "Pile3" :
+                    activity.appendChild(Pile(titre));
+                    break;
+                case "Lecteur" :
+                    activity.appendChild(Lecteur());
                     break;
                 default:
                     activity.appendChild(Defaut(titre));
@@ -136,7 +145,7 @@ function createInventory() {
 
     for (let i = 0; i < invJoueur.length; i++) {
         let global_object = document.createElement("div");
-        global_object.id = "inv_" + invJoueur[i][0];
+        global_object.id = "div_inv_" + invJoueur[i][0];
         global_object.className = "picked";
 
         if (parseInt(invJoueur[i][1]) > 1) {
@@ -152,6 +161,8 @@ function createInventory() {
         let object = document.createElement("img");
         object.src = url + "/objects/" + invJoueur[i][0] + "_00.png";
         object.alt = invJoueur[i][0];
+        object.className="hoverable";
+        object.id = "inv_" + invJoueur[i][0];
 
         global_object.appendChild(nom);
         global_object.appendChild(object);
