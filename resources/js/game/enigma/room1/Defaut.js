@@ -6,6 +6,9 @@ export default function Defaut(nom_obj){
     let no_enigma = document.createElement("div");
     no_enigma.id="enigme_modal";
 
+    console.log("obj : " + nom_obj);
+
+
     let html = document.getElementById(nom_obj);
 
     let bg = document.createElement("img");

@@ -17,13 +17,7 @@ if (document.getElementById("home-page")) {
 /*-------- Layouts --------*/
 require('./layouts/loader');
 require('./layouts/detecting_mobile');
-require('./layouts/mouse');
-require('./layouts/modal'); // Avant custom_packages.js pour fonctionner
 
-/*--------  Web Components --------*/
-require('./web_components/scrollBar');
-require('./web_components/custom_package');
-require('./web_components/divers');
 
 /*-------- Game --------*/
 if (document.getElementById("game-page")) {
@@ -32,4 +26,15 @@ if (document.getElementById("game-page")) {
     /* Cinematics */
     require('./game/video_player');
     /* Components */
+} else {
+    // Avant custom_packages.js pour fonctionner
+    require('./layouts/modal');
+    require('./layouts/mouse');
 }
+
+/*--------  Web Components --------*/
+require('./web_components/scrollBar');
+require('./web_components/custom_package');
+require('./web_components/divers');
+
+

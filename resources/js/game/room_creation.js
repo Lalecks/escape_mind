@@ -5,8 +5,8 @@
  **/
 
 import createTimer from "./components/timer";
-// import toggleModalCustom from "../layouts/modal";
 import cursorModule from "../layouts/mouse";
+import updateInventory, {invJoueur} from "./enigma/inventory";
 import createModal from "../layouts/modal";
 
 // Ajout des objets
@@ -74,6 +74,7 @@ let decor = [
 ];
 
 // Salle actuelle
+
 let actualRoom = 0;
 let nbRoom = 3;
 
@@ -95,6 +96,13 @@ export default function updateGame() {
     } else {
         deleteRoom();
         //remove inventory except le papier
+        invJoueur.forEach(objet => {
+            for (let i = 0; i < objet[1]; i++){
+                //0 pour remove
+                updateInventory(objet[0],0);
+            }
+        });
+
         createRoom();
     }
 
@@ -120,7 +128,6 @@ function createRoom() {
             link.id = "link_" + object[i][0];
             link.className = "trigger";
 
-
             // Objet en cours
             let obj = document.createElement("img");
             obj.id = "" + object[i][0];
@@ -145,7 +152,6 @@ function createRoom() {
             link.appendChild(obj);
             parent_decor.appendChild(link);
         }
-
     }
     area.appendChild(bg);
 
@@ -164,55 +170,5 @@ function deleteRoom(){
     imgToRemove.push.apply(imgToRemove,[bg]);
 
     imgToRemove.forEach(n => n.remove());
-/*
-    let parent_obj = document.getElementById("Objects");
-    let parent_decor = document.getElementById("Decors");
-
-    // area
-    let area = document.getElementById("Area");
-    area.className = "Room" + actualRoom;
-
-    let bg = document.createElement("img");
-    bg.id = "bg";
-    bg.src = url + "/Room" + actualRoom + ".png";
-    bg.alt = "Room" + actualRoom;
-
-    // Initialisation des objets de la salle actuelle
-    for (let i = 0; i < object.length; i++) {
-        if (object[i][1] === actualRoom) {
-            let link = document.createElement("div");
-            link.id = "link_" + object[i][0];
-            link.className = "trigger";
-
-
-            // Objet en cours
-            let obj = document.createElement("img");
-            obj.id = "" + object[i][0];
-            obj.src = url + "/objects/" + object[i][0] + "_00.png";
-            obj.className = "hoverable"; // Pour centrer la souris
-            obj.alt = "" + object[i][2];
-
-            link.appendChild(obj);
-            parent_obj.appendChild(link);
-        }
-    }
-
-    for (let i = 0; i < decor.length; i++) {
-        if (decor[i][1] === actualRoom) {
-            let link = document.createElement("div");
-            link.id = "decor_" + decor[i][0];
-
-            let obj = document.createElement("img");
-            obj.id = "" + decor[i][0];
-            obj.src = url + "/decors/" + decor[i][0] + ".png";
-            obj.alt = decor[i][0];
-            link.appendChild(obj);
-            parent_decor.appendChild(link);
-        }
-
-    }
-    area.appendChild(bg);
- */
-
 
 }

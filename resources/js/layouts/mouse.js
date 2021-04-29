@@ -164,20 +164,20 @@ export default function cursorModule(){
         };
         const $hoverables = document.querySelectorAll('.hoverable');
         $hoverables.forEach(hoverable => {
+            hoverable.removeEventListener("mouseenter", handleCanvasCursorMouseEnter);
+            hoverable.removeEventListener("mouseleave", handleCanvasCursorMouseLeave);
             hoverable.addEventListener("mouseenter", handleCanvasCursorMouseEnter);
             hoverable.addEventListener("mouseleave", handleCanvasCursorMouseLeave);
         });
-        const $otherhoverables = document.querySelectorAll('.another-hoverable');
-        $otherhoverables.forEach(hoverable => {
-            hoverable.addEventListener("mouseenter", handleBasicCursorMouseEnter);
-            hoverable.addEventListener("mouseleave", handleBasicCursorMouseLeave);
-        });
+        // const $otherhoverables = document.querySelectorAll('.another-hoverable');
+        // $otherhoverables.forEach(hoverable => {
+        //     hoverable.addEventListener("mouseenter", handleBasicCursorMouseEnter);
+        //     hoverable.addEventListener("mouseleave", handleBasicCursorMouseLeave);
+        // });
     }
     initCursorHovers();
 }
-window.onload = () => {
-    cursorModule();
-}
+
 
 
 

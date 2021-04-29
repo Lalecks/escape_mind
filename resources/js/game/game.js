@@ -30,29 +30,13 @@ $( document ).ready(function() {
             return;
         } else {
             alert("Salle 1 finie !");
+            let modal = document.querySelector(".modal");
+            modal.classList.toggle("show-modal");
             updateGame();
         }
     }
 
     isRoomDone();
-
-
-    /*
-    var something=999;
-var something_cachedValue=something;
-
-function doStuff() {
-    if(something===something_cachedValue) {//we want it to match
-        setTimeout(doStuff, 50);//wait 50 millisecnds then recheck
-        return;
-    }
-    something_cachedValue=something;
-    //real action
-}
-
-doStuff();
-     */
-
 
 });
 
