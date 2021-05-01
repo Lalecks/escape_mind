@@ -12,10 +12,12 @@ if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elain
 
 // Si le support est un mobile, forcer le mode paysage quand le téléphone est en portrait
 if (isMobile === true) {
-    $("#game-page").addClass("landscape");
+    $("html").addClass("landscape");
     document.getElementById('souris').style.display = "none";
     // lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation ||screen.orientation.lock;
     // lockOrientationUniversal('landscape');
+
+    
 } else {
-    $("#game-page").removeClass("landscape");
+    $("html").removeClass("landscape");
 }

@@ -28,17 +28,17 @@
                 height: 51vw !important;
             }
 
-            #Inventory {
-                width: 10% !important;
-                height: 100% !important;
-                top: 0 !important;
-                left: -58% !important;
+            // #Inventory {
+            //     width: 10% !important;
+            //     height: 100% !important;
+            //     top: 0 !important;
+            //     left: -58% !important;
 
-                div {
-                    height: 34%;
-                    display: grid;
-                }
-            }
+            //     div {
+            //         height: 34%;
+            //         display: grid;
+            //     }
+            // }
         }
     }
 }
@@ -55,3 +55,28 @@
         height: 20vw;
     }
 }
+
+
+@media screen and (orientation: portrait) {
+    html {
+        transform: rotate(90deg);
+        transform-origin: top center;
+        width: 100vh;
+        height: 100vw;
+        overflow-x: hidden;
+        position: absolute;
+        top: 50%;
+        left: 35px;
+        overflow-y: hidden !important;
+        overflow-x: auto;
+    }
+}
+
+// @media only screen and (orientation:portrait){
+//   #turn{ display:block; }
+//   #Main{ display:none; }
+// }
+// @media only screen and (orientation:landscape){
+//   #turn{ display:none; }
+//   #Main{ display:block; }
+// }

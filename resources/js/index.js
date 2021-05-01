@@ -16,8 +16,9 @@ if (document.getElementById("home-page")) {
 }
 /*-------- Layouts --------*/
 require('./layouts/loader');
-require('./layouts/detecting_mobile');
-
+if (document.getElementById("game-page")) {
+    require('./layouts/detecting_mobile');
+}
 
 /*-------- Game --------*/
 if (document.getElementById("game-page")) {

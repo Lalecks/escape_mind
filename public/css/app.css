@@ -3412,43 +3412,23 @@ player:focus .controls {
   }
 }
 
-@media all and (orientation: portrait) {
-  .landscape {
-    transform: rotate(-90deg);
-    width: 100vh;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow-x: hidden !important;
-    overflow-y: scroll !important;
+@media only screen and (orientation: portrait) {
+  #turn {
+    display: block;
   }
 
-  .landscape .modal .modal-content {
-    top: 25% !important;
-    width: 40% !important;
-    height: 51vw !important;
-  }
-
-  .landscape .modal #Inventory {
-    width: 10% !important;
-    height: 100% !important;
-    top: 0 !important;
-    left: -58% !important;
-  }
-
-  .landscape .modal #Inventory div {
-    height: 34%;
-    display: grid;
+  #Main {
+    display: none;
   }
 }
 
-@media only screen and (max-width: 1300px) {
-  #game-page .modal .modal-content {
-    width: 50%;
-    height: 20vw;
+@media only screen and (orientation: landscape) {
+  #turn {
+    display: none;
+  }
+
+  #Main {
+    display: block;
   }
 }
 
