@@ -1,44 +1,54 @@
 // Forcer le jeu en paysage sur mobile
 
 @media all and (orientation: portrait) {
-    .landscape {
+
+    .landscape,
+    .landscape body {
+        background-color: red;
+        width: 100vh !important;
+        height: 100vw !important;
+        overflow-x: hidden !important;
+        overflow-y: scroll !important;
+    }
+
+    html {
+        position: absolute;
         -webkit-transform: rotate(-90deg);
         -moz-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
         -o-transform: rotate(-90deg);
         transform: rotate(-90deg);
         // offset-rotate: 90deg;
-        // offset-rotate: .5turn;      
-        width: 100vh;
-        height: 100%;
-        position: fixed;
-        top: 0;
+        // offset-rotate: .5turn;    
+        transform-origin: left top;
+        top: 100%;
         left: 0;
-        right: 0;
-        bottom: 0;
-        overflow-x: hidden !important;
-        overflow-y: scroll !important;
-        // background-color: red;
-        // transform-origin: left top;
+    }
 
-        .modal {
-            .modal-content {
-                top: 25% !important;
-                width: 40% !important;
-                height: 51vw !important;
-            }
+    .modal {
+        width: 100vh;
+        height: 100vw;
+        //         .modal-content {
+        //             top: 25% !important;
+        //             width: 40% !important;
+        //             height: 51vw !important;
+        //         }
 
-            // #Inventory {
-            //     width: 10% !important;
-            //     height: 100% !important;
-            //     top: 0 !important;
-            //     left: -58% !important;
+        #Inventory {
+            width: 97vh;
+            left: 0;
+            //             width: 10% !important;
+            //             height: 100% !important;
+            //             top: 0 !important;
+            //             left: -58% !important;
 
-            //     div {
-            //         height: 34%;
-            //         display: grid;
-            //     }
-            // }
+
+
+            //             div {
+            //                 height: 34%;
+            //                 display: grid;
+            //             }
+            //         }
         }
     }
 }
@@ -53,22 +63,6 @@
     #game-page .modal .modal-content {
         width: 50%;
         height: 23vw;
-    }
-}
-
-
-@media screen and (orientation: portrait) {
-    html {
-        transform: rotate(90deg);
-        transform-origin: top center;
-        width: 100vh;
-        height: 100vw;
-        overflow-x: hidden;
-        position: absolute;
-        top: 50%;
-        left: 35px;
-        overflow-y: hidden !important;
-        overflow-x: auto;
     }
 }
 

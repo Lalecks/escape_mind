@@ -1835,6 +1835,7 @@ footer {
 }
 
 #bg-noise {
+  z-index: -1;
   position: fixed;
   top: -50%;
   left: -50%;
@@ -3418,23 +3419,31 @@ player:focus .controls {
 }
 
 @media all and (orientation: portrait) {
-  .landscape {
-    transform: rotate(-90deg);
-    width: 100vh;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  .landscape,
+  .landscape body {
+    background-color: red;
+    width: 100vh !important;
+    height: 100vw !important;
     overflow-x: hidden !important;
     overflow-y: scroll !important;
   }
 
-  .landscape .modal .modal-content {
-    top: 25% !important;
-    width: 40% !important;
-    height: 51vw !important;
+  html {
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    top: 100%;
+    left: 0;
+  }
+
+  .modal {
+    width: 100vh;
+    height: 100vw;
+  }
+
+  .modal #Inventory {
+    width: 97vh;
+    left: 0;
   }
 }
 
@@ -3442,21 +3451,6 @@ player:focus .controls {
   #game-page .modal .modal-content {
     width: 50%;
     height: 23vw;
-  }
-}
-
-@media screen and (orientation: portrait) {
-  html {
-    transform: rotate(90deg);
-    transform-origin: top center;
-    width: 100vh;
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 50%;
-    left: 35px;
-    overflow-y: hidden !important;
-    overflow-x: auto;
   }
 }
 
