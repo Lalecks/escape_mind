@@ -72,8 +72,10 @@
 /*--------  Responsive --------*/
 @import 'sections/web/responsive_web';
 @import 'sections/game/responsive_game';
+@import 'sections/game/landscape_device';
+
 
 // A faire 
-// CSS Game : VideoPlayer / Modal game mobile + Pb modal box web / Settings / Effets glitch elements + Flottement / Souris / enregistrer score / Effet bulle + Timer salle 3 
+// CSS Game : VideoPlayer / Pb modal box web / Settings / Effets glitch elements + Flottement / Souris / enregistrer score / Effet bulle + Timer salle 3 
 // CSS Web : bg sections / scores / ranks / scrollBar / vidéo
 // JS : PB pile, modal, gameMaster, enigmes, progressBar

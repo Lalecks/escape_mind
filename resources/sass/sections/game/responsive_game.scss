@@ -1,57 +1,8 @@
-// Forcer le jeu en paysage sur mobile
-
-@media all and (orientation: portrait) {
-
-    .landscape,
-    .landscape body {
-        background-color: red;
-        width: 100vh !important;
-        height: 100vw !important;
-        overflow-x: hidden !important;
-        overflow-y: scroll !important;
-    }
-
-    html {
-        position: fixed;
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-        // offset-rotate: 90deg;
-        // offset-rotate: .5turn;    
-        transform-origin: left top;
-        top: 100%;
-        left: 0;
-    }
-
-    .modal {
-        width: 100vh;
-        height: 100vw;
-        //         .modal-content {
-        //             top: 25% !important;
-        //             width: 40% !important;
-        //             height: 51vw !important;
-        //         }
-
-        #Inventory {
-            width: 97vh;
-            left: 0;
-            //             width: 10% !important;
-            //             height: 100% !important;
-            //             top: 0 !important;
-            //             left: -58% !important;
-
-
-
-            //             div {
-            //                 height: 34%;
-            //                 display: grid;
-            //             }
-            //         }
-        }
-    }
-}
+/**
+ *
+ *  Responsive game
+ *
+ * */
 
 // @media only screen and (max-width: 600px) {}
 
@@ -65,12 +16,3 @@
         height: 23vw;
     }
 }
-
-// @media only screen and (orientation:portrait){
-//   #turn{ display:block; }
-//   #Main{ display:none; }
-// }
-// @media only screen and (orientation:landscape){
-//   #turn{ display:none; }
-//   #Main{ display:block; }
-// }

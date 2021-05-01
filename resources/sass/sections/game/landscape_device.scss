@@ -1,0 +1,130 @@
+/**
+ *
+ *  Forcer le jeu en paysage sur mobile
+ *
+ * */
+
+/**************** Animation : Rotate device landscape notice  */
+@media only screen and (orientation:portrait) {
+
+    .landscape {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        #turn-mobile {
+            display: block;
+
+            .phone {
+                margin: 0 auto;
+                height: 50px;
+                width: 100px;
+                border: 3px solid $white;
+                border-radius: 10px;
+                animation: rotate 1.5s ease-in-out infinite alternate;
+            }
+
+            .message {
+                margin-top: 40px;
+            }
+
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg)
+                }
+
+                50% {
+                    transform: rotate(-90deg)
+                }
+
+                100% {
+                    transform: rotate(-90deg)
+                }
+            }
+        }
+    }
+
+    #Main {
+        display: none;
+    }
+}
+
+@media only screen and (orientation:landscape) {
+
+    #turn-mobile,
+    #fullscreen {
+        display: none;
+    }
+
+    #Main {
+        display: block;
+
+        #game-page .modal {
+            .modal-content {
+                width: 73%;
+                height: 33vw;
+                top: 50%;
+            }
+        }
+    }
+}
+
+@media (aspect-ratio: 1/1) {
+
+    // Identique à (orientation:landscape)
+    #turn-mobile,
+    #fullscreen {
+        display: none;
+    }
+
+    #Main {
+        display: block;
+
+        #game-page .modal {
+            .modal-content {
+                width: 53%;
+                height: 33vw;
+                top: 50%;
+            }
+        }
+    }
+}
+
+/**************** Forcer le mode paysage lorsqu'on est en mode portrait */
+// @media all and (orientation: portrait) {
+
+//     .landscape,
+//     .landscape body {
+//         background-color: red;
+//         width: 100vh !important;
+//         height: 100vw !important;
+//         overflow-x: hidden !important;
+//         overflow-y: scroll !important;
+//     }
+
+//     html {
+//         position: fixed;
+//         -webkit-transform: rotate(-90deg);
+//         -moz-transform: rotate(-90deg);
+//         -ms-transform: rotate(-90deg);
+//         -o-transform: rotate(-90deg);
+//         transform: rotate(-90deg);
+//         // offset-rotate: 90deg;
+//         // offset-rotate: .5turn;    
+//         transform-origin: left top;
+//         top: 100%;
+//         left: 0;
+//     }
+
+//     .modal {
+//         width: 100vh;
+//         height: 100vw;
+
+//         #Inventory {
+//             width: 97vh;
+//             left: 0;
+//         }
+//     }
+// }

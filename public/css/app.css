@@ -958,8 +958,8 @@ html {
 }
 
 html body {
-  background-color: #121212 !important;
-  color: #ffffff !important;
+  background-color: #121212;
+  color: #ffffff;
   font-family: "Gayathri", sans-serif;
   font-size: 1.2rem;
   margin: 0;
@@ -3418,34 +3418,11 @@ player:focus .controls {
   }
 }
 
-@media all and (orientation: portrait) {
-  .landscape,
-  .landscape body {
-    background-color: red;
-    width: 100vh !important;
-    height: 100vw !important;
-    overflow-x: hidden !important;
-    overflow-y: scroll !important;
-  }
-
-  html {
-    position: fixed;
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    top: 100%;
-    left: 0;
-  }
-
-  .modal {
-    width: 100vh;
-    height: 100vw;
-  }
-
-  .modal #Inventory {
-    width: 97vh;
-    left: 0;
-  }
-}
+/**
+ *
+ *  Responsive game
+ *
+ * */
 
 @media only screen and (max-width: 1300px) {
   #game-page .modal .modal-content {
@@ -3453,4 +3430,108 @@ player:focus .controls {
     height: 23vw;
   }
 }
+
+/**
+ *
+ *  Forcer le jeu en paysage sur mobile
+ *
+ * */
+
+/**************** Animation : Rotate device landscape notice  */
+
+@media only screen and (orientation: portrait) {
+  .landscape {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .landscape #turn-mobile {
+    display: block;
+  }
+
+  .landscape #turn-mobile .phone {
+    margin: 0 auto;
+    height: 50px;
+    width: 100px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    -webkit-animation: rotate 1.5s ease-in-out infinite alternate;
+            animation: rotate 1.5s ease-in-out infinite alternate;
+  }
+
+  .landscape #turn-mobile .message {
+    margin-top: 40px;
+  }
+
+@-webkit-keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(-90deg);
+    }
+
+    100% {
+      transform: rotate(-90deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(-90deg);
+    }
+
+    100% {
+      transform: rotate(-90deg);
+    }
+}
+
+  #Main {
+    display: none;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #turn-mobile,
+  #fullscreen {
+    display: none;
+  }
+
+  #Main {
+    display: block;
+  }
+
+  #Main #game-page .modal .modal-content {
+    width: 73%;
+    height: 33vw;
+    top: 50%;
+  }
+}
+
+@media (aspect-ratio: 1/1) {
+  #turn-mobile,
+  #fullscreen {
+    display: none;
+  }
+
+  #Main {
+    display: block;
+  }
+
+  #Main #game-page .modal .modal-content {
+    width: 53%;
+    height: 33vw;
+    top: 50%;
+  }
+}
+
+/**************** Forcer le mode paysage lorsqu'on est en mode portrait */
 

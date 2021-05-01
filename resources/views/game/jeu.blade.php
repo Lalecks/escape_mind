@@ -11,7 +11,13 @@
         <div class="Mute">
         </div>
     </header>
-    {{-- <div id="turn"> Please rotate your device!</div> --}}
+    
+    <div id="turn-mobile">
+        <div class="phone">
+        </div>
+        <div class="message">Veuillez pivoter votre appareil !</div>
+   </div>
+   
     <div id="Main" role="main">
         <span id="settings" class="hoverable"><i class="fas fa-cog"></i></span>
         <div id="Cinematic" class="Cinematic">
