@@ -20,6 +20,7 @@ import Defaut from "../game/enigma/room1/Defaut";
 import Pile from "../game/enigma/room1/Pile";
 import cursorModule from "./mouse";
 import Lecteur from "../game/enigma/room1/Lecteur";
+import Jukebox from "../game/enigma/room1/Jukebox";
 
 let modal = document.querySelector(".modal");
 let closeButton = document.querySelector(".close-button");
@@ -31,8 +32,8 @@ export default function createModal() {
     let trigger = document.querySelectorAll(".trigger");
     let isInit = false;
 
+    /* Verifie s'il existe une classe modal dans la page */
     if (modal && trigger.length > 0) {
-        /* Verifie s'il existe une classe modal dans la page */
         trigger.forEach(n => {
             function trig() {
                 toggleModalCustom(n.firstChild.id, n.firstChild.alt);
@@ -41,8 +42,8 @@ export default function createModal() {
             n.addEventListener("click", trig, false);
         });
 
+        /* Fermeture de la modal en cliquant dans le vide */
         if (!isInit) {
-            /* Fermeture de la modal en cliquant dans le vide */
             function close(event) {
                 if (event.target === modal && isDisplayed) {
                     isDisplayed = false;
@@ -52,7 +53,7 @@ export default function createModal() {
             window.addEventListener("click", close, false);
 
             if (closeButton) {
-                /* Fermeture de la modal avec le btn close*/
+                /* Fermeture de la modal avec le btn close */
                 function close() {
                     if (isDisplayed) {
                         isDisplayed = false;
@@ -68,7 +69,7 @@ export default function createModal() {
 
 
 function toggleModalCustom(titre, description) {
-    //PAGE DE JEU
+    // PAGE DE JEU
     if (document.getElementById("game-page")) {
 
         /* Affichage ou non de la modale */
@@ -85,11 +86,19 @@ function toggleModalCustom(titre, description) {
             desc_html.innerText = description;
             desc_html.id = "desc_modal";
 
+            /* Affichage ou non de l'inventaire */
             if (invJoueur.length > 0) {
+                inventory.style.display = "";
+                document.querySelector(".modal-content").style.top = "39%"; // Decentrer la modale
+
                 let inv_html = createInventory();
                 inventory.appendChild(inv_html);
 
                 cursorModule();
+            } else {
+                inventory.style.display = "none";
+                document.querySelector(".modal-content").style.top = "50%"; // Centrer la modale
+
             }
 
             activity.appendChild(titre_html);
@@ -102,11 +111,16 @@ function toggleModalCustom(titre, description) {
                 case "Radio":
                     activity.appendChild(Radio());
                     break;
-                case "Pile1" : case "Pile2" : case "Pile3" :
+                case "Pile1":
+                case "Pile2":
+                case "Pile3":
                     activity.appendChild(Pile(titre));
                     break;
-                case "Lecteur" :
+                case "Lecteur":
                     activity.appendChild(Lecteur());
+                    break;
+                case "Jukebox":
+                    activity.appendChild(Jukebox());
                     break;
                 default:
                     activity.appendChild(Defaut(titre));
@@ -115,7 +129,7 @@ function toggleModalCustom(titre, description) {
             clearAll();
         }
     } else {
-        //HOMEPAGE
+        // HOMEPAGE
         if (modal.classList.toggle("show-modal")) {
             /* Arreter le scrolling de la page */
             document.body.style.position = "fixed";
@@ -159,7 +173,7 @@ function createInventory() {
         let object = document.createElement("img");
         object.src = url + "/objects/" + invJoueur[i][0] + "_00.png";
         object.alt = invJoueur[i][0];
-        object.className="hoverable";
+        object.className = "hoverable";
         object.id = "inv_" + invJoueur[i][0];
 
         global_object.appendChild(nom);
@@ -167,5 +181,6 @@ function createInventory() {
         objects.appendChild(global_object);
 
     }
+
     return objects;
 }

@@ -2500,22 +2500,23 @@ footer {
 #game-page .modal p,
 #game-page .modal span,
 #game-page .modal a {
-  font-size: 1.5vw !important;
+  font-size: 1.5vw;
 }
 
 #game-page .modal .modal-content {
-  top: 40%;
+  top: 39%;
   margin: 0 auto;
   overflow: hidden;
   padding: 2.5%;
-  width: 53%;
-  height: 26vw;
+  width: 59%;
+  height: 34vw;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
 }
 
 #game-page .modal .modal-content .close-button {
   width: 3%;
   height: 10%;
+  font-size: 4vw;
 }
 
 #game-page .modal img {
@@ -2541,7 +2542,7 @@ footer {
   left: 0%;
   bottom: 50%;
   z-index: -14;
-  font-size: 3vh;
+  font-size: 6vh;
   color: #ffffff3d;
   text-transform: uppercase;
 }
@@ -2551,7 +2552,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 89%;
+  height: 100%;
   justify-content: center;
 }
 
@@ -2611,6 +2612,7 @@ footer {
 
 #game-page .modal #Inventory div .picked .item_number {
   font-family: "Audiowide", cursive;
+  font-size: 8vw !important;
   position: absolute;
   font-weight: bold;
   left: 0;
@@ -2636,6 +2638,8 @@ footer {
 }
 
 #game-page .modal #Inventory div .picked img:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
   max-width: 100%;
   max-height: 100%;
   transition: all 200ms ease-in;
@@ -2757,9 +2761,10 @@ player:focus .controls {
 }
 
 #game-page #Game .Room1 #Objects #Lecteur {
-  left: 12%;
-  bottom: 39%;
-  width: 10%;
+  left: 14%;
+  bottom: 34%;
+  width: 5%;
+  transform: rotate(-88.2deg);
 }
 
 #game-page #Game .Room1 #Objects #Radio {
@@ -2770,7 +2775,7 @@ player:focus .controls {
 #game-page #Game .Room1 #Objects #Poster_Ramdam {
   left: -0.9%;
   top: 11%;
-  transform: perspective(33rem) rotateY(51deg);
+  transform: perspective(50vw) rotate3d(0, 1, 0, 60deg);
   width: 10%;
   z-index: 1;
 }
@@ -3047,12 +3052,12 @@ player:focus .controls {
 /*-------- Enigmes  --------*/
 
 #enigme_modal div {
-  height: 6.4%;
+  height: 9.1%;
   position: absolute;
   margin: auto;
-  left: 29%;
-  top: 32%;
-  width: 42.8%;
+  left: 27.5%;
+  top: 29.9%;
+  width: 45.3%;
   overflow: hidden;
 }
 
@@ -3412,23 +3417,46 @@ player:focus .controls {
   }
 }
 
-@media only screen and (orientation: portrait) {
-  #turn {
-    display: block;
+@media all and (orientation: portrait) {
+  .landscape {
+    transform: rotate(-90deg);
+    width: 100vh;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
   }
 
-  #Main {
-    display: none;
+  .landscape .modal .modal-content {
+    top: 25% !important;
+    width: 40% !important;
+    height: 51vw !important;
   }
 }
 
-@media only screen and (orientation: landscape) {
-  #turn {
-    display: none;
+@media only screen and (max-width: 1300px) {
+  #game-page .modal .modal-content {
+    width: 50%;
+    height: 23vw;
   }
+}
 
-  #Main {
-    display: block;
+@media screen and (orientation: portrait) {
+  html {
+    transform: rotate(90deg);
+    transform-origin: top center;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    overflow-y: hidden !important;
+    overflow-x: auto;
   }
 }
 

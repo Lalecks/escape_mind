@@ -24,7 +24,7 @@ export default function Lecteur() {
 
     if (cassette !== null) {
         cassette.addEventListener("click", () => {
-            alert("indice sonore : '11'");
+            alert("Musique : 'Les petits bateaux'");
             updateInventory("Cassette",false)
             let modal = document.querySelector(".modal");
             modal.classList.toggle("show-modal");

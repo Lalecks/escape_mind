@@ -16,8 +16,7 @@ export default function changeAV(num){
 }
 
 $( document ).ready(function() {
-
-    let room_done = 1;
+    let room_done = 4;
 
     // let cinematic = displayCinematic();
     // cinematic.addEventListener('ended',function(){

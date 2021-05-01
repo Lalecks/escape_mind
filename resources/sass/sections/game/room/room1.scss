@@ -34,9 +34,10 @@
                 }
 
                 #Lecteur {
-                    left: 12%;
-                    bottom: 39%;
-                    width: 10%;
+                    left: 14%;
+                    bottom: 34%;
+                    width: 5%;
+                    transform: rotate(-88.2deg);
                 }
 
                 #Radio {
@@ -47,8 +48,8 @@
                 #Poster_Ramdam {
                     left: -0.9%;
                     top: 11%;
-                    -webkit-transform: perspective(33rem) rotateY(51deg);
-                    transform: perspective(33rem) rotateY(51deg);
+                    -webkit-transform: perspective(50vw) rotate3d(0, 1, 0, 60deg);
+                    transform: perspective(50vw) rotate3d(0, 1, 0, 60deg);
                     width: 10%;
                     z-index: 1;
                 }
