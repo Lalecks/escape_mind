@@ -20,17 +20,16 @@ require('./layouts/detecting_mobile');
 
 
 /*-------- Game --------*/
+require('./game/video_player');
+
 if (document.getElementById("game-page")) {
     require('./game/game.js');
-    /* Room functionnment */
-    /* Cinematics */
-    require('./game/video_player');
-    /* Components */
-} else {
-    // Avant custom_packages.js pour fonctionner
-    require('./layouts/modal');
-    require('./layouts/mouse');
-}
+} 
+
+// Avant custom_packages.js pour fonctionner
+// require('./layouts/mouse');
+// require('./layouts/modal');
+
 
 /*--------  Web Components --------*/
 require('./web_components/scrollBar');

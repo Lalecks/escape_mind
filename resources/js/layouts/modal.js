@@ -20,6 +20,7 @@ import Defaut from "../game/enigma/room1/Defaut";
 import Pile from "../game/enigma/room1/Pile";
 import cursorModule from "./mouse";
 import Lecteur from "../game/enigma/room1/Lecteur";
+import Jukebox from "../game/enigma/room1/Jukebox";
 
 let modal = document.querySelector(".modal");
 let closeButton = document.querySelector(".close-button");
@@ -86,10 +87,14 @@ function toggleModalCustom(titre, description) {
             desc_html.id = "desc_modal";
 
             if (invJoueur.length > 0) {
+                inventory.style.display = "";
+
                 let inv_html = createInventory();
                 inventory.appendChild(inv_html);
 
                 cursorModule();
+            }else {
+                inventory.style.display = "none";
             }
 
             activity.appendChild(titre_html);
@@ -107,6 +112,9 @@ function toggleModalCustom(titre, description) {
                     break;
                 case "Lecteur" :
                     activity.appendChild(Lecteur());
+                    break;
+                case "Jukebox" :
+                    activity.appendChild(Jukebox());
                     break;
                 default:
                     activity.appendChild(Defaut(titre));
@@ -167,5 +175,6 @@ function createInventory() {
         objects.appendChild(global_object);
 
     }
+
     return objects;
 }

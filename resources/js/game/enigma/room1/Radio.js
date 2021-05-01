@@ -29,8 +29,8 @@ export default function Radio(){
     cursor.onchange=function(){
         //Correspond à la fréquence à trouver
         if (cursor.value === "36"){
-           alert("Vous avez fini le jeu !");
-           changeAV(0);
+            alert("indice sonore : '11'");
+            changeAV(0);
         }
     }
 
