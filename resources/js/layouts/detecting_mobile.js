@@ -16,8 +16,6 @@ if (isMobile === true) {
     document.getElementById('souris').style.display = "none";
     // lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation ||screen.orientation.lock;
     // lockOrientationUniversal('landscape');
-
-    
 } else {
     $("html").removeClass("landscape");
 }

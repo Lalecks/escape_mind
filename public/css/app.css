@@ -3429,7 +3429,7 @@ player:focus .controls {
   }
 
   html {
-    position: absolute;
+    position: fixed;
     transform: rotate(-90deg);
     transform-origin: left top;
     top: 100%;
