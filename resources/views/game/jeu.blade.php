@@ -2,7 +2,7 @@
 @section('title', __("le jeu en ligne"))
 
 @section('content')
-<section id="game-page" class="landscape">
+<section id="game-page">
     <header id="Header" class="Header">
         <div class="HeaderLogo">
             <!-- Nécessaire pour le bon fonctionnement du Loading -->

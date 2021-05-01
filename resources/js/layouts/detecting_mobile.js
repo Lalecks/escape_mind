@@ -18,4 +18,5 @@ if (isMobile === true) {
     // lockOrientationUniversal('landscape');
 } else {
     $("body").removeClass("landscape");
+    document.getElementById("turn-mobile").style.display = "none"; // Si le pc fait un "mode portrait"
 }
