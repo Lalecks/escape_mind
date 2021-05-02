@@ -26,20 +26,15 @@ class HomeController extends Controller
 
     public function index()
     {
-        $user = User::all();
-        // $user = User::all()->orderBy('created_at', 'ASC');
-        // $user = User::orderBy('created_at', 'ASC')->all();
+        $user = User::orderBy('created_at', 'asc');
 
-        // $user = DB::table('users')->orderBy('created_at', 'desc')->get();
-        // $firstUser = DB::table('users')
-        
-        
-        // $first3users = DB::table('foo')->orderBy('bar', 'desc')->take(3)->get();
-        // $firstUser = DB::select('select * from users where id = 1');
-        // $secondUser = DB::select('select * from users where id = 2');
-        // $thirdUser = DB::select('select * from users where id = 3');
-        // ->sortByDesc('id')->take(3)
-        return view('components.home')->with('user', $user);
-        // ->with('firstUser', $firstUser); 
+        // Classement des 15 premiers utilisateurs par le meilleur temps
+        $fifteenFirstUser = $user->take(15)->get();
+        // Second score
+        $secondUser = $user->skip(1)->first();
+        // Troisième score
+        $thirdUser = $user->skip(2)->first();
+
+        return view('components.home')->with('user', $fifteenFirstUser)->with('secondUser', $secondUser)->with('thirdUser', $thirdUser); 
     }
 }

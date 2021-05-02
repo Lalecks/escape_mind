@@ -127,7 +127,7 @@
 							</svg>
 							<img src="{{ asset('resources/web/model2.png') }}" alt="model2"/>
 						</div>
-						<p class="logo-title">pseudo2</p>
+						<p class="logo-title">{{$secondUser->name}}</p>
 					</div>
 					<div class="first">
 						<div>
@@ -155,7 +155,7 @@
 							</svg>
 							<img src="{{ asset('resources/web/model1.png') }}" alt="model1"/>
 						</div>
-						<p class="logo-title">sarah_mrct</p>
+						<p class="logo-title">{{$user->first()->name}}</p>
 						{{-- <p class="logo-title">{{$firstUser->id(1)}}</p> --}}
 					</div>
 					<div class="third">
@@ -184,7 +184,7 @@
 							</svg>
 							<img src="{{ asset('resources/web/model3.png') }}" alt="model3"/>
 						</div>
-						<p class="logo-title">pseudo3</p>
+						<p class="logo-title">{{$thirdUser->name}}</p>
 					</div>
 				</div>
 				<div class="board">

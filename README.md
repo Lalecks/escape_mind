@@ -85,9 +85,8 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
     - [Pexels](https://www.pexels.com/)
     - [Unsplash](https://unsplash.com/)
 * Web resources :
-    - *Pjax* Copyright (c) 2012 [Chris Wanstrath](https://github.com/defunkt/jquery-pjax)
     - *Rellax* Copyright (c) 2016 [Moe Amaya](https://github.com/dixonandmoe/rellax)
-    - *Mouse* Copyright (c) [Clement Girault](https://codepen.io/clementGir/pen/RQqvQx)
+    - *Mouse* Copyright (c) [Gunnar Normand](https://codepen.io/gnormand/pen/XpQLyb)
     - *Menu burger* Copyright (c) [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
     - *Glitch effect* Copyright (c) [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
     - *Settings pannel* Copyright (c) [John W Hancock](https://codepen.io/BlueCaret/pen/xVNpVM)
