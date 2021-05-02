@@ -3,10 +3,10 @@
 	<!--====== Entête ======-->
 	<head>
 		<!-- Encodage -->
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-		<meta name='apple-mobile-web-app-capable' content='yes' />
+		<meta name='apple-mobile-web-app-capable' content='yes'>
 		<!-- CSRF Token -->
 		<meta name="csrf-token" content="{{ csrf_token() }}">
 		<!-- Référencement -->
@@ -58,7 +58,6 @@
 		<meta name="theme-color" content="#1A1A1A">
 		<!-- Stylesheets -->
 		<link href="{{ mix('css/app.css') }}" rel="stylesheet">
-		{{-- <link href="{{ asset('css/app.min.css') }}" rel="stylesheet"> --}}
 		<!-- Scripts -->
 		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
 	</head>
@@ -83,7 +82,6 @@
 		</main>
 		
 		<!--====== Javascripts & Jquery ======-->
-		<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>

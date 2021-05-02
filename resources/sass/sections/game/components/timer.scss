@@ -1,11 +1,11 @@
 #Chrono {
+    position: fixed;
+    z-index: 15;
     font-family: "Big Shoulders Display", cursive;
     color: $body-bg;
     margin: 0;
     padding: 0.04% 1.6%;
     border-radius: 8.5%;
-    position: absolute;
-    z-index: 15;
     text-align: center;
     font-weight: bold;
     top: 2%;

@@ -85,12 +85,12 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
     - [Pexels](https://www.pexels.com/)
     - [Unsplash](https://unsplash.com/)
 * Web resources :
-    - Copyright (c) 2012 [Chris Wanstrath](https://github.com/defunkt/jquery-pjax)
-    - Copyright (c) 2016 [Moe Amaya](https://github.com/dixonandmoe/rellax)
-    - Copyright (c) [Clement Girault](https://codepen.io/clementGir/pen/RQqvQx)
-    - Copyright (c) [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
-    - Copyright (c) [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
-    - Copyright (c) 2017 [Mary Lou](https://github.com/codrops/CSSGlitchEffect)
+    - *Pjax* Copyright (c) 2012 [Chris Wanstrath](https://github.com/defunkt/jquery-pjax)
+    - *Rellax* Copyright (c) 2016 [Moe Amaya](https://github.com/dixonandmoe/rellax)
+    - *Mouse* Copyright (c) [Clement Girault](https://codepen.io/clementGir/pen/RQqvQx)
+    - *Menu burger* Copyright (c) [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
+    - *Glitch effect* Copyright (c) [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
+    - *Settings pannel* Copyright (c) [John W Hancock](https://codepen.io/BlueCaret/pen/xVNpVM)
 
 ## Project status
 The development of the application is in progress.

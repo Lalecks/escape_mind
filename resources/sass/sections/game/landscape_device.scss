@@ -4,18 +4,29 @@
  *
  * */
 
-/**************** Animation : Rotate device landscape notice  */
+/**************** Demander à l'utilisateur de mettre tourner son téléphone lorsqu'on est en mode portrait  */
+// Si le portable est en mode portrait
 @media only screen and (orientation:portrait) {
 
     .landscape {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
 
         #turn-mobile {
             display: block;
+            width: 100vw;
 
             .phone {
                 margin: 0 auto;
@@ -23,25 +34,12 @@
                 width: 100px;
                 border: 3px solid $white;
                 border-radius: 10px;
+                -webkit-animation: rotate 1.5s ease-in-out infinite alternate;
                 animation: rotate 1.5s ease-in-out infinite alternate;
             }
 
             .message {
                 margin-top: 40px;
-            }
-
-            @keyframes rotate {
-                0% {
-                    transform: rotate(0deg)
-                }
-
-                50% {
-                    transform: rotate(-90deg)
-                }
-
-                100% {
-                    transform: rotate(-90deg)
-                }
             }
         }
 
@@ -51,6 +49,7 @@
     }
 }
 
+// Si le portable est en mode paysage
 @media only screen and (orientation:landscape) {
 
     #turn-mobile,
@@ -89,6 +88,35 @@
                 top: 50%;
             }
         }
+    }
+}
+
+// Animation de rotation
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(-90deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-90deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(-90deg)
+    }
+
+    100% {
+        transform: rotate(-90deg)
     }
 }
 

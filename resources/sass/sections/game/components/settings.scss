@@ -1,12 +1,15 @@
-#settings {
-    position: absolute;
-    z-index: 15;
-    top: 2%;
-    right: 10%;
-    font-size: 3vw !important;
-    // Degradé sur le texte
-    background: -webkit-linear-gradient($white-degraded);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+#settings-panel {
+    #settings-icon {
+        position: fixed;
+        z-index: 15;
+        top: 2%;
+        right: 10%;
+        font-size: 3vw !important;
+        // Degradé sur le texte
+        background: -webkit-linear-gradient($white-degraded);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
+
