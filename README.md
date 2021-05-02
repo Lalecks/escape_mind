@@ -86,10 +86,10 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
     - [Unsplash](https://unsplash.com/)
 * Web resources :
     - *Rellax* Copyright (c) 2016 [Moe Amaya](https://github.com/dixonandmoe/rellax)
-    - *Mouse* Copyright (c) [Gunnar Normand](https://codepen.io/gnormand/pen/XpQLyb)
-    - *Menu burger* Copyright (c) [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
-    - *Glitch effect* Copyright (c) [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
-    - *Settings pannel* Copyright (c) [John W Hancock](https://codepen.io/BlueCaret/pen/xVNpVM)
+    - *Mouse* Copyright (c) 2021 [Gunnar Normand](https://codepen.io/gnormand/pen/XpQLyb)
+    - *Menu burger* Copyright (c) 2021 [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
+    - *Glitch effect* 2021 Copyright (c) [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
+    - *Settings pannel* Copyright (c) 2021 [John W Hancock](https://codepen.io/BlueCaret/pen/xVNpVM)
 
 ## Project status
 The development of the application is in progress.

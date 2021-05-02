@@ -179,7 +179,7 @@
                 margin: 0;
                 position: absolute;
                 left: 50%;
-                top: 170px;
+                top: 8%;
                 transition: all 0.3s ease-in-out;
                 transform: translateX(-50%);
 
@@ -191,7 +191,7 @@
                         display: block;
                         font-size: 2em;
                         text-decoration: none;
-                        padding: 10px 0;
+                        padding: 0;
                         text-align: center;
                         color: $grey;
                         font-weight: bold;
@@ -199,9 +199,22 @@
                         text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
 
                         &:hover {
-                            color: $yellow;
+                            // color: $yellow;
+                            filter: brightness(120%) drop-shadow(0.05rem 0.05rem 0.5rem #acacac) saturate(220%);
                         }
                     }
+                }
+            }
+        }
+
+        .navbar {
+
+            ul {
+                padding-left: 0;
+
+                li a:before,
+                li .active::before {
+                    content: none;
                 }
             }
         }
@@ -348,7 +361,8 @@
         .take-contact .mail {
             font-size: large;
             text-shadow: none;
-            &:hover{
+
+            &:hover {
                 font-size: large;
             }
         }

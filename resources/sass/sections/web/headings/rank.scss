@@ -132,9 +132,15 @@
             right: 0;
         }
 
-        .first img {
-            right: 0;
-            top: 10%;
+        .first {
+            text-align: center;
+
+            img {
+                left: 0;
+                right: 0;
+                top: 10%;
+                margin: 0 auto;
+            }
         }
 
         .third img {

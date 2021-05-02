@@ -10,11 +10,12 @@
 	<header>
 		<a class="logo logo-title" href="#">escape_mind</a>
 		<!-- Début : menu burger -->
-		<input type='checkbox' id='toggle' style='display:none;' />
+		
+		<input type='checkbox' id='toggle' style='display:none;'/>
 		<label class='toggle-btn toggle-btn__cross' for='toggle'>
-			<span class="bar"></span>
-			<span class="bar"></span>
-			<span class="bar"></span>
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
 		</label>
 		<!-- Fin : menu burger -->
 		<nav class="navbar">
