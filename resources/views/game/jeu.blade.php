@@ -4,10 +4,10 @@
 @section('content')
 <section id="game-page">
 	<header id="Header">
-		<div class="logo logo-title">
+		<a href="/" class="logo logo-title hoverable" style="pointer-events: none; cursor: default;">
 			<!-- Nécessaire pour le bon fonctionnement du Loading -->
 			<img src="./resources/game/Logo.png" alt="logo"/>
-		</div>
+		</a>
 		{{-- <span class="mute"><i class="fas fa-volume-mute"></i></span> --}}
 		<div id="turn-mobile">
 			<div class="phone"></div>
