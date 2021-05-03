@@ -8,6 +8,8 @@ export default function cursorModule(){
     const innerCursor = document.querySelector(".cursor--small");
     const canvas = document.querySelector(".cursor--canvas");
 
+    console.log("!!! Création/Mise a jour de la souris");
+
     let clientX = -100;
     let clientY = -100;
     const initCursor = () => {
@@ -164,19 +166,21 @@ export default function cursorModule(){
         };
         const $hoverables = document.querySelectorAll('.hoverable');
         $hoverables.forEach(hoverable => {
-            hoverable.removeEventListener("mouseenter", handleCanvasCursorMouseEnter);
-            hoverable.removeEventListener("mouseleave", handleCanvasCursorMouseLeave);
+            // hoverable.removeEventListener("mouseenter", handleCanvasCursorMouseEnter);
+            // hoverable.removeEventListener("mouseleave", handleCanvasCursorMouseLeave);
             hoverable.addEventListener("mouseenter", handleCanvasCursorMouseEnter);
             hoverable.addEventListener("mouseleave", handleCanvasCursorMouseLeave);
         });
-        // const $otherhoverables = document.querySelectorAll('.another-hoverable');
-        // $otherhoverables.forEach(hoverable => {
-        //     hoverable.addEventListener("mouseenter", handleBasicCursorMouseEnter);
-        //     hoverable.addEventListener("mouseleave", handleBasicCursorMouseLeave);
-        // });
+        const $otherhoverables = document.querySelectorAll('.another-hoverable');
+        $otherhoverables.forEach(hoverable => {
+            hoverable.addEventListener("mouseenter", handleBasicCursorMouseEnter);
+            hoverable.addEventListener("mouseleave", handleBasicCursorMouseLeave);
+        });
     }
     initCursorHovers();
 }
+
+cursorModule();
 
 
 

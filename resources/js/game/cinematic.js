@@ -1,5 +1,3 @@
-import createGame from "./room_creation";
-
 // Gestion des cinématiques
 let actualCinematic = 0;
 let cin = document.getElementById('Cinematic');
@@ -52,6 +50,7 @@ export default function displayCinematic(){
 
     cin.appendChild(video);
 
-    return video;
+    console.log("!!! Création de la cinématique");
 
+    return video;
 }

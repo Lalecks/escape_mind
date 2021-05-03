@@ -9,6 +9,15 @@
     padding: 0;
     //-webkit-box-sizing: border-box;
     //box-sizing: border-box;
+
+    &:hover {
+        cursor: none; // Retire le curseur
+    }
+
+    &:link {
+        cursor: none; // Retire le curseur
+    }
+
 }
 
 html {
@@ -28,7 +37,6 @@ html {
         padding: 0 !important;
         height: 100vh;
         overflow-x: hidden;
-        cursor: none; // Retire le curseur par defaut
         // Puces
         position: relative; // Si footer en absolute
         display: table;
@@ -45,10 +53,6 @@ html {
             text-decoration: none;
             -webkit-text-decoration-line: none;
             text-decoration-line: none;
-
-            &:link {
-                cursor: none; // Retire le curseur
-            }
 
             &:hover {
                 -webkit-transition: all 0.5s ease-in-out;

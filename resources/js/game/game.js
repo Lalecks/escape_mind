@@ -5,7 +5,6 @@
  */
 
 import displayCinematic from "./cinematic";
-import changeRoom from "./room_creation";
 import updateGame from "./room_creation";
 
 let avancement = 0;
@@ -16,9 +15,9 @@ export default function changeAV(num){
 }
 
 $( document ).ready(function() {
-    let room_done = 4;
+    let room_done = 1;
 
-    // let cinematic = displayCinematic();
+    //let cinematic = displayCinematic();
     // cinematic.addEventListener('ended',function(){
         updateGame();
     // });

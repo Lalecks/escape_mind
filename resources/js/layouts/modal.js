@@ -18,7 +18,6 @@ import Radio from "../game/enigma/room1/Radio";
 import Cassettes from "../game/enigma/room1/Cassettes";
 import Defaut from "../game/enigma/room1/Defaut";
 import Pile from "../game/enigma/room1/Pile";
-import cursorModule from "./mouse";
 import Lecteur from "../game/enigma/room1/Lecteur";
 import Jukebox from "../game/enigma/room1/Jukebox";
 
@@ -29,6 +28,7 @@ let inventory = document.querySelector("#Inventory");
 let isDisplayed = false;
 
 export default function createModal() {
+    console.log("!!! Création/Mise a jour de la modal");
     let trigger = document.querySelectorAll(".trigger");
     let isInit = false;
 
@@ -94,7 +94,6 @@ function toggleModalCustom(titre, description) {
                 let inv_html = createInventory();
                 inventory.appendChild(inv_html);
 
-                cursorModule();
             } else {
                 inventory.style.display = "none";
                 document.querySelector(".modal-content").style.top = "50%"; // Centrer la modale
@@ -184,3 +183,5 @@ function createInventory() {
 
     return objects;
 }
+
+createModal();

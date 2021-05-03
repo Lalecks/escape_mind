@@ -33,6 +33,11 @@
     background: black;
     cursor: pointer;
     transform: translateY(50%);
+
+    &:hover {
+        cursor: none; // Retire le curseur
+    }
+
 }
 
 .slider::-moz-range-thumb {
@@ -45,6 +50,11 @@
     background: black;
     cursor: pointer;
     transform: translateY(50%);
+
+    &:hover {
+        cursor: none; // Retire le curseur
+    }
+
 }
 
 

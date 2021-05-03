@@ -16,11 +16,11 @@ import createModal from "../layouts/modal";
 let object = [
     /* Room 1 */
     ["Cassettes", 1, "Il s'agit de cassettes."],
-    ["Coffre_Fort", 1, "Il s'agit d'un coffre fort."],
+    ["Coffre", 1, "Il s'agit d'un coffre fort."],
     ["Jukebox", 1, "Il s'agit d'un jukebox."],
     ["Lecteur", 1, "Il s'agit d'un lecteur."],
     ["Radio", 1, "Il s'agit d'une radio."],
-    ["Poster_Ramdam", 1, "Il s'agit d'une radio."],
+    ["Poster", 1, "Il s'agit d'une radio."],
     /* Room 2 */
     ["Lit", 2, "Il s'agit d'un lit double."],
     ["Peluche", 2, "Il s'agit d'une peluche trop chou."],
