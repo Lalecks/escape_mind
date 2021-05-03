@@ -2428,21 +2428,27 @@ footer {
   right: 2%;
 }
 
-#game-page #Game {
+#game-page #Main {
+  width: 100vw;
+  height: 100Vh;
+  position: relative;
+}
+
+#game-page #Main #Game {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-#game-page #Game #bg {
+#game-page #Main #Game #bg {
   min-height: 100%;
   width: 100%;
   height: 100%;
   z-index: -4;
 }
 
-#game-page #Game #Objects div img,
-#game-page #Game #Decors div img {
+#game-page #Main #Game #Objects div img,
+#game-page #Main #Game #Decors div img {
   position: absolute;
   bottom: 0;
   height: auto;
@@ -2450,11 +2456,11 @@ footer {
   transition: 0.3s ease-in-out;
 }
 
-#game-page #Game #Objects div {
+#game-page #Main #Game #Objects div {
   transition: 0.3s ease-in-out;
 }
 
-#game-page #Game #Decors img {
+#game-page #Main #Game #Decors img {
   pointer-events: none;
 }
 
@@ -3105,52 +3111,6 @@ footer {
 
 #Cassettes_bg {
   height: 73% !important;
-}
-
-.controls {
-  visibility: hidden;
-  opacity: 0.5;
-  width: 400px;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  margin-left: -200px;
-  background-color: black;
-  box-shadow: 3px 3px 5px black;
-  transition: 1s all;
-  display: flex;
-}
-
-.player:hover .controls,
-player:focus .controls {
-  opacity: 1;
-}
-
-.timer {
-  line-height: 38px;
-  font-size: 10px;
-  font-family: monospace;
-  text-shadow: 1px 1px 0px black;
-  color: white;
-  flex: 5;
-  position: relative;
-}
-
-.timer div {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.2);
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 38px;
-  z-index: 2;
-}
-
-.timer span {
-  position: absolute;
-  z-index: 3;
-  left: 19px;
 }
 
 #Chrono {
@@ -3921,14 +3881,18 @@ player:focus .controls {
   }
 
   .landscape #turn-mobile {
-    display: block;
+    display: flex;
     width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .landscape #turn-mobile .phone {
     margin: 0 auto;
-    height: 50px;
-    width: 100px;
+    height: 3rem;
+    width: 6rem;
     border: 3px solid #ffffff;
     border-radius: 10px;
     -webkit-animation: rotate 1.5s ease-in-out infinite alternate;

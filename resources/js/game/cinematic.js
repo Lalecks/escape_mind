@@ -5,7 +5,7 @@ let game = null;
 
 
 export default function displayCinematic(){
-    let cinematics = Array('Beginning','Success','Defeat');
+    let cinematics = Array('beginning','success','defeat');
 
     let video = document.createElement("video");
     video.id="Video";
