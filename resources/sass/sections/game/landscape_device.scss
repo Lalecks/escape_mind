@@ -51,20 +51,22 @@
 
 // Si le portable est en mode paysage
 @media only screen and (orientation:landscape) {
+    .landscape {
 
-    #turn-mobile,
-    #fullscreen {
-        display: none;
-    }
+        #turn-mobile,
+        #fullscreen {
+            display: none;
+        }
 
-    #Main {
-        display: block;
+        #Main {
+            display: block;
 
-        #game-page .modal {
-            .modal-content {
-                width: 73%;
-                height: 33vw;
-                top: 50%;
+            #game-page .modal {
+                .modal-content {
+                    width: 73%;
+                    height: 33vw;
+                    top: 50%;
+                }
             }
         }
     }
@@ -73,19 +75,22 @@
 @media (aspect-ratio: 1/1) {
 
     // Identique à (orientation:landscape)
-    #turn-mobile,
-    #fullscreen {
-        display: none;
-    }
+    .landscape {
 
-    #Main {
-        display: block;
+        #turn-mobile,
+        #fullscreen {
+            display: none;
+        }
 
-        #game-page .modal {
-            .modal-content {
-                width: 53%;
-                height: 33vw;
-                top: 50%;
+        #Main {
+            display: block;
+
+            #game-page .modal {
+                .modal-content {
+                    width: 73%;
+                    height: 33vw;
+                    top: 50%;
+                }
             }
         }
     }
