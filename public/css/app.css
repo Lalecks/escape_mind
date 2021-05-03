@@ -963,6 +963,7 @@ html {
   font-size: 1.1rem;
   line-height: 1.5rem;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 html body {
@@ -993,6 +994,10 @@ html body a {
 
 html body a:hover {
   transition: all 0.5s ease-in-out;
+}
+
+html body a:link {
+  cursor: none;
 }
 
 html body img {
@@ -1124,6 +1129,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: none;
 }
 
 .cursor {
@@ -3939,16 +3945,16 @@ player:focus .controls {
 }
 
 @media only screen and (orientation: landscape) {
-  .landscape #turn-mobile,
-  .landscape #fullscreen {
-    display: none;
+  #turn-mobile,
+  #fullscreen {
+    display: none !important;
   }
 
-  .landscape #Main {
+  #Main {
     display: block;
   }
 
-  .landscape #Main #game-page .modal .modal-content {
+  #Main #game-page .modal .modal-content {
     width: 73%;
     height: 33vw;
     top: 50%;
@@ -3956,17 +3962,17 @@ player:focus .controls {
 }
 
 @media (aspect-ratio: 1/1) {
-  .landscape #turn-mobile,
-  .landscape #fullscreen {
+  #turn-mobile,
+  #fullscreen {
     display: none;
   }
 
-  .landscape #Main {
+  #Main {
     display: block;
   }
 
-  .landscape #Main #game-page .modal .modal-content {
-    width: 73%;
+  #Main #game-page .modal .modal-content {
+    width: 53%;
     height: 33vw;
     top: 50%;
   }

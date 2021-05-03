@@ -16,13 +16,11 @@ if (document.getElementById("home-page")) {
 }
 /*-------- Layouts --------*/
   require('./layouts/loader');
-// if (document.getElementById("game-page")) {
-//     require('./layouts/detecting_mobile');
-// }
+if (document.getElementById("game-page")) {
+    require('./layouts/detecting_mobile');
+}
 
 /*-------- Game --------*/
-
-
 if (document.getElementById("game-page")) {
     require('./game/game.js');
     /* Room functionnment */
@@ -34,7 +32,6 @@ if (document.getElementById("game-page")) {
 // Avant custom_packages.js pour fonctionner
 require('./layouts/mouse');
 require('./layouts/modal');
-
 
 /*--------  Web Components --------*/
 require('./web_components/scrollBar');
