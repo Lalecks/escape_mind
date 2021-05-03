@@ -15,7 +15,7 @@ if (document.getElementById("home-page")) {
     });
 }
 /*-------- Layouts --------*/
-  require('./layouts/loader');
+require('./layouts/loader');
 if (document.getElementById("game-page")) {
     require('./layouts/detecting_mobile');
 }
@@ -25,15 +25,15 @@ if (document.getElementById("game-page")) {
     require('./game/game.js');
     /* Room functionnment */
     /* Cinematics */
-    //require('./game/video_player');
+    
     /* Components */
 }
-
+require('./game/video_player');
 // Avant custom_packages.js pour fonctionner
-require('./layouts/mouse');
-require('./layouts/modal');
+// require('./layouts/mouse');
+// require('./layouts/modal');
 
-/*--------  Web Components --------*/
-require('./web_components/scrollBar');
-require('./web_components/custom_package');
-require('./web_components/divers');
+// /*--------  Web Components --------*/
+// require('./web_components/scrollBar');
+// require('./web_components/custom_package');
+// require('./web_components/divers');
