@@ -3,17 +3,17 @@
  *  Vidéo player des cinématiques
  *
  **/
-var player = (function () { //Namespace todo lo que esta aqui dentro es privado
-    var play = document.getElementById("play"),
+let player = (function () { //Namespace todo lo que esta aqui dentro es privado
+    let play = document.getElementById("play"),
         fullscreen = document.getElementById("expand"),
         playlist = document.getElementById("playlist"),
         audioVolume = document.getElementById("audioVolume"),
-        progress = document.getElementById('progress'),
+        progress = document.getElementById('progressVideo'),
         start = document.getElementById('start'),
         finish = document.getElementById('finish'),
         preload = document.getElementById('preload');
 
-    var mediaPlayer, // global para que los listener sepan el estado a modificar
+    let mediaPlayer, // global para que los listener sepan el estado a modificar
         currentTrack = "0", // que video se esta reproduciendo ahora.
         videos, videoNodes;
 
@@ -71,11 +71,12 @@ var player = (function () { //Namespace todo lo que esta aqui dentro es privado
             y = seconds < 10 ? "0" + seconds : seconds;
 
         progress.style.width = Number(this.currentTime / this.duration * 100) + "%";
+        console.log(progress.style.width + " : " + Number(this.currentTime / this.duration * 100) + "%");
         start.textContent = x + " : " + y;
     }
 
     /**
-     * 
+     *
      * @param {*} event
      */
     function togglePlay(event) {
@@ -88,7 +89,7 @@ var player = (function () { //Namespace todo lo que esta aqui dentro es privado
      * Create
      * @param {object} itemList
      * @returns un Nodo que representa el objeto siendo pasado
-     * Rturns a Node representation of the object 
+     * Rturns a Node representation of the object
      */
     function create(itemList) {
         var div = document.createElement("div"),
@@ -120,7 +121,7 @@ var player = (function () { //Namespace todo lo que esta aqui dentro es privado
     /**
      * Recibe un array de objetos y devuelve su representacion en un Nodos HTML
      * Returns an Node Collection
-     * @param {playlist : arreglo de objetos} 
+     * @param {playlist : arreglo de objetos}
      */
     function loadList(playlist) {
         var domPlayList = document.getElementById('playlist'),
@@ -185,6 +186,15 @@ var player = (function () { //Namespace todo lo que esta aqui dentro es privado
         }
     }
 })();
+
+
+export default function toggleVideoPlayer() {
+    // PAGE DE JEU
+    if (document.getElementById("game-page")) {
+        let container = document.querySelector(".container-player");
+        container.classList.toggle("hide-player");
+    }
+}
 
 
 document.addEventListener(

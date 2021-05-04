@@ -6,6 +6,7 @@
 
 import displayCinematic from "./cinematic";
 import updateGame from "./room_creation";
+import toggleVideoPlayer from "./video_player";
 
 let avancement = 0;
 
@@ -17,10 +18,11 @@ export default function changeAV(num) {
 $(document).ready(function () {
     let room_done = 1;
 
-    // let cinematic = displayCinematic();
-    // cinematic.addEventListener('ended', function () {
+    let cinematic = displayCinematic();
+    cinematic.addEventListener('ended', function () {
         updateGame();
-    // });
+        toggleVideoPlayer();
+    });
 
     function isRoomDone() {
         if (avancement !== room_done) {
