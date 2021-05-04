@@ -19,34 +19,34 @@
         <div id="settings-panel">
 		    <span id="settings-icon" class="hoverable"><i class="fas fa-cog"></i></span>
         </div>
-
-		{{-- <div class="Cinematic"> --}}
+{{-- 
 		<div id="Cinematic" class="Cinematic">
 			<!-- Cinematic -->
 			<div class="container-player">
-			<div id="mediaPlayer">
-				<div class="lds-ring" id=preload></div>
-				<video id='media-video' preload>
-					{{-- <source id="webm" type="video/webm" src="./resources/cinematic/beginning.webm"> --}}
-					<source  src="./resources/cinematic/beginning.mp4" type='video/mp4'>
-					{{-- <source id="ogg" type="video/ogg" src="./resources/cinematic/beginning.ogv"> --}}
-				</video>
-				<div id="controls">
-					<button id=play><i class="fas fa-pause"></i></button>
-					<button id=audioVolume class="fas fa-volume-off"></button>
-					<div id="progressBar">
-						<div id="progress"></div>
+				<div id="mediaPlayer">
+					<div class="lds-ring" id=preload></div>
+					<video id='media-video' preload>
+						<source id="webm" type="video/webm" src="./resources/cinematic/beginning.webm"> 
+						<source  src="./resources/cinematic/beginning.mp4" type='video/mp4'>
+						{{-- <source id="ogg" type="video/ogg" src="./resources/cinematic/beginning.ogv"> 
+					</video>
+					<div id="controls">
+						<button id=play><i class="fas fa-pause"></i></button>
+						<button id=audioVolume class="fas fa-volume-off"></button>
+						<div id="progressBar">
+							<div id="progress" style="width: 40%;"></div>
+						</div>
+						<div id="timer">
+							<span id="start">0 : 00</span>
+						</div>
+						<button id=expand><i class="fas fa-expand"></i></button>
 					</div>
-					<div id="timer">
-						<span id="start">0 : 00</span>
-					</div>
-					<button id=expand><i class="fas fa-expand"></i></button>
+				</div>
+				<div id="playlist">  
 				</div>
 			</div>
-			<div id="playlist">  
-			</div>
-		</div>
-		</div>
+		</div> --}}
+
 		<div id="Game" class="Game">
 			<div id="ObjectInfo">
 				<div class="modal glass-effect">

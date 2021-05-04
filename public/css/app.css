@@ -2430,7 +2430,6 @@ footer {
 
 #game-page #Main {
   width: 100vw;
-  height: 100Vh;
   position: relative;
 }
 
@@ -2450,7 +2449,6 @@ footer {
 #game-page #Main #Game #Objects div img,
 #game-page #Main #Game #Decors div img {
   position: absolute;
-  bottom: 0;
   height: auto;
   background-size: cover;
   transition: 0.3s ease-in-out;
@@ -3109,111 +3107,6 @@ footer {
   -moz-transition: all 200ms ease-in;
 }
 
-#Cassettes_bg {
-  height: 73% !important;
-}
-
-.Cinematic #Video {
-  display: none;
-}
-
-.Cinematic .container-player video source {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.Cinematic .container-player #controls {
-  position: absolute;
-  width: 100%;
-  height: 12%;
-  bottom: 0px;
-  color: white;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 1;
-  border-top-left-radius: 19.5%;
-  border-top-right-radius: 19.5%;
-  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
-}
-
-.Cinematic .container-player #controls > button {
-  outline: inherit;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-}
-
-.Cinematic .container-player #progressBar {
-  height: 5px;
-  width: 70%;
-  display: flex;
-  background: white;
-  border-radius: 30px;
-  overflow: hidden;
-}
-
-.Cinematic .container-player #progressBar > #progress {
-  height: 100%;
-  width: 0%;
-  background: #00a8ff;
-}
-
-.Cinematic .container-player #media-video {
-  width: 100%;
-  height: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
-  left: 0;
-  /* opacity: 0; */
-  position: absolute;
-  top: 0;
-  transition: opacity 0.2s ease;
-  width: 100%;
-  z-index: 0;
-}
-
-.Cinematic .container-player .video {
-  width: 100%;
-  height: 70px;
-  display: inline-block;
-  display: flex;
-  margin-top: 10px;
-  cursor: pointer;
-  padding: 5px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.Cinematic .container-player .video-imagen {
-  width: 30%;
-  height: 100%;
-}
-
-.Cinematic .container-player .video-imagen > img {
-  height: 100%;
-}
-
-.Cinematic .container-player .video-information {
-  width: 60%;
-  height: 100%;
-}
-
-.Cinematic .container-player .playing {
-  background-color: #00a8ff;
-  color: white;
-}
-
-@media only screen and (max-width: 650px) {
-  .Cinematic .container-player .container-player {
-    flex-wrap: wrap;
-    height: auto;
-  }
-}
-
 #Chrono {
   position: fixed;
   z-index: 15;
@@ -3245,6 +3138,10 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#game-page #Game #ObjectInfo .modal #Cassettes_bg {
+  height: 73%;
 }
 
 #game-page #Game .Room1 {
@@ -3343,6 +3240,12 @@ footer {
   width: 31%;
 }
 
+#game-page #Game #ObjectInfo .modal #enigme_modal #Pile1_bg,
+#game-page #Game #ObjectInfo .modal #enigme_modal #Pile2_bg,
+#game-page #Game #ObjectInfo .modal #enigme_modal #Pile3_bg {
+  width: 48%;
+}
+
 #game-page #Game .Room2 div img {
   width: 15%;
 }
@@ -3351,89 +3254,104 @@ footer {
   filter: sepia(60%) drop-shadow(0.03rem 0.03rem 0.03rem #000000);
 }
 
-#game-page #Game #Objects #Lit {
+#game-page #Game .Room2 #Objects #Lit {
   right: 29%;
   top: 3%;
   width: 40%;
   z-index: 0;
 }
 
-#game-page #Game #Objects #Peluche {
+#game-page #Game .Room2 #Objects #Peluche {
   left: 26%;
   bottom: 30%;
   width: 13%;
 }
 
-#game-page #Game #Objects #Bougie {
+#game-page #Game .Room2 #Objects #Bougie {
   bottom: 56%;
   left: 5%;
   width: 3%;
-  z-index: 1;
+  z-index: 2;
 }
 
-#game-page #Game #Objects #Pile {
-  bottom: 10%;
-  right: 5%;
+#game-page #Game .Room2 #Objects [id^=Pile] {
   width: 3%;
 }
 
-#game-page #Game #Objects #Poster_Robot {
+#game-page #Game .Room2 #Objects #Pile1 {
+  top: 65%;
+  left: 14%;
+  z-index: 0;
+}
+
+#game-page #Game .Room2 #Objects #Pile2 {
+  bottom: 8%;
+  right: 44%;
+  z-index: 1;
+  transform: rotate(195deg);
+}
+
+#game-page #Game .Room2 #Objects #Pile3 {
+  bottom: 10%;
+  right: 5%;
+}
+
+#game-page #Game .Room2 #Objects #Poster_Robot {
   right: 6%;
   top: 5%;
   width: 10%;
-  filter: drop-shadow(5px 5px 5px #000000);
-  transition: 0.3s ease-in-out;
-  transform: perspective(33rem) rotateY(-32deg);
+  filter: drop-shadow(1vh 1vh 3vh #000000);
 }
 
-#game-page #Game #Objects #Poster_Robot:hover {
+#game-page #Game .Room2 #Objects #Poster_Robot:hover {
   filter: sepia(60%) drop-shadow(5px 5px 5px #000000);
 }
 
-#game-page #Game #Objects #Tablette {
+#game-page #Game .Room2 #Objects #Tablette {
   width: 11%;
   left: 18%;
   bottom: 12%;
 }
 
-#game-page #Game #Objects #Puzzle {
+#game-page #Game .Room2 #Objects #Puzzle {
   left: 7%;
   width: 10%;
+  bottom: 0;
 }
 
-#game-page #Game #Decors #Etoiles {
+#game-page #Game .Room2 #Decors #Etoiles {
   top: 0.9%;
   width: 31%;
   -webkit-animation: rihanna 5s infinite;
   animation: rihanna 8s infinite;
 }
 
-#game-page #Game #Decors #Bureau {
+#game-page #Game .Room2 #Decors #Bureau {
   top: 33%;
   left: 0.5%;
   width: 24%;
-  z-index: 0;
+  z-index: 1;
 }
 
-#game-page #Game #Decors #Crayons {
+#game-page #Game .Room2 #Decors #Crayons {
   right: 14%;
   bottom: 24%;
   width: 14.5%;
 }
 
-#game-page #Game #Decors #Dessin {
+#game-page #Game .Room2 #Decors #Dessin {
   right: 0;
   bottom: 22%;
   width: 27.5%;
 }
 
-#game-page #Game #Decors #Marelle {
+#game-page #Game .Room2 #Decors #Marelle {
   bottom: 1.4%;
   right: 27%;
   width: 37%;
 }
 
-#game-page #Game #Decors #Oiseaux {
+#game-page #Game .Room2 #Decors #Oiseaux {
   top: 0;
   left: 40%;
   width: 15%;
@@ -3444,56 +3362,56 @@ footer {
   width: 15%;
 }
 
-#game-page #Game #Objects #Bouchon {
+#game-page #Game .Room3 #Objects #Bouchon {
   right: 0;
   top: 46%;
   width: 9%;
   z-index: 2;
 }
 
-#game-page #Game #Objects #Chateau_Sable {
+#game-page #Game .Room3 #Objects #Chateau_Sable {
   left: 23%;
   bottom: 10%;
   width: 23%;
   z-index: 2;
 }
 
-#game-page #Game #Objects #Clef {
+#game-page #Game .Room3 #Objects #Clef {
   left: 40%;
   bottom: 11%;
   width: 7%;
   z-index: 1;
 }
 
-#game-page #Game #Objects #Coffre_Tresor {
+#game-page #Game .Room3 #Objects #Coffre_Tresor {
   left: 3%;
   bottom: 25%;
   width: 17%;
   z-index: 2;
 }
 
-#game-page #Game #Objects #Baleine {
+#game-page #Game .Room3 #Objects #Baleine {
   right: 35%;
   bottom: 16%;
   width: 7%;
   z-index: 2;
 }
 
-#game-page #Game #Objects #Canard {
+#game-page #Game .Room3 #Objects #Canard {
   left: 4.5%;
   bottom: 5.5%;
   width: 2%;
   z-index: 2;
 }
 
-#game-page #Game #Objects #Poulpe {
+#game-page #Game .Room3 #Objects #Poulpe {
   width: 4%;
   bottom: 29%;
   left: 50%;
   z-index: 1;
 }
 
-#game-page #Game #Objects #Bateau_Pirate {
+#game-page #Game .Room3 #Objects #Bateau_Pirate {
   right: 24%;
   top: 34%;
   width: 20%;
@@ -3501,7 +3419,7 @@ footer {
   z-index: 2;
 }
 
-#game-page #Game #Objects #Bouteille_Verre {
+#game-page #Game .Room3 #Objects #Bouteille_Verre {
   right: 1%;
   bottom: 3%;
   width: 23%;
@@ -3509,7 +3427,7 @@ footer {
   z-index: 2;
 }
 
-#game-page #Game #Objects #Bouteille_Oxygene {
+#game-page #Game .Room3 #Objects #Bouteille_Oxygene {
   right: -9%;
   bottom: 31%;
   width: 18%;
@@ -3517,48 +3435,48 @@ footer {
   z-index: 2;
 }
 
-#game-page #Game #Decors #Robinet {
+#game-page #Game .Room3 #Decors #Robinet {
   top: 2%;
   right: 0;
   width: 13%;
   z-index: 2;
 }
 
-#game-page #Game #Decors #Bulle {
+#game-page #Game .Room3 #Decors #Bulle {
   display: none;
   width: 13%;
   z-index: 2;
 }
 
-#game-page #Game #Decors #Crabe {
+#game-page #Game .Room3 #Decors #Crabe {
   bottom: 2%;
   left: 17.3%;
   width: 6%;
   z-index: 2;
 }
 
-#game-page #Game #Decors #Seau {
+#game-page #Game .Room3 #Decors #Seau {
   bottom: 18%;
   right: 9%;
   width: 18%;
   z-index: 2;
 }
 
-#game-page #Game #Decors #Coquille {
+#game-page #Game .Room3 #Decors #Coquille {
   left: 1%;
   bottom: 3%;
   width: 7%;
   z-index: 1;
 }
 
-#game-page #Game #Decors #Pagure {
+#game-page #Game .Room3 #Decors #Pagure {
   bottom: 30%;
   left: 48%;
   width: 6%;
   z-index: 2;
 }
 
-#game-page #Game #Decors #Tas_Sable {
+#game-page #Game .Room3 #Decors #Tas_Sable {
   bottom: 0;
   width: 100%;
   height: auto;

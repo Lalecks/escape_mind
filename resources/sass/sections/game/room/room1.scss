@@ -1,109 +1,116 @@
-#game-page {
-    #Game {
-        .Room1 {
-            -webkit-filter: saturate(132%);
-            filter: saturate(132%);
+#game-page #Game {
+    #ObjectInfo {
+        .modal {
+            #Cassettes_bg {
+                // Ajustement de la zone de la cassette
+                height: 73%;
+            }
+        }
+    }
 
-            div {
-                img {
-                    width: 20%;
+    .Room1 {
+        -webkit-filter: saturate(132%);
+        filter: saturate(132%);
 
-                    &:hover {
-                        -webkit-filter: saturate(180%) drop-shadow(.05rem .05rem 5rem $white);
-                        filter: saturate(180%) drop-shadow(.05rem .05rem 1rem $white);
-                    }
+        div {
+            img {
+                width: 20%;
+
+                &:hover {
+                    -webkit-filter: saturate(180%) drop-shadow(.05rem .05rem 5rem $white);
+                    filter: saturate(180%) drop-shadow(.05rem .05rem 1rem $white);
                 }
             }
+        }
 
-            #Objects {
-                #Cassettes {
-                    left: 40%;
-                    bottom: 4%;
-                    width: 8%;
-                }
-
-                #Coffre {
-                    left: 10%;
-                    bottom: 14%;
-                    width: 27%;
-                }
-
-                #Jukebox {
-                    right: 5%;
-                    bottom: 14%;
-                }
-
-                #Lecteur {
-                    left: 14%;
-                    bottom: 34%;
-                    width: 5%;
-                    transform: rotate(-88.2deg);
-                }
-
-                #Radio {
-                    right: 34%;
-                    bottom: 14%;
-                }
-
-                #Poster {
-                    left: -0.9%;
-                    top: 11%;
-                    -webkit-transform: perspective(50vw) rotate3d(0, 1, 0, 60deg);
-                    transform: perspective(50vw) rotate3d(0, 1, 0, 60deg);
-                    width: 10%;
-                    z-index: 1;
-                }
+        #Objects {
+            #Cassettes {
+                left: 40%;
+                bottom: 4%;
+                width: 8%;
             }
 
-            #Decors {
-                #Led {
-                    width: 7%;
-                    top: 3.9%;
-                    left: 4.8%;
-                    -webkit-animation: 8s pommeray infinite;
-                    animation: 8s pommeray infinite;
-                    z-index: 0;
-                }
+            #Coffre {
+                left: 10%;
+                bottom: 14%;
+                width: 27%;
+            }
 
-                #Panneau {
-                    top: 12%;
-                    left: 12%;
-                    width: 17%;
-                }
+            #Jukebox {
+                right: 5%;
+                bottom: 14%;
+            }
 
-                #Panneau_neon {
-                    top: 3%;
-                    left: 17%;
-                    width: 8%;
-                    -webkit-transform-origin: bottom left;
-                    -ms-transform-origin: bottom left;
-                    transform-origin: bottom left;
-                    -webkit-animation: 3s spin infinite, 3s pink_neon infinite;
-                    animation: 4s spin infinite, 4s pink_neon infinite;
-                }
+            #Lecteur {
+                left: 14%;
+                bottom: 34%;
+                width: 5%;
+                transform: rotate(-88.2deg);
+            }
 
-                #Ramdam {
-                    top: 4%;
-                    left: 34%;
-                }
+            #Radio {
+                right: 34%;
+                bottom: 14%;
+            }
 
-                #Big_Vinyl {
-                    top: 17%;
-                    right: 37%;
-                    width: 9%;
-                }
+            #Poster {
+                left: -0.9%;
+                top: 11%;
+                -webkit-transform: perspective(50vw) rotate3d(0, 1, 0, 60deg);
+                transform: perspective(50vw) rotate3d(0, 1, 0, 60deg);
+                width: 10%;
+                z-index: 1;
+            }
+        }
 
-                #Little_Vinyl {
-                    top: 27%;
-                    left: 31%;
-                    width: 6%;
-                }
+        #Decors {
+            #Led {
+                width: 7%;
+                top: 3.9%;
+                left: 4.8%;
+                -webkit-animation: 8s pommeray infinite;
+                animation: 8s pommeray infinite;
+                z-index: 0;
+            }
 
-                #Guitare {
-                    top: 2%;
-                    right: 5%;
-                    width: 31%;
-                }
+            #Panneau {
+                top: 12%;
+                left: 12%;
+                width: 17%;
+            }
+
+            #Panneau_neon {
+                top: 3%;
+                left: 17%;
+                width: 8%;
+                -webkit-transform-origin: bottom left;
+                -ms-transform-origin: bottom left;
+                transform-origin: bottom left;
+                -webkit-animation: 3s spin infinite, 3s pink_neon infinite;
+                animation: 4s spin infinite, 4s pink_neon infinite;
+            }
+
+            #Ramdam {
+                top: 4%;
+                left: 34%;
+            }
+
+            #Big_Vinyl {
+                top: 17%;
+                right: 37%;
+                width: 9%;
+            }
+
+            #Little_Vinyl {
+                top: 27%;
+                left: 31%;
+                width: 6%;
+            }
+
+            #Guitare {
+                top: 2%;
+                right: 5%;
+                width: 31%;
             }
         }
     }

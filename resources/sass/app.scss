@@ -55,7 +55,7 @@
 @import 'sections/game/template/room_animation';
 @import 'sections/game/template/modal_game_template';
 // Composants
-@import 'sections/game/components/video_player';
+// @import 'sections/game/components/video_player';
 @import 'sections/game/components/timer';
 @import 'sections/game/components/settings';
 @import 'sections/game/components/drag';
@@ -78,4 +78,4 @@
 // A faire 
 // CSS Game : VideoPlayer / Settings / Effets glitch elements + Flottement / Souris / enregistrer score / Effet bulle + Timer salle 3 / Taskbar
 // CSS Web : bg sections / scrollBar
-// JS : PB pile, modal, gameMaster, enigmes, progressBar
+// JS : gameMaster, enigmes, progressBar

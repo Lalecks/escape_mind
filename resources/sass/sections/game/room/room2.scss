@@ -1,11 +1,24 @@
-#game-page {
-    #Game {
-        .Room2 div {
+#game-page #Game {
+    #ObjectInfo {
+        .modal #enigme_modal {
+
+            #Pile1_bg,
+            #Pile2_bg,
+            #Pile3_bg {
+                width: 48%;
+            }
+        }
+    }
+
+
+    .Room2 {
+        div {
             img {
                 width: 15%;
             }
 
             [id^="link_"] img:hover {
+                // On récuprer les identifiants commençant par "link_" : préfixe. Si on avait mis [id$="link_"], on aurait récuprer ce qui y'a avant, soit le suffix. Puis avec [class*=" link_"], on récupère préfix et suffix.
                 -webkit-filter: sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
                 filter: sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
             }
@@ -29,30 +42,55 @@
                 bottom: 56%;
                 left: 5%;
                 width: 3%;
-                z-index: 1;
+                z-index: 2;
             }
 
-            #Pile {
+            [id^="Pile"] {
+                width: 3%;
+            }
+
+            #Pile1 {
+                top: 65%;
+                left: 14%;
+                z-index: 0;
+            }
+
+            #Pile2 {
+                bottom: 8%;
+                right: 44%;
+                z-index: 1;
+                transform: rotate(195deg);
+            }
+
+            #Pile3 {
                 bottom: 10%;
                 right: 5%;
-                width: 3%;
             }
 
             #Poster_Robot {
                 right: 6%;
                 top: 5%;
                 width: 10%;
-                -webkit-filter: drop-shadow(2px 1px 3px $black);
-                filter: drop-shadow(5px 5px 5px $black);
-                -webkit-transition: .3s ease-in-out;
-                -o-transition: .3s ease-in-out;
-                transition: .3s ease-in-out;
-                -webkit-transform: perspective(33rem) rotateY(-32deg);
-                transform: perspective(33rem) rotateY(-32deg);
+                -webkit-filter: drop-shadow(1vh 1vh 3vh $black);
+                filter: drop-shadow(1vh 1vh 3vh $black);
+                // -webkit-transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
+                // ;
+                // -o-transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
+                // ;
+                // transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
+                // ;
+                // -webkit-transform: perspective(25vh) rotateY(-32deg);
+                // transform: perspective(25vh) rotateY(-32deg);
 
                 &:hover {
                     -webkit-filter: sepia(60%) drop-shadow(2px 1px 3px $black);
                     filter: sepia(60%) drop-shadow(5px 5px 5px $black);
+                    // -webkit-transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
+                    // ;
+                    // -o-transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
+                    // ;
+                    // transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
+                    ;
                 }
             }
 
@@ -65,6 +103,7 @@
             #Puzzle {
                 left: 7%;
                 width: 10%;
+                bottom: 0;
             }
         }
 
@@ -80,7 +119,7 @@
                 top: 33%;
                 left: 0.5%;
                 width: 24%;
-                z-index: 0;
+                z-index: 1;
             }
 
             #Crayons {

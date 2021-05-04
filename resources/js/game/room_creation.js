@@ -6,7 +6,9 @@
 
 import createTimer from "./components/timer";
 import cursorModule from "../layouts/mouse";
-import updateInventory, {invJoueur} from "./enigma/inventory";
+import updateInventory, {
+    invJoueur
+} from "./enigma/inventory";
 import createModal from "../layouts/modal";
 
 // Ajout des objets
@@ -73,35 +75,41 @@ let decor = [
     ["Pagure", 3],
 ];
 
-// Salle actuelle
 
-let actualRoom = 0;
+/* Initialisation des variables */
+let actualRoom = 0; // Salle actuelle
 let nbRoom = 3;
-
-export { actualRoom as actualRoom };
-
 let url = "";
 
-export default function updateGame() {
+export {
+    actualRoom as actualRoom
+};
 
-    actualRoom+=1;
+/* Gestion du jeu */
+export default function updateGame() {
+    actualRoom += 1;
     url = "./resources/game/room" + actualRoom;
 
-    if (actualRoom===1){
+    if (actualRoom === 1) {
         createRoom();
         createTimer();
-    } else if(actualRoom >= nbRoom){
+    } else if (actualRoom >= nbRoom) {
         deleteRoom();
         //endGame();
     } else {
-        deleteRoom();
-        //remove inventory except le papier
-        invJoueur.forEach(objet => { for (let i = 0; i < objet[1]; i++) updateInventory(objet[0],0); });
+        try {
+            deleteRoom();
+        } catch (e) {}
+
+        // Remove inventory except le papier
+        invJoueur.forEach(objet => {
+            for (let i = 0; i < objet[1]; i++) updateInventory(objet[0], 0);
+        });
         createRoom();
     }
-
 }
 
+/* Création de la nouvelle salle */
 function createRoom() {
     let parent_obj = document.getElementById("Objects");
     let parent_decor = document.getElementById("Decors");
@@ -153,16 +161,16 @@ function createRoom() {
     createModal();
 }
 
-function deleteRoom(){
+/* Suppression des éléments de la salle lorsqu'on fini celle d'avant */
+function deleteRoom() {
     let parent_obj = document.getElementById("Objects");
     let parent_decor = document.getElementById("Decors");
     let bg = document.getElementById("bg");
 
     let imgToRemove = [];
-    imgToRemove.push.apply(imgToRemove,parent_obj.childNodes);
-    imgToRemove.push.apply(imgToRemove,parent_decor.childNodes);
-    imgToRemove.push.apply(imgToRemove,[bg]);
+    imgToRemove.push.apply(imgToRemove, parent_obj.childNodes);
+    imgToRemove.push.apply(imgToRemove, parent_decor.childNodes);
+    imgToRemove.push.apply(imgToRemove, [bg]);
 
     imgToRemove.forEach(n => n.remove());
-
 }
