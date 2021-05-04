@@ -6,15 +6,12 @@
 
 let actualCinematic = 0;
 let cin = document.getElementById('Cinematic');
+let video = document.getElementById("media-video");
 let game = null;
 
 export default function displayCinematic(){
     let cinematics = Array('beginning','success','defeat');
 
-    let video = document.createElement("video");
-    video.id="Video";
-    video.width=document.body.clientWidth;
-    video.height=document.body.clientHeight;
     video.preload = true;
     video.onclick = function(){
         this.play();
