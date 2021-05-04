@@ -25,14 +25,13 @@ if (document.getElementById("game-page")) {
     require('./game/game.js');
     /* Room functionnment */
     /* Cinematics */
-    
+    require('./game/video_player');
     /* Components */
     require('./game/components/settings');
 }
-require('./game/video_player');
 // Avant custom_packages.js pour fonctionner
-// require('./layouts/mouse');
-// require('./layouts/modal');
+require('./layouts/mouse');
+require('./layouts/modal');
 
 // /*--------  Web Components --------*/
 // require('./web_components/scrollBar');

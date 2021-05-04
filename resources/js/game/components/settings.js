@@ -15,7 +15,7 @@ $('.menu ul li a').click(function () {
     // utile pour un one-page, car on ne veut pas que la nav reste ouverte une fois que la page est arrivée au bon endroit
 });
 
-/* Fermer le menu des settings si on clique en dehors de sa DIV */
+/* Close the settings menu if you click outside your DIVV */
 let menu = document.getElementById('setti')
 let engrenage = document.querySelector(".fas");
 
