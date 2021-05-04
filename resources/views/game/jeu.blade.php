@@ -34,7 +34,7 @@
 					<video id='media-video' preload>
 						<source id="webm" type="video/webm" src="./resources/cinematic/beginning.webm"> 
 						<source  src="./resources/cinematic/beginning.mp4" type='video/mp4'>
-						{{-- <source id="ogg" type="video/ogg" src="./resources/cinematic/beginning.ogv"> 
+						<source id="ogg" type="video/ogg" src="./resources/cinematic/beginning.ogv"> 
 					</video>
 					<div id="controls">
 						<button id=play><i class="fas fa-pause"></i></button>
