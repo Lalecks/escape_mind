@@ -2413,7 +2413,7 @@ footer {
 
 #game-page header .logo {
   position: fixed;
-  z-index: 15;
+  z-index: 10;
   padding: 0.8%;
   right: 100%;
   width: 3%;
@@ -2432,6 +2432,10 @@ footer {
   width: 100vw;
   height: 100vh;
   position: relative;
+}
+
+#game-page #Main i {
+  font-size: 3vw;
 }
 
 #game-page #Main #Game {
@@ -3037,7 +3041,7 @@ footer {
   width: 100%;
   height: auto;
   position: fixed;
-  z-index: 10;
+  z-index: 8;
   text-align: center;
   padding: 2%;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -3231,25 +3235,25 @@ footer {
 }
 
 #settings-panel .burger {
+  height: 6%;
   background: -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: none;
   position: fixed;
+  z-index: 3;
   top: 2%;
   right: 10%;
-  cursor: pointer;
-  z-index: 12;
 }
 
 #settings-panel .menu {
   position: fixed;
+  z-index: 1;
   width: 38%;
   height: 50px;
   top: 0;
   right: 0;
-  z-index: 11;
   padding: 2.5%;
   border-radius: 0.5rem;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);

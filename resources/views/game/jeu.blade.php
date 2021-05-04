@@ -20,8 +20,8 @@
 			<div class="burger">
 				<i class="fas fa-cog"></i> 
 			</div>
-			<nav class="menu glass-effect">
-				d
+			<nav class="menu glass-effect" outclick="someFunc()" id="setti">
+				
 			</nav>
 		</menu>
 

@@ -6,7 +6,7 @@
 
         .logo {
             position: fixed;
-            z-index: 15;
+            z-index: 10;
             padding: 0.8%;
             right: 100%;
             width: 3%;
@@ -30,6 +30,10 @@
         width: 100vw;
         height: 100vh;
         position: relative;
+
+        i {
+            font-size: 3vw;
+        }
 
         #Game {
             position: relative;

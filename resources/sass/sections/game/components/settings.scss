@@ -1,25 +1,25 @@
 #settings-panel {
 
     .burger {
+        height: 6%;
         background: -webkit-linear-gradient($white-degraded);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: none;
         position: fixed;
+        z-index: 3;
         top: 2%;
         right: 10%;
-        cursor: pointer;
-        z-index: 12;
     }
 
     .menu {
         position: fixed;
+        z-index: 1;
         width: 38%;
         height: 50px;
         top: 0;
         right: 0;
-        z-index: 11;
         padding: 2.5%;
         border-radius: 0.5rem;
         // Glassmorphism

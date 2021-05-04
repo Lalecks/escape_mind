@@ -17,10 +17,10 @@ export default function changeAV(num) {
 $(document).ready(function () {
     let room_done = 1;
 
-    let cinematic = displayCinematic();
-    cinematic.addEventListener('ended', function () {
+    // let cinematic = displayCinematic();
+    // cinematic.addEventListener('ended', function () {
         updateGame();
-    });
+    // });
 
     function isRoomDone() {
         if (avancement !== room_done) {
