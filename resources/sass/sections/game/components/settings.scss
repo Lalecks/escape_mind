@@ -1,15 +1,45 @@
 #settings-panel {
-    #settings-icon {
-        position: fixed;
-        z-index: 15;
-        top: 2%;
-        right: 10%;
-        font-size: 3vw !important;
-        // Degradé sur le texte
+
+    .burger {
         background: -webkit-linear-gradient($white-degraded);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        display: none;
+        position: fixed;
+        top: 2%;
+        right: 10%;
+        cursor: pointer;
+        z-index: 12;
+    }
+
+    .menu {
+        position: fixed;
+        width: 38%;
+        height: 50px;
+        top: 0;
+        right: 0;
+        z-index: 11;
+        padding: 2.5%;
+        border-radius: 0.5rem;
+        // Glassmorphism
+        background-image: -webkit-linear-gradient($black-degraded);
+        background-image: -moz-linear-gradient($black-degraded);
+        background-image: -o-linear-gradient($black-degraded);
+        background-image: linear-gradient($black-degraded);
+    }
+
+    div.burger {
+        display: block;
+    }
+
+    nav.menu {
+        height: 100vh;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav.menu.is-open {
+        transform: translateX(0);
     }
 }
-

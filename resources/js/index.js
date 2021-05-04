@@ -27,6 +27,7 @@ if (document.getElementById("game-page")) {
     /* Cinematics */
     
     /* Components */
+    require('./game/components/settings');
 }
 require('./game/video_player');
 // Avant custom_packages.js pour fonctionner

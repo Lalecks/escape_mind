@@ -1,32 +1,30 @@
-//
-// *
-// *  Système du Timer
-// *
-// * */
+/**
+ *
+ *  Timer de 30 minutes
+ *
+ **/
 
 let refresh = null;
 let time = 1800;
 let timeStr = "3000";
 
 // Affichage du timer
-export default function createTimer(){
+export default function createTimer() {
     let chrono = document.createElement("span");
-    chrono.id="Chrono";
+    chrono.id = "Chrono";
 
     // Creer chaque élément du timer
-    for (let i=0;i<timeStr.length;i++){
+    for (let i = 0; i < timeStr.length; i++) {
 
-
-        if(i===2){
+        if (i === 2) {
             let digit = document.createElement("span");
-            digit.className="chrono_space";
-            digit.innerText=":";
+            digit.className = "chrono_space";
+            digit.innerText = ":";
             chrono.appendChild(digit);
         }
-
         let digit = document.createElement("span");
-        digit.className="chrono_digit";
-        digit.innerText=timeStr[i];
+        digit.className = "chrono_digit";
+        digit.innerText = timeStr[i];
 
         chrono.appendChild(digit);
     }
@@ -35,46 +33,45 @@ export default function createTimer(){
     startTimer();
 }
 
-function startTimer(){
+function startTimer() {
     refresh = setInterval(seconds, 1000); // update about every second
 }
 
-function stopTimer(){
+function stopTimer() {
     clearInterval(refresh);
 }
 
-function removeTimer(){
+function removeTimer() {
     stopTimer();
-    if (document.getElementById("Chrono").parentNode){
+    if (document.getElementById("Chrono").parentNode) {
         let chrono = document.getElementById("Chrono");
         chrono.parentNode.removeChild(chrono);
     }
 }
 
-function seconds(){
-    time = time-1;
+function seconds() {
+    time = time - 1;
 
-    if (time<10){
+    if (time < 10) {
         timeStr = "000" + time;
-    } else if (time<60){
+    } else if (time < 60) {
         timeStr = "00" + time;
-    } else if (time < 60*10 && time%60<10){
-        timeStr = "0" + Math.floor(time/60) + "0" + time%60;
-    } else if (time < 60*10){
-        timeStr = "0" + Math.floor(time/60) + "" + time%60;
-    } else if (time%60<10){
-        timeStr = Math.floor(time/60) + "0" + time%60;
+    } else if (time < 60 * 10 && time % 60 < 10) {
+        timeStr = "0" + Math.floor(time / 60) + "0" + time % 60;
+    } else if (time < 60 * 10) {
+        timeStr = "0" + Math.floor(time / 60) + "" + time % 60;
+    } else if (time % 60 < 10) {
+        timeStr = Math.floor(time / 60) + "0" + time % 60;
     } else {
-        timeStr = Math.floor(time/60) + "" + time%60;
+        timeStr = Math.floor(time / 60) + "" + time % 60;
     }
-
     updateTimer();
 }
 
-function updateTimer(){
+function updateTimer() {
     let digit = document.getElementsByClassName("chrono_digit");
 
-    for (let i = 0; i < digit.length ; i++){
-        digit[i].innerText=timeStr[i];
+    for (let i = 0; i < digit.length; i++) {
+        digit[i].innerText = timeStr[i];
     }
 }

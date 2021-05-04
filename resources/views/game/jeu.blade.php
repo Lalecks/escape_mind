@@ -16,10 +16,16 @@
 	</header>
 
 	<div id="Main" role="main">
-        <div id="settings-panel">
-		    <span id="settings-icon" class="hoverable"><i class="fas fa-cog"></i></span>
-        </div>
-{{-- 
+		<menu id="settings-panel">
+			<div class="burger">
+				<i class="fas fa-cog"></i> 
+			</div>
+			<nav class="menu glass-effect">
+				d
+			</nav>
+		</menu>
+
+		
 		<div id="Cinematic" class="Cinematic">
 			<!-- Cinematic -->
 			<div class="container-player">
@@ -45,7 +51,7 @@
 				<div id="playlist">  
 				</div>
 			</div>
-		</div> --}}
+		</div> 
 
 		<div id="Game" class="Game">
 			<div id="ObjectInfo">

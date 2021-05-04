@@ -1,8 +1,12 @@
-// Gestion des cinématiques
+/**
+ *
+ *  Cinématiques
+ *
+ **/
+
 let actualCinematic = 0;
 let cin = document.getElementById('Cinematic');
 let game = null;
-
 
 export default function displayCinematic(){
     let cinematics = Array('beginning','success','defeat');

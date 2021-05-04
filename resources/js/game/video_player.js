@@ -1,3 +1,9 @@
+/**
+ *
+ *  Vidéo player des cinématiques
+ *
+ **/
+
 var player = (function () { //Namespace todo lo que esta aqui dentro es privado
     var play = document.getElementById("play"),
         fullscreen = document.getElementById("expand"),
@@ -172,7 +178,7 @@ var player = (function () { //Namespace todo lo que esta aqui dentro es privado
             //configura el reproductor por primera vez, previene algun cambio en el css
             mediaPlayer = document.getElementById("media-video");
             mediaPlayer.controls = false;
-            mediaPlayer.muted = true;
+            mediaPlayer.muted = false;
             //cuando el video pueda reproducirse elimina el preloader css
             mediaPlayer.addEventListener('canplay', videoIsReady)
             mediaPlayer.addEventListener('timeupdate', handleProgress)

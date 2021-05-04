@@ -3128,16 +3128,43 @@ footer {
   font-size: 3vw !important;
 }
 
-#settings-panel #settings-icon {
-  position: fixed;
-  z-index: 15;
-  top: 2%;
-  right: 10%;
-  font-size: 3vw !important;
+#settings-panel .burger {
   background: -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: none;
+  position: fixed;
+  top: 2%;
+  right: 10%;
+  cursor: pointer;
+  z-index: 12;
+}
+
+#settings-panel .menu {
+  position: fixed;
+  width: 38%;
+  height: 50px;
+  top: 0;
+  right: 0;
+  z-index: 11;
+  padding: 2.5%;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
+}
+
+#settings-panel div.burger {
+  display: block;
+}
+
+#settings-panel nav.menu {
+  height: 100vh;
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+#settings-panel nav.menu.is-open {
+  transform: translateX(0);
 }
 
 #game-page #Game #ObjectInfo .modal #Cassettes_bg {
