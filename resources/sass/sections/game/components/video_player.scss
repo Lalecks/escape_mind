@@ -1,110 +1,85 @@
+#Main {
+    background: black !important;
+}
+
 .Cinematic {
     .hide-player {
         visibility: hidden;
     }
 
-    .container-player {
-        video source {
-            object-fit: cover;
-        }
+    video source {
+        object-fit: contain;
+    }
 
-        #controls {
-            position: fixed;
-            width: 100%;
-            height: 12%;
-            bottom: 0;
-            color: white;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            z-index: 1;
-            border-top-left-radius: 19.5%;
-            border-top-right-radius: 19.5%;
-            // Glassmorphism
-            background-image: -webkit-linear-gradient($black-degraded);
-            background-image: -moz-linear-gradient($black-degraded);
-            background-image: -o-linear-gradient($black-degraded);
-            background-image: linear-gradient($black-degraded);
+    #controls {
+        position: fixed;
+        width: 100%;
+        height: 20%;
+        bottom: 0;
+        color: white;
+        display: block;
+        z-index: 1;
+        // background-color: red;
 
-        }
+        div {
+            // position: relative;
+            // background-color: blue;
 
-        #controls>button {
-            outline: inherit;
-            border: none;
-            cursor: pointer;
-            background-color: transparent;
-            color: white;
-        }
-
-        #progressBar {
-            height: 5px;
-            width: 70%;
-            display: flex;
-            background: white;
-            border-radius: 30px;
-            overflow: hidden;
-        }
-
-        #progressBar>#progressVideo {
-            height: 100%;
-            width: 0%;
-            ;
-            background: #00a8ff;
-            ;
-        }
-
-        #media-video {
-            width: 100%;
-            height: 100%;
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 100%;
-            left: 0;
-            /* opacity: 0; */
-            position: absolute;
-            top: 0;
-            transition: opacity .2s ease;
-            width: 100%;
-            z-index: 0;
-        }
-
-        .video {
-            width: 100%;
-            height: 70px;
-            display: inline-block;
-            display: flex;
-            margin-top: 10px;
-            cursor: pointer;
-            padding: 5px;
-            object-fit: cover;
-        }
-
-        .video-imagen {
-            width: 30%;
-            height: 100%;
-        }
-
-        .video-imagen>img {
-            height: 100%;
-        }
-
-        .video-information {
-            width: 60%;
-            height: 100%;
-        }
-
-        .playing {
-            background-color: #00a8ff;
-            color: white;
-        }
-
-        @media only screen and (max-width: 650px) {
-            .container-player {
-                flex-wrap: wrap;
-                height: auto;
-                ;
+            i,
+            button {
+                font-size: 2vw !important;
             }
+
+            #btn-controls {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                position: absolute;
+                bottom: 16%;
+                z-index: 15;
+
+                &>button {
+                    margin: 0 2%;
+                    outline: inherit;
+                    border: none;
+                    color: white;
+                    background: -webkit-linear-gradient($white-degraded);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+
+            #timer {
+                font-family: "Audiowide", cursive;
+                font-size: 2vw !important;
+                margin: 2%;
+                font-weight: bold;
+                text-align: right;
+                background: -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    #progressBar {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        // Glassmorphism
+        background-image: linear-gradient(298.05deg, rgb(121 121 121 / 30%) 4.34%, rgb(0 0 0 / 19%) 93.57%);
+
+        &>#progressVideo {
+            height: 100%;
+            width: 0%; // Initialisation à zéro
+            //  Glassmorphism
+            background-image: -webkit-linear-gradient($cyan_blue-degraded);
+            background-image: -moz-linear-gradient($cyan_blue-degraded);
+            background-image: -o-linear-gradient($cyan_blue-degraded);
+            background-image: linear-gradient($cyan_blue-degraded);
         }
     }
 }

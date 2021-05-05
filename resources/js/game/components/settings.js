@@ -16,7 +16,7 @@ $('.menu ul li a').click(function () {
 });
 
 /* Close the settings menu if you click outside your DIVV */
-let menu = document.getElementById('setti')
+let menu = document.querySelector('.menu')
 let engrenage = document.querySelector(".fas");
 
 window.addEventListener('click', function (e) {
@@ -25,3 +25,4 @@ window.addEventListener('click', function (e) {
         $('.burger').removeClass('burger-open');
     }
 })
+
