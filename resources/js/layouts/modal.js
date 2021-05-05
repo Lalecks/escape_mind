@@ -18,6 +18,7 @@ import Defaut from "../game/enigma/room1/Defaut";
 import Pile from "../game/enigma/room1/Pile";
 import Lecteur from "../game/enigma/room1/Lecteur";
 import Jukebox from "../game/enigma/room1/Jukebox";
+import Coffre from "../game/enigma/room1/Coffre";
 
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");
@@ -119,6 +120,9 @@ function toggleModalCustom(titre, description) {
                     break;
                 case "Jukebox":
                     activity.appendChild(Jukebox());
+                    break;
+                case "Coffre":
+                    activity.appendChild(Coffre());
                     break;
                 default:
                     activity.appendChild(Defaut(titre));

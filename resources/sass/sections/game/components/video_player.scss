@@ -3,8 +3,9 @@
 }
 
 .Cinematic {
-    .hide-player {
-        visibility: hidden;
+
+    .show-player {
+        visibility: visible !important;
     }
 
     video source {
@@ -12,6 +13,7 @@
     }
 
     #controls {
+        visibility: hidden;
         position: fixed;
         width: 100%;
         height: 20%;

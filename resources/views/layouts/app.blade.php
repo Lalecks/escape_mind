@@ -65,15 +65,15 @@
 	<!--====== Corps ======-->
 	<body>
 		<!-- Loader -->
-		<div id="overlay"> 
+		<div id="overlay">
 			<div id="progstat"></div>
 			<div id="progress"></div>
 		</div>
 		<!-- Souris -->
-		<div id="souris" style="opacity: 0">
-			<div class="cursor cursor--small"></div>
-			<canvas class="cursor cursor--canvas"></canvas>
-		</div>
+        <div id="follower">
+            <div id="circle1"></div>
+            <div id="circle2"></div>
+        </div>
 
 		<main>
             <div id="fullscreen" style="opacity:0;"></div>
@@ -81,7 +81,7 @@
 				@yield('content')
 			</div>
 		</main>
-		
+
 		<!--====== Javascripts & Jquery ======-->
 		<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>

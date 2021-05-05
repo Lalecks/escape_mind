@@ -1,3 +1,5 @@
+import toggleVideoPlayer from "./video_player";
+
 /**
  *
  *  Cinématiques
@@ -51,7 +53,9 @@ export default function displayCinematic() {
 
     cin.appendChild(video);
 
-    console.log("!!! Création de la cinématique");
+    toggleVideoPlayer();
+    console.log("cinematic.js : cinématique - afficher contrôle");
+    actualCinematic += 1;
 
     return video;
 }

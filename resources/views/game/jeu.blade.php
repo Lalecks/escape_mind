@@ -18,23 +18,18 @@
 	<div id="Main" role="main">
 		<menu id="settings-panel">
 			<div class="burger">
-				<i class="fas fa-cog"></i> 
+				<i class="fas fa-cog"></i>
 			</div>
 			<nav class="menu glass-effect">
 				{{-- <h1>Paramètres</h1> --}}
 			</nav>
 		</menu>
 
-		
 		<div class="Cinematic" id="Cinematic">
 			<!-- Cinematic -->
 			<div class="lds-ring" id=preload></div>
-			<video id='media-video' preload>
-				{{-- <source id="webm" type="video/webm" src="./resources/cinematic/beginning.webm">--}}
-				<source  src="./resources/cinematic/beginning.mp4" type='video/mp4'>
-				<source id="ogg" type="video/ogg" src="./resources/cinematic/beginning.ogv">
-			</video>
-			
+			<video id='media-video' preload> </video>
+
 			<div id="controls">
 				<div>
 					<div id="btn-controls">
@@ -49,7 +44,7 @@
 					<div id="progressVideo"  class="glass-effect"></div>
 				</div>
 			</div>
-		</div> 
+		</div>
 
 		<div id="Game" class="Game">
 			<div id="ObjectInfo">

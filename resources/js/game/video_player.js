@@ -190,8 +190,8 @@ let player = (function () { //Namespace todo lo que esta aqui dentro es privado
 export default function toggleVideoPlayer() {
     // PAGE DE JEU
     if (document.getElementById("game-page")) {
-        // let container = document.querySelector(".container-player");
-        container.classList.toggle("hide-player");
+        let container = document.getElementById("controls");
+        container.classList.toggle("show-player");
     }
 }
 

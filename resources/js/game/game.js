@@ -16,7 +16,7 @@ export default function changeAV(num){
 }
 
 $( document ).ready(function() {
-    let room_done = 1;
+    let room_done = 5;
 
     let cinematic = displayCinematic();
     cinematic.addEventListener('ended',function(){
@@ -29,7 +29,6 @@ $( document ).ready(function() {
             setTimeout(isRoomDone,1000);
             return;
         } else {
-            alert("Salle 1 finie !");
             let modal = document.querySelector(".modal");
             modal.classList.toggle("show-modal");
             updateGame();
