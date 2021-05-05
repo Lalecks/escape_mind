@@ -2137,6 +2137,35 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
+  text-align: center;
+}
+
+#rank .top3 .first,
+#rank .top3 .second,
+#rank .top3 .third {
+  width: 25%;
+}
+
+#rank .top3 .first svg,
+#rank .top3 .second svg,
+#rank .top3 .third svg {
+  stroke: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+#rank .top3 .first img,
+#rank .top3 .second img,
+#rank .top3 .third img {
+  width: 15.625rem;
+  height: 12.5625rem;
+  position: absolute;
+  top: 6.125rem;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  top: 10%;
+  margin: 0 auto;
 }
 
 #rank .top3 > div {
@@ -2144,39 +2173,6 @@ footer {
   position: relative;
   max-width: 100%;
   max-height: 100%;
-}
-
-#rank .top3 svg {
-  stroke: #ffffff;
-  position: relative;
-  z-index: 1;
-}
-
-#rank .top3 img {
-  width: 15.625rem;
-  height: 12.5625rem;
-  position: absolute;
-  top: 6.125rem;
-  z-index: 0;
-}
-
-#rank .top3 .second img {
-  right: 0;
-}
-
-#rank .top3 .first {
-  text-align: center;
-}
-
-#rank .top3 .first img {
-  left: 0;
-  right: 0;
-  top: 10%;
-  margin: 0 auto;
-}
-
-#rank .top3 .third img {
-  left: 0;
 }
 
 #rank .top3 p {
@@ -2413,13 +2409,13 @@ footer {
 
 #game-page header .logo {
   position: fixed;
-  z-index: 15;
+  z-index: 10;
   padding: 0.8%;
   right: 100%;
   width: 3%;
   border-radius: 19.5%;
   margin: 0.5%;
-  background-image: linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
 }
 
 #game-page header .mute {
@@ -2432,6 +2428,10 @@ footer {
   width: 100vw;
   height: 100vh;
   position: relative;
+}
+
+#game-page #Main i {
+  font-size: 3vw;
 }
 
 #game-page #Main #Game {
@@ -3037,7 +3037,7 @@ footer {
   width: 100%;
   height: auto;
   position: fixed;
-  z-index: 10;
+  z-index: 8;
   text-align: center;
   padding: 2%;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -3108,105 +3108,78 @@ footer {
   -moz-transition: all 200ms ease-in;
 }
 
+#Main {
+  background: black !important;
+}
+
 .Cinematic .hide-player {
   visibility: hidden;
 }
 
-.Cinematic .container-player video source {
-  -o-object-fit: cover;
-     object-fit: cover;
+.Cinematic video source {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-.Cinematic .container-player #controls {
+.Cinematic #controls {
   position: fixed;
   width: 100%;
-  height: 12%;
+  height: 20%;
   bottom: 0;
   color: white;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: block;
   z-index: 1;
-  border-top-left-radius: 19.5%;
-  border-top-right-radius: 19.5%;
-  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
 }
 
-.Cinematic .container-player #controls > button {
+.Cinematic #controls div i,
+.Cinematic #controls div button {
+  font-size: 2vw !important;
+}
+
+.Cinematic #controls div #btn-controls {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 16%;
+  z-index: 15;
+}
+
+.Cinematic #controls div #btn-controls > button {
+  margin: 0 2%;
   outline: inherit;
   border: none;
-  cursor: pointer;
-  background-color: transparent;
   color: white;
+  background: -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.Cinematic .container-player #progressBar {
-  height: 5px;
-  width: 70%;
+.Cinematic #controls div #timer {
+  font-family: "Audiowide", cursive;
+  font-size: 2vw !important;
+  margin: 2%;
+  font-weight: bold;
+  text-align: right;
+  background: -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Cinematic #progressBar {
+  height: 100%;
+  width: 100%;
   display: flex;
-  background: white;
-  border-radius: 30px;
   overflow: hidden;
+  background-image: linear-gradient(298.05deg, rgba(121, 121, 121, 0.3) 4.34%, rgba(0, 0, 0, 0.19) 93.57%);
 }
 
-.Cinematic .container-player #progressBar > #progressVideo {
+.Cinematic #progressBar > #progressVideo {
   height: 100%;
   width: 0%;
-  background: #00a8ff;
-}
-
-.Cinematic .container-player #media-video {
-  width: 100%;
-  height: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
-  left: 0;
-  /* opacity: 0; */
-  position: absolute;
-  top: 0;
-  transition: opacity 0.2s ease;
-  width: 100%;
-  z-index: 0;
-}
-
-.Cinematic .container-player .video {
-  width: 100%;
-  height: 70px;
-  display: inline-block;
-  display: flex;
-  margin-top: 10px;
-  cursor: pointer;
-  padding: 5px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.Cinematic .container-player .video-imagen {
-  width: 30%;
-  height: 100%;
-}
-
-.Cinematic .container-player .video-imagen > img {
-  height: 100%;
-}
-
-.Cinematic .container-player .video-information {
-  width: 60%;
-  height: 100%;
-}
-
-.Cinematic .container-player .playing {
-  background-color: #00a8ff;
-  color: white;
-}
-
-@media only screen and (max-width: 650px) {
-  .Cinematic .container-player .container-player {
-    flex-wrap: wrap;
-    height: auto;
-  }
+  background-image: linear-gradient(298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57%);
 }
 
 #Chrono {
@@ -3231,25 +3204,25 @@ footer {
 }
 
 #settings-panel .burger {
+  height: 6%;
   background: -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: none;
   position: fixed;
+  z-index: 3;
   top: 2%;
   right: 10%;
-  cursor: pointer;
-  z-index: 12;
 }
 
 #settings-panel .menu {
   position: fixed;
+  z-index: 1;
   width: 38%;
   height: 50px;
   top: 0;
   right: 0;
-  z-index: 11;
   padding: 2.5%;
   border-radius: 0.5rem;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);

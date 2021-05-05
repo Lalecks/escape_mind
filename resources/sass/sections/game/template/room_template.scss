@@ -6,17 +6,17 @@
 
         .logo {
             position: fixed;
-            z-index: 15;
+            z-index: 10;
             padding: 0.8%;
             right: 100%;
             width: 3%;
             border-radius: 19.5%;
             margin: 0.5%;
             // Glassmorphism
-            background-image: -webkit-linear-gradient($white-degraded);
-            background-image: -moz-linear-gradient($white-degraded);
-            background-image: -o-linear-gradient($white-degraded);
-            background-image: linear-gradient($white-degraded);
+            background-image: -webkit-linear-gradient($black-degraded);
+            background-image: -moz-linear-gradient($black-degraded);
+            background-image: -o-linear-gradient($black-degraded);
+            background-image: linear-gradient($black-degraded);
         }
 
         .mute {
@@ -30,6 +30,10 @@
         width: 100vw;
         height: 100vh;
         position: relative;
+
+        i {
+            font-size: 3vw;
+        }
 
         #Game {
             position: relative;

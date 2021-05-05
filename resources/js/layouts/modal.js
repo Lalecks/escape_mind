@@ -4,8 +4,6 @@
  *
  * */
 
-/* Inititalisation des variables */
-
 import {
     invJoueur
 } from "../game/enigma/inventory";
@@ -21,6 +19,7 @@ import Pile from "../game/enigma/room1/Pile";
 import Lecteur from "../game/enigma/room1/Lecteur";
 import Jukebox from "../game/enigma/room1/Jukebox";
 
+/* Inititalisation des variables */
 let modal = document.querySelector(".modal");
 let closeButton = document.querySelector(".close-button");
 let activity = document.querySelector("#Activity");
@@ -28,7 +27,7 @@ let inventory = document.querySelector("#Inventory");
 let isDisplayed = false;
 
 export default function createModal() {
-    console.log("!!! Création/Mise a jour de la modal");
+    console.log("!!! Création/Mise à jour de la modal");
     let trigger = document.querySelectorAll(".trigger");
     let isInit = false;
 

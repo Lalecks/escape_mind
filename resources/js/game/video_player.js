@@ -5,8 +5,8 @@
  **/
 let player = (function () { //Namespace todo lo que esta aqui dentro es privado
     let play = document.getElementById("play"),
-        fullscreen = document.getElementById("expand"),
-        playlist = document.getElementById("playlist"),
+        // fullscreen = document.getElementById("expand"),
+        // playlist = document.getElementById("playlist"),
         audioVolume = document.getElementById("audioVolume"),
         progress = document.getElementById('progressVideo'),
         start = document.getElementById('start'),
@@ -37,26 +37,26 @@ let player = (function () { //Namespace todo lo que esta aqui dentro es privado
         }
     });
 
-    fullscreen.addEventListener("click", () => {
-        if (mediaPlayer.requestFullscreen) mediaPlayer.requestFullscreen();
-        else if (mediaPlayer.webkitRequestFullscreen) mediaPlayer.webkitRequestFullscreen();
-        else if (mediaPlayer.mozRequestFullScreen) mediaPlayer.mozRequestFullScreen();
-        else if (mediaPlayer.msRequestFullscreen) mediaPlayer.msRequestFullscreen();
-    });
+    // fullscreen.addEventListener("click", () => {
+    //     if (mediaPlayer.requestFullscreen) mediaPlayer.requestFullscreen();
+    //     else if (mediaPlayer.webkitRequestFullscreen) mediaPlayer.webkitRequestFullscreen();
+    //     else if (mediaPlayer.mozRequestFullScreen) mediaPlayer.mozRequestFullScreen();
+    //     else if (mediaPlayer.msRequestFullscreen) mediaPlayer.msRequestFullscreen();
+    // });
 
-    playlist.addEventListener("click", function (e) {
-        var target = e.target;
+    // playlist.addEventListener("click", function (e) {
+    //     var target = e.target;
 
-        if (target.id != "playlist") {
-            var id = target.closest(".video").id,
-                el = target.closest(".video");
+    //     if (target.id != "playlist") {
+    //         var id = target.closest(".video").id,
+    //             el = target.closest(".video");
 
-            preload.classList.add('lds-ring');
-            higlight(id, currentTrack.toString());
-            set(videos[id].source)
-            mediaPlayer.addEventListener('canplay', videoIsReady)
-        }
-    });
+    //         preload.classList.add('lds-ring');
+    //         higlight(id, currentTrack.toString());
+    //         set(videos[id].source)
+    //         mediaPlayer.addEventListener('canplay', videoIsReady)
+    //     }
+    // });
 
     function set(video) {
         mediaPlayer.src = video;
@@ -71,7 +71,7 @@ let player = (function () { //Namespace todo lo que esta aqui dentro es privado
             y = seconds < 10 ? "0" + seconds : seconds;
 
         progress.style.width = Number(this.currentTime / this.duration * 100) + "%";
-        console.log(progress.style.width + " : " + Number(this.currentTime / this.duration * 100) + "%");
+        // console.log(progress.style.width + " : " + Number(this.currentTime / this.duration * 100) + "%");
         start.textContent = x + " : " + y;
     }
 
@@ -118,21 +118,21 @@ let player = (function () { //Namespace todo lo que esta aqui dentro es privado
         return div;
     }
 
-    /**
-     * Recibe un array de objetos y devuelve su representacion en un Nodos HTML
-     * Returns an Node Collection
-     * @param {playlist : arreglo de objetos}
-     */
-    function loadList(playlist) {
-        var domPlayList = document.getElementById('playlist'),
-            fragmentList = document.createDocumentFragment();
+    // /**
+    //  * Recibe un array de objetos y devuelve su representacion en un Nodos HTML
+    //  * Returns an Node Collection
+    //  * @param {playlist : arreglo de objetos}
+    //  */
+    // function loadList(playlist) {
+    //     var domPlayList = document.getElementById('playlist'),
+    //         fragmentList = document.createDocumentFragment();
 
-        for (let video of playlist)
-            fragmentList.appendChild(create(video))
+    //     for (let video of playlist)
+    //         fragmentList.appendChild(create(video))
 
-        domPlayList.appendChild(fragmentList)
-        videoNodes = document.querySelectorAll('.video'); /* Hace disponible los nodos para manipular Una vex cargados */
-    }
+    //     domPlayList.appendChild(fragmentList)
+    //     videoNodes = document.querySelectorAll('.video'); /* Hace disponible los nodos para manipular Una vex cargados */
+    // }
 
     function videoIsReady(event) {
         preload.classList.remove('lds-ring');
@@ -187,15 +187,13 @@ let player = (function () { //Namespace todo lo que esta aqui dentro es privado
     }
 })();
 
-
-export default function toggleVideoPlayer(){
+export default function toggleVideoPlayer() {
     // PAGE DE JEU
     if (document.getElementById("game-page")) {
-        let container = document.querySelector(".container-player");
+        // let container = document.querySelector(".container-player");
         container.classList.toggle("hide-player");
     }
 }
-
 
 document.addEventListener(
     "DOMContentLoaded",

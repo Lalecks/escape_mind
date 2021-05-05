@@ -86,6 +86,7 @@
     // Bouton pour aller à droites
     // 	background-position: 50% -19px;
     // }
+
     .top3 {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -102,40 +103,29 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        text-align: center;
 
-        &>div {
-            padding: 0 6rem;
-            position: relative;
-            max-width: 100%;
-            max-height: 100%;
-        }
+        .first,
+        .second,
+        .third {
+            width: 25%;
 
-        svg {
-            // fill: $black-degraded;
-            stroke: $white;
-            // stroke-width: .1rem;
-            // stroke-miterlimit: 10;
-            // filter: blur(59px);
-            position: relative;
-            z-index: 1;
-        }
-
-        img {
-            width: 15.625rem;
-            height: 12.5625rem;
-            position: absolute;
-            top: 6.125rem;
-            z-index: 0;
-        }
-
-        .second img {
-            right: 0;
-        }
-
-        .first {
-            text-align: center;
+            svg {
+                // fill: $black-degraded;
+                stroke: $white;
+                // stroke-width: .1rem;
+                // stroke-miterlimit: 10;
+                // filter: blur(59px);
+                position: relative;
+                z-index: 1;
+            }
 
             img {
+                width: 15.625rem;
+                height: 12.5625rem;
+                position: absolute;
+                top: 6.125rem;
+                z-index: 0;
                 left: 0;
                 right: 0;
                 top: 10%;
@@ -143,8 +133,11 @@
             }
         }
 
-        .third img {
-            left: 0;
+        &>div {
+            padding: 0 6rem;
+            position: relative;
+            max-width: 100%;
+            max-height: 100%;
         }
 
         p {
