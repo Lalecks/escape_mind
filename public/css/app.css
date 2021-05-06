@@ -3082,8 +3082,6 @@ footer {
 }
 
 #game-page .modal #Inventory div .picked img:hover {
-  cursor: -webkit-grab;
-  cursor: grab;
   max-width: 100%;
   max-height: 100%;
   transition: all 200ms ease-in;

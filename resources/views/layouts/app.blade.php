@@ -59,8 +59,7 @@
 		<!-- Stylesheets -->
 		<link href="{{ mix('css/app.css') }}" rel="stylesheet">
 		<!-- Scripts -->
-		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
-
+		{{-- <script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script> --}}
 	</head>
 	<!--====== Corps ======-->
 	<body>
@@ -81,7 +80,6 @@
 				@yield('content')
 			</div>
 		</main>
-
 		<!--====== Javascripts & Jquery ======-->
 		<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 		<script src="{{ mix('js/app.js') }}" defer></script>

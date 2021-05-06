@@ -19,20 +19,20 @@ let player = (function () { //Namespace todo lo que esta aqui dentro es privado
 
     play.addEventListener("click", (e) => {
         if (mediaPlayer.paused || mediaPlayer.ended) {
-            e.target.setAttribute("class", "fas fa-pause");
+            e.target.setAttribute("class", "hoverable fas fa-pause");
             mediaPlayer.play();
         } else {
             mediaPlayer.pause();
-            e.target.setAttribute("class", "fas fa-play");
+            e.target.setAttribute("class", "hoverable fas fa-play");
         }
     });
 
     audioVolume.addEventListener("click", (e) => {
         if (mediaPlayer.muted) {
-            e.target.setAttribute('class', 'fas fa-volume-up')
+            e.target.setAttribute('class', 'hoverable fas fa-volume-up')
             mediaPlayer.muted = !mediaPlayer.muted;
         } else {
-            e.target.setAttribute('class', 'fas fa-volume-off')
+            e.target.setAttribute('class', 'hoverable fas fa-volume-off')
             mediaPlayer.muted = !mediaPlayer.muted;
         }
     });

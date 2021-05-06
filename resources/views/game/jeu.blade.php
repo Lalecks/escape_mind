@@ -18,7 +18,7 @@
 	<div id="Main" role="main">
 		<menu id="settings-panel">
 			<div class="burger">
-				<i class="fas fa-cog"></i>
+				<i class="hoverable fas fa-cog"></i>
 			</div>
 			<nav class="menu glass-effect">
 				{{-- <h1>Paramètres</h1> --}}
@@ -33,8 +33,8 @@
 			<div id="controls">
 				<div>
 					<div id="btn-controls">
-						<button id=play><i class="fas fa-pause"></i></button>
-						<button id=audioVolume class="fas fa-volume-off"></button>
+						<button id=play class="hoverable fas fa-pause"></button>
+						<button id=audioVolume class="hoverable fas fa-volume-off"></button>
 					</div>
 					<div id="timer">
 						<span id="start">0:00</span>
@@ -48,7 +48,7 @@
 
 		<div id="Game" class="Game">
 			<div id="ObjectInfo">
-				<div class="modal glass-effect">
+				<div class="modal glass-effect hoverable">
 					<div class="modal-content glass-effect" >
 						<p class="close-button hoverable">&times;</p>
 						<div id="Activity">

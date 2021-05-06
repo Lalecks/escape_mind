@@ -8,6 +8,7 @@
 require('./generic/jquery-2.1.4.min');
 
 /*--------  Packages --------*/
+require('./package/fontawesome.min');
 if (document.getElementById("home-page")) {
     require('./package/rellax.min');
     var rellax = new Rellax('.rellax', {

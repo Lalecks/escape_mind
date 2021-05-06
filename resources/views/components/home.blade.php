@@ -12,7 +12,7 @@
 		<!-- Début : menu burger -->
 		
 		<input type='checkbox' id='toggle' style='display:none;'/>
-		<label class='toggle-btn toggle-btn__cross' for='toggle'>
+		<label class='toggle-btn toggle-btn__cross hoverable' for='toggle'>
 			<div class="bar"></div>
 			<div class="bar"></div>
 			<div class="bar"></div>
@@ -40,7 +40,7 @@
 		<div class="glitch__img"></div>
 		</div> --}}
 		<div class="headings container">
-			<div class="modal glass-effect">
+			<div class="modal glass-effect hoverable">
 				<!-- Ne pas mettre la modal dans le vidéo overlay, car il est en absolute et par conséquent la modal ne peut pas se fixer -->
 				<div class="modal-content glass-effect">
 					<span class="close-button hoverable">&times;</span>
