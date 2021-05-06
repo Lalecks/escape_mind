@@ -4,57 +4,43 @@
  *
  * */
 
-export default function cursorModule(){
-    (function() {
-        var follower, init, mouseX, mouseY, positionElement, printout, timer;
+export default function cursorModule() {
+    gsap.set('.follower', {
+        xPercent: -50,
+        yPercent: -50
+    });
+    gsap.set('.cursor', {
+        xPercent: -50,
+        yPercent: -50
+    });
 
-        follower = document.getElementById('follower');
+    var follow = document.querySelector('.follower');
+    var cur = document.querySelector('.cursor');
 
-        printout = document.getElementById('printout');
+    window.addEventListener('mousemove', e => {
+        gsap.to(cur, 0.2, {
+            x: e.clientX,
+            y: e.clientY
+        });
+        gsap.to(follow, 0.9, {
+            x: e.clientX,
+            y: e.clientY
+        });
+        gsap.set('.follower', {
+            xPercent: -50,
+            yPercent: -50
+        });
+        gsap.set('.cursor', {
+            xPercent: -50,
+            yPercent: -50
+        });
+        gsap.to(cur, 0.2, {
+            x: e.clientX,
+            y: e.clientY
+        });
+    });
 
-        mouseX = (function(_this) {
-            return function(event) {
-                return event.clientX;
-            };
-        })(this);
-
-        mouseY = (function(_this) {
-            return function(event) {
-                return event.clientY;
-            };
-        })(this);
-
-        positionElement = (function(_this) {
-            return function(event) {
-                var mouse;
-                mouse = {
-                    x: mouseX(event),
-                    y: mouseY(event)
-                };
-                follower.style.top = mouse.y + 'px';
-                return follower.style.left = mouse.x + 'px';
-            };
-        })(this);
-
-        timer = false;
-
-        window.onmousemove = init = (function(_this) {
-            return function(event) {
-                var _event;
-                _event = event;
-                return timer = setTimeout(function() {
-                    return positionElement(_event);
-                }, 1);
-            };
-        })(this);
-
-    }).call(this);
+    if ($(this).hasClass("hoverable")) {}
 }
 
 cursorModule();
-
-
-
-
-
-

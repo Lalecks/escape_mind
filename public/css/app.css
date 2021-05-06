@@ -1107,94 +1107,38 @@ h2 {
 *
 * */
 
-html {
-  background: #666;
-}
-
-#follower {
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 2000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   pointer-events: none;
-  z-index: 100;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  z-index: 10000;
 }
 
-#follower #circle1 {
-  position: absolute;
-  -webkit-animation: pulse 2s infinite;
-  /* Chrome, Safari, Opera */
-  animation: pulse 2s infinite;
-  background: #fff;
+.follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8vh;
+  height: 8vh;
+  background-color: #000000;
   border-radius: 50%;
-  height: 0em;
-  width: 0em;
-  margin-top: 0em;
-  margin-left: 0em;
-}
-
-#follower #circle2 {
-  position: absolute;
-  -webkit-animation: pulse 4s infinite;
-  /* Chrome, Safari, Opera */
-  animation: pulse 4s infinite;
-  background: rgba(200, 0, 0, 0.8);
-  border-radius: 50%;
-  height: 0em;
-  width: 0em;
-  margin-top: 0em;
-  margin-left: 0em;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-  }
-
-  50% {
-    opacity: 0.9;
-    height: 3em;
-    width: 3em;
-    margin-top: -1.5em;
-    margin-left: -1.5em;
-  }
-
-  100% {
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-  }
-
-  50% {
-    opacity: 0.9;
-    height: 3em;
-    width: 3em;
-    margin-top: -1.5em;
-    margin-left: -1.5em;
-  }
-
-  100% {
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-  }
+  opacity: 0.7;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  z-index: 1000;
 }
 
 .error {
@@ -2468,7 +2412,6 @@ footer {
 
 #game-page #Main {
   width: 100vw;
-  height: 100vh;
   position: relative;
 }
 
@@ -3150,10 +3093,6 @@ footer {
   -moz-transition: all 200ms ease-in;
 }
 
-#Main {
-  background: black !important;
-}
-
 .Cinematic .show-player {
   visibility: visible !important;
 }
@@ -3161,6 +3100,11 @@ footer {
 .Cinematic video source {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.Cinematic #media-video {
+  height: 100vh !important;
+  background: black !important;
 }
 
 .Cinematic #controls {
@@ -3408,12 +3352,12 @@ footer {
 
 #game-page #Game .Room2 #Objects #Peluche {
   left: 26%;
-  bottom: 30%;
+  top: 35%;
   width: 13%;
 }
 
 #game-page #Game .Room2 #Objects #Bougie {
-  bottom: 56%;
+  top: 38%;
   left: 5%;
   width: 3%;
   z-index: 2;
@@ -3446,6 +3390,7 @@ footer {
   top: 5%;
   width: 10%;
   filter: drop-shadow(1vh 1vh 3vh #000000);
+  transform: perspective(25vh) rotateY(-32deg);
 }
 
 #game-page #Game .Room2 #Objects #Poster_Robot:hover {

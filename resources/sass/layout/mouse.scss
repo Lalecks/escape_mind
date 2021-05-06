@@ -3,128 +3,31 @@
  * Propriété CSS cursor
  *
  * */
- html {
 
-     background: #666;
- }
- #follower {
+ .cursor {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 3vh;
+     height: 3vh;
+     border-radius: 50%;
+     background-color: $white;
+     z-index: 2000;
+     user-select: none;
      pointer-events: none;
-     z-index:100;
-     position: absolute;
-     top: 50%;
-     left: 50%;
+     z-index: 10000;
  }
- #follower #circle1 {
-     position: absolute;
-     -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
-     animation: pulse 2s infinite;
-     background: #fff;
+
+ .follower {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 8vh;
+     height: 8vh;
+     background-color: $black;
      border-radius: 50%;
-     height: 0em;
-     width: 0em;
-     margin-top: 0em;
-     margin-left: 0em;
- }
- #follower #circle2 {
-     position: absolute;
-     -webkit-animation: pulse 4s infinite; /* Chrome, Safari, Opera */
-     animation: pulse 4s infinite;
-     background: rgba(200,0,0,0.8);
-     border-radius: 50%;
-     height: 0em;
-     width: 0em;
-     margin-top: 0em;
-     margin-left: 0em;
- }
- @-moz-keyframes pulse {
-     0% {
-         opacity: 0.2;
-         height: 1em;
-         width: 1em;
-         margin-top: -0.5em;
-         margin-left: -0.5em;
-     }
-     50% {
-         opacity: 0.9;
-         height: 3em;
-         width: 3em;
-         margin-top: -1.5em;
-         margin-left: -1.5em;
-     }
-     100% {
-         opacity: 0.2;
-         height: 1em;
-         width: 1em;
-         margin-top: -0.5em;
-         margin-left: -0.5em;
-     }
- }
- @-webkit-keyframes pulse {
-     0% {
-         opacity: 0.2;
-         height: 1em;
-         width: 1em;
-         margin-top: -0.5em;
-         margin-left: -0.5em;
-     }
-     50% {
-         opacity: 0.9;
-         height: 3em;
-         width: 3em;
-         margin-top: -1.5em;
-         margin-left: -1.5em;
-     }
-     100% {
-         opacity: 0.2;
-         height: 1em;
-         width: 1em;
-         margin-top: -0.5em;
-         margin-left: -0.5em;
-     }
- }
- @-o-keyframes pulse {
-     0% {
-         opacity: 0.2;
-         height: 1em;
-         width: 1em;
-         margin-top: -0.5em;
-         margin-left: -0.5em;
-     }
-     50% {
-         opacity: 0.9;
-         height: 3em;
-         width: 3em;
-         margin-top: -1.5em;
-         margin-left: -1.5em;
-     }
-     100% {
-         opacity: 0.2;
-         height: 1em;
-         width: 1em;
-         margin-top: -0.5em;
-         margin-left: -0.5em;
-     }
- }
- @keyframes pulse {
-     0% {
-         opacity: 0.2;
-         height: 1em;
-         width: 1em;
-         margin-top: -0.5em;
-         margin-left: -0.5em;
-     }
-     50% {
-         opacity: 0.9;
-         height: 3em;
-         width: 3em;
-         margin-top: -1.5em;
-         margin-left: -1.5em;
-     }
-     100% {
-         opacity: 0.2;
-         height: 1em;
-         width: 1em;
-         margin-top: -0.5em;
-         margin-left: -0.5em;
-     }
+     opacity: 0.7;
+     user-select: none;
+     pointer-events: none;
+     z-index: 1000;
  }

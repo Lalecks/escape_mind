@@ -85,8 +85,9 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
     - [Pexels](https://www.pexels.com/)
     - [Unsplash](https://unsplash.com/)
 * Web resources :
-    - *Rellax* Copyright (c) 2016 [Moe Amaya](https://github.com/dixonandmoe/rellax)
-    - *Mouse* Copyright (c) 2021 [Gunnar Normand](https://codepen.io/gnormand/pen/XpQLyb)
+    - *GreenSock* Copyright (c) 2016 [Moe Amaya](https://github.com/dixonandmoe/rellax)
+    - *Rellax* Copyright (c) 2021 [Jack Doyle](https://greensock.com/standard-license)
+    - *Mouse* Copyright (c) 2020 [Dezigner Bay](https://www.youtube.com/watch?v=_UR74tkspqc)
     - *Menu burger* Copyright (c) 2021 [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
     - *Glitch effect* 2021 Copyright (c) [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
     - *Video player* Copyright (c) 2021 [OrlandoJC](https://github.com/OrlandoJC/videoPlayer)

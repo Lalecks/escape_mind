@@ -14,6 +14,8 @@ if (document.getElementById("home-page")) {
         breakpoints: [576, 768, 1201]
     });
 }
+require('./package/gsap.min');
+
 /*-------- Layouts --------*/
 require('./layouts/loader');
 if (document.getElementById("game-page")) {

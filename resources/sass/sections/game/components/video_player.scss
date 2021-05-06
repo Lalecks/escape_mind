@@ -1,15 +1,15 @@
-#Main {
-    background: black !important;
-}
-
 .Cinematic {
-
     .show-player {
         visibility: visible !important;
     }
 
     video source {
         object-fit: contain;
+    }
+
+    #media-video {
+        height: 100vh !important;
+        background: black !important;
     }
 
     #controls {

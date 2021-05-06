@@ -33,12 +33,12 @@
 
             #Peluche {
                 left: 26%;
-                bottom: 30%;
+                top: 35%;
                 width: 13%;
             }
 
             #Bougie {
-                bottom: 56%;
+                top: 38%;
                 left: 5%;
                 width: 3%;
                 z-index: 2;
@@ -72,14 +72,8 @@
                 width: 10%;
                 -webkit-filter: drop-shadow(1vh 1vh 3vh $black);
                 filter: drop-shadow(1vh 1vh 3vh $black);
-                // -webkit-transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
-                // ;
-                // -o-transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
-                // ;
-                // transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
-                // ;
-                // -webkit-transform: perspective(25vh) rotateY(-32deg);
-                // transform: perspective(25vh) rotateY(-32deg);
+                -webkit-transform: perspective(25vh) rotateY(-32deg);
+                transform: perspective(25vh) rotateY(-32deg);
 
                 &:hover {
                     -webkit-filter: sepia(60%) drop-shadow(2px 1px 3px $black);

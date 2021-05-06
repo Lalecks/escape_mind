@@ -54,6 +54,7 @@ export default function displayCinematic() {
     cin.appendChild(video);
 
     toggleVideoPlayer();
+
     console.log("cinematic.js : cinématique - afficher contrôle");
     actualCinematic += 1;
 

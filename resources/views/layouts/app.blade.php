@@ -70,11 +70,11 @@
 			<div id="progress"></div>
 		</div>
 		<!-- Souris -->
-        <div id="follower">
-            <div id="circle1"></div>
-            <div id="circle2"></div>
+        <div id="souris">
+            <div class="cursor"></div>
+			<div class="follower"></div>
         </div>
-
+		<!-- Content -->
 		<main>
             <div id="fullscreen" style="opacity:0;"></div>
 			<div id="content" style="opacity: 0">
@@ -84,9 +84,6 @@
 
 		<!--====== Javascripts & Jquery ======-->
 		<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
 		<script src="{{ mix('js/app.js') }}" defer></script>
 	</body>
 </html>
