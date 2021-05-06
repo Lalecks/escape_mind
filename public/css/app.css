@@ -1111,8 +1111,6 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 3vh;
-  height: 3vh;
   border-radius: 50%;
   background-color: #ffffff;
   z-index: 2000;
@@ -1122,23 +1120,22 @@ h2 {
           user-select: none;
   pointer-events: none;
   z-index: 10000;
+  mix-blend-mode: difference;
 }
 
 .follower {
   position: fixed;
   top: 0;
   left: 0;
-  width: 8vh;
-  height: 8vh;
   background-color: #000000;
   border-radius: 50%;
-  opacity: 0.7;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
   z-index: 1000;
+  transition: 3s cubic-bezier(0.29, 1.01, 1, -0.68);
 }
 
 .error {
@@ -3035,7 +3032,9 @@ footer {
 
 #game-page .modal #Inventory div {
   width: 96%;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr 0 1fr;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0;
 }
@@ -3104,7 +3103,7 @@ footer {
 
 .Cinematic #media-video {
   height: 100vh !important;
-  background: black !important;
+  background: #000000 !important;
 }
 
 .Cinematic #controls {
@@ -3189,6 +3188,13 @@ footer {
 #Chrono .chrono_space {
   font-size: 3vw !important;
 }
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
 #settings-panel .burger {
   height: 6%;
@@ -3389,12 +3395,13 @@ footer {
   right: 6%;
   top: 5%;
   width: 10%;
-  filter: drop-shadow(1vh 1vh 3vh #000000);
-  transform: perspective(25vh) rotateY(-32deg);
+  transition: 0.5 all ease-in-out;
+  transform: perspective(25vh) rotateY(-22deg);
 }
 
 #game-page #Game .Room2 #Objects #Poster_Robot:hover {
-  filter: sepia(60%) drop-shadow(5px 5px 5px #000000);
+  transition: 0.5 all ease-in-out;
+  filter: drop-shadow(1vh 1vh 3vh #000000), sepia(60%) drop-shadow(0.03rem 0.03rem 0.03rem #000000);
 }
 
 #game-page #Game .Room2 #Objects #Tablette {

@@ -43,6 +43,8 @@
             width: 85%;
 
             #titre_modal {
+                -webkit-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
                 transform: rotate(-90deg);
                 font-family: "Audiowide", cursive;
                 position: absolute;
@@ -57,10 +59,17 @@
 
             #enigme_modal {
                 position: relative;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
                 flex-direction: column;
                 width: 100%;
                 height: 100%;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
                 justify-content: center;
 
                 img {
@@ -99,10 +108,11 @@
 
             div {
                 width: 96%;
+                display: -ms-grid;
                 display: grid;
+                -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr 0 1fr;
                 grid-template-columns: repeat(5, 1fr);
                 grid-column-gap: 0;
-
 
                 .picked {
                     position: relative;
@@ -111,10 +121,20 @@
                     border-radius: 0.5rem;
                     padding: 4%;
                     overflow: hidden;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
                     align-items: center;
+                    -ms-flex-line-pack: center;
                     align-content: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
                     justify-content: center;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
                     flex-direction: column;
                     // Glassmorphism
                     background-image: -webkit-linear-gradient($white-degraded);

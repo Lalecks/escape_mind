@@ -8,26 +8,37 @@
      position: fixed;
      top: 0;
      left: 0;
-     width: 3vh;
-     height: 3vh;
+    //  width: 3vh;
+    //  height: 3vh;
      border-radius: 50%;
      background-color: $white;
      z-index: 2000;
      user-select: none;
      pointer-events: none;
      z-index: 10000;
+     mix-blend-mode: difference;
  }
 
  .follower {
      position: fixed;
      top: 0;
      left: 0;
-     width: 8vh;
-     height: 8vh;
+    //  width: 6vh;
+    //  height: 6vh;
      background-color: $black;
      border-radius: 50%;
-     opacity: 0.7;
+    //  opacity: 0.7;
      user-select: none;
      pointer-events: none;
      z-index: 1000;
+     // Transition
+     -webkit-transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
+     ;
+     -o-transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
+     ;
+     transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
  }
+
+ //  .hoverable {
+ //      cursor: pointer;
+ //  }

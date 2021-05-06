@@ -58,6 +58,8 @@
                 bottom: 8%;
                 right: 44%;
                 z-index: 1;
+                -webkit-transform: rotate(195deg);
+                -ms-transform: rotate(195deg);
                 transform: rotate(195deg);
             }
 
@@ -70,20 +72,22 @@
                 right: 6%;
                 top: 5%;
                 width: 10%;
-                -webkit-filter: drop-shadow(1vh 1vh 3vh $black);
-                filter: drop-shadow(1vh 1vh 3vh $black);
-                -webkit-transform: perspective(25vh) rotateY(-32deg);
-                transform: perspective(25vh) rotateY(-32deg);
+                // Transition 
+                -webkit-transition: .5 all ease-in-out;
+                -o-transition: .5 all ease-in-out;
+                transition: .5 all ease-in-out;
+                // Perspective
+                -webkit-transform: perspective(25vh) rotateY(-22deg);
+                transform: perspective(25vh) rotateY(-22deg);
 
                 &:hover {
-                    -webkit-filter: sepia(60%) drop-shadow(2px 1px 3px $black);
-                    filter: sepia(60%) drop-shadow(5px 5px 5px $black);
-                    // -webkit-transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
-                    // ;
-                    // -o-transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
-                    // ;
-                    // transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
-                    ;
+                    // Transition 
+                    -webkit-transition: .5 all ease-in-out;
+                    -o-transition: .5 all ease-in-out;
+                    transition: .5 all ease-in-out;
+                    // Filtre
+                    -webkit-filter: drop-shadow(1vh 1vh 3vh $black), sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
+                    filter: drop-shadow(1vh 1vh 3vh $black), sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
                 }
             }
 

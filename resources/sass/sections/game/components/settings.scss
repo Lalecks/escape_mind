@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 #settings-panel {
 
     .burger {
@@ -22,9 +29,8 @@
         right: 0;
         padding: 2.5%;
         border-radius: 0.5rem;
-        // Glassmorphism
-        background-image: -webkit-linear-gradient($black-degraded);
-        background-image: -moz-linear-gradient($black-degraded);
+        // Glasmorphism
+        background-image: -o-linear-gradient($black-degraded);
         background-image: -o-linear-gradient($black-degraded);
         background-image: linear-gradient($black-degraded);
     }
@@ -35,12 +41,17 @@
 
     nav.menu {
         height: 100vh;
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
         transform: translateX(100%);
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
     }
 
     nav.menu.is-open {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
         transform: translateX(0);
     }
 }
-
