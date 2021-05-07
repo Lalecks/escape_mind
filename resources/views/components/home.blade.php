@@ -32,13 +32,6 @@
 	</header>
 
 	<div class="index">
-		{{-- <div class="glitch glitch--style-1">
-		<div class="glitch__img"></div>
-		<div class="glitch__img"></div>
-		<div class="glitch__img"></div>
-		<div class="glitch__img"></div>
-		<div class="glitch__img"></div>
-		</div> --}}
 		<div class="headings container">
 			<div class="modal glass-effect hoverable">
 				<!-- Ne pas mettre la modal dans le vidéo overlay, car il est en absolute et par conséquent la modal ne peut pas se fixer -->
@@ -230,28 +223,28 @@
 					<div class="team-img-role glass-effect">
 						<h2>Qui sommes-nous ?</h2>
 						<div class="hoverable">
-							<img src="{{ asset('resources/web/team/ant.png') }}" alt="antony_deschodt"/>
-							<span class="team-role">Sound designer</span>
+							<img class="hoverable" src="{{ asset('resources/web/team/ant.png') }}" alt="antony_deschodt"/>
+							<span class="hoverable team-role">Sound designer</span>
 							<span class="team-name logo-title">Antony</span>
 						</div>
 						<div class="hoverable">
-							<img src="{{ asset('resources/web/team/mon.png') }}" alt="mondine_odin"/>
-							<span class="team-role">Sound designer</span>
+							<img class="hoverable" src="{{ asset('resources/web/team/mon.png') }}" alt="mondine_odin"/>
+							<span class="team-role hoverable">Sound designer</span>
 							<span class="team-name logo-title">Mondine</span>
 						</div>
 						<div class="hoverable">
-							<img src="{{ asset('resources/web/team/ca.png') }}" alt="camille_kozack"/>
-							<span class="team-role">Infographiste</span>
+							<img class="hoverable" src="{{ asset('resources/web/team/ca.png') }}" alt="camille_kozack"/>
+							<span class="team-role hoverable">Infographiste</span>
 							<span class="team-name logo-title">Camille</span>
 						</div>
 						<div class="hoverable">
-							<img src="{{ asset('resources/web/team/sa.png') }}" alt="sarah_mauriaucourt"/>
-							<span class="team-role">Webdesigner &amp; développeuse front-end</span>
+							<img class="hoverable" src="{{ asset('resources/web/team/sa.png') }}" alt="sarah_mauriaucourt"/>
+							<span class="team-role hoverable">Webdesigner &amp; développeuse front-end</span>
 							<span class="team-name logo-title">Sarah</span>
 						</div>
 						<div class="hoverable">
-							<img src="{{ asset('resources/web/team/ant.png') }}" alt="alexandre_lavaud"/>
-							<span class="team-role">Développeur frontend &amp; backend</span>
+							<img class="hoverable" src="{{ asset('resources/web/team/ant.png') }}" alt="alexandre_lavaud"/>
+							<span class="team-role hoverable">Développeur frontend &amp; backend</span>
 							<span class="team-name logo-title">Alexandre</span>
 						</div>
 					</div>
@@ -264,14 +257,14 @@
 					<div class="contact-txt">
 						<p>Hey ! Tu es à la recherche d’informations ? Ou tu souhaites peut-être donner ton avis sur l’escape game en partageant ton ressenti, d'éventuelles remarques ou suggestions dû à ton expérience ? Tu es sur la bonne page ! Alors, envoie nous un mail, qu’est-ce que tu attends&nbsp;?</p>
 						<div class="media">
-							<a href="#" class="facebook hoverable">
-								<i class="fab fa-facebook-f"></i>
+							<a href="#" class="facebook">
+								<i class="fab fa-facebook-f hoverable"></i>
 							</a>
-							<a href="#" class="instagram hoverable">
-								<i class="fab fa-instagram"></i>
+							<a href="#" class="instagram">
+								<i class="fab fa-instagram hoverable"></i>
 							</a>
-							<a href="#" class="youtube hoverable">
-								<i class="fab fa-youtube"></i>
+							<a href="#" class="youtube">
+								<i class="fab fa-youtube hoverable"></i>
 							</a>
 						</div>
 					</div>

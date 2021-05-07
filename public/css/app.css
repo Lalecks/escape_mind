@@ -3578,8 +3578,6 @@ footer {
   z-index: 0;
 }
 
-/*-------- Enigmes  --------*/
-
 #enigme_modal div {
   height: 9.1%;
   position: absolute;
@@ -3636,35 +3634,61 @@ footer {
   pointer-events: none;
 }
 
-.num {
-  padding: 1px 7px;
-  font-size: 24px;
+#enigme_modal {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+#enigme_modal img {
+  display: none;
+}
+
+#enigme_modal #code_coffre {
+  font-family: "Audiowide", cursive;
+  background-color: #121212;
+  width: 44%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#enigme_modal .code_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ff00e0;
+  height: 54%;
+  width: 91%;
   text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #04AA6D;
-  border: none;
-  border-radius: 60px;
-  box-shadow: 0 4px #999;
 }
 
-.code_buttons {
-  z-index: 100;
+#enigme_modal .code_buttons span {
+  width: 100%;
+  margin: 2%;
 }
 
-#code_coffre {
-  z-index: 100;
+#enigme_modal .code_buttons span .num {
+  background-color: #121212;
+  font-size: 3.5vh;
+  border-radius: 50%;
+  padding: 1% 3%;
+  text-align: center;
+  margin: 0 1%;
+  display: inline-block;
+  width: 11px;
+  height: 22px;
+  line-height: 149%;
+  text-align: center;
 }
 
-.num:hover {
-  background-color: #3e8e41;
-}
-
-.num:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+#enigme_modal .code_buttons span .num #div_bas {
+  display: block;
 }
 
 /*--------  Responsive --------*/
