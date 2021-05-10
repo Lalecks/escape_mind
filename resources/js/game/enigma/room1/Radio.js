@@ -20,7 +20,7 @@ export default function Radio(){
 
     let cursor = document.createElement("input");
     cursor.id="radio_slider";
-    cursor.className="slider";
+    cursor.className="slider hoverable";
     cursor.type="range";
     cursor.min="1";
     cursor.max="100";
