@@ -64,8 +64,11 @@
             }
 
             #Pile3 {
-                bottom: 10%;
-                right: 5%;
+                bottom: 29%;
+                right: 22%;
+                -webkit-transform: rotate(-5deg);
+                -ms-transform: rotate(-5deg);
+                transform: rotate(-5deg);
             }
 
             #Poster_Robot {

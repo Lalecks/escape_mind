@@ -76,6 +76,11 @@ function toggleModalCustom(titre, description) {
         if (modal.classList.toggle("show-modal")) {
 
             clearAll();
+
+            /*  Nom modal */
+            // let enigma = document.getElementById("enigme_modal");
+            // enigma.id = titre + "_enigme";
+
             /*  Titre de l'objet */
             let titre_html = document.createElement("span");
             titre_html.innerText = titre;

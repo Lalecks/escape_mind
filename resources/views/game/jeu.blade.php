@@ -20,8 +20,30 @@
 			<div class="burger">
 				<i class="hoverable fas fa-cog"></i>
 			</div>
-			<nav class="menu glass-effect">
-				{{-- <h1>Paramètres</h1> --}}
+			<nav class="menu glass-effect">			
+				<div id="filter">
+					<span onclick="openSetting('Sound')"><i class="fas fa-music"></i></span>
+					<span onclick="openSetting('Info')"><i class="fas fa-info"></i></span>
+					<span onclick="openSetting('Deconnexion')"><i class="fas fa-sign-out-alt"></i></span>
+				</div>
+
+				<div id="tabs">
+					<div id="Sound" class="setting">
+						<h2>Son</h2>
+						<hr>
+					</div>
+
+					<div id="Info" class="setting" style="display:none">
+						<h2>Information</h2>
+						<hr>
+					</div>
+
+					<div id="Deconnexion" class="setting" style="display:none">
+						<h2>Deconnexion</h2>
+						<hr>
+						<a href="/"></a>
+					</div>
+				</div>
 			</nav>
 		</menu>
 
@@ -33,8 +55,8 @@
 			<div id="controls">
 				<div>
 					<div id="btn-controls">
-						<button id=play class="hoverable fas fa-pause"></button>
-						<button id=audioVolume class="hoverable fas fa-volume-off"></button>
+						<span id=play class="hoverable fas fa-pause"></span>
+						<span id=audioVolume class="hoverable fas fa-volume-off"></span>
 					</div>
 					<div id="timer">
 						<span id="start">0:00</span>
@@ -50,7 +72,7 @@
 			<div id="ObjectInfo">
 				<div class="modal glass-effect hoverable">
 					<div class="modal-content glass-effect" >
-						<p class="close-button hoverable">&times;</p>
+						<p class="close-span hoverable">&times;</p>
 						<div id="Activity">
 							<!-- Activités de chaque jeu -->
 						</div>
@@ -68,9 +90,11 @@
 				<div id="Decors"></div>
 			</div>
 		</div>
+
 		<div id="Interface" class="Interface">
 			<!-- Timer -->
 		</div>
+		
 	</div>
 </section>
 @endsection

@@ -1,3 +1,9 @@
+/**
+ *
+ *  Paramètres du jeu
+ *
+ * */
+
 /* Affichage/Cacher menu des settings */
 $('.burger').click(function () {
     // au click du bouton ayant la class burger :
@@ -15,14 +21,14 @@ $('.menu ul li a').click(function () {
     // utile pour un one-page, car on ne veut pas que la nav reste ouverte une fois que la page est arrivée au bon endroit
 });
 
-/* Close the settings menu if you click outside your DIVV */
+/* Fermer le menu des paramètres si vous cliquez en dehors de la DIV */
 let menu = document.querySelector('.menu')
 let engrenage = document.querySelector(".fas");
+let game = document.getElementById("Game");
 
 window.addEventListener('click', function (e) {
-    if (document.querySelector(".is-open") && e.target != menu && e.target != engrenage) {
+    if (document.querySelector(".is-open") && e.target === game) {
         $('.menu').removeClass('is-open');
         $('.burger').removeClass('burger-open');
     }
 })
-

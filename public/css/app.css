@@ -3108,7 +3108,7 @@ footer {
   visibility: hidden;
   position: fixed;
   width: 100%;
-  height: 20%;
+  height: 13vw;
   bottom: 0;
   color: white;
   display: block;
@@ -3187,13 +3187,6 @@ footer {
   font-size: 3vw !important;
 }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 #settings-panel .burger {
   height: 6%;
   background: -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
@@ -3214,9 +3207,28 @@ footer {
   height: 50px;
   top: 0;
   right: 0;
-  padding: 2.5%;
+  padding: 4% 2.5%;
   border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
+}
+
+#settings-panel .menu div {
+  padding: 5%;
+}
+
+#settings-panel .menu #filter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 10%;
+  background-color: red;
+}
+
+#settings-panel .menu #tabs {
+  background-color: black;
+  flex-basis: 90%;
 }
 
 #settings-panel div.burger {
@@ -3224,7 +3236,7 @@ footer {
 }
 
 #settings-panel nav.menu {
-  height: 100vh;
+  height: 88vh;
   transform: translateX(100%);
   transition: all 0.3s ease-in-out;
 }
@@ -3385,8 +3397,9 @@ footer {
 }
 
 #game-page #Game .Room2 #Objects #Pile3 {
-  bottom: 10%;
-  right: 5%;
+  bottom: 29%;
+  right: 22%;
+  transform: rotate(-5deg);
 }
 
 #game-page #Game .Room2 #Objects #Poster_Robot {
@@ -3632,63 +3645,6 @@ footer {
 
 #enigme_modal img {
   pointer-events: none;
-}
-
-#enigme_modal {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-around !important;
-  align-items: center;
-  flex-direction: column;
-  align-content: center;
-}
-
-#enigme_modal img {
-  display: none;
-}
-
-#enigme_modal #code_coffre {
-  font-family: "Audiowide", cursive;
-  background-color: #121212;
-  width: 44%;
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#enigme_modal .code_buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #ff00e0;
-  height: 54%;
-  width: 91%;
-  text-align: center;
-}
-
-#enigme_modal .code_buttons span {
-  width: 100%;
-  margin: 2%;
-}
-
-#enigme_modal .code_buttons span .num {
-  background-color: #121212;
-  font-size: 3.5vh;
-  border-radius: 50%;
-  padding: 1% 3%;
-  text-align: center;
-  margin: 0 1%;
-  display: inline-block;
-  width: 11px;
-  height: 22px;
-  line-height: 149%;
-  text-align: center;
-}
-
-#enigme_modal .code_buttons span .num #div_bas {
-  display: block;
 }
 
 /*--------  Responsive --------*/

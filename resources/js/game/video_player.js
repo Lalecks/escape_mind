@@ -3,6 +3,7 @@
  *  Vidéo player des cinématiques
  *
  **/
+
 let player = (function () { //Namespace todo lo que esta aqui dentro es privado
     let play = document.getElementById("play"),
         // fullscreen = document.getElementById("expand"),

@@ -45,7 +45,7 @@ export default function cursorModule() {
     if (!init) {
         window.addEventListener('mousemove', e => {
             let transition = "transition-property: opacity, width, height; transition-duration: .5s;transition-timing-function: linear; ";
-        
+
             if (isTheClassHoverable(e)) {
                 follow.style = transition + "width: 10vh; height: 10vh; opacity: .1;";
                 cur.style = transition + "width: 1vh; height: 1vh;";

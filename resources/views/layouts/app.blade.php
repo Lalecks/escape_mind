@@ -83,5 +83,16 @@
 		<!--====== Javascripts & Jquery ======-->
 		<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 		<script src="{{ mix('js/app.js') }}" defer></script>
+		<script>
+			/* Menu de type onglets pour les différents paramètres */
+			function openSetting(settingName) {
+				var i;
+				var x = document.getElementsByClassName("setting");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				document.getElementById(settingName).style.display = "block";
+			}
+		</script>
 	</body>
 </html>
