@@ -30,7 +30,7 @@
         background-image: linear-gradient($black-degraded);
 
         div {
-            padding: 5%
+            padding: 5%;
         }
 
         #filter {
@@ -42,7 +42,31 @@
             span {
                 width: 100%;
                 text-align: center;
-                border: 1px solid black;
+                -webkit-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background: -webkit-linear-gradient($white-degraded);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+            span.active {
+                border-radius: 0.5rem;
+                // Glassmorphism
+                background-image: -o-linear-gradient($black-degraded);
+                background-image: -o-linear-gradient($black-degraded);
+                background-image: linear-gradient($black-degraded);
+
+                i {
+                    padding: 1%;
+                }
             }
         }
 
@@ -55,8 +79,14 @@
             background-image: -o-linear-gradient($black-degraded);
             background-image: linear-gradient($black-degraded);
 
-            hr {
-                margin: 2rem 0;
+            .tabcontent {
+                p {
+                    font-size: 2vw;
+                }
+
+                hr {
+                    margin: 2rem 0;
+                }
             }
         }
     }
@@ -80,4 +110,8 @@
         -ms-transform: translateX(0);
         transform: translateX(0);
     }
+}
+
+.tabcontent {
+    display: none;
 }

@@ -43,18 +43,18 @@
             width: 85%;
 
             #titre_modal {
-                -webkit-transform: rotate(-90deg);
-                -ms-transform: rotate(-90deg);
-                transform: rotate(-90deg);
                 font-family: "Audiowide", cursive;
                 position: absolute;
+                writing-mode: vertical-rl; // Ecrire en vertical
                 font-weight: bold;
-                left: 0%;
-                bottom: 50%;
+                left: 7%;
                 z-index: -14;
-                font-size: 6vh;
+                font-size: 5vh;
                 color: #ffffff3d;
                 text-transform: uppercase;
+                -webkit-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
             }
 
             #enigme_modal {

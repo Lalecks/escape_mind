@@ -80,7 +80,7 @@ function toggleModalCustom(titre, description) {
             let titre_html = document.createElement("span");
             titre_html.innerText = titre;
             titre_html.id = "titre_modal";
-
+            
             /* Description de l'objet */
             let desc_html = document.createElement("span");
             desc_html.innerText = description;

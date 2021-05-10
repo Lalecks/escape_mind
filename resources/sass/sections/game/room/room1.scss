@@ -24,6 +24,12 @@
         }
 
         #Objects {
+            #Ramdam {
+                top: 4%;
+                left: 34%;
+                width: 20%;
+            }
+
             #Cassettes {
                 left: 40%;
                 bottom: 4%;
@@ -53,6 +59,10 @@
                 bottom: 14%;
             }
 
+
+        }
+
+        #Decors {
             #Poster {
                 left: -0.9%;
                 top: 11%;
@@ -61,9 +71,7 @@
                 width: 10%;
                 z-index: 1;
             }
-        }
 
-        #Decors {
             #Led {
                 width: 7%;
                 top: 3.9%;
@@ -88,11 +96,6 @@
                 transform-origin: bottom left;
                 -webkit-animation: 3s spin infinite, 3s pink_neon infinite;
                 animation: 4s spin infinite, 4s pink_neon infinite;
-            }
-
-            #Ramdam {
-                top: 4%;
-                left: 34%;
             }
 
             #Big_Vinyl {

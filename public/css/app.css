@@ -1402,7 +1402,7 @@ h2 {
 .btn.focus,
 .btn:focus,
 .btn:hover {
-  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
   background-position: right center;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
   color: #ffffff;
@@ -1655,7 +1655,7 @@ h2 {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
   transform: scale(1.1);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   z-index: 11;
@@ -2098,7 +2098,7 @@ footer {
 
 #rank ::-webkit-scrollbar {
   width: 0.75rem;
-  background: 298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%;
+  background: 298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%;
 }
 
 #rank ::-webkit-scrollbar-track {
@@ -2398,7 +2398,7 @@ footer {
   width: 3%;
   border-radius: 19.5%;
   margin: 0.5%;
-  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 
 #game-page header .mute {
@@ -2952,7 +2952,7 @@ footer {
   padding: 2.5%;
   width: 59%;
   height: 34vw;
-  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 
 #game-page .modal .modal-content .close-button {
@@ -2977,16 +2977,17 @@ footer {
 }
 
 #game-page .modal #Activity #titre_modal {
-  transform: rotate(-90deg);
   font-family: "Audiowide", cursive;
   position: absolute;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   font-weight: bold;
-  left: 0%;
-  bottom: 50%;
+  left: 7%;
   z-index: -14;
-  font-size: 6vh;
+  font-size: 5vh;
   color: #ffffff3d;
   text-transform: uppercase;
+  transform: rotate(180deg);
 }
 
 #game-page .modal #Activity #enigme_modal {
@@ -3208,7 +3209,7 @@ footer {
   border-radius: 0.5rem;
   overflow: hidden;
   display: flex;
-  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 
 #settings-panel .menu div {
@@ -3225,17 +3226,38 @@ footer {
 #settings-panel .menu #filter span {
   width: 100%;
   text-align: center;
-  border: 1px solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+#settings-panel .menu #filter span:hover {
+  background: -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#settings-panel .menu #filter span.active {
+  border-radius: 0.5rem;
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
+}
+
+#settings-panel .menu #filter span.active i {
+  padding: 1%;
 }
 
 #settings-panel .menu #tabs {
   flex-basis: 90%;
   margin: 4% 2.5%;
   border-radius: 0.5rem;
-  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 
-#settings-panel .menu #tabs hr {
+#settings-panel .menu #tabs .tabcontent p {
+  font-size: 2vw;
+}
+
+#settings-panel .menu #tabs .tabcontent hr {
   margin: 2rem 0;
 }
 
@@ -3253,6 +3275,10 @@ footer {
   transform: translateX(0);
 }
 
+.tabcontent {
+  display: none;
+}
+
 #game-page #Game #ObjectInfo .modal #Cassettes_bg {
   height: 73%;
 }
@@ -3267,6 +3293,12 @@ footer {
 
 #game-page #Game .Room1 div img:hover {
   filter: saturate(180%) drop-shadow(0.05rem 0.05rem 1rem #ffffff);
+}
+
+#game-page #Game .Room1 #Objects #Ramdam {
+  top: 4%;
+  left: 34%;
+  width: 20%;
 }
 
 #game-page #Game .Room1 #Objects #Cassettes {
@@ -3298,7 +3330,7 @@ footer {
   bottom: 14%;
 }
 
-#game-page #Game .Room1 #Objects #Poster {
+#game-page #Game .Room1 #Decors #Poster {
   left: -0.9%;
   top: 11%;
   transform: perspective(50vw) rotate3d(0, 1, 0, 60deg);
@@ -3328,11 +3360,6 @@ footer {
   transform-origin: bottom left;
   -webkit-animation: 3s spin infinite, 3s pink_neon infinite;
   animation: 4s spin infinite, 4s pink_neon infinite;
-}
-
-#game-page #Game .Room1 #Decors #Ramdam {
-  top: 4%;
-  left: 34%;
 }
 
 #game-page #Game .Room1 #Decors #Big_Vinyl {
@@ -3600,12 +3627,12 @@ footer {
 }
 
 #enigme_modal div {
-  height: 9.1%;
+  height: 9.4%;
   position: absolute;
   margin: auto;
-  left: 27.5%;
-  top: 29.9%;
-  width: 45.3%;
+  left: 19.87%;
+  top: 29.37%;
+  width: 60.6%;
   overflow: hidden;
 }
 

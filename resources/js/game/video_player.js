@@ -33,7 +33,7 @@ let player = (function () { //Namespace todo lo que esta aqui dentro es privado
             e.target.setAttribute('class', 'hoverable fas fa-volume-up')
             mediaPlayer.muted = !mediaPlayer.muted;
         } else {
-            e.target.setAttribute('class', 'hoverable fas fa-volume-off')
+            e.target.setAttribute('class', 'hoverable fas fa-volume-mute')
             mediaPlayer.muted = !mediaPlayer.muted;
         }
     });

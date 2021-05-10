@@ -22,7 +22,7 @@ let object = [
     ["Jukebox", 1, "Il s'agit d'un jukebox."],
     ["Lecteur", 1, "Il s'agit d'un lecteur."],
     ["Radio", 1, "Il s'agit d'une radio."],
-    ["Poster", 1, "Il s'agit d'une radio."],
+    ["Ramdam", 1, "Il s'agit d'une radio."],
     /* Room 2 */
     ["Lit", 2, "Il s'agit d'un lit double."],
     ["Peluche", 2, "Il s'agit d'une peluche trop chou."],
@@ -51,7 +51,7 @@ let decor = [
     ["Led", 1],
     ["Panneau", 1],
     ["Panneau_neon", 1],
-    ["Ramdam", 1],
+    ["Poster", 1],
     ["Big_Vinyl", 1],
     ["Little_Vinyl", 1],
     ["Guitare", 1],

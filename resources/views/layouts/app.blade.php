@@ -85,14 +85,20 @@
 		<script src="{{ mix('js/app.js') }}" defer></script>
 		<script>
 			/* Menu de type onglets pour les différents paramètres */
-			function openSetting(settingName) {
-				var i;
-				var x = document.getElementsByClassName("setting");
-				for (i = 0; i < x.length; i++) {
-					x[i].style.display = "none";
-				}
-				document.getElementById(settingName).style.display = "block";
+			function openSetting(evt, settingName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
 			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(settingName).style.display = "block";
+			evt.currentTarget.className += " active";
+			}
+			// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs
 		</script>
 	</body>
 </html>
