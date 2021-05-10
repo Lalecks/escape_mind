@@ -4,6 +4,12 @@
  *
  * */
 
+// if (document.querySelector("#controls").classList.contains("show-player") == true)  {
+//     document.getElementById('.settings-panel').style.display = "none";
+// }else {
+//     document.getElementById('.settings-panel').style.display = "block";
+// }
+
 /* Affichage/Cacher menu des settings */
 $('.burger').click(function () {
     // au click du bouton ayant la class burger :

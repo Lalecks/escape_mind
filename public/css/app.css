@@ -1839,7 +1839,7 @@ footer {
   background-repeat: repeat;
   -webkit-animation: noise 0.2s infinite;
           animation: noise 0.2s infinite;
-  opacity: 0.9;
+  opacity: 0.5;
   visibility: visible;
 }
 
@@ -3105,6 +3105,7 @@ footer {
 }
 
 .Cinematic #controls {
+  font-size: 2vw !important;
   visibility: hidden;
   position: fixed;
   width: 100%;
@@ -3115,18 +3116,14 @@ footer {
   z-index: 1;
 }
 
-.Cinematic #controls div i,
-.Cinematic #controls div button {
-  font-size: 2vw !important;
-}
-
 .Cinematic #controls div #btn-controls {
   display: flex;
-  width: 100%;
+  width: 95%;
   justify-content: space-between;
   position: absolute;
   bottom: 16%;
   z-index: 15;
+  padding: 0px 2%;
 }
 
 .Cinematic #controls div #btn-controls > button {
@@ -3220,15 +3217,26 @@ footer {
 
 #settings-panel .menu #filter {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: space-around;
   flex-basis: 10%;
-  background-color: red;
+}
+
+#settings-panel .menu #filter span {
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
 }
 
 #settings-panel .menu #tabs {
-  background-color: black;
   flex-basis: 90%;
+  margin: 4% 2.5%;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(0, 0, 0, 0.185) 93.57%);
+}
+
+#settings-panel .menu #tabs hr {
+  margin: 2rem 0;
 }
 
 #settings-panel div.burger {
@@ -3903,7 +3911,7 @@ footer {
 
 @media only screen and (max-width: 1200px) {
   h1 {
-    font-size: 17rem;
+    font-size: 11rem;
   }
 
   #rank .top3 > div {

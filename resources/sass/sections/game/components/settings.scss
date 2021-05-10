@@ -35,15 +35,29 @@
 
         #filter {
             display: flex;
-            align-items: center;
             flex-direction: column;
+            justify-content: space-around;
             flex-basis: 10%;
-            background-color: red;
+
+            span {
+                width: 100%;
+                text-align: center;
+                border: 1px solid black;
+            }
         }
 
         #tabs {
-            background-color: black;
             flex-basis: 90%;
+            margin: 4% 2.5%;
+            border-radius: 0.5rem;
+            // Glassmorphism
+            background-image: -o-linear-gradient($black-degraded);
+            background-image: -o-linear-gradient($black-degraded);
+            background-image: linear-gradient($black-degraded);
+
+            hr {
+                margin: 2rem 0;
+            }
         }
     }
 

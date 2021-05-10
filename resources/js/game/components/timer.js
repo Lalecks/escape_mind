@@ -11,8 +11,9 @@ let timeStr = "3000";
 // Affichage du timer
 export default function createTimer() {
     let chrono = document.createElement("span");
+    chrono.class = "glass-effect";
     chrono.id = "Chrono";
-
+    
     // Creer chaque élément du timer
     for (let i = 0; i < timeStr.length; i++) {
 

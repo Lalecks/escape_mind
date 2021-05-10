@@ -4,13 +4,8 @@
  *
  * */
 
-import {
-    invJoueur
-} from "../game/enigma/inventory";
-
-import {
-    actualRoom
-} from "../game/room_creation";
+import { invJoueur} from "../game/enigma/inventory";
+import { actualRoom } from "../game/room_creation";
 
 import Radio from "../game/enigma/room1/Radio";
 import Cassettes from "../game/enigma/room1/Cassettes";
@@ -79,7 +74,7 @@ function toggleModalCustom(titre, description) {
 
             /*  Nom modal */
             // let enigma = document.getElementById("enigme_modal");
-            // enigma.id = titre + "_enigme";
+            // enigma.classList.add("enigma_" + titre_html);
 
             /*  Titre de l'objet */
             let titre_html = document.createElement("span");
@@ -157,7 +152,6 @@ function clearAll() {
     } catch (e) {}
 }
 
-
 function createInventory() {
     let objects = document.createElement("div");
     let url = "./resources/game/room" + actualRoom;
@@ -188,7 +182,6 @@ function createInventory() {
         objects.appendChild(global_object);
 
     }
-
     return objects;
 }
 

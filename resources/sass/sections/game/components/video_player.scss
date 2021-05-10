@@ -13,6 +13,7 @@
     }
 
     #controls {
+        font-size: 2vw !important;
         visibility: hidden;
         position: fixed;
         width: 100%;
@@ -21,24 +22,16 @@
         color: white;
         display: block;
         z-index: 1;
-        // background-color: red;
 
         div {
-            // position: relative;
-            // background-color: blue;
-
-            i,
-            button {
-                font-size: 2vw !important;
-            }
-
             #btn-controls {
                 display: flex;
-                width: 100%;
+                width: 95%;
                 justify-content: space-between;
                 position: absolute;
                 bottom: 16%;
                 z-index: 15;
+                padding: 0px 2%;
 
                 &>button {
                     margin: 0 2%;

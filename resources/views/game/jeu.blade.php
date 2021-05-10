@@ -4,7 +4,7 @@
 @section('content')
 <section id="game-page">
 	<header id="Header">
-		<a href="/" class="logo logo-title hoverable" style="pointer-events: none; cursor: default;">
+		<a href="/" class="logo logo-title hoverable glass-effect" style="pointer-events: none; cursor: default;">
 			<!-- Nécessaire pour le bon fonctionnement du Loading -->
 			<img src="./resources/game/Logo.png" alt="logo"/>
 		</a>
@@ -17,31 +17,47 @@
 
 	<div id="Main" role="main">
 		<menu id="settings-panel">
-			<div class="burger">
-				<i class="hoverable fas fa-cog"></i>
+			<div class="burger hoverable fas fa-cog">
 			</div>
 			<nav class="menu glass-effect">			
 				<div id="filter">
+					<span onclick="openSetting('Story')"><i class="fas fa-book-open"></i></span>
 					<span onclick="openSetting('Sound')"><i class="fas fa-music"></i></span>
+					<span onclick="openSetting('Languages')"><i class="fas fa-globe-europe"></i></span>
 					<span onclick="openSetting('Info')"><i class="fas fa-info"></i></span>
 					<span onclick="openSetting('Deconnexion')"><i class="fas fa-sign-out-alt"></i></span>
 				</div>
 
-				<div id="tabs">
+				<div id="tabs" class="glass-effect">
+					<div id="Story" class="setting">
+						<h2>Story</h2>
+						<hr>
+					</div>
 					<div id="Sound" class="setting">
 						<h2>Son</h2>
 						<hr>
+						<p>Volume des musiques - Sound en %</p>
+						<p>Volume des musiques - Music</p>
+						<p>Volume des bruitages/effets sonores - Sound fx</p>
+						<p>Volume du gamemaster</p>
+						<p>Notif</p>
 					</div>
-
+					<div id="Languages" class="setting" style="display:none">
+						<h2>Langues</h2>
+						<hr>
+					</div>
 					<div id="Info" class="setting" style="display:none">
 						<h2>Information</h2>
 						<hr>
+						<p>Un problème ?</p>
+						<p>Private policy</p>
+						<p></p>
+						<p>Crédits</p>
 					</div>
-
 					<div id="Deconnexion" class="setting" style="display:none">
 						<h2>Deconnexion</h2>
 						<hr>
-						<a href="/"></a>
+						<a href="/">Quitter le jeu</a>
 					</div>
 				</div>
 			</nav>
