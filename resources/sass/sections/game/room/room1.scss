@@ -48,10 +48,11 @@
             }
 
             #Lecteur {
-                left: 14%;
-                bottom: 34%;
-                width: 5%;
-                transform: rotate(-88.2deg);
+                left: 12%;
+                bottom: 38%;
+                width: 9%;
+                transform: rotate(3.8deg);
+
             }
 
             #Radio {
@@ -117,4 +118,11 @@
             }
         }
     }
+}
+
+.Lecteur_button {
+    background: red;
+    color: black;
+    height: 36px;
+    width: 10%;
 }

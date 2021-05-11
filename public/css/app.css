@@ -2799,10 +2799,10 @@ footer {
   bottom: 14%;
 }
 #game-page #Game .Room1 #Objects #Lecteur {
-  left: 14%;
-  bottom: 34%;
-  width: 5%;
-  transform: rotate(-88.2deg);
+  left: 12%;
+  bottom: 38%;
+  width: 9%;
+  transform: rotate(3.8deg);
 }
 #game-page #Game .Room1 #Objects #Radio {
   right: 34%;
@@ -2850,6 +2850,13 @@ footer {
   top: 2%;
   right: 5%;
   width: 31%;
+}
+
+.Lecteur_button {
+  background: red;
+  color: black;
+  height: 36px;
+  width: 10%;
 }
 
 #game-page #Game #ObjectInfo .modal #enigme_modal #Pile1_bg,

@@ -31,13 +31,16 @@ export default function Radio(){
     actual_val.innerText = (((50/100)*13)+87).toFixed(1) + " Hz";
 
     cursor.onchange=function(){
-        actual_val.innerText = "" + (((cursor.value/100)*13)  + 87).toFixed(1) + " Hz";
         //Correspond à la fréquence à trouver
         if (cursor.value === "37"){
             alert("indice sonore : '11'");
             changeAV(0);
         }
     }
+
+    cursor.addEventListener('input', function () {
+        actual_val.innerText = "" + (((cursor.value/100)*13)  + 87).toFixed(1) + " Hz";
+    }, false);
 
 
     area.appendChild(cursor);
