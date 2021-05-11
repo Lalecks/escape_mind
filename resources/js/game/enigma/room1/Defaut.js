@@ -4,7 +4,7 @@
 
 export default function Defaut(nom_obj){
     let no_enigma = document.createElement("div");
-    no_enigma.id="enigme_modal";
+    no_enigma.classList = "enigme_modal";
 
     let html = document.getElementById(nom_obj);
 

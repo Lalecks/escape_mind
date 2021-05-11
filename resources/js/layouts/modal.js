@@ -80,7 +80,7 @@ function toggleModalCustom(titre, description) {
             let titre_html = document.createElement("span");
             titre_html.innerText = titre;
             titre_html.id = "titre_modal";
-            
+
             /* Description de l'objet */
             let desc_html = document.createElement("span");
             desc_html.innerText = description;
@@ -147,7 +147,7 @@ function clearAll() {
     try {
         activity.removeChild(document.getElementById("titre_modal"));
         activity.removeChild(document.getElementById("desc_modal"));
-        activity.removeChild(document.getElementById("enigme_modal"));
+        activity.removeChild(document.querySelector(".enigme_modal"));
         inventory.querySelectorAll("*").forEach(n => n.remove());
     } catch (e) {}
 }

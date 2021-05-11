@@ -6,7 +6,7 @@ import updateInventory from "../inventory";
 
 export default function Lecteur() {
     let enigma = document.createElement("div");
-    enigma.id = "enigme_modal";
+    enigma.classList = "enigme_modal";
 
     let html = document.getElementById("Lecteur");
 

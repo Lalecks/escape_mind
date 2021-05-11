@@ -9,7 +9,7 @@ let used = 0;
 
 export default function Pile(nom_obj) {
     let enigma = document.createElement("div");
-    enigma.id = "enigme_modal";
+    enigma.classList = "enigme_modal";
     used = 0;
     let html = document.getElementById(nom_obj);
 

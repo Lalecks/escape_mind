@@ -4,7 +4,7 @@
 
 export default function Jukebox(){
     let no_enigma = document.createElement("div");
-    no_enigma.id="enigme_modal";
+    no_enigma.classList = "enigme_modal";
 
     let html = document.getElementById("Jukebox");
 

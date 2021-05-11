@@ -9,7 +9,8 @@ let code = "711";
 export default function Coffre() {
     let html = document.getElementById("Coffre");
     let no_enigma = document.createElement("span");
-    no_enigma.id = "enigme_modal";
+    no_enigma.id = "modal_coffre";
+    no_enigma.classList = "enigme_modal";
 
     let bg = document.createElement("img");
     bg.id = "Radio_bg";
@@ -27,7 +28,7 @@ export default function Coffre() {
     div_bas.id = "div_bas";
 
     for (let i = 0; i <= 9; i++) {
-        
+
         let num = document.createElement("span");
         num.classList = "num hoverable";
         num.innerText = i;
@@ -41,7 +42,7 @@ export default function Coffre() {
 
     buttons.appendChild(div_haut);
     buttons.appendChild(div_bas);
-    
+
     no_enigma.appendChild(result);
     no_enigma.appendChild(buttons);
     no_enigma.appendChild(bg);

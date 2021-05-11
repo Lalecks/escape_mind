@@ -9,7 +9,7 @@ let used = 0;
 
 export default function Cassettes() {
     let enigma = document.createElement("div");
-    enigma.id = "enigme_modal";
+    enigma.classList = "enigme_modal";
 
     let html = document.getElementById("Cassettes");
 
