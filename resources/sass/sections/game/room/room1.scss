@@ -120,9 +120,23 @@
     }
 }
 
-.Lecteur_button {
-    background: red;
-    color: black;
-    height: 36px;
-    width: 10%;
+#div_buttons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 7%;
+    left: 11%;
+    height: 71%;
+
+    .Lecteur_button {
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        height: 36px;
+        margin: 1% 0;
+        &:hover {
+            background-color: rgba(255,0,0,0.3);
+        }
+    }
 }
+

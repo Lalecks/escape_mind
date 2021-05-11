@@ -2852,11 +2852,23 @@ footer {
   width: 31%;
 }
 
-.Lecteur_button {
-  background: red;
-  color: black;
+#div_buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 7%;
+  left: 11%;
+  height: 71%;
+}
+#div_buttons .Lecteur_button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
   height: 36px;
-  width: 10%;
+  margin: 1% 0;
+}
+#div_buttons .Lecteur_button:hover {
+  background-color: rgba(255, 0, 0, 0.3);
 }
 
 #game-page #Game #ObjectInfo .modal #enigme_modal #Pile1_bg,
