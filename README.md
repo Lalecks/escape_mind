@@ -102,6 +102,7 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
     - *Mouse* Copyright (c) 2020 [Dezigner Bay](https://www.youtube.com/watch?v=_UR74tkspqc)
     - *Rellax* Copyright (c) 2016 [Moe Amaya](https://github.com/dixonandmoe/rellax)
     - *Menu burger* Copyright (c) 2021 [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
+    - *Zoom article* Copyright (c) [_](http://docs.powerboutique.com/wiki/Widget_zoom_loupe_sur_les_visuels_articles)
     - *Glitch effect* 2021 Copyright (c) [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
     - *Video player* Copyright (c) 2021 [OrlandoJC](https://github.com/OrlandoJC/videoPlayer)
     - *Tabs* Copyright (c)

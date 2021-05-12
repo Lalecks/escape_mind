@@ -59,6 +59,7 @@
 @import 'sections/game/components/timer';
 @import 'sections/game/components/settings';
 @import 'sections/game/components/drag';
+// @import 'sections/login';
 // Rooms : Modification des différents éléments visuels du template "room_template' pour chaque salle
 @import 'sections/game/room/room1';
 @import 'sections/game/room/room2';
@@ -73,12 +74,8 @@
 @import 'sections/game/responsive_game';
 @import 'sections/game/landscape_device';
 
-// @import 'sections/login';
-
-
 // Petits pb jeu:
-//  - settings
-//  - Firefox version
+//  - settings + jukebox
 //  - Effets glitch elements + Flottement / enregistrer score / Effet bulle + Timer salle 3 / Taskbar / Log
-// JS : gameMaster, enigmes, progressBar /son
+// JS : gameMaster, progressBar, son
 // CSS Web : bg sections / scrollBar

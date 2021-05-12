@@ -115,3 +115,14 @@
 .tabcontent {
     display: none;
 }
+
+@-moz-document url-prefix() {
+    .menu {
+        background: rgba(38, 37, 37, 0.73);
+    }
+
+    #tabs {
+        background-image: inherit;
+        background-color: $body-bg;
+    }
+}

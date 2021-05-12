@@ -88,11 +88,12 @@
 	// backdrop-filter ne fonctionne pas sur ces navigateurs
 	.modal-content,
 	#Inventory {
-		background-color: #0a0a0aa3;
+		background-image: inherit;
+        background-color: $body-bg;
 	}
 
 	.show-modal {
-		background-color: #0a0a0a87;
+		background: rgba(38, 37, 37, 0.73);
 	}
 }
 
