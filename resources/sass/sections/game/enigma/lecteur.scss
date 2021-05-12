@@ -14,10 +14,21 @@
         margin: 0.2%;
         border-radius: 28%;
         border: none;
+        // Transition
+        transition: all 200ms ease-in;
+        -webkit-transition: all 200ms ease-in;
+        -ms-transition: all 200ms ease-in;
+        -moz-transition: all 200ms ease-in;
 
         &:hover {
-            background-color: $pink;
+            background-color: #67009b;
             opacity: .8;
+            filter: brightness(120%) drop-shadow(0.05rem 0.05rem 0.5rem #67009b);
+            // Transition
+            transition: all 200ms ease-in;
+            -webkit-transition: all 200ms ease-in;
+            -ms-transition: all 200ms ease-in;
+            -moz-transition: all 200ms ease-in;
         }
     }
 }
