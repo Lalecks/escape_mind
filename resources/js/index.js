@@ -31,6 +31,7 @@ if (document.getElementById("game-page")) {
     require('./game/video_player');
     /* Components */
     require('./game/components/settings');
+    require('./game/components/zoom')
 }
 // Avant custom_packages.js pour fonctionner
 require('./layouts/mouse');

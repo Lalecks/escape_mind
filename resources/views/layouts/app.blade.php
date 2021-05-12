@@ -98,7 +98,6 @@
 			document.getElementById(settingName).style.display = "block";
 			evt.currentTarget.className += " active";
 			}
-			// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs
 		</script>
 	</body>
 </html>

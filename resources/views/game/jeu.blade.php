@@ -2,7 +2,9 @@
 @section('title', __("le jeu en ligne"))
 
 @section('content')
+
 <section id="game-page">
+
 	<header id="Header">
 		<a href="/" class="logo logo-title hoverable glass-effect" style="pointer-events: none; cursor: default;">
 			<!-- Nécessaire pour le bon fonctionnement du Loading -->

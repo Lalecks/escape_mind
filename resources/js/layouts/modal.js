@@ -14,6 +14,7 @@ import Pile from "../game/enigma/room1/Pile";
 import Lecteur from "../game/enigma/room1/Lecteur";
 import Jukebox from "../game/enigma/room1/Jukebox";
 import Coffre from "../game/enigma/room1/Coffre";
+import zoom from "../game/components/zoom";
 
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");
@@ -126,6 +127,7 @@ function toggleModalCustom(titre, description) {
         } else {
             clearAll();
         }
+        zoom();
     } else {
         // HOMEPAGE
         if (modal.classList.toggle("show-modal")) {

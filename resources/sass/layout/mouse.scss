@@ -8,8 +8,6 @@
      position: fixed;
      top: 0;
      left: 0;
-    //  width: 3vh;
-    //  height: 3vh;
      border-radius: 50%;
      background-color: $white;
      z-index: 2000;
@@ -23,11 +21,8 @@
      position: fixed;
      top: 0;
      left: 0;
-    //  width: 6vh;
-    //  height: 6vh;
      background-color: $black;
      border-radius: 50%;
-    //  opacity: 0.7;
      user-select: none;
      pointer-events: none;
      z-index: 1000;
@@ -38,7 +33,3 @@
      ;
      transition: 3s cubic-bezier(.29, 1.01, 1, -0.68);
  }
-
- //  .hoverable {
- //      cursor: pointer;
- //  }

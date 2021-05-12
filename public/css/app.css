@@ -3316,12 +3316,6 @@ footer {
   filter: saturate(180%) drop-shadow(0.05rem 0.05rem 1rem #ffffff);
 }
 
-#game-page #Game .Room1 #Objects #Ramdam {
-  top: 4%;
-  left: 34%;
-  width: 20%;
-}
-
 #game-page #Game .Room1 #Objects #Cassettes {
   left: 40%;
   bottom: 4%;
@@ -3351,12 +3345,18 @@ footer {
   bottom: 14%;
 }
 
-#game-page #Game .Room1 #Decors #Poster {
+#game-page #Game .Room1 #Objects #Poster {
   left: -0.9%;
   top: 11%;
   transform: perspective(50vw) rotate3d(0, 1, 0, 60deg);
   width: 10%;
   z-index: 1;
+}
+
+#game-page #Game .Room1 #Decors #Ramdam {
+  top: 4%;
+  left: 34%;
+  width: 20%;
 }
 
 #game-page #Game .Room1 #Decors #Led {
@@ -3817,6 +3817,18 @@ footer {
 #jukebok_modal {
   background-color: #ffffff;
   border: 1px solid #d738c1;
+}
+
+#jukebok_modal .img-magnifier-container {
+  position: relative;
+}
+
+#jukebok_modal .img-magnifier-glass {
+  position: absolute;
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(20, 20, 20, 0.25), inset 0 0 40px 2px rgba(20, 20, 20, 0.25);
+  border-radius: 4%;
+  width: 30%;
+  height: 30%;
 }
 
 /*--------  Responsive --------*/

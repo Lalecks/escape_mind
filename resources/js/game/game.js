@@ -5,6 +5,7 @@
  */
 
 import displayCinematic from "./cinematic";
+import zoom from "./components/zoom";
 import updateGame from "./room_creation";
 import toggleVideoPlayer from "./video_player";
 

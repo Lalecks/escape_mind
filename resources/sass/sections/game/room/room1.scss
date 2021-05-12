@@ -24,12 +24,6 @@
         }
 
         #Objects {
-            #Ramdam {
-                top: 4%;
-                left: 34%;
-                width: 20%;
-            }
-
             #Cassettes {
                 left: 40%;
                 bottom: 4%;
@@ -60,10 +54,6 @@
                 bottom: 14%;
             }
 
-
-        }
-
-        #Decors {
             #Poster {
                 left: -0.9%;
                 top: 11%;
@@ -71,6 +61,15 @@
                 transform: perspective(50vw) rotate3d(0, 1, 0, 60deg);
                 width: 10%;
                 z-index: 1;
+            }
+
+        }
+
+        #Decors {
+            #Ramdam {
+                top: 4%;
+                left: 34%;
+                width: 20%;
             }
 
             #Led {

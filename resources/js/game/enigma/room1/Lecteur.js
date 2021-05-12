@@ -13,7 +13,7 @@ export default function Lecteur() {
     let bg = document.createElement("img");
     bg.id = "Radio_bg";
     bg.src = html.src;
-    bg.useMap = "#controls"
+    
 
     enigma.appendChild(bg);
 
