@@ -18,7 +18,7 @@ import Pile from "../game/enigma/room1/Pile";
 import Lecteur from "../game/enigma/room1/Lecteur";
 import Jukebox from "../game/enigma/room1/Jukebox";
 import Coffre from "../game/enigma/room1/Coffre";
-import zoom from "../game/components/zoom";
+import zoom from "../game/components/magnifier";
 
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");

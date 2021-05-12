@@ -3,10 +3,10 @@
  *  Magnifier
  *
  * */
-
-export default function zoom() {
+ 
+ export default function zoom() {
     /*Size is  set in pixels... supports being written as: '250px' */
-    var magnifierSize = 25;
+    var magnifierSize = 250;
 
     /*How many times magnification of image on page.*/
     var magnification = 4;
@@ -40,14 +40,15 @@ export default function zoom() {
                 var image = $(this);
 
                 if (magnifierSize == undefined) {
-                    magnifierSize = '100%';
+                    magnifierSize = '100px';
+                    console
                 }
 
                 $('.magnify').css({
-                    'background-size': width * magnification + '% ' + height * magnification + "%",
+                    'background-size': width * magnification + 'px ' + height * magnification + "px",
                     'background-image': 'url("' + src + '")',
-                    'width': magnifierSize + "%",
-                    'height': magnifierSize + "%",
+                    'width': magnifierSize +"px",
+                    'height': magnifierSize +"px",
                 });
 
                 //Setting a few more...
@@ -59,7 +60,7 @@ export default function zoom() {
                     if (e.pageX < +(imagePos.left - magnifyOffset / 6) || e.pageX > +(rightSide + magnifyOffset / 6) || e.pageY < +(imagePos.top - magnifyOffset / 6) || e.pageY > +(bottomSide + magnifyOffset / 6)) {
                         $('.magnify').hide();
                         $(document).unbind('mousemove');
-                        // console.log('sorti');
+                        console.log('sorti');
                     }
                     var backgroundPos = "" - ((e.pageX - imagePos.left) * magnification - magnifyOffset) + "px " + -((e.pageY - imagePos.top) * magnification - magnifyOffset) + "px";
                     $('.magnify').css({
