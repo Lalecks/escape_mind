@@ -4,8 +4,12 @@
  *
  * */
 
-import { invJoueur} from "../game/enigma/inventory";
-import { actualRoom } from "../game/room_creation";
+import {
+    invJoueur
+} from "../game/enigma/inventory";
+import {
+    actualRoom
+} from "../game/room_creation";
 
 import Radio from "../game/enigma/room1/Radio";
 import Cassettes from "../game/enigma/room1/Cassettes";
@@ -43,6 +47,7 @@ export default function createModal() {
             function close(event) {
                 if (event.target === modal && isDisplayed) {
                     isDisplayed = false;
+                    $('.magnify').hide();
                     toggleModalCustom("", "");
                 }
             }
@@ -53,6 +58,7 @@ export default function createModal() {
                 function close() {
                     if (isDisplayed) {
                         isDisplayed = false;
+                        $('.magnify').hide();
                         toggleModalCustom("", "");
                     }
                 }
@@ -77,7 +83,7 @@ function toggleModalCustom(titre, description) {
             let titre_html = document.createElement("span");
             titre_html.innerText = titre;
             titre_html.id = "titre_modal";
-
+            
             /* Description de l'objet */
             let desc_html = document.createElement("span");
             desc_html.innerText = description;
@@ -127,7 +133,19 @@ function toggleModalCustom(titre, description) {
         } else {
             clearAll();
         }
-        zoom();
+
+        /* LOUPE/Magnifier */
+        $('a#button').click(function () {
+            $(this).toggleClass("off");
+        });
+
+        if (($("img").hasClass("magnifiedImg") == true) && ($("span").hasClass("") == true)) {
+            zoom();
+        } else {
+            $('.magnify').remove();
+            // document.getElementById('souris').style.display = "";
+        }
+
     } else {
         // HOMEPAGE
         if (modal.classList.toggle("show-modal")) {
@@ -139,7 +157,6 @@ function toggleModalCustom(titre, description) {
         }
     }
 }
-
 
 function clearAll() {
     try {

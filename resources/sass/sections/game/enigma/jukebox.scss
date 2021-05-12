@@ -2,15 +2,7 @@
     background-color: $white;
     border: 1px solid $pink;
 
-    .img-magnifier-container {
-        position: relative;
-    }
-
-    .img-magnifier-glass {
-        position: absolute;
-        box-shadow: 0 0 07px rgba(255, 255, 255, .85), 0 0 7px 7px rgba(20, 20, 20, .25), inset 0 0 40px 2px rgba(20, 20, 20, .25);
-        border-radius: 4%;
-        width: 30%;
-        height: 30%;
+    img {
+        pointer-events: auto !important;
     }
 }

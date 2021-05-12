@@ -90,7 +90,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<div id="Game" class="Game">
 			<div id="ObjectInfo">
 				<div class="modal glass-effect hoverable">
