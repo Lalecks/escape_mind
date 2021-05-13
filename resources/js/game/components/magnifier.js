@@ -70,7 +70,7 @@ export default function magnifier() {
                 }
 
                 $(document).mousemove(followMouse);
-                $(document).touchmove(followMouse);
+                document.addEventListener("touchmove",followMouse);
             }, function () {
 
             });
