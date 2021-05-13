@@ -82,13 +82,6 @@
         .circle-yellow {
             width: 20rem;
             height: 20rem;
-            border: 1rem solid linear-gradient($yellow-degraded); 
-			// Glassmorphism
-            background-image: -webkit-linear-gradient($yellow-degraded);
-            background-image: -moz-linear-gradient($yellow-degraded);
-            background-image: -o-linear-gradient($yellow-degraded);
-            background-image: linear-gradient($yellow-degraded);
-			// Fin
             position: absolute;
             bottom: 5%;
             -webkit-transform: translateY(5%);

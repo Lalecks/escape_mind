@@ -5,7 +5,6 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        display: none;
         position: fixed;
         z-index: 3;
         top: 2%;
@@ -13,7 +12,7 @@
         font-size: 4vh;
     }
 
-    .menu {
+    nav {
         position: fixed;
         z-index: 2;
         width: 38%;
@@ -122,11 +121,11 @@
         background: blue;
     }
 
-    div.burger {
+    span.burger {
         display: block;
     }
 
-    nav.menu {
+    nav.settings-menu  {
         height: 88vh;
         -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
@@ -136,7 +135,7 @@
         transition: all 0.3s ease-in-out;
     }
 
-    nav.menu.is-open {
+    nav.settings-menu .is-open {
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
         transform: translateX(0);
@@ -148,7 +147,7 @@
 }
 
 @-moz-document url-prefix() {
-    .menu {
+    .settings-menu  {
         background: rgba(38, 37, 37, 0.73);
     }
 

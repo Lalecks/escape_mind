@@ -16,7 +16,7 @@ export default function Jukebox() {
 
     no_enigma.appendChild(bg);
 
-    document.getElementById('desc_modal').innerHTML = '<a id="button" class="fas fa-search hoverable"></a>' + document.getElementById('desc_modal').innerHTML;
+    document.getElementById('desc_modal').innerHTML = '<a id="button" class="fas fa-search hoverable glass-effect"></a>' + document.getElementById('desc_modal').innerHTML;
 
     return no_enigma;
 }

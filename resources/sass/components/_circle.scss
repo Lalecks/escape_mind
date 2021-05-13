@@ -4,22 +4,34 @@
     perspective-origin: 50% 50%;
 }
 
+.circle-yellow {
+    border: .1rem solid #fffb0063;
+    // Glassmorphism
+    background-image: -webkit-linear-gradient($yellow-degraded);
+    background-image: -moz-linear-gradient($yellow-degraded);
+    background-image: -o-linear-gradient($yellow-degraded);
+    background-image: linear-gradient($yellow-degraded);
+}
+
 .circle-full-cyan_blue {
     position: absolute;
     width: 16.2rem;
     height: 16.2rem;
-    border: 1rem solid $cyan_blue-degraded;
-    background: $cyan_blue-degraded;
+    border: .1rem solid #829fff;
     right: -6%;
+    // Glassmorphism
+    background-image: -webkit-linear-gradient($cyan_blue-degraded);
+    background-image: -moz-linear-gradient($cyan_blue-degraded);
+    background-image: -o-linear-gradient($cyan_blue-degraded);
+    background-image: linear-gradient($cyan_blue-degraded);
 }
+
 .circle-border-cyan_blue {
     position: absolute;
     width: 16.2rem;
     height: 16.2rem;
-    // border: 1rem solid;
-    border-image: $cyan_blue-degraded 30;
+    // border-image: $yellow 30;
     right: -6%;
-    // background-color: red;
 }
 
 

@@ -1626,21 +1626,24 @@ h2 {
   perspective-origin: 50% 50%;
 }
 
+.circle-yellow {
+  border: 0.1rem solid #fffb0063;
+  background-image: linear-gradient(298.05deg, rgba(249, 254, 26, 0.296) 4.34%, rgba(231, 236, 0, 0.185) 93.57%);
+}
+
 .circle-full-cyan_blue {
   position: absolute;
   width: 16.2rem;
   height: 16.2rem;
-  border: 1rem solid 298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57%;
-  background: 298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57%;
+  border: 0.1rem solid #829fff;
   right: -6%;
+  background-image: linear-gradient(298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57%);
 }
 
 .circle-border-cyan_blue {
   position: absolute;
   width: 16.2rem;
   height: 16.2rem;
-  -o-border-image: 298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57% 30;
-     border-image: 298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57% 30;
   right: -6%;
 }
 
@@ -2083,8 +2086,6 @@ footer {
 #story .story-illustration .circle-yellow {
   width: 20rem;
   height: 20rem;
-  border: 1rem solid linear-gradient(298.05deg, rgba(249, 254, 26, 0.296) 4.34%, rgba(231, 236, 0, 0.185) 93.57%);
-  background-image: linear-gradient(298.05deg, rgba(249, 254, 26, 0.296) 4.34%, rgba(231, 236, 0, 0.185) 93.57%);
   position: absolute;
   bottom: 5%;
   transform: translateY(5%);
@@ -2108,7 +2109,7 @@ footer {
 }
 
 #rank ::-webkit-scrollbar-track {
-  background-color: 298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%;
+  background-color: #ffffff;
 }
 
 #rank ::-webkit-scrollbar-thumb {
@@ -2819,7 +2820,6 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: none;
   position: fixed;
   z-index: 3;
   top: 2%;
@@ -2827,7 +2827,7 @@ footer {
   font-size: 4vh;
 }
 
-#settings-panel .menu {
+#settings-panel nav {
   position: fixed;
   z-index: 2;
   width: 38%;
@@ -2841,24 +2841,24 @@ footer {
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 
-#settings-panel .menu div {
+#settings-panel nav div {
   padding: 5%;
 }
 
-#settings-panel .menu #filter {
+#settings-panel nav #filter {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   flex-basis: 10%;
 }
 
-#settings-panel .menu #filter span {
+#settings-panel nav #filter span {
   width: 100%;
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
-#settings-panel .menu #filter span:hover {
+#settings-panel nav #filter span:hover {
   background: -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -2866,23 +2866,23 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-#settings-panel .menu #filter span.active {
+#settings-panel nav #filter span.active {
   border-radius: 0.5rem;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 
-#settings-panel .menu #filter span.active i {
+#settings-panel nav #filter span.active i {
   padding: 1%;
 }
 
-#settings-panel .menu #tabs {
+#settings-panel nav #tabs {
   flex-basis: 90%;
   margin: 4% 2.5%;
   border-radius: 0.5rem;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 
-#settings-panel .menu #tabs .tabcontent hr {
+#settings-panel nav #tabs .tabcontent hr {
   margin: 2rem 0;
 }
 
@@ -2914,17 +2914,17 @@ footer {
   background: blue;
 }
 
-#settings-panel div.burger {
+#settings-panel span.burger {
   display: block;
 }
 
-#settings-panel nav.menu {
+#settings-panel nav.settings-menu {
   height: 88vh;
   transform: translateX(100%);
   transition: all 0.3s ease-in-out;
 }
 
-#settings-panel nav.menu.is-open {
+#settings-panel nav.settings-menu .is-open {
   transform: translateX(0);
 }
 
@@ -2933,7 +2933,7 @@ footer {
 }
 
 @-moz-document url-prefix()  {
-  .menu {
+  .settings-menu {
     background: rgba(38, 37, 37, 0.73);
   }
 
@@ -2943,7 +2943,7 @@ footer {
   }
 }
 
-.magnify {
+#Activity .magnify {
   position: absolute;
   z-index: 20;
   background-repeat: no-repeat;
@@ -2951,7 +2951,7 @@ footer {
   display: none;
 }
 
-.fa-search {
+#Activity .fa-search {
   position: absolute;
   left: 7%;
   top: 8%;
@@ -2960,21 +2960,19 @@ footer {
   border-radius: 23%;
   background: rgba(189, 16, 224, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.fa-search:hover {
+#Activity .fa-search:hover {
   color: #d738c1;
 }
 
-.off {
+#Activity .off {
   color: #ffffff3d;
 }
 
-.off:hover {
+#Activity .off:hover {
   color: #AC00FF;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
@@ -3141,12 +3139,10 @@ footer {
   right: 6%;
   top: 5%;
   width: 10%;
-  transition: 0.5 all ease-in-out;
   transform: perspective(25vh) rotateY(-22deg);
 }
 
 #game-page #Game .Room2 #Objects #Poster_Robot:hover {
-  transition: 0.5 all ease-in-out;
   filter: drop-shadow(1vh 1vh 3vh #000000), sepia(60%) drop-shadow(0.03rem 0.03rem 0.03rem #000000);
 }
 

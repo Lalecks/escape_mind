@@ -75,19 +75,11 @@
                 right: 6%;
                 top: 5%;
                 width: 10%;
-                // Transition 
-                -webkit-transition: .5 all ease-in-out;
-                -o-transition: .5 all ease-in-out;
-                transition: .5 all ease-in-out;
                 // Perspective
                 -webkit-transform: perspective(25vh) rotateY(-22deg);
                 transform: perspective(25vh) rotateY(-22deg);
 
                 &:hover {
-                    // Transition 
-                    -webkit-transition: .5 all ease-in-out;
-                    -o-transition: .5 all ease-in-out;
-                    transition: .5 all ease-in-out;
                     // Filtre
                     -webkit-filter: drop-shadow(1vh 1vh 3vh $black), sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
                     filter: drop-shadow(1vh 1vh 3vh $black), sepia(60%) drop-shadow(.03rem .03rem .03rem $black);

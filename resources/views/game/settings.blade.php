@@ -1,6 +1,6 @@
 <menu id="settings-panel">
-    <div class="burger hoverable fas fa-cog"></div>
-    <nav class="menu glass-effect">			
+    <span class="burger hoverable fas fa-cog"></span>
+    <nav class="settings-menu glass-effect">			
         <div id="filter">
             <span class="tablinks active" onclick="openSetting(event,'Story')"><i class="fas fa-book-open"></i></span>
             <span class="tablinks" onclick="openSetting(event,'Sound')"><i class="fas fa-music"></i></span>
