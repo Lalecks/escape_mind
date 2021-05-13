@@ -2385,6 +2385,7 @@ footer {
 
 #game-page {
   position: relative;
+  font-size: 2vw !important;
 }
 
 #game-page header {
@@ -2535,409 +2536,25 @@ footer {
   }
 }
 
-/* Glitch */
+/* Remplissage de la couleur des titre_modal */
 
-/*Keyframes*/
-
-@-webkit-keyframes glitch1 {
-  0% {
-    transform: none;
-    opacity: 1;
-  }
-
-  7% {
-    transform: skew(-0.5deg, -0.9deg);
-    opacity: 0.75;
-  }
-
-  10% {
-    transform: none;
-    opacity: 1;
-  }
-
-  27% {
-    transform: none;
-    opacity: 1;
-  }
-
-  30% {
-    transform: skew(0.8deg, -0.1deg);
-    opacity: 0.75;
-  }
-
-  35% {
-    transform: none;
-    opacity: 1;
-  }
-
-  52% {
-    transform: none;
-    opacity: 1;
-  }
-
-  55% {
-    transform: skew(-1deg, 0.2deg);
-    opacity: 0.75;
+@-webkit-keyframes raf {
+  0%, 100% {
+    color: #ffffff3d;
   }
 
   50% {
-    transform: none;
-    opacity: 1;
-  }
-
-  72% {
-    transform: none;
-    opacity: 1;
-  }
-
-  75% {
-    transform: skew(0.4deg, 1deg);
-    opacity: 0.75;
-  }
-
-  80% {
-    transform: none;
-    opacity: 1;
-  }
-
-  100% {
-    transform: none;
-    opacity: 1;
+    color: #ffffff75;
   }
 }
 
-@keyframes glitch1 {
-  0% {
-    transform: none;
-    opacity: 1;
-  }
-
-  7% {
-    transform: skew(-0.5deg, -0.9deg);
-    opacity: 0.75;
-  }
-
-  10% {
-    transform: none;
-    opacity: 1;
-  }
-
-  27% {
-    transform: none;
-    opacity: 1;
-  }
-
-  30% {
-    transform: skew(0.8deg, -0.1deg);
-    opacity: 0.75;
-  }
-
-  35% {
-    transform: none;
-    opacity: 1;
-  }
-
-  52% {
-    transform: none;
-    opacity: 1;
-  }
-
-  55% {
-    transform: skew(-1deg, 0.2deg);
-    opacity: 0.75;
+@keyframes raf {
+  0%, 100% {
+    color: #ffffff3d;
   }
 
   50% {
-    transform: none;
-    opacity: 1;
-  }
-
-  72% {
-    transform: none;
-    opacity: 1;
-  }
-
-  75% {
-    transform: skew(0.4deg, 1deg);
-    opacity: 0.75;
-  }
-
-  80% {
-    transform: none;
-    opacity: 1;
-  }
-
-  100% {
-    transform: none;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes glitch2 {
-  0% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  7% {
-    transform: translate(-2px, -3px);
-    opacity: 0.5;
-  }
-
-  10% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  27% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  30% {
-    transform: translate(-5px, -2px);
-    opacity: 0.5;
-  }
-
-  35% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  52% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  55% {
-    transform: translate(-5px, -1px);
-    opacity: 0.5;
-  }
-
-  50% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  72% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  75% {
-    transform: translate(-2px, -6px);
-    opacity: 0.5;
-  }
-
-  80% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  100% {
-    transform: none;
-    opacity: 0.25;
-  }
-}
-
-@keyframes glitch2 {
-  0% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  7% {
-    transform: translate(-2px, -3px);
-    opacity: 0.5;
-  }
-
-  10% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  27% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  30% {
-    transform: translate(-5px, -2px);
-    opacity: 0.5;
-  }
-
-  35% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  52% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  55% {
-    transform: translate(-5px, -1px);
-    opacity: 0.5;
-  }
-
-  50% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  72% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  75% {
-    transform: translate(-2px, -6px);
-    opacity: 0.5;
-  }
-
-  80% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  100% {
-    transform: none;
-    opacity: 0.25;
-  }
-}
-
-@-webkit-keyframes glitch3 {
-  0% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  7% {
-    transform: translate(2px, 3px);
-    opacity: 0.5;
-  }
-
-  10% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  27% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  30% {
-    transform: translate(5px, 2px);
-    opacity: 0.5;
-  }
-
-  35% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  52% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  55% {
-    transform: translate(5px, 1px);
-    opacity: 0.5;
-  }
-
-  50% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  72% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  75% {
-    transform: translate(2px, 6px);
-    opacity: 0.5;
-  }
-
-  80% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  100% {
-    transform: none;
-    opacity: 0.25;
-  }
-}
-
-@keyframes glitch3 {
-  0% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  7% {
-    transform: translate(2px, 3px);
-    opacity: 0.5;
-  }
-
-  10% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  27% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  30% {
-    transform: translate(5px, 2px);
-    opacity: 0.5;
-  }
-
-  35% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  52% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  55% {
-    transform: translate(5px, 1px);
-    opacity: 0.5;
-  }
-
-  50% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  72% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  75% {
-    transform: translate(2px, 6px);
-    opacity: 0.5;
-  }
-
-  80% {
-    transform: none;
-    opacity: 0.25;
-  }
-
-  100% {
-    transform: none;
-    opacity: 0.25;
+    color: #ffffff75;
   }
 }
 
@@ -2991,10 +2608,12 @@ footer {
   font-weight: bold;
   left: 7%;
   z-index: -14;
-  font-size: 5vh;
+  font-size: 3vw;
   color: #ffffff3d;
   text-transform: uppercase;
   transform: rotate(180deg);
+  -webkit-animation: 5s raf infinite, 10s pommeray infinite;
+  animation: 5s raf infinite, 10s pommeray infinite;
 }
 
 #game-page .modal #Activity .enigme_modal {
@@ -3064,13 +2683,12 @@ footer {
 
 #game-page .modal #Inventory div .picked .item_number {
   font-family: "Audiowide", cursive;
-  font-size: 8vw !important;
+  font-size: 8vw;
   position: absolute;
   font-weight: bold;
   left: 0;
   right: 0;
   z-index: -14;
-  font-size: 6rem;
   color: #ffffff3d;
 }
 
@@ -3113,7 +2731,6 @@ footer {
 }
 
 .Cinematic #controls {
-  font-size: 2vw !important;
   visibility: hidden;
   position: fixed;
   width: 100%;
@@ -3147,7 +2764,6 @@ footer {
 
 .Cinematic #controls div #timer {
   font-family: "Audiowide", cursive;
-  font-size: 2vw !important;
   margin: 2%;
   font-weight: bold;
   text-align: right;
@@ -3260,10 +2876,6 @@ footer {
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 
-#settings-panel .menu #tabs .tabcontent p {
-  font-size: 2vw;
-}
-
 #settings-panel .menu #tabs .tabcontent hr {
   margin: 2rem 0;
 }
@@ -3308,22 +2920,29 @@ footer {
 .fa-search {
   position: absolute;
   left: 7%;
-  font-size: 168%;
   top: 8%;
-  color: #ffffff3d;
+  color: #ffffff;
+  padding: 1%;
+  border-radius: 23%;
+  background: rgba(189, 16, 224, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .fa-search:hover {
   color: #d738c1;
-  font-size: 198%;
 }
 
 .off {
-  color: #ffffff;
+  color: #ffffff3d;
 }
 
 .off:hover {
   color: #AC00FF;
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 
 #game-page #Game #ObjectInfo .modal #Cassettes_bg {

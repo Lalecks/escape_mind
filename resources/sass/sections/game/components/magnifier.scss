@@ -9,20 +9,31 @@
 .fa-search {
     position: absolute;
     left: 7%;
-    font-size: 168%;
     top: 8%;
-    color: #ffffff3d;
+    color: $white;
+    padding: 1%;
+    border-radius: 23%;
+    // Glassmorphism
+    background: rgba(189, 16, 224, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 
     &:hover {
         color: $pink;
-        font-size: 198%;
     }
 }
 
 .off {
-    color: $white;
+    color: #ffffff3d;
 
     &:hover {
         color: $purple;
+        background-image: -webkit-linear-gradient($black-degraded);
+        background-image: -moz-linear-gradient($black-degraded);
+        background-image: -o-linear-gradient($black-degraded);
+        background-image: linear-gradient($black-degraded);
     }
 }
