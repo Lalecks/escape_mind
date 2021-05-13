@@ -55,7 +55,7 @@ export default function magnifier() {
                 var rightSide = +(imagePos.left + $(this).width());
                 var bottomSide = +(imagePos.top + $(this).height());
 
-                $(document).mousemove(function (e) {
+                function followMouse(e) {
                     if (e.pageX < +(imagePos.left - magnifyOffset / 6) || e.pageX > +(rightSide + magnifyOffset / 6) || e.pageY < +(imagePos.top - magnifyOffset / 6) || e.pageY > +(bottomSide + magnifyOffset / 6)) {
                         $('.magnify').hide();
                         $(document).unbind('mousemove');
@@ -67,7 +67,10 @@ export default function magnifier() {
                         'top': e.pageY - magnifyOffset,
                         'background-position': backgroundPos
                     });
-                });
+                }
+
+                $(document).mousemove(followMouse);
+                $(document).touchmove(followMouse);
             }, function () {
 
             });
