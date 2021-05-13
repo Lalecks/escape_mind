@@ -131,19 +131,19 @@ function toggleModalCustom(titre, description) {
             }
 
             /* LOUPE/Magnifier */
+            try {
+                let loupe = document.getElementById("button");
 
-            let loupe = document.getElementById("button");
-
-            function zoom() {
-                if (loupe.classList.toggle("off")) {
-                    magnifier();
-                    $('body').prepend('<div class="magnify"></div>');
-                } else {
-                    document.querySelectorAll(".magnify").forEach(n => n.remove());
+                function zoom() {
+                    if (loupe.classList.toggle("off")) {
+                        magnifier();
+                        $('body').prepend('<div class="magnify"></div>');
+                    } else {
+                        document.querySelectorAll(".magnify").forEach(n => n.remove());
+                    }
                 }
-            }
-            loupe.addEventListener("click", zoom, false);
-
+                loupe.addEventListener("click", zoom, false);
+            } catch (e) {}
         } else {
             clearAll();
         }

@@ -6,7 +6,7 @@
 
 export default function magnifier() {
     /*Size is  set in pixels... supports being written as: '250px' */
-    var magnifierSize = 10;
+    var magnifierSize = 25;
 
     /*How many times magnification of image on page.*/
     var magnification = 4;

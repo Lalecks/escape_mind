@@ -25,15 +25,17 @@
 @media only screen and (min-width: 1500px) {
     #lecteur_modal {
         height: 83% !important;
+
+        #buttons {
+            width: 60%;
+            left: 10.5;
+            height: 64%;
+        }
     }
 
     #modal_radio div {
-        left: 17.87%;
-        top: 28.37%;
-        width: 64.6%;
-
-        #radio_slider {
-            left: -1.13%;
-        }
+        left: 19.87%;
+        top: 29.37%;
+        width: 66.6%;
     }
 }

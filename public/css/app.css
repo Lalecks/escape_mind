@@ -4200,14 +4200,16 @@ footer {
     height: 83% !important;
   }
 
-  #modal_radio div {
-    left: 17.87%;
-    top: 28.37%;
-    width: 64.6%;
+  #lecteur_modal #buttons {
+    width: 60%;
+    left: 10.5;
+    height: 64%;
   }
 
-  #modal_radio div #radio_slider {
-    left: -1.13%;
+  #modal_radio div {
+    left: 19.87%;
+    top: 29.37%;
+    width: 66.6%;
   }
 }
 
