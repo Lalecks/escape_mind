@@ -62,7 +62,7 @@ export default function magnifier() {
 
                     if (curentX < +(imagePos.left - magnifyOffset / 6) || curentX > +(rightSide + magnifyOffset / 6) || curentY < +(imagePos.top - magnifyOffset / 6) || curentY > +(bottomSide + magnifyOffset / 6)) {
                         $('.magnify').hide();
-                        //$(document).unbind('mousemove');
+                        $(document).unbind('mousemove');
                         console.log("-!- magnifier poo");
                     }
                     var backgroundPos = "" - ((curentX - imagePos.left) * magnification - magnifyOffset) + "px " + -((curentY - imagePos.top) * magnification - magnifyOffset) + "px";
