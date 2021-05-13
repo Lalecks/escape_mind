@@ -23,15 +23,15 @@ export default function settings() {
     });
 
     /* Fermer le settings-menu des paramètres si vous cliquez en dehors de la DIV */
-    let menu = document.querySelector('.settings-menu')
-    let engrenage = document.querySelector(".fas");
-    let game = document.getElementById("Game");
+    // let menu = document.querySelector('.settings-menu')
+    // let engrenage = document.querySelector(".fas");
+    // let game = document.getElementById("Game");
 
-    window.addEventListener('click', function (e) {
-        if (document.querySelector(".is-open") && e.target === game) {
-            menu.removeClass('is-open');
-            $('.burger').removeClass('burger-open');
-        }
-    })
-    
+    // window.addEventListener('click', function (e) {
+    //     if (document.querySelector(".is-open") && e.target === game) {
+    //         menu.removeClass('is-open');
+    //         $('.burger').removeClass('burger-open');
+    //     }
+    // })
+
 }

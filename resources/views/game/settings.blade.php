@@ -6,7 +6,6 @@
 			<span class="tablinks" onclick="openSetting(event,'Sound')"><i class="fas fa-music"></i></span>
 			{{-- <span class="tablinks" onclick="openSetting(event,'Languages')"><i class="fas fa-globe-europe"></i></span> --}}
 			<span class="tablinks" onclick="openSetting(event,'Info')"><i class="fas fa-info"></i></span>
-			{{-- <span class="tablinks" onclick="openSetting(event,'Deconnexion')"><i class="fas fa-sign-out-alt"></i></span> --}}
 		</div>
 
 		<div id="tabs" class="glass-effect">
@@ -39,17 +38,10 @@
 
 			<div id="Info" class="tabcontent">
 				<h2>Information</h2>
-				<a href="mailto:contact.escapemind@gmail.com" class="link hoverable"><i class="fas fa-check-double"></i> Un problème ? Contactez-nous sur contact.escapemind@gmail.com</a>
-                
+				<a href="mailto:contact.escapemind@gmail.com" class="link hoverable"><i class="fas fa-check-double"></i> Un problème ? Contactez‑nous sur <span>contact.escapemind@gmail.com</span></a>
 				<a href="{{asset('/legal_notice')}}" class="link hoverable"><i class="fas fa-bug"></i> Informations légales</a>
-
                 <a  href="{{asset('/')}}" class="link hoverable"><i class="fas fa-sign-out-alt"></i> Quitter le jeu</a>
 			</div>
-
-			{{-- <div id="Deconnexion" class="tabcontent">
-				<h2>Déconnexion</h2>
-				<a  href="{{asset('/')}}" class="link hoverable">Quitter le jeu</a>
-			</div> --}}
 		</div>
 	</nav>
 </menu>

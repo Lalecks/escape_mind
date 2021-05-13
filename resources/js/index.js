@@ -21,6 +21,9 @@ if (document.getElementById("game-page")) {
     require('./layouts/detecting_mobile');
     /*-------- Game --------*/
     require('./game/game.js');
+    window.onbeforeunload = function () {
+        return "Êtes-vous sûr de vouloir quitter cette page ?";
+    };
 }
 // Avant custom_packages.js pour fonctionner
 require('./layouts/mouse');
