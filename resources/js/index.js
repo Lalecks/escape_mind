@@ -26,10 +26,6 @@ if (document.getElementById("game-page")) {
 /*-------- Game --------*/
 if (document.getElementById("game-page")) {
     require('./game/game.js');
-    /* Room functionnment */
-    /* Cinematics */
-    require('./game/video_player');
-    /* Components */
     require('./game/components/settings');
 }
 // Avant custom_packages.js pour fonctionner

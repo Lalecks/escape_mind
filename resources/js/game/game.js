@@ -20,10 +20,10 @@ $(document).ready(function () {
     let room_done = 5;
 
     let cinematic = displayCinematic();
-    // cinematic.addEventListener('ended', function () {
+    cinematic.addEventListener('ended', function () {
         updateGame();
-    //     toggleVideoPlayer();
-    // });
+        toggleVideoPlayer();
+    });
 
     function isRoomDone() {
         if (avancement !== room_done) {

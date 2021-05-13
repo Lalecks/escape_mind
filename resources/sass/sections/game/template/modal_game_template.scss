@@ -21,10 +21,11 @@
             background-image: -o-linear-gradient($black-degraded);
             background-image: linear-gradient($black-degraded);
 
-            .close-button {
+            .close-btn {
                 width: 3%;
                 height: 10%;
                 font-size: 4vw;
+                margin-bottom: 1%;
             }
 
             img {

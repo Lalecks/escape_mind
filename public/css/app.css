@@ -2957,10 +2957,11 @@ footer {
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 
-#game-page .modal .modal-content .close-button {
+#game-page .modal .modal-content .close-btn {
   width: 3%;
   height: 10%;
   font-size: 4vw;
+  margin-bottom: 1%;
 }
 
 #game-page .modal .modal-content img {
@@ -3304,8 +3305,25 @@ footer {
   display: none;
 }
 
-.off {
+.fa-search {
+  position: absolute;
+  left: 7%;
+  font-size: 168%;
+  top: 8%;
   color: #ffffff3d;
+}
+
+.fa-search:hover {
+  color: #d738c1;
+  font-size: 198%;
+}
+
+.off {
+  color: #ffffff;
+}
+
+.off:hover {
+  color: #AC00FF;
 }
 
 #game-page #Game #ObjectInfo .modal #Cassettes_bg {
@@ -3789,7 +3807,7 @@ footer {
   display: block;
 }
 
-#div_buttons {
+#lecteur_modal #div_buttons {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -3798,7 +3816,7 @@ footer {
   height: 67%;
 }
 
-#div_buttons .Lecteur_button {
+#lecteur_modal #div_buttons .Lecteur_button {
   background: transparent;
   color: #000000;
   height: 100%;
@@ -3812,7 +3830,7 @@ footer {
   -moz-transition: all 200ms ease-in;
 }
 
-#div_buttons .Lecteur_button:hover {
+#lecteur_modal #div_buttons .Lecteur_button:hover {
   background-color: #67009b;
   opacity: 0.8;
   filter: brightness(120%) drop-shadow(0.05rem 0.05rem 0.5rem #67009b);
@@ -4169,6 +4187,27 @@ footer {
   #game-page .modal .modal-content {
     width: 50%;
     height: 23vw;
+  }
+
+  .magnify {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #lecteur_modal {
+    height: 83% !important;
+  }
+
+  #modal_radio div {
+    left: 17.87%;
+    top: 28.37%;
+    width: 64.6%;
+  }
+
+  #modal_radio div #radio_slider {
+    left: -1.13%;
   }
 }
 

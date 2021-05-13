@@ -6,6 +6,23 @@
     display: none;
 }
 
-.off {
+.fa-search {
+    position: absolute;
+    left: 7%;
+    font-size: 168%;
+    top: 8%;
     color: #ffffff3d;
+
+    &:hover {
+        color: $pink;
+        font-size: 198%;
+    }
+}
+
+.off {
+    color: $white;
+
+    &:hover {
+        color: $purple;
+    }
 }

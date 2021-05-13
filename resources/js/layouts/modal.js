@@ -18,11 +18,11 @@ import Pile from "../game/enigma/room1/Pile";
 import Lecteur from "../game/enigma/room1/Lecteur";
 import Jukebox from "../game/enigma/room1/Jukebox";
 import Coffre from "../game/enigma/room1/Coffre";
-import zoom from "../game/components/magnifier";
+import magnifier from "../game/components/magnifier";
 
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");
-let closeButton = document.querySelector(".close-button");
+let closeButton = document.querySelector(".close-btn");
 let activity = document.querySelector("#Activity");
 let inventory = document.querySelector("#Inventory");
 let isDisplayed = false;
@@ -47,7 +47,6 @@ export default function createModal() {
             function close(event) {
                 if (event.target === modal && isDisplayed) {
                     isDisplayed = false;
-                    $('.magnify').hide();
                     toggleModalCustom("", "");
                 }
             }
@@ -58,7 +57,6 @@ export default function createModal() {
                 function close() {
                     if (isDisplayed) {
                         isDisplayed = false;
-                        $('.magnify').hide();
                         toggleModalCustom("", "");
                     }
                 }
@@ -67,6 +65,7 @@ export default function createModal() {
             isInit = true;
         }
     }
+
 }
 
 
@@ -83,7 +82,7 @@ function toggleModalCustom(titre, description) {
             let titre_html = document.createElement("span");
             titre_html.innerText = titre;
             titre_html.id = "titre_modal";
-            
+
             /* Description de l'objet */
             let desc_html = document.createElement("span");
             desc_html.innerText = description;
@@ -130,20 +129,23 @@ function toggleModalCustom(titre, description) {
                 default:
                     activity.appendChild(Defaut(titre));
             }
+
+            /* LOUPE/Magnifier */
+
+            let loupe = document.getElementById("button");
+
+            function zoom() {
+                if (loupe.classList.toggle("off")) {
+                    magnifier();
+                    $('body').prepend('<div class="magnify"></div>');
+                } else {
+                    document.querySelectorAll(".magnify").forEach(n => n.remove());
+                }
+            }
+            loupe.addEventListener("click", zoom, false);
+
         } else {
             clearAll();
-        }
-
-        /* LOUPE/Magnifier */
-        $('a#button').click(function () {
-            $(this).toggleClass("off");
-        });
-
-        if (($("img").hasClass("magnifiedImg") == true) && ($("span").hasClass("") == true)) {
-            zoom();
-        } else {
-            $('.magnify').remove();
-            // document.getElementById('souris').style.display = "";
         }
 
     } else {
@@ -164,6 +166,7 @@ function clearAll() {
         activity.removeChild(document.getElementById("desc_modal"));
         activity.removeChild(document.querySelector(".enigme_modal"));
         inventory.querySelectorAll("*").forEach(n => n.remove());
+        document.querySelectorAll(".magnify").forEach(n => n.remove());
     } catch (e) {}
 }
 
