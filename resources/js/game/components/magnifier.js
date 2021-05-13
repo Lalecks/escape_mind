@@ -56,15 +56,18 @@ export default function magnifier() {
                 var bottomSide = +(imagePos.top + $(this).height());
 
                 function followMouse(e) {
-                    if (e.pageX < +(imagePos.left - magnifyOffset / 6) || e.pageX > +(rightSide + magnifyOffset / 6) || e.pageY < +(imagePos.top - magnifyOffset / 6) || e.pageY > +(bottomSide + magnifyOffset / 6)) {
+let curentY = e.originalEvent.touches ? e.originalEvent.touches[0].pageY : e.pageY;
+let curentX = e.originalEvent.touches ? e.originalEvent.touches[0].pageX : e.pageX;
+
+                    if (curentX < +(imagePos.left - magnifyOffset / 6) || curentX > +(rightSide + magnifyOffset / 6) || curentY < +(imagePos.top - magnifyOffset / 6) || curentY > +(bottomSide + magnifyOffset / 6)) {
                         $('.magnify').hide();
                         $(document).unbind('mousemove');
                         console.log("-!- magnifier poo");
                     }
-                    var backgroundPos = "" - ((e.pageX - imagePos.left) * magnification - magnifyOffset) + "px " + -((e.pageY - imagePos.top) * magnification - magnifyOffset) + "px";
+                    var backgroundPos = "" - ((curentX - imagePos.left) * magnification - magnifyOffset) + "px " + -((curentY - imagePos.top) * magnification - magnifyOffset) + "px";
                     $('.magnify').css({
-                        'left': e.pageX - magnifyOffset,
-                        'top': e.pageY - magnifyOffset,
+                        'left': curentX - magnifyOffset,
+                        'top': curentY - magnifyOffset,
                         'background-position': backgroundPos
                     });
                 }
