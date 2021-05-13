@@ -5,6 +5,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        display: none;
         position: fixed;
         z-index: 3;
         top: 2%;
@@ -12,7 +13,7 @@
         font-size: 4vh;
     }
 
-    nav {
+    .settings-menu {
         position: fixed;
         z-index: 2;
         width: 38%;
@@ -73,59 +74,82 @@
             flex-basis: 90%;
             margin: 4% 2.5%;
             border-radius: 0.5rem;
+            overflow: scroll;
             // Glassmorphism
             background-image: -o-linear-gradient($black-degraded);
             background-image: -o-linear-gradient($black-degraded);
             background-image: linear-gradient($black-degraded);
 
             .tabcontent {
-                hr {
-                    margin: 2rem 0;
+                h2 {
+                    padding-bottom: 5%;
+                    border-bottom: .4vh $white solid;
+                    margin-bottom: 9%;
+                }
+
+                div div {
+                    padding: 5%;
+                }
+
+                div {
+                    margin: 11% 0;
                 }
             }
-
-
         }
     }
 
-    .slider {
-        -webkit-appearance: none;
-        width: 100%;
-        height: 15px;
-        border-radius: 5px;
-        outline: none;
-        opacity: 0.7;
-        -webkit-transition: .2s;
-        transition: opacity .2s;
-        // Glassmorphism
-        background-image: -o-linear-gradient($black-degraded);
-        background-image: -o-linear-gradient($black-degraded);
-        background-image: linear-gradient($black-degraded);
+    #Sound {
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 15px;
+            border-radius: 5px;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            // Glassmorphism
+            background-image: -o-linear-gradient($black-degraded);
+            background-image: -o-linear-gradient($black-degraded);
+            background-image: linear-gradient($black-degraded);
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 5vh;
+            height: 5vh;
+            border-radius: 50%;
+            background-color: $white;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                box-shadow: 0 0 0 2vh rgba(255, 255, 255, 0.15);
+                -webkit-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .slider::-moz-range-thumb {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
     }
 
-    .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background: red;
-          box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.15)
-
+    #Info a {
+        display: block;
+        margin: 11% 0;
     }
 
-    .slider::-moz-range-thumb {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: blue;
-    }
-
-    span.burger {
+    div.burger {
         display: block;
     }
 
-    nav.settings-menu  {
+    nav.settings-menu {
         height: 88vh;
         -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
@@ -135,7 +159,7 @@
         transition: all 0.3s ease-in-out;
     }
 
-    nav.settings-menu .is-open {
+    nav.settings-menu.is-open {
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
         transform: translateX(0);
@@ -147,7 +171,7 @@
 }
 
 @-moz-document url-prefix() {
-    .settings-menu  {
+    .settings-menu {
         background: rgba(38, 37, 37, 0.73);
     }
 

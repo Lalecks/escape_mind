@@ -817,7 +817,7 @@ html body {
   position: relative;
   display: table;
   width: 100%;
-  word-break: keep-all;
+  word-break: break-word;
 }
 html body ul,
 html body li {
@@ -1359,6 +1359,13 @@ h2 {
     clip: rect(0px, 450px, 0px, 0px);
   }
 }
+.link:hover {
+  padding: 3% 0;
+  border-radius: 5%;
+  filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
+  background-image: linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
+}
+
 .circle {
   border-radius: 50%;
   perspective: 75rem;
@@ -2395,13 +2402,14 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: none;
   position: fixed;
   z-index: 3;
   top: 2%;
   right: 10%;
   font-size: 4vh;
 }
-#settings-panel nav {
+#settings-panel .settings-menu {
   position: fixed;
   z-index: 2;
   width: 38%;
@@ -2414,44 +2422,53 @@ footer {
   display: flex;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
-#settings-panel nav div {
+#settings-panel .settings-menu div {
   padding: 5%;
 }
-#settings-panel nav #filter {
+#settings-panel .settings-menu #filter {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   flex-basis: 10%;
 }
-#settings-panel nav #filter span {
+#settings-panel .settings-menu #filter span {
   width: 100%;
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
-#settings-panel nav #filter span:hover {
+#settings-panel .settings-menu #filter span:hover {
   background: -webkit-linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
-#settings-panel nav #filter span.active {
+#settings-panel .settings-menu #filter span.active {
   border-radius: 0.5rem;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
-#settings-panel nav #filter span.active i {
+#settings-panel .settings-menu #filter span.active i {
   padding: 1%;
 }
-#settings-panel nav #tabs {
+#settings-panel .settings-menu #tabs {
   flex-basis: 90%;
   margin: 4% 2.5%;
   border-radius: 0.5rem;
+  overflow: scroll;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
-#settings-panel nav #tabs .tabcontent hr {
-  margin: 2rem 0;
+#settings-panel .settings-menu #tabs .tabcontent h2 {
+  padding-bottom: 5%;
+  border-bottom: 0.4vh #ffffff solid;
+  margin-bottom: 9%;
 }
-#settings-panel .slider {
+#settings-panel .settings-menu #tabs .tabcontent div div {
+  padding: 5%;
+}
+#settings-panel .settings-menu #tabs .tabcontent div {
+  margin: 11% 0;
+}
+#settings-panel #Sound .slider {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -2461,22 +2478,31 @@ footer {
   transition: opacity 0.2s;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
-#settings-panel .slider::-webkit-slider-thumb {
+#settings-panel #Sound .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 5vh;
+  height: 5vh;
   border-radius: 50%;
-  background: red;
-  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.15);
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-#settings-panel .slider::-moz-range-thumb {
+#settings-panel #Sound .slider::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 2vh rgba(255, 255, 255, 0.15);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#settings-panel #Sound .slider::-moz-range-thumb {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: blue;
 }
-#settings-panel span.burger {
+#settings-panel #Info a {
+  display: block;
+  margin: 11% 0;
+}
+#settings-panel div.burger {
   display: block;
 }
 #settings-panel nav.settings-menu {
@@ -2484,7 +2510,7 @@ footer {
   transform: translateX(100%);
   transition: all 0.3s ease-in-out;
 }
-#settings-panel nav.settings-menu .is-open {
+#settings-panel nav.settings-menu.is-open {
   transform: translateX(0);
 }
 
