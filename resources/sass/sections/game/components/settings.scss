@@ -1,7 +1,6 @@
 #settings-panel {
 
     .burger {
-        height: 6%;
         background: -webkit-linear-gradient($white-degraded);
         background-clip: text;
         -webkit-background-clip: text;
@@ -11,11 +10,12 @@
         z-index: 3;
         top: 2%;
         right: 10%;
+        font-size: 4vh;
     }
 
     .menu {
         position: fixed;
-        z-index: 1;
+        z-index: 2;
         width: 38%;
         height: 50px;
         top: 0;
@@ -84,7 +84,42 @@
                     margin: 2rem 0;
                 }
             }
+
+
         }
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        // Glassmorphism
+        background-image: -o-linear-gradient($black-degraded);
+        background-image: -o-linear-gradient($black-degraded);
+        background-image: linear-gradient($black-degraded);
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: red;
+          box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.15)
+
+    }
+
+    .slider::-moz-range-thumb {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: blue;
     }
 
     div.burger {

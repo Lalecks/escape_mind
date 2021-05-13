@@ -7,15 +7,14 @@
 export default function magnifier() {
     /*Size is  set in pixels... supports being written as: '250px' */
     var magnifierSize = 25;
-
     /*How many times magnification of image on page.*/
     var magnification = 4;
-
 
     function magnifier() {
 
         this.magnifyImg = function (ptr, magnification, magnifierSize) {
             var $pointer;
+
             if (typeof ptr == "string") {
                 $pointer = $(ptr);
             } else if (typeof ptr == "object") {
@@ -55,8 +54,8 @@ export default function magnifier() {
                 var rightSide = +(imagePos.left + $(this).width());
                 var bottomSide = +(imagePos.top + $(this).height());
 
-
-                $(document).bind('touchmove mousemove',function (e) {
+                /* Mousemove pour mobile et pc */
+                $(document).bind('touchmove mousemove', function (e) {
                     let curentY = e.originalEvent.touches ? e.originalEvent.touches[0].pageY : e.pageY;
                     let curentX = e.originalEvent.touches ? e.originalEvent.touches[0].pageX : e.pageX;
 
@@ -65,6 +64,7 @@ export default function magnifier() {
                         $(document).unbind('mousemove');
                         console.log("-!- magnifier poo");
                     }
+
                     var backgroundPos = "" - ((curentX - imagePos.left) * magnification - magnifyOffset) + "px " + -((curentY - imagePos.top) * magnification - magnifyOffset) + "px";
                     $('.magnify').css({
                         'left': curentX - magnifyOffset,
@@ -73,19 +73,15 @@ export default function magnifier() {
                     });
                 });
 
-            }, function () {
-
-            });
+            }, function () {});
         };
 
         this.init = function () {
             //$('body').prepend('<div class="magnify"></div>');
         }
-
         return this.init();
     }
 
     var magnify = new magnifier();
     magnify.magnifyImg('img', magnification, magnifierSize);
-
 }

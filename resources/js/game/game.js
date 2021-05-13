@@ -5,7 +5,7 @@
  */
 
 import displayCinematic from "./cinematic";
-import zoom from "./components/magnifier";
+import settings from "./components/settings";
 import updateGame from "./room_creation";
 import toggleVideoPlayer from "./video_player";
 
@@ -18,7 +18,9 @@ export default function changeAV(num) {
 
 $(document).ready(function () {
     let room_done = 5;
-
+    
+    settings();
+    
     let cinematic = displayCinematic();
     cinematic.addEventListener('ended', function () {
         updateGame();

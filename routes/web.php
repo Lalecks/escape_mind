@@ -21,6 +21,7 @@ Route::get('/', function () {
     return view("components.home");
 });
 Route::get('/', 'HomeController@index');
+Route::get('/legal_notice', 'HomeController@legal_notice');
 
 
 

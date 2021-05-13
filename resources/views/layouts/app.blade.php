@@ -27,11 +27,11 @@
 		<meta property="og:locale" content="fr_FR"/>
 		<meta property="og:image" content="https://site.com/post.jpg" />
 		<meta property="og:image" content="{{ asset('resources/icon/apple-icon-57x57.png')}}"/>
-        <meta property="og:image:secure_url" content="{{ asset('resources/icon/apple-icon-57x57.png')}}"/>
-        <meta property="og:image:alt" content="escape_mind"/>
-        <meta property="og:image:width" content="57"/>
-        <meta property="og:image:height" content="57"/>
-        {{-- <meta property="og:video" content=""/> --}}
+		<meta property="og:image:secure_url" content="{{ asset('resources/icon/apple-icon-57x57.png')}}"/>
+		<meta property="og:image:alt" content="escape_mind"/>
+		<meta property="og:image:width" content="57"/>
+		<meta property="og:image:height" content="57"/>
+		{{-- <meta property="og:video" content=""/> --}}
 		<!-- Twitter card -->
 		<meta name="twitter:card" content="player">
 		<meta name="twitter:site" content="@escapemind">
@@ -69,13 +69,13 @@
 			<div id="progress"></div>
 		</div>
 		<!-- Souris -->
-        <div id="souris">
-            <div class="cursor"></div>
+		<div id="souris">
+			<div class="cursor"></div>
 			<div class="follower"></div>
-        </div>
+		</div>
 		<!-- Content -->
 		<main>
-            <div id="fullscreen" style="opacity:0;"></div>
+			<div id="fullscreen" style="opacity:0;"></div>
 			<div id="content" style="opacity: 0">
 				@yield('content')
 			</div>
@@ -86,17 +86,17 @@
 		<script>
 			/* Menu de type onglets pour les différents paramètres */
 			function openSetting(evt, settingName) {
-			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
-			}
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-			document.getElementById(settingName).style.display = "block";
-			evt.currentTarget.className += " active";
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(settingName).style.display = "block";
+				evt.currentTarget.className += " active";
 			}
 		</script>
 	</body>
