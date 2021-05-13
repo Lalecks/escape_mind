@@ -55,13 +55,14 @@ export default function magnifier() {
                 var rightSide = +(imagePos.left + $(this).width());
                 var bottomSide = +(imagePos.top + $(this).height());
 
-                function followMouse(e) {
-let curentY = e.originalEvent.touches ? e.originalEvent.touches[0].pageY : e.pageY;
-let curentX = e.originalEvent.touches ? e.originalEvent.touches[0].pageX : e.pageX;
+
+                $(document).bind('touchmove mousemove',function (e) {
+                    let curentY = e.originalEvent.touches ? e.originalEvent.touches[0].pageY : e.pageY;
+                    let curentX = e.originalEvent.touches ? e.originalEvent.touches[0].pageX : e.pageX;
 
                     if (curentX < +(imagePos.left - magnifyOffset / 6) || curentX > +(rightSide + magnifyOffset / 6) || curentY < +(imagePos.top - magnifyOffset / 6) || curentY > +(bottomSide + magnifyOffset / 6)) {
                         $('.magnify').hide();
-                        $(document).unbind('mousemove');
+                        //$(document).unbind('mousemove');
                         console.log("-!- magnifier poo");
                     }
                     var backgroundPos = "" - ((curentX - imagePos.left) * magnification - magnifyOffset) + "px " + -((curentY - imagePos.top) * magnification - magnifyOffset) + "px";
@@ -70,10 +71,8 @@ let curentX = e.originalEvent.touches ? e.originalEvent.touches[0].pageX : e.pag
                         'top': curentY - magnifyOffset,
                         'background-position': backgroundPos
                     });
-                }
+                });
 
-                $(document).mousemove(followMouse);
-                document.addEventListener("touchmove",followMouse);
             }, function () {
 
             });
