@@ -1038,8 +1038,13 @@ template {
 
 /* Firefox */
 @-moz-document url-prefix() {
-  .modal-content,
-#Inventory {
+  #home-page #home_box,
+#home-page .modal-content {
+    background-image: linear-gradient(298.05deg, #288a3cb0 4.34%, #016c6fd6 93.57%);
+  }
+
+  #game-page .modal-content,
+#game-page #Inventory {
     background-image: inherit;
     background-color: #121212;
   }
@@ -1118,7 +1123,6 @@ html body {
   position: relative;
   display: table;
   width: 100%;
-  word-break: break-word;
 }
 html body ul,
 html body li {
@@ -1554,24 +1558,34 @@ html {
   left: -43px;
   border: 5px solid #ffffff;
 }
-.navbar #bar_fix {
+.navbar .scroll-indicator {
   content: "";
-  position: absolute;
-  width: 1px;
-  height: 100vh;
-  left: 39.5px;
-  background: #ffffff;
-  z-index: -1;
-  opacity: 50%;
-}
-.navbar #bar_anim {
-  content: "";
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 3.7%;
+  bottom: 0;
   width: 2px;
-  left: 39px;
-  height: 19%;
-  background: #ffffff;
-  z-index: -1;
+}
+.navbar .scroll-indicator:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 3.7%;
+  bottom: 0;
+  width: 100%;
+  background: #3A3A3A;
+}
+.navbar .scroll-indicator .indicator {
+  top: 0;
+  position: absolute;
+  width: 4%;
+  height: 100%;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.navbar .scroll-indicator .indicator span {
+  display: none;
 }
 
 .navbar ul li a:hover {
@@ -1945,7 +1959,7 @@ footer {
 }
 #about .team .team-img-role h2 {
   display: block;
-  position: absolute;
+  position: relative;
   z-index: 0;
 }
 #about .team .team-img-role div {
@@ -2067,6 +2081,7 @@ footer {
 #game-page {
   position: relative;
   font-size: 2vw !important;
+  word-break: break-word;
 }
 #game-page header {
   position: relative;
@@ -3049,6 +3064,272 @@ footer {
   pointer-events: auto !important;
 }
 
+#timer-oxyegene {
+  width: 12vmin;
+  height: 11vmin;
+  box-shadow: 0 0 0 1.875vmin, inset 3.75vmin 3.75vmin 7.5vmin rgba(0, 0, 0, 0.13), 3.75vmin 3.75vmin 7.5vmin rgba(0, 0, 0, 0.13);
+  font-size: 4.5vmin;
+  text-shadow: 3.75vmin 3.75vmin 7.5vmin rgba(0, 0, 0, 0.13);
+  position: absolute;
+  z-index: 1000;
+  top: 67%;
+  left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  -webkit-animation: 15s 0.875s cubic-bezier(0.9, 0, 0.1, 1) forwards background_color;
+  animation: 15s 0.875s cubic-bezier(0.9, 0, 0.1, 1) forwards background_color;
+}
+#timer-oxyegene:before {
+  content: "15";
+  -webkit-animation: 15s 1s forwards timer_countdown, 1s 0.875s 15 timer_beat;
+  animation: 15s 1s forwards timer_countdown, 1s 0.875s 15 timer_beat;
+}
+#timer-oxyegene:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.125);
+  -webkit-animation: 15s 1s linear forwards timer_indicator;
+  animation: 15s 1s linear forwards timer_indicator;
+}
+
+/* Animations */
+@-webkit-keyframes background_color {
+  6.6666666667% {
+    background-color: #479eeb;
+  }
+  13.3333333333% {
+    background-color: #7347eb;
+  }
+  20% {
+    background-color: #eb47e0;
+  }
+  26.6666666667% {
+    background-color: #eb475d;
+  }
+  33.3333333333% {
+    background-color: #ebb447;
+  }
+  40% {
+    background-color: #9eeb47;
+  }
+  46.6666666667% {
+    background-color: #47eb73;
+  }
+  53.3333333333% {
+    background-color: #47e0eb;
+  }
+  60% {
+    background-color: #475deb;
+  }
+  66.6666666667% {
+    background-color: #b447eb;
+  }
+  73.3333333333% {
+    background-color: #eb479e;
+  }
+  80% {
+    background-color: #eb7347;
+  }
+  86.6666666667% {
+    background-color: #e0eb47;
+  }
+  93.3333333333% {
+    background-color: #5deb47;
+  }
+  100% {
+    background-color: #47ebb4;
+  }
+  106.6666666667% {
+    background-color: #479eeb;
+  }
+}
+@keyframes background_color {
+  6.6666666667% {
+    background-color: #479eeb;
+  }
+  13.3333333333% {
+    background-color: #7347eb;
+  }
+  20% {
+    background-color: #eb47e0;
+  }
+  26.6666666667% {
+    background-color: #eb475d;
+  }
+  33.3333333333% {
+    background-color: #ebb447;
+  }
+  40% {
+    background-color: #9eeb47;
+  }
+  46.6666666667% {
+    background-color: #47eb73;
+  }
+  53.3333333333% {
+    background-color: #47e0eb;
+  }
+  60% {
+    background-color: #475deb;
+  }
+  66.6666666667% {
+    background-color: #b447eb;
+  }
+  73.3333333333% {
+    background-color: #eb479e;
+  }
+  80% {
+    background-color: #eb7347;
+  }
+  86.6666666667% {
+    background-color: #e0eb47;
+  }
+  93.3333333333% {
+    background-color: #5deb47;
+  }
+  100% {
+    background-color: #47ebb4;
+  }
+  106.6666666667% {
+    background-color: #479eeb;
+  }
+}
+@-webkit-keyframes timer_beat {
+  40%, 80% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.125);
+  }
+}
+@keyframes timer_beat {
+  40%, 80% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.125);
+  }
+}
+@-webkit-keyframes timer_countdown {
+  0% {
+    content: "15";
+  }
+  6.6666666667% {
+    content: "14";
+  }
+  13.3333333333% {
+    content: "13";
+  }
+  20% {
+    content: "12";
+  }
+  26.6666666667% {
+    content: "11";
+  }
+  33.3333333333% {
+    content: "10";
+  }
+  40% {
+    content: "9";
+  }
+  46.6666666667% {
+    content: "8";
+  }
+  53.3333333333% {
+    content: "7";
+  }
+  60% {
+    content: "6";
+  }
+  66.6666666667% {
+    content: "5";
+  }
+  73.3333333333% {
+    content: "4";
+  }
+  80% {
+    content: "3";
+  }
+  86.6666666667% {
+    content: "2";
+  }
+  93.3333333333% {
+    content: "1";
+  }
+  100% {
+    content: "0";
+  }
+}
+@keyframes timer_countdown {
+  0% {
+    content: "15";
+  }
+  6.6666666667% {
+    content: "14";
+  }
+  13.3333333333% {
+    content: "13";
+  }
+  20% {
+    content: "12";
+  }
+  26.6666666667% {
+    content: "11";
+  }
+  33.3333333333% {
+    content: "10";
+  }
+  40% {
+    content: "9";
+  }
+  46.6666666667% {
+    content: "8";
+  }
+  53.3333333333% {
+    content: "7";
+  }
+  60% {
+    content: "6";
+  }
+  66.6666666667% {
+    content: "5";
+  }
+  73.3333333333% {
+    content: "4";
+  }
+  80% {
+    content: "3";
+  }
+  86.6666666667% {
+    content: "2";
+  }
+  93.3333333333% {
+    content: "1";
+  }
+  100% {
+    content: "0";
+  }
+}
+@-webkit-keyframes timer_indicator {
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes timer_indicator {
+  100% {
+    transform: translateY(100%);
+  }
+}
 /*--------  Responsive --------*/
 /* Extra small devices (phones, 600px and down) 576px*/
 @media only screen and (max-width: 600px) {

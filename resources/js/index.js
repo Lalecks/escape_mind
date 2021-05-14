@@ -18,9 +18,9 @@ if (document.getElementById("home-page")) {
 }
 /*-------- Layouts --------*/
 require('./layouts/loader');
+require('./layouts/detecting_mobile');
+/*-------- Game --------*/
 if (document.getElementById("game-page")) {
-    require('./layouts/detecting_mobile');
-    /*-------- Game --------*/
     require('./game/game.js');
 }
 // Avant custom_packages.js pour fonctionner
@@ -30,6 +30,6 @@ require('./layouts/mouse');
 if (document.getElementById("home-page")) {
     require('./web_components/modal');
 }
-// require('./web_components/scrollBar');
+require('./web_components/scrollBar');
 // require('./web_components/custom_package');
 // require('./web_components/divers');

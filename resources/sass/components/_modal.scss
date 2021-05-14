@@ -7,94 +7,105 @@
 * */
 
 .modal {
-	position: fixed;
-	// display: flex;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-	visibility: hidden;
-	// Glassmorphism
-	// background-image: -webkit-linear-gradient($white-degraded);
-	// background-image: -moz-linear-gradient($white-degraded);
-	// background-image: -o-linear-gradient($white-degraded);
-	// background-image: linear-gradient($white-degraded);
-	background-image: -webkit-linear-gradient($black-degraded);
-	background-image: -moz-linear-gradient($black-degraded);
-	background-image: -o-linear-gradient($black-degraded);
-	background-image: linear-gradient($black-degraded);
+    position: fixed;
+    // display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    // Glassmorphism
+    // background-image: -webkit-linear-gradient($white-degraded);
+    // background-image: -moz-linear-gradient($white-degraded);
+    // background-image: -o-linear-gradient($white-degraded);
+    // background-image: linear-gradient($white-degraded);
+    background-image: -webkit-linear-gradient($black-degraded);
+    background-image: -moz-linear-gradient($black-degraded);
+    background-image: -o-linear-gradient($black-degraded);
+    background-image: linear-gradient($black-degraded);
 
-	// background-color: rgba(0,0,0,0.9);
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
-	-webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
-	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
-	-o-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
-	z-index: 11;
-	overflow: hidden;
+    // background-color: rgba(0,0,0,0.9);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    -o-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+    z-index: 11;
+    overflow: hidden;
 }
 
 .modal-content {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: end;
-	-ms-flex-align: end;
-	align-items: flex-end;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	padding: 1.5rem;
-	width: auto;
-	border-radius: 0.5rem;
-	overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 1.5rem;
+    width: auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 .close-button {
-	margin: 0;
-	width: 2.3rem;
-	// height: 100%;
-	color: $white;
-	font-size: 2.4rem;
+    margin: 0;
+    width: 2.3rem;
+    // height: 100%;
+    color: $white;
+    font-size: 2.4rem;
 }
 
 .show-modal {
-	opacity: 1;
-	visibility: visible;
-	-webkit-transform: scale(1.0);
-	-ms-transform: scale(1.0);
-	transform: scale(1.0);
-	-webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
-	transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
-	-o-transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
+    -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    -o-transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
 }
 
 /* Firefox */
 @-moz-document url-prefix() {
 
-	// backdrop-filter ne fonctionne pas sur ces navigateurs
-	.modal-content,
-	#Inventory {
-		background-image: inherit;
-        background-color: $body-bg;
-	}
+    // backdrop-filter ne fonctionne pas sur ces navigateurs
+    #home-page {
 
-	.show-modal {
-		background: rgba(38, 37, 37, 0.73);
-	}
+        #home_box,
+        .modal-content {
+            background-image: linear-gradient(298.05deg, #288a3cb0 4.34%, #016c6fd6 93.57%);
+        }
+    }
+
+    #game-page {
+
+        .modal-content,
+        #Inventory {
+            background-image: inherit;
+            background-color: $body-bg;
+        }
+    }
+
+    .show-modal {
+        background: rgba(38, 37, 37, 0.73);
+    }
 }
 
 /* Safari */

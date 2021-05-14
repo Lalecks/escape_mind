@@ -4,7 +4,6 @@
  *
  * */
 
-
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");
 let closeButton = document.querySelector(".close-btn");
@@ -44,7 +43,6 @@ if (modal && trigger.length > 0) {
         isInit = true;
     }
 }
-
 
 function toggleModalCustom() {
     // HOMEPAGE

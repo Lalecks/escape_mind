@@ -101,12 +101,13 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
     - *GreenSock* Copyright (c) 2021 [Jack Doyle](https://greensock.com/standard-license)
     - *Mouse* Copyright (c) 2020 [Dezigner Bay](https://www.youtube.com/watch?v=_UR74tkspqc)
     - *Rellax* Copyright (c) 2016 [Moe Amaya](https://github.com/dixonandmoe/rellax)
+    - *Vertical scroll indicator* Copyright (c) 2021 [Paul O'Brien](https://codepen.io/paulobrien/pen/JWdoXm)
     - *Menu burger* Copyright (c) 2021 [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
     - *Zoom article* Copyright (c) 2021 [Pixel|Acorn](https://codepen.io/pixelacorn/pen/eNObea)
     - *Glitch effect* 2021 Copyright (c) [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
     - *Video player* Copyright (c) 2021 [OrlandoJC](https://github.com/OrlandoJC/videoPlayer)
     - *Tabs* Copyright (c)
-    #- *Settings pannel* Copyright (c) 2021 [John W Hancock](https://codepen.io/BlueCaret/pen/xVNpVM)
+    - *CodePen Home CSS countdown timer* Copyright (c) 2021 [Máté Végh](https://codepen.io/matevegh/pen/GZVqLL)
 
 ## Project status
 The development of the application is in progress.

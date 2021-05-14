@@ -17,10 +17,14 @@
 			<div class="bar"></div>
 			<div class="bar"></div>
 		</label>
+
 		<!-- Fin : menu burger -->
 		<nav class="navbar">
-			<span id="bar_fix"></span>
-			<span id="bar_anim"></span>
+			<div id="scroll-indicator" class="scroll-indicator">
+				<div id="indicator" class="indicator">
+					<span></span>
+				</div>
+			</div>
 			<ul>
 				<li><a href="#home" class="hoverable active">Accueil</a></li>
 				<li><a href="#story"  class="hoverable">Histoire</a></li>
@@ -36,7 +40,7 @@
 			<div class="modal glass-effect hoverable">
 				<!-- Ne pas mettre la modal dans le vidéo overlay, car il est en absolute et par conséquent la modal ne peut pas se fixer -->
 				<div class="modal-content glass-effect">
-					<span class="close-button hoverable">&times;</span>
+					<span class="close-btn hoverable">&times;</span>
 					<iframe id="yt_player_iframe" width="560" height="315" src="https://www.youtube.com/embed/gA03iyI3yEA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
 				</div>
 			</div>

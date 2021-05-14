@@ -73,11 +73,12 @@
 @import 'sections/game/enigma/coffre';
 @import 'sections/game/enigma/lecteur';
 @import 'sections/game/enigma/jukebox';
+@import 'sections/game/enigma/timer-oxygene';
 
 /*--------  Responsive --------*/
 @import 'sections/web/responsive_web';
 @import 'sections/game/responsive_game';
 @import 'sections/game/landscape_device';
 
-// enregistrer score / scrollBar / Effets glitch elements + Flottement / Effet bulle + Timer salle 
+// enregistrer score / scrollBar / Effets glitch elements + Flottement / Effet bulle
 // JS : transition salles / loupe / son, musiques, gamemaster

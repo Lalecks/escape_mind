@@ -35,7 +35,7 @@ html {
             margin: 10vh 0 0 20px; //espacement liens
             -webkit-transform: translateY(50%);
             -ms-transform: translateY(50%);
-			transform: translateY(50%);
+            transform: translateY(50%);
 
             a {
                 text-decoration: none;
@@ -78,25 +78,37 @@ html {
         }
     }
 
-    #bar_fix {
+    .scroll-indicator {
         content: "";
-        position: absolute;
-        width: 1px;
-        height: 100vh;
-        left: 39.5px;
-        background: $white;
-        z-index: -1;
-        opacity: 50%;
-    }
-
-    #bar_anim {
-        content: "";
-        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 3.7%;
+        bottom: 0;
         width: 2px;
-        left: 39px;
-        height: 19%;
-        background: $white;
-        z-index: -1;
+
+        &:before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 3.7%;
+            bottom: 0;
+            width: 100%;
+            background: #3A3A3A;
+        }
+
+        .indicator {
+            top: 0;
+            position: absolute;
+            width: 4%;
+            height: 100%;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+            span {
+                display: none;
+            }
+        }
     }
 }
 

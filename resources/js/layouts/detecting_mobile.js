@@ -27,6 +27,6 @@ if (isMobile === true) {
 } else {
     try {
         $("body").removeClass("landscape");
+        document.getElementById("turn-mobile").style.display = "none"; // Si le pc fait un "mode portrait"
     } catch (e) {}
-    document.getElementById("turn-mobile").style.display = "none"; // Si le pc fait un "mode portrait"
 }
