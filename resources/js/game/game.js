@@ -4,6 +4,7 @@
  *
  */
 
+import beforeunload from "./components/window_beforeunload";
 import displayCinematic from "./cinematic";
 import settings from "./components/settings";
 import updateGame from "./room_creation";
@@ -17,10 +18,10 @@ export default function changeAV(num) {
 }
 
 $(document).ready(function () {
-    let room_done = 5;
-    
     settings();
-    
+    beforeunload();
+
+    let room_done = 5;
     let cinematic = displayCinematic();
     cinematic.addEventListener('ended', function () {
         updateGame();

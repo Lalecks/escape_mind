@@ -2446,9 +2446,11 @@ footer {
 #settings-panel .settings-menu #filter span.active {
   border-radius: 0.5rem;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
+  padding: 36%;
+  transition: all 0.3s ease-in-out;
 }
 #settings-panel .settings-menu #filter span.active i {
-  padding: 1%;
+  font-size: 3vh;
 }
 #settings-panel .settings-menu #tabs {
   flex-basis: 90%;

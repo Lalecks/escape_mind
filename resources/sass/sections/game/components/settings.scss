@@ -63,9 +63,13 @@
                 background-image: -o-linear-gradient($black-degraded);
                 background-image: -o-linear-gradient($black-degraded);
                 background-image: linear-gradient($black-degraded);
+                padding: 36%;
+                -webkit-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
 
                 i {
-                    padding: 1%;
+                    font-size: 3vh;
                 }
             }
         }

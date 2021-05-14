@@ -27,7 +27,7 @@ export default function settings() {
     let cinematic = document.getElementById("media-video");
 
     window.addEventListener('click', function (e) {
-        if (document.querySelector(".is-open") && (e.target === game || e.target === cinematic)) {
+        if (document.querySelector(".is-open") && (e.target === game || e.target === cinematic || $(event.target).is('img'))) {
             $('.settings-menu').removeClass('is-open');
             $('.burger').removeClass('burger-open');
         }
