@@ -5,7 +5,7 @@
  * */
 
 export default function settings() {
-    /* Affichage/Cacher settings-menu des settings */
+    /* Affichage/Cacher le menu des settings */
     $('.burger').click(function () {
         // au click du bouton ayant la class burger :
         $(this).toggleClass('burger-open');
@@ -22,16 +22,14 @@ export default function settings() {
         // utile pour un one-page, car on ne veut pas que la nav reste ouverte une fois que la page est arrivée au bon endroit
     });
 
-    /* Fermer le settings-menu des paramètres si vous cliquez en dehors de la DIV */
-    // let menu = document.querySelector('.settings-menu')
-    // let engrenage = document.querySelector(".fas");
-    // let game = document.getElementById("Game");
+    /* Fermer le menu des paramètres si vous cliquez en dehors de la DIV */
+    let game = document.getElementById("Area");
+    let cinematic = document.getElementById("media-video");
 
-    // window.addEventListener('click', function (e) {
-    //     if (document.querySelector(".is-open") && e.target === game) {
-    //         menu.removeClass('is-open');
-    //         $('.burger').removeClass('burger-open');
-    //     }
-    // })
-
+    window.addEventListener('click', function (e) {
+        if (document.querySelector(".is-open") && (e.target === game || e.target === cinematic)) {
+            $('.settings-menu').removeClass('is-open');
+            $('.burger').removeClass('burger-open');
+        }
+    })
 }

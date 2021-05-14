@@ -1913,7 +1913,7 @@ footer {
 }
 #about .team .team-img-role h2 {
   display: block;
-  position: relative;
+  position: absolute;
   z-index: 0;
 }
 #about .team .team-img-role div {
@@ -2407,7 +2407,7 @@ footer {
   z-index: 3;
   top: 2%;
   right: 10%;
-  font-size: 4vh;
+  font-size: 3.2vw;
 }
 #settings-panel .settings-menu {
   position: fixed;
@@ -2457,16 +2457,19 @@ footer {
   overflow: scroll;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
+#settings-panel .settings-menu #tabs .tabcontent {
+  padding: 5%;
+}
 #settings-panel .settings-menu #tabs .tabcontent h2 {
   padding-bottom: 5%;
   border-bottom: 0.4vh #ffffff solid;
   margin-bottom: 9%;
 }
-#settings-panel .settings-menu #tabs .tabcontent div div {
-  padding: 5%;
-}
 #settings-panel .settings-menu #tabs .tabcontent div {
   margin: 11% 0;
+}
+#settings-panel .settings-menu #tabs .tabcontent div p {
+  margin-bottom: 3%;
 }
 #settings-panel #Sound .slider {
   -webkit-appearance: none;

@@ -1,4 +1,4 @@
-<menu id="settings-panel">
+<div id="settings-panel">
 	<div class="burger hoverable fas fa-cog"></div>
 	<nav class="settings-menu glass-effect">			
 		<div id="filter">
@@ -44,4 +44,4 @@
 			</div>
 		</div>
 	</nav>
-</menu>
+</div>

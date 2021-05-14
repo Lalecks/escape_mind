@@ -10,7 +10,7 @@
         z-index: 3;
         top: 2%;
         right: 10%;
-        font-size: 4vh;
+        font-size: 3.2vw;
     }
 
     .settings-menu {
@@ -81,18 +81,22 @@
             background-image: linear-gradient($black-degraded);
 
             .tabcontent {
+
+
+                padding: 5%;
+
                 h2 {
                     padding-bottom: 5%;
                     border-bottom: .4vh $white solid;
                     margin-bottom: 9%;
                 }
 
-                div div {
-                    padding: 5%;
-                }
-
                 div {
                     margin: 11% 0;
+
+                    p {
+                        margin-bottom: 3%;
+                    }
                 }
             }
         }
