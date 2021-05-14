@@ -21,19 +21,20 @@
 @import 'base/colors.scss';
 @import 'base/mixins';
 
-/*-------- Layouts/Mise en page : Architecture/Structure et mise en page générale des pages --------*/
-@import 'layout/loader';
-@import 'layout/template';
-@import 'layout/layout_project';
-@import 'layout/mouse';
-@import 'layout/errors';
-
 /*--------  Components : Composants appelé dans le projet --------*/
 @import 'components/glassmorphism.scss';
 @import 'components/button.scss';
 @import 'components/link.scss';
 @import 'components/circle.scss';
 @import 'components/modal.scss';
+
+/*-------- Layouts/Mise en page : Architecture/Structure et mise en page générale des pages --------*/
+@import 'layout/loader';
+@import 'layout/template';
+@import 'layout/layout_project';
+@import 'layout/mouse';
+@import 'layout/errors';
+@import 'layout/legal_notice';
 
 /*--------  Sections: CSS spécifiques aux parties WEB/GAME --------*/
 /* Web part */

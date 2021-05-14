@@ -749,6 +749,307 @@ template {
 *  Définitions par défaut des couleurs
 *
 * */
+/*--------  Components : Composants appelé dans le projet --------*/
+/**
+*
+* Création d'éléments Glassmorphic 
+*
+* */
+.glass-effect {
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(1.2rem);
+  backdrop-filter: blur(1.2rem);
+}
+
+/* Bouton générale */
+.btn {
+  text-align: center;
+  font-family: "Audiowide", cursive;
+  text-transform: lowercase;
+  border-radius: 30rem;
+  padding: 1rem 3.5rem;
+  color: #ffffff;
+  display: inline-block;
+  border: 0.2rem solid #000000;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  line-height: 100%;
+  background-size: 200% auto;
+  transition: 0.5s;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
+  background-position: right center;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  border: 0.2rem solid #ffffff;
+}
+
+/* Propriétés de btn */
+.btn-outline-primary {
+  color: #000000;
+}
+
+.btn-fill-primary {
+  color: #ffffff;
+  background-color: #000000;
+}
+.btn-fill-primary:hover {
+  background: #000000;
+}
+
+/* Bouton générale */
+.btn-animation_glitch {
+  display: block;
+  position: relative;
+}
+.btn-animation_glitch:before, .btn-animation_glitch:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 0;
+  width: 100%;
+  -webkit-clip: rect(0px, 0px, 0px, 0px);
+  clip: rect(0px, 0px, 0px, 0px);
+  background: #000000;
+}
+.btn-animation_glitch:before {
+  left: -3px;
+  top: -2px;
+  text-shadow: 2px 0 #000000;
+  box-shadow: 2px 0 #000000;
+}
+.btn-animation_glitch:after {
+  left: 2px;
+  bottom: -2px;
+  text-shadow: -0.1rem 0 #000000;
+  box-shadow: -0.1rem 0 #000000;
+}
+.btn-animation_glitch:hover:before {
+  animation: glitch-test 1.5s infinite linear alternate-reverse;
+}
+.btn-animation_glitch:hover:after {
+  -webkit-animation: glitch-test 2s infinite linear alternate;
+          animation: glitch-test 2s infinite linear alternate;
+}
+
+@-webkit-keyframes glitch-test {
+  0% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  5.88235% {
+    clip: rect(0px, 600px, 0px, 0px);
+  }
+  11.76471% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  17.64706% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  23.52941% {
+    clip: rect(100px, 600px, 100px, 0px);
+  }
+  29.41176% {
+    clip: rect(0px, 600px, 600px, 0px);
+  }
+  35.29412% {
+    clip: rect(100px, 600px, 0px, 0px);
+  }
+  41.17647% {
+    clip: rect(0px, 600px, 600px, 0px);
+  }
+  47.05882% {
+    clip: rect(100px, 600px, 0px, 0px);
+  }
+  52.94118% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  58.82353% {
+    clip: rect(100px, 450px, 100px, 0px);
+  }
+  64.70588% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  70.58824% {
+    clip: rect(100px, 450px, 100px, 0px);
+  }
+  76.47059% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  82.35294% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  88.23529% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  94.11765% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  100% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+}
+
+@keyframes glitch-test {
+  0% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  5.88235% {
+    clip: rect(0px, 600px, 0px, 0px);
+  }
+  11.76471% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  17.64706% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  23.52941% {
+    clip: rect(100px, 600px, 100px, 0px);
+  }
+  29.41176% {
+    clip: rect(0px, 600px, 600px, 0px);
+  }
+  35.29412% {
+    clip: rect(100px, 600px, 0px, 0px);
+  }
+  41.17647% {
+    clip: rect(0px, 600px, 600px, 0px);
+  }
+  47.05882% {
+    clip: rect(100px, 600px, 0px, 0px);
+  }
+  52.94118% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  58.82353% {
+    clip: rect(100px, 450px, 100px, 0px);
+  }
+  64.70588% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  70.58824% {
+    clip: rect(100px, 450px, 100px, 0px);
+  }
+  76.47059% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  82.35294% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  88.23529% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  94.11765% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  100% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+}
+.link:hover {
+  padding: 3% 0;
+  border-radius: 5%;
+  filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
+  background-image: linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
+}
+
+.circle {
+  border-radius: 50%;
+  perspective: 75rem;
+  perspective-origin: 50% 50%;
+}
+
+.circle-yellow {
+  border: 0.1rem solid #fffb0063;
+  background-image: linear-gradient(298.05deg, rgba(249, 254, 26, 0.296) 4.34%, rgba(231, 236, 0, 0.185) 93.57%);
+}
+
+.circle-full-cyan_blue {
+  position: absolute;
+  width: 16.2rem;
+  height: 16.2rem;
+  border: 0.1rem solid #829fff;
+  right: -6%;
+  background-image: linear-gradient(298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57%);
+}
+
+.circle-border-cyan_blue {
+  position: absolute;
+  width: 16.2rem;
+  height: 16.2rem;
+  right: -6%;
+}
+
+/**
+*
+* A faire : 
+- Bloquer le scroll d'une page quand une modal est ouverte
+- Fermer la vidéo
+*
+* */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 11;
+  overflow: hidden;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  width: auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.close-button {
+  margin: 0;
+  width: 2.3rem;
+  color: #ffffff;
+  font-size: 2.4rem;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
+  .modal-content,
+#Inventory {
+    background-image: inherit;
+    background-color: #121212;
+  }
+
+  .show-modal {
+    background: rgba(38, 37, 37, 0.73);
+  }
+}
+/* Safari */
+/* Opera */
 /*-------- Layouts/Mise en page : Architecture/Structure et mise en page générale des pages --------*/
 #overlay {
   position: fixed;
@@ -1156,307 +1457,38 @@ h2 {
   margin-top: 2rem;
 }
 
-/*--------  Components : Composants appelé dans le projet --------*/
-/**
-*
-* Création d'éléments Glassmorphic 
-*
-* */
-.glass-effect {
-  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
-  -webkit-backdrop-filter: blur(1.2rem);
-  backdrop-filter: blur(1.2rem);
+#legal_notice {
+  margin: 0 auto;
 }
-
-/* Bouton générale */
-.btn {
-  text-align: center;
-  font-family: "Audiowide", cursive;
-  text-transform: lowercase;
-  border-radius: 30rem;
-  padding: 1rem 3.5rem;
-  color: #ffffff;
-  display: inline-block;
-  border: 0.2rem solid #000000;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  line-height: 100%;
-  background-size: 200% auto;
-  transition: 0.5s;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.btn.focus,
-.btn:focus,
-.btn:hover {
-  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
-  background-position: right center;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  border: 0.2rem solid #ffffff;
-}
-
-/* Propriétés de btn */
-.btn-outline-primary {
-  color: #000000;
-}
-
-.btn-fill-primary {
-  color: #ffffff;
-  background-color: #000000;
-}
-.btn-fill-primary:hover {
-  background: #000000;
-}
-
-/* Bouton générale */
-.btn-animation_glitch {
-  display: block;
-  position: relative;
-}
-.btn-animation_glitch:before, .btn-animation_glitch:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 8px 0;
-  width: 100%;
-  -webkit-clip: rect(0px, 0px, 0px, 0px);
-  clip: rect(0px, 0px, 0px, 0px);
-  background: #000000;
-}
-.btn-animation_glitch:before {
-  left: -3px;
-  top: -2px;
-  text-shadow: 2px 0 #000000;
-  box-shadow: 2px 0 #000000;
-}
-.btn-animation_glitch:after {
-  left: 2px;
-  bottom: -2px;
-  text-shadow: -0.1rem 0 #000000;
-  box-shadow: -0.1rem 0 #000000;
-}
-.btn-animation_glitch:hover:before {
-  animation: glitch-test 1.5s infinite linear alternate-reverse;
-}
-.btn-animation_glitch:hover:after {
-  -webkit-animation: glitch-test 2s infinite linear alternate;
-          animation: glitch-test 2s infinite linear alternate;
-}
-
-@-webkit-keyframes glitch-test {
-  0% {
-    clip: rect(-3px, 600px, 0px, 0px);
-  }
-  5.88235% {
-    clip: rect(0px, 600px, 0px, 0px);
-  }
-  11.76471% {
-    clip: rect(-3px, 600px, 0px, 0px);
-  }
-  17.64706% {
-    clip: rect(-3px, 600px, 0px, 0px);
-  }
-  23.52941% {
-    clip: rect(100px, 600px, 100px, 0px);
-  }
-  29.41176% {
-    clip: rect(0px, 600px, 600px, 0px);
-  }
-  35.29412% {
-    clip: rect(100px, 600px, 0px, 0px);
-  }
-  41.17647% {
-    clip: rect(0px, 600px, 600px, 0px);
-  }
-  47.05882% {
-    clip: rect(100px, 600px, 0px, 0px);
-  }
-  52.94118% {
-    clip: rect(-3px, 600px, 0px, 0px);
-  }
-  58.82353% {
-    clip: rect(100px, 450px, 100px, 0px);
-  }
-  64.70588% {
-    clip: rect(0px, 450px, 0px, 0px);
-  }
-  70.58824% {
-    clip: rect(100px, 450px, 100px, 0px);
-  }
-  76.47059% {
-    clip: rect(0px, 450px, 0px, 0px);
-  }
-  82.35294% {
-    clip: rect(0px, 450px, 0px, 0px);
-  }
-  88.23529% {
-    clip: rect(0px, 450px, 0px, 0px);
-  }
-  94.11765% {
-    clip: rect(0px, 450px, 0px, 0px);
-  }
-  100% {
-    clip: rect(0px, 450px, 0px, 0px);
-  }
-}
-
-@keyframes glitch-test {
-  0% {
-    clip: rect(-3px, 600px, 0px, 0px);
-  }
-  5.88235% {
-    clip: rect(0px, 600px, 0px, 0px);
-  }
-  11.76471% {
-    clip: rect(-3px, 600px, 0px, 0px);
-  }
-  17.64706% {
-    clip: rect(-3px, 600px, 0px, 0px);
-  }
-  23.52941% {
-    clip: rect(100px, 600px, 100px, 0px);
-  }
-  29.41176% {
-    clip: rect(0px, 600px, 600px, 0px);
-  }
-  35.29412% {
-    clip: rect(100px, 600px, 0px, 0px);
-  }
-  41.17647% {
-    clip: rect(0px, 600px, 600px, 0px);
-  }
-  47.05882% {
-    clip: rect(100px, 600px, 0px, 0px);
-  }
-  52.94118% {
-    clip: rect(-3px, 600px, 0px, 0px);
-  }
-  58.82353% {
-    clip: rect(100px, 450px, 100px, 0px);
-  }
-  64.70588% {
-    clip: rect(0px, 450px, 0px, 0px);
-  }
-  70.58824% {
-    clip: rect(100px, 450px, 100px, 0px);
-  }
-  76.47059% {
-    clip: rect(0px, 450px, 0px, 0px);
-  }
-  82.35294% {
-    clip: rect(0px, 450px, 0px, 0px);
-  }
-  88.23529% {
-    clip: rect(0px, 450px, 0px, 0px);
-  }
-  94.11765% {
-    clip: rect(0px, 450px, 0px, 0px);
-  }
-  100% {
-    clip: rect(0px, 450px, 0px, 0px);
-  }
-}
-.link:hover {
-  padding: 3% 0;
-  border-radius: 5%;
-  filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem #ffffff) saturate(200%);
-  background-image: linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
-}
-
-.circle {
-  border-radius: 50%;
-  perspective: 75rem;
-  perspective-origin: 50% 50%;
-}
-
-.circle-yellow {
-  border: 0.1rem solid #fffb0063;
-  background-image: linear-gradient(298.05deg, rgba(249, 254, 26, 0.296) 4.34%, rgba(231, 236, 0, 0.185) 93.57%);
-}
-
-.circle-full-cyan_blue {
-  position: absolute;
-  width: 16.2rem;
-  height: 16.2rem;
-  border: 0.1rem solid #829fff;
-  right: -6%;
-  background-image: linear-gradient(298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57%);
-}
-
-.circle-border-cyan_blue {
-  position: absolute;
-  width: 16.2rem;
-  height: 16.2rem;
-  right: -6%;
-}
-
-/**
-*
-* A faire : 
-- Bloquer le scroll d'une page quand une modal est ouverte
-- Fermer la vidéo
-*
-* */
-.modal {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
-  transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-  z-index: 11;
-  overflow: hidden;
-}
-
-.modal-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1.5rem;
-  width: auto;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-
-.close-button {
+#legal_notice h1 {
   margin: 0;
-  width: 2.3rem;
-  color: #ffffff;
-  font-size: 2.4rem;
+  color: #ffffff2e;
+  font-size: 21vh !important;
+  position: fixed;
+  letter-spacing: 1rem;
+  -webkit-text-stroke: 0;
+  -webkit-text-stroke-color: transparent;
+  top: 27%;
+}
+#legal_notice h2 {
+  margin: 3rem;
+}
+#legal_notice .logo {
+  position: fixed;
+  z-index: 10;
+  padding: 0.8%;
+  right: 100%;
+  width: 3%;
+  border-radius: 19.5%;
+  margin: 0.5%;
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
+}
+#legal_notice div {
+  padding: 3rem;
+  margin: 3rem;
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 
-.show-modal {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
-
-/* Firefox */
-@-moz-document url-prefix() {
-  .modal-content,
-#Inventory {
-    background-image: inherit;
-    background-color: #121212;
-  }
-
-  .show-modal {
-    background: rgba(38, 37, 37, 0.73);
-  }
-}
-/* Safari */
-/* Opera */
 /*--------  Sections: CSS spécifiques aux parties WEB/GAME --------*/
 /* Web part */
 /**
