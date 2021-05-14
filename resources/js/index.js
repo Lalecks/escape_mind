@@ -14,6 +14,7 @@ if (document.getElementById("home-page")) {
     var rellax = new Rellax('.rellax', {
         breakpoints: [576, 768, 1201]
     });
+
 }
 /*-------- Layouts --------*/
 require('./layouts/loader');
@@ -24,10 +25,11 @@ if (document.getElementById("game-page")) {
 }
 // Avant custom_packages.js pour fonctionner
 require('./layouts/mouse');
-if (document.getElementById("home-page")) {
-    require('./layouts/modal');
-}
+
 // /*--------  Web Components --------*/
+if (document.getElementById("home-page")) {
+    require('./web_components/modal');
+}
 // require('./web_components/scrollBar');
 // require('./web_components/custom_package');
 // require('./web_components/divers');

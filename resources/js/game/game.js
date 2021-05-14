@@ -5,10 +5,11 @@
  */
 
 import beforeunload from "./components/window_beforeunload";
-import displayCinematic from "./cinematic";
+import displayCinematic from "./cinematics/cinematic";
+import roomTransition from "./room_transition";
 import settings from "./components/settings";
 import updateGame from "./room_creation";
-import toggleVideoPlayer from "./video_player";
+import toggleVideoPlayer from "./cinematics/video_player";
 
 let avancement = 0;
 
@@ -19,7 +20,8 @@ export default function changeAV(num) {
 
 $(document).ready(function () {
     settings();
-    beforeunload();
+    // beforeunload();
+    // roomTransition();
 
     let room_done = 5;
     let cinematic = displayCinematic();

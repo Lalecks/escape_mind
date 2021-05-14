@@ -1,0 +1,142 @@
+// #game-page {
+//     .hide {
+//         display: none;
+//     }
+
+//     .page__style {
+//         position: fixed;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         left: 0;
+//         height: 100%;
+//         width: 100%;
+//         margin: auto auto;
+//         overflow: hidden;
+//     }
+
+//     .animate_content {
+//         animation: animate 3s ease;
+//     }
+
+//     .fadeIn {
+//         z-index: 10;
+//     }
+
+//     /* -----------------------------------*/
+//     .home {
+//         background: #5da9e9;
+//     }
+//     .contact {
+//         background: #c9cdc0;
+//     }
+// }
+
+// /*****************************************************************
+// ~ Mobile media-queries (max-width: 767px)
+// ******************************************************************/
+// @media only screen and (max-width: 767px) {
+//     .page__description h1 {
+//         margin-top: 100px;
+//     }
+// }
+
+// @-moz-keyframes animate {
+//     10% {
+//         transform: scale(1, 0.002);
+//     }
+
+//     35% {
+//         transform: scale(0.2, 0.002);
+//         opacity: 1;
+//     }
+
+//     50% {
+//         transform: scale(0.2, 0.002);
+//         opacity: 0;
+//     }
+
+//     85% {
+//         transform: scale(1, 0.002);
+//         opacity: 1;
+//     }
+
+//     100% {
+//         transform: scale(1, 1);
+//     }
+// }
+
+// @-webkit-keyframes animate {
+//     10% {
+//         transform: scale(1, 0.002);
+//     }
+
+//     35% {
+//         transform: scale(0.2, 0.002);
+//         opacity: 1;
+//     }
+
+//     50% {
+//         transform: scale(0.2, 0.002);
+//         opacity: 0;
+//     }
+
+//     85% {
+//         transform: scale(1, 0.002);
+//         opacity: 1;
+//     }
+
+//     100% {
+//         transform: scale(1, 1);
+//     }
+// }
+
+// @-o-keyframes animate {
+//     10% {
+//         transform: scale(1, 0.002);
+//     }
+
+//     35% {
+//         transform: scale(0.2, 0.002);
+//         opacity: 1;
+//     }
+
+//     50% {
+//         transform: scale(0.2, 0.002);
+//         opacity: 0;
+//     }
+
+//     85% {
+//         transform: scale(1, 0.002);
+//         opacity: 1;
+//     }
+
+//     100% {
+//         transform: scale(1, 1);
+//     }
+// }
+
+// @keyframes animate {
+//     10% {
+//         transform: scale(1, 0.002);
+//     }
+
+//     35% {
+//         transform: scale(0.2, 0.002);
+//         opacity: 1;
+//     }
+
+//     50% {
+//         transform: scale(0.2, 0.002);
+//         opacity: 0;
+//     }
+
+//     85% {
+//         transform: scale(1, 0.002);
+//         opacity: 1;
+//     }
+
+//     100% {
+//         transform: scale(1, 1);
+//     }
+// }

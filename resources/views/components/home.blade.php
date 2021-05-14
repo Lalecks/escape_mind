@@ -278,9 +278,9 @@
 	<footer>
 		<div>
 			<span>escape_mind</span>
-			<span>escape_mind</span>
+			{{-- <span>escape_mind</span> --}}
 		</div>
-		<p>&copy; {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</p>
+		<p>&copy; {{ date('Y') }} {{ config('app.name') }}. <a href="{{asset("./legal_notice")}}" style="color: black">Tous droits réservés.</a></p>
 	</footer>
 </div>
 @endguest

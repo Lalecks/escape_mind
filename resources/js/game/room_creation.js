@@ -9,7 +9,7 @@ import cursorModule from "../layouts/mouse";
 import updateInventory, {
     invJoueur
 } from "./enigma/inventory";
-import createModal from "../layouts/modal";
+import createModal from "./components/modal";
 
 // Ajout des objets
 // Un objet_00 correspond à l'image par défaut

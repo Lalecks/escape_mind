@@ -10,6 +10,7 @@
 	</header>
 
 	<h1>Informations légales</h1>
+
 	<div class="glass-effect">
 		<h2>1. Présentation du site.</h2>
 		<p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site <a href="//http://escapemind.sarahmauriaucourt.fr/" class="link">escape_mind</a> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
@@ -18,10 +19,10 @@
 			<strong>Créateur</strong> : <a target="blank" href="https://sarahmauriaucourt.fr/">Sarah Mauriaucourt</a><br />
 			<strong>Responsable publication</strong> : Sarah Mauriaucourt – mauriaucourt.sarah@gmail.com<br />
 			Le responsable publication est une personne physique ou une personne morale.<br />
-			<strong>Webmaster</strong> : Sarah Mauriaucourt – <a href="mailto:mauriaucourt.sarah@gmail.com">mauriaucourt.sarah@gmail.com</a><br />
+			<strong>Webmaster</strong> : Sarah Mauriaucourt – <a href="mailto:mauriaucourt.sarah@gmail.com" class="link">mauriaucourt.sarah@gmail.com</a><br />
 			<strong>Hébergeur</strong> : Infomaniak – Avenue de la Praille 261227 Carouge, Suisse<br />
-			Crédits : Alexandre Lavaud développeur web, Camille Kozack infographiste, Mondine Odin et Antony Descotch Sound designer<br />
-			Le modèle de mentions légales est offert par <a target="blank" href="https://www.subdelirium.com/">Subdelirium.com</a>
+			Crédits : Alexandre Lavaud développeur web, Camille Kozack infographiste, Mondine Odin Sound designer et Antony Deschodt Sound designer<br />
+			Le modèle de mentions légales est offert par <a target="blank" href="https://www.subdelirium.com/" class="link">Subdelirium.com</a>
 		</p>
 	</div>
 	<div class="glass-effect">
