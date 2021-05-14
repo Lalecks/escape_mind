@@ -126,34 +126,3 @@ html {
 //     100% { transform: translateY(0%) }
 // }
 
-   .container { margin: 150px auto; }
-        .content-wrapper {
-            height: 400px;
-            width: 50%;
-            overflow-y: scroll;
-            scroll-behavior: smooth;
-        }
-
-        .menu-wrapper {
-            position: fixed;
-            height: inherit;
-            width: 200px;
-            background-color: #C0392B;
-        }
-
-        .content {
-            height: 800px;
-            margin-left: 200px;
-        }
-
-        .active {
-            background-color: #2C3E50;
-            transition: .5s ease-out;
-        }
-        .menu ul, .menu li { list-style: none; margin: 0; padding: 0; }
-        .menu li { margin: 10px; }
-        .menu li a { display: block; padding: 10px; color: #fff;}.active {
-  background-color: blue;
-  color: red;
-  transition: .5s ease-out;
-}
