@@ -25,6 +25,7 @@
 					<span></span>
 				</div>
 			</div>
+
 			<ul>
 				<li><a href="#home" class="hoverable active">Accueil</a></li>
 				<li><a href="#story"  class="hoverable">Histoire</a></li>

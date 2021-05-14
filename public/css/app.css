@@ -1572,7 +1572,7 @@ html {
   top: 0;
   left: 3.7%;
   bottom: 0;
-  width: 100%;
+  width: 0.1%;
   background: #3A3A3A;
 }
 .navbar .scroll-indicator .indicator {
@@ -1590,6 +1590,56 @@ html {
 
 .navbar ul li a:hover {
   font-weight: 700;
+}
+
+.container {
+  margin: 150px auto;
+}
+
+.content-wrapper {
+  height: 400px;
+  width: 50%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.menu-wrapper {
+  position: fixed;
+  height: inherit;
+  width: 200px;
+  background-color: #C0392B;
+}
+
+.content {
+  height: 800px;
+  margin-left: 200px;
+}
+
+.active {
+  background-color: #2C3E50;
+  transition: 0.5s ease-out;
+}
+
+.menu ul, .menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
+
+.active {
+  background-color: blue;
+  color: red;
+  transition: 0.5s ease-out;
 }
 
 footer {
