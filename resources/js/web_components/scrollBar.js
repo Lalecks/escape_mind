@@ -36,17 +36,17 @@ function navHighlighter() {
 /* Vertical scroll indicator */
 (function () {
 
-    let indicator = $('#indicator');
-    let counter = indicator.find('span');
+    var indicator = $('#indicator');
+    var counter = indicator.find('span');
 
-    let win = jQuery(window);
+    var win = jQuery(window);
     if (indicator.length) {
-        let moveIndicator = debounce(function () {
-            let viewportHeight = $(window).height();
-            let documentHeight = $(document).height();
-            let hasScrolled = $(window).scrollTop();
+        var moveIndicator = debounce(function () {
+            var viewportHeight = $(window).height();
+            var documentHeight = $(document).height();
+            var hasScrolled = $(window).scrollTop();
 
-            let percent = (hasScrolled / (documentHeight - viewportHeight)) * 100;
+            var percent = (hasScrolled / (documentHeight - viewportHeight)) * 100;
             indicator.css("top", percent + "%");
             counter.html(Math.floor(percent) + "%");
 
@@ -56,16 +56,16 @@ function navHighlighter() {
     win.on("resize scroll", moveIndicator);
 
     function debounce(func, wait, immediate) {
-        let timeout;
+        var timeout;
 
         return function () {
-            let context = this,
+            var context = this,
                 args = arguments;
-            let later = function () {
+            var later = function () {
                 timeout = null;
                 if (!immediate) func.apply(context, args);
             };
-            let callNow = immediate && !timeout;
+            var callNow = immediate && !timeout;
             clearTimeout(timeout);
             timeout = setTimeout(later, wait);
             if (callNow) func.apply(context, args);

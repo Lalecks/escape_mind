@@ -4,13 +4,14 @@
  *
  **/
 
+import Rellax from "rellax";
+
 /*-------- Generic --------*/
 require('./generic/jquery-2.1.4.min');
 /*--------  Packages --------*/
 require('./package/fontawesome.min');
 require('./package/gsap.min');
 if (document.getElementById("home-page")) {
-    require('./package/rellax.min');
     var rellax = new Rellax('.rellax', {
         breakpoints: [576, 768, 1201]
     });

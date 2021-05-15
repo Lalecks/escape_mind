@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" xmlns:og='og:http://ogp.me/ns#' dir="ltr">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" prefix="og:http://ogp.me/ns#" dir="ltr">
+	{{-- xmlns:og='og:http://ogp.me/ns#' --}}
 	<!--====== Entête ======-->
 	<head>
 		<!-- Encodage -->
@@ -58,8 +59,6 @@
 		<meta name="theme-color" content="#1A1A1A">
 		<!-- Stylesheets -->
 		<link href="{{ mix('css/app.css') }}" rel="stylesheet">
-		<!-- Scripts -->
-		{{-- <script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script> --}}
 	</head>
 	<!--====== Corps ======-->
 	<body>
@@ -81,7 +80,6 @@
 			</div>
 		</main>
 		<!--====== Javascripts & Jquery ======-->
-		<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 		<script src="{{ mix('js/app.js') }}" defer></script>
 		<script>
 			/* Menu de type onglets pour les différents paramètres */
