@@ -79,7 +79,7 @@
 
         h1,
         #story .story-illustration,
-        #rank .top3 {
+        #top_score {
             display: none;
         }
     }
@@ -287,11 +287,11 @@
         font-size: 11rem;
     }
 
-    #rank {
-        .top3>div {
-            padding: 0 1rem;
-        }
+
+    #top_score>div {
+        padding: 0 1rem;
     }
+
 
     #story {
         .story-informations {

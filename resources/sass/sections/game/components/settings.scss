@@ -23,6 +23,8 @@
         padding: 4% 2.5%;
         border-radius: 0.5rem;
         overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         // Glasmorphism
         background-image: -o-linear-gradient($black-degraded);
@@ -115,6 +117,8 @@
             outline: none;
             opacity: 0.7;
             -webkit-transition: .2s;
+            -webkit-transition: opacity .2s;
+            -o-transition: opacity .2s;
             transition: opacity .2s;
             // Glassmorphism
             background-image: -o-linear-gradient($black-degraded);
@@ -134,6 +138,7 @@
             transition: all 0.3s ease-in-out;
 
             &:hover {
+                -webkit-box-shadow: 0 0 0 2vh rgba(255, 255, 255, 0.15);
                 box-shadow: 0 0 0 2vh rgba(255, 255, 255, 0.15);
                 -webkit-transition: all 0.3s ease-in-out;
                 -o-transition: all 0.3s ease-in-out;

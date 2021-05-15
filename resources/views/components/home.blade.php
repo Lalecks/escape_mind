@@ -213,70 +213,71 @@
 					</tbody>
 				</table>
 				<div class="hand"><img src="{{ asset('resources/web/cyborg_hand.png') }}" alt="cyborg_hand"/></div>
-		</section>
+			</section>
 
-		<section id="about">
-			<h1 class="rellax" data-rellax-speed=".4">À propos</h1>
-			<div class="project">
-				<h2>l'origine du projet</h2>
-				<p>Nous sommes cinq étudiants de l’université de Valenciennes. Pour notre projet de fin de licence, nous devions réaliseer un projet. C’est pour ça qu’on a fait un escape game.</p>
-			</div>
-			<div class="team">
-				<div class="team-img-role glass-effect">
-					<h2>Qui sommes-nous ?</h2>
-					<div class="hoverable">
-						<img class="hoverable" src="{{ asset('resources/web/team/ant.png') }}" alt="antony_deschodt"/>
-						<span class="hoverable team-role">Sound designer</span>
-						<span class="team-name logo-title">Antony</span>
-					</div>
-					<div class="hoverable">
-						<img class="hoverable" src="{{ asset('resources/web/team/mon.png') }}" alt="mondine_odin"/>
-						<span class="team-role hoverable">Sound designer</span>
-						<span class="team-name logo-title">Mondine</span>
-					</div>
-					<div class="hoverable">
-						<img class="hoverable" src="{{ asset('resources/web/team/ca.png') }}" alt="camille_kozack"/>
-						<span class="team-role hoverable">Infographiste</span>
-						<span class="team-name logo-title">Camille</span>
-					</div>
-					<div class="hoverable">
-						<img class="hoverable" src="{{ asset('resources/web/team/sa.png') }}" alt="sarah_mauriaucourt"/>
-						<span class="team-role hoverable">Webdesigner &amp; développeuse front-end</span>
-						<span class="team-name logo-title">Sarah</span>
-					</div>
-					<div class="hoverable">
-						<img class="hoverable" src="{{ asset('resources/web/team/ant.png') }}" alt="alexandre_lavaud"/>
-						<span class="team-role hoverable">Développeur frontend &amp; backend</span>
-						<span class="team-name logo-title">Alexandre</span>
+			<section id="about">
+				<h1 class="rellax" data-rellax-speed=".4">À propos</h1>
+				<div class="project">
+					<h2>l'origine du projet</h2>
+					<p>Nous sommes cinq étudiants de l’université de Valenciennes. Pour notre projet de fin de licence, nous devions réaliseer un projet. C’est pour ça qu’on a fait un escape game.</p>
+				</div>
+				<div class="team">
+					<div class="team-img-role glass-effect">
+						<h2>Qui sommes-nous ?</h2>
+						<div class="hoverable">
+							<img class="hoverable" src="{{ asset('resources/web/team/ant.png') }}" alt="antony_deschodt"/>
+							<span class="hoverable team-role">Sound designer</span>
+							<span class="team-name logo-title">Antony</span>
+						</div>
+						<div class="hoverable">
+							<img class="hoverable" src="{{ asset('resources/web/team/mon.png') }}" alt="mondine_odin"/>
+							<span class="team-role hoverable">Sound designer</span>
+							<span class="team-name logo-title">Mondine</span>
+						</div>
+						<div class="hoverable">
+							<img class="hoverable" src="{{ asset('resources/web/team/ca.png') }}" alt="camille_kozack"/>
+							<span class="team-role hoverable">Infographiste</span>
+							<span class="team-name logo-title">Camille</span>
+						</div>
+						<div class="hoverable">
+							<img class="hoverable" src="{{ asset('resources/web/team/sa.png') }}" alt="sarah_mauriaucourt"/>
+							<span class="team-role hoverable">Webdesigner &amp; développeuse front-end</span>
+							<span class="team-name logo-title">Sarah</span>
+						</div>
+						<div class="hoverable">
+							<img class="hoverable" src="{{ asset('resources/web/team/ant.png') }}" alt="alexandre_lavaud"/>
+							<span class="team-role hoverable">Développeur frontend &amp; backend</span>
+							<span class="team-name logo-title">Alexandre</span>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section id="contact">
-			<h1 class="rellax" data-rellax-speed=".4">Conctact</h1>
-			<div class="contact-center">
-				<div class="contact-txt">
-					<p>Hey ! Tu es à la recherche d’informations ? Ou tu souhaites peut-être donner ton avis sur l’escape game en partageant ton ressenti, d'éventuelles remarques ou suggestions dû à ton expérience ? Tu es sur la bonne page ! Alors, envoie nous un mail, qu’est-ce que tu attends&nbsp;?</p>
-					<div class="media">
-						<a href="#" class="facebook">
-							<i class="fab fa-facebook-f hoverable"></i>
-						</a>
-						<a href="#" class="instagram">
-							<i class="fab fa-instagram hoverable"></i>
-						</a>
-						<a href="#" class="youtube">
-							<i class="fab fa-youtube hoverable"></i>
-						</a>
+			<section id="contact">
+				<h1 class="rellax" data-rellax-speed=".4">Conctact</h1>
+				<div class="contact-center">
+					<div class="contact-txt">
+						<p>Hey ! Tu es à la recherche d’informations ? Ou tu souhaites peut-être donner ton avis sur l’escape game en partageant ton ressenti, d'éventuelles remarques ou suggestions dû à ton expérience ? Tu es sur la bonne page ! Alors, envoie nous un mail, qu’est-ce que tu attends&nbsp;?</p>
+						<div class="media">
+							<a href="#" class="facebook">
+								<i class="fab fa-facebook-f hoverable"></i>
+							</a>
+							<a href="#" class="instagram">
+								<i class="fab fa-instagram hoverable"></i>
+							</a>
+							<a href="#" class="youtube">
+								<i class="fab fa-youtube hoverable"></i>
+							</a>
+						</div>
+					</div>
+					<div class="take-contact">
+						<a href="mailto:contact@escapemind.fr" class="mail hoverable">contact.escapemind@gmail.com</a>
 					</div>
 				</div>
-				<div class="take-contact">
-					<a href="mailto:contact@escapemind.fr" class="mail hoverable">contact.escapemind@gmail.com</a>
-				</div>
+			</section>
 			</div>
-		</section>
 		</div>
-	</div>
+		
 	<footer>
 		<div>
 			<span>escape_mind</span>
