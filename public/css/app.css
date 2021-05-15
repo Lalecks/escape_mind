@@ -8447,7 +8447,7 @@ footer {
 }
 .Cinematic video source {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .Cinematic #media-video {
   height: 100vh !important;
@@ -9523,8 +9523,7 @@ body #top_score {
     position: fixed;
     z-index: 20;
   }
-  header #bar_fix,
-header #bar_anim {
+  header .scroll-indicator {
     display: none;
   }
   header .navbar {
@@ -9570,6 +9569,7 @@ header #bar_anim {
     filter: brightness(120%) drop-shadow(0.05rem 0.05rem 0.5rem #acacac) saturate(220%);
   }
   header .navbar ul {
+    left: -3%;
     padding-left: 0;
   }
   header .navbar ul li a:before,
