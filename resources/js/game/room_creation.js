@@ -138,22 +138,22 @@ function createRoom() {
             obj.alt = "" + object[i][2];
 
             /* Bruitage de chaques objets */
-            let audio = document.createElement("audio");
-            audio.id="audio_" + object[i][0];
-            audio.class="Foley";
-            audio.hidden=true;
-            audio.autoplay=false;
-            audio.src= url + "/audios/" + object[i][0] + "_00.mp3";
-
-            obj.addEventListener("click", () => {
-                document.getElementById("Foley").childNodes.forEach(n => n.remove());
-                document.getElementById("Foley").appendChild(audio);
-                audio.play();
-            })
-
-            audio.addEventListener("ended",()=>{
-                audio.remove();
-            })
+            // let audio = document.createElement("audio");
+            // audio.id="audio_" + object[i][0];
+            // audio.class="Foley";
+            // audio.hidden=true;
+            // audio.autoplay=false;
+            // audio.src= url + "/audios/" + object[i][0] + "_00.mp3";
+            //
+            // obj.addEventListener("click", () => {
+            //     document.getElementById("Foley").childNodes.forEach(n => n.remove());
+            //     document.getElementById("Foley").appendChild(audio);
+            //     audio.play();
+            // })
+            //
+            // audio.addEventListener("ended",()=>{
+            //     audio.remove();
+            // })
 
             link.appendChild(obj);
             parent_obj.appendChild(link);
@@ -162,6 +162,7 @@ function createRoom() {
 
     for (let i = 0; i < decor.length; i++) {
         if (decor[i][1] === actualRoom) {
+
             let link = document.createElement("div");
             link.id = "decor_" + decor[i][0];
 
@@ -172,8 +173,6 @@ function createRoom() {
             link.appendChild(obj);
             parent_decor.appendChild(link);
 
-
-
         }
     }
     area.appendChild(bg);
@@ -181,12 +180,16 @@ function createRoom() {
     let audio = document.createElement("audio");
     audio.id="audio_room" + actualRoom;
     audio.class="Ambiant";
-    audio.hidden=true;
-    audio.autoplay=true;
-    audio.src= url + "/audios/room" + actualRoom + ".mp3";
-    audio.loop=true;
+    //audio.muted = true;
 
+    let source = document.createElement("source");
+    source.src= url + "/audios/room" + actualRoom + ".mp3";
+    source.type="audio/mpeg";
+
+    audio.appendChild(source);
     document.getElementById("Ambiant").appendChild(audio);
+
+    autoPlay(audio);
 
     cursorModule();
     createModal();
@@ -204,4 +207,20 @@ function deleteRoom() {
     imgToRemove.push.apply(imgToRemove, [bg]);
 
     imgToRemove.forEach(n => n.remove());
+}
+
+function autoPlay(audio){
+    // window.addEventListener("focus", event => {
+    //     audio.volume = 0.5;
+    //     audio.play();
+    // });
+    //
+    // window.addEventListener("click", event => {
+    //     audio.volume = 0.5;
+    //     audio.play();
+    // });
+    //
+    // window.addEventListener("blur", event => {
+    //     audio.pause();
+    // });
 }
