@@ -71,7 +71,7 @@ $ npm run prod
 ### GitHub memo
 Switches to another branch or restores files from the working tree
 ```shell
-$ $ git checkout <commit>
+$ git checkout <commit>
 ```
 
 Reset to HEAD after
@@ -84,13 +84,13 @@ $ git reset --hard origin/master
 ### Preview
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
-## Authors
 
+## Authors
 * **Sarah Mauriaucourt** - *Developer & webdesigner* - [sarah-mrcrt](https://github.com/sarah-mrcrt)
 * **Alexandre Lavaud** - *Developer* - [Lalecks](https://github.com/Lalecks)
 * **Camille Kozak** - *Graphic designer*
-* **Mondine Odin** - *Sound designer* 
-* **Antony Deschodt** - *Sound designer*
+* **Mondine Odin** - *Sound designer & videographer* 
+* **Antony Deschodt** - *Sound designer & videographer*
 
 ## Sources
 * Photographies : 
@@ -101,13 +101,14 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
     - *GreenSock* Copyright (c) 2021 [Jack Doyle](https://greensock.com/standard-license)
     - *Mouse* Copyright (c) 2020 [Dezigner Bay](https://www.youtube.com/watch?v=_UR74tkspqc)
     - *Rellax* Copyright (c) 2016 [Moe Amaya](https://github.com/dixonandmoe/rellax)
-    - *Vertical scroll indicator* Copyright (c) 2021 [Paul O'Brien](https://codepen.io/paulobrien/pen/JWdoXm)
-    - *Menu burger* Copyright (c) 2021 [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
-    - *Zoom article* Copyright (c) 2021 [Pixel|Acorn](https://codepen.io/pixelacorn/pen/eNObea)
     - *Glitch effect* 2021 Copyright (c) [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
+    - *Vertical scroll indicator* Copyright (c) 2021 [Paul O'Brien](https://codepen.io/paulobrien/pen/JWdoXm)
+    - *Highlight Active Nav Link On Page Scroll* Copyright (c) 2021 [Danilo Bilanoski](https://codepen.io/dbilanoski/pen/LabpzG)
+    - *Menu burger* Copyright (c) 2021 [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
     - *Video player* Copyright (c) 2021 [OrlandoJC](https://github.com/OrlandoJC/videoPlayer)
     - *Tabs* Copyright (c)
-    - *CodePen Home CSS countdown timer* Copyright (c) 2021 [Máté Végh](https://codepen.io/matevegh/pen/GZVqLL)
+    - *Zoom article* Copyright (c) 2021 [Pixel|Acorn](https://codepen.io/pixelacorn/pen/eNObea)    
+    - *Countdown timer* Copyright (c) 2021 [Máté Végh](https://codepen.io/matevegh/pen/GZVqLL)
 
 ## Project status
 The development of the application is in progress.
