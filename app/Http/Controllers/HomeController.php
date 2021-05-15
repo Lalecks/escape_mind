@@ -37,4 +37,8 @@ class HomeController extends Controller
 
         return view('components.home')->with('user', $fifteenFirstUser)->with('secondUser', $secondUser)->with('thirdUser', $thirdUser); 
     }
+
+    public function legal_notice(){
+        return view('components.legal_notice');
+    }
 }

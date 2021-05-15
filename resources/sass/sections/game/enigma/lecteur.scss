@@ -1,0 +1,36 @@
+#lecteur_modal {
+    #div_buttons {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 62%;
+        left: 9.50%;
+        height: 67%;
+
+        .Lecteur_button {
+            background: transparent;
+            color: $black;
+            height: 100%;
+            width: 11%;
+            margin: 0.2%;
+            border-radius: 28%;
+            border: none;
+            // Transition
+            transition: all 200ms ease-in;
+            -webkit-transition: all 200ms ease-in;
+            -ms-transition: all 200ms ease-in;
+            -moz-transition: all 200ms ease-in;
+
+            &:hover {
+                background-color: #67009b;
+                opacity: .8;
+                filter: brightness(120%) drop-shadow(0.05rem 0.05rem 0.5rem #67009b);
+                // Transition
+                transition: all 200ms ease-in;
+                -webkit-transition: all 200ms ease-in;
+                -ms-transition: all 200ms ease-in;
+                -moz-transition: all 200ms ease-in;
+            }
+        }
+    }
+}

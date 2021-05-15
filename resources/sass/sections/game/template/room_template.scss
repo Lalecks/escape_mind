@@ -1,5 +1,7 @@
 #game-page {
     position: relative;
+    font-size: 2vw !important;
+    word-break: break-word;
 
     header {
         position: relative;
@@ -44,6 +46,7 @@
                 width: 100%;
                 height: 100%;
                 z-index: -4;
+                pointer-events: none;
             }
 
             #Objects div,

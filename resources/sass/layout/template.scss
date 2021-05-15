@@ -27,6 +27,7 @@ html {
     line-height: 1.5rem;
     scroll-behavior: smooth;
     cursor: none; // Retire le curseur par defaut
+
     // font-size: 62.5%;
     body {
         background-color: $body-bg;
@@ -59,6 +60,7 @@ html {
                 -o-transition: all 0.5s ease-in-out;
                 transition: all 0.5s ease-in-out;
             }
+
             &:link {
                 cursor: none; // Retire le curseur
             }
@@ -70,6 +72,11 @@ html {
             height: auto;
             -o-object-fit: contain;
             object-fit: contain;
+        }
+
+        input[type=range] {
+            -webkit-appearance: none;
+            position: relative
         }
     }
 }

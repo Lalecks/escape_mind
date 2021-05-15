@@ -15,4 +15,27 @@
         width: 50%;
         height: 23vw;
     }
+
+    .magnify {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #lecteur_modal {
+        height: 83% !important;
+
+        #buttons {
+            width: 60%;
+            left: 10.5;
+            height: 64%;
+        }
+    }
+
+    #modal_radio div {
+        left: 19.87%;
+        top: 29.37%;
+        width: 66.6%;
+    }
 }

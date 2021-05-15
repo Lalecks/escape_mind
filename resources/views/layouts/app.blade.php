@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" xmlns:og='og:http://ogp.me/ns#' dir="ltr">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" prefix="og:http://ogp.me/ns#" dir="ltr">
+	{{-- xmlns:og='og:http://ogp.me/ns#' --}}
 	<!--====== Entête ======-->
 	<head>
 		<!-- Encodage -->
@@ -27,11 +28,11 @@
 		<meta property="og:locale" content="fr_FR"/>
 		<meta property="og:image" content="https://site.com/post.jpg" />
 		<meta property="og:image" content="{{ asset('resources/icon/apple-icon-57x57.png')}}"/>
-        <meta property="og:image:secure_url" content="{{ asset('resources/icon/apple-icon-57x57.png')}}"/>
-        <meta property="og:image:alt" content="escape_mind"/>
-        <meta property="og:image:width" content="57"/>
-        <meta property="og:image:height" content="57"/>
-        {{-- <meta property="og:video" content=""/> --}}
+		<meta property="og:image:secure_url" content="{{ asset('resources/icon/apple-icon-57x57.png')}}"/>
+		<meta property="og:image:alt" content="escape_mind"/>
+		<meta property="og:image:width" content="57"/>
+		<meta property="og:image:height" content="57"/>
+		{{-- <meta property="og:video" content=""/> --}}
 		<!-- Twitter card -->
 		<meta name="twitter:card" content="player">
 		<meta name="twitter:site" content="@escapemind">
@@ -58,8 +59,6 @@
 		<meta name="theme-color" content="#1A1A1A">
 		<!-- Stylesheets -->
 		<link href="{{ mix('css/app.css') }}" rel="stylesheet">
-		<!-- Scripts -->
-		{{-- <script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script> --}}
 	</head>
 	<!--====== Corps ======-->
 	<body>
@@ -69,36 +68,34 @@
 			<div id="progress"></div>
 		</div>
 		<!-- Souris -->
-        <div id="souris">
-            <div class="cursor"></div>
+		<div id="souris">
+			<div class="cursor"></div>
 			<div class="follower"></div>
-        </div>
+		</div>
 		<!-- Content -->
 		<main>
-            <div id="fullscreen" style="opacity:0;"></div>
+			<div id="fullscreen" style="opacity:0;"></div>
 			<div id="content" style="opacity: 0">
 				@yield('content')
 			</div>
 		</main>
 		<!--====== Javascripts & Jquery ======-->
-		<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 		<script src="{{ mix('js/app.js') }}" defer></script>
 		<script>
 			/* Menu de type onglets pour les différents paramètres */
 			function openSetting(evt, settingName) {
-			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(settingName).style.display = "block";
+				evt.currentTarget.className += " active";
 			}
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-			document.getElementById(settingName).style.display = "block";
-			evt.currentTarget.className += " active";
-			}
-			// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs
 		</script>
 	</body>
 </html>

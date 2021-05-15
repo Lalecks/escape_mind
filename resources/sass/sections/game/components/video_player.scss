@@ -13,7 +13,6 @@
     }
 
     #controls {
-        font-size: 2vw !important;
         visibility: hidden;
         position: fixed;
         width: 100%;
@@ -29,6 +28,7 @@
                 width: 95%;
                 justify-content: space-between;
                 position: absolute;
+                z-index: 1;
                 bottom: 16%;
                 z-index: 15;
                 padding: 0px 2%;
@@ -47,7 +47,6 @@
 
             #timer {
                 font-family: "Audiowide", cursive;
-                font-size: 2vw !important;
                 margin: 2%;
                 font-weight: bold;
                 text-align: right;

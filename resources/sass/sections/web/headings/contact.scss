@@ -1,97 +1,112 @@
 #contact {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-ms-flex-line-pack: center;
-	align-content: center;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	// div {
-	// 	padding: 0 2.5rem;
-	// }
-	.contact-center {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		div {
-			-ms-flex-preferred-size: 50%;
-			flex-basis: 45%;
-		}
-	}
-	.contact-txt {
-		// padding: 0 5rem;
-		.media {
-			font-size: 5vh;
-			padding-top: 1.5rem;
-			text-align: right;
-			// position: relative;
-			// display: flex; // Permet de centrer le .media::before
-			// justify-content: flex-end;
-			a {
-				margin-left: 1.5rem;
-				&:hover {
-					transition: all .5s ease-in-out;
-				}
-			}
-			.facebook:hover { 
-				color: #3b5998;
-			}
-			.twitter:hover { 
-				color: #55acee;
-			}
-			.instagram:hover { 
-				color: #d6249f;
-				// background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-				// -webkit-background-clip: text;
-				// background-clip: text; // Compatibilité
-				// -webkit-text-fill-color: transparent;
-			}
-			.youtube:hover { 
-				color: #bd081c;
-			}
-		}
-		.media:before {
-			content: "";
-			display: table-cell;
-			width: .1rem;
-			background-color: $white;
-			position: absolute;
-			margin-left:-100%;
-			// font-weight: bold;
-			// display: inline-block;
-			// vertical-align: middle;
-		}
-	}
-	.take-contact {
-		-ms-flex-item-align: center;
-		-ms-grid-row-align: center;
-		align-self: center;
-		text-align: center;
-		.mail {
-			font-size: x-large;
-			font-weight: bolder;
-			text-shadow: .1rem .1rem 0 $color-shadow, 2px 2px 0 $color-shadow, 3px 3px $color-shadow; // Effet 3D
-			-webkit-transition: all 0.5s;
-			-moz-transition: all 0.5s;
-			transition: all 0.5s;
-			&:hover {
-				text-decoration: none;
-				-webkit-transition: all 0.5s;
-				-moz-transition: all 0.5s;
-				transition: all 0.5s;
-				text-shadow: .1rem .1rem 0 $transparent, 2px 2px $transparent, 3px 3px $transparent; // Effet 3D
-				// color: $color-shadow;
-				font-size: 1.6rem;
-				// text-shadow: 2px 2px 5px $white;
-			}
-		}
-	}
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    // div {
+    // 	padding: 0 2.5rem;
+    // }
+	
+    .contact-center {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        div {
+            -ms-flex-preferred-size: 50%;
+            flex-basis: 45%;
+        }
+    }
+
+    .contact-txt {
+
+        // padding: 0 5rem;
+        .media {
+            font-size: 5vh;
+            padding-top: 1.5rem;
+            text-align: right;
+
+            // position: relative;
+            // display: flex; // Permet de centrer le .media::before
+            // justify-content: flex-end;
+            a {
+                margin-left: 1.5rem;
+
+                &:hover {
+                    transition: all .5s ease-in-out;
+                }
+            }
+
+            .facebook:hover {
+                color: #3b5998;
+            }
+
+            .twitter:hover {
+                color: #55acee;
+            }
+
+            .instagram:hover {
+                color: #d6249f;
+                // background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                // -webkit-background-clip: text;
+                // background-clip: text; // Compatibilité
+                // -webkit-text-fill-color: transparent;
+            }
+
+            .youtube:hover {
+                color: #bd081c;
+            }
+        }
+
+        .media:before {
+            content: "";
+            display: table-cell;
+            width: .1rem;
+            background-color: $white;
+            position: absolute;
+            margin-left: -100%;
+            // font-weight: bold;
+            // display: inline-block;
+            // vertical-align: middle;
+        }
+    }
+
+    .take-contact {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        text-align: center;
+
+        .mail {
+            font-size: x-large;
+            font-weight: bolder;
+            text-shadow: .1rem .1rem 0 $color-shadow, 2px 2px 0 $color-shadow, 3px 3px $color-shadow; // Effet 3D
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+
+            &:hover {
+                text-decoration: none;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                transition: all 0.5s;
+                text-shadow: .1rem .1rem 0 $transparent, 2px 2px $transparent, 3px 3px $transparent; // Effet 3D
+                // color: $color-shadow;
+                font-size: 1.6rem;
+                // text-shadow: 2px 2px 5px $white;
+            }
+        }
+    }
 }

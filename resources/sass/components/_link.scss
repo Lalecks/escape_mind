@@ -1,0 +1,11 @@
+.link {
+    &:hover {
+        padding: 3% 0;
+        border-radius: 5%;
+        filter: brightness(100%) drop-shadow(0.05rem 0.05rem 0.5rem $white) saturate(200%);
+        // Glassmorphism
+        background-image: -o-linear-gradient($white-degraded);
+        background-image: -o-linear-gradient($white-degraded);
+        background-image: linear-gradient($white-degraded);
+    }
+}

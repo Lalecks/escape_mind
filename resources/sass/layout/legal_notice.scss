@@ -1,0 +1,43 @@
+#legal_notice {
+    margin: 0 auto;
+
+    h1 {
+        margin: 0;
+        color: #ffffff2e;
+        font-size: 21vh !important;
+        position: fixed;
+        letter-spacing: 1rem;
+        -webkit-text-stroke: 0;
+        -webkit-text-stroke-color: transparent;
+        top: 27%;
+    }
+
+    h2 {
+        margin: 3rem;
+    }
+
+    .logo {
+        position: fixed;
+        z-index: 10;
+        padding: 0.8%;
+        right: 100%;
+        width: 3%;
+        border-radius: 19.5%;
+        margin: 0.5%;
+        // Glassmorphism
+        background-image: -webkit-linear-gradient($black-degraded);
+        background-image: -moz-linear-gradient($black-degraded);
+        background-image: -o-linear-gradient($black-degraded);
+        background-image: linear-gradient($black-degraded);
+    }
+
+    div {
+        padding: 3rem;
+        margin: 3rem;
+        // Glassmorphism
+        background-image: -webkit-linear-gradient($black-degraded);
+        background-image: -moz-linear-gradient($black-degraded);
+        background-image: -o-linear-gradient($black-degraded);
+        background-image: linear-gradient($black-degraded);
+    }
+}

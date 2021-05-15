@@ -9,7 +9,7 @@ import cursorModule from "../layouts/mouse";
 import updateInventory, {
     invJoueur
 } from "./enigma/inventory";
-import createModal from "../layouts/modal";
+import createModal from "./components/modal";
 
 // Ajout des objets
 // Un objet_00 correspond à l'image par défaut
@@ -17,22 +17,22 @@ import createModal from "../layouts/modal";
 // Un objet_02 correspond à l'état final de l'objet
 let object = [
     /* Room 1 */
-    ["Cassettes", 1, "Il s'agit de cassettes."],
-    ["Coffre", 1, "Il s'agit d'un coffre fort."],
-    ["Jukebox", 1, "Il s'agit d'un jukebox."],
-    ["Lecteur", 1, "Il s'agit d'un lecteur."],
-    ["Radio", 1, "Il s'agit d'une radio."],
-    ["Ramdam", 1, "Il s'agit d'une radio."],
+    ["Cassettes", 1, ""],
+    ["Coffre", 1, ""],
+    ["Jukebox", 1, ""],
+    ["Lecteur", 1, ""],
+    ["Radio", 1, ""],
+    ["Poster", 1, "Oh, Ramdam fait un nouvel événement !"],
     /* Room 2 */
-    ["Lit", 2, "Il s'agit d'un lit double."],
-    ["Peluche", 2, "Il s'agit d'une peluche trop chou."],
-    ["Bougie", 2, "Il s'agit d'une bougie."],
-    ["Puzzle", 2, "Il s'agit d'un puzzle."],
-    ["Poster_Robot", 2, "Il s'agit d'un poster."],
-    ["Tablette", 2, "Il s'agit d'une tablette éteinte."],
-    ["Pile1", 2, "Il s'agit de la pile 1."],
-    ["Pile2", 2, "Il s'agit de la pile 2."],
-    ["Pile3", 2, "Il s'agit de la pile 3."],
+    ["Lit", 2, ""],
+    ["Peluche", 2, "Quelle jolie peluche."],
+    ["Bougie", 2, ""],
+    ["Puzzle", 2, ""],
+    ["Poster_Robot", 2, ""],
+    ["Tablette", 2, "Cette tablette semble éteinte."],
+    ["Pile1", 2, ""],
+    ["Pile2", 2, ""],
+    ["Pile3", 2, ""],
     /* Room 3 */
     ["Bouchon", 3, ""],
     ["Chateau_Sable", 3, ""],
@@ -51,7 +51,7 @@ let decor = [
     ["Led", 1],
     ["Panneau", 1],
     ["Panneau_neon", 1],
-    ["Poster", 1],
+    ["Ramdam", 1],
     ["Big_Vinyl", 1],
     ["Little_Vinyl", 1],
     ["Guitare", 1],

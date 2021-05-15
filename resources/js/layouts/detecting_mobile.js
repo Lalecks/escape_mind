@@ -14,12 +14,19 @@ if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elain
 if (isMobile === true) {
     $("body").addClass("landscape");
     document.getElementById('souris').style.display = "none";
+
+    if ($('.modal').hasClass('show-modal') === true) {
+        /* Arreter le scrolling de la page */
+        document.body.style.position = "fixed";
+    } else {
+        /* Autorisation le scrolling de la page */
+        document.body.style.position = "relative";
+    }
     // lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation ||screen.orientation.lock;
     // lockOrientationUniversal('landscape');
 } else {
     try {
         $("body").removeClass("landscape");
-    } catch(e){}
-    
-    document.getElementById("turn-mobile").style.display = "none"; // Si le pc fait un "mode portrait"
+        document.getElementById("turn-mobile").style.display = "none"; // Si le pc fait un "mode portrait"
+    } catch (e) {}
 }
