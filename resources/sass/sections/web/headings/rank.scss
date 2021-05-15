@@ -1,8 +1,20 @@
 #rank {
     position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
 
     table {
-        max-width: 62.75rem;
+        max-width: 90%;
+        // max-width: 62.75rem;
         margin: 10rem 2rem 0 2rem;
         background-color: $body-bg;
         border: thin solid $white;
@@ -30,14 +42,17 @@
 
     .hand {
         position: absolute;
-        bottom: -12%;
-        -webkit-transform: translateY(12%);
-        -ms-transform: translateY(12%);
-        transform: translateY(12%);
-        right: -11%;
-        -webkit-transform: translateX(11%);
-        -ms-transform: translateX(11%);
-        transform: translateX(11%);
+        bottom: -24%;
+        transform: translateY(-50%);
+        right: 2%;
+        // bottom: -12%;
+        // -webkit-transform: translateY(12%);
+        // -ms-transform: translateY(12%);
+        // transform: translateY(12%);
+        // right: -11%;
+        // -webkit-transform: translateX(11%);
+        // -ms-transform: translateX(11%);
+        // transform: translateX(11%);
 
         img {
             width: 80%;

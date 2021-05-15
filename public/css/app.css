@@ -7961,9 +7961,20 @@ footer {
 
 #rank {
   position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 #rank table {
-  max-width: 62.75rem;
+  max-width: 90%;
   margin: 10rem 2rem 0 2rem;
   background-color: #121212;
   border: thin solid #ffffff;
@@ -7987,10 +7998,9 @@ footer {
 }
 #rank .hand {
   position: absolute;
-  bottom: -12%;
-  transform: translateY(12%);
-  right: -11%;
-  transform: translateX(11%);
+  bottom: -24%;
+  transform: translateY(-50%);
+  right: 2%;
 }
 #rank .hand img {
   width: 80%;
@@ -8087,6 +8097,9 @@ footer {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+}
+#contact h2 {
+  bottom: 0;
 }
 #contact .contact-center {
   display: flex;
@@ -9459,7 +9472,7 @@ footer {
   }
   body h1,
 body #story .story-illustration,
-body #rank .top3 {
+body #top_score {
     display: none;
   }
 
@@ -9622,7 +9635,7 @@ header .navbar ul li .active::before {
     font-size: 11rem;
   }
 
-  #rank .top3 > div {
+  #top_score > div {
     padding: 0 1rem;
   }
 
