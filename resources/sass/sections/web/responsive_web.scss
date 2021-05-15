@@ -150,8 +150,7 @@
     // Fullscreen Hamburger Menu
     header {
 
-        #bar_fix,
-        #bar_anim {
+        .scroll-indicator {
             display: none;
         }
 
@@ -210,6 +209,7 @@
         .navbar {
 
             ul {
+                left: -3%;
                 padding-left: 0;
 
                 li a:before,
