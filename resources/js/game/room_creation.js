@@ -137,6 +137,24 @@ function createRoom() {
             obj.className = "hoverable"; // Pour centrer la souris
             obj.alt = "" + object[i][2];
 
+            /* Bruitage de chaques objets */
+            let audio = document.createElement("audio");
+            audio.id="audio_" + object[i][0];
+            audio.class="Foley";
+            audio.hidden=true;
+            audio.autoplay=false;
+            audio.src= url + "/audios/" + object[i][0] + "_00.mp3";
+
+            obj.addEventListener("click", () => {
+                document.getElementById("Foley").childNodes.forEach(n => n.remove());
+                document.getElementById("Foley").appendChild(audio);
+                audio.play();
+            })
+
+            audio.addEventListener("ended",()=>{
+                audio.remove();
+            })
+
             link.appendChild(obj);
             parent_obj.appendChild(link);
         }
@@ -153,9 +171,22 @@ function createRoom() {
             obj.alt = decor[i][0];
             link.appendChild(obj);
             parent_decor.appendChild(link);
+
+
+
         }
     }
     area.appendChild(bg);
+
+    let audio = document.createElement("audio");
+    audio.id="audio_room" + actualRoom;
+    audio.class="Ambiant";
+    audio.hidden=true;
+    audio.autoplay=true;
+    audio.src= url + "/audios/room" + actualRoom + ".mp3";
+    audio.loop=true;
+
+    document.getElementById("Ambiant").appendChild(audio);
 
     cursorModule();
     createModal();

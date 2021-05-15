@@ -48,6 +48,7 @@ export default function createModal() {
                 if (event.target === modal && isDisplayed) {
                     isDisplayed = false;
                     toggleModalCustom("", "");
+                    document.getElementById("Foley").childNodes.forEach(n => n.remove());
                 }
             }
             window.addEventListener("click", close, false);
@@ -58,6 +59,7 @@ export default function createModal() {
                     if (isDisplayed) {
                         isDisplayed = false;
                         toggleModalCustom("", "");
+                        document.getElementById("Foley").childNodes.forEach(n => n.remove());
                     }
                 }
                 closeButton.addEventListener("click", close, false);

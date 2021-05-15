@@ -19,7 +19,7 @@
 	<div id="Main" role="main">
 		@include('game.settings')
 		@include('game.cinematics')
-		
+
 		<div id="Game" class="Game">
 			<div id="ObjectInfo">
 				<div class="modal glass-effect hoverable">
@@ -46,6 +46,16 @@
 		<div id="Interface" class="Interface">
 			<!-- Timer -->
 		</div>
+        <div id="Sound" class="Sound">
+            <div id="Foley">
+                <!-- Bruitages <audio id="audio" class="Foley"
+                src="./resources/game/room1/audios/hit.mp3"
+                hidden="true" autoplay="false" ></audio>-->
+            </div>
+            <div id="Ambiant">
+                <!-- Background Music -->
+            </div>
+        </div>
 	</div>
 
 </section>
