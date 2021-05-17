@@ -10,7 +10,8 @@
 
 		<div id="tabs" class="glass-effect">
 			<div id="Story" class="tabcontent" style="display: block;">
-				<h2>Histoire</h2>
+				<h2>Mision</h2>
+				<p>Vous êtes Sacha Ramirez, un chercheur en sciences.</p>
 			</div>
 
 			<div id="Sound" class="tabcontent">

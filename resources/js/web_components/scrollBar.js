@@ -1,6 +1,6 @@
 /**
  *
- *  Code js de l'animation de la barre de navigation
+ *  Progress Nav : Animation de la barre de navigation
  *
  * */
 

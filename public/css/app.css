@@ -7251,7 +7251,7 @@ h2 {
 
 .logo-title {
   font-family: "Audiowide", cursive;
-  font-size: 4.1vh;
+  font-size: 2vw;
   z-index: 2;
 }
 
@@ -8104,6 +8104,7 @@ footer {
 #contact .contact-center {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #contact .contact-center div {
   flex-basis: 45%;
@@ -9156,16 +9157,15 @@ footer {
   align-content: center;
 }
 #peluche_modal #tirette {
-  width: 15vw;
-  height: 12%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 1;
   background-image: url("/resources/game/room2/objects/Tirette_00.png");
-  text-align: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 27%;
   top: 73%;
-  left: 38%;
+  left: 39%;
 }
 #peluche_modal img {
   z-index: 2;
@@ -9461,10 +9461,6 @@ footer {
     display: none;
   }
 
-  #rank .hand {
-    display: none;
-  }
-
   #rank table {
     text-align: center;
   }
@@ -9477,6 +9473,9 @@ footer {
   }
   #rank table th {
     width: 6rem;
+  }
+  #rank .hand {
+    display: none;
   }
 
   #contact p {
@@ -9524,6 +9523,9 @@ body #top_score {
   body .container {
     max-width: 100%;
   }
+  body #side-bar li:nth-child(3) {
+    display: none;
+  }
 
   #home .video-overlay #home_box div div {
     flex-direction: column;
@@ -9540,6 +9542,7 @@ body #top_score {
   }
   #contact .contact-center {
     flex-direction: column;
+    padding: 0 5rem;
   }
 
   header {
@@ -9551,6 +9554,7 @@ body #top_score {
   }
   header .navbar {
     z-index: 0;
+    left: 0;
   }
   header nav {
     background-color: rgba(0, 0, 0, 0.8);
@@ -9722,6 +9726,22 @@ header .navbar ul li .active::before {
  *  Responsive game
  *
  * */
+@media only screen and (max-width: 1300px) {
+  #game-page .modal .modal-content {
+    width: 50%;
+    height: 23vw;
+  }
+
+  .magnify {
+    width: 10px;
+    height: 10px;
+  }
+
+  #peluche_modal #tirette {
+    background-size: 26%;
+    left: 40%;
+  }
+}
 @media only screen and (min-width: 1500px) {
   #lecteur_modal {
     height: 83% !important;

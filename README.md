@@ -101,13 +101,14 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
     - *GreenSock* Copyright (c) 2021 [Jack Doyle](https://greensock.com/standard-license)
     - *Mouse* Copyright (c) 2020 [Dezigner Bay](https://www.youtube.com/watch?v=_UR74tkspqc)
     - *Rellax* Copyright (c) 2016 [Moe Amaya](https://github.com/dixonandmoe/rellax)
-    - *Glitch effect* 2021 Copyright (c) [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
+    - *Glitch effect* Copyright (c) 2021 [Sagar Mistry](https://codepen.io/sbmistry/pen/LYPZYMy)
+    - *Noise background* Copyright (c) 2021 [Mathieu S.](https://codepen.io/iceable/pen/yLBrZOd)
     - *Vertical scroll indicator* Copyright (c) 2021 [Paul O'Brien](https://codepen.io/paulobrien/pen/JWdoXm)
     - *Highlight Active Nav Link On Page Scroll* Copyright (c) 2021 [Danilo Bilanoski](https://codepen.io/dbilanoski/pen/LabpzG)
     - *Menu burger* Copyright (c) 2021 [Akshay Nair](https://codepen.io/phenax/pen/Wrjgmx)
     - *Video player* Copyright (c) 2021 [OrlandoJC](https://github.com/OrlandoJC/videoPlayer)
-    - *Tabs* Copyright (c)
-    - *Zoom article* Copyright (c) 2021 [Pixel|Acorn](https://codepen.io/pixelacorn/pen/eNObea)    
+    - *Tabs* Copyright (c) [W3Schools](https://www.w3schools.com/howto/howto_js_vertical_tabs.asp)
+    - *Magnifier* Copyright (c) 2021 [Pixel|Acorn](https://codepen.io/pixelacorn/pen/eNObea)    
     - *Countdown timer* Copyright (c) 2021 [Máté Végh](https://codepen.io/matevegh/pen/GZVqLL)
 
 ## Project status

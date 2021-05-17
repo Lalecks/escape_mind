@@ -22,10 +22,6 @@ Route::get('/', function () {
 });
 Route::get('/', 'HomeController@index');
 Route::get('/legal_notice', 'HomeController@legal_notice');
-
-
-
-
 Route::get('/play', 'GameController@game');
 Route::get('/play', 'GameController@index');
 

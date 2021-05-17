@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" prefix="og:http://ogp.me/ns#" dir="ltr">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr">
 	{{-- xmlns:og='og:http://ogp.me/ns#' --}}
 	<!--====== Entête ======-->
 	<head>

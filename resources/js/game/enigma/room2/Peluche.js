@@ -19,6 +19,7 @@ export default function Peluche() {
     move.id = "tirette_move";
     let tirette = document.createElement("div");
     tirette.id = "tirette";
+    tirette.classList = "hoverable";
 
     tirette.appendChild(move);
 
@@ -28,7 +29,8 @@ export default function Peluche() {
     dragElement(tirette);
 
     function dragElement(elmnt) {
-        let pos1 = 0, pos2 = 0;
+        let pos1 = 0,
+            pos2 = 0;
         if (document.getElementById(elmnt.id + "_move")) {
             /* if present, the header is where you move the DIV from:*/
             document.getElementById(elmnt.id + "_move").onmousedown = dragMouseDown;
@@ -55,17 +57,17 @@ export default function Peluche() {
             pos1 = pos2 - e.clientX;
             pos2 = e.clientX;
 
-            let percent = ( 100 * parseFloat((elmnt.offsetLeft - pos1) / parseFloat($("#peluche_modal").parent().width())) );
+            let percent = (100 * parseFloat((elmnt.offsetLeft - pos1) / parseFloat($("#peluche_modal").parent().width())));
 
             console.log("pourcent :" + percent);
             // set the element's new position:
             //30 -> 60%
-            if (percent <= 60 && percent >= 39){
+            if (percent <= 60 && percent >= 39) {
                 elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
             } else if (percent >= 60) {
                 elmnt.style.left = "60%";
                 //ajouter papier dans l'inventaire
-                updateInventory("",1);
+                updateInventory("", 1);
                 //retirer papier peluche
                 //lancer voix qui dit trouvé un papier
                 //lancer musique

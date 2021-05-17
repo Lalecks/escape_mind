@@ -26,12 +26,6 @@
     }
 
     #rank {
-        .hand {
-            display: none;
-        }
-    }
-
-    #rank {
         table {
             text-align: center;
 
@@ -48,6 +42,10 @@
             th {
                 width: 6rem;
             }
+        }
+
+        .hand {
+            display: none;
         }
     }
 
@@ -118,6 +116,10 @@
         .container {
             max-width: 100%;
         }
+
+        #side-bar li:nth-child(3) {
+            display: none;
+        }
     }
 
     #home {
@@ -144,6 +146,7 @@
             -webkit-box-direction: normal;
             -ms-flex-direction: column;
             flex-direction: column;
+            padding: 0 5rem;
         }
     }
 
@@ -156,6 +159,7 @@
 
         .navbar {
             z-index: 0;
+            left: 0;
         }
 
         position: fixed;
