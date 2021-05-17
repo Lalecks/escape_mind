@@ -13,13 +13,14 @@ import {
 
 import Radio from "../enigma/room1/Radio";
 import Cassettes from "../enigma/room1/Cassettes";
-import Defaut from "../enigma/room1/Defaut";
-import Pile from "../enigma/room1/Pile";
+import Tablette from "../enigma/room2/Tablette";
+import Pile from "../enigma/room2/Pile";
 import Lecteur from "../enigma/room1/Lecteur";
 import Jukebox from "../enigma/room1/Jukebox";
 import Coffre from "../enigma/room1/Coffre";
 import magnifier from "./magnifier";
 import Peluche from "../enigma/room2/Peluche";
+import Bougie from "../enigma/room2/Bougie";
 
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");
@@ -132,8 +133,11 @@ function toggleModalCustom(titre, description) {
                 case "Peluche":
                     activity.appendChild(Peluche());
                     break;
+                case "Bougie":
+                    activity.appendChild(Bougie());
+                    break;
                 default:
-                    activity.appendChild(Defaut(titre));
+                    activity.appendChild(Tablette(titre));
             }
 
             /* LOUPE/Magnifier */
