@@ -49,6 +49,7 @@
 			</div>
 			
 			<section id="home">
+				<h1 style="display: none">Accueil</h1>
 				<video class="bg-video" playsinline="" autoplay="" muted="" loop="">
 					<source src="{{ asset('resources/technology.mp4') }}" type="video/mp4">
 				</video>
@@ -189,7 +190,8 @@
 				</div>
 			</section>
 
-			<section id="rank" >
+			<section id="rank">
+				<h1 style="display: none">Classement</h1>
 				<table>
 					<thead>
 						<tr class="logo-title">
