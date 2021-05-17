@@ -9,12 +9,12 @@
 		</div>
 
 		<div id="tabs" class="glass-effect">
-			<div id="Story" class="tabcontent" style="display: block;">
+			<div id="Mission_setting" class="tabcontent" style="display: block;">
 				<h2>Mision</h2>
 				<p>Vous êtes Sacha Ramirez, un chercheur en sciences.</p>
 			</div>
 
-			<div id="Sound" class="tabcontent">
+			<div id="Sound_setting" class="tabcontent">
 				<h2>Son</h2>
 				<div>
 					<p>Musiques</p>
@@ -37,7 +37,7 @@
 				</div>
 			</div> --}}
 
-			<div id="Info" class="tabcontent">
+			<div id="Info_setting" class="tabcontent">
 				<h2>Informations</h2>
 				<a href="mailto:contact.escapemind@gmail.com" class="link hoverable"><i class="fas fa-check-double"></i> Un problème ? Contactez‑nous sur <span>contact.escapemind@gmail.com</span></a>
 				<a target="_blank" href="{{asset('/legal_notice')}}" class="link hoverable"><i class="fas fa-bug"></i> Informations légales</a>

@@ -3,7 +3,7 @@
 
 @section('content')
 <section id="game-page">
-
+	<h1 style="display: none">escpa_mind</h1>
 	<header id="Header">
 		<a href="/" class="logo logo-title hoverable glass-effect" style="pointer-events: none; cursor: default;">
 			<!-- Nécessaire pour le bon fonctionnement du Loading -->
