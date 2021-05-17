@@ -40,7 +40,7 @@ export default function createModal() {
                 toggleModalCustom(n.firstChild.id, n.firstChild.alt);
                 isDisplayed = true;
             }
-            n.addEventListener("click", trig, false);
+            n.addEventListener("mousedown", trig, false);
         });
 
         /* Fermeture de la modal en cliquant dans le vide */
@@ -52,7 +52,7 @@ export default function createModal() {
                     document.getElementById("Foley").childNodes.forEach(n => n.remove());
                 }
             }
-            window.addEventListener("click", close, false);
+            window.addEventListener("mousedown", close, false);
 
             if (closeButton) {
                 /* Fermeture de la modal avec le btn close */
@@ -63,7 +63,7 @@ export default function createModal() {
                         document.getElementById("Foley").childNodes.forEach(n => n.remove());
                     }
                 }
-                closeButton.addEventListener("click", close, false);
+                closeButton.addEventListener("mousedown", close, false);
             }
             isInit = true;
         }

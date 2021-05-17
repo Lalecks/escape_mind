@@ -2,6 +2,8 @@
  * Enigme peluche
  */
 
+import updateInventory from "../inventory";
+
 export default function Peluche() {
     let no_enigma = document.createElement("div");
     no_enigma.classList = "enigme_modal";
@@ -26,7 +28,7 @@ export default function Peluche() {
     dragElement(tirette);
 
     function dragElement(elmnt) {
-        var pos1 = 0, pos2 = 0;
+        let pos1 = 0, pos2 = 0;
         if (document.getElementById(elmnt.id + "_move")) {
             /* if present, the header is where you move the DIV from:*/
             document.getElementById(elmnt.id + "_move").onmousedown = dragMouseDown;
@@ -50,15 +52,26 @@ export default function Peluche() {
             e.preventDefault();
             // calculate the new cursor position:
             let div = document.getElementById("peluche_modal");
-            console.log("e clientX :" + e.clientX);
             pos1 = pos2 - e.clientX;
             pos2 = e.clientX;
+
+            let percent = ( 100 * parseFloat((elmnt.offsetLeft - pos1) / parseFloat($("#peluche_modal").parent().width())) );
+
+            console.log("pourcent :" + percent);
             // set the element's new position:
             //30 -> 60%
-            //if (percent < 41.1 && percent > 30){
+            if (percent <= 60 && percent >= 39){
                 elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-                console.log((((elmnt.offsetLeft - pos1) / e.clientX )*100) + "%");
-            //}
+            } else if (percent >= 60) {
+                elmnt.style.left = "60%";
+                //ajouter papier dans l'inventaire
+                updateInventory("",1);
+                //retirer papier peluche
+                //lancer voix qui dit trouvé un papier
+                //lancer musique
+            } else {
+                elmnt.style.left = "";
+            }
         }
 
         function closeDragElement() {
