@@ -9148,6 +9148,30 @@ footer {
   pointer-events: auto !important;
 }
 
+#peluche_modal {
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+#peluche_modal #tirette {
+  width: 15vw;
+  height: 12%;
+  position: absolute;
+  z-index: 1;
+  background-image: url("/resources/game/room2/objects/Tirette_00.png");
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 73%;
+  left: 38%;
+}
+#peluche_modal img {
+  z-index: 2;
+}
+
 #timer-oxyegene {
   width: 12vmin;
   height: 11vmin;
@@ -9699,17 +9723,6 @@ header .navbar ul li .active::before {
  *  Responsive game
  *
  * */
-@media only screen and (max-width: 1300px) {
-  #game-page .modal .modal-content {
-    width: 50%;
-    height: 23vw;
-  }
-
-  .magnify {
-    width: 10px;
-    height: 10px;
-  }
-}
 @media only screen and (min-width: 1500px) {
   #lecteur_modal {
     height: 83% !important;

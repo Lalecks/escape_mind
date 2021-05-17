@@ -19,6 +19,7 @@ import Lecteur from "../enigma/room1/Lecteur";
 import Jukebox from "../enigma/room1/Jukebox";
 import Coffre from "../enigma/room1/Coffre";
 import magnifier from "./magnifier";
+import Peluche from "../enigma/room2/Peluche";
 
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");
@@ -128,6 +129,9 @@ function toggleModalCustom(titre, description) {
                 case "Coffre":
                     activity.appendChild(Coffre());
                     break;
+                case "Peluche":
+                    activity.appendChild(Peluche());
+                    break;
                 default:
                     activity.appendChild(Defaut(titre));
             }
@@ -166,7 +170,8 @@ function clearAll() {
     try {
         activity.removeChild(document.getElementById("titre_modal"));
         activity.removeChild(document.getElementById("desc_modal"));
-        activity.removeChild(document.querySelector(".enigme_modal"));
+        let enigmes = document.querySelectorAll(".enigme_modal");
+        enigmes.forEach(n => n.remove());
         inventory.querySelectorAll("*").forEach(n => n.remove());
         document.querySelectorAll(".magnify").forEach(n => n.remove());
     } catch (e) {}

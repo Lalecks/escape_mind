@@ -1,0 +1,26 @@
+#peluche_modal {
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+
+    #tirette {
+        width: 15vw;
+        height: 12%;
+        position: absolute;
+        z-index: 1;
+        background-image: url("/resources/game/room2/objects/Tirette_00.png");
+        text-align: center;
+        border: 1px solid #d3d3d3;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: 73%;
+        left: 38%;
+    }
+
+    img {
+        z-index:2;
+    }
+
+}
