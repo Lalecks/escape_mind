@@ -118,47 +118,26 @@ function verif(num) {
     if (result.innerText.length === 6) {
         if (result.innerText === code) {
             result.innerText = "CORRECTE";
+            setTimeout(function () {
+                //reset les boutons
+                result.remove();
+                document.getElementById("tablette_buttons").remove();
+            }, 2000);
 
+            let tablette = document.getElementById("Tablette_bg");
 
+            let i = 0;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            //changeAV(5);
+            function myLoop() {
+                setTimeout(function () {
+                    tablette.src = "./resources/game/room2/objects/Tablette_page_0" + i + ".png";
+                    i++
+                    if (i < 10) {
+                        myLoop();
+                    }
+                }, 3000);
+            }
+            myLoop();
         } else {
             result.innerText = "ERREUR";
             setTimeout(function(){ result.innerText=""; }, 2000);

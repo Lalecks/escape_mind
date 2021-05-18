@@ -59,6 +59,7 @@
 		<meta name="theme-color" content="#1A1A1A">
 		<!-- Stylesheets -->
 		<link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
 	</head>
 	<!--====== Corps ======-->
 	<body>
