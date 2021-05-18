@@ -23,6 +23,7 @@ export default function Tablette() {
         piles = document.getElementById("inv_Pile");
     } catch (e) {
     }
+    let empalcemen
 
 
     // Gerer le nombre de pile + informer le joueur
