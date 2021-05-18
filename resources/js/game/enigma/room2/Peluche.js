@@ -38,18 +38,18 @@ export default function Peluche() {
                 pos2 = 0;
 
             if (isMobile){
-                $(elmnt).bind('touchmove', function (e) {
-                    let clientX = e.originalEvent.touches[0].pageX;
+                $(elmnt).bind('touchmove mousedown', function (e) {
+                    let clientX = e.originalEvent.touches ? e.originalEvent.touches[0].pageX : e.clientX;
                     pos2 = clientX;
-                    $(document).bind('touchend', function () {
+                    $(document).bind('touchend mouseup', function () {
                         document.ontouchend="null";
                         document.ontouchmove="null";
                     });
 
-                    $(document).bind('touchmove', function (ev) {
+                    $(document).bind('touchmove mousemove', function (ev) {
                         let div = document.getElementById("peluche_modal");
 
-                        clientX = e.originalEvent.touches[0].pageX;
+                        clientX = e.originalEvent.touches ? e.originalEvent.touches[0].pageX : e.clientX;
 
                         pos1 = pos2 - clientX;
                         pos2 = clientX;

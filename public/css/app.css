@@ -9145,8 +9145,13 @@ footer {
   background-color: #ffffff;
   border: 1px solid #d738c1;
 }
-#jukebok_modal img {
+
+.magnifiedImg {
   pointer-events: auto !important;
+}
+
+#Poster_bg {
+  width: 40% !important;
 }
 
 #peluche_modal {

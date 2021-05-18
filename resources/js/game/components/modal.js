@@ -21,6 +21,8 @@ import Coffre from "../enigma/room1/Coffre";
 import magnifier from "./magnifier";
 import Peluche from "../enigma/room2/Peluche";
 import Bougie from "../enigma/room2/Bougie";
+import Defaut from "../enigma/Defaut";
+import Poster from "../enigma/room1/Poster";
 
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");
@@ -130,14 +132,20 @@ function toggleModalCustom(titre, description) {
                 case "Coffre":
                     activity.appendChild(Coffre());
                     break;
+                case "Poster":
+                    activity.appendChild(Poster());
+                    break;
                 case "Peluche":
                     activity.appendChild(Peluche());
                     break;
                 case "Bougie":
                     activity.appendChild(Bougie());
                     break;
+                case "Tablette":
+                    activity.appendChild(Tablette());
+                    break;
                 default:
-                    activity.appendChild(Tablette(titre));
+                    activity.appendChild(Defaut(titre));
             }
 
             /* LOUPE/Magnifier */
