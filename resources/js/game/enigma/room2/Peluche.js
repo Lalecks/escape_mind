@@ -45,7 +45,7 @@ export default function Peluche() {
                 //document.getElementById(elmnt.id + "_move").addEventListener(eventType,dragMouseDown);
             } else {
                 /* otherwise, move the DIV from anywhere inside the DIV:*/
-                elmnt.onmousedown = dragMouseDown;
+                $("#" + elmnt.id).bind('touchstart mousedown', dragMouseDown);
             }
 
             function dragMouseDown(e) {
