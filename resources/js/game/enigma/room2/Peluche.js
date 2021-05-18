@@ -39,6 +39,7 @@ export default function Peluche() {
             if (document.getElementById(elmnt.id + "_move")) {
                 /* if present, the header is where you move the DIV from:*/
                 document.getElementById(elmnt.id + "_move").onmousedown = dragMouseDown;
+                document.getElementById(elmnt.id + "_move").ontouchstart = dragMouseDown;
             } else {
                 /* otherwise, move the DIV from anywhere inside the DIV:*/
                 elmnt.onmousedown = dragMouseDown;

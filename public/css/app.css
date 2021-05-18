@@ -8603,7 +8603,7 @@ footer {
 #settings-panel .settings-menu #tabs .tabcontent div p {
   margin-bottom: 3%;
 }
-#settings-panel #Sound .slider {
+#settings-panel #Sound_setting .slider {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -8613,7 +8613,7 @@ footer {
   transition: opacity 0.2s;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
-#settings-panel #Sound .slider::-webkit-slider-thumb {
+#settings-panel #Sound_setting .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 5vh;
@@ -8623,17 +8623,17 @@ footer {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#settings-panel #Sound .slider::-webkit-slider-thumb:hover {
+#settings-panel #Sound_setting .slider::-webkit-slider-thumb:hover {
   box-shadow: 0 0 0 2vh rgba(255, 255, 255, 0.15);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#settings-panel #Sound .slider::-moz-range-thumb {
+#settings-panel #Sound_setting .slider::-moz-range-thumb {
   width: 10px;
   height: 10px;
   border-radius: 50%;
 }
-#settings-panel #Info a {
+#settings-panel #Info_setting a {
   display: block;
   margin: 11% 0;
 }
