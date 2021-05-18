@@ -58,11 +58,12 @@ function verif(num) {
     if (result.innerText.length === 3) {
         if (result.innerText === code) {
             result.innerText = "CORRECTE";
-            changeAV(5);
+            setTimeout(function(){ changeAV(5); }, 2000);
         }
     } else {
         if (result.innerText.length > 5) {
             result.innerText = "ERREUR";
+            setTimeout(function(){ result.innerText=""; }, 2000);
         }
     }
 }

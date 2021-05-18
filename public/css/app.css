@@ -9155,6 +9155,21 @@ footer {
   width: 40% !important;
 }
 
+.Pile_slot {
+  opacity: 25%;
+}
+
+.Pile_empty_slot {
+  opacity: 50%;
+}
+
+#div_slot {
+  display: flex;
+  width: 9%;
+  flex-direction: column;
+  rotate: 90deg;
+}
+
 #peluche_modal {
   display: flex;
   justify-content: space-around !important;
