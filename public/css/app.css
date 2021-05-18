@@ -8603,7 +8603,7 @@ footer {
 #settings-panel .settings-menu #tabs .tabcontent div p {
   margin-bottom: 3%;
 }
-#settings-panel #Sound .slider {
+#settings-panel #Sound_setting .slider {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -8613,7 +8613,7 @@ footer {
   transition: opacity 0.2s;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
-#settings-panel #Sound .slider::-webkit-slider-thumb {
+#settings-panel #Sound_setting .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 5vh;
@@ -8623,17 +8623,17 @@ footer {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#settings-panel #Sound .slider::-webkit-slider-thumb:hover {
+#settings-panel #Sound_setting .slider::-webkit-slider-thumb:hover {
   box-shadow: 0 0 0 2vh rgba(255, 255, 255, 0.15);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#settings-panel #Sound .slider::-moz-range-thumb {
+#settings-panel #Sound_setting .slider::-moz-range-thumb {
   width: 10px;
   height: 10px;
   border-radius: 50%;
 }
-#settings-panel #Info a {
+#settings-panel #Info_setting a {
   display: block;
   margin: 11% 0;
 }
@@ -8909,8 +8909,8 @@ footer {
   z-index: 2;
 }
 #game-page #Game .Room3 #Objects #Baleine {
-  right: 35%;
-  bottom: 16%;
+  right: 28%;
+  bottom: 18.3%;
   width: 7%;
   z-index: 2;
 }
@@ -8935,14 +8935,14 @@ footer {
 }
 #game-page #Game .Room3 #Objects #Bouteille_Verre {
   right: 1%;
-  bottom: 3%;
+  bottom: 5%;
   width: 23%;
   transform: rotate(10deg);
   z-index: 2;
 }
 #game-page #Game .Room3 #Objects #Bouteille_Oxygene {
-  right: -9%;
-  bottom: 31%;
+  right: -13%;
+  bottom: 27%;
   width: 18%;
   transform: rotate(5deg);
   z-index: 2;
@@ -8983,10 +8983,11 @@ footer {
   z-index: 2;
 }
 #game-page #Game .Room3 #Decors #Tas_Sable {
-  bottom: 0;
+  bottom: 1%;
   width: 100%;
   height: auto;
-  z-index: 0;
+  z-index: 2;
+  right: 0;
 }
 
 /* Enigma */

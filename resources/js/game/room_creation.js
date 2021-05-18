@@ -64,9 +64,6 @@ let decor = [
     ["Oiseaux", 2],
     /* Room 3 */
     ["Tas_Sable", 3],
-    // ["Tas_Sable1", 3],
-    // ["Tas_Sable2", 3],
-    // ["Tas_Sable3", 3],
     ["Robinet", 3],
     ["Bulle", 3],
     ["Crabe", 3],
@@ -77,8 +74,8 @@ let decor = [
 
 
 /* Initialisation des variables */
-let actualRoom = 0; // Salle actuelle
-let nbRoom = 3;
+let actualRoom = 2; // Salle actuelle
+let nbRoom = 5;
 let url = "";
 
 export {
@@ -178,13 +175,13 @@ function createRoom() {
     area.appendChild(bg);
 
     let audio = document.createElement("audio");
-    audio.id="audio_room" + actualRoom;
-    audio.class="Ambiant";
+    audio.id = "audio_room" + actualRoom;
+    audio.class = "Ambiant";
     //audio.muted = true;
 
     let source = document.createElement("source");
-    source.src= url + "/audios/room" + actualRoom + ".mp3";
-    source.type="audio/mpeg";
+    source.src = url + "/audios/room" + actualRoom + ".mp3";
+    source.type = "audio/mpeg";
 
     audio.appendChild(source);
     document.getElementById("Ambiant").appendChild(audio);
@@ -209,7 +206,7 @@ function deleteRoom() {
     imgToRemove.forEach(n => n.remove());
 }
 
-function autoPlay(audio){
+function autoPlay(audio) {
     // window.addEventListener("focus", event => {
     //     audio.volume = 0.5;
     //     audio.play();

@@ -37,8 +37,8 @@
             }
 
             #Baleine {
-                right: 35%;
-                bottom: 16%;
+                right: 28%;
+                bottom: 18.3%;
                 width: 7%;
                 z-index: 2;
             }
@@ -69,7 +69,7 @@
 
             #Bouteille_Verre {
                 right: 1%;
-                bottom: 3%;
+                bottom: 5%;
                 width: 23%;
                 -webkit-transform: rotate(10deg);
                 -ms-transform: rotate(10deg);
@@ -78,8 +78,8 @@
             }
 
             #Bouteille_Oxygene {
-                right: -9%;
-                bottom: 31%;
+                right: -13%;
+                bottom: 27%;
                 width: 18%;
                 -webkit-transform: rotate(5deg);
                 -ms-transform: rotate(5deg);
@@ -131,10 +131,11 @@
             }
 
             #Tas_Sable {
-                bottom: 0;
+                bottom: 1%;
                 width: 100%;
                 height: auto;
-                z-index: 0;
+                z-index: 2;
+                right: 0;
             }
         }
     }

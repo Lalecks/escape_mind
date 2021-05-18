@@ -1,6 +1,11 @@
 {{-- php artisan vendor:publish --tag=laravel-errors --}}
 @extends('layouts.template')
 @section('content')
+<header >
+	<a href="/" class="logo logo-title glass-effect">
+		<img src="{{asset("./resources/game/Logo.png")}}" alt="logo" class="hoverable"/>
+	</a>
+</header>
 <div class="error">
 	<div class="code" data-text="@yield('code')">@yield('code', __('Oh no'))</div>
 	<h2>Aïe ! @yield('message')</h2>
@@ -8,7 +13,7 @@
 	{{-- <img src="{{ asset('ressources/404.gif') }}" alt="@yield('code')_error"> --}}
 </div>
 <!--====== Javascripts & Jquery ======-->
-<script>
+<script>dd
 	window.setTimeout(function(){
 		// Après 2 minutes, rediriger vers l'accueil
 		window.location.href = "/";

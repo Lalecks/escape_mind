@@ -65,5 +65,4 @@ function verif(num) {
             result.innerText = "ERREUR";
         }
     }
-    console.log(num);
 }

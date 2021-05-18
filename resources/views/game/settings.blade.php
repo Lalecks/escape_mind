@@ -2,10 +2,10 @@
 	<div class="burger hoverable fas fa-cog"></div>
 	<nav class="settings-menu glass-effect">			
 		<div id="filter">
-			<span class="tablinks active" onclick="openSetting(event,'Story')"><i class="fas fa-book-open"></i></span>
-			<span class="tablinks" onclick="openSetting(event,'Sound')"><i class="fas fa-music"></i></span>
+			<span class="tablinks active" onclick="openSetting(event,'Mission_setting')"><i class="fas fa-book-open"></i></span>
+			<span class="tablinks" onclick="openSetting(event,'Sound_setting')"><i class="fas fa-music"></i></span>
 			{{-- <span class="tablinks" onclick="openSetting(event,'Languages')"><i class="fas fa-globe-europe"></i></span> --}}
-			<span class="tablinks" onclick="openSetting(event,'Info')"><i class="fas fa-info"></i></span>
+			<span class="tablinks" onclick="openSetting(event,'Info_setting')"><i class="fas fa-info"></i></span>
 		</div>
 
 		<div id="tabs" class="glass-effect">
