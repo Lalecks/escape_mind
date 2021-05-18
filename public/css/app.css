@@ -8671,6 +8671,10 @@ footer {
   display: none;
 }
 
+.magnifiedImg {
+  pointer-events: auto !important;
+}
+
 .fa-search {
   position: absolute;
   left: 7%;
@@ -9146,8 +9150,9 @@ footer {
   background-color: #ffffff;
   border: 1px solid #d738c1;
 }
-#jukebok_modal img {
-  pointer-events: auto !important;
+
+#Poster_bg {
+  width: 40% !important;
 }
 
 #peluche_modal {

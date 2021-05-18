@@ -7,6 +7,10 @@
     display: none;
 }
 
+.magnifiedImg {
+    pointer-events: auto !important;
+}
+
 .fa-search {
     position: absolute;
     left: 7%;
