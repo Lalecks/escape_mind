@@ -1,13 +1,50 @@
-.Pile_slot {
-    opacity: 25%;
-}
+#tablette_modal {
+    #div_slot {
+        width: 15%;
+        transform: rotate(90deg);
+        position: absolute;
+        transform: scaleX(-1);
 
-.Pile_empty_slot {
-    opacity: 50%;
-}
+        .Pile_slot {
+            opacity: 25%;
+        }
 
-#div_slot {
-    width: 15%;
-    transform: rotate(90deg);
-    position: absolute;
+        .Pile_empty_slot {
+            opacity: 50%;
+        }
+    }
+
+    #code_tablette {
+        font-family: $font-logo;
+        background-color: #e97c61;
+        width: 25%;
+        height: 16%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 2;
+        margin: auto;
+        left: 37.4%;
+        top: 13%;
+    }
+
+    #tablette_buttons {
+        position: absolute;
+        left: 36%;
+        width: 28%;
+        top: 36%;
+
+        [id^="tablette_button_"] {
+            background: gray;
+            color: white;
+            font-size: 4vw;
+            font-size: 136%;
+            justify-content: center;
+            width: 63%;
+            text-align: center;
+            width: 4%;
+            width: 25%;
+        }
+    }
 }

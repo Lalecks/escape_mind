@@ -8682,7 +8682,6 @@ footer {
   color: #ffffff;
   padding: 1%;
   border-radius: 23%;
-  background: rgba(189, 16, 224, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -8697,6 +8696,17 @@ footer {
 .off:hover {
   color: #AC00FF;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
+}
+
+.Room1 .fa-search {
+  background: rgba(189, 16, 224, 0.25);
+}
+.Room1 .off:hover {
+  color: #AC00FF;
+}
+
+.Room2 .fa-search {
+  background: rgba(240, 254, 26, 0.3);
 }
 
 /* Rooms : Modification des différents éléments visuels du template "room_template' pour chaque salle */
@@ -8995,6 +9005,46 @@ footer {
 }
 
 /* Enigma */
+#lecteur_modal #div_buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 62%;
+  left: 9.5%;
+  height: 67%;
+}
+#lecteur_modal #div_buttons .Lecteur_button {
+  background: transparent;
+  color: #000000;
+  height: 100%;
+  width: 11%;
+  margin: 0.2%;
+  border-radius: 28%;
+  border: none;
+  transition: all 200ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+}
+#lecteur_modal #div_buttons .Lecteur_button:hover {
+  background-color: #67009b;
+  opacity: 0.8;
+  filter: brightness(120%) drop-shadow(0.05rem 0.05rem 0.5rem #67009b);
+  transition: all 200ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+}
+
+#jukebok_modal {
+  background-color: #ffffff;
+  border: 1px solid #d738c1;
+}
+
+#Poster_bg {
+  width: 40% !important;
+}
+
 #modal_radio div {
   height: 9.4%;
   position: absolute;
@@ -9115,58 +9165,48 @@ footer {
   display: block;
 }
 
-#lecteur_modal #div_buttons {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 62%;
-  left: 9.5%;
-  height: 67%;
-}
-#lecteur_modal #div_buttons .Lecteur_button {
-  background: transparent;
-  color: #000000;
-  height: 100%;
-  width: 11%;
-  margin: 0.2%;
-  border-radius: 28%;
-  border: none;
-  transition: all 200ms ease-in;
-  -webkit-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-}
-#lecteur_modal #div_buttons .Lecteur_button:hover {
-  background-color: #67009b;
-  opacity: 0.8;
-  filter: brightness(120%) drop-shadow(0.05rem 0.05rem 0.5rem #67009b);
-  transition: all 200ms ease-in;
-  -webkit-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-}
-
-#jukebok_modal {
-  background-color: #ffffff;
-  border: 1px solid #d738c1;
-}
-
-#Poster_bg {
-  width: 40% !important;
-}
-
-.Pile_slot {
-  opacity: 25%;
-}
-
-.Pile_empty_slot {
-  opacity: 50%;
-}
-
-#div_slot {
+#tablette_modal #div_slot {
   width: 15%;
   transform: rotate(90deg);
   position: absolute;
+  transform: scaleX(-1);
+}
+#tablette_modal #div_slot .Pile_slot {
+  opacity: 25%;
+}
+#tablette_modal #div_slot .Pile_empty_slot {
+  opacity: 50%;
+}
+#tablette_modal #code_tablette {
+  font-family: "Audiowide", cursive;
+  background-color: #e97c61;
+  width: 25%;
+  height: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  left: 37.4%;
+  top: 13%;
+}
+#tablette_modal #tablette_buttons {
+  position: absolute;
+  left: 36%;
+  width: 28%;
+  top: 36%;
+}
+#tablette_modal #tablette_buttons [id^=tablette_button_] {
+  background: gray;
+  color: white;
+  font-size: 4vw;
+  font-size: 136%;
+  justify-content: center;
+  width: 63%;
+  text-align: center;
+  width: 4%;
+  width: 25%;
 }
 
 #peluche_modal {

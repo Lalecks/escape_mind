@@ -10,6 +10,7 @@ let code = "250320";
 
 export default function Tablette() {
     let no_enigma = document.createElement("div");
+    no_enigma.id = "tablette_modal";
     no_enigma.classList = "enigme_modal";
 
     let desc_text = document.getElementById("desc_text");
@@ -32,20 +33,19 @@ export default function Tablette() {
         let piles = null;
         try {
             piles = document.getElementById("inv_Pile");
-        } catch (e) {
-        }
+        } catch (e) {}
 
         let slots = document.createElement("div");
-        slots.id="div_slot";
+        slots.id = "div_slot";
 
-        for (let i = 0; i<3;i++){
+        for (let i = 0; i < 3; i++) {
             let slot = document.createElement("img");
-            slot.id="Pile_slot_" + (i+1);
-            if (i < nb_piles){
-                slot.classList ="Pile_empty_slot";
+            slot.id = "Pile_slot_" + (i + 1);
+            if (i < nb_piles) {
+                slot.classList = "Pile_empty_slot";
                 slot.src = "./resources/game/room2/objects/Pile_00.png";
-            }else {
-                slot.classList ="Pile_slot";
+            } else {
+                slot.classList = "Pile_slot";
                 slot.src = "./resources/game/room2/objects/Pile_slot_00.png";
             }
             slots.appendChild(slot);
@@ -53,39 +53,41 @@ export default function Tablette() {
 
         no_enigma.appendChild(slots);
 
-        if (piles !== null && nb_piles<3) {
+        if (piles !== null && nb_piles < 3) {
             let number = document.querySelector(".item_number") || null;
             piles.addEventListener("click", () => {
-                if (number != null){
-                    for (let i=1;i<=number.innerHTML;i++){
+                if (number != null) {
+                    for (let i = 1; i <= number.innerHTML; i++) {
                         updateInventory("Pile", false);
                         let first_empty_slot = document.querySelector(".Pile_slot");
-                        first_empty_slot.src="./resources/game/room2/objects/Pile_00.png";
-                        first_empty_slot.classList="Pile_empty_slot";
-                        nb_piles=nb_piles+1;
+                        first_empty_slot.src = "./resources/game/room2/objects/Pile_00.png";
+                        first_empty_slot.classList = "Pile_empty_slot";
+                        nb_piles = nb_piles + 1;
                     }
                 } else {
                     updateInventory("Pile", false);
                     let first_empty_slot = document.querySelector(".Pile_slot");
-                    first_empty_slot.src="./resources/game/room2/objects/Pile_00.png";
-                    first_empty_slot.classList="Pile_empty_slot";
-                    nb_piles=nb_piles+1;
+                    first_empty_slot.src = "./resources/game/room2/objects/Pile_00.png";
+                    first_empty_slot.classList = "Pile_empty_slot";
+                    nb_piles = nb_piles + 1;
                 }
                 document.querySelector("#div_inv_Pile").remove();
 
-                if (nb_piles===3){
-                    updateObject("Tablette",0);
+                if (nb_piles === 3) {
+                    updateObject("Tablette", 0);
                     bg.src = "./resources/game/room2/objects/Tablette_face_01.png";
                     desc_modal.innerHTML = '<a id="button" class="fas fa-search hoverable glass-effect"></a>';
 
-                    setTimeout(function(){ slots.remove();
-                        part_two(bg,desc_text,no_enigma);}, 500);
+                    setTimeout(function () {
+                        slots.remove();
+                        part_two(bg, desc_text, no_enigma);
+                    }, 500);
                 }
             })
         }
     } else {
         //DEUXIEME PARTIE DE LA TABLETTE : CODE
-        part_two(bg,desc_text,no_enigma);
+        part_two(bg, desc_text, no_enigma);
     }
 
     return no_enigma;
@@ -93,7 +95,7 @@ export default function Tablette() {
 }
 
 
-function part_two(bg,desc_text,no_enigma){
+function part_two(bg, desc_text, no_enigma) {
     bg.src = "./resources/game/room2/objects/Tablette_face_01.png";
     desc_text.remove();
 
@@ -101,24 +103,24 @@ function part_two(bg,desc_text,no_enigma){
     result.id = "code_tablette";
 
     let div_button = document.createElement("div");
-    div_button.id="tablette_buttons";
+    div_button.id = "tablette_buttons";
 
-    for (let i=1;i<=11;i++){
+    for (let i = 1; i <= 11; i++) {
         let button = document.createElement("button");
-        button.id="tablette_button_" + (i+1);
+        button.id = "tablette_button_" + (i + 1);
         button.classList = "butt hoverable";
         button.addEventListener("click", function () {
             verif(button.innerText);
         });
 
-        if (i===10){
-            button.innerText=0;
-        } else if (i===11){
-            button.innerText="X";
+        if (i === 10) {
+            button.innerText = 0;
+        } else if (i === 11) {
+            button.innerText = "X";
             button.addEventListener("click", function () {
-                result.innerText="";
+                result.innerText = "";
             });
-        } else button.innerText=i;
+        } else button.innerText = i;
 
         div_button.appendChild(button);
     }
@@ -131,7 +133,7 @@ function part_two(bg,desc_text,no_enigma){
 function verif(num) {
     let result = document.getElementById("code_tablette");
 
-    if (result.innerText !== "CORRECTE" && result.innerText !== "ERREUR" )
+    if (result.innerText !== "CORRECTE" && result.innerText !== "ERREUR")
         result.innerText += num;
 
     if (result.innerText.length === 6) {
@@ -150,12 +152,14 @@ function verif(num) {
                     if (i < 8) {
                         myLoop();
                     }
-                }, i===0 ? 0 : 5000);
+                }, i === 0 ? 0 : 5000);
             }
             myLoop();
         } else {
             result.innerText = "ERREUR";
-            setTimeout(function(){ result.innerText=""; }, 500);
+            setTimeout(function () {
+                result.innerText = "";
+            }, 500);
         }
     }
 }
