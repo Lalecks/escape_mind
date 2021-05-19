@@ -8534,14 +8534,14 @@ footer {
   -webkit-text-fill-color: transparent;
   display: none;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   top: 2%;
   right: 10%;
   font-size: 3.2vw;
 }
 #settings-panel .settings-menu {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 38%;
   height: 50px;
   top: 0;
@@ -9164,10 +9164,9 @@ footer {
 }
 
 #div_slot {
-  display: flex;
-  width: 9%;
-  flex-direction: column;
-  rotate: 90deg;
+  width: 15%;
+  transform: rotate(90deg);
+  position: absolute;
 }
 
 #peluche_modal {

@@ -1,0 +1,74 @@
+#modal_radio {
+    div {
+        height: 9.4%;
+        position: absolute;
+        margin: auto;
+        left: 19.87%;
+        top: 29.37%;
+        width: 60.6%;
+        overflow: hidden;
+
+        #radio_slider {
+            height: 100%;
+            width: 87%;
+            position: absolute;
+            bottom: 0%;
+            right: 6%;
+        }
+
+        .slider {
+            background: transparent;
+            -webkit-appearance: none;
+            width: 100%;
+        }
+
+        .slider::-webkit-slider-thumb {
+            // Use for Chrome, Opera, Safari, Edge
+            -webkit-appearance: none;
+            width: 2vh;
+            height: 2vh;
+            // width: 3.5%;
+            // height: 65%;
+            border: 0;
+            //background: url('/resources/game/room1/objects/Radio_01.png');
+            background: black;
+            cursor: pointer;
+            transform: translateY(50%);
+
+            &:hover {
+                cursor: none; // Retire le curseur
+            }
+
+        }
+
+        .slider::-moz-range-thumb {
+            // Use for Firefox
+            appearance: none;
+            width: 3.5%;
+            height: 65%;
+            border: 0;
+            //background: url('/resources/game/room1/objects/Radio_01.png');
+            background: black;
+            cursor: pointer;
+            transform: translateY(50%);
+
+            &:hover {
+                cursor: none; // Retire le curseur
+            }
+
+        }
+
+    }
+
+    p {
+        position: absolute;
+        background: $pink;
+        padding: 1%;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 15%;
+        border-radius: 9%;
+    }
+}

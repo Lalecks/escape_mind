@@ -74,15 +74,16 @@
 @import 'sections/game/room/room2';
 @import 'sections/game/room/room3';
 /* Enigma */
+// Room1
+@import 'sections/game/enigma/room1/radio';
+@import 'sections/game/enigma/room1/coffre';
+@import 'sections/game/enigma/room1/lecteur';
+@import 'sections/game/enigma/room1/jukebox';
 // Room2
-@import 'sections/game/enigma/radio';
-@import 'sections/game/enigma/coffre';
-@import 'sections/game/enigma/lecteur';
-@import 'sections/game/enigma/jukebox';
-@import 'sections/game/enigma/tablette';
-@import 'sections/game/enigma/peluche';
+@import 'sections/game/enigma/room2/tablette';
+@import 'sections/game/enigma/room2/peluche';
 // Room3
-@import 'sections/game/enigma/timer-oxygene';
+@import 'sections/game/enigma/room3/timer-oxygene';
 
 /*--------  Responsive --------*/
 @import 'sections/web/responsive_web';
