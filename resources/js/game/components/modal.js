@@ -190,6 +190,7 @@ function clearAll() {
         enigmes.forEach(n => n.remove());
         inventory.querySelectorAll("*").forEach(n => n.remove());
         document.querySelectorAll(".magnify").forEach(n => n.remove());
+        document.querySelectorAll(".Music").forEach(n => n.remove());
     } catch (e) {}
 }
 

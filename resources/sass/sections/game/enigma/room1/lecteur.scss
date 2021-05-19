@@ -1,21 +1,22 @@
 #lecteur_modal {
     #div_buttons {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
-        width: 62%;
-        left: 9.50%;
-        height: 67%;
+        width: 34.1%;
+        left: 34.8%;
+        height: 15%;
+        justify-content: space-around;
+        bottom: 12.8%;
 
         .Lecteur_button {
             background: transparent;
-            color: $black;
+            color: #000000;
             height: 100%;
-            width: 11%;
+            width: 15%;
             margin: 0.2%;
             border-radius: 28%;
             border: none;
-            // Transition
             transition: all 200ms ease-in;
             -webkit-transition: all 200ms ease-in;
             -ms-transition: all 200ms ease-in;

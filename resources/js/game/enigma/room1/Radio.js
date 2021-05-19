@@ -27,14 +27,24 @@ export default function Radio(){
     cursor.max="100";
     cursor.value="50";
 
+    let musique = document.createElement("audio");
+    musique.id="audio_Ramdam";
+    musique.className="Music";
+    musique.hidden=true;
+    musique.autoplay=false;
+    musique.volume=1;
+    musique.src= "./resources/game/room1/audios/Radio_01.mp3";
+    document.getElementById("Music").appendChild(musique);
+
     let actual_val = document.createElement("p");
     actual_val.innerText = (((50/100)*13)+87).toFixed(1) + " Hz";
 
     cursor.onchange=function(){
         //Correspond à la fréquence à trouver
         if (cursor.value === "37"){
-            alert("indice sonore : '11'");
-            changeAV(0);
+            /* Musique */
+            musique.play();
+            changeAV(3);
         }
     }
 

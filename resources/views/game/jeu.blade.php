@@ -52,10 +52,13 @@
                 src="./resources/game/room1/audios/hit.mp3"
                 hidden="true" autoplay="false" ></audio>-->
             </div>
+            <div id="Music">
+                <!-- Background Music -->
+            </div>
             <div id="Ambiant">
                 <!-- Background Music -->
             </div>
-            <div id="AI">
+            <div id="Voice">
                 <!-- AI Voice -->
             </div>
         </div>
