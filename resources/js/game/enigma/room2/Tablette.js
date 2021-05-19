@@ -12,6 +12,8 @@ export default function Tablette() {
     let no_enigma = document.createElement("div");
     no_enigma.classList = "enigme_modal";
 
+    let desc_text = document.getElementById("desc_text");
+
     console.log("nb_pile : " + nb_piles);
 
     let html = document.getElementById("Tablette");
@@ -19,6 +21,8 @@ export default function Tablette() {
     let bg = document.createElement("img");
     bg.id = "Tablette_bg";
     bg.classList = "magnifiedImg";
+    let desc_modal = document.getElementById('desc_modal');
+    desc_modal.innerHTML = '<a id="button" class="fas fa-search hoverable glass-effect"></a>' + desc_modal.innerHTML;
 
     no_enigma.appendChild(bg);
 
@@ -71,76 +75,87 @@ export default function Tablette() {
 
                 if (nb_piles===3){
                     updateObject("Tablette",0);
-                    let modal = document.querySelector(".modal");
-                    modal.classList.toggle("show-modal");
+                    bg.src = "./resources/game/room2/objects/Tablette_face_01.png";
+                    desc_modal.innerHTML = '<a id="button" class="fas fa-search hoverable glass-effect"></a>';
+
+                    setTimeout(function(){ slots.remove();
+                        part_two(bg,desc_text,no_enigma);}, 500);
                 }
             })
         }
     } else {
         //DEUXIEME PARTIE DE LA TABLETTE : CODE
-        bg.src = "./resources/game/room2/objects/Tablette_face_01.png";
-        bg.classList = "magnifiedImg";
-        document.getElementById('desc_modal').innerHTML = '<a id="button" class="fas fa-search hoverable glass-effect"></a>' + document.getElementById('desc_modal').innerHTML;
-
-        let result = document.createElement("span");
-        result.id = "code_tablette";
-
-        let div_button = document.createElement("div");
-        div_button.id="tablette_buttons";
-
-        for (let i=1;i<=10;i++){
-            let button = document.createElement("button");
-            button.id="tablette_button_" + (i+1);
-            button.classList = "butt hoverable";
-            button.addEventListener("click", function () {
-                verif(button.innerText)
-            });
-
-            if (i===10){
-                button.innerText=0;
-            } else button.innerText=i;
-
-            div_button.appendChild(button);
-        }
-    no_enigma.appendChild(result);
-    no_enigma.appendChild(div_button);
-
+        part_two(bg,desc_text,no_enigma);
     }
 
     return no_enigma;
+
 }
+
+
+function part_two(bg,desc_text,no_enigma){
+    bg.src = "./resources/game/room2/objects/Tablette_face_01.png";
+    desc_text.remove();
+
+    let result = document.createElement("span");
+    result.id = "code_tablette";
+
+    let div_button = document.createElement("div");
+    div_button.id="tablette_buttons";
+
+    for (let i=1;i<=11;i++){
+        let button = document.createElement("button");
+        button.id="tablette_button_" + (i+1);
+        button.classList = "butt hoverable";
+        button.addEventListener("click", function () {
+            verif(button.innerText);
+        });
+
+        if (i===10){
+            button.innerText=0;
+        } else if (i===11){
+            button.innerText="X";
+            button.addEventListener("click", function () {
+                result.innerText="";
+            });
+        } else button.innerText=i;
+
+        div_button.appendChild(button);
+    }
+    no_enigma.appendChild(result);
+    no_enigma.appendChild(div_button);
+
+}
+
 
 function verif(num) {
     let result = document.getElementById("code_tablette");
 
-    result.innerText += num;
+    if (result.innerText !== "CORRECTE" && result.innerText !== "ERREUR" )
+        result.innerText += num;
 
     if (result.innerText.length === 6) {
         if (result.innerText === code) {
             result.innerText = "CORRECTE";
-            setTimeout(function () {
-                //reset les boutons
-                result.remove();
-                document.getElementById("tablette_buttons").remove();
-            }, 2000);
+            result.remove();
+            document.getElementById("tablette_buttons").remove();
 
             let tablette = document.getElementById("Tablette_bg");
-
             let i = 0;
 
             function myLoop() {
                 setTimeout(function () {
                     tablette.src = "./resources/game/room2/objects/Tablette_page_0" + i + ".png";
                     i++
-                    if (i < 10) {
+                    if (i < 8) {
                         myLoop();
                     }
-                }, 3000);
+                }, i===0 ? 0 : 5000);
             }
             myLoop();
         } else {
             result.innerText = "ERREUR";
-            setTimeout(function(){ result.innerText=""; }, 2000);
+            setTimeout(function(){ result.innerText=""; }, 500);
         }
     }
 }

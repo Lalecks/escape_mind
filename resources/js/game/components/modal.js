@@ -91,8 +91,11 @@ function toggleModalCustom(titre, description) {
 
             /* Description de l'objet */
             let desc_html = document.createElement("span");
-            desc_html.innerText = description;
             desc_html.id = "desc_modal";
+
+            let text_html = document.createElement("p");
+            text_html.id="desc_text";
+            text_html.innerText = description;
 
             /* Affichage ou non de l'inventaire */
             if (invJoueur.length > 0) {
@@ -108,6 +111,7 @@ function toggleModalCustom(titre, description) {
 
             }
 
+            desc_html.appendChild(text_html);
             activity.appendChild(titre_html);
             activity.appendChild(desc_html);
 
