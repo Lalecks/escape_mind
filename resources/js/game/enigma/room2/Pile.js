@@ -27,11 +27,14 @@ export default function Pile(nom_obj) {
         button.innerText = "Récupérer";
         button.onclick = function () {
             //empeche le spam click
-            updateInventory("Pile", "1");
-            updateObject(nom_obj,true);
-            let modal = document.querySelector(".modal");
-            modal.classList.toggle("show-modal");
-            used = 1;
+            if (!used) {
+                button.disabled = true;
+                updateInventory("Pile", "1");
+                updateObject(nom_obj, true);
+                let modal = document.querySelector(".modal");
+                modal.classList.toggle("show-modal");
+                used = 1;
+            }
         };
         enigma.appendChild(button);
     }
