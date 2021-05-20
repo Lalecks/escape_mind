@@ -31,17 +31,15 @@ export default function Coffre() {
 
         let num = document.createElement("span");
         num.classList = "num hoverable";
-        if (i===10){
+        if (i === 10) {
             num.innerText = "X";
             num.addEventListener("click", function () {
-                result.innerText="";
+                result.innerText = "";
             });
         } else num.innerText = i;
         num.addEventListener("click", function () {
             verif(i)
         });
-
-
 
         if (i < 5) div_haut.appendChild(num);
         else div_bas.appendChild(num);
@@ -60,18 +58,22 @@ export default function Coffre() {
 function verif(num) {
     let result = document.getElementById("code_coffre");
 
-    if (result.innerText !== "CORRECTE" && result.innerText !== "ERREUR" )
+    if (result.innerText !== "CORRECTE" && result.innerText !== "ERREUR")
         result.innerText += num;
 
     if (result.innerText.length === 3) {
         if (result.innerText === code) {
             result.innerText = "CORRECTE";
-            setTimeout(function(){ changeAV(5); }, 500);
+            setTimeout(function () {
+                changeAV(5);
+            }, 500);
         }
     } else {
         if (result.innerText.length > 5) {
             result.innerText = "ERREUR";
-            setTimeout(function(){ result.innerText="";}, 500);
+            setTimeout(function () {
+                result.innerText = "";
+            }, 500);
         }
     }
 }

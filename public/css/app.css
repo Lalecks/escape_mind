@@ -9036,6 +9036,7 @@ footer {
   -moz-transition: all 200ms ease-in;
 }
 
+/* Firefox */
 #jukebok_modal {
   background-color: #ffffff;
   border: 1px solid #d738c1;
@@ -9165,6 +9166,9 @@ footer {
   display: block;
 }
 
+#tablette_modal img {
+  width: 35%;
+}
 #tablette_modal #div_slot {
   width: 15%;
   transform: rotate(90deg);
@@ -9200,13 +9204,18 @@ footer {
 #tablette_modal #tablette_buttons [id^=tablette_button_] {
   background: gray;
   color: white;
-  font-size: 4vw;
-  font-size: 136%;
-  justify-content: center;
-  width: 63%;
+  font-size: 130%;
   text-align: center;
   width: 4%;
   width: 25%;
+  display: inline;
+  height: 2%;
+  width: 23%;
+  border: 0.1vw solid #000000;
+  line-height: 93%;
+  padding-top: 7%;
+  margin: 1%;
+  border-radius: 10%;
 }
 
 #peluche_modal {
