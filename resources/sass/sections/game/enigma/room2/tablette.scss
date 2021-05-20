@@ -1,8 +1,17 @@
 #tablette_modal {
+
+    img {
+        width: 35%;
+    }
+
     #div_slot {
         width: 15%;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
         transform: rotate(90deg);
         position: absolute;
+        -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
         transform: scaleX(-1);
 
         .Pile_slot {
@@ -19,8 +28,14 @@
         background-color: #e97c61;
         width: 25%;
         height: 16%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         position: absolute;
         z-index: 2;
@@ -38,13 +53,18 @@
         [id^="tablette_button_"] {
             background: gray;
             color: white;
-            font-size: 4vw;
-            font-size: 136%;
-            justify-content: center;
-            width: 63%;
+            font-size: 130%;
             text-align: center;
             width: 4%;
             width: 25%;
+            display: inline;
+            height: 2%;
+            width: 23%;
+            border: .1vw solid $black;
+            line-height: 93%;
+            padding-top: 7%;
+            margin: 1%;
+            border-radius: 10%;
         }
     }
 }
