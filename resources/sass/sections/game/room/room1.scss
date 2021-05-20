@@ -14,8 +14,7 @@
 
         div {
             img {
-                width: 20%;
-
+            
                 &:hover {
                     -webkit-filter: saturate(180%) drop-shadow(.05rem .05rem 5rem $white);
                     filter: saturate(180%) drop-shadow(.05rem .05rem 1rem $white);
@@ -39,6 +38,7 @@
             #Jukebox {
                 right: 5%;
                 bottom: 14%;
+                width: 20%;
             }
 
             #Lecteur {
@@ -52,6 +52,7 @@
             #Radio {
                 right: 34%;
                 bottom: 14%;
+                width: 20%;
             }
 
             #Poster {
@@ -62,7 +63,6 @@
                 width: 10%;
                 z-index: 1;
             }
-
         }
 
         #Decors {
@@ -115,7 +115,6 @@
                 right: 5%;
                 width: 31%;
             }
-        } //
+        }
     }
 }
-

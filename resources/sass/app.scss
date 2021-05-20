@@ -13,6 +13,7 @@
 
 /*-------- Node modules --------*/
 @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import "~toastr/toastr.scss";
 // script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
 
 /*-------- Generic : Inhibition des styles imposés par les navigateurs --------*/
@@ -83,6 +84,7 @@
 // Room2
 @import 'sections/game/enigma/room2/tablette';
 @import 'sections/game/enigma/room2/peluche';
+@import 'sections/game/enigma/room2/puzzle';
 @import 'sections/game/enigma/room2/oiseaux';
 // Room3
 @import 'sections/game/enigma/room3/timer-oxygene';
