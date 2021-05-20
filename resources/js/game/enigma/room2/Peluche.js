@@ -129,7 +129,7 @@ export default function Peluche() {
                             updateObject("Peluche",0);
                             //retirer papier peluche
                             already_used=true;
-
+                            changeAV(10);
                             //Fermeture de la modal
                             let modal = document.querySelector(".modal");
                             modal.classList.toggle("show-modal");

@@ -36,10 +36,14 @@ export default function Coffre() {
             num.addEventListener("click", function () {
                 result.innerText = "";
             });
-        } else num.innerText = i;
-        num.addEventListener("click", function () {
-            verif(i)
-        });
+        } else
+        {
+            num.innerText = i;
+            num.addEventListener("click", function () {
+                verif(i)
+            });
+        }
+
 
         if (i < 5) div_haut.appendChild(num);
         else div_bas.appendChild(num);

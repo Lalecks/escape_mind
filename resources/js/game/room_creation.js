@@ -10,6 +10,8 @@ import updateInventory, {
     invJoueur
 } from "./enigma/inventory";
 import createModal from "./components/modal";
+import changeAV from "./game";
+import displayCinematic from "./cinematics/cinematic";
 
 // Ajout des objets
 // Un objet_00 correspond à l'image par défaut
@@ -77,7 +79,7 @@ let decor = [
 
 /* Initialisation des variables */
 let actualRoom = 0; // Salle actuelle
-let nbRoom = 5;
+let nbRoom = 4;
 let url = "";
 
 export {
@@ -94,18 +96,33 @@ export default function updateGame() {
         createTimer();
     } else if (actualRoom >= nbRoom) {
         deleteRoom();
-        //endGame();
+        //stopTimer
+        createTimer();
+        displayCinematic();
     } else {
-        try {
-            deleteRoom();
-        } catch (e) {}
-
+        // animate content
+        $('.Game').addClass('animate_content');
         // Remove inventory sauf le papier
         invJoueur.forEach(objet => {
             for (let i = 0; i < objet[1]; i++) updateInventory(objet[0], 0);
         });
-        createRoom();
+
+        try {
+            setTimeout(function(){
+                deleteRoom();
+                if ($(".modal").hasClass("show-modal")){
+                    $(".modal").removeClass("show-modal");
+                }
+                createRoom();
+            },1600)
+        } catch (e) {}
+
+        setTimeout(function() {
+            $('.Game').removeClass('animate_content');
+        }, 3600);
+
     }
+
 }
 
 /* Création de la nouvelle salle */
@@ -117,9 +134,8 @@ function createRoom() {
     let area = document.getElementById("Area");
     area.className = "Room" + actualRoom;
 
-    // area
     let objectInfo = document.getElementById("ObjectInfo");
-    objectInfo.className = "Room" + actualRoom;
+    objectInfo.className = "Loupe_Room" + actualRoom;
 
     let bg = document.createElement("img");
     bg.id = "bg";
@@ -197,6 +213,12 @@ function createRoom() {
 
     cursorModule();
     createModal();
+
+    if (actualRoom===3){
+        window.alert("SALLE NON FINIE -> PASSAGE A LA CINEMATIQUE DE FIN.");
+        changeAV(15);
+    }
+
 }
 
 /* Suppression des éléments de la salle lorsqu'on fini celle d'avant */
@@ -209,8 +231,10 @@ function deleteRoom() {
     imgToRemove.push.apply(imgToRemove, parent_obj.childNodes);
     imgToRemove.push.apply(imgToRemove, parent_decor.childNodes);
     imgToRemove.push.apply(imgToRemove, [bg]);
+    try {
+        imgToRemove.forEach(n => n.remove());
+    }catch(e){}
 
-    imgToRemove.forEach(n => n.remove());
 }
 
 // function autoPlay(audio) {

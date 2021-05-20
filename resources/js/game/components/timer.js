@@ -7,31 +7,38 @@
 let refresh = null;
 let time = 1800;
 let timeStr = "2000";
+let isAlreadyCreated = false;
 
 // Affichage du timer
 export default function createTimer() {
-    let chrono = document.createElement("span");
-    chrono.class = "glass-effect";
-    chrono.id = "Chrono";
+    if (!isAlreadyCreated){
+        let chrono = document.createElement("span");
+        chrono.class = "glass-effect";
+        chrono.id = "Chrono";
 
-    // Creer chaque élément du timer
-    for (let i = 0; i < timeStr.length; i++) {
+        // Creer chaque élément du timer
+        for (let i = 0; i < timeStr.length; i++) {
 
-        if (i === 2) {
+            if (i === 2) {
+                let digit = document.createElement("span");
+                digit.className = "chrono_space";
+                digit.innerText = ":";
+                chrono.appendChild(digit);
+            }
             let digit = document.createElement("span");
-            digit.className = "chrono_space";
-            digit.innerText = ":";
+            digit.className = "chrono_digit";
+            digit.innerText = timeStr[i];
+
             chrono.appendChild(digit);
         }
-        let digit = document.createElement("span");
-        digit.className = "chrono_digit";
-        digit.innerText = timeStr[i];
 
-        chrono.appendChild(digit);
+        document.getElementById("Interface").appendChild(chrono);
+        startTimer();
+        isAlreadyCreated=true;
+    } else {
+        stopTimer();
     }
 
-    document.getElementById("Interface").appendChild(chrono);
-    startTimer();
 }
 
 function startTimer() {
