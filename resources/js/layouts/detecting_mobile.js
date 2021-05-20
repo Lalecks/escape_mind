@@ -16,8 +16,8 @@ export { isMobile as isMobile };
 if (isMobile === true) {
     $("body").addClass("landscape");
     document.getElementById('souris').style.display = "none";
-    document.querySelector('cursor').style.display = "none";
-    document.querySelector('follower').style.display = "none";
+    document.querySelector('.cursor').style.display = "none";
+    document.querySelector('.follower').style.display = "none";
 
     if ($('.modal').hasClass('show-modal') === true) {
         /* Arreter le scrolling de la page */

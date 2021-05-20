@@ -14,7 +14,6 @@ import {
 import Radio from "../enigma/room1/Radio";
 import Cassettes from "../enigma/room1/Cassettes";
 import Tablette from "../enigma/room2/Tablette";
-import Pile from "../enigma/room2/Pile";
 import Lecteur from "../enigma/room1/Lecteur";
 import Jukebox from "../enigma/room1/Jukebox";
 import Coffre from "../enigma/room1/Coffre";
@@ -23,6 +22,9 @@ import Peluche from "../enigma/room2/Peluche";
 import Bougie from "../enigma/room2/Bougie";
 import Defaut from "../enigma/Defaut";
 import Poster from "../enigma/room1/Poster";
+import Oiseaux from "../enigma/room2/Oiseaux";
+import Puzzle from "../enigma/room2/Puzzle";
+import Takable from "../enigma/room2/Takable";
 
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");
@@ -125,7 +127,9 @@ function toggleModalCustom(titre, description) {
                 case "Pile1":
                 case "Pile2":
                 case "Pile3":
-                    activity.appendChild(Pile(titre));
+                case "PieceDeux":
+                case "PieceTrois":
+                    activity.appendChild(Takable(titre));
                     break;
                 case "Lecteur":
                     activity.appendChild(Lecteur());
@@ -147,6 +151,12 @@ function toggleModalCustom(titre, description) {
                     break;
                 case "Tablette":
                     activity.appendChild(Tablette());
+                    break;
+                case "Oiseaux":
+                    activity.appendChild(Oiseaux());
+                    break;
+                case "Puzzle":
+                    activity.appendChild(Puzzle());
                     break;
                 default:
                     activity.appendChild(Defaut(titre));

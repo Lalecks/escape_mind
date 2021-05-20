@@ -12,9 +12,9 @@
 
     .Room2 {
         div {
-            img {
-                width: 15%;
-            }
+            //img {
+            //    width: 15%;
+            //}
 
             [id^="link_"] img:hover {
                 // CSS selector matches class prefix/suffix : On récuprer les identifiants commençant par "link_" : préfixe. Si on avait mis [id$="link_"], on aurait récuprer ce qui y'a avant, soit le suffix. Puis avec [class*=" link_"], on récupère préfix et suffix.
@@ -24,10 +24,10 @@
         }
 
         #Objects {
-            #Lit {
-                right: 29%;
-                top: 3%;
-                width: 40%;
+            #Oiseaux {
+                top: 0;
+                left: 40%;
+                width: 15%;
                 z-index: 0;
             }
 
@@ -35,6 +35,7 @@
                 left: 26%;
                 top: 35%;
                 width: 13%;
+                z-index: 2;
             }
 
             #Bougie {
@@ -97,9 +98,33 @@
                 width: 10%;
                 bottom: 0;
             }
+
+            #PieceDeux {
+                left: 12%;
+                width: 2%;
+                top: 38%;
+                transform: rotate(-5deg);
+            }
+
+            #PieceTrois {
+                left: 68%;
+                width: 2%;
+                top: 54%;
+                transform: rotate(-34deg);
+                z-index: 0;
+            }
+
         }
 
         #Decors {
+
+            #Lit {
+                right: 29%;
+                top: 3%;
+                width: 40%;
+                z-index: 1;
+            }
+
             #Etoiles {
                 top: .9%;
                 width: 31%;
@@ -132,12 +157,6 @@
                 width: 37%;
             }
 
-            #Oiseaux {
-                top: 0;
-                left: 40%;
-                width: 15%;
-                z-index: 0;
-            }
         }
     }
 }

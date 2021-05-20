@@ -24,7 +24,6 @@ let object = [
     ["Radio", 1, ""],
     ["Poster", 1, "Oh, Ramdam fait un nouvel événement !"],
     /* Room 2 */
-    ["Lit", 2, ""],
     ["Peluche", 2, "Quelle jolie peluche."],
     ["Bougie", 2, ""],
     ["Puzzle", 2, ""],
@@ -33,6 +32,9 @@ let object = [
     ["Pile1", 2, ""],
     ["Pile2", 2, ""],
     ["Pile3", 2, ""],
+    ["Oiseaux", 2,""],
+    ["PieceDeux", 2,""],
+    ["PieceTrois", 2,""],
     /* Room 3 */
     ["Bouchon", 3, ""],
     ["Chateau_Sable", 3, ""],
@@ -61,7 +63,7 @@ let decor = [
     ["Crayons", 2],
     ["Dessin", 2],
     ["Marelle", 2],
-    ["Oiseaux", 2],
+    ["Lit", 2],
     /* Room 3 */
     ["Tas_Sable", 3],
     ["Robinet", 3],
@@ -114,6 +116,10 @@ function createRoom() {
     // area
     let area = document.getElementById("Area");
     area.className = "Room" + actualRoom;
+
+    // area
+    let objectInfo = document.getElementById("ObjectInfo");
+    objectInfo.className = "Room" + actualRoom;
 
     let bg = document.createElement("img");
     bg.id = "bg";

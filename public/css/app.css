@@ -8800,22 +8800,20 @@ footer {
 #game-page #Game #ObjectInfo .modal #enigme_modal #Pile3_bg {
   width: 48%;
 }
-#game-page #Game .Room2 div img {
-  width: 15%;
-}
 #game-page #Game .Room2 div [id^=link_] img:hover {
   filter: sepia(60%) drop-shadow(0.03rem 0.03rem 0.03rem #000000);
 }
-#game-page #Game .Room2 #Objects #Lit {
-  right: 29%;
-  top: 3%;
-  width: 40%;
+#game-page #Game .Room2 #Objects #Oiseaux {
+  top: 0;
+  left: 40%;
+  width: 15%;
   z-index: 0;
 }
 #game-page #Game .Room2 #Objects #Peluche {
   left: 26%;
   top: 35%;
   width: 13%;
+  z-index: 2;
 }
 #game-page #Game .Room2 #Objects #Bougie {
   top: 38%;
@@ -8861,6 +8859,25 @@ footer {
   width: 10%;
   bottom: 0;
 }
+#game-page #Game .Room2 #Objects #PieceDeux {
+  left: 12%;
+  width: 2%;
+  top: 38%;
+  transform: rotate(-5deg);
+}
+#game-page #Game .Room2 #Objects #PieceTrois {
+  left: 68%;
+  width: 2%;
+  top: 54%;
+  transform: rotate(-34deg);
+  z-index: 0;
+}
+#game-page #Game .Room2 #Decors #Lit {
+  right: 29%;
+  top: 3%;
+  width: 40%;
+  z-index: 1;
+}
 #game-page #Game .Room2 #Decors #Etoiles {
   top: 0.9%;
   width: 31%;
@@ -8887,12 +8904,6 @@ footer {
   bottom: 1.4%;
   right: 27%;
   width: 37%;
-}
-#game-page #Game .Room2 #Decors #Oiseaux {
-  top: 0;
-  left: 40%;
-  width: 15%;
-  z-index: 0;
 }
 
 #game-page #Game .Room3 div img {
@@ -9230,6 +9241,19 @@ footer {
 }
 #peluche_modal img {
   z-index: 2;
+}
+
+#oiseaux_modal #Piece1 {
+  width: 6%;
+  position: absolute;
+  bottom: 8%;
+  left: 48%;
+  transform: rotate(98deg);
+  z-index: 0;
+  pointer-events: auto !important;
+}
+#oiseaux_modal #Oiseaux_bg {
+  z-index: 1;
 }
 
 #timer-oxyegene {

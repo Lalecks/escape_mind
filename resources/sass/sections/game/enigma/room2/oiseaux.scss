@@ -1,0 +1,16 @@
+#oiseaux_modal {
+    #Piece1{
+        width: 6%;
+        position: absolute;
+        bottom: 8%;
+        left: 48%;
+        transform: rotate(98deg);
+        z-index: 0;
+        pointer-events: auto !important;
+    }
+
+    #Oiseaux_bg{
+        z-index: 1;
+    }
+
+}

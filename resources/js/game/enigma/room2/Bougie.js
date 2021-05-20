@@ -19,7 +19,7 @@ export default function Bougie() {
     }
 
     if (code !== null) {
-        code.addEventListener("click", () => {
+        code.addEventListener("mousedown", () => {
             alert("Un mot apparait");
             updateInventory("Papier", false);
             updateInventory("Code", true);
