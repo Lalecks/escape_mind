@@ -1,20 +1,19 @@
-import toggleVideoPlayer from "./video_player";
-
 /**
  *
  *  Cinématiques
  *
  **/
+import toggleVideoPlayer from "./video_player";
+
 
 let actualCinematic = 0;
 let cin = document.getElementById('Cinematic');
 let video = document.getElementById("media-video");
 let game = null;
 
-export default function displayCinematic() {
-    let cinematics = Array('beginning', 'success', 'defeat');
+let cinematics = Array('beginning', 'success', 'defeat');
 
-    video.preload = true;
+export default function displayCinematic() {
     video.onclick = function () {
         this.play();
     };
@@ -39,9 +38,9 @@ export default function displayCinematic() {
         webm.remove();
         mp4.remove();
         ogg.remove();
-        video.remove();
+        video.removeAttribute("src");
+        video.load();
     });
-
 
     video.appendChild(webm);
     video.appendChild(mp4);
@@ -55,8 +54,15 @@ export default function displayCinematic() {
 
     toggleVideoPlayer();
 
-    console.log("cinematic.js : cinématique - afficher contrôle");
+    if (actualCinematic === 0 ){
+        video.addEventListener('ended', function () {
+            toggleVideoPlayer();
+        });
+    }
+
+
     actualCinematic += 1;
 
+    console.log("return" + video);
     return video;
 }

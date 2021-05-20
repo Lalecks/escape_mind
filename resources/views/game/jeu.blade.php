@@ -3,7 +3,7 @@
 
 @section('content')
 <section id="game-page">
-	<h1 style="display: none">escpa_mind</h1>
+	<h1 style="display: none">escape_mind</h1>
 	<header id="Header">
 		<a href="/" class="logo logo-title hoverable glass-effect" style="pointer-events: none; cursor: default;">
 			<!-- Nécessaire pour le bon fonctionnement du Loading -->
@@ -20,7 +20,7 @@
 		@include('game.settings')
 		@include('game.cinematics')
 
-		<div id="Game" class="Game">
+		<div id="Game" class="Game fadeIn">
 			<div id="ObjectInfo">
 				<div class="modal glass-effect hoverable">
 					<div class="modal-content glass-effect" >
