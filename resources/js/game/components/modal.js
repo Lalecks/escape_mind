@@ -191,6 +191,7 @@ function clearAll() {
         inventory.querySelectorAll("*").forEach(n => n.remove());
         document.querySelectorAll(".magnify").forEach(n => n.remove());
         document.querySelectorAll(".Music").forEach(n => n.remove());
+        document.querySelectorAll(".Foley").forEach(n => n.remove());
     } catch (e) {}
 }
 

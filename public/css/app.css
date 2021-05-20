@@ -9048,20 +9048,19 @@ footer {
 }
 
 #modal_radio div {
-  height: 9.4%;
+  height: 9.5%;
   position: absolute;
   margin: auto;
-  left: 19.87%;
-  top: 29.37%;
-  width: 60.6%;
+  left: 26.4%;
+  top: 29.5%;
+  width: 47.5%;
   overflow: hidden;
 }
 #modal_radio div #radio_slider {
   height: 100%;
-  width: 87%;
+  width: 100%;
   position: absolute;
   bottom: 0%;
-  right: 6%;
 }
 #modal_radio div .slider {
   background: transparent;
@@ -9804,20 +9803,20 @@ header .navbar ul li .active::before {
     left: 40%;
   }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1300px) {
   #lecteur_modal {
     height: 83% !important;
   }
   #lecteur_modal #buttons {
     width: 60%;
-    left: 10.5;
+    left: 10.5%;
     height: 64%;
   }
 
   #modal_radio div {
-    left: 19.87%;
-    top: 29.37%;
-    width: 66.6%;
+    left: 19.75%;
+    top: 29.5%;
+    width: 60.75%;
   }
 }
 /**
