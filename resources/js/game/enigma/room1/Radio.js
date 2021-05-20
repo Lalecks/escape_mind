@@ -23,25 +23,49 @@ export default function Radio(){
     cursor.id="radio_slider";
     cursor.className="slider hoverable";
     cursor.type="range";
-    cursor.min="1";
+    cursor.min="0";
     cursor.max="100";
     cursor.value="50";
 
+    let musique = document.createElement("audio");
+    musique.id="audio_Ramdam";
+    musique.className="Music";
+    musique.hidden=true;
+    musique.autoplay=false;
+    musique.volume=1;
+    musique.src= "./resources/game/room1/audios/Radio_01.mp3";
+    document.getElementById("Music").appendChild(musique);
+
+    let interferences = document.createElement("audio");
+    interferences.id="audio_Interferences";
+    interferences.className="Foley";
+    interferences.hidden=true;
+    interferences.autoplay=false;
+    interferences.loop=true;
+    interferences.volume=0.3;
+    interferences.src= "./resources/game/room1/audios/Interferences_Radio_00.mp3";
+    document.getElementById("Foley").appendChild(interferences);
+
     let actual_val = document.createElement("p");
-    actual_val.innerText = (((50/100)*13)+87).toFixed(1) + " Hz";
+    actual_val.innerText = (((50/105)*13)  + 87.3).toFixed(1) + " Hz";
+
 
     cursor.onchange=function(){
         //Correspond à la fréquence à trouver
-        if (cursor.value === "37"){
-            alert("indice sonore : '11'");
-            changeAV(0);
+        if (cursor.value === "36"){
+            !interferences.paused ? interferences.pause():null;
+            /* Musique */
+            !musique.paused ? musique.volume=1 : musique.play();
+            changeAV(3);
+        } else {
+            !musique.paused ? musique.volume=0.00 :null;
+            interferences.play();
         }
     }
 
     cursor.addEventListener('input', function () {
-        actual_val.innerText = "" + (((cursor.value/100)*13)  + 87).toFixed(1) + " Hz";
+        actual_val.innerText = "" + (((cursor.value/105)*13)  + 87.3).toFixed(1) + " Hz";
     }, false);
-
 
     area.appendChild(cursor);
 

@@ -98,7 +98,7 @@ export default function updateGame() {
             deleteRoom();
         } catch (e) {}
 
-        // Remove inventory except le papier
+        // Remove inventory sauf le papier
         invJoueur.forEach(objet => {
             for (let i = 0; i < objet[1]; i++) updateInventory(objet[0], 0);
         });
@@ -134,12 +134,13 @@ function createRoom() {
             obj.className = "hoverable"; // Pour centrer la souris
             obj.alt = "" + object[i][2];
 
-            /* Bruitage de chaques objets */
+            // /* Bruitage de chaques objets */
             // let audio = document.createElement("audio");
-            // audio.id="audio_" + object[i][0];
             // audio.class="Foley";
             // audio.hidden=true;
             // audio.autoplay=false;
+            // audio.volume=0.5;
+            // audio.id="audio_" + object[i][0];
             // audio.src= url + "/audios/" + object[i][0] + "_00.mp3";
             //
             // obj.addEventListener("click", () => {
@@ -174,19 +175,19 @@ function createRoom() {
     }
     area.appendChild(bg);
 
-    let audio = document.createElement("audio");
-    audio.id = "audio_room" + actualRoom;
-    audio.class = "Ambiant";
+    // let audio = document.createElement("audio");
+    // audio.id = "audio_room" + actualRoom;
+    // audio.class = "Ambiant";
     //audio.muted = true;
 
-    let source = document.createElement("source");
-    source.src = url + "/audios/room" + actualRoom + ".mp3";
-    source.type = "audio/mpeg";
-
-    audio.appendChild(source);
-    document.getElementById("Ambiant").appendChild(audio);
-
-    autoPlay(audio);
+    // let source = document.createElement("source");
+    // source.src = url + "/audios/room" + actualRoom + ".mp3";
+    // source.type = "audio/mpeg";
+    //
+    // audio.appendChild(source);
+    // document.getElementById("Ambiant").appendChild(audio);
+    //
+    // autoPlay(audio);
 
     cursorModule();
     createModal();
@@ -206,18 +207,18 @@ function deleteRoom() {
     imgToRemove.forEach(n => n.remove());
 }
 
-function autoPlay(audio) {
-    // window.addEventListener("focus", event => {
-    //     audio.volume = 0.5;
-    //     audio.play();
-    // });
-    //
-    // window.addEventListener("click", event => {
-    //     audio.volume = 0.5;
-    //     audio.play();
-    // });
-    //
-    // window.addEventListener("blur", event => {
-    //     audio.pause();
-    // });
-}
+// function autoPlay(audio) {
+//     window.addEventListener("focus", event => {
+//         audio.volume = 0.5;
+//         audio.play();
+//     });
+//
+//     window.addEventListener("click", event => {
+//         audio.volume = 0.5;
+//         audio.play();
+//     });
+//
+//     window.addEventListener("blur", event => {
+//         audio.pause();
+//     });
+// }
