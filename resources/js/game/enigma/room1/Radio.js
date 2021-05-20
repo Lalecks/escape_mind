@@ -4,8 +4,16 @@
 
 
 import changeAV, { AV } from "../../game";
+import addSound from "../../components/sound";
+let first_time = true;
 
 export default function Radio(){
+
+    if (first_time){
+        first_time=false;
+        addSound('./resources/game/room1/audios/Radio_enigme_00.mp3');
+    }
+
     let radio_enigma = document.createElement("div");
     radio_enigma.classList = "enigme_modal";
     radio_enigma.id = "modal_radio";
@@ -35,6 +43,7 @@ export default function Radio(){
     musique.volume=1;
     musique.src= "./resources/game/room1/audios/Radio_01.mp3";
     document.getElementById("Music").appendChild(musique);
+
 
     let interferences = document.createElement("audio");
     interferences.id="audio_Interferences";

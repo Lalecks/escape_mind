@@ -12,6 +12,7 @@ import updateInventory, {
 import createModal from "./components/modal";
 import changeAV from "./game";
 import displayCinematic from "./cinematics/cinematic";
+import addSound from "./components/sound";
 
 // Ajout des objets
 // Un objet_00 correspond à l'image par défaut
@@ -87,41 +88,56 @@ export {
 };
 
 /* Gestion du jeu */
-export default function updateGame() {
+export default function updateGame(fail) {
     actualRoom += 1;
     url = "./resources/game/room" + actualRoom;
 
-    if (actualRoom === 1) {
-        createRoom();
-        createTimer();
-    } else if (actualRoom >= nbRoom) {
+    if (!fail){
+        if (actualRoom === 1) {
+            createRoom();
+            createTimer();
+        } else if (actualRoom >= nbRoom) {
+            deleteRoom();
+            //stopTimer
+            createTimer();
+            displayCinematic(1);
+        } else {
+            // animate content
+            $('.Game').addClass('animate_content');
+            // Remove inventory sauf le papier
+            invJoueur.forEach(objet => {
+                for (let i = 0; i < objet[1]; i++) updateInventory(objet[0], 0);
+            });
+
+            try {
+                setTimeout(function () {
+                    deleteRoom();
+                    if ($(".modal").hasClass("show-modal")) {
+                        $(".modal").removeClass("show-modal");
+                    }
+                    createRoom();
+                }, 1600)
+            } catch (e) {}
+
+            setTimeout(function () {
+                $('.Game').removeClass('animate_content');
+            }, 3600);
+        }
+    } else {
+        //PERDU
         deleteRoom();
         //stopTimer
         createTimer();
-        displayCinematic();
-    } else {
-        // animate content
-        $('.Game').addClass('animate_content');
-        // Remove inventory sauf le papier
-        invJoueur.forEach(objet => {
-            for (let i = 0; i < objet[1]; i++) updateInventory(objet[0], 0);
-        });
+        let cinematic = displayCinematic(2);
+        cinematic.addEventListener('ended',  uptG);
 
-        try {
-            setTimeout(function () {
-                deleteRoom();
-                if ($(".modal").hasClass("show-modal")) {
-                    $(".modal").removeClass("show-modal");
-                }
-                createRoom();
-            }, 1600)
-        } catch (e) {}
-
-        setTimeout(function () {
-            $('.Game').removeClass('animate_content');
-        }, 3600);
+        function uptG(){
+            window.location.replace("../");
+            cinematic.removeEventListener('ended',  uptG);
+        }
 
     }
+
 
 }
 
@@ -156,24 +172,10 @@ function createRoom() {
             obj.className = "hoverable"; // Pour centrer la souris
             obj.alt = "" + object[i][2];
 
-            // /* Bruitage de chaques objets */
-            // let audio = document.createElement("audio");
-            // audio.class="Foley";
-            // audio.hidden=true;
-            // audio.autoplay=false;
-            // audio.volume=0.5;
-            // audio.id="audio_" + object[i][0];
-            // audio.src= url + "/audios/" + object[i][0] + "_00.mp3";
-            //
-            // obj.addEventListener("click", () => {
-            //     document.getElementById("Foley").childNodes.forEach(n => n.remove());
-            //     document.getElementById("Foley").appendChild(audio);
-            //     audio.play();
-            // })
-            //
-            // audio.addEventListener("ended",()=>{
-            //     audio.remove();
-            // })
+            //click sur obj
+            obj.addEventListener("click",()=>{
+                addSound('./resources/game/room' + actualRoom + '/' + object[i][0] +'.mp3');
+            })
 
             link.appendChild(obj);
             parent_obj.appendChild(link);
@@ -196,20 +198,6 @@ function createRoom() {
         }
     }
     area.appendChild(bg);
-
-    // let audio = document.createElement("audio");
-    // audio.id = "audio_room" + actualRoom;
-    // audio.class = "Ambiant";
-    //audio.muted = true;
-
-    // let source = document.createElement("source");
-    // source.src = url + "/audios/room" + actualRoom + ".mp3";
-    // source.type = "audio/mpeg";
-    //
-    // audio.appendChild(source);
-    // document.getElementById("Ambiant").appendChild(audio);
-    //
-    // autoPlay(audio);
 
     cursorModule();
     createModal();
@@ -236,19 +224,3 @@ function deleteRoom() {
     } catch (e) {}
 
 }
-
-// function autoPlay(audio) {
-//     window.addEventListener("focus", event => {
-//         audio.volume = 0.5;
-//         audio.play();
-//     });
-//
-//     window.addEventListener("click", event => {
-//         audio.volume = 0.5;
-//         audio.play();
-//     });
-//
-//     window.addEventListener("blur", event => {
-//         audio.pause();
-//     });
-// }

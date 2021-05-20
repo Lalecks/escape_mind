@@ -8,6 +8,7 @@ import displayCinematic from "./cinematics/cinematic";
 import settings from "./components/settings";
 import updateGame from "./room_creation";
 import beforeunload from "./components/window_beforeunload";
+import addSound from "./components/sound";
 
 let avancement = 0;
 let room_done = 5;
@@ -23,11 +24,12 @@ $(document).ready(function () {
     settings();
     //beforeunload();
 
-    let cinematic = displayCinematic();
+
+    let cinematic = displayCinematic(0);
     cinematic.addEventListener('ended',  uptG);
 
     function uptG(){
-        updateGame();
+        updateGame(false);
         cinematic.removeEventListener('ended',  uptG);
     }
 
@@ -36,6 +38,8 @@ $(document).ready(function () {
 
 function isRoomDone() {
     if (avancement%room_done === 0 && avancement!==0) {
-        updateGame();
+        updateGame(false);
+    } else if (avancement===-1){
+        updateGame(true);
     }
 }

@@ -55,10 +55,10 @@
             <div id="Music">
                 <!-- Background Music -->
             </div>
-            <div id="Ambiant">
-                <!-- Background Music -->
+            <div id="IA">
+                <!-- AI Voice -->
             </div>
-            <div id="Voice">
+            <div id="Sacha">
                 <!-- AI Voice -->
             </div>
         </div>

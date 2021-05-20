@@ -9219,12 +9219,12 @@ footer {
 }
 
 #modal_radio div {
-  height: 9.5%;
+  height: 10.1%;
   position: absolute;
   margin: auto;
-  left: 26.4%;
+  left: 29.5%;
   top: 29.5%;
-  width: 47.5%;
+  width: 41.1%;
   overflow: hidden;
 }
 #modal_radio div #radio_slider {
@@ -10012,9 +10012,9 @@ header .navbar ul li .active::before {
   }
 
   #modal_radio div {
-    left: 19.75%;
-    top: 29.5%;
-    width: 60.75%;
+    left: 21.95%;
+    top: 29.2%;
+    width: 56.3%;
   }
 }
 /**
