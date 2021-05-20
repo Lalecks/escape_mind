@@ -12,10 +12,6 @@
 
     .Room2 {
         div {
-            //img {
-            //    width: 15%;
-            //}
-
             [id^="link_"] img:hover {
                 // CSS selector matches class prefix/suffix : On récuprer les identifiants commençant par "link_" : préfixe. Si on avait mis [id$="link_"], on aurait récuprer ce qui y'a avant, soit le suffix. Puis avec [class*=" link_"], on récupère préfix et suffix.
                 -webkit-filter: sepia(60%) drop-shadow(.03rem .03rem .03rem $black);
@@ -99,16 +95,18 @@
                 bottom: 0;
             }
 
+            [id^="Piece"] {
+                width: 2%;
+            }
+
             #PieceDeux {
                 left: 12%;
-                width: 2%;
                 top: 38%;
                 transform: rotate(-5deg);
             }
 
             #PieceTrois {
                 left: 68%;
-                width: 2%;
                 top: 54%;
                 transform: rotate(-34deg);
                 z-index: 0;

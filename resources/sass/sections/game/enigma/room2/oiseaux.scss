@@ -1,5 +1,9 @@
 #oiseaux_modal {
-    #Piece1{
+    #Oiseaux_bg {
+        z-index: 1;
+    }
+
+    #Piece1 {
         width: 6%;
         position: absolute;
         bottom: 8%;
@@ -8,9 +12,4 @@
         z-index: 0;
         pointer-events: auto !important;
     }
-
-    #Oiseaux_bg{
-        z-index: 1;
-    }
-
 }
