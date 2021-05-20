@@ -38,12 +38,12 @@
 .Loupe_Room1 {
     .fa-search {
         background: rgba(189, 16, 224, 0.25);
-    }
 
-    &:hover {
-        color: $pink;
+        &:hover {
+            color: $pink;
+        }
     }
-
+    
     .off {
         &:hover {
             color: $purple;

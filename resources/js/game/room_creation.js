@@ -34,9 +34,9 @@ let object = [
     ["Pile1", 2, ""],
     ["Pile2", 2, ""],
     ["Pile3", 2, ""],
-    ["Oiseaux", 2,""],
-    ["PieceDeux", 2,""],
-    ["PieceTrois", 2,""],
+    ["Oiseaux", 2, ""],
+    ["PieceDeux", 2, ""],
+    ["PieceTrois", 2, ""],
     /* Room 3 */
     ["Bouchon", 3, ""],
     ["Chateau_Sable", 3, ""],
@@ -108,16 +108,16 @@ export default function updateGame() {
         });
 
         try {
-            setTimeout(function(){
+            setTimeout(function () {
                 deleteRoom();
-                if ($(".modal").hasClass("show-modal")){
+                if ($(".modal").hasClass("show-modal")) {
                     $(".modal").removeClass("show-modal");
                 }
                 createRoom();
-            },1600)
+            }, 1600)
         } catch (e) {}
 
-        setTimeout(function() {
+        setTimeout(function () {
             $('.Game').removeClass('animate_content');
         }, 3600);
 
@@ -214,7 +214,7 @@ function createRoom() {
     cursorModule();
     createModal();
 
-    if (actualRoom===3){
+    if (actualRoom === 3) {
         window.alert("SALLE NON FINIE -> PASSAGE A LA CINEMATIQUE DE FIN.");
         changeAV(15);
     }
@@ -233,7 +233,7 @@ function deleteRoom() {
     imgToRemove.push.apply(imgToRemove, [bg]);
     try {
         imgToRemove.forEach(n => n.remove());
-    }catch(e){}
+    } catch (e) {}
 
 }
 
