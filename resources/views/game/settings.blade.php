@@ -4,7 +4,6 @@
 		<div id="filter">
 			<span class="tablinks active" onclick="openSetting(event,'Mission_setting')"><i class="fas fa-book-open"></i></span>
 			<span class="tablinks" onclick="openSetting(event,'Sound_setting')"><i class="fas fa-music"></i></span>
-			{{-- <span class="tablinks" onclick="openSetting(event,'Languages')"><i class="fas fa-globe-europe"></i></span> --}}
 			<span class="tablinks" onclick="openSetting(event,'Info_setting')"><i class="fas fa-info"></i></span>
 		</div>
 
@@ -29,13 +28,6 @@
 					<input class="slider glass-effect hoverable" type="range" min="1" max="100" value="50">
 				</div>
 			</div>
-
-			{{-- <div id="Languages" class="tabcontent">
-				<h2>Langues</h2>
-				<div>
-					<i class='fas fa-flag-usa'></i>
-				</div>
-			</div> --}}
 
 			<div id="Info_setting" class="tabcontent">
 				<h2>Informations</h2>
