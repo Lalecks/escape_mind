@@ -17,10 +17,10 @@
 	</header>
 
 	<div id="Main" role="main">
-		@include('game.settings')
 		@include('game.cinematics')
 
 		<div id="Game" class="Game fadeIn">
+			@include('game.settings')
 			<div id="ObjectInfo">
 				<div class="modal glass-effect hoverable">
 					<div class="modal-content glass-effect" >

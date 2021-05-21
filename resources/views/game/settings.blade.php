@@ -11,7 +11,7 @@
 		<div id="tabs" class="glass-effect">
 			<div id="Mission_setting" class="tabcontent" style="display: block;">
 				<h2>Mision</h2>
-				<p>Vous êtes Sacha Ramirez, un chercheur en sciences.</p>
+				<p>Vous êtes Sacha Ramirez, le concepteur de l’IA dans laquelle vous êtes enfermé ! Trouvez les énigmes et sortez au plus vite, le temps vous est compté !</p>
 			</div>
 
 			<div id="Sound_setting" class="tabcontent">
