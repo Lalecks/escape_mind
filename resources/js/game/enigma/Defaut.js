@@ -9,7 +9,7 @@ export default function Defaut(nom_obj) {
     let html = document.getElementById(nom_obj);
 
     let bg = document.createElement("img");
-    bg.id = "Radio_bg";
+    bg.id = nom_obj + "_bg";
     bg.src = html.src;
 
     no_enigma.appendChild(bg);

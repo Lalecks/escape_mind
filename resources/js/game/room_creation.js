@@ -97,31 +97,16 @@ export default function updateGame(fail) {
             createRoom();
             createTimer();
         } else if (actualRoom >= nbRoom) {
-            deleteRoom();
+            animChangement(true);
             //stopTimer
             createTimer();
-            displayCinematic(1);
-        } else {
-            // animate content
-            $('.Game').addClass('animate_content');
-            // Remove inventory sauf le papier
-            invJoueur.forEach(objet => {
-                for (let i = 0; i < objet[1]; i++) updateInventory(objet[0], 0);
-            });
-
-            try {
-                setTimeout(function () {
-                    deleteRoom();
-                    if ($(".modal").hasClass("show-modal")) {
-                        $(".modal").removeClass("show-modal");
-                    }
-                    createRoom();
-                }, 1600)
-            } catch (e) {}
 
             setTimeout(function () {
-                $('.Game').removeClass('animate_content');
-            }, 3600);
+                displayCinematic(1);
+            }, 2000);
+
+        } else {
+            animChangement(false);
         }
     } else {
         //PERDU
@@ -139,6 +124,33 @@ export default function updateGame(fail) {
     }
 
 
+    function animChangement(fin){
+        // animate content
+        $('.Game').addClass('animate_content');
+        // Remove inventory sauf le papier
+        invJoueur.forEach(objet => {
+            for (let i = 0; i < objet[1]; i++) updateInventory(objet[0], 0);
+        });
+
+        try {
+            setTimeout(function () {
+                deleteRoom();
+                if ($(".modal").hasClass("show-modal")) {
+                    $(".modal").removeClass("show-modal");
+                }
+                if (!fin) createRoom();
+            }, 1600)
+        } catch (e) {}
+
+        if (!fin){
+            setTimeout(function () {
+                $('.Game').removeClass('animate_content');
+                if (actualRoom === 3) {
+                    window.alert("SALLE NON FINIE.");
+                }
+            }, 3600);
+        }
+    }
 }
 
 /* Création de la nouvelle salle */
@@ -201,11 +213,6 @@ function createRoom() {
 
     cursorModule();
     createModal();
-
-    if (actualRoom === 3) {
-        window.alert("SALLE NON FINIE -> PASSAGE A LA CINEMATIQUE DE FIN.");
-        changeAV(15);
-    }
 
 }
 

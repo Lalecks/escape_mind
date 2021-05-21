@@ -3,6 +3,8 @@
  */
 import updateObject from "../../object";
 import updateInventory from "../inventory";
+import Turn from "../room1/Turn";
+import changeAV from "../../game";
 
 let actual_puzzle = "000";
 
@@ -13,13 +15,14 @@ export default function Puzzle() {
     no_enigma.classList = "enigme_modal";
     no_enigma.id = "puzzle_modal";
 
-    let html = document.getElementById("Puzzle");
-
-    let bg = document.createElement("img");
-    bg.id = "Puzzle_bg";
-    bg.src = html.src.replace("_00", "_" + actual_puzzle);
-
     if (!isPuzzleDone){
+
+        let html = document.getElementById("Puzzle");
+
+        let bg = document.createElement("img");
+        bg.id = "Puzzle_bg";
+        bg.src = html.src.replace("_00", "_" + actual_puzzle);
+        no_enigma.appendChild(bg);
 
         let pieces = [null,null,null];
         try {
@@ -62,12 +65,31 @@ export default function Puzzle() {
                 actual_puzzle= actual_puzzle.substr(0, piece) + "1" + actual_puzzle.substr(piece + 1);
                 bg.src = html.src.replace("_00", "_" + actual_puzzle);
                 pieces[piece].parentNode.remove();
+                if (actual_puzzle==="111"){
+                    bg.remove();
+                    puzzleTurn();
+                }
             });
         }
 
+    } else {
+        puzzleTurn();
     }
 
-    no_enigma.appendChild(bg);
+    function puzzleTurn(){
+        Turn(no_enigma,null,0)
+
+        setTimeout(function () {
+            let back_face = document.getElementById("back_face");
+            back_face.addEventListener("click",()=>{
+                updateInventory("PhotoDeux",1);
+                back_face.style.display="none";
+                changeAV(15);
+            });
+        }, 1000);
+    }
+
+
 
     return no_enigma;
 }

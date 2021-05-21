@@ -10,6 +10,7 @@ export default function addSound(url){
                 source.buffer = buffer;
                 source.connect(audioCtx.destination);
                 source.loop=false;
+                source.volume=0.6;
                 source.start();
             },
             function(e){"Error with decoding audio data" + e.err});
