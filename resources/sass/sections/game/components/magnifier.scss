@@ -56,13 +56,29 @@
         background: rgb(187 139 82);
 
         &:hover {
-            color: $yellow;
+            color: #8b591e;
         }
     }
 
     .off {
         &:hover {
-            color: $yellow;
+            color: #8b591e;
+        }
+    }
+}
+
+.Loupe_Room3 {
+    .fa-search {
+        background: #95b8e2;
+
+        &:hover {
+            color: #1e5e8b;
+        }
+    }
+
+    .off {
+        &:hover {
+            color: #1e5e8b;
         }
     }
 }

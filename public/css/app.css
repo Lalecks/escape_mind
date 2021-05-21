@@ -7252,12 +7252,6 @@ h2 {
   font-weight: normal;
 }
 
-.logo-title {
-  font-family: "Audiowide", cursive;
-  font-size: 2vw;
-  z-index: 2;
-}
-
 .logo {
   position: fixed;
   margin: 0 auto;
@@ -7269,6 +7263,26 @@ h2 {
   width: 100%;
   z-index: 10;
   text-align: center;
+}
+
+.logo-title {
+  font-family: "Audiowide", cursive;
+  font-size: 2vw;
+  z-index: 2;
+}
+
+.logo-img {
+  position: relative;
+}
+.logo-img .logo {
+  position: fixed;
+  z-index: 15;
+  padding: 0.8%;
+  right: 100%;
+  width: 6%;
+  border-radius: 19.5%;
+  margin: 0.5%;
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 
 .index {
@@ -7544,6 +7558,7 @@ h2 {
 
 #legal_notice {
   margin: 0 auto;
+  width: 100vw;
 }
 #legal_notice h1 {
   margin: 0;
@@ -7557,16 +7572,6 @@ h2 {
 }
 #legal_notice h2 {
   margin: 3rem;
-}
-#legal_notice .logo {
-  position: fixed;
-  z-index: 10;
-  padding: 0.8%;
-  right: 100%;
-  width: 3%;
-  border-radius: 19.5%;
-  margin: 0.5%;
-  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 #legal_notice div {
   padding: 3rem;
@@ -8169,20 +8174,7 @@ footer {
   font-size: 2vw !important;
   word-break: break-word;
 }
-#game-page header {
-  position: relative;
-}
-#game-page header .logo {
-  position: fixed;
-  z-index: 15;
-  padding: 0.8%;
-  right: 100%;
-  width: 6%;
-  border-radius: 19.5%;
-  margin: 0.5%;
-  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
-}
-#game-page header .mute {
+#game-page .mute {
   position: fixed;
   bottom: 3%;
   right: 2%;
@@ -8380,7 +8372,7 @@ footer {
 }
 #game-page .modal #Inventory {
   width: 100%;
-  height: 20%;
+  height: 30%;
   position: fixed;
   z-index: 8;
   text-align: center;
@@ -8393,7 +8385,7 @@ footer {
   bottom: 0;
 }
 #game-page .modal #Inventory div {
-  height: 97%;
+  height: 100%;
   width: 96%;
   display: -ms-grid;
   display: grid;
@@ -8403,8 +8395,7 @@ footer {
 }
 #game-page .modal #Inventory div .picked {
   position: relative;
-  width: 62%;
-  height: 100%;
+  width: 91%;
   border-radius: 0.5rem;
   padding: 2%;
   overflow: hidden;
@@ -8429,9 +8420,8 @@ footer {
   margin: 0;
 }
 #game-page .modal #Inventory div .picked img {
-  max-width: 60%;
-  max-height: 60%;
-  height: 44%;
+  width: 95%;
+  max-height: 50%;
   display: inline-block;
   position: relative;
   transition: all 200ms ease-in;
@@ -8440,8 +8430,8 @@ footer {
   -moz-transition: all 200ms ease-in;
 }
 #game-page .modal #Inventory div .picked img:hover {
-  max-width: 100%;
-  max-height: 72%;
+  width: 75%;
+  max-height: 90%;
   transition: all 200ms ease-in;
   -webkit-transition: all 200ms ease-in;
   -ms-transition: all 200ms ease-in;
@@ -8869,10 +8859,20 @@ footer {
   background: #bb8b52;
 }
 .Loupe_Room2 .fa-search:hover {
-  color: #FFFB00;
+  color: #8b591e;
 }
 .Loupe_Room2 .off:hover {
-  color: #FFFB00;
+  color: #8b591e;
+}
+
+.Loupe_Room3 .fa-search {
+  background: #95b8e2;
+}
+.Loupe_Room3 .fa-search:hover {
+  color: #1e5e8b;
+}
+.Loupe_Room3 .off:hover {
+  color: #1e5e8b;
 }
 
 /* Rooms : Modification des différents éléments visuels du template "room_template' pour chaque salle */
@@ -9090,7 +9090,7 @@ footer {
   width: 7%;
   z-index: 1;
 }
-#game-page #Game .Room3 #Objects #Coffre_Tresor {
+#game-page #Game .Room3 #Objects #Coffre {
   left: 3%;
   bottom: 25%;
   width: 17%;
@@ -9346,10 +9346,9 @@ footer {
 }
 
 #poster_modal .box-scene {
-  width: 100%;
+  width: 81%;
   height: 100%;
   margin: auto;
-  z-index: 999;
 }
 #poster_modal .box {
   width: 44%;

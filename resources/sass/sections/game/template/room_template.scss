@@ -4,29 +4,11 @@
     font-size: 2vw !important;
     word-break: break-word;
 
-    header {
-        position: relative;
 
-        .logo {
-            position: fixed;
-            z-index: 15;
-            padding: 0.8%;
-            right: 100%;
-            width: 6%;
-            border-radius: 19.5%;
-            margin: 0.5%;
-            // Glassmorphism
-            background-image: -webkit-linear-gradient($black-degraded);
-            background-image: -moz-linear-gradient($black-degraded);
-            background-image: -o-linear-gradient($black-degraded);
-            background-image: linear-gradient($black-degraded);
-        }
-
-        .mute {
-            position: fixed;
-            bottom: 3%;
-            right: 2%;
-        }
+    .mute {
+        position: fixed;
+        bottom: 3%;
+        right: 2%;
     }
 
     #Main {

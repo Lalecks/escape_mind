@@ -42,11 +42,11 @@ let object = [
     ["Bouchon", 3, ""],
     ["Chateau_Sable", 3, ""],
     ["Clef", 3, ""],
-    ["Coffre_Tresor", 3, ""],
+    ["Coffre", 3, ""],
     ["Baleine", 3, ""],
     ["Canard", 3, ""],
     ["Poulpe", 3, ""],
-    ["Bateau_Pirate", 3, ""],
+    ["Bateau", 3, ""],
     ["Bouteille_Verre", 3, ""],
     ["Bouteille_Oxygene", 3, ""],
 ];
