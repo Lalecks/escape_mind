@@ -5,7 +5,9 @@
 import updateInventory from "../inventory";
 import updateObject from "../../object";
 import changeAV from "../../game";
-import {isMobile} from "../../../layouts/detecting_mobile";
+import {
+    isMobile
+} from "../../../layouts/detecting_mobile";
 let already_used = false;
 
 export default function Peluche() {
@@ -19,7 +21,7 @@ export default function Peluche() {
     bg.id = "Peluche_bg";
     bg.src = html.src;
 
-    if (!already_used){
+    if (!already_used) {
 
         let move = document.createElement("div");
         move.id = "tirette_move";
@@ -37,13 +39,13 @@ export default function Peluche() {
             let pos1 = 0,
                 pos2 = 0;
 
-            if (isMobile){
+            if (isMobile) {
                 $(elmnt).bind('touchmove mousedown', function (e) {
                     let clientX = e.originalEvent.touches ? e.originalEvent.touches[0].pageX : e.clientX;
                     pos2 = clientX;
                     $(document).bind('touchend mouseup', function () {
-                        document.ontouchend="null";
-                        document.ontouchmove="null";
+                        document.ontouchend = "null";
+                        document.ontouchmove = "null";
                     });
 
                     $(document).bind('touchmove mousemove', function (ev) {
@@ -56,16 +58,16 @@ export default function Peluche() {
 
                         let percent = (100 * parseFloat((elmnt.offsetLeft - pos1) / parseFloat($("#peluche_modal").parent().width())));
 
-                        if (!already_used){
+                        if (!already_used) {
                             if (percent <= 60 && percent >= 39) {
                                 elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
                             } else if (percent >= 60) {
                                 elmnt.style.left = "60%";
                                 //ajouter papier dans l'inventaire
                                 updateInventory("Papier", 1);
-                                updateObject("Peluche",0);
+                                updateObject("Peluche", 0);
                                 //retirer papier peluche
-                                already_used=true;
+                                already_used = true;
 
                                 //Fermeture de la modal
                                 let modal = document.querySelector(".modal");
@@ -77,10 +79,10 @@ export default function Peluche() {
                             }
                         }
 
-                        window.removeEventListener('resize',reset);
+                        window.removeEventListener('resize', reset);
                         window.addEventListener('resize', reset);
 
-                        function reset(){
+                        function reset() {
                             elmnt.style.left = "";
                         }
 
@@ -119,17 +121,17 @@ export default function Peluche() {
 
                     let percent = (100 * parseFloat((elmnt.offsetLeft - pos1) / parseFloat($("#peluche_modal").parent().width())));
 
-                    if (!already_used){
+                    if (!already_used) {
                         if (percent <= 60 && percent >= 39) {
                             elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
                         } else if (percent >= 60) {
                             elmnt.style.left = "60%";
                             //ajouter papier dans l'inventaire
                             updateInventory("Papier", 1);
-                            updateObject("Peluche",0);
+                            updateObject("Peluche", 0);
                             //retirer papier peluche
-                            already_used=true;
-                            changeAV(10);
+                            already_used = true;
+                            //changeAV(10);
                             //Fermeture de la modal
                             let modal = document.querySelector(".modal");
                             modal.classList.toggle("show-modal");
@@ -140,10 +142,10 @@ export default function Peluche() {
                         }
                     }
 
-                    window.removeEventListener('resize',reset);
+                    window.removeEventListener('resize', reset);
                     window.addEventListener('resize', reset);
 
-                    function reset(){
+                    function reset() {
                         elmnt.style.left = "";
                     }
                 }

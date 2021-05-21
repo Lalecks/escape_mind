@@ -1,3 +1,6 @@
+import addSound from "./sound";
+import updateGame from "../room_creation";
+
 /**
  *
  *  Timer de 20 minutes
@@ -5,13 +8,17 @@
  **/
 
 let refresh = null;
-let time = 1800;
-let timeStr = "2000";
+
+//vrai timer en secondes
+let time = 605;
+
+//timer visuel
+let timeStr = "1005";
 let isAlreadyCreated = false;
 
 // Affichage du timer
 export default function createTimer() {
-    if (!isAlreadyCreated){
+    if (!isAlreadyCreated) {
         let chrono = document.createElement("span");
         chrono.class = "glass-effect";
         chrono.id = "Chrono";
@@ -31,10 +38,10 @@ export default function createTimer() {
 
             chrono.appendChild(digit);
         }
-
         document.getElementById("Interface").appendChild(chrono);
+
         startTimer();
-        isAlreadyCreated=true;
+        isAlreadyCreated = true;
     } else {
         stopTimer();
     }
@@ -56,6 +63,7 @@ function removeTimer() {
         chrono.parentNode.removeChild(chrono);
     }
 }
+
 
 function seconds() {
     time = time - 1;
@@ -82,4 +90,21 @@ function updateTimer() {
     for (let i = 0; i < digit.length; i++) {
         digit[i].innerText = timeStr[i];
     }
+
+    switch (timeStr) {
+        case "1000":
+            addSound('./resources/game/gameMaster/10m.mp3');
+            break;
+        case "0500":
+            addSound('./resources/game/gameMaster/5m.mp3');
+            break;
+        case "0030":
+            addSound('./resources/game/gameMaster/30s.mp3');
+            break;
+        case "0000":
+            updateGame(true);
+            break;
+        default:
+    }
+
 }

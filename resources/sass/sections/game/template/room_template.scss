@@ -9,7 +9,7 @@
 
         .logo {
             position: fixed;
-            z-index: 10;
+            z-index: 15;
             padding: 0.8%;
             right: 100%;
             width: 3%;
@@ -54,7 +54,6 @@
             #Decors div {
                 img {
                     position: absolute;
-                    // bottom: 0;
                     height: auto;
                     background-size: cover;
                     -webkit-transition: .3s ease-in-out;

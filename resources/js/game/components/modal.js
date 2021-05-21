@@ -25,6 +25,8 @@ import Poster from "../enigma/room1/Poster";
 import Oiseaux from "../enigma/room2/Oiseaux";
 import Puzzle from "../enigma/room2/Puzzle";
 import Takable from "../enigma/room2/Takable";
+import Affiche from "../enigma/room2/Affiche";
+import Chateau from "../enigma/room3/Chateau_sable";
 
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");
@@ -157,6 +159,12 @@ function toggleModalCustom(titre, description) {
                 case "Puzzle":
                     activity.appendChild(Puzzle());
                     break;
+                case "Poster_Robot":
+                    activity.appendChild(Affiche());
+                    break;
+                case "Chateau_Sable":
+                    activity.appendChild(Chateau());
+                    break;
                 default:
                     activity.appendChild(Defaut(titre));
             }
@@ -206,7 +214,7 @@ function clearAll() {
 
 function createInventory() {
     let objects = document.createElement("div");
-    let url = "./resources/game/room" + actualRoom;
+    let url = "./resources/game/room" + actualRoom + "/objects/";
 
     for (let i = 0; i < invJoueur.length; i++) {
         let global_object = document.createElement("div");
@@ -223,8 +231,14 @@ function createInventory() {
         let nom = document.createElement("p");
         nom.innerText = invJoueur[i][0];
 
+        if (invJoueur[i][0] === "PhotoUn" ||
+            invJoueur[i][0] === "PhotoDeux" ||
+            invJoueur[i][0] === "PhotoTrois") {
+            url = "./resources/game/global/"
+        }
+
         let object = document.createElement("img");
-        object.src = url + "/objects/" + invJoueur[i][0] + "_00.png";
+        object.src = url + invJoueur[i][0] + "_00.png";
         object.alt = invJoueur[i][0];
         object.className = "hoverable";
         object.id = "inv_" + invJoueur[i][0];

@@ -5,15 +5,14 @@
  **/
 import toggleVideoPlayer from "./video_player";
 
-
-let actualCinematic = 0;
 let cin = document.getElementById('Cinematic');
 let video = document.getElementById("media-video");
 let game = null;
 
 let cinematics = Array('beginning', 'success', 'defeat');
 
-export default function displayCinematic() {
+export default function displayCinematic(num) {
+
     video.onclick = function () {
         this.play();
     };
@@ -21,17 +20,17 @@ export default function displayCinematic() {
     let webm = document.createElement("source");
     webm.id = "webm";
     webm.type = "video/webm";
-    webm.src = "./resources/cinematic/" + cinematics[actualCinematic] + ".webm";
+    webm.src = "./resources/cinematic/" + cinematics[num] + ".webm";
 
     let mp4 = document.createElement("source");
     mp4.id = "mp4";
     mp4.type = "video/mp4";
-    mp4.src = "./resources/cinematic/" + cinematics[actualCinematic] + ".mp4";
+    mp4.src = "./resources/cinematic/" + cinematics[num] + ".mp4";
 
     let ogg = document.createElement("source");
     ogg.id = "ogg";
     ogg.type = "video/ogg";
-    ogg.src = "./resources/cinematic/" + cinematics[actualCinematic] + ".ogv";
+    ogg.src = "./resources/cinematic/" + cinematics[num] + ".ogv";
 
 
     video.addEventListener('ended', function () {
@@ -54,15 +53,11 @@ export default function displayCinematic() {
 
     toggleVideoPlayer();
 
-    if (actualCinematic === 0 ){
+    if (num === 0) {
         video.addEventListener('ended', function () {
             toggleVideoPlayer();
         });
     }
 
-
-    actualCinematic += 1;
-
-    console.log("return" + video);
     return video;
 }
