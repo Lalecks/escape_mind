@@ -1,0 +1,11 @@
+.reset {
+    background-color: darkred !important;
+
+    &:hover {
+        color: black;
+    }
+
+    i {
+        font-size: 64% !important;
+    }
+}

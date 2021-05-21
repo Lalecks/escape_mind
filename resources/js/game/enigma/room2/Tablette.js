@@ -116,7 +116,8 @@ function part_two(bg, desc_text, no_enigma) {
         if (i === 10) {
             button.innerText = 0;
         } else if (i === 11) {
-            button.innerText = "X";
+            button.innerHTML = "<i class='fas fa-undo'></i>";
+            button.classList += " reset";
             button.addEventListener("click", function () {
                 result.innerText = "";
             });
@@ -126,9 +127,7 @@ function part_two(bg, desc_text, no_enigma) {
     }
     no_enigma.appendChild(result);
     no_enigma.appendChild(div_button);
-
 }
-
 
 function verif(num) {
     let result = document.getElementById("code_tablette");

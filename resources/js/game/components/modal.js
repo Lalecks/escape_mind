@@ -96,7 +96,7 @@ function toggleModalCustom(titre, description) {
             desc_html.id = "desc_modal";
 
             let text_html = document.createElement("p");
-            text_html.id="desc_text";
+            text_html.id = "desc_text";
             text_html.innerText = description;
 
             /* Affichage ou non de l'inventaire */
@@ -110,7 +110,6 @@ function toggleModalCustom(titre, description) {
             } else {
                 inventory.style.display = "none";
                 document.querySelector(".modal-content").style.top = "50%"; // Centrer la modale
-
             }
 
             desc_html.appendChild(text_html);

@@ -7126,6 +7126,9 @@ template {
     background-image: inherit;
     background-color: #121212;
   }
+  #game-page .modal img {
+    filter: drop-shadow(0.05rem 0.05rem 1rem #ffffff54);
+  }
 
   .show-modal {
     background: rgba(38, 37, 37, 0.73);
@@ -8161,6 +8164,7 @@ footer {
 /***** Game part *****/
 /* Template/Modèle : Instructions des parties visuelle commune pour la partie GAME (ex: Dispositions des éléments, composants, ...) */
 #game-page {
+  background-color: #000000;
   position: relative;
   font-size: 2vw !important;
   word-break: break-word;
@@ -8345,7 +8349,7 @@ footer {
   font-weight: bold;
   left: 7%;
   z-index: -14;
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: #ffffff3d;
   text-transform: uppercase;
   transform: rotate(180deg);
@@ -9183,7 +9187,7 @@ footer {
   left: 34.8%;
   height: 15%;
   justify-content: space-around;
-  bottom: 12.8%;
+  bottom: 10.8%;
 }
 #lecteur_modal #div_buttons .Lecteur_button {
   background: transparent;
@@ -9209,6 +9213,11 @@ footer {
 }
 
 /* Firefox */
+@-moz-document url-prefix() {
+  #div_buttons {
+    bottom: 12.8%;
+  }
+}
 #jukebok_modal {
   background-color: #ffffff;
   border: 1px solid #d738c1;
@@ -9367,17 +9376,17 @@ footer {
 }
 #tablette_modal #tablette_buttons {
   position: absolute;
-  left: 36%;
-  width: 28%;
-  top: 36%;
+  left: 37%;
+  width: 26%;
+  top: 34%;
 }
 #tablette_modal #tablette_buttons [id^=tablette_button_] {
   background: gray;
   color: white;
-  font-size: 130%;
+  font-size: 114%;
   text-align: center;
   width: 4%;
-  width: 25%;
+  width: 23%;
   display: inline;
   height: 2%;
   width: 23%;
@@ -9696,6 +9705,16 @@ footer {
     transform: translateY(100%);
   }
 }
+.reset {
+  background-color: darkred !important;
+}
+.reset:hover {
+  color: black;
+}
+.reset i {
+  font-size: 64% !important;
+}
+
 /*--------  Responsive --------*/
 /* Extra small devices (phones, 600px and down) 576px*/
 @media only screen and (max-width: 600px) {
@@ -9988,7 +10007,7 @@ header .navbar ul li .active::before {
 @media only screen and (max-width: 1300px) {
   #game-page .modal .modal-content {
     width: 50%;
-    height: 23vw;
+    height: 25vw;
   }
 
   .magnify {

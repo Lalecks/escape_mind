@@ -48,6 +48,3 @@ export default function updateInventory(objectInv, isToAdd) {
         }
     }
 }
-
-//remove objets ?
-//add objets ?

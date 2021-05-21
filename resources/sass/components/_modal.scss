@@ -102,6 +102,10 @@
             background-image: inherit;
             background-color: $body-bg;
         }
+
+        .modal img {
+            filter: drop-shadow(0.05rem 0.05rem 1rem #ffffff54);
+        }
     }
 
     .show-modal {

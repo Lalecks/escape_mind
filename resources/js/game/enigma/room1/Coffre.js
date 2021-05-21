@@ -32,19 +32,17 @@ export default function Coffre() {
         let num = document.createElement("span");
         num.classList = "num hoverable";
         if (i === 10) {
-            num.innerText = "X";
+            num.innerHTML = "<i class='fas fa-undo'></i>";
+            num.classList += " reset";
             num.addEventListener("click", function () {
                 result.innerText = "";
             });
-        } else
-        {
+        } else {
             num.innerText = i;
             num.addEventListener("click", function () {
                 verif(i)
             });
         }
-
-
         if (i < 5) div_haut.appendChild(num);
         else div_bas.appendChild(num);
     }
