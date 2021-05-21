@@ -25,7 +25,7 @@ import Poster from "../enigma/room1/Poster";
 import Oiseaux from "../enigma/room2/Oiseaux";
 import Puzzle from "../enigma/room2/Puzzle";
 import Takable from "../enigma/room2/Takable";
-import Affiche from "../enigma/room1/Affiche";
+import Affiche from "../enigma/room2/Affiche";
 import Chateau from "../enigma/room3/Chateau_sable";
 
 /* Inititalisation des variables */
