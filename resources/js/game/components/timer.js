@@ -10,10 +10,10 @@ import updateGame from "../room_creation";
 let refresh = null;
 
 //vrai timer en secondes
-let time = 1200;
+let time = 605;
 
 //timer visuel
-let timeStr = "2000";
+let timeStr = "1005";
 let isAlreadyCreated = false;
 
 // Affichage du timer

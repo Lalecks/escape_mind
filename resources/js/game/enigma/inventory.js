@@ -12,6 +12,8 @@ export {
     objets as invJoueur
 };
 
+let inventory = document.getElementById("Inventory");
+
 /*
  * la fonction permet d'ajouter ou de supprimer un objet de l'inventaire
  * objet correspond au nom de l'objet
@@ -46,6 +48,11 @@ export default function updateInventory(objectInv, isToAdd) {
                 console.log("ERR : CAN'T REMOVE THE OBJECT : " + object);
             }
         }
+    }
+
+    if (objets.length===0){
+        inventory.style.display = "none";
+        document.querySelector(".modal-content").style.top = "50%"; // Centrer la modale
     }
 }
 
