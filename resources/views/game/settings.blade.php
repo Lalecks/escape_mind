@@ -31,7 +31,7 @@
 
 			<div id="Info_setting" class="tabcontent">
 				<h2>Informations</h2>
-				<a href="mailto:contact.escapemind@gmail.com" class="link hoverable"><i class="fas fa-check-double"></i> Un problème ? Contactez‑nous sur <span>contact.escapemind@gmail.com</span></a>
+				<a href="mailto:escapemind.contact@gmail.com" class="link hoverable"><i class="fas fa-check-double"></i> Un problème ? Contactez‑nous sur <span>escapemind.contact@gmail.com</span></a>
 				<a target="_blank" href="{{asset('/legal_notice')}}" class="link hoverable"><i class="fas fa-bug"></i> Informations légales</a>
                 <a  href="{{asset('/')}}" class="link hoverable"><i class="fas fa-sign-out-alt"></i> Quitter le jeu</a>
 			</div>

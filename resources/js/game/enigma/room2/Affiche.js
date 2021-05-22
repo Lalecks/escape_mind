@@ -21,14 +21,15 @@ export default function Affiche() {
 
     first_try = Turn(no_enigma, "./resources/game/room2/audios/Psy.mp3", first_try);
 
-    if (!isTaken){
+    if (!isTaken) {
         setTimeout(function () {
             let back_face = document.getElementById("back_face");
             back_face.addEventListener("click", () => {
                 updateInventory("PieceTrois", 1);
+                back_face.classList = 'hoverable';
                 back_face.style.background = 'url("./resources/game/room2/objects/Dessin_01.gif")';
                 back_face.style.backgroundSize = '100% 100%';
-                isTaken=true;
+                isTaken = true;
             });
         }, 1000);
 
@@ -39,8 +40,5 @@ export default function Affiche() {
             back_face.style.backgroundSize = '100% 100%';
         }, 1000);
     }
-
-
-
     return no_enigma;
 }

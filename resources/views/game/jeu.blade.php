@@ -12,6 +12,7 @@
 		<div id="turn-mobile">
 			<div class="phone"></div>
 			<p class="message">Veuillez pivoter votre appareil !</p>
+			<a class="hoverable link_hover" href="{{ app('router')->has('home') ? route('home') : url('/') }}">{{ __("Retour à la page d'accueil") }}</a>
 		</div>
 	</header>
 

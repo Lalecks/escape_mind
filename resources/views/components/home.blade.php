@@ -44,7 +44,7 @@
 				<!-- Ne pas mettre la modal dans le vidéo overlay, car il est en absolute et par conséquent la modal ne peut pas se fixer -->
 				<div class="modal-content glass-effect">
 					<span class="close-btn hoverable">&times;</span>
-					<iframe id="yt_player_iframe" width="560" height="315" src="https://www.youtube.com/embed/gA03iyI3yEA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+					<iframe id="yt_player_iframe" width="560" height="315" src="https://www.youtube.com/embed/PQOvBMAoN3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 			
@@ -273,7 +273,7 @@
 						</div>
 					</div>
 					<div class="take-contact">
-						<a href="mailto:contact@escapemind.fr" class="mail hoverable">contact.escapemind@gmail.com</a>
+						<a href="mailto:escapemind.contact@gmail.com" class="mail hoverable">escapemind.contact@gmail.com</a>
 					</div>
 				</div>
 			</section>

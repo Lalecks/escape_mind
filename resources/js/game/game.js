@@ -6,6 +6,7 @@
 
 import displayCinematic from "./cinematics/cinematic";
 import settings from "./components/settings";
+import beforeunload from "./components/window_beforeunload";
 import updateGame from "./room_creation";
 
 let avancement = 0;
@@ -19,8 +20,8 @@ export default function changeAV(num) {
 
 $(document).ready(function () {
     settings();
-    //beforeunload();
-
+    beforeunload();
+    
     let cinematic = displayCinematic(0);
     cinematic.addEventListener('ended',  uptG);
 

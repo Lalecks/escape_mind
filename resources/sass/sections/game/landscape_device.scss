@@ -34,8 +34,8 @@
 
             .phone {
                 margin: 0 auto;
-                height: 3rem;
-                width: 6rem;
+                height: 65vw;
+                width: 30vw;
                 border: 3px solid $white;
                 border-radius: 10px;
                 -webkit-animation: rotate 1.5s ease-in-out infinite alternate;
@@ -43,7 +43,8 @@
             }
 
             .message {
-                margin-top: 40px;
+                font-size: 5vw;
+                margin-top: 8%;
             }
         }
 
