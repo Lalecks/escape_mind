@@ -8,7 +8,9 @@ import changeAV from "../../game";
 import {
     isMobile
 } from "../../../layouts/detecting_mobile";
+import addSound from "../../components/sound";
 let already_used = false;
+let first_try=true;
 
 export default function Peluche() {
     let no_enigma = document.createElement("div");
@@ -20,6 +22,14 @@ export default function Peluche() {
     let bg = document.createElement("img");
     bg.id = "Peluche_bg";
     bg.src = html.src;
+
+    if (first_try){
+        try {
+            addSound("./resources/game/room2/audios/Sacha_Lapin_00.mp3",false);
+        } catch (e) {}
+
+        first_try = false;
+    }
 
     if (!already_used) {
 
@@ -129,9 +139,9 @@ export default function Peluche() {
                             //ajouter papier dans l'inventaire
                             updateInventory("Papier", 1);
                             updateObject("Peluche", 0);
-                            //retirer papier peluche
                             already_used = true;
-                            //changeAV(10);
+
+
                             //Fermeture de la modal
                             let modal = document.querySelector(".modal");
                             modal.classList.toggle("show-modal");

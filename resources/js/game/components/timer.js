@@ -93,13 +93,13 @@ function updateTimer() {
 
     switch (timeStr) {
         case "1000":
-            addSound('./resources/game/gameMaster/10m.mp3');
+            addSound('./resources/game/gameMaster/10m.mp3',false);
             break;
         case "0500":
-            addSound('./resources/game/gameMaster/5m.mp3');
+            addSound('./resources/game/gameMaster/5m.mp3',false);
             break;
         case "0030":
-            addSound('./resources/game/gameMaster/30s.mp3');
+            addSound('./resources/game/gameMaster/30s.mp3',false);
             break;
         case "0000":
             updateGame(true);

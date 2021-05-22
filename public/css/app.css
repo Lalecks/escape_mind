@@ -9028,11 +9028,6 @@ footer {
   width: 2%;
 }
 #game-page #Game .Room2 #Objects #PieceDeux {
-  left: 12%;
-  top: 38%;
-  transform: rotate(-5deg);
-}
-#game-page #Game .Room2 #Objects #PieceTrois {
   left: 68%;
   top: 54%;
   transform: rotate(-34deg);

@@ -90,8 +90,23 @@ function toggleModalCustom(titre, description) {
 
             /*  Titre de l'objet */
             let titre_html = document.createElement("span");
-            titre_html.innerText = titre;
             titre_html.id = "titre_modal";
+
+            switch (titre[titre.length-1]){
+                case "n" :
+                    titre_html.innerText = titre.replace('Un', '');
+                    break;
+                case "x" :
+                    titre_html.innerText = titre.replace('Deux', '');
+                    break;
+                case "s" :
+                    titre_html.innerText = titre.replace('Trois', '');
+                    break;
+                default:
+                    titre_html.innerText = titre;
+            }
+
+            titre_html.innerText = titre_html.innerText.replace('_',' ').replace(/[0-9]/g, '');
 
             /* Description de l'objet */
             let desc_html = document.createElement("span");
@@ -229,12 +244,26 @@ function createInventory() {
         }
 
         let nom = document.createElement("p");
-        nom.innerText = invJoueur[i][0];
+        switch (invJoueur[i][0][invJoueur[i][0].length-1]){
+            case "n" :
+                nom.innerText = invJoueur[i][0].replace('Un', '');
+                break;
+            case "x" :
+                nom.innerText = invJoueur[i][0].replace('Deux', '');
+                break;
+            case "s" :
+                nom.innerText = invJoueur[i][0].replace('Un', '');
+                break;
+            default:
+                nom.innerText = invJoueur[i][0];
+        }
 
         if (invJoueur[i][0] === "PhotoUn" ||
             invJoueur[i][0] === "PhotoDeux" ||
             invJoueur[i][0] === "PhotoTrois") {
             url = "./resources/game/global/"
+        } else {
+            url = "./resources/game/room" + actualRoom + "/objects/";
         }
 
         let object = document.createElement("img");

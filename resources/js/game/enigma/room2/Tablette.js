@@ -5,6 +5,7 @@
 import updateInventory from "../inventory";
 import updateObject from "../../object";
 import changeAV from "../../game";
+import addSound from "../../components/sound";
 let nb_piles = 0;
 let code = "250320";
 
@@ -53,6 +54,8 @@ export default function Tablette() {
 
         no_enigma.appendChild(slots);
 
+
+
         if (piles !== null && nb_piles < 3) {
             let number = document.querySelector(".item_number") || null;
             piles.addEventListener("click", () => {
@@ -99,6 +102,15 @@ function part_two(bg, desc_text, no_enigma) {
     bg.src = "./resources/game/room2/objects/Tablette_face_01.png";
     desc_text.remove();
 
+    let audio = document.createElement("audio");
+    audio.id = "audio_Button";
+    audio.className = "Foley";
+    audio.hidden = true;
+    audio.autoplay = false;
+    audio.loop = false;
+    audio.volume = 0.3;
+    document.getElementById("Foley").appendChild(audio);
+
     let result = document.createElement("span");
     result.id = "code_tablette";
 
@@ -111,6 +123,8 @@ function part_two(bg, desc_text, no_enigma) {
         button.classList = "butt hoverable";
         button.addEventListener("click", function () {
             verif(button.innerText);
+            audio.src = "./resources/game/global/button.mp3";
+            audio.play();
         });
 
         if (i === 10) {
@@ -120,6 +134,9 @@ function part_two(bg, desc_text, no_enigma) {
             button.classList += " reset";
             button.addEventListener("click", function () {
                 result.innerText = "";
+                audio.src = "./resources/game/global/button.mp3";
+                audio.play();
+
             });
         } else button.innerText = i;
 
@@ -138,6 +155,7 @@ function verif(num) {
     if (result.innerText.length === 6) {
         if (result.innerText === code) {
             result.innerText = "CORRECTE";
+            addSound("./resources/game/global/correct.mp3",false);
             result.remove();
             document.getElementById("tablette_buttons").remove();
 
@@ -156,6 +174,7 @@ function verif(num) {
             myLoop();
         } else {
             result.innerText = "ERREUR";
+            addSound("./resources/game/global/wrong.mp3",false);
             setTimeout(function () {
                 result.innerText = "";
             }, 500);

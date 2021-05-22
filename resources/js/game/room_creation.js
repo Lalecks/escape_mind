@@ -37,7 +37,6 @@ let object = [
     ["Pile3", 2, ""],
     ["Oiseaux", 2, ""],
     ["PieceDeux", 2, ""],
-    ["PieceTrois", 2, ""],
     /* Room 3 */
     ["Bouchon", 3, ""],
     ["Chateau_Sable", 3, ""],
@@ -92,7 +91,7 @@ export default function updateGame(fail) {
     actualRoom += 1;
     url = "./resources/game/room" + actualRoom;
 
-    if (!fail){
+    if (!fail) {
         if (actualRoom === 1) {
             createRoom();
             createTimer();
@@ -114,47 +113,55 @@ export default function updateGame(fail) {
         //stopTimer
         createTimer();
         let cinematic = displayCinematic(2);
-        cinematic.addEventListener('ended',  uptG);
+        cinematic.addEventListener('ended', uptG);
 
-        function uptG(){
+        function uptG() {
             window.location.replace("../");
-            cinematic.removeEventListener('ended',  uptG);
+            cinematic.removeEventListener('ended', uptG);
         }
 
     }
 
 
-    function animChangement(fin){
+    function animChangement(fin) {
         // animate content
-        $('.Game').addClass('animate_content');
-        // Remove inventory sauf le papier
-        invJoueur.forEach(objet => {
-            for (let i = 0; i < objet[1]; i++) updateInventory(objet[0], 0);
-        });
+        addSound('./resources/game/global/loading.mp3',false);
+        setTimeout(function () {
+            $('.Game').addClass('animate_content');
 
-        try {
-            setTimeout(function () {
-                deleteRoom();
-                if ($(".modal").hasClass("show-modal")) {
-                    $(".modal").removeClass("show-modal");
-                }
-                if (!fin) createRoom();
-            }, 1600)
-        } catch (e) {}
+            // Remove inventory sauf le papier
+            invJoueur.forEach(objet => {
+                for (let i = 0; i < objet[1]; i++) updateInventory(objet[0], 0);
+            });
 
-        if (!fin){
-            setTimeout(function () {
-                $('.Game').removeClass('animate_content');
-                if (actualRoom === 3) {
-                    window.alert("SALLE NON FINIE.");
-                }
-            }, 3600);
-        }
+            try {
+                setTimeout(function () {
+                    deleteRoom();
+                    if ($(".modal").hasClass("show-modal")) {
+                        $(".modal").removeClass("show-modal");
+                    }
+                    if (!fin) createRoom();
+                }, 1600)
+            } catch (e) {
+            }
+
+            if (!fin) {
+                setTimeout(function () {
+                    $('.Game').removeClass('animate_content');
+                    if (actualRoom === 3) {
+                        window.alert("SALLE NON FINIE.");
+                    }
+                }, 3600);
+            }
+        }, 900);
     }
 }
 
 /* Création de la nouvelle salle */
 function createRoom() {
+
+    addSound("./resources/game/room" + actualRoom + "/audios/Ambiance_00.mp3",true);
+
     let parent_obj = document.getElementById("Objects");
     let parent_decor = document.getElementById("Decors");
 
@@ -186,7 +193,7 @@ function createRoom() {
 
             //click sur obj
             obj.addEventListener("click",()=>{
-                addSound('./resources/game/room' + actualRoom + '/' + object[i][0] +'.mp3');
+                addSound('./resources/game/room' + actualRoom + '/' + object[i][0] +'.mp3',false);
             })
 
             link.appendChild(obj);

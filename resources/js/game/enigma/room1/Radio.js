@@ -13,7 +13,7 @@ export default function Radio() {
 
     if (first_time) {
         first_time = false;
-        addSound('./resources/game/room1/audios/Radio_enigme_00.mp3');
+        addSound('./resources/game/room1/audios/Radio_enigme_00.mp3',false);
     }
 
     let radio_enigma = document.createElement("div");

@@ -41,16 +41,24 @@ export default function Turn(base_html, son, first_try) {
     })
 
     box_scene.addEventListener('mousemove', function (e) {
-        if (startX) {
+        if (startX && (offset < 180 && offset > -180)) {
             offset = e.pageX - startX;
-            box.style['-webkit-transform'] = 'rotateY(' + offset + 'deg)';
+            box.style['-webkit-transform'] = 'perspective(100vw) rotateY(' + offset + 'deg)';
+        }else if (offset <= -180){
+            offset = -179;
+            box.style['-webkit-transform'] = 'perspective(100vw) rotateY(' + offset + 'deg)';
+        }else  if (offset >= 180) {
+            offset = 179;
+            box.style['-webkit-transform'] = 'perspective(100vw) rotateY(' + offset + 'deg)';
         }
+
         if ((offset > 110 || offset < -110) && first_try) {
             try {
-                addSound(son);
+                addSound(son,false);
             } catch (e) {}
 
             first_try = false;
+            return false;
         }
     });
 

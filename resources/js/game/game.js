@@ -7,8 +7,6 @@
 import displayCinematic from "./cinematics/cinematic";
 import settings from "./components/settings";
 import updateGame from "./room_creation";
-import beforeunload from "./components/window_beforeunload";
-import addSound from "./components/sound";
 
 let avancement = 0;
 

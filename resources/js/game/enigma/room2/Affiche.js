@@ -2,7 +2,6 @@
  * Enigme Poster
  */
 
-import addSound from "../../components/sound";
 import {
     actualRoom
 } from "../../room_creation";
@@ -11,6 +10,7 @@ import updateInventory from "../inventory";
 import changeAV from "../../game";
 
 let first_try = true;
+let isTaken = false;
 
 export default function Affiche() {
     let no_enigma = document.createElement("div");
@@ -19,16 +19,27 @@ export default function Affiche() {
 
     let html = document.getElementById("Poster");
 
-    Turn(no_enigma, "./resources/game/room2/audios/Psy.mp3", first_try);
+    first_try = Turn(no_enigma, "./resources/game/room2/audios/Psy.mp3", first_try);
 
-    setTimeout(function () {
-        let back_face = document.getElementById("back_face");
-        back_face.addEventListener("click", () => {
-            updateInventory("PhotoDeux", 1);
-            back_face.style.background = url("/resources/game/room2/objects/Dessin_01.gif");
-            changeAV(15);
-        });
-    }, 1000);
+    if (!isTaken){
+        setTimeout(function () {
+            let back_face = document.getElementById("back_face");
+            back_face.addEventListener("click", () => {
+                updateInventory("PieceTrois", 1);
+                back_face.style.background = 'url("./resources/game/room2/objects/Dessin_01.gif")';
+                back_face.style.backgroundSize = '100% 100%';
+                isTaken=true;
+            });
+        }, 1000);
+
+    } else {
+        setTimeout(function () {
+            let back_face = document.getElementById("back_face");
+            back_face.style.background = 'url("./resources/game/room2/objects/Dessin_01.gif")';
+            back_face.style.backgroundSize = '100% 100%';
+        }, 1000);
+    }
+
 
 
     return no_enigma;

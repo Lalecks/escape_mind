@@ -3,6 +3,7 @@
  */
 
 import changeAV from "../../game";
+import addSound from "../../components/sound";
 
 let code = "711";
 
@@ -27,6 +28,15 @@ export default function Coffre() {
     let div_bas = document.createElement("span");
     div_bas.id = "div_bas";
 
+    let audio = document.createElement("audio");
+    audio.id = "audio_Button";
+    audio.className = "Foley";
+    audio.hidden = true;
+    audio.autoplay = false;
+    audio.loop = false;
+    audio.volume = 0.3;
+    document.getElementById("Foley").appendChild(audio);
+
     for (let i = 0; i <= 10; i++) {
 
         let num = document.createElement("span");
@@ -36,11 +46,16 @@ export default function Coffre() {
             num.classList += " reset";
             num.addEventListener("click", function () {
                 result.innerText = "";
+                audio.src = "./resources/game/global/button.mp3";
+                audio.play();
+
             });
         } else {
             num.innerText = i;
             num.addEventListener("click", function () {
-                verif(i)
+                verif(i);
+                audio.src = "./resources/game/global/button.mp3";
+                audio.play();
             });
         }
         if (i < 5) div_haut.appendChild(num);
@@ -66,6 +81,7 @@ function verif(num) {
     if (result.innerText.length === 3) {
         if (result.innerText === code) {
             result.innerText = "CORRECTE";
+            addSound("./resources/game/global/correct.mp3",false);
             setTimeout(function () {
                 changeAV(5);
             }, 500);
@@ -73,6 +89,7 @@ function verif(num) {
     } else {
         if (result.innerText.length > 5) {
             result.innerText = "ERREUR";
+            addSound("./resources/game/global/wrong.mp3",false);
             setTimeout(function () {
                 result.innerText = "";
             }, 500);
