@@ -6,11 +6,11 @@
 
 <div id="home-page">
 	<span id="bg-noise"></span>
-
+	{{-- @include("game.rank") --}}
+	
 	<header>
 		<a class="logo logo-title" href="#">escape_mind</a>
 		<!-- Début : menu burger -->
-
 		<input type='checkbox' id='toggle' style='display:none;'/>
 		<label class='toggle-btn toggle-btn__cross hoverable' for='toggle'>
 			<div class="bar"></div>
@@ -44,7 +44,7 @@
 				<!-- Ne pas mettre la modal dans le vidéo overlay, car il est en absolute et par conséquent la modal ne peut pas se fixer -->
 				<div class="modal-content glass-effect">
 					<span class="close-btn hoverable">&times;</span>
-					<iframe id="yt_player_iframe" width="560" height="315" src="https://www.youtube.com/embed/PQOvBMAoN3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe id="yt_player_iframe" width="560" height="315" src="https://www.youtube.com/embed/fvWlmyezte0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 			
@@ -209,7 +209,9 @@
 							<td>{{$key+1}}</td>
 							@endif
 							<td>{{$u->name}}</td>
-							<td>{{$u->created_at->format('i:s')}}s</td>
+							<td>
+								{{ Carbon\Carbon::parse($u->time_game)->format('i:s')}}s
+							</td>
 						</tr>
 					@endforeach
 					</tbody>

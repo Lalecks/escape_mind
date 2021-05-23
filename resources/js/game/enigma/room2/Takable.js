@@ -29,7 +29,7 @@ export default function Takable(nom_obj) {
             //empeche le spam click
             if (!used) {
                 button.disabled = true;
-                button.innerText = "Récupéré !"
+                button.innerText = "Déjà récupéré !"
                 updateInventory(nom_obj, "1");
                 updateObject(nom_obj, true);
                 used = 1;
@@ -37,7 +37,5 @@ export default function Takable(nom_obj) {
         };
         enigma.appendChild(button);
     }
-
-
     return enigma;
 }

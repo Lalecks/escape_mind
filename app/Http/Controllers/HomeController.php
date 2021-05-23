@@ -23,10 +23,12 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    
+    protected $dates = ['time_game'];
 
     public function index()
     {
-        $user = User::orderBy('created_at', 'asc');
+        $user = User::orderBy('time_game', 'asc');
 
         // Classement des 15 premiers utilisateurs par le meilleur temps
         $fifteenFirstUser = $user->take(15)->get();
@@ -40,5 +42,17 @@ class HomeController extends Controller
 
     public function legal_notice(){
         return view('components.legal_notice');
+    }
+
+    public function store(Request $request){
+        $request->validate([
+            'name' => 'required|max:20|min:4',
+            // 'time_game' => 'required|date|after:start_date'
+        ]);
+        $c = new User();
+        $c->name = $request->input('name');
+        // $c->time_game = $request->input('time_game');
+        $c->save(); 
+        return redirect("/");
     }
 }

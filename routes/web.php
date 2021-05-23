@@ -21,21 +21,11 @@ Route::get('/', function () {
     return view("components.home");
 });
 Route::get('/', 'HomeController@index');
-Route::get('/legal_notice', 'HomeController@legal_notice');
+Route::post('/create', 'HomeController@store');
 Route::get('/play', 'GameController@game');
 Route::get('/play', 'GameController@index');
+Route::get('/legal_notice', 'HomeController@legal_notice');
 
-// Pages de l'interface jeu
-Route::group(['middleware'=>'auth'], function () {
-    // Pages des pièces
-    Route::get('/room1', 'GameController@displayRoom1');
-    Route::get('/room2', 'GameController@displayRoom2');
-    Route::get('/room3', 'GameController@displayRoom3');
-    // Pages des cinématiques
-    Route::get('/opening', 'CinematicController@opening');
-    Route::get('/ending-out', 'CinematicController@ending');
-    Route::get('/ending-in', 'CinematicController@ending');
-});
 
 //If the URL does not exist, redirection to homepage
 /*
@@ -43,4 +33,4 @@ Route::any('{query}',
     function() { return redirect('/'); })
     ->where('query', '.*');*/
 
-Auth::routes();
+// Auth::routes();

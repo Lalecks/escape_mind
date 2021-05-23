@@ -8308,7 +8308,7 @@ footer {
   overflow: hidden;
   padding: 2.5%;
   width: 59%;
-  height: 34vw;
+  height: 28vw;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 #game-page .modal .modal-content .close-btn {
@@ -8364,10 +8364,11 @@ footer {
   margin: 2% auto;
 }
 #game-page .modal #Activity .enigme_modal .btn-animation_glitch {
+  line-height: 0;
   margin: 0 auto;
   display: inline;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 0.8% 5%;
+  padding: 2.8% 5%;
 }
 #game-page .modal #Activity .enigme_modal .btn-animation_glitch:hover {
   background-color: black;
@@ -8378,7 +8379,7 @@ footer {
   position: fixed;
   z-index: 8;
   text-align: center;
-  padding: 2%;
+  padding: 1.2% 2.5%;
   border-radius: 0.5rem 0.5rem 0 0;
   left: calc(-50vw + 50%);
   right: calc(-50vw + 50%);
@@ -8391,13 +8392,14 @@ footer {
   width: 96%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr 0 1fr;
-  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr;
+  grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 0;
 }
 #game-page .modal #Inventory div .picked {
   position: relative;
   width: 91%;
+  height: 79%;
   border-radius: 0.5rem;
   padding: 2%;
   overflow: hidden;
@@ -8432,7 +8434,7 @@ footer {
   -moz-transition: all 200ms ease-in;
 }
 #game-page .modal #Inventory div .picked img:hover {
-  width: 75%;
+  width: 65%;
   max-height: 90%;
   transition: all 200ms ease-in;
   -webkit-transition: all 200ms ease-in;
@@ -9330,6 +9332,10 @@ footer {
   padding-top: 7%;
   margin: 1%;
   border-radius: 10%;
+}
+
+.enigme_modal img[id^=Pile] {
+  width: 72% !important;
 }
 
 #peluche_modal {

@@ -27,17 +27,15 @@ export default function Cassettes() {
         button.innerText = "Récupérer";
         button.onclick = function () {
             //empeche le spam click
-            if (!used){
+            if (!used) {
                 updateInventory("Cassette", "1");
-                updateObject("Cassettes",false);
+                updateObject("Cassettes", false);
                 bg.src = html.src;
-                button.innerText = "Récupéré !";
+                button.innerText = "Déjà récupéré !";
             }
             used = 1;
         };
         enigma.appendChild(button);
     }
-
-
     return enigma;
 }

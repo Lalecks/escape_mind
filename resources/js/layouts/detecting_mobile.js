@@ -10,24 +10,28 @@ if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elain
     isMobile = true;
 } // Détection de dispositif
 
-export { isMobile as isMobile };
+export {
+    isMobile as isMobile
+};
 
 // Si le support est un mobile, forcer le mode paysage quand le téléphone est en portrait
 if (isMobile === true) {
-    $("body").addClass("landscape");
+    if (document.getElementById("game-page")) {
+        $("body").addClass("landscape");
+    }
     document.getElementById('souris').style.display = "none";
     document.querySelector('.cursor').style.display = "none";
     document.querySelector('.follower').style.display = "none";
 
-    if ($('.modal').hasClass('show-modal') === true) {
-        /* Arreter le scrolling de la page */
-        document.body.style.position = "fixed";
-    } else {
-        /* Autorisation le scrolling de la page */
-        document.body.style.position = "relative";
+    if (document.getElementById("home-page")) {
+        if ($('.modal').hasClass('show-modal') === true) {
+            /* Arreter le scrolling de la page */
+            document.body.style.position = "fixed";
+        } else {
+            /* Autorisation le scrolling de la page */
+            document.body.style.position = "relative";
+        }
     }
-    // lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation ||screen.orientation.lock;
-    // lockOrientationUniversal('landscape');
 } else {
     try {
         $("body").removeClass("landscape");

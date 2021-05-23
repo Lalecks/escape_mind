@@ -13,7 +13,7 @@
             overflow: hidden;
             padding: 2.5%;
             width: 59%;
-            height: 34vw;
+            height: 28vw;
             // Glassmorphism
             background-image: -webkit-linear-gradient($black-degraded);
             background-image: -moz-linear-gradient($black-degraded);
@@ -87,10 +87,11 @@
                 }
 
                 .btn-animation_glitch {
+                    line-height: 0;
                     margin: 0 auto;
                     display: inline;
                     background-color: rgb(0, 0, 0, .2);
-                    padding: 0.8% 5%;
+                    padding: 2.8% 5%;
 
                     &:hover {
                         background-color: black;
@@ -105,7 +106,7 @@
             position: fixed;
             z-index: 8;
             text-align: center;
-            padding: 2%;
+            padding: 1.2% 2.5%;
             border-radius: 0.5rem 0.5rem 0 0;
             // Centrer et fixer la modal
             left: calc(-50vw + 50%);
@@ -119,13 +120,14 @@
                 width: 96%;
                 display: -ms-grid;
                 display: grid;
-                -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr 0 1fr;
-                grid-template-columns: repeat(5, 1fr);
+                -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr;
+                grid-template-columns: repeat(6, 1fr);
                 grid-column-gap: 0;
 
                 .picked {
                     position: relative;
                     width: 91%;
+                    height: 79%;
                     border-radius: 0.5rem;
                     padding: 2%;
                     overflow: hidden;
@@ -177,7 +179,7 @@
                         -moz-transition: all 200ms ease-in;
 
                         &:hover {
-                            width: 75%;
+                            width: 65%;
                             max-height: 90%;
                             // Transition
                             transition: all 200ms ease-in;
