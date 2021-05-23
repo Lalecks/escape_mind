@@ -2,7 +2,7 @@
  * Enigme du Oiseaux
  */
 
-import updateInventory from "../inventory";
+import updateInventory from "../gestionInventory";
 import updateObject from "../../object";
 
 let taken = false;
@@ -32,8 +32,6 @@ export default function Oiseaux() {
                 piece.remove();
                 updateInventory("PieceUn", 1);
                 updateObject("Oiseaux", 0);
-                let modal = document.querySelector(".modal");
-                modal.classList.toggle("show-modal");
                 taken = true;
             }
         })

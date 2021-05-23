@@ -2,7 +2,7 @@
  * Enigme du lecteur
  */
 
-import updateInventory from "../inventory";
+import updateInventory from "../gestionInventory";
 import updateObject from "../../object";
 
 let isItIn = false;
@@ -32,7 +32,6 @@ export default function Lecteur() {
             cassette.addEventListener("click", () => {
                 updateObject("Lecteur",0);
                 updateInventory("Cassette", false)
-                document.querySelector("#div_inv_Cassette").remove();
                 isItIn=true;
                 controlMusic(bg,enigma);
             })

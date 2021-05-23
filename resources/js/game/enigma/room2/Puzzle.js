@@ -2,7 +2,7 @@
  * Enigme du Jukebox
  */
 import updateObject from "../../object";
-import updateInventory from "../inventory";
+import updateInventory from "../gestionInventory";
 import Turn from "../room1/Turn";
 import changeAV from "../../game";
 
@@ -64,7 +64,6 @@ export default function Puzzle() {
                 updateInventory(pieces[piece].id.replace("inv_", ""), 0);
                 actual_puzzle = actual_puzzle.substr(0, piece) + "1" + actual_puzzle.substr(piece + 1);
                 bg.src = html.src.replace("_00", "_" + actual_puzzle);
-                pieces[piece].parentNode.remove();
                 if (actual_puzzle === "111") {
                     bg.remove();
                     puzzleTurn();

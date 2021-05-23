@@ -6,7 +6,7 @@ import {
     actualRoom
 } from "../../room_creation";
 import Turn from "../room1/Turn";
-import updateInventory from "../inventory";
+import updateInventory from "../gestionInventory";
 import changeAV from "../../game";
 
 let first_try = true;

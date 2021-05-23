@@ -1,4 +1,4 @@
-import updateInventory from "../inventory";
+import updateInventory from "../gestionInventory";
 
 export default function Bougie() {
     let no_enigma = document.createElement("div");
@@ -20,11 +20,8 @@ export default function Bougie() {
 
     if (code !== null) {
         code.addEventListener("mousedown", () => {
-            alert("Un mot apparait");
             updateInventory("Papier", false);
-            updateInventory("Code", true);
-            let modal = document.querySelector(".modal");
-            modal.classList.toggle("show-modal");
+            updateInventory("Code", true);;
         })
     }
 

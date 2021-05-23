@@ -2,7 +2,7 @@
  * Enigme de la radio
  */
 
-import updateInventory from "../inventory";
+import updateInventory from "../gestionInventory";
 import updateObject from "../../object";
 
 let used = 0;
@@ -30,8 +30,8 @@ export default function Cassettes() {
             if (!used){
                 updateInventory("Cassette", "1");
                 updateObject("Cassettes",false);
-                let modal = document.querySelector(".modal");
-                modal.classList.toggle("show-modal");
+                bg.src = html.src;
+                button.innerText = "Récupéré !";
             }
             used = 1;
         };

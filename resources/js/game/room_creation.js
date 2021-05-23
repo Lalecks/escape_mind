@@ -8,7 +8,7 @@ import createTimer from "./components/timer";
 import cursorModule from "../layouts/mouse";
 import updateInventory, {
     invJoueur
-} from "./enigma/inventory";
+} from "./enigma/gestionInventory";
 import createModal from "./components/modal";
 import changeAV from "./game";
 import displayCinematic from "./cinematics/cinematic";
@@ -130,9 +130,8 @@ export default function updateGame(fail) {
             $('.Game').addClass('animate_content');
 
             // Remove inventory sauf le papier
-            invJoueur.forEach(objet => {
-                for (let i = 0; i < objet[1]; i++) updateInventory(objet[0], 0);
-            });
+            updateInventory("All", 0);
+
 
             try {
                 setTimeout(function () {

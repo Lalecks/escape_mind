@@ -2,7 +2,7 @@
  * Enigme de la radio
  */
 
-import updateInventory from "../inventory";
+import updateInventory from "../gestionInventory";
 import updateObject from "../../object";
 
 let used = 0;
@@ -29,10 +29,9 @@ export default function Takable(nom_obj) {
             //empeche le spam click
             if (!used) {
                 button.disabled = true;
+                button.innerText = "Récupéré !"
                 updateInventory(nom_obj, "1");
                 updateObject(nom_obj, true);
-                let modal = document.querySelector(".modal");
-                modal.classList.toggle("show-modal");
                 used = 1;
             }
         };

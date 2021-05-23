@@ -2,9 +2,9 @@
  * Enigme peluche
  */
 
-import updateInventory from "../inventory";
+import updateInventory from "../gestionInventory";
 import updateObject from "../../object";
-import changeAV from "../../game";
+
 import {
     isMobile
 } from "../../../layouts/detecting_mobile";
@@ -72,18 +72,14 @@ export default function Peluche() {
                             if (percent <= 60 && percent >= 39) {
                                 elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
                             } else if (percent >= 60) {
-                                elmnt.style.left = "60%";
-                                //ajouter papier dans l'inventaire
-                                updateInventory("Papier", 1);
-                                updateObject("Peluche", 0);
-                                //retirer papier peluche
-                                already_used = true;
+                                if (!already_used) {
+                                    elmnt.style.left = "60%";
+                                    updateInventory("Papier", 1);
+                                    updateObject("Peluche", 0);
+                                    already_used = true;
+                                }
 
-                                //Fermeture de la modal
-                                let modal = document.querySelector(".modal");
-                                modal.classList.toggle("show-modal");
-                                //lancer voix qui dit trouvé un papier
-                                //lancer musique
+
                             } else {
                                 reset();
                             }
@@ -135,18 +131,12 @@ export default function Peluche() {
                         if (percent <= 60 && percent >= 39) {
                             elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
                         } else if (percent >= 60) {
-                            elmnt.style.left = "60%";
-                            //ajouter papier dans l'inventaire
-                            updateInventory("Papier", 1);
-                            updateObject("Peluche", 0);
-                            already_used = true;
-
-
-                            //Fermeture de la modal
-                            let modal = document.querySelector(".modal");
-                            modal.classList.toggle("show-modal");
-                            //lancer voix qui dit trouvé un papier
-                            //lancer musique
+                            if (!already_used) {
+                                elmnt.style.left = "60%";
+                                updateInventory("Papier", 1);
+                                updateObject("Peluche", 0);
+                                already_used = true;
+                            }
                         } else {
                             reset();
                         }

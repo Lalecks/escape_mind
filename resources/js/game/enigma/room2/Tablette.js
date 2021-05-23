@@ -2,7 +2,7 @@
  * Enigme tablette
  */
 
-import updateInventory from "../inventory";
+import updateInventory from "../gestionInventory";
 import updateObject from "../../object";
 import changeAV from "../../game";
 import addSound from "../../components/sound";
@@ -74,7 +74,6 @@ export default function Tablette() {
                     first_empty_slot.classList = "Pile_empty_slot";
                     nb_piles = nb_piles + 1;
                 }
-                document.querySelector("#div_inv_Pile").remove();
 
                 if (nb_piles === 3) {
                     updateObject("Tablette", 0);
