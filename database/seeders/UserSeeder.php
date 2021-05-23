@@ -36,7 +36,7 @@ class UserSeeder extends Seeder
         $user2->save();
         /* Deuxième façon d'imoportation */
         $faker = Faker::create();
-        for ($i=0; $i < 2; $i++) { 
+        for ($i=0; $i < 14; $i++) { 
 	    	DB::table('users')->insert([
 	            'name' => $faker->name,
 	            // 'email' => str_random(12).'@mail.com',
