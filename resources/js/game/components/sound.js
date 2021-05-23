@@ -11,18 +11,21 @@ export default function addSound(url,ambiant) {
     request.open('GET', url);
     request.responseType = 'arraybuffer';
     let source = audioCtx.createBufferSource();
+    let gainNode = audioCtx.createGain();
+
 
     request.onload = function () {
         audioCtx.decodeAudioData(request.response, function (buffer) {
                 source.buffer = buffer;
-                source.connect(audioCtx.destination);
-                source.volume = 0.4;
+                gainNode.gain.value = 0.7;
                 source.start();
                 if (ambiant){
                     source.loop = true;
                     old_source = source;
-                    source.volume=0.1;
+                    gainNode.gain.value=0.3;
                 }
+                source.connect(gainNode);
+                gainNode.connect(audioCtx.destination);
             },
             function (e) {
                 "Error with decoding audio data" + e.err
