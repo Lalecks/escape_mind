@@ -4,6 +4,7 @@
 
 import updateInventory from "../gestionInventory";
 import updateObject from "../../object";
+import {unlocked} from "./Tablette";
 
 let taken = false;
 
@@ -18,8 +19,8 @@ export default function Oiseaux() {
     bg.id = "Oiseaux_bg";
     bg.src = html.src.replace("_00", "_01");
 
-    if (!taken) {
 
+    if (!taken && unlocked) {
         let piece = document.createElement("img");
         piece.id = "Piece1";
         piece.src = "./resources/game/room2/objects/PieceUn_00.png";

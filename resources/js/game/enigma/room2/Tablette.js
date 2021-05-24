@@ -4,10 +4,13 @@
 
 import updateInventory from "../gestionInventory";
 import updateObject from "../../object";
-import changeAV from "../../game";
 import addSound from "../../components/sound";
 let nb_piles = 0;
 let code = "250320";
+
+let story_watched = false;
+
+export {story_watched as unlocked}
 
 export default function Tablette() {
     let no_enigma = document.createElement("div");
@@ -171,6 +174,7 @@ function verif(num) {
                 }, i === 0 ? 0 : 5000);
             }
             myLoop();
+            story_watched = true;
         } else {
             result.innerText = "ERREUR";
             addSound("./resources/game/global/wrong.mp3",false);

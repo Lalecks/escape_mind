@@ -9279,7 +9279,9 @@ footer {
   transform: rotateY(180deg) translate3d(-100%, 0px, 1px);
   z-index: 1;
   background: url("/resources/game/room2/objects/Dessin_00.gif");
-  background-size: 100% 100%;
+  background-size: 100% 70%;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
 #tablette_modal #Tablette_bg {

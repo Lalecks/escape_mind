@@ -24,11 +24,13 @@ export default function Affiche() {
     if (!isTaken) {
         setTimeout(function () {
             let back_face = document.getElementById("back_face");
+            //back_face.classList = 'hoverable';
             back_face.addEventListener("click", () => {
                 updateInventory("PieceTrois", 1);
-                back_face.classList = 'hoverable';
                 back_face.style.background = 'url("./resources/game/room2/objects/Dessin_01.gif")';
-                back_face.style.backgroundSize = '100% 100%';
+                back_face.style.backgroundPosition="100% 50%";
+                back_face.style.backgroundRepeat="no-repeat";
+                back_face.style.backgroundSize = '100% 70%';
                 isTaken = true;
             });
         }, 1000);
@@ -37,7 +39,9 @@ export default function Affiche() {
         setTimeout(function () {
             let back_face = document.getElementById("back_face");
             back_face.style.background = 'url("./resources/game/room2/objects/Dessin_01.gif")';
-            back_face.style.backgroundSize = '100% 100%';
+            back_face.style.backgroundPosition="100% 50%";
+            back_face.style.backgroundRepeat="no-repeat";
+            back_face.style.backgroundSize = '100% 70%';
         }, 1000);
     }
     return no_enigma;
