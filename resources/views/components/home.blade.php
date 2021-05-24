@@ -6,8 +6,7 @@
 
 <div id="home-page">
 	<span id="bg-noise"></span>
-	{{-- @include("game.rank") --}}
-	
+
 	<header>
 		<a class="logo logo-title" href="#">escape_mind</a>
 		<!-- Début : menu burger -->
@@ -47,7 +46,7 @@
 					<iframe id="yt_player_iframe" width="560" height="315" src="https://www.youtube.com/embed/fvWlmyezte0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
-			
+
 			<section id="home">
 				<h1 style="display: none">Accueil</h1>
 				<video class="bg-video" playsinline="" autoplay="" muted="" loop="">
@@ -281,7 +280,7 @@
 			</section>
 			</div>
 		</div>
-		
+
 	<footer>
 		<div>
 			<span>escape_mind</span>

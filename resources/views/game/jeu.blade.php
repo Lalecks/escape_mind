@@ -17,6 +17,7 @@
 	</header>
 
 	<div id="Main" role="main">
+        @include("game.rank")
 		@include('game.cinematics')
 
 		<div id="Game" class="Game fadeIn">

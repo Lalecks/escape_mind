@@ -99,9 +99,27 @@ export default function updateGame(fail) {
             animChangement(true);
             //stopTimer
             createTimer();
+            let timer = createTimer();
 
             setTimeout(function () {
-                displayCinematic(1);
+                let cinematic = displayCinematic(1);
+                cinematic.addEventListener('ended', ()=>{
+                    let result = document.getElementById("Result");
+                    result.style.display="";
+                    let date = new Date();
+                    let time = document.getElementById("time_game");
+                    let str = date.getFullYear() + "-" + ((date.getMonth()+1)<10?"0":"") + (date.getMonth()+1) +
+                        "-" + date.getDate() + " " + date.getHours() +
+                        ":" + timer[0] + timer[1] + ":" + timer[2] + timer[3];
+
+                    time.value = str;
+
+                    let button = document.getElementById("result_button");
+                    button.addEventListener("click",()=>{
+                        time.value = str;
+                    })
+
+                });
             }, 2000);
 
         } else {

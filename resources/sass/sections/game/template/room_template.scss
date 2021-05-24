@@ -4,7 +4,6 @@
     font-size: 2vw !important;
     word-break: break-word;
 
-
     .mute {
         position: fixed;
         bottom: 3%;
@@ -51,7 +50,7 @@
             }
 
             #Decors img {
-                pointer-events: none; // Empecher la selection d'un objet, sauf que le hover fonctionne plus après 
+                pointer-events: none; // Empecher la selection d'un objet, sauf que le hover fonctionne plus après
             }
         }
     }

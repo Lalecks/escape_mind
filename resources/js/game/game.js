@@ -19,9 +19,10 @@ export default function changeAV(num) {
 }
 
 $(document).ready(function () {
+    document.getElementById("Result").style.display="none";
     settings();
     beforeunload();
-    
+
     let cinematic = displayCinematic(0);
     cinematic.addEventListener('ended',  uptG);
 

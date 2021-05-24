@@ -23,7 +23,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    
+
     protected $dates = ['time_game'];
 
     public function index()
@@ -37,7 +37,7 @@ class HomeController extends Controller
         // Troisième score
         $thirdUser = $user->skip(2)->first();
 
-        return view('components.home')->with('user', $fifteenFirstUser)->with('secondUser', $secondUser)->with('thirdUser', $thirdUser); 
+        return view('components.home')->with('user', $fifteenFirstUser)->with('secondUser', $secondUser)->with('thirdUser', $thirdUser);
     }
 
     public function legal_notice(){
@@ -47,12 +47,12 @@ class HomeController extends Controller
     public function store(Request $request){
         $request->validate([
             'name' => 'required|max:20|min:4',
-            // 'time_game' => 'required|date|after:start_date'
+            'time_game' => 'required|date|after:start_date'
         ]);
         $c = new User();
         $c->name = $request->input('name');
-        // $c->time_game = $request->input('time_game');
-        $c->save(); 
+        $c->time_game = $request->input('time_game');
+        $c->save();
         return redirect("/");
     }
 }

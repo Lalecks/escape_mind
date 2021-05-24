@@ -8980,7 +8980,7 @@ footer {
   left: 23%;
   bottom: 10%;
   width: 23%;
-  z-index: 2;
+  z-index: 3;
 }
 #game-page #Game .Room3 #Objects #Clef {
   left: 40%;
@@ -8992,7 +8992,7 @@ footer {
   left: 3%;
   bottom: 25%;
   width: 17%;
-  z-index: 2;
+  z-index: 3;
 }
 #game-page #Game .Room3 #Objects #Baleine {
   right: 28%;
