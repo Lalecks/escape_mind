@@ -13,6 +13,7 @@ import createModal from "./components/modal";
 import changeAV from "./game";
 import displayCinematic from "./cinematics/cinematic";
 import addSound from "./components/sound";
+import notification from "./components/notification";
 
 // Ajout des objets
 // Un objet_00 correspond à l'image par défaut
@@ -199,7 +200,7 @@ function createRoom() {
         if (object[i][1] === actualRoom) {
             let link = document.createElement("div");
             link.id = "link_" + object[i][0];
-            link.className = "trigger";
+            link.className = "notif trigger";
 
             // Objet en cours
             let obj = document.createElement("img");
@@ -209,8 +210,9 @@ function createRoom() {
             obj.alt = "" + object[i][2];
 
             //click sur obj
-            obj.addEventListener("click",()=>{
-                addSound('./resources/game/room' + actualRoom + '/' + object[i][0] +'.mp3',false);
+            link.addEventListener("mousedown",()=>{
+                //addSound('./resources/game/room' + actualRoom + '/' + object[i][0] +'.mp3',false);
+                addSound('./resources/game/global/objets.mp3',false);
             })
 
             link.appendChild(obj);
@@ -234,9 +236,10 @@ function createRoom() {
         }
     }
     area.appendChild(bg);
-
     cursorModule();
     createModal();
+    ohSnap('Oh Snap! I cannot process your card...', {color: 'red'});
+
 
 }
 

@@ -19,7 +19,7 @@
 	<div id="Main" role="main">
         @include("game.rank")
 		@include('game.cinematics')
-
+        <div id="ohsnap"></div>
 		<div id="Game" class="Game fadeIn">
 			@include('game.settings')
 			<div id="ObjectInfo">

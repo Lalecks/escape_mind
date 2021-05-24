@@ -10,6 +10,7 @@
 import createInventory from "./displayInventory";
 import changeAV from "../game";
 import {actualRoom} from "../room_creation";
+import addSound from "../components/sound";
 
 let objets = [ /*["Cassette","1"]*/ ];
 export {
@@ -107,6 +108,8 @@ export default function updateInventory(objectInv, isToAdd) {
 
             }
         }
+
+        addSound("./resources/game/global/inventory.mp3",false);
 
     } else {
         //Remove object

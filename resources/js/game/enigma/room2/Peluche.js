@@ -25,7 +25,9 @@ export default function Peluche() {
 
     if (first_try){
         try {
-            addSound("./resources/game/room2/audios/Sacha_Lapin_00.mp3",false);
+            setTimeout(function () {
+                addSound("./resources/game/room2/audios/Sacha_Lapin_00.mp3",false);
+            }, 100);
         } catch (e) {}
 
         first_try = false;

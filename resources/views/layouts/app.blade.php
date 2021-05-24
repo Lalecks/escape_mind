@@ -63,7 +63,6 @@
 		{{-- <link rel="manifest" href="{{ asset('resources/icon/manifest.json')}}"> --}}
 		<!-- Stylesheets -->
 		<link href="{{ mix('css/app.css') }}" rel="stylesheet">
-		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
 	</head>
 	<!--====== Corps ======-->
 	<body>
@@ -85,7 +84,6 @@
 			</div>
 		</main>
 		<!--====== Javascripts & Jquery ======-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 		<script src="{{ mix('js/app.js') }}" defer></script>
 		<script>
 			/* Menu de type onglets pour les différents paramètres */

@@ -13,7 +13,9 @@ export default function Radio() {
 
     if (first_time) {
         first_time = false;
-        addSound('./resources/game/room1/audios/Radio_enigme_00.mp3',false);
+        setTimeout(function () {
+            addSound('./resources/game/room1/audios/Radio_enigme_00.mp3',false);
+        }, 100);
     }
 
     let radio_enigma = document.createElement("div");

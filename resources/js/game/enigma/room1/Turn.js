@@ -54,7 +54,9 @@ export default function Turn(base_html, son, first_try) {
 
         if ((offset > 110 || offset < -110) && first_try) {
             try {
-                addSound(son,false);
+                setTimeout(function () {
+                    addSound(son,false);
+                }, 100);
             } catch (e) {}
 
             first_try = false;
