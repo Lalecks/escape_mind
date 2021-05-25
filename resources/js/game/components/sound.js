@@ -17,12 +17,12 @@ export default function addSound(url,ambiant) {
     request.onload = function () {
         audioCtx.decodeAudioData(request.response, function (buffer) {
                 source.buffer = buffer;
-                gainNode.gain.value = 0.7;
+                gainNode.gain.value = 0.8;
                 source.start();
                 if (ambiant){
                     source.loop = true;
                     old_source = source;
-                    gainNode.gain.value=0.3;
+                    gainNode.gain.value=0.5;
                 }
                 source.connect(gainNode);
                 gainNode.connect(audioCtx.destination);

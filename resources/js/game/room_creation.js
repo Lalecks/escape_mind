@@ -6,14 +6,12 @@
 
 import createTimer from "./components/timer";
 import cursorModule from "../layouts/mouse";
-import updateInventory, {
-    invJoueur
-} from "./enigma/gestionInventory";
+
 import createModal from "./components/modal";
-import changeAV from "./game";
 import displayCinematic from "./cinematics/cinematic";
 import addSound from "./components/sound";
-import notification from "./components/notification";
+
+
 
 // Ajout des objets
 // Un objet_00 correspond à l'image par défaut
@@ -82,6 +80,7 @@ let decor = [
 let actualRoom = 0; // Salle actuelle
 let nbRoom = 4;
 let url = "";
+
 
 export {
     actualRoom as actualRoom
@@ -238,7 +237,8 @@ function createRoom() {
     area.appendChild(bg);
     cursorModule();
     createModal();
-    ohSnap('Oh Snap! I cannot process your card...', {color: 'red'});
+
+
 
 
 }
