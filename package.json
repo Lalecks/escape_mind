@@ -34,6 +34,7 @@
         "extract-svg-path": "^2.1.0",
         "gsap": "^3.6.1",
         "paper": "^0.12.15",
+        "polipop": "^1.0.0",
         "rellax": "^1.12.1",
         "require-from-url": "^3.1.3",
         "simplex-noise": "^2.4.0",

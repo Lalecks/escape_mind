@@ -9,7 +9,6 @@ import Rellax from "rellax";
 /*-------- Generic --------*/
 require('./generic/jquery-2.1.4.min');
 /*--------  Packages --------*/
-require('./package/ohsnap.min');
 require('./package/fontawesome.min');
 require('./package/gsap.min');
 if (document.getElementById("home-page")) {
