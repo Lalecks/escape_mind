@@ -1,6 +1,6 @@
 <div id="settings-panel">
 	<div class="burger hoverable fas fa-cog"></div>
-	<nav class="settings-menu glass-effect">			
+	<nav class="settings-menu glass-effect">
 		<div id="filter">
 			<span class="tablinks active" onclick="openSetting(event,'Mission_setting')"><i class="fas fa-book-open"></i></span>
 			<span class="tablinks" onclick="openSetting(event,'Sound_setting')"><i class="fas fa-music"></i></span>
@@ -14,18 +14,18 @@
 			</div>
 
 			<div id="Sound_setting" class="tabcontent">
-				<h2>Son</h2>
+				<h2>Son (à venir)</h2>
 				<div>
 					<p>Musiques</p>
-					<input class="slider glass-effect hoverable" type="range" min="1" max="100" value="50">
+					<input class="slider glass-effect hoverable" type="range" min="1" max="100" value="50" disabled>
 				</div>
 				<div>
 					<p>Bruitages & effets sonores</p>
-					<input class="slider glass-effect hoverable" type="range" min="1" max="100" value="50">
+					<input class="slider glass-effect hoverable" type="range" min="1" max="100" value="50" disabled>
 				</div>
 				<div>
 					<p>Maître du jeu</p>
-					<input class="slider glass-effect hoverable" type="range" min="1" max="100" value="50">
+					<input class="slider glass-effect hoverable" type="range" min="1" max="100" value="50" disabled>
 				</div>
 			</div>
 
