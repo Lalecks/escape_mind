@@ -28,7 +28,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $user = User::orderBy('time_game', 'asc');
+        $user = User::orderBy('time_game', 'desc');
 
         // Classement des 15 premiers utilisateurs par le meilleur temps
         $fifteenFirstUser = $user->take(15)->get();
@@ -46,13 +46,17 @@ class HomeController extends Controller
 
     public function store(Request $request){
         $request->validate([
-            'name' => 'required|max:20|min:4',
+            'name' => 'unique:users|required|max:20|min:4',
             'time_game' => 'required|date|after:start_date'
         ]);
         $c = new User();
         $c->name = $request->input('name');
         $c->time_game = $request->input('time_game');
-        $c->save();
-        return redirect("/");
+        
+        $userName = DB::table('users')->where('name',$c->name);
+        if($userName){
+            $c->save();
+            return redirect("/#rank");
+        }
     }
 }

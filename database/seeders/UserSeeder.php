@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
         $user1->name = "sarah_mrct";
         // $user1->email = "sarah_mrct@gmail.com";
         // $user1->password = bcrypt("12345678");
-        $user1->created_at = "2020-03-17 10:18:20";
+        // $user1->created_at = "2020-03-17 10:18:20";
         $user1->save();
         // Alex
         $user2 = new User();
@@ -43,8 +43,8 @@ class UserSeeder extends Seeder
 	            // 'password' => bcrypt('12345678'),
                 // 'remember_token' => NULL,
                 'time_game' => '2020-03-17 10:29:20',
-                'created_at' => '2020-03-17 10:29:20',
-                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                // 'created_at' => '2020-03-17 10:29:20',
+                // 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
 	        ]);
     	}
     }

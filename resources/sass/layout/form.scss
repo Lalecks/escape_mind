@@ -1,0 +1,27 @@
+#Result div {
+    width: 64vw;
+    padding: 6%;
+    background-image: -webkit-linear-gradient($black-degraded);
+    background-image: -moz-linear-gradient($black-degraded);
+    background-image: -o-linear-gradient($black-degraded);
+    background-image: linear-gradient($black-degraded);
+
+    input[name="name"] {
+        margin: 1rem;
+        width: 50%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #result_button {
+        padding: 12px 20px;
+        border: #7c7c7c 2px solid;
+        border-radius: 4px;
+        color: white;
+        background: black;
+        display: inline-block !important;
+    }
+}

@@ -121,7 +121,7 @@
                 display: -ms-grid;
                 display: grid;
                 -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr;
-                grid-template-columns: repeat(6, 1fr);
+                grid-template-columns: repeat(5, 1fr);
                 grid-column-gap: 0;
 
                 .picked {

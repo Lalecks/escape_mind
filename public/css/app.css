@@ -6839,6 +6839,17 @@ template {
   backdrop-filter: blur(1.2rem);
 }
 
+.center {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center !important;
+}
+
 .link:hover {
   padding: 3% 0;
   border-radius: 5%;
@@ -7375,16 +7386,6 @@ h2 {
   color: #fff;
 }
 
-.error {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
-  text-align: center !important;
-}
 .error .code {
   color: #ffffff;
   font-size: 7rem;
@@ -7554,6 +7555,29 @@ h2 {
 }
 .error p {
   margin-top: 2rem;
+}
+
+#Result div {
+  width: 64vw;
+  padding: 6%;
+  background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
+}
+#Result div input[name=name] {
+  margin: 1rem;
+  width: 50%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#Result div #result_button {
+  padding: 12px 20px;
+  border: #7c7c7c 2px solid;
+  border-radius: 4px;
+  color: white;
+  background: black;
+  display: inline-block !important;
 }
 
 #legal_notice {
@@ -8393,7 +8417,7 @@ footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0;
 }
 #game-page .modal #Inventory div .picked {
@@ -8970,6 +8994,12 @@ footer {
   width: 37%;
 }
 
+#game-page #Game .Room3 {
+  filter: contrast(119%) brightness(89%);
+}
+#game-page #Game .Room3 div img:hover {
+  filter: sepia(132%) saturate(457%);
+}
 #game-page #Game .Room3 #Objects #Bouchon {
   right: 0;
   top: 46%;
@@ -8995,7 +9025,7 @@ footer {
   z-index: 3;
 }
 #game-page #Game .Room3 #Objects #Baleine {
-  right: 28%;
+  right: 28.4%;
   bottom: 18.3%;
   width: 7%;
   z-index: 2;
@@ -9074,6 +9104,9 @@ footer {
   height: auto;
   z-index: 2;
   right: 0;
+}
+#game-page #Game .enigme_modal [id^=Bouteille_] {
+  width: 76%;
 }
 
 /* Enigma */

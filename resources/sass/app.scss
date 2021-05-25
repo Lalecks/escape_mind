@@ -28,6 +28,7 @@
 
 /*--------  Components : Composants appelé dans le projet --------*/
 @import 'components/glassmorphism.scss';
+@import 'components/containerCenter.scss';
 @import 'components/link.scss';
 @import 'components/button.scss';
 @import 'components/circle.scss';
@@ -39,6 +40,7 @@
 @import 'layout/mouse';
 @import 'layout/loader';
 @import 'layout/errors';
+@import 'layout/form';
 @import 'layout/legal_notice';
 
 /*--------  Sections: CSS spécifiques aux parties WEB/GAME --------*/

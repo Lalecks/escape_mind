@@ -1,6 +1,15 @@
 #game-page #Game {
 
     .Room3 {
+        -webkit-filter: contrast(119%) brightness(89%);
+        filter: contrast(119%) brightness(89%);
+
+        div {
+            img:hover {
+                filter: sepia(132%) /*hue-rotate(190deg)*/ saturate(457%)
+            }
+        }
+
         #Objects {
             #Bouchon {
                 right: 0;
@@ -31,7 +40,7 @@
             }
 
             #Baleine {
-                right: 28%;
+                right: 28.4%;
                 bottom: 18.3%;
                 width: 7%;
                 z-index: 2;
@@ -132,5 +141,9 @@
                 right: 0;
             }
         }
+    }
+
+    .enigme_modal [id^="Bouteille_"] {
+        width: 76%;
     }
 }

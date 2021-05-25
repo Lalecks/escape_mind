@@ -6,7 +6,7 @@
 
 import displayCinematic from "./cinematics/cinematic";
 import settings from "./components/settings";
-import beforeunload from "./components/window_beforeunload";
+// import beforeunload from "./components/window_beforeunload";
 import updateGame from "./room_creation";
 
 let avancement = 0;
@@ -19,16 +19,16 @@ export default function changeAV(num) {
 }
 
 $(document).ready(function () {
-    document.getElementById("Result").style.display="none";
+    document.getElementById("Result").style.display = "none";
     settings();
-    beforeunload();
+    // beforeunload();
 
     let cinematic = displayCinematic(0);
-    cinematic.addEventListener('ended',  uptG);
+    cinematic.addEventListener('ended', uptG);
 
-    function uptG(){
+    function uptG() {
         updateGame(false);
-        cinematic.removeEventListener('ended',  uptG);
+        cinematic.removeEventListener('ended', uptG);
     }
 
     isRoomDone();
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 function isRoomDone() {
 
-    switch(avancement){
+    switch (avancement) {
         case 5:
         case 15:
         case 25:

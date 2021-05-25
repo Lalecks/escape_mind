@@ -16,11 +16,11 @@ export default function Turn(base_html, son, first_try) {
 
     let front = document.createElement("div");
     front.id = "front_face";
-    front.className = "front face";
+    front.className = "front face hoverable";
 
     let back = document.createElement("div");
     back.id = "back_face";
-    back.className = "back face";
+    back.className = "back face hoverable";
 
 
     box.appendChild(front);
@@ -44,10 +44,10 @@ export default function Turn(base_html, son, first_try) {
         if (startX && (offset < 180 && offset > -180)) {
             offset = e.pageX - startX;
             box.style['-webkit-transform'] = 'perspective(100vw) rotateY(' + offset + 'deg)';
-        }else if (offset <= -180){
+        } else if (offset <= -180) {
             offset = -179;
             box.style['-webkit-transform'] = 'perspective(100vw) rotateY(' + offset + 'deg)';
-        }else  if (offset >= 180) {
+        } else if (offset >= 180) {
             offset = 179;
             box.style['-webkit-transform'] = 'perspective(100vw) rotateY(' + offset + 'deg)';
         }
@@ -55,7 +55,7 @@ export default function Turn(base_html, son, first_try) {
         if ((offset > 110 || offset < -110) && first_try) {
             try {
                 setTimeout(function () {
-                    addSound(son,false);
+                    addSound(son, false);
                 }, 100);
             } catch (e) {}
 

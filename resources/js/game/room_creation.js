@@ -104,19 +104,19 @@ export default function updateGame(fail) {
 
             setTimeout(function () {
                 let cinematic = displayCinematic(1);
-                cinematic.addEventListener('ended', ()=>{
+                cinematic.addEventListener('ended', () => {
                     let result = document.getElementById("Result");
-                    result.style.display="";
+                    result.style.display = "";
                     let date = new Date();
                     let time = document.getElementById("time_game");
-                    let str = date.getFullYear() + "-" + ((date.getMonth()+1)<10?"0":"") + (date.getMonth()+1) +
+                    let str = date.getFullYear() + "-" + ((date.getMonth() + 1) < 10 ? "0" : "") + (date.getMonth() + 1) +
                         "-" + date.getDate() + " " + date.getHours() +
                         ":" + timer[0] + timer[1] + ":" + timer[2] + timer[3];
 
                     time.value = str;
 
                     let button = document.getElementById("result_button");
-                    button.addEventListener("click",()=>{
+                    button.addEventListener("click", () => {
                         time.value = str;
                     })
 
@@ -144,7 +144,7 @@ export default function updateGame(fail) {
 
     function animChangement(fin) {
         // animate content
-        addSound('./resources/game/global/loading.mp3',false);
+        addSound('./resources/game/global/loading.mp3', false);
         setTimeout(function () {
             $('.Game').addClass('animate_content');
 
@@ -160,14 +160,13 @@ export default function updateGame(fail) {
                     }
                     if (!fin) createRoom();
                 }, 1600)
-            } catch (e) {
-            }
+            } catch (e) {}
 
             if (!fin) {
                 setTimeout(function () {
                     $('.Game').removeClass('animate_content');
                     if (actualRoom === 3) {
-                        window.alert("SALLE NON FINIE.");
+                        window.alert("Salle non finie, cliquer sur le château pour finir le jeu !");
                     }
                 }, 3600);
             }
@@ -178,7 +177,7 @@ export default function updateGame(fail) {
 /* Création de la nouvelle salle */
 function createRoom() {
 
-    addSound("./resources/game/room" + actualRoom + "/audios/Ambiance_00.mp3",true);
+    addSound("./resources/game/room" + actualRoom + "/audios/Ambiance_00.mp3", true);
 
     let parent_obj = document.getElementById("Objects");
     let parent_decor = document.getElementById("Decors");
@@ -210,9 +209,9 @@ function createRoom() {
             obj.alt = "" + object[i][2];
 
             //click sur obj
-            link.addEventListener("mousedown",()=>{
+            link.addEventListener("mousedown", () => {
                 //addSound('./resources/game/room' + actualRoom + '/' + object[i][0] +'.mp3',false);
-                addSound('./resources/game/global/objets.mp3',false);
+                addSound('./resources/game/global/objets.mp3', false);
             })
 
             link.appendChild(obj);
@@ -238,7 +237,9 @@ function createRoom() {
     area.appendChild(bg);
     cursorModule();
     createModal();
-    ohSnap('Oh Snap! I cannot process your card...', {color: 'red'});
+    ohSnap('Oh Snap! I cannot process your card...', {
+        color: 'red'
+    });
 
 
 }
