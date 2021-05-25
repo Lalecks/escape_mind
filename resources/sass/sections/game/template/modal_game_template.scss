@@ -115,7 +115,7 @@
             margin-right: auto;
             bottom: 0;
 
-            div {
+            div:not(#inv) {
                 height: 100%;
                 width: 96%;
                 display: -ms-grid;

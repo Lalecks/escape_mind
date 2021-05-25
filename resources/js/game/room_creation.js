@@ -78,7 +78,7 @@ let decor = [
 
 
 /* Initialisation des variables */
-let actualRoom = 2; // Salle actuelle
+let actualRoom = 0; // Salle actuelle
 let nbRoom = 4;
 let url = "";
 
@@ -131,7 +131,6 @@ export default function updateGame(fail) {
         //PERDU
         deleteRoom();
         //stopTimer
-        createTimer();
         let cinematic = displayCinematic(2);
         cinematic.addEventListener('ended', uptG);
 

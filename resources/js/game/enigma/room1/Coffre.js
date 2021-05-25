@@ -5,7 +5,6 @@
 import changeAV from "../../game";
 import addSound from "../../components/sound";
 
-let code = "711";
 
 export default function Coffre() {
     let html = document.getElementById("Coffre");
@@ -79,7 +78,7 @@ function verif(num) {
         result.innerText += num;
 
     if (result.innerText.length === 3) {
-        if (result.innerText === code) {
+        if (result.innerText === "711" || result.innerText === "117") {
             result.innerText = "CORRECTE";
             addSound("./resources/game/global/correct.mp3",false);
             setTimeout(function () {
