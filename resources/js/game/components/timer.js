@@ -10,9 +10,11 @@ import updateGame from "../room_creation";
 let refresh = null;
 
 //vrai timer en secondes
-let time = 1200;
+let base = 1200;
+let time = base;
 
 //timer visuel
+
 let timeStr = "2000";
 let isAlreadyCreated = false;
 
@@ -44,7 +46,7 @@ export default function createTimer() {
         isAlreadyCreated = true;
     } else {
         stopTimer();
-        return timeStr;
+        return timeToString(base-time);
     }
 
 }
@@ -69,20 +71,24 @@ function removeTimer() {
 function seconds() {
     time = time - 1;
 
-    if (time < 10) {
-        timeStr = "000" + time;
-    } else if (time < 60) {
-        timeStr = "00" + time;
-    } else if (time < 60 * 10 && time % 60 < 10) {
-        timeStr = "0" + Math.floor(time / 60) + "0" + time % 60;
-    } else if (time < 60 * 10) {
-        timeStr = "0" + Math.floor(time / 60) + "" + time % 60;
-    } else if (time % 60 < 10) {
-        timeStr = Math.floor(time / 60) + "0" + time % 60;
-    } else {
-        timeStr = Math.floor(time / 60) + "" + time % 60;
-    }
+    timeStr = timeToString(time);
     updateTimer();
+}
+
+function timeToString(time){
+    if (time < 10) {
+        return "000" + time;
+    } else if (time < 60) {
+        return "00" + time;
+    } else if (time < 60 * 10 && time % 60 < 10) {
+        return "0" + Math.floor(time / 60) + "0" + time % 60;
+    } else if (time < 60 * 10) {
+        return "0" + Math.floor(time / 60) + "" + time % 60;
+    } else if (time % 60 < 10) {
+        return Math.floor(time / 60) + "0" + time % 60;
+    } else {
+        return Math.floor(time / 60) + "" + time % 60;
+    }
 }
 
 function updateTimer() {

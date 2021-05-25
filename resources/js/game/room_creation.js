@@ -10,6 +10,7 @@ import cursorModule from "../layouts/mouse";
 import createModal from "./components/modal";
 import displayCinematic from "./cinematics/cinematic";
 import addSound from "./components/sound";
+import updateInventory from "./enigma/gestionInventory";
 
 
 
@@ -77,7 +78,7 @@ let decor = [
 
 
 /* Initialisation des variables */
-let actualRoom = 0; // Salle actuelle
+let actualRoom = 2; // Salle actuelle
 let nbRoom = 4;
 let url = "";
 
@@ -106,14 +107,15 @@ export default function updateGame(fail) {
                 cinematic.addEventListener('ended', () => {
                     let result = document.getElementById("Result");
                     result.style.display = "";
-                    let date = new Date();
                     let time = document.getElementById("time_game");
-                    let str = date.getFullYear() + "-" + ((date.getMonth() + 1) < 10 ? "0" : "") + (date.getMonth() + 1) +
-                        "-" + date.getDate() + " " + date.getHours() +
-                        ":" + timer[0] + timer[1] + ":" + timer[2] + timer[3];
+                    let str = timer[0] + timer[1] + ":" + timer[2] + timer[3];
 
                     time.value = str;
 
+                    document.getElementById("min").innerText = timer[0] + timer[1];
+                    document.getElementById("sec").innerText = timer[2] + timer[3];
+
+                    //si qqun essai de changer le code HTML
                     let button = document.getElementById("result_button");
                     button.addEventListener("click", () => {
                         time.value = str;
