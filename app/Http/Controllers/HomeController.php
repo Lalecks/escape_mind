@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Validator;
+use Redirect;
 
 class HomeController extends Controller
 {
@@ -45,7 +47,7 @@ class HomeController extends Controller
     }
 
     public function store(Request $request){
-        $request->validate([
+        $validator = Validator::make(request()->all(), [
             'name' => 'unique:users|required|max:20|min:4',
             'time_game' => 'required|min:2'
         ]);
@@ -53,8 +55,13 @@ class HomeController extends Controller
         $c->name = $request->input('name');
         $c->time_game = $request->input('time_game');
         
-        $userName = DB::table('users')->where('name',$c->name);
-        if($userName){
+        if ($validator->fails()) 
+        {
+            return Redirect::back()
+            ->withErrors($validator)
+            ->withInput(); 
+            // return response()->json(['errors' => $validator->errors()->messages()]);
+        }else{
             $c->save();
             return redirect("/#rank");
         }

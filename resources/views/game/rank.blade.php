@@ -1,7 +1,7 @@
 <div id="Result" class="glass-effect center">
     <h1>Votre score</h1>
     <div class="glass-effect">
-        <form action="/create" method="post">
+        <form data-pjax action="/create" method="post">
             @csrf
             <div>
                 <p>Bravo, tu es sorti en <span id="min">XX</span>min<span id="sec">XX</span>, tu peux enregistrer ton score en remplissant ton pseudo dans le formulaire. Merci d'avoir joué à notre jeu, nous espérons qu'il t'a plu !</p>
