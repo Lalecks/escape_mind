@@ -131,7 +131,6 @@ export default function updateGame(fail) {
         //PERDU
         deleteRoom();
         //stopTimer
-        createTimer();
         let cinematic = displayCinematic(2);
         cinematic.addEventListener('ended', uptG);
 

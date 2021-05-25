@@ -55,7 +55,7 @@ export default function Radio() {
     interferences.hidden = true;
     interferences.autoplay = false;
     interferences.loop = true;
-    interferences.volume = 0.6;
+    interferences.volume = 0.7;
     interferences.src = "./resources/game/room1/audios/Interferences_Radio_00.mp3";
     document.getElementById("Foley").appendChild(interferences);
 

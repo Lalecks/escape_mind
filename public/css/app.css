@@ -8419,8 +8419,8 @@ footer {
   margin-right: auto;
   bottom: 0;
 }
-#game-page .modal #Inventory div {
-  height: 114%;
+#game-page .modal #Inventory div:not(#inv) {
+  height: 100%;
   width: 96%;
   display: -ms-grid;
   display: grid;
@@ -8428,7 +8428,7 @@ footer {
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0;
 }
-#game-page .modal #Inventory div .picked {
+#game-page .modal #Inventory div:not(#inv) .picked {
   position: relative;
   width: 91%;
   height: 79%;
@@ -8442,7 +8442,7 @@ footer {
   flex-direction: column;
   background-image: linear-gradient(298.05deg, rgba(255, 255, 255, 0.296) 4.34%, rgba(255, 255, 255, 0.3034) 93.57%);
 }
-#game-page .modal #Inventory div .picked .item_number {
+#game-page .modal #Inventory div:not(#inv) .picked .item_number {
   font-family: "Audiowide", cursive;
   font-size: 8vw;
   position: absolute;
@@ -8452,10 +8452,10 @@ footer {
   z-index: -14;
   color: #ffffff3d;
 }
-#game-page .modal #Inventory div .picked p {
+#game-page .modal #Inventory div:not(#inv) .picked p {
   margin: 0;
 }
-#game-page .modal #Inventory div .picked img {
+#game-page .modal #Inventory div:not(#inv) .picked img {
   width: 95%;
   max-height: 50%;
   display: inline-block;
@@ -8465,7 +8465,7 @@ footer {
   -ms-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
 }
-#game-page .modal #Inventory div .picked img:hover {
+#game-page .modal #Inventory div:not(#inv) .picked img:hover {
   width: 65%;
   max-height: 90%;
   transition: all 200ms ease-in;
