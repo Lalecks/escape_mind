@@ -55,7 +55,7 @@ function controlMusic(bg,enigma){
 
     /* Musique */
     let musique = document.createElement("audio");
-    musique.id="audio_Les_petits_Bateaux";
+    musique.id="audio_Les_petits_bateaux";
     musique.className="Music";
     musique.hidden=true;
     musique.autoplay=false;
@@ -79,13 +79,13 @@ function controlMusic(bg,enigma){
                 })
                 break;
             case 2 : but.addEventListener("click",()=>{
-                    if (previous_case!==2) musique.src= "./resources/game/room1/audios/Les_petits_Bateaux_01.mp3";
+                    if (previous_case!==2) musique.src= "./resources/game/room1/audios/Les_petits_bateaux_01.mp3";
                     (!musique.paused) ? musique.pause() : musique.play();
                     previous_case=2;
                  })
                 break;
             case 3 : but.addEventListener("click",()=>{
-                    if (previous_case!==3) musique.src= "./resources/game/room1/audios/Les_petits_Bateaux_00.mp3";
+                    if (previous_case!==3) musique.src= "./resources/game/room1/audios/Les_petits_bateaux_00.mp3";
                     (!musique.paused) ? musique.pause() : musique.play();
                     previous_case=3;
                 })
