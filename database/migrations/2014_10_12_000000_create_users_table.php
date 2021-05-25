@@ -16,7 +16,7 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->dateTime('time_game')->nullable();
+            $table->string('time_game')->default("10:00");
             $table->timestamps();
         });
     }

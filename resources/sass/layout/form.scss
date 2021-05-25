@@ -1,10 +1,19 @@
-#Result div {
+#Result>div {
     width: 64vw;
     padding: 6%;
     background-image: -webkit-linear-gradient($black-degraded);
     background-image: -moz-linear-gradient($black-degraded);
     background-image: -o-linear-gradient($black-degraded);
     background-image: linear-gradient($black-degraded);
+
+    h1 {
+        margin: 0;
+        color: #ffffff2e;
+        position: fixed;
+        letter-spacing: 1rem;
+        -webkit-text-stroke: 0;
+        -webkit-text-stroke-color: transparent;
+    }
 
     input[name="name"] {
         margin: 1rem;

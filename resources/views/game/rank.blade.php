@@ -1,6 +1,6 @@
 <div id="Result" class="glass-effect center">
     <h1>Votre score</h1>
-    <div>
+    <div class="glass-effect">
         <form action="/create" method="post">
             @csrf
             <div>

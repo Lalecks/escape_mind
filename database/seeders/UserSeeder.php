@@ -42,7 +42,7 @@ class UserSeeder extends Seeder
 	            // 'email' => str_random(12).'@mail.com',
 	            // 'password' => bcrypt('12345678'),
                 // 'remember_token' => NULL,
-                'time_game' => '2020-03-17 10:29:20',
+                'time_game' => '19:00',
                 // 'created_at' => '2020-03-17 10:29:20',
                 // 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
 	        ]);

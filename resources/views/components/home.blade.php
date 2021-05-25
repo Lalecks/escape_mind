@@ -90,7 +90,7 @@
 						</div>
 						<div>
 							<p>Durée</p>
-							<p>30 minutes</p>
+							<p>20 minutes</p>
 						</div>
 					</div>
 				</div>
@@ -209,7 +209,7 @@
 							@endif
 							<td>{{$u->name}}</td>
 							<td>
-								{{ Carbon\Carbon::parse($u->time_game)->format('i:s')}}s
+								{{ ($u->time_game)}}s
 							</td>
 						</tr>
 					@endforeach
