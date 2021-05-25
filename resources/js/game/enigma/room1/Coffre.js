@@ -4,6 +4,7 @@
 
 import changeAV from "../../game";
 import addSound from "../../components/sound";
+import updateInventory from "../gestionInventory";
 
 
 export default function Coffre() {
@@ -81,9 +82,10 @@ function verif(num) {
         if (result.innerText === "711" || result.innerText === "117") {
             result.innerText = "CORRECTE";
             addSound("./resources/game/global/correct.mp3",false);
+            updateInventory("PhotoUn", 1);
             setTimeout(function () {
                 changeAV(5);
-            }, 500);
+            }, 1000);
         }
     } else {
         if (result.innerText.length > 5) {

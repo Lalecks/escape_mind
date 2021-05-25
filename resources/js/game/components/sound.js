@@ -17,7 +17,7 @@ export default function addSound(url,ambiant) {
     request.onload = function () {
         audioCtx.decodeAudioData(request.response, function (buffer) {
                 source.buffer = buffer;
-                gainNode.gain.value = 0.8;
+                gainNode.gain.value = 1;
                 source.start();
                 if (ambiant){
                     source.loop = true;
