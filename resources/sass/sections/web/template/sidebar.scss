@@ -98,9 +98,9 @@ html {
             position: fixed;
             top: 0;
             left: 3.7%;
-            bottom: 0;
             width: .1%;
-            background: #3A3A3A;
+            background: white;
+            bottom: 0;
         }
 
         .indicator {
@@ -109,7 +109,7 @@ html {
             width: 4%;
             height: 100%;
             border-radius: 5px;
-            background: white;
+            background: #3A3A3A;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
             span {

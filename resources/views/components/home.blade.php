@@ -43,7 +43,7 @@
 				<!-- Ne pas mettre la modal dans le vidéo overlay, car il est en absolute et par conséquent la modal ne peut pas se fixer -->
 				<div class="modal-content glass-effect">
 					<span class="close-btn hoverable">&times;</span>
-					<iframe id="yt_player_iframe" width="560" height="315" src="https://www.youtube.com/embed/fvWlmyezte0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe id="yt_player_iframe" width="560" height="315" src="https://www.youtube.com/embed/bdP3oq1uia8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen seamless></iframe>
 				</div>
 			</div>
 
@@ -64,7 +64,7 @@
 							<p>Il y a plusieurs années un scientifique a crée une IA, et aujourd’hui, il doit la débrancher. Pour cela, il se connecte à celle-ci, et se retrouve enfermé dans l’IA qui retrace ses souvenirs.</p>
 							<div>
 								<a class="btn btn-outline-primary trigger hoverable glass-effect">Trailer</a>
-								<a class="btn btn-fill-primary hoverable glass-effect btn-animation_glitch" id="play" href="/play" data-pjax>Jouer</a>
+								<a class="btn btn-fill-primary hoverable glass-effect btn-animation_glitch" id="play" href="/play">Jouer</a>
 							</div>
 						</div>
 					</div>
@@ -222,7 +222,7 @@
 				<h1 class="rellax" data-rellax-speed=".4">À propos</h1>
 				<div class="project">
 					<h2>l'origine du projet</h2>
-					<p>Nous sommes cinq étudiants de l’université de Valenciennes. Pour notre projet de fin de licence, nous devions réaliseer un projet. C’est pour ça qu’on a fait un escape game.</p>
+					<p>Nous sommes 5 étudiants de l'Université Polytechnique des Hauts-de-France. Afin de réaliser notre projet de fin de Licence nous avons composé une équipe motivée et pluridisciplinaire pour la création d'un escape game virtuel</p>
 				</div>
 				<div class="team">
 					<div class="team-img-role glass-effect">

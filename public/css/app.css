@@ -7695,9 +7695,9 @@ html {
   position: fixed;
   top: 0;
   left: 3.7%;
-  bottom: 0;
   width: 0.1%;
-  background: #3A3A3A;
+  background: white;
+  bottom: 0;
 }
 .navbar .scroll-indicator .indicator {
   top: 0;
@@ -7705,7 +7705,7 @@ html {
   width: 4%;
   height: 100%;
   border-radius: 5px;
-  background: white;
+  background: #3A3A3A;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .navbar .scroll-indicator .indicator span {
@@ -7990,7 +7990,6 @@ footer {
   margin: 0 auto;
 }
 #top_score > div {
-  padding: 0 6rem;
   position: relative;
   max-width: 100%;
   max-height: 100%;

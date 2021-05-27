@@ -34,6 +34,3 @@ if (document.getElementById("home-page")) {
     // require('./web_components/custom_package');
     // require('./web_components/divers');
 }
-$(function () {
-  $("form").validate();
-});

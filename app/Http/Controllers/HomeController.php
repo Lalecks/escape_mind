@@ -54,9 +54,10 @@ class HomeController extends Controller
         $c = new User();
         $c->name = $request->input('name');
         $c->time_game = $request->input('time_game');
-        
-        if ($validator->fails()) 
-        {
+
+        if ($validator->fails()) {
+            // count($c->name) > 0 &&
+            // toastr()->error('User Exists');
             return Redirect::back()
             ->withErrors($validator)
             ->withInput(); 
