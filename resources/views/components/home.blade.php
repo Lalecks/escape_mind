@@ -74,7 +74,7 @@
 			<section id="story">
 				<h1 class="rellax" data-rellax-speed="2.4">Histoire</h1>
 				<div class="story-informations">
-					<p>Sacha Ramirez est un développeur travaillant dans le laboratoire NEWT, créateur d’intelligences artificielles. Dans ces débuts, Sacha, a créé KIARA une intelligence capable d'envoyer des pensées positives et des rêves apaisants aux personnes souffrant d’insomnies. Au fil du temps, l’IA KIARA est devenue certifiée et reconnue efficace pour ses bienfaits. Malheureusement, celle-ci a commencé à garder en mémoire les pensées négatives et souvenirs des personnes testées. Le laboratoire NEWT a donc pris la décision de la débrancher définitivement. Sacha, très attaché à cette IA, décide de la tester une dernière fois avant que le laboratoire ne la débranche au bout d’une heure.</p>
+					<p>Sacha Ramirez est un développeur travaillant dans le laboratoire NEWT, créateur d’intelligences artificielles. Dans ses débuts, Sacha, a créé KIARA une intelligence capable d'envoyer des pensées positives et des rêves apaisants aux personnes souffrant d’insomnies. Au fil du temps, l’IA KIARA est devenue certifiée et reconnue efficace pour ses bienfaits. Malheureusement, celle-ci a commencé à garder en mémoire les pensées négatives et souvenirs des personnes testées. Le laboratoire NEWT a donc pris la décision de la débrancher définitivement. Sacha, très attaché à cette IA, décide de la tester une dernière fois avant que le laboratoire ne la débranche au bout d’une heure.</p>
 					<div class="story-items">
 						<div>
 							<p>Thème</p>
@@ -222,7 +222,7 @@
 				<h1 class="rellax" data-rellax-speed=".4">À propos</h1>
 				<div class="project">
 					<h2>l'origine du projet</h2>
-					<p>Nous sommes 5 étudiants de l'Université Polytechnique des Hauts-de-France. Afin de réaliser notre projet de fin de Licence nous avons composé une équipe motivée et pluridisciplinaire pour la création d'un escape game virtuel</p>
+					<p>Nous sommes 5 étudiants de l'Université Polytechnique des Hauts-de-France. Afin de réaliser notre projet de fin de Licence nous avons composé une équipe motivée et pluridisciplinaire pour la création d'un escape game virtuel.</p>
 				</div>
 				<div class="team">
 					<div class="team-img-role glass-effect">
