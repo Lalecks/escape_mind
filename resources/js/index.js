@@ -22,9 +22,6 @@ require('./layouts/detecting_mobile');
 require('./layouts/mouse');
 /*-------- Game --------*/
 if (document.getElementById("game-page")) {
-    require('./package/pjax');
-    $(document).pjax('[data-pjax] a, a[data-pjax]', '#Result');
-    $(document).pjax('[data-pjax-toggle] a, a[data-pjax-toggle]', '#Result', { push: false});
     require('./game/game.js');
 }
 // /*--------  Web Components --------*/

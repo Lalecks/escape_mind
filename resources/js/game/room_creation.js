@@ -166,7 +166,7 @@ export default function updateGame(fail) {
                 setTimeout(function () {
                     $('.Game').removeClass('animate_content');
                     if (actualRoom === 3) {
-                        window.alert("Salle non finie, cliquer sur le château pour finir le jeu !");
+                        window.alert("Salle non finie, cliquez sur le château pour finir le jeu !");
                     }
                 }, 3600);
             }
