@@ -22,7 +22,7 @@ export default function addSound(url,ambiant) {
                 if (ambiant){
                     source.loop = true;
                     old_source = source;
-                    gainNode.gain.value=0.3;
+                    gainNode.gain.value=0.1;
                 }
                 source.connect(gainNode);
                 gainNode.connect(audioCtx.destination);

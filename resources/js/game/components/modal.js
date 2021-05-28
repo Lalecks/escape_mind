@@ -89,9 +89,6 @@ function toggleModalCustom(titre, description) {
             document.body.style.position = "fixed";
             clearAll();
 
-            document.getElementById("Inventory").style.bottom="0";
-            document.querySelector(".modal-content").style.top = "39%";
-
             /*  Titre de l'objet */
             let titre_html = document.createElement("span");
             titre_html.id = "titre_modal";
