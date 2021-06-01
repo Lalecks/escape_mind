@@ -91,6 +91,7 @@ export {
 export default function updateGame(fail) {
     actualRoom += 1;
     url = "./resources/game/room" + actualRoom;
+    document.body.style.position = "relative";
 
     if (!fail) {
         if (actualRoom === 1) {
