@@ -28,6 +28,7 @@ import Takable from "../enigma/room2/Takable";
 import Affiche from "../enigma/room2/Affiche";
 import Chateau from "../enigma/room3/Chateau_sable";
 import createInventory from "../enigma/displayInventory";
+import Poulpe from "../enigma/room3/Poulpe";
 
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");
@@ -180,6 +181,9 @@ function toggleModalCustom(titre, description) {
                     break;
                 case "Chateau_Sable":
                     activity.appendChild(Chateau());
+                    break;
+                case "Poulpe":
+                    activity.appendChild(Poulpe());
                     break;
                 default:
                     activity.appendChild(Defaut(titre));

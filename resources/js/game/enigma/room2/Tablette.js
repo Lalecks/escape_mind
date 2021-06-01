@@ -156,7 +156,7 @@ function verif(num) {
 
     if (result.innerText.length === 6) {
         if (result.innerText === code) {
-            result.innerText = "CORRECTE";
+            result.innerText = "CORRECT";
             addSound("./resources/game/global/correct.mp3",false);
             result.remove();
             document.getElementById("tablette_buttons").remove();
@@ -176,7 +176,7 @@ function verif(num) {
             myLoop();
             story_watched = true;
         } else {
-            result.innerText = "ERREUR";
+            result.innerText = "INCORRECT";
             addSound("./resources/game/global/wrong.mp3",false);
             setTimeout(function () {
                 result.innerText = "";

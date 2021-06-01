@@ -80,7 +80,7 @@ function verif(num) {
 
     if (result.innerText.length === 3) {
         if (result.innerText === "711" || result.innerText === "117") {
-            result.innerText = "CORRECTE";
+            result.innerText = "CORRECT";
             addSound("./resources/game/global/correct.mp3", false);
             updateInventory("PhotoUn", 1);
             setTimeout(function () {
@@ -89,7 +89,7 @@ function verif(num) {
         }
     } else {
         if (result.innerText.length > 5) {
-            result.innerText = "ERREUR";
+            result.innerText = "INCORRECT";
             addSound("./resources/game/global/wrong.mp3", false);
             setTimeout(function () {
                 result.innerText = "";

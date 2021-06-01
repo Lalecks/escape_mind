@@ -9,6 +9,7 @@ import changeAV from "../../game";
 let actual_puzzle = "000";
 
 let isPuzzleDone = false;
+let first_try = true;
 
 export default function Puzzle() {
     let no_enigma = document.createElement("div");
@@ -64,7 +65,8 @@ export default function Puzzle() {
                 updateInventory(pieces[piece].id.replace("inv_", ""), 0);
                 actual_puzzle = actual_puzzle.substr(0, piece) + "1" + actual_puzzle.substr(piece + 1);
                 bg.src = html.src.replace("_00", "_" + actual_puzzle);
-                if (actual_puzzle === "111") {
+                if (actual_puzzle === "111" && first_try) {
+                    first_try=false;
                     bg.remove();
                     puzzleTurn();
                 }
@@ -72,7 +74,7 @@ export default function Puzzle() {
         }
 
     } else {
-        puzzleTurn();
+            puzzleTurn();
     }
 
     function puzzleTurn() {

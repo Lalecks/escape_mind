@@ -5,7 +5,7 @@
 * */
 
 // Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders+Display:wght@100&family=Gayathri:wght@100&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders+Display:wght@100&family=Gayathri:wght@100&display=swap');
 
 /* Gayathri : Body typo */
 @font-face {
@@ -25,9 +25,9 @@
 @font-face {
     font-family: 'Audiowide';
     src: url('./fonts/Audiowide/Audiowide-Regular.eot'); /* IE9 Compat Modes */
-    src: 
+    src:
         url('./fonts/Audiowide/Audiowide-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('./fonts/Audiowide/Audiowide-Regular.woff2') format('woff2'), 
+        url('./fonts/Audiowide/Audiowide-Regular.woff2') format('woff2'),
         url('./fonts/Audiowide/Audiowide-Regular.woff') format('woff'), /* Modern Browsers */
         url('./fonts/Audiowide/Audiowide-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
         url('./fonts/Audiowide/Audiowide-Regular.svg#./base/fonts/Audiowide/Audiowide-Regular') format('svg'); /* Legacy iOS */

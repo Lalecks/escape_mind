@@ -6,8 +6,8 @@
     <div id="controls">
         <div>
             <div id="btn-controls">
-                <span id=play class="hoverable fas fa-pause"></span>
-                <span id=audioVolume class="hoverable fa fa-volume-mute"></span>
+                <span id=play class="hoverable fas fa-play"></span>
+                <span id=audioVolume class="hoverable fa fa-volume-up"></span>
             </div>
             <div id="timer">
                 <span id="start">0:00</span>

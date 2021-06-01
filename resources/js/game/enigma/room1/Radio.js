@@ -44,7 +44,7 @@ export default function Radio() {
     musique.className = "Music";
     musique.hidden = true;
     musique.autoplay = false;
-    musique.volume = 1;
+    musique.volume = 0.8;
     musique.src = "./resources/game/room1/audios/Radio_01.mp3";
     document.getElementById("Music").appendChild(musique);
 

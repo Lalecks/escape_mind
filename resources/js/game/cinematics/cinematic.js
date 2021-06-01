@@ -14,8 +14,23 @@ let cinematics = Array('beginning', 'success', 'defeat');
 export default function displayCinematic(num) {
 
     video.onclick = function () {
-        this.play();
+        let play = document.getElementById("play");
+        if (play.className==="hoverable fas fa-pause"){
+            this.pause();
+            play.className="hoverable fas fa-play";
+        } else {
+            this.play();
+            play.className="hoverable fas fa-pause";
+        }
+
     };
+
+    video.ondblclick = function () {
+        this.currentTime = 30;
+    };
+
+
+    video.muted = false;
 
     let webm = document.createElement("source");
     webm.id = "webm";

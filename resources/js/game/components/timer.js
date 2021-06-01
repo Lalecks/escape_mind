@@ -19,7 +19,7 @@ let timeStr = "2000";
 let isAlreadyCreated = false;
 
 // Affichage du timer
-export default function createTimer() {
+export default function createTimer(temps) {
     if (!isAlreadyCreated) {
         let chrono = document.createElement("span");
         chrono.class = "glass-effect";
@@ -45,8 +45,13 @@ export default function createTimer() {
         startTimer();
         isAlreadyCreated = true;
     } else {
-        stopTimer();
-        return timeToString(base-time);
+        if (temps===""){
+            stopTimer();
+            return timeToString(base-time);
+        } else {
+            time = temps;
+        }
+
     }
 
 }

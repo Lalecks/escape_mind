@@ -95,12 +95,11 @@ export default function updateGame(fail) {
     if (!fail) {
         if (actualRoom === 1) {
             createRoom();
-            createTimer();
+            createTimer("");
         } else if (actualRoom >= nbRoom) {
             animChangement(true);
             //stopTimer
-            createTimer();
-            let timer = createTimer();
+            let timer = createTimer("");
 
             setTimeout(function () {
                 let cinematic = displayCinematic(1);

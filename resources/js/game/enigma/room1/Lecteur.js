@@ -59,7 +59,7 @@ function controlMusic(bg,enigma){
     musique.className="Music";
     musique.hidden=true;
     musique.autoplay=false;
-    musique.volume=0.5;
+    musique.volume=1;
     document.getElementById("Music").appendChild(musique);
 
     let controls = ["play", "reverse", "stop", "rec", "previous", "next"];
