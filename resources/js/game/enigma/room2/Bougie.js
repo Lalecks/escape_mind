@@ -1,4 +1,5 @@
 import updateInventory from "../gestionInventory";
+let isTaken = false;
 
 export default function Bougie() {
     let no_enigma = document.createElement("div");
@@ -18,10 +19,13 @@ export default function Bougie() {
     } catch (e) {
     }
 
-    if (code !== null) {
+    if (code !== null && !isTaken) {
         code.addEventListener("mousedown", () => {
-            updateInventory("Papier", false);
-            updateInventory("Code", true);;
+            if (!isTaken){
+                updateInventory("Papier", false);
+                updateInventory("Code", true);
+                isTaken=true;
+            }
         })
     }
 

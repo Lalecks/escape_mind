@@ -28,7 +28,7 @@ import Takable from "../enigma/room2/Takable";
 import Affiche from "../enigma/room2/Affiche";
 import Chateau from "../enigma/room3/Chateau_sable";
 import createInventory from "../enigma/displayInventory";
-import Poulpe from "../enigma/room3/Poulpe";
+import Bouchon from "../enigma/room3/Bouchon";
 
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");
@@ -147,6 +147,10 @@ function toggleModalCustom(titre, description) {
                 case "Pile3":
                 case "PieceDeux":
                 case "PieceTrois":
+                case "Poulpe":
+                case "Baleine":
+                case "Canard":
+                case "Clef":
                     activity.appendChild(Takable(titre));
                     break;
                 case "Lecteur":
@@ -182,8 +186,8 @@ function toggleModalCustom(titre, description) {
                 case "Chateau_Sable":
                     activity.appendChild(Chateau());
                     break;
-                case "Poulpe":
-                    activity.appendChild(Poulpe());
+                case "Bouchon":
+                    activity.appendChild(Bouchon());
                     break;
                 default:
                     activity.appendChild(Defaut(titre));
