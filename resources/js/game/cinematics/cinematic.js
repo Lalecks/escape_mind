@@ -15,12 +15,12 @@ export default function displayCinematic(num) {
 
     video.onclick = function () {
         let play = document.getElementById("play");
-        if (play.className==="hoverable fas fa-pause"){
+        if (play.className === "hoverable fas fa-pause") {
             this.pause();
-            play.className="hoverable fas fa-play";
+            play.className = "hoverable fas fa-play";
         } else {
             this.play();
-            play.className="hoverable fas fa-pause";
+            play.className = "hoverable fas fa-pause";
         }
 
     };

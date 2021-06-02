@@ -47,5 +47,4 @@ function isRoomDone() {
             break;
         default:
     }
-
 }

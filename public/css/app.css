@@ -7865,8 +7865,8 @@ footer {
   float: right;
   margin-top: -8rem;
   margin-right: -9rem;
-  width: 16rem;
-  height: 16rem;
+  width: 15rem;
+  height: 14rem;
   border-radius: 50%;
   overflow: hidden;
   background-image: linear-gradient(298.05deg, rgba(26, 254, 73, 0.296) 4.34%, rgba(0, 231, 236, 0.185) 93.57%);
@@ -8338,17 +8338,18 @@ footer {
   overflow: hidden;
   padding: 2.5%;
   width: 59%;
-  height: 25vw;
+  height: 26vw;
   background-image: linear-gradient(298.05deg, rgba(18, 18, 18, 0.3256) 4.34%, rgba(2, 2, 2, 0.185) 93.57%);
 }
 #game-page .modal .modal-content .close-btn {
   width: 3%;
   height: 10%;
-  font-size: 5vw;
+  font-size: 4vw;
   margin-bottom: 1%;
 }
 #game-page .modal .modal-content img {
   pointer-events: none;
+  height: 90%;
 }
 #game-page .modal img {
   width: 100%;
@@ -9128,9 +9129,9 @@ footer {
   position: absolute;
   width: 34.1%;
   left: 34.8%;
-  height: 15%;
+  height: 16%;
   justify-content: space-around;
-  bottom: 10.8%;
+  bottom: 10%;
 }
 #lecteur_modal #div_buttons .Lecteur_button {
   background: transparent;
@@ -10041,7 +10042,7 @@ header .navbar ul li .active::before {
 @media only screen and (max-width: 1300px) {
   #game-page .modal .modal-content {
     width: 50%;
-    height: 21vw;
+    height: 25vw;
   }
 
   .magnify {
@@ -10050,8 +10051,8 @@ header .navbar ul li .active::before {
   }
 
   #peluche_modal #tirette {
-    background-size: 26%;
-    left: 40%;
+    background-size: 24%;
+    left: 41%;
   }
 }
 @media only screen and (min-width: 1300px) {

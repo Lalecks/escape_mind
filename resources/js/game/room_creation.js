@@ -162,14 +162,14 @@ export default function updateGame(fail) {
                 }, 1600)
             } catch (e) {}
 
-            if (!fin) {
-                setTimeout(function () {
-                    $('.Game').removeClass('animate_content');
-                    if (actualRoom === 3) {
-                        window.alert("Salle non finie, cliquez sur le château pour finir le jeu !");
-                    }
-                }, 3600);
-            }
+            // if (!fin) {
+            //     setTimeout(function () {
+            //         $('.Game').removeClass('animate_content');
+            //         if (actualRoom === 3) {
+            //             window.alert("Salle non finie, cliquez sur le château pour finir le jeu !");
+            //         }
+            //     }, 3600);
+            // }
         }, 900);
     }
 }

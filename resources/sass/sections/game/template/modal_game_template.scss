@@ -13,7 +13,7 @@
             overflow: hidden;
             padding: 2.5%;
             width: 59%;
-            height: 25vw;
+            height: 26vw;
             // Glassmorphism
             background-image: -webkit-linear-gradient($black-degraded);
             background-image: -moz-linear-gradient($black-degraded);
@@ -23,12 +23,13 @@
             .close-btn {
                 width: 3%;
                 height: 10%;
-                font-size: 5vw;
+                font-size: 4vw;
                 margin-bottom: 1%;
             }
 
             img {
                 pointer-events: none;
+                height: 90%;
             }
         }
 
