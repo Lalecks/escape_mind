@@ -55,9 +55,11 @@
                 transition: all 1.5s ease-in-out;
 
                 img {
-                    margin-top: 2rem;
+                    margin-top: 1.5rem;
                     max-width: 9rem;
-                    height: auto;
+                    height: 16rem;
+                    transform-origin: 50% 100%;
+                    object-fit: cover;
                     -webkit-transform-origin: 50% 100%;
                     -ms-transform-origin: 50% 100%;
                     transform-origin: 50% 100%; // Changement du point d'ancrage

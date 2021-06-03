@@ -229,12 +229,12 @@
 						<h2>Qui sommes-nous ?</h2>
 						<div class="hoverable">
 							<img class="hoverable" src="{{ asset('resources/web/team/ant.png') }}" alt="antony_deschodt"/>
-							<span class="hoverable team-role">Sound designer</span>
+							<span class="hoverable team-role">Technicien son</span>
 							<span class="team-name logo-title">Antony</span>
 						</div>
 						<div class="hoverable">
 							<img class="hoverable" src="{{ asset('resources/web/team/mon.png') }}" alt="mondine_odin"/>
-							<span class="team-role hoverable">Sound designer</span>
+							<span class="team-role hoverable">Vidéaste</span>
 							<span class="team-name logo-title">Mondine</span>
 						</div>
 						<div class="hoverable">
@@ -244,12 +244,12 @@
 						</div>
 						<div class="hoverable">
 							<img class="hoverable" src="{{ asset('resources/web/team/sa.png') }}" alt="sarah_mauriaucourt"/>
-							<span class="team-role hoverable">Webdesigner &amp; développeuse front-end</span>
+							<span class="team-role hoverable">Développeuse</span>
 							<span class="team-name logo-title">Sarah</span>
 						</div>
 						<div class="hoverable">
-							<img class="hoverable" src="{{ asset('resources/web/team/ant.png') }}" alt="alexandre_lavaud"/>
-							<span class="team-role hoverable">Développeur frontend &amp; backend</span>
+							<img class="hoverable" src="{{ asset('resources/web/team/alex.png') }}" alt="alexandre_lavaud"/>
+							<span class="team-role hoverable">Développeur</span>
 							<span class="team-name logo-title">Alexandre</span>
 						</div>
 					</div>
