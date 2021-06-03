@@ -26,8 +26,27 @@ export default function displayCinematic(num) {
     };
 
     video.ondblclick = function () {
-        this.currentTime = 30;
+        this.currentTime = 94;
     };
+
+    let controls = document.getElementById("controls");
+    let souris = document.getElementById("souris");
+
+    video.addEventListener("mousemove",dynamicBlur);
+
+    function dynamicBlur(){
+        controls.style.transition = "opacity 0s";
+        souris.style.transition = "opacity 0s";
+        controls.style.opacity="100";
+        souris.style.opacity="100";
+        setTimeout(function(){
+            controls.style.transition = "opacity 3s";
+            souris.style.transition = "opacity 3s";
+            controls.style.opacity = "0";
+            souris.style.opacity = "0";
+        },1500);
+    }
+
 
 
     video.muted = false;
@@ -53,6 +72,12 @@ export default function displayCinematic(num) {
         mp4.remove();
         ogg.remove();
         video.removeAttribute("src");
+        video.removeEventListener("mousemove",dynamicBlur);
+        controls.style.transition = "opacity 0s";
+        souris.style.transition = "opacity 0s";
+        controls.style.opacity="100";
+        souris.style.opacity="100";
+
         video.load();
     });
 

@@ -4,8 +4,10 @@
 
 import updateInventory from "../gestionInventory";
 import updateObject from "../../object";
+import addSound from "../../components/sound";
 
 let isItIn = false;
+let first_try = true;
 
 export default function Lecteur() {
     let enigma = document.createElement("div");
@@ -34,6 +36,7 @@ export default function Lecteur() {
                 updateInventory("Cassette", false)
                 isItIn=true;
                 controlMusic(bg,enigma);
+                addSound("./resources/game/room2/audios/Chanson_en_boucle.mp3",false);
             })
         }
     } else {
