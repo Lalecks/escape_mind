@@ -8532,6 +8532,10 @@ footer {
   }
 }
 /* Composants */
+.Cinematic {
+  z-index: 10;
+  position: relative;
+}
 .Cinematic .show-player {
   visibility: visible !important;
 }
@@ -8559,7 +8563,7 @@ footer {
   justify-content: space-between;
   position: absolute;
   z-index: 1;
-  bottom: 16%;
+  bottom: 17%;
   z-index: 15;
   padding: 0px 2%;
 }
@@ -8588,13 +8592,18 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  bottom: 1.5%;
+  position: absolute;
+  left: 4%;
 }
 .Cinematic #progressBar {
-  height: 6%;
+  height: 8%;
   width: 100%;
   display: flex;
   overflow: hidden;
   background-image: linear-gradient(298.05deg, rgba(121, 121, 121, 0.3) 4.34%, rgba(0, 0, 0, 0.19) 93.57%);
+  bottom: 0%;
+  position: absolute;
 }
 .Cinematic #progressBar > #progressVideo {
   height: 100%;

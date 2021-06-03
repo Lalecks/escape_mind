@@ -159,17 +159,12 @@ export default function updateGame(fail) {
                         $(".modal").removeClass("show-modal");
                     }
                     if (!fin) createRoom();
+                    setTimeout(function () {
+                        if (actualRoom===2) addSound("./resources/game/room2/audios/Chambre.mp3",false);
+                    }, 1600);
                 }, 1600)
             } catch (e) {}
 
-            // if (!fin) {
-            //     setTimeout(function () {
-            //         $('.Game').removeClass('animate_content');
-            //         if (actualRoom === 3) {
-            //             window.alert("Salle non finie, cliquez sur le château pour finir le jeu !");
-            //         }
-            //     }, 3600);
-            // }
         }, 900);
     }
 }
@@ -210,8 +205,24 @@ function createRoom() {
 
             //click sur obj
             link.addEventListener("mousedown", () => {
-                //addSound('./resources/game/room' + actualRoom + '/' + object[i][0] +'.mp3',false);
-                addSound('./resources/game/global/objets.mp3', false);
+                switch(object[i][0]){
+                    case "Poster_Robot":
+                    case "Poster":
+                        addSound('./resources/game/global/Affiche.mp3', false);
+                        break;
+                    case "Coffre":
+                        addSound('./resources/game/room1/audios/Coffre_en_bois.mp3', false);
+                        break;
+                    case "Lecteur":
+                    case "Jukebox":
+                        addSound('./resources/game/room1/audios/Ouverture_lecteur.mp3', false);
+                        break;
+                    case "Tablette":
+                        addSound('./resources/game/room2/audios/Tablette.mp3',false);
+                        break;
+                    default:
+                        addSound('./resources/game/global/objets.mp3', false);
+                }
             })
 
             link.appendChild(obj);

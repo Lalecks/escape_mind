@@ -46,7 +46,7 @@ export default function Coffre() {
             num.classList += " reset";
             num.addEventListener("click", function () {
                 result.innerText = "";
-                audio.src = "./resources/game/global/button.mp3";
+                audio.src = "./resources/game/room1/audios/Boutons_Coffre_fort.mp3";
                 audio.play();
 
             });
@@ -54,7 +54,7 @@ export default function Coffre() {
             num.innerText = i;
             num.addEventListener("click", function () {
                 verif(i);
-                audio.src = "./resources/game/global/button.mp3";
+                audio.src = "./resources/game/room1/audios/Boutons_Coffre_fort.mp3";
                 audio.play();
             });
         }

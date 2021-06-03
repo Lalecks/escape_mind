@@ -125,7 +125,7 @@ function part_two(bg, desc_text, no_enigma) {
         button.classList = "butt hoverable";
         button.addEventListener("click", function () {
             verif(button.innerText);
-            audio.src = "./resources/game/global/button.mp3";
+            audio.src = "./resources/game/room1/audios/Boutons_Coffre_fort.mp3";
             audio.play();
         });
 
@@ -136,7 +136,7 @@ function part_two(bg, desc_text, no_enigma) {
             button.classList += " reset";
             button.addEventListener("click", function () {
                 result.innerText = "";
-                audio.src = "./resources/game/global/button.mp3";
+                audio.src = "./resources/game/room1/audios/Boutons_Coffre_fort.mp3";
                 audio.play();
 
             });

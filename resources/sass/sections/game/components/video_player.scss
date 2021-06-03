@@ -1,4 +1,7 @@
 .Cinematic {
+    z-index: 10;
+    position: relative;
+
     .show-player {
         visibility: visible !important;
     }
@@ -34,9 +37,10 @@
                 justify-content: space-between;
                 position: absolute;
                 z-index: 1;
-                bottom: 16%;
+                bottom: 17%;
                 z-index: 15;
                 padding: 0px 2%;
+
 
                 #play{
                     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -69,17 +73,22 @@
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                bottom: 1.5%;
+                position: absolute;
+                left: 4%;
             }
         }
     }
 
     #progressBar {
-        height: 6%;
+        height: 8%;
         width: 100%;
         display: flex;
         overflow: hidden;
         // Glassmorphism
         background-image: linear-gradient(298.05deg, rgb(121 121 121 / 30%) 4.34%, rgb(0 0 0 / 19%) 93.57%);
+        bottom: 0%;
+        position: absolute;
 
         &>#progressVideo {
             height: 100%;
