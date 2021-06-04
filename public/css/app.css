@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders+Display:wght@100&family=Gayathri:wght@100&display=swap);
 @charset "UTF-8";
 /**
 *
@@ -8088,9 +8089,12 @@ footer {
   transition: all 1.5s ease-in-out;
 }
 #about .team .team-img-role div img {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   max-width: 9rem;
-  height: auto;
+  height: 16rem;
+  transform-origin: 50% 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   transform-origin: 50% 100%;
 }
 #about .team .team-img-role div .team-role {
@@ -9140,7 +9144,7 @@ footer {
   left: 34.8%;
   height: 16%;
   justify-content: space-around;
-  bottom: 10%;
+  bottom: 13%;
 }
 #lecteur_modal #div_buttons .Lecteur_button {
   background: transparent;
