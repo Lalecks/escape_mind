@@ -65,7 +65,7 @@ function controlMusic(bg,enigma){
     musique.volume=1;
     document.getElementById("Music").appendChild(musique);
 
-    let controls = ["play", "reverse", "stop", "rec", "previous", "next"];
+    let controls = ["stop", "previous", "reverse", "play", "next", "record"];
     let previous_case = 0;
 
     for (let i = 0; i < 6; i++) {

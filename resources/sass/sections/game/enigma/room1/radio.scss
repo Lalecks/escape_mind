@@ -4,7 +4,7 @@
         position: absolute;
         margin: auto;
         left: 29.5%;
-        top: 29.5%;
+        top: 32%;
         width: 41.1%;
         overflow: hidden;
 
@@ -24,12 +24,12 @@
         .slider::-webkit-slider-thumb {
             // Use for Chrome, Opera, Safari, Edge
             -webkit-appearance: none;
-            width: 2vh;
+            width: .5vh;
             height: 2vh;
             // width: 3.5%;
             // height: 65%;
-            border: 0;
-            //background: url('/resources/game/room1/objects/Radio_01.png');
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
             background: black;
             cursor: pointer;
             transform: translateY(50%);
@@ -45,7 +45,6 @@
             width: 3.5%;
             height: 65%;
             border: 0;
-            //background: url('/resources/game/room1/objects/Radio_01.png');
             background: black;
             cursor: pointer;
             transform: translateY(50%);

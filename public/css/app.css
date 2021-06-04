@@ -9140,8 +9140,8 @@ footer {
   display: flex;
   flex-direction: row;
   position: absolute;
-  width: 34.1%;
-  left: 34.8%;
+  width: 25.6%;
+  left: 38.6%;
   height: 16%;
   justify-content: space-around;
   bottom: 13%;
@@ -9189,7 +9189,7 @@ footer {
   position: absolute;
   margin: auto;
   left: 29.5%;
-  top: 29.5%;
+  top: 32%;
   width: 41.1%;
   overflow: hidden;
 }
@@ -9206,9 +9206,10 @@ footer {
 }
 #modal_radio div .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 2vh;
+  width: 0.5vh;
   height: 2vh;
-  border: 0;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   background: black;
   cursor: pointer;
   transform: translateY(50%);

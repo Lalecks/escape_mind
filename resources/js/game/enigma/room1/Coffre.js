@@ -81,7 +81,9 @@ function verif(num) {
     if (result.innerText.length === 3) {
         if (result.innerText === "711" || result.innerText === "117") {
             result.innerText = "CORRECT";
-            addSound("./resources/game/global/correct.mp3", false);
+            setTimeout(function(){
+                addSound("./resources/game/global/correct.mp3",false);
+            },250)
             updateInventory("PhotoUn", 1);
             setTimeout(function () {
                 changeAV(5);

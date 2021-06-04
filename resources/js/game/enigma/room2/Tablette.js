@@ -17,6 +17,8 @@ export default function Tablette() {
     no_enigma.id = "tablette_modal";
     no_enigma.classList = "enigme_modal";
 
+    let avoid_spam = false;
+
     let desc_text = document.getElementById("desc_text");
 
     console.log("nb_pile : " + nb_piles);
@@ -62,31 +64,34 @@ export default function Tablette() {
         if (piles !== null && nb_piles < 3) {
             let number = document.querySelector(".item_number") || null;
             piles.addEventListener("click", () => {
-                if (number != null) {
-                    for (let i = 1; i <= number.innerHTML; i++) {
+                if (!avoid_spam){
+                    if (number != null) {
+                        for (let i = 1; i <= number.innerHTML; i++) {
+                            updateInventory("Pile", false);
+                            let first_empty_slot = document.querySelector(".Pile_slot");
+                            first_empty_slot.src = "./resources/game/room2/objects/Pile_00.png";
+                            first_empty_slot.classList = "Pile_empty_slot";
+                            nb_piles = nb_piles + 1;
+                        }
+                    } else {
                         updateInventory("Pile", false);
                         let first_empty_slot = document.querySelector(".Pile_slot");
                         first_empty_slot.src = "./resources/game/room2/objects/Pile_00.png";
                         first_empty_slot.classList = "Pile_empty_slot";
                         nb_piles = nb_piles + 1;
                     }
-                } else {
-                    updateInventory("Pile", false);
-                    let first_empty_slot = document.querySelector(".Pile_slot");
-                    first_empty_slot.src = "./resources/game/room2/objects/Pile_00.png";
-                    first_empty_slot.classList = "Pile_empty_slot";
-                    nb_piles = nb_piles + 1;
-                }
 
-                if (nb_piles === 3) {
-                    updateObject("Tablette", 0);
-                    bg.src = "./resources/game/room2/objects/Tablette_face_01.png";
-                    desc_modal.innerHTML = '<a id="button" class="fas fa-search hoverable glass-effect"></a>';
+                    if (nb_piles === 3) {
+                        updateObject("Tablette", 0);
+                        bg.src = "./resources/game/room2/objects/Tablette_face_01.png";
+                        desc_modal.innerHTML = '<a id="button" class="fas fa-search hoverable glass-effect"></a>';
 
-                    setTimeout(function () {
-                        slots.remove();
-                        part_two(bg, desc_text, no_enigma);
-                    }, 500);
+                        setTimeout(function () {
+                            slots.remove();
+                            part_two(bg, desc_text, no_enigma);
+                        }, 500);
+                    }
+                    avoid_spam=true;
                 }
             })
         }

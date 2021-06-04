@@ -141,7 +141,9 @@ export default function updateInventory(objectInv, isToAdd) {
                             }
                         ], 1000);
                         setTimeout(function () {
-                            document.querySelector("#div_inv_" + object).remove();
+                            try {
+                                document.querySelector("#div_inv_" + object).remove();
+                            } catch(e){}
                         }, 1000);
                     }
                     removed = true;

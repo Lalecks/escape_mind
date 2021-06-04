@@ -129,10 +129,13 @@ export default function updateGame(fail) {
         }
     } else {
         //PERDU
-        deleteRoom();
+        animChangement(true);
+        addSound("",true);
         //stopTimer
-        let cinematic = displayCinematic(2);
-        cinematic.addEventListener('ended', uptG);
+        setTimeout(function () {
+            let cinematic = displayCinematic(2);
+            cinematic.addEventListener('ended', uptG);
+        },1200)
 
         function uptG() {
             window.location.replace("../");
