@@ -1,11 +1,7 @@
 {{-- php artisan vendor:publish --tag=laravel-errors --}}
 @extends('layouts.template')
 @section('content')
-{{-- <header >
-	<a href="/" class="logo logo-title glass-effect">
-		<img src="{{asset("./resources/game/Logo.png")}}" alt="logo" class="hoverable"/>
-	</a>
-</header> --}}
+@include("layouts.header")
 <div class="error center">
 	<div class="code" data-text="@yield('code')">@yield('code', __('Oh no'))</div>
 	<h2>Aïe ! @yield('message')</h2>
