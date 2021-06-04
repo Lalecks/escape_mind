@@ -78,7 +78,7 @@ export default function displayCinematic(num) {
             souris.style.transition = "opacity 0s";
             controls.style.opacity="100";
             souris.style.opacity="100";
-        },1200);
+        },2000);
         video.load();
     });
 
