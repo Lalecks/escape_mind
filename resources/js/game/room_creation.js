@@ -135,7 +135,7 @@ export default function updateGame(fail) {
         setTimeout(function () {
             let cinematic = displayCinematic(2);
             cinematic.addEventListener('ended', uptG);
-        },1200)
+        },1500)
 
         function uptG() {
             window.location.replace("../");
