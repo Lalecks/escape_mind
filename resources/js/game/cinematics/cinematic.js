@@ -44,7 +44,7 @@ export default function displayCinematic(num) {
             souris.style.transition = "opacity 3s";
             controls.style.opacity = "0";
             souris.style.opacity = "0";
-        },1500);
+        },1000);
     }
 
 
@@ -73,11 +73,12 @@ export default function displayCinematic(num) {
         ogg.remove();
         video.removeAttribute("src");
         video.removeEventListener("mousemove",dynamicBlur);
-        controls.style.transition = "opacity 0s";
-        souris.style.transition = "opacity 0s";
-        controls.style.opacity="100";
-        souris.style.opacity="100";
-
+        setTimeout(function(){
+            controls.style.transition = "opacity 0s";
+            souris.style.transition = "opacity 0s";
+            controls.style.opacity="100";
+            souris.style.opacity="100";
+        },2000);
         video.load();
     });
 

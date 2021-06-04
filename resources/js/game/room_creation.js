@@ -147,6 +147,7 @@ export default function updateGame(fail) {
         addSound('./resources/game/global/loading.mp3', false);
         setTimeout(function () {
             $('.Game').addClass('animate_content');
+            console.log("animation transition");
 
             // Remove inventory sauf le papier
             updateInventory("All", 0);
@@ -158,10 +159,13 @@ export default function updateGame(fail) {
                     if ($(".modal").hasClass("show-modal")) {
                         $(".modal").removeClass("show-modal");
                     }
-                    if (!fin) createRoom();
+                    if (!fin){
+                        createRoom();
+                    }
                     setTimeout(function () {
                         if (actualRoom===2) addSound("./resources/game/room2/audios/Chambre.mp3",false);
-                    }, 1600);
+                        $('.Game').removeClass('animate_content');
+                    }, 3000);
                 }, 1600)
             } catch (e) {}
 
