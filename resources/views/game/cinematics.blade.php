@@ -10,7 +10,7 @@
                 <span id=audioVolume class="hoverable fa fa-volume-up"></span>
             </div>
             <div id="timer">
-                <span id="start">0:00</span>
+                <span id="start">00 : 00</span>
             </div>
         </div>
         <div id="progressBar" class="glass-effect">

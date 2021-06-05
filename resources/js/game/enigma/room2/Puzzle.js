@@ -5,6 +5,7 @@ import updateObject from "../../object";
 import updateInventory from "../gestionInventory";
 import Turn from "../room1/Turn";
 import changeAV from "../../game";
+import addSound from "../../components/sound";
 
 let actual_puzzle = "000";
 
@@ -63,6 +64,7 @@ export default function Puzzle() {
         function addPiece(piece) {
             pieces[piece].addEventListener("mousedown", () => {
                 updateInventory(pieces[piece].id.replace("inv_", ""), 0);
+                addSound("./resources/game/global/inventory.mp3",false);
                 actual_puzzle = actual_puzzle.substr(0, piece) + "1" + actual_puzzle.substr(piece + 1);
                 bg.src = html.src.replace("_00", "_" + actual_puzzle);
                 if (actual_puzzle === "111" && first_try) {
@@ -84,8 +86,11 @@ export default function Puzzle() {
             let back_face = document.getElementById("back_face");
             back_face.addEventListener("click", () => {
                 updateInventory("PhotoDeux", 1);
+                addSound("./resources/game/global/inventory.mp3",false);
                 back_face.style.display = "none";
-                changeAV(15);
+                setTimeout(function(){
+                    changeAV(15);
+                },1000)
             });
         }, 1000);
     }

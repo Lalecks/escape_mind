@@ -35,19 +35,14 @@ export default function displayCinematic(num) {
     video.addEventListener("mousemove",dynamicBlur);
 
     function dynamicBlur(){
-        controls.style.transition = "opacity 0s";
-        souris.style.transition = "opacity 0s";
+        controls.style.transition="opacity 0s";
         controls.style.opacity="100";
-        souris.style.opacity="100";
         setTimeout(function(){
-            controls.style.transition = "opacity 3s";
-            souris.style.transition = "opacity 3s";
+            controls.style.transition="opacity 2s";
             controls.style.opacity = "0";
-            souris.style.opacity = "0";
-        },1000);
+        },500);
+
     }
-
-
 
     video.muted = false;
 
@@ -73,12 +68,6 @@ export default function displayCinematic(num) {
         ogg.remove();
         video.removeAttribute("src");
         video.removeEventListener("mousemove",dynamicBlur);
-        setTimeout(function(){
-            controls.style.transition = "opacity 0s";
-            souris.style.transition = "opacity 0s";
-            controls.style.opacity="100";
-            souris.style.opacity="100";
-        },2000);
         video.load();
     });
 
@@ -95,9 +84,16 @@ export default function displayCinematic(num) {
     toggleVideoPlayer();
 
     if (num === 0) {
-        video.addEventListener('ended', function () {
-            toggleVideoPlayer();
-        });
+        video.addEventListener('ended', endVideo);
+    }
+
+    function endVideo(){
+        toggleVideoPlayer();
+        setTimeout(function(){
+            controls.style.transition="opacity 0s";
+            controls.style.opacity="100";
+        },2500);
+        video.removeEventListener('ended', endVideo);
     }
 
     return video;

@@ -3,6 +3,8 @@
  */
 
 import changeAV from "../../game";
+import updateInventory from "../gestionInventory";
+import addSound from "../../components/sound";
 
 export default function Chateau() {
     let no_enigma = document.createElement("div");
@@ -15,7 +17,11 @@ export default function Chateau() {
     bg.src = html.src;
 
     no_enigma.addEventListener("click",()=>{
-        changeAV(25);
+        updateInventory("PhotoTrois", 1);
+        addSound("./resources/game/global/inventory.mp3",false);
+        setTimeout(function(){
+            changeAV(25);
+        },1500)
     });
 
     no_enigma.appendChild(bg);

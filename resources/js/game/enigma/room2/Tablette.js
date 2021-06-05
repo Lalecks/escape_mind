@@ -93,6 +93,7 @@ export default function Tablette() {
                     }
                     avoid_spam=true;
                 }
+                addSound("./resources/game/global/inventory.mp3",false);
             })
         }
     } else {

@@ -11,6 +11,7 @@ import createModal from "./components/modal";
 import displayCinematic from "./cinematics/cinematic";
 import addSound from "./components/sound";
 import updateInventory from "./enigma/gestionInventory";
+import toggleVideoPlayer from "./cinematics/video_player";
 
 
 
@@ -104,24 +105,32 @@ export default function updateGame(fail) {
 
             setTimeout(function () {
                 let cinematic = displayCinematic(1);
-                cinematic.addEventListener('ended', () => {
-                    let result = document.getElementById("Result");
-                    result.style.display = "";
-                    let time = document.getElementById("time_game");
-                    let str = timer[0] + timer[1] + ":" + timer[2] + timer[3];
 
-                    time.value = str;
+                function hideVideo(){
+                    if (cinematic.currentTime>=70){
+                        cinematic.style.opacity = "0";
+                        toggleVideoPlayer();
+                        let result = document.getElementById("Result");
+                        result.style.display = "";
+                        let time = document.getElementById("time_game");
+                        let str = timer[0] + timer[1] + ":" + timer[2] + timer[3];
 
-                    document.getElementById("min").innerText = timer[0] + timer[1];
-                    document.getElementById("sec").innerText = timer[2] + timer[3];
-
-                    //si qqun essai de changer le code HTML
-                    let button = document.getElementById("result_button");
-                    button.addEventListener("click", () => {
                         time.value = str;
-                    })
 
-                });
+                        document.getElementById("min").innerText = timer[0] + timer[1];
+                        document.getElementById("sec").innerText = timer[2] + timer[3];
+
+                        //si qqun essai de changer le code HTML
+                        let button = document.getElementById("result_button");
+                        button.addEventListener("click", () => {
+                            time.value = str;
+                        })
+
+                        cinematic.removeEventListener("timeupdate",hideVideo);
+                    }
+                }
+                cinematic.addEventListener("timeupdate",hideVideo);
+
             }, 2000);
 
         } else {
@@ -164,11 +173,14 @@ export default function updateGame(fail) {
                     }
                     if (!fin){
                         createRoom();
+                        setTimeout(function () {
+                            if (actualRoom===2) addSound("./resources/game/room2/audios/Chambre.mp3",false);
+                            $('.Game').removeClass('animate_content');
+                        }, 3000);
+                    } else {
+
+                        addSound("",true);
                     }
-                    setTimeout(function () {
-                        if (actualRoom===2) addSound("./resources/game/room2/audios/Chambre.mp3",false);
-                        $('.Game').removeClass('animate_content');
-                    }, 3000);
                 }, 1600)
             } catch (e) {}
 

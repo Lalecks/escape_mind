@@ -4,6 +4,7 @@
 
 import updateInventory from "../gestionInventory";
 import updateObject from "../../object";
+import addSound from "../../components/sound";
 
 let used = 0;
 
@@ -30,6 +31,7 @@ export default function Cassettes() {
             if (!used) {
                 updateInventory("Cassette", "1");
                 updateObject("Cassettes", false);
+                addSound("./resources/game/global/inventory.mp3",false);
                 bg.src = html.src;
                 button.innerText = "Déjà récupéré !";
             }

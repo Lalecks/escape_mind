@@ -1,4 +1,5 @@
 import updateInventory from "../gestionInventory";
+import addSound from "../../components/sound";
 let isTaken = false;
 
 export default function Bougie() {

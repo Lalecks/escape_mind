@@ -4,6 +4,7 @@ import {
 import {
     invJoueur
 } from "./gestionInventory";
+import addSound from "../components/sound";
 
 export default function createInventory() {
     let objects = document.createElement("div");
