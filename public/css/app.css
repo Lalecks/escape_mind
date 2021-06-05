@@ -7996,6 +7996,7 @@ footer {
 }
 #top_score p {
   padding-top: 2rem;
+  word-break: break-all;
 }
 
 #rank {
