@@ -16,7 +16,7 @@ import Cassettes from "../enigma/room1/Cassettes";
 import Tablette from "../enigma/room2/Tablette";
 import Lecteur from "../enigma/room1/Lecteur";
 import Jukebox from "../enigma/room1/Jukebox";
-import Coffre from "../enigma/room1/Coffre";
+import Coffre_Fort from "../enigma/room1/Coffre_Fort";
 import magnifier from "./magnifier";
 import Peluche from "../enigma/room2/Peluche";
 import Bougie from "../enigma/room2/Bougie";
@@ -26,8 +26,8 @@ import Oiseaux from "../enigma/room2/Oiseaux";
 import Puzzle from "../enigma/room2/Puzzle";
 import Takable from "../enigma/room2/Takable";
 import Affiche from "../enigma/room2/Affiche";
-import Chateau from "../enigma/room3/Chateau_sable";
 import createInventory from "../enigma/displayInventory";
+import Coffre from "../enigma/room3/Coffre";
 
 /* Inititalisation des variables */
 let modal = document.querySelector(".modal");
@@ -158,6 +158,9 @@ function toggleModalCustom(titre, description) {
                 case "Jukebox":
                     activity.appendChild(Jukebox());
                     break;
+                case "Coffre_Fort":
+                    activity.appendChild(Coffre_Fort());
+                    break;
                 case "Coffre":
                     activity.appendChild(Coffre());
                     break;
@@ -181,9 +184,6 @@ function toggleModalCustom(titre, description) {
                     break;
                 case "Poster_Robot":
                     activity.appendChild(Affiche());
-                    break;
-                case "Chateau_Sable":
-                    activity.appendChild(Chateau());
                     break;
                 default:
                     activity.appendChild(Defaut(titre));

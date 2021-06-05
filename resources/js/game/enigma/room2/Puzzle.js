@@ -95,7 +95,5 @@ export default function Puzzle() {
         }, 1000);
     }
 
-
-
     return no_enigma;
 }

@@ -8843,7 +8843,7 @@ footer {
   bottom: 4%;
   width: 8%;
 }
-#game-page #Game .Room1 #Objects #Coffre {
+#game-page #Game .Room1 #Objects #Coffre_Fort {
   left: 10%;
   bottom: 14%;
   width: 27%;
@@ -9242,7 +9242,7 @@ footer {
   border-radius: 9%;
 }
 
-#modal_coffre {
+#modal_coffre_fort {
   background-color: #ffffff;
   display: flex;
   justify-content: space-around !important;
@@ -9250,10 +9250,10 @@ footer {
   flex-direction: column;
   align-content: center;
 }
-#modal_coffre img {
+#modal_coffre_fort img {
   display: none;
 }
-#modal_coffre #code_coffre {
+#modal_coffre_fort #code_coffre {
   font-family: "Audiowide", cursive;
   background-color: #121212;
   width: 44%;
@@ -9262,7 +9262,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-#modal_coffre .code_buttons {
+#modal_coffre_fort .code_buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9272,11 +9272,11 @@ footer {
   width: 91%;
   text-align: center;
 }
-#modal_coffre .code_buttons span {
+#modal_coffre_fort .code_buttons span {
   width: 100%;
   margin: 2%;
 }
-#modal_coffre .code_buttons span .num {
+#modal_coffre_fort .code_buttons span .num {
   background-color: #121212;
   font-size: 142%;
   border-radius: 50%;
@@ -9292,14 +9292,14 @@ footer {
   -ms-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
 }
-#modal_coffre .code_buttons span .num:hover {
+#modal_coffre_fort .code_buttons span .num:hover {
   color: #d738c1;
   transition: all 200ms ease-in;
   -webkit-transition: all 200ms ease-in;
   -ms-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
 }
-#modal_coffre .code_buttons span .num #div_bas {
+#modal_coffre_fort .code_buttons span .num #div_bas {
   display: block;
 }
 

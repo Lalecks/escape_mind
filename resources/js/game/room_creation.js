@@ -22,7 +22,7 @@ import toggleVideoPlayer from "./cinematics/video_player";
 let object = [
     /* Room 1 */
     ["Cassettes", 1, ""],
-    ["Coffre", 1, ""],
+    ["Coffre_Fort", 1, ""],
     ["Jukebox", 1, ""],
     ["Lecteur", 1, ""],
     ["Radio", 1, ""],
@@ -79,7 +79,7 @@ let decor = [
 
 
 /* Initialisation des variables */
-let actualRoom = 0; // Salle actuelle
+let actualRoom = 2; // Salle actuelle
 let nbRoom = 4;
 let url = "";
 
