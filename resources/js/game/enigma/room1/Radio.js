@@ -60,7 +60,7 @@ export default function Radio() {
     document.getElementById("Foley").appendChild(interferences);
 
     let actual_val = document.createElement("p");
-    actual_val.innerText = (((50 / 105) * 13) + 87.3).toFixed(1) + " Hz";
+    actual_val.innerText = (((50 / 105) * 13) + 87.3).toFixed(1) + " MHz";
 
 
     cursor.onchange = function () {

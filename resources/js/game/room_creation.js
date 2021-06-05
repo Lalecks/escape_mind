@@ -79,7 +79,7 @@ let decor = [
 
 
 /* Initialisation des variables */
-let actualRoom = 2; // Salle actuelle
+let actualRoom = 0; // Salle actuelle
 let nbRoom = 4;
 let url = "";
 

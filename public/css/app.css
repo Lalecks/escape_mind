@@ -9207,7 +9207,7 @@ footer {
 }
 #modal_radio div .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 0.5vh;
+  width: 1vh;
   height: 2vh;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
