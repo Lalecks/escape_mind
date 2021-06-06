@@ -21,8 +21,6 @@ export default function Tablette() {
 
     let desc_text = document.getElementById("desc_text");
 
-    console.log("nb_pile : " + nb_piles);
-
     let html = document.getElementById("Tablette");
 
     let bg = document.createElement("img");

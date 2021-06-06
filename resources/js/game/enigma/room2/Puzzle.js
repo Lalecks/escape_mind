@@ -35,11 +35,10 @@ export default function Puzzle() {
 
         let actual_pieces = "" + (pieces[0] == null ? "0" : "1") + (pieces[1] == null ? "0" : "1") + (pieces[2] == null ? "0" : "1");
 
-        console.log(actual_pieces);
+        console.log(actual_puzzle);
 
         switch (actual_pieces) {
             case "111":
-                isPuzzleDone = true;
                 addPiece(2);
             case "110":
                 addPiece(1);
@@ -68,7 +67,8 @@ export default function Puzzle() {
                 actual_puzzle = actual_puzzle.substr(0, piece) + "1" + actual_puzzle.substr(piece + 1);
                 bg.src = html.src.replace("_00", "_" + actual_puzzle);
                 if (actual_puzzle === "111" && first_try) {
-                    first_try=false;
+                    isPuzzleDone = true;
+                    first_try=false; //avoid spamclick
                     bg.remove();
                     puzzleTurn();
                 }
@@ -83,16 +83,18 @@ export default function Puzzle() {
         Turn(no_enigma, null, 0)
 
         setTimeout(function () {
-            let back_face = document.getElementById("back_face");
-            back_face.addEventListener("click", () => {
-                updateInventory("PhotoDeux", 1);
-                addSound("./resources/game/global/inventory.mp3",false);
-                back_face.style.display = "none";
-                setTimeout(function(){
-                    changeAV(15);
-                },1000)
-            });
-        }, 1000);
+            try {
+                let back_face = document.getElementById("back_face");
+                back_face.addEventListener("click", () => {
+                    updateInventory("PhotoDeux", 1);
+                    addSound("./resources/game/global/inventory.mp3",false);
+                    back_face.style.display = "none";
+                    setTimeout(function(){
+                        changeAV(15);
+                    },1000)
+                });
+            } catch(e){}
+        }, 500);
     }
 
     return no_enigma;
