@@ -60,7 +60,7 @@ export default function Turn(base_html, son, first_try) {
             } catch (e) {}
 
             first_try = false;
-            return false;
+            return first_try;
         }
     });
 
