@@ -84,7 +84,6 @@ export default function Tablette() {
                     if (nb_piles === 3) {
                         updateObject("Tablette", 0);
                         bg.src = "./resources/game/room2/objects/Tablette_face_01.png";
-                        desc_modal.innerHTML = '<a id="button" class="fas fa-search hoverable glass-effect"></a>';
 
                         setTimeout(function () {
                             slots.remove();
@@ -109,6 +108,8 @@ export default function Tablette() {
 function part_two(bg, desc_text, no_enigma) {
     bg.src = "./resources/game/room2/objects/Tablette_face_01.png";
     desc_text.remove();
+
+    desc_modal.innerHTML = '<a id="button" class="fas fa-search hoverable glass-effect"></a>';
 
     let audio = document.createElement("audio");
     audio.id = "audio_Button";
@@ -170,16 +171,14 @@ function verif(num) {
             let tablette = document.getElementById("Tablette_bg");
             let i = 0;
 
-            function myLoop() {
-                setTimeout(function () {
-                    tablette.src = "./resources/game/room2/objects/Tablette_page_0" + i + ".png";
+            tablette.src = "./resources/game/room2/objects/Tablette_page_0" + i + ".png";
+
+            tablette.addEventListener("click",function(){
+                if (i < 7) {
                     i++
-                    if (i < 8) {
-                        myLoop();
-                    }
-                }, i === 0 ? 0 : 5000);
-            }
-            myLoop();
+                    tablette.src = "./resources/game/room2/objects/Tablette_page_0" + i + ".png";
+                }
+            })
             story_watched = true;
         } else {
             result.innerText = "INCORRECT";
