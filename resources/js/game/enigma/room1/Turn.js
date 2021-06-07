@@ -22,7 +22,6 @@ export default function Turn(base_html, son, first_try) {
     back.id = "back_face";
     back.className = "back face hoverable";
 
-
     box.appendChild(front);
     box_scene.appendChild(box);
     box.appendChild(back);
@@ -63,5 +62,4 @@ export default function Turn(base_html, son, first_try) {
             return first_try;
         }
     });
-
 }

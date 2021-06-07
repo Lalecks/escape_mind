@@ -13,24 +13,20 @@ export default function Bougie() {
     bg.id = "Bougie_bg";
     bg.src = html.src;
 
-
     let code = null;
     try {
         code = document.getElementById("inv_Papier");
-    } catch (e) {
-    }
+    } catch (e) {}
 
     if (code !== null && !isTaken) {
         code.addEventListener("mousedown", () => {
-            if (!isTaken){
+            if (!isTaken) {
                 updateInventory("Papier", false);
                 updateInventory("Code", true);
-                isTaken=true;
+                isTaken = true;
             }
         })
     }
-
     no_enigma.appendChild(bg);
-
     return no_enigma;
 }

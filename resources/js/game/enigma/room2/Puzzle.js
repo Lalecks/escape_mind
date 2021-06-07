@@ -63,20 +63,19 @@ export default function Puzzle() {
         function addPiece(piece) {
             pieces[piece].addEventListener("mousedown", () => {
                 updateInventory(pieces[piece].id.replace("inv_", ""), 0);
-                addSound("./resources/game/global/inventory.mp3",false);
+                addSound("./resources/game/global/inventory.mp3", false);
                 actual_puzzle = actual_puzzle.substr(0, piece) + "1" + actual_puzzle.substr(piece + 1);
                 bg.src = html.src.replace("_00", "_" + actual_puzzle);
                 if (actual_puzzle === "111" && first_try) {
                     isPuzzleDone = true;
-                    first_try=false; //avoid spamclick
+                    first_try = false; //avoid spamclick
                     bg.remove();
                     puzzleTurn();
                 }
             });
         }
-
     } else {
-            puzzleTurn();
+        puzzleTurn();
     }
 
     function puzzleTurn() {
@@ -87,15 +86,14 @@ export default function Puzzle() {
                 let back_face = document.getElementById("back_face");
                 back_face.addEventListener("click", () => {
                     updateInventory("PhotoDeux", 1);
-                    addSound("./resources/game/global/inventory.mp3",false);
+                    addSound("./resources/game/global/inventory.mp3", false);
                     back_face.style.display = "none";
-                    setTimeout(function(){
+                    setTimeout(function () {
                         changeAV(15);
-                    },1000)
+                    }, 1000)
                 });
-            } catch(e){}
+            } catch (e) {}
         }, 500);
     }
-
     return no_enigma;
 }

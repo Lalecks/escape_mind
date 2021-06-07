@@ -6,14 +6,11 @@
 
 import createTimer from "./components/timer";
 import cursorModule from "../layouts/mouse";
-
 import createModal from "./components/modal";
 import displayCinematic from "./cinematics/cinematic";
 import addSound from "./components/sound";
 import updateInventory from "./enigma/gestionInventory";
 import toggleVideoPlayer from "./cinematics/video_player";
-
-
 
 // Ajout des objets
 // Un objet_00 correspond à l'image par défaut
@@ -77,12 +74,10 @@ let decor = [
     ["Pagure", 3],
 ];
 
-
 /* Initialisation des variables */
 let actualRoom = 0; // Salle actuelle
 let nbRoom = 4;
 let url = "";
-
 
 export {
     actualRoom as actualRoom
@@ -106,8 +101,8 @@ export default function updateGame(fail) {
             setTimeout(function () {
                 let cinematic = displayCinematic(1);
 
-                function hideVideo(){
-                    if (cinematic.currentTime>=70){
+                function hideVideo() {
+                    if (cinematic.currentTime >= 70) {
                         cinematic.style.opacity = "0";
                         toggleVideoPlayer();
                         let result = document.getElementById("Result");
@@ -125,34 +120,29 @@ export default function updateGame(fail) {
                         button.addEventListener("click", () => {
                             time.value = str;
                         })
-
-                        cinematic.removeEventListener("timeupdate",hideVideo);
+                        cinematic.removeEventListener("timeupdate", hideVideo);
                     }
                 }
-                cinematic.addEventListener("timeupdate",hideVideo);
-
+                cinematic.addEventListener("timeupdate", hideVideo);
             }, 2000);
-
         } else {
             animChangement(false);
         }
     } else {
         //PERDU
         animChangement(true);
-        addSound("",true);
+        addSound("", true);
         //stopTimer
         setTimeout(function () {
             let cinematic = displayCinematic(2);
             cinematic.addEventListener('ended', uptG);
-        },1500)
+        }, 1500)
 
         function uptG() {
             window.location.replace("../");
             cinematic.removeEventListener('ended', uptG);
         }
-
     }
-
 
     function animChangement(fin) {
         // animate content
@@ -164,26 +154,24 @@ export default function updateGame(fail) {
             // Remove inventory sauf le papier
             updateInventory("All", 0);
 
-
             try {
                 setTimeout(function () {
                     deleteRoom();
                     if ($(".modal").hasClass("show-modal")) {
                         $(".modal").removeClass("show-modal");
                     }
-                    if (!fin){
+                    if (!fin) {
                         createRoom();
                         setTimeout(function () {
-                            if (actualRoom===2) addSound("./resources/game/room2/audios/Chambre.mp3",false);
+                            if (actualRoom === 2) addSound("./resources/game/room2/audios/Chambre.mp3", false);
                             $('.Game').removeClass('animate_content');
                         }, 3000);
                     } else {
 
-                        addSound("",true);
+                        addSound("", true);
                     }
                 }, 1600)
             } catch (e) {}
-
         }, 900);
     }
 }
@@ -224,7 +212,7 @@ function createRoom() {
 
             //click sur obj
             link.addEventListener("mousedown", () => {
-                switch(object[i][0]){
+                switch (object[i][0]) {
                     case "Poster_Robot":
                     case "Poster":
                         addSound('./resources/game/global/Affiche.mp3', false);
@@ -237,13 +225,12 @@ function createRoom() {
                         addSound('./resources/game/room1/audios/Ouverture_lecteur.mp3', false);
                         break;
                     case "Tablette":
-                        addSound('./resources/game/room2/audios/Tablette.mp3',false);
+                        addSound('./resources/game/room2/audios/Tablette.mp3', false);
                         break;
                     default:
                         addSound('./resources/game/global/objets.mp3', false);
                 }
             })
-
             link.appendChild(obj);
             parent_obj.appendChild(link);
         }
@@ -251,7 +238,6 @@ function createRoom() {
 
     for (let i = 0; i < decor.length; i++) {
         if (decor[i][1] === actualRoom) {
-
             let link = document.createElement("div");
             link.id = "decor_" + decor[i][0];
 
@@ -282,5 +268,4 @@ function deleteRoom() {
     try {
         imgToRemove.forEach(n => n.remove());
     } catch (e) {}
-
 }

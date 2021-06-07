@@ -1,11 +1,11 @@
-import addSound from "./sound";
-import updateGame from "../room_creation";
-
 /**
  *
  *  Timer de 20 minutes
  *
  **/
+ 
+import addSound from "./sound";
+import updateGame from "../room_creation";
 
 let refresh = null;
 
@@ -14,7 +14,6 @@ let base = 1500;
 let time = base;
 
 //timer visuel
-
 let timeStr = "2500";
 let isAlreadyCreated = false;
 
@@ -45,9 +44,9 @@ export default function createTimer(temps) {
         startTimer();
         isAlreadyCreated = true;
     } else {
-        if (temps===""){
+        if (temps === "") {
             stopTimer();
-            return timeToString(base-time);
+            return timeToString(base - time);
         } else {
             time = temps;
         }
@@ -72,7 +71,6 @@ function removeTimer() {
     }
 }
 
-
 function seconds() {
     time = time - 1;
 
@@ -80,7 +78,7 @@ function seconds() {
     updateTimer();
 }
 
-function timeToString(time){
+function timeToString(time) {
     if (time < 10) {
         return "000" + time;
     } else if (time < 60) {
@@ -105,18 +103,17 @@ function updateTimer() {
 
     switch (timeStr) {
         case "1000":
-            addSound('./resources/game/gameMaster/10m.mp3',false);
+            addSound('./resources/game/gameMaster/10m.mp3', false);
             break;
         case "0500":
-            addSound('./resources/game/gameMaster/5m.mp3',false);
+            addSound('./resources/game/gameMaster/5m.mp3', false);
             break;
         case "0030":
-            addSound('./resources/game/gameMaster/30s.mp3',false);
+            addSound('./resources/game/gameMaster/30s.mp3', false);
             break;
         case "0000":
             updateGame(true);
             break;
         default:
     }
-
 }

@@ -76,9 +76,7 @@ export default function createModal() {
             isInit = true;
         }
     }
-
 }
-
 
 function toggleModalCustom(titre, description) {
     // PAGE DE JEU
@@ -93,21 +91,21 @@ function toggleModalCustom(titre, description) {
             let titre_html = document.createElement("span");
             titre_html.id = "titre_modal";
 
-            switch (titre[titre.length-1]){
-                case "n" :
+            switch (titre[titre.length - 1]) {
+                case "n":
                     titre_html.innerText = titre.replace('Un', '');
                     break;
-                case "x" :
+                case "x":
                     titre_html.innerText = titre.replace('Deux', '');
                     break;
-                case "s" :
+                case "s":
                     titre_html.innerText = titre.replace('Trois', '');
                     break;
                 default:
                     titre_html.innerText = titre;
             }
 
-            titre_html.innerText = titre_html.innerText.replace('_',' ').replace(/[0-9]/g, '');
+            titre_html.innerText = titre_html.innerText.replace('_', ' ').replace(/[0-9]/g, '');
 
             /* Description de l'objet */
             let desc_html = document.createElement("span");
@@ -232,7 +230,5 @@ function clearAll() {
         document.querySelectorAll(".Foley").forEach(n => n.remove());
     } catch (e) {}
 }
-
-
 
 createModal();

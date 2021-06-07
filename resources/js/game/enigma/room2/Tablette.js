@@ -10,7 +10,9 @@ let code = "250320";
 
 let story_watched = false;
 
-export {story_watched as unlocked}
+export {
+    story_watched as unlocked
+}
 
 export default function Tablette() {
     let no_enigma = document.createElement("div");
@@ -54,15 +56,12 @@ export default function Tablette() {
             }
             slots.appendChild(slot);
         }
-
         no_enigma.appendChild(slots);
-
-
 
         if (piles !== null && nb_piles < 3) {
             let number = document.querySelector(".item_number") || null;
             piles.addEventListener("click", () => {
-                if (!avoid_spam){
+                if (!avoid_spam) {
                     if (number != null) {
                         for (let i = 1; i <= number.innerHTML; i++) {
                             updateInventory("Pile", false);
@@ -88,20 +87,17 @@ export default function Tablette() {
                             part_two(bg, desc_text, no_enigma);
                         }, 500);
                     }
-                    avoid_spam=true;
+                    avoid_spam = true;
                 }
-                addSound("./resources/game/global/inventory.mp3",false);
+                addSound("./resources/game/global/inventory.mp3", false);
             })
         }
     } else {
         //DEUXIEME PARTIE DE LA TABLETTE : CODE
         part_two(bg, desc_text, no_enigma);
     }
-
     return no_enigma;
-
 }
-
 
 function part_two(bg, desc_text, no_enigma) {
     bg.src = "./resources/game/room2/objects/Tablette_face_01.png";
@@ -146,7 +142,6 @@ function part_two(bg, desc_text, no_enigma) {
 
             });
         } else button.innerText = i;
-
         div_button.appendChild(button);
     }
     no_enigma.appendChild(result);
@@ -155,14 +150,12 @@ function part_two(bg, desc_text, no_enigma) {
 
 function verif(num) {
     let result = document.getElementById("code_tablette");
-
     if (result.innerText !== "CORRECTE" && result.innerText !== "ERREUR")
         result.innerText += num;
-
     if (result.innerText.length === 6) {
         if (result.innerText === code) {
             result.innerText = "CORRECT";
-            addSound("./resources/game/global/correct.mp3",false);
+            addSound("./resources/game/global/correct.mp3", false);
             result.remove();
             document.getElementById("tablette_buttons").remove();
 
@@ -171,7 +164,7 @@ function verif(num) {
 
             tablette.src = "./resources/game/room2/objects/Tablette_page_0" + i + ".png";
 
-            tablette.addEventListener("click",function(){
+            tablette.addEventListener("click", function () {
                 if (i < 7) {
                     i++
                     tablette.src = "./resources/game/room2/objects/Tablette_page_0" + i + ".png";
@@ -180,7 +173,7 @@ function verif(num) {
             story_watched = true;
         } else {
             result.innerText = "INCORRECT";
-            addSound("./resources/game/global/wrong.mp3",false);
+            addSound("./resources/game/global/wrong.mp3", false);
             setTimeout(function () {
                 result.innerText = "";
             }, 500);

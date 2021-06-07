@@ -9,7 +9,7 @@ import updateObject from "../../object";
 
 let first_try = true;
 
-export default function Coffre(){
+export default function Coffre() {
     let html = document.getElementById("Coffre");
     let enigma = document.createElement("span");
     enigma.id = "modal_coffre";
@@ -27,22 +27,19 @@ export default function Coffre(){
 
     if (clef !== null && first_try) {
         clef.addEventListener("click", () => {
-            if (first_try){
+            if (first_try) {
                 updateInventory("Clef", false)
-                first_try=false;
-                addSound("./resources/game/room3/audios/Locking.mp3",false);
-                setTimeout(function(){
+                first_try = false;
+                addSound("./resources/game/room3/audios/Locking.mp3", false);
+                setTimeout(function () {
                     updateInventory("PhotoTrois", 1);
-                },1000)
-                setTimeout(function(){
+                }, 1000)
+                setTimeout(function () {
                     changeAV(25);
-                },1500)
+                }, 1500)
             }
         })
     }
-
-
     enigma.appendChild(bg);
-
     return enigma;
 }

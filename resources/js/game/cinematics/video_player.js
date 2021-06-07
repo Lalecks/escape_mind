@@ -6,8 +6,6 @@
 
 let player = (function () { //Namespace todo lo que esta aqui dentro es privado
     let play = document.getElementById("play"),
-        // fullscreen = document.getElementById("expand"),
-        // playlist = document.getElementById("playlist"),
         audioVolume = document.getElementById("audioVolume"),
         progress = document.getElementById('progressVideo'),
         start = document.getElementById('start'),
@@ -37,27 +35,6 @@ let player = (function () { //Namespace todo lo que esta aqui dentro es privado
             mediaPlayer.muted = !mediaPlayer.muted;
         }
     });
-
-    // fullscreen.addEventListener("click", () => {
-    //     if (mediaPlayer.requestFullscreen) mediaPlayer.requestFullscreen();
-    //     else if (mediaPlayer.webkitRequestFullscreen) mediaPlayer.webkitRequestFullscreen();
-    //     else if (mediaPlayer.mozRequestFullScreen) mediaPlayer.mozRequestFullScreen();
-    //     else if (mediaPlayer.msRequestFullscreen) mediaPlayer.msRequestFullscreen();
-    // });
-
-    // playlist.addEventListener("click", function (e) {
-    //     var target = e.target;
-
-    //     if (target.id != "playlist") {
-    //         var id = target.closest(".video").id,
-    //             el = target.closest(".video");
-
-    //         preload.classList.add('lds-ring');
-    //         higlight(id, currentTrack.toString());
-    //         set(videos[id].source)
-    //         mediaPlayer.addEventListener('canplay', videoIsReady)
-    //     }
-    // });
 
     function set(video) {
         mediaPlayer.src = video;
@@ -118,22 +95,6 @@ let player = (function () { //Namespace todo lo que esta aqui dentro es privado
 
         return div;
     }
-
-    // /**
-    //  * Recibe un array de objetos y devuelve su representacion en un Nodos HTML
-    //  * Returns an Node Collection
-    //  * @param {playlist : arreglo de objetos}
-    //  */
-    // function loadList(playlist) {
-    //     var domPlayList = document.getElementById('playlist'),
-    //         fragmentList = document.createDocumentFragment();
-
-    //     for (let video of playlist)
-    //         fragmentList.appendChild(create(video))
-
-    //     domPlayList.appendChild(fragmentList)
-    //     videoNodes = document.querySelectorAll('.video'); /* Hace disponible los nodos para manipular Una vex cargados */
-    // }
 
     function videoIsReady(event) {
         preload.classList.remove('lds-ring');

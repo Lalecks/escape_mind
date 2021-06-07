@@ -8,11 +8,9 @@ import toggleVideoPlayer from "./video_player";
 let cin = document.getElementById('Cinematic');
 let video = document.getElementById("media-video");
 let game = null;
-
 let cinematics = Array('beginning', 'success', 'defeat');
 
 export default function displayCinematic(num) {
-
     video.onclick = function () {
         let play = document.getElementById("play");
         if (play.className === "hoverable fas fa-pause") {
@@ -22,7 +20,6 @@ export default function displayCinematic(num) {
             this.play();
             play.className = "hoverable fas fa-pause";
         }
-
     };
 
     video.ondblclick = function () {
@@ -32,15 +29,15 @@ export default function displayCinematic(num) {
     let controls = document.getElementById("controls");
     let souris = document.getElementById("souris");
 
-    video.addEventListener("mousemove",dynamicBlur);
+    video.addEventListener("mousemove", dynamicBlur);
 
-    function dynamicBlur(){
-        controls.style.transition="opacity 0s";
-        controls.style.opacity="100";
-        setTimeout(function(){
-            controls.style.transition="opacity 2s";
+    function dynamicBlur() {
+        controls.style.transition = "opacity 0s";
+        controls.style.opacity = "100";
+        setTimeout(function () {
+            controls.style.transition = "opacity 2s";
             controls.style.opacity = "0";
-        },500);
+        }, 500);
 
     }
 
@@ -67,7 +64,7 @@ export default function displayCinematic(num) {
         mp4.remove();
         ogg.remove();
         video.removeAttribute("src");
-        video.removeEventListener("mousemove",dynamicBlur);
+        video.removeEventListener("mousemove", dynamicBlur);
         video.load();
     });
 
@@ -87,14 +84,13 @@ export default function displayCinematic(num) {
         video.addEventListener('ended', endVideo);
     }
 
-    function endVideo(){
+    function endVideo() {
         toggleVideoPlayer();
-        setTimeout(function(){
-            controls.style.transition="opacity 0s";
-            controls.style.opacity="100";
-        },2500);
+        setTimeout(function () {
+            controls.style.transition = "opacity 0s";
+            controls.style.opacity = "100";
+        }, 2500);
         video.removeEventListener('ended', endVideo);
     }
-
     return video;
 }

@@ -2,7 +2,6 @@
  * Enigme de la radio
  */
 
-
 import changeAV, {
     AV
 } from "../../game";
@@ -14,7 +13,7 @@ export default function Radio() {
     if (first_time) {
         first_time = false;
         setTimeout(function () {
-            addSound('./resources/game/room1/audios/Radio_enigme_00.mp3',false);
+            addSound('./resources/game/room1/audios/Radio_enigme_00.mp3', false);
         }, 100);
     }
 

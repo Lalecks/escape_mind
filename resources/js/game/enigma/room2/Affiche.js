@@ -28,23 +28,22 @@ export default function Affiche() {
                         isTaken = true;
                     }
                 });
-            } catch(e){}
-        },500);
+            } catch (e) {}
+        }, 500);
     } else {
         setTimeout(function () {
             changeBack();
-        },500);
+        }, 500);
     }
     return no_enigma;
 }
 
-function changeBack(){
+function changeBack() {
     try {
         let back_face = document.getElementById("back_face");
         back_face.style.background = 'url("./resources/game/room2/objects/Dessin_01.gif")';
         back_face.style.backgroundPosition = "100% 50%";
         back_face.style.backgroundRepeat = "no-repeat";
         back_face.style.backgroundSize = '100% 70%';
-    } catch(e){}
-
+    } catch (e) {}
 }

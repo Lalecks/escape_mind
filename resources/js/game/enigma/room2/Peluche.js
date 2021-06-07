@@ -10,7 +10,7 @@ import {
 } from "../../../layouts/detecting_mobile";
 import addSound from "../../components/sound";
 let already_used = false;
-let first_try=true;
+let first_try = true;
 
 export default function Peluche() {
     let no_enigma = document.createElement("div");
@@ -23,10 +23,10 @@ export default function Peluche() {
     bg.id = "Peluche_bg";
     bg.src = html.src;
 
-    if (first_try){
+    if (first_try) {
         try {
             setTimeout(function () {
-                addSound("./resources/game/room2/audios/Sacha_Lapin_00.mp3",false);
+                addSound("./resources/game/room2/audios/Sacha_Lapin_00.mp3", false);
             }, 100);
         } catch (e) {}
 
@@ -80,27 +80,19 @@ export default function Peluche() {
                                     updateObject("Peluche", 0);
                                     already_used = true;
                                 }
-
-
                             } else {
                                 reset();
                             }
                         }
-
                         window.removeEventListener('resize', reset);
                         window.addEventListener('resize', reset);
 
                         function reset() {
                             elmnt.style.left = "";
                         }
-
                     });
-
                 });
-
             } else {
-
-
                 if (document.getElementById(elmnt.id + "_move")) {
                     /* if present, the header is where you move the DIV from:*/
                     document.getElementById(elmnt.id + "_move").onmousedown = dragMouseDown;
@@ -108,7 +100,6 @@ export default function Peluche() {
                     /* otherwise, move the DIV from anywhere inside the DIV:*/
                     elmnt.onmousedown = dragMouseDown;
                 }
-
                 function dragMouseDown(e) {
                     e = e || window.event;
                     e.preventDefault();
@@ -158,12 +149,8 @@ export default function Peluche() {
                     document.onmousemove = null;
                 }
             }
-
         }
-
     }
-
     no_enigma.appendChild(bg);
-
     return no_enigma;
 }

@@ -30,12 +30,10 @@ $(document).ready(function () {
         updateGame(false);
         cinematic.removeEventListener('ended', uptG);
     }
-
     isRoomDone();
 });
 
 function isRoomDone() {
-
     switch (avancement) {
         case 5:
         case 15:

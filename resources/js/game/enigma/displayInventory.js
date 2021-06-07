@@ -19,19 +19,19 @@ export default function createInventory() {
             let num = document.createElement("span");
             num.innerText = invJoueur[i][1];
             num.className = "item_number";
-            num.id="num_" + invJoueur[i][0];
+            num.id = "num_" + invJoueur[i][0];
             global_object.appendChild(num);
         }
 
         let nom = document.createElement("p");
-        switch (invJoueur[i][0][invJoueur[i][0].length-1]){
-            case "n" :
+        switch (invJoueur[i][0][invJoueur[i][0].length - 1]) {
+            case "n":
                 nom.innerText = invJoueur[i][0].replace('Un', '');
                 break;
-            case "x" :
+            case "x":
                 nom.innerText = invJoueur[i][0].replace('Deux', '');
                 break;
-            case "s" :
+            case "s":
                 nom.innerText = invJoueur[i][0].replace('Trois', '');
                 break;
             default:

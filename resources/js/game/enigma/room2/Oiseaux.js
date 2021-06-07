@@ -4,7 +4,9 @@
 
 import updateInventory from "../gestionInventory";
 import updateObject from "../../object";
-import {unlocked} from "./Tablette";
+import {
+    unlocked
+} from "./Tablette";
 
 let taken = false;
 
@@ -18,7 +20,6 @@ export default function Oiseaux() {
     let bg = document.createElement("img");
     bg.id = "Oiseaux_bg";
     bg.src = html.src.replace("_00", "_01");
-
 
     if (!taken && unlocked) {
         let piece = document.createElement("img");
@@ -37,8 +38,6 @@ export default function Oiseaux() {
             }
         })
     }
-
     enigma.appendChild(bg);
-
     return enigma;
 }

@@ -31,7 +31,7 @@ export default function Cassettes() {
             if (!used) {
                 updateInventory("Cassette", "1");
                 updateObject("Cassettes", false);
-                addSound("./resources/game/global/inventory.mp3",false);
+                addSound("./resources/game/global/inventory.mp3", false);
                 bg.src = html.src;
                 button.innerText = "Déjà récupéré !";
             }

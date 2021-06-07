@@ -18,6 +18,5 @@ export default function Poster() {
 
     document.getElementById('desc_modal').innerHTML = '<a id="button" class="fas fa-search hoverable glass-effect"></a>' + document.getElementById('desc_modal').innerHTML;
 
-
     return no_enigma;
 }

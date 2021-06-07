@@ -6,7 +6,6 @@ import changeAV from "../../game";
 import addSound from "../../components/sound";
 import updateInventory from "../gestionInventory";
 
-
 export default function Coffre_Fort() {
     let html = document.getElementById("Coffre_Fort");
     let no_enigma = document.createElement("span");
@@ -38,7 +37,6 @@ export default function Coffre_Fort() {
     document.getElementById("Foley").appendChild(audio);
 
     for (let i = 0; i <= 10; i++) {
-
         let num = document.createElement("span");
         num.classList = "num hoverable";
         if (i === 10) {
@@ -81,9 +79,9 @@ function verif(num) {
     if (result.innerText.length === 3) {
         if (result.innerText === "711" || result.innerText === "117") {
             result.innerText = "CORRECT";
-            setTimeout(function(){
-                addSound("./resources/game/global/correct.mp3",false);
-            },250)
+            setTimeout(function () {
+                addSound("./resources/game/global/correct.mp3", false);
+            }, 250)
             updateInventory("PhotoUn", 1);
             setTimeout(function () {
                 changeAV(5);
