@@ -188,6 +188,12 @@ function createRoom() {
     let area = document.getElementById("Area");
     area.className = "Room" + actualRoom;
 
+    if (actualRoom === 3){
+        let oxygen = document.createElement("div");
+        oxygen.id="timer-oxygen";
+        document.getElementById("Interface").appendChild(oxygen);
+    }
+
     let objectInfo = document.getElementById("ObjectInfo");
     objectInfo.className = "Loupe_Room" + actualRoom;
 
